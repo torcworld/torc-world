@@ -18,5 +18,5 @@ export default function Report(){return <main>
 </tr></thead><tbody dangerouslySetInnerHTML={{__html:"<tr><td><b>CMS</b></td><td>834.7</td><td><b>840</b></td><td>817</td><td>848</td><td>31</td><td>11.3</td></tr><tr><td><b>RL</b></td><td>8.87</td><td><b>8.8</b></td><td>8.7</td><td>9.0</td><td>0.3</td><td>0.12</td></tr><tr><td><b>AD</b></td><td>8.81</td><td><b>8.7</b></td><td>8.6</td><td>9.0</td><td>0.4</td><td>0.16</td></tr><tr><td><b>CD</b></td><td>8.17</td><td><b>8.2</b></td><td>7.8</td><td>8.4</td><td>0.6</td><td>0.18</td></tr><tr><td><b>ID</b></td><td>8.19</td><td><b>8.2</b></td><td>8.0</td><td>8.4</td><td>0.4</td><td>0.16</td></tr><tr><td><b>IC</b></td><td>8.59</td><td><b>8.7</b></td><td>8.2</td><td>8.8</td><td>0.6</td><td>0.21</td></tr><tr><td><b>GR</b></td><td>7.46</td><td><b>7.4</b></td><td>7.2</td><td>7.8</td><td>0.6</td><td>0.17</td></tr>"}} /></table></div>
 
 <div dangerouslySetInnerHTML={{__html:tailHtml}} />
-<div className="buttons"><a className="button" href="/reports/the-magic-mountain/consensus.md">Open raw Markdown</a><Link className="button" href="/artifact/the-magic-mountain">← Back to artifact</Link></div>
+<div className="buttons"><Link className="button" href="/artifact/the-magic-mountain">← Back to artifact</Link></div>
 </section></main>}
