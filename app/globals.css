@@ -26,3 +26,14 @@ a{color:inherit;text-decoration:none}.shell{max-width:1180px;margin:0 auto;paddi
 .cleanTable.compact{min-width:650px}
 
 .formalDefinition{font-style:italic;margin-bottom:8px}.auditReport .tableWrap{overflow-x:auto;margin:22px 0}.auditReport table{width:100%;border-collapse:collapse;font:12px Arial,sans-serif}.auditReport th,.auditReport td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.auditReport th{border-top:1px solid var(--ink);font-weight:700}.evaluators a{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font:13px Arial,sans-serif;text-decoration:none}.auditReport h1{font-size:32px;margin-top:36px}.auditReport h2{margin-top:42px}.auditReport h3{margin-top:28px}
+
+.artifactTools{display:grid;grid-template-columns:minmax(260px,1.8fr) repeat(3,minmax(150px,.7fr));gap:10px;margin:0 0 12px}
+.artifactTools label{display:flex;flex-direction:column;gap:6px;font:10px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.artifactTools input,.artifactTools select{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:12px 13px;font:14px Arial,sans-serif;text-transform:none;letter-spacing:0;border-radius:0}
+.artifactToolbar{display:flex;align-items:center;justify-content:space-between;margin:10px 0 22px;font:11px Arial,sans-serif;color:var(--muted)}
+.artifactToolbar button,.artifactTable .header button{border:0;background:transparent;padding:0;color:inherit;font:inherit;letter-spacing:inherit;text-transform:inherit;cursor:pointer;text-align:left}
+.artifactToolbar button{text-decoration:underline}
+.artifactTable .row{grid-template-columns:1.55fr .8fr .45fr .45fr .6fr}
+.artifactTable .row.header{align-items:center}
+@media(max-width:800px){.artifactTools{grid-template-columns:1fr 1fr}.artifactSearch{grid-column:1/-1}.artifactTable .row{grid-template-columns:1.6fr .55fr .55fr}.artifactTable .row>:nth-child(2),.artifactTable .row>:nth-child(5){display:none}}
+@media(max-width:520px){.artifactTools{grid-template-columns:1fr}.artifactSearch{grid-column:auto}}
