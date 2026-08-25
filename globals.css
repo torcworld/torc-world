@@ -47,6 +47,15 @@ a{color:inherit;text-decoration:none}.shell{max-width:1180px;margin:0 auto;paddi
 
 .commissionCreditPreview{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}.commissionCreditPreview span,.creditExample span{display:block;font:10px Arial,sans-serif;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin-bottom:5px}.commissionCreditPreview strong,.creditExample strong{display:block;font:600 14px/1.4 Arial,sans-serif;color:var(--ink)}.creditExample{border:1px solid var(--line);background:rgba(0,0,0,.025);padding:14px 15px;margin:12px 0 4px}.microHelp{font:12px/1.45 Arial,sans-serif;color:var(--muted);margin-top:-10px}
 
-/* For Organizations */
-.orgIntro{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:start}.orgPrinciple{border-left:3px solid var(--ink);padding-left:20px}.orgPrinciple b{font-size:20px}.orgPrinciple p{color:#3a3833}.orgCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:20px}.orgCards article{background:var(--paper);padding:26px}.orgCards h3{margin:0 0 9px;font-size:22px}.orgCards p{margin:0;color:#3a3833}.orgContact{max-width:760px}.orgHomeBand{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}.orgHomeBand>div:first-child{max-width:760px}
+/* For Organizations corrected */
+.orgIntro{display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:start}
+.orgPrinciple{border-left:3px solid var(--ink);padding-left:20px}
+.orgPrinciple b{font-size:20px}
+.orgPrinciple p{color:#3a3833}
+.orgCards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:20px}
+.orgCards article{background:var(--paper);padding:26px}
+.orgCards h3{margin:0 0 9px;font-size:22px}
+.orgCards p{margin:0;color:#3a3833}
+.orgHomeBand{display:flex;justify-content:space-between;align-items:flex-end;gap:40px}
+.orgHomeBand>div:first-child{max-width:760px}
 @media(max-width:800px){.orgIntro,.orgCards{grid-template-columns:1fr}.orgHomeBand{display:block}.orgHomeBand .buttons{margin-top:20px}}
