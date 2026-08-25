@@ -1,0 +1,75 @@
+## Operational Order (TORC): **Level 3c — Integrated Recursive Consciousness**
+
+*The Magic Mountain* is best classified as **3c**, not because of its philosophical density, scale, or canonical reputation, but because its dominant completed operation is the recursive confrontation and eventual integration of incompatible orientations toward existence. The protocol requires classification by what the artifact *does*, independently of prestige, symbolism, philosophical subject matter, or complexity. 
+
+The sanatorium functions as more than a symbolic miniature of European civilization. Through Hans Castorp's prolonged exposure to illness, mortality, eros, temporality, rational humanism, radical skepticism, religious absolutism, and competing conceptions of freedom, the novel progressively makes **the conditions by which consciousness organizes existence** its operative object. Settembrini and Naphta matter not simply as allegorical representatives of ideologies; their incompatible systems repeatedly force Castorp—and structurally the novel—to test whether any single conceptual orientation can adequately contain embodied human existence.
+
+The decisive completed operation is therefore neither direct representation nor symbolic organization. It is recursive: representation and interpretation themselves become objects of investigation, exactly the transition the protocol identifies as Level 3.  More specifically, the novel does not merely confront an irreducible existential fracture. Its late movement, most clearly crystallized in Castorp's snow experience and then tested rather than simply vindicated by the remainder, constructs an orientation capable of holding incompatible claims together: reason without rationalist reduction, mortality without nihilism, eros without surrender to dissolution, and human attachment without pretending that contradiction has disappeared.
+
+That is the protocol's characteristic 3c operation: contradiction remains operative while consciousness develops a coherent orientation capable of containing it. The distinction is important because integration is explicitly **not** equivalent to resolution, consolation, optimism, or closure.
+
+### Boundary analysis
+
+**Why 3c rather than 3b.** A 3b account captures a very large portion of the novel but does not adequately explain its completed trajectory. The existential contradictions are genuine rather than merely stylistic: mortality gives life intensity while threatening its meaning; reason and irrationality expose limitations in each other; freedom repeatedly generates opposing political and metaphysical claims; time is simultaneously measurable chronology and radically unstable lived experience. These tensions survive removal of the sanatorium's most conspicuous symbolic apparatus, satisfying the protocol's demand that existential fracture not be manufactured merely by formal strangeness.
+
+But the novel does not finally remain at confrontation. Castorp's development attempts to preserve the opposed truths exposed by his competing teachers without simply choosing one pole. The integrative achievement is deliberately precarious—indeed the ending subjects it to catastrophe rather than certifying a happy synthesis—but precariousness does not disqualify 3c. The relevant protocol requirement is preservation of contradiction within a coherent existential orientation, not permanent resolution.
+
+Thus symbolic organization is insufficient, existential fracture is positively and globally present, and integration performs additional indispensable work. The protocol specifically requires positive evidence of this additional operation before moving from 3b to 3c. 
+
+**Why not G.** This boundary is considerably clearer. The protocol states that no accumulation of complexity, abstraction, recursion, ingenuity, or symbolic density produces G. G requires an **explanatory relocation**: an independently identifiable target must become intelligible through a newly disclosed generative structure that makes the previously sufficient explanatory basis inadequate. 
+
+The candidate target would plausibly be something like *modern European consciousness under conditions of mortality, ideological conflict, and historical crisis*. But the novel's achievement remains primarily recursive-integrative. Its architecture stages and integrates competing explanatory orientations; it does not establish a generative mechanism that explains why otherwise distinct instances of that independently identifiable target take the forms they do.
+
+In particular:
+
+- **Independent target:** identifiable—modern consciousness/existence can be specified independently of the fictional sanatorium. 
+- **Previously unseen generative structure:** **not sufficiently established.** The sanatorium, illness, altered temporality, and ideological dialectic constitute an extraordinarily productive representational architecture, but their explanatory relations depend substantially on the novel's constructed situation. 
+- **Explanatory replacement:** **fails.** The 3c account remains sufficient: existential contradictions are recursively exposed and integrated. No additional relocated explanatory foundation is necessary to explain the completed artifact. 
+- **Generative mechanism vs. explanatory schema:** **fails the stronger test.** The novel supplies an encompassing schema in which mortality, time, eros, politics, illness, and intellectual systems illuminate one another, but it does not demonstrate a mechanism generating nontrivial explanatory consequences across independent instances of a target domain. 
+- **Explanatory-object firewall:** the extraordinary transformation of representation and consciousness does not itself establish transformation of the target's explanatory foundation. 
+- **Artifact-internal-generativity firewall:** the sanatorium's immense semantic productivity cannot itself count as G merely because it generates the novel's meanings. 
+
+The protocol is categorical here: G relocates explanation; Level 3 can instead transform consciousness *within* the problem-space.  *The Magic Mountain* achieves the latter. **3c is therefore the lowest sufficient—and highest warranted—classification.**
+
+## Cognitive Magnitude Score (CMS)
+
+I scored the six dimensions independently before aggregation, following the protocol's required evidence → integer-anchor → interpolation → commitment procedure. 
+
+| DimensionScoreArtifact-specific basis |         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RL — Relational Load**              | **9.0** | The novel sustains exceptional heterogeneous interdependence among character relations, ideological positions, illness/health, eros/death, subjective/objective time, pedagogical development, political history, and recurring symbolic structures. Remote elements materially modify one another: apparently local medical, erotic, temporal, and conversational episodes acquire significance through relations extending across the entire work. This satisfies the protocol's 9 anchor of relations spanning substantially different levels/domains while remaining mutually consequential.  It does not warrant movement far toward 10 because portions of the architecture remain meaningfully decomposable into relatively autonomous episodes and debates rather than exhibiting maximal global interdependence.                                                                                         |
+| **AD — Abstraction Depth**            | **9.0** | Concrete narrative particulars repeatedly support multiple disciplined abstraction layers: biological illness → mortality; measured time → phenomenology of duration; education → ideological formation; individual consciousness → European intellectual crisis; competing doctrines → meta-level inquiry into the adequacy of doctrinal consciousness itself. The concrete/psychological/symbolic/philosophical/historical layers preserve unusually strong correspondence. This reaches the 9 anchor's “very deep invariant/meta-level structures” organizing heterogeneous material.  I do not assign higher movement toward 10 because the abstraction architecture, though exceptional, remains plural and discursive rather than achieving the protocol's implied reference-level extremity of disciplined abstraction.                                                                                    |
+| **CD — Constraint Density**           | **8.3** | Many heterogeneous requirements constrain successful construction simultaneously: Castorp's developmental continuity; the seven-year temporal architecture; ideological opposition; medical plausibility within the fictional regime; recurring motifs; comic/social realism; philosophical dialogue; erotic development; mortality; and eventual historical re-entry. Changing major elements would compromise several others. This fully satisfies 8: heterogeneous requirements interact across levels and local optimization regularly affects other requirements.  It moves clearly but not overwhelmingly toward 9 because the novel remains expansive enough to tolerate substantial local substitution, excursus, compression, or rearrangement while retaining its central achievement; therefore the viable construction class is not narrow enough for exceptional 9-level solution-space compression. |
+| **ID — Inferential Demand**           | **8.4** | The successful construction requires highly non-obvious transitions from concrete sanatorium experience to altered temporal consciousness, from illness to epistemic and existential instability, and from mutually destructive ideological positions toward an orientation preserving rather than cancelling contradiction. No routine inferential route dictates those connections. This fully satisfies the 8 anchor: highly non-obvious restructurings occur amid meaningful alternatives without a routine route.  Movement toward 9 is substantial but incomplete because much of the inferential architecture is progressively supplied by explicit debates, motifs, and repeated dialectical development rather than remaining deeply underdetermined even given the available information.                                                                                                               |
+| **IC — Integration Complexity**       | **8.7** | A relatively small governing architecture—sanatorium, illness, time, education/initiation, mortality, eros, and competing ideological teachers—organizes an enormous heterogeneous field spanning medicine, politics, metaphysics, sexuality, music, history, psychology, and phenomenology. Those structures retain distinct identities rather than collapsing into a single allegorical key, while allowing extensive reconstruction of individual episodes from the whole. This comfortably satisfies 8 and approaches 9. The shortfall is economy: the novel achieves huge integration partly through huge representational extent and sustained explicit elaboration; its governing architecture is powerful but not sufficiently economical relative to its load for the full 9 anchor. The protocol explicitly forbids equating sheer integration or length with compression.                              |
+| **GR — Generative Reach**             | **7.2** | The central recursive architecture—consciousness tested through competing totalizing interpretations under mortality, temporality, embodiment, and social-historical pressure—transfers robustly across varied human and cultural situations. It is considerably more than a case-specific allegory. This satisfies 7-level transfer across substantially varied cases with identifiable boundaries. It has limited movement toward 8 because its structural insights remain powerful outside the sanatorium setting. But 8 requires power across **markedly heterogeneous cases/problem-spaces** with limited reconstruction; the demonstrated architecture remains principally anchored to human existential, ideological, psychological, and historical experience. Broad human relevance cannot automatically be counted as extreme cross-domain transfer under the protocol's GR firewall.                   |
+
+**Committed dimensional profile:** **9.0 / 9.0 / 8.3 / 8.4 / 8.7 / 7.2**
+
+The profile is now locked. Under the protocol, CMS receives equal weighting across the six committed scores and is calculated as their mean × 100, rounded to the nearest integer. 
+
+(9.0+9.0+8.3+8.4+8.7+7.2)/6=8.4333… 
+
+**CMS = 843**
+
+The architecture is notably high in relational load and abstraction, with very high integration and inference, somewhat lower constraint density, and a distinct GR bottleneck caused by the protocol's requirement for demonstrated structural transfer rather than broad thematic relevance.
+
+**Demonstrated Intelligence Profile (DIP)**
+
+**3c | 843**
+
+RL: 9.0
+
+AD: 9.0
+
+CD: 8.3
+
+ID: 8.4
+
+IC: 8.7
+
+GR: 7.2
+
+**Confidence:** Moderate
+
+**Primary uncertainty:** Whether the novel's culminating integrative movement is sufficiently dominant and structurally sustained through the completed ending to satisfy 3c, rather than constituting a powerful but locally concentrated integration within an otherwise 3b-dominant artifact.
