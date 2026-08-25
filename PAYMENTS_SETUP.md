@@ -56,3 +56,7 @@ Add/confirm:
 - Stripe account identity/business/tax settings appropriate to your situation
 
 For live launch, test one commission using Stripe test mode first.
+
+## Attribution wording
+
+The public commission flow now highlights optional permanent credit, using `Commissioned by A. Smith · September 2026` as the generic example.

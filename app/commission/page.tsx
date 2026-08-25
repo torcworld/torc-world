@@ -37,11 +37,11 @@ export default function Commission(){
    }catch(err:any){setError(err?.message||'Could not start checkout.');setBusy(false)}
  }
  return <main>
-   <header className="page-title"><div className="eyebrow">Expand the TORC archive</div><h1>Commission an artifact.</h1><p className="lede">Choose a known public artifact that is not yet in the archive. For <b>$9.99</b>, it enters the TORC evaluation queue and, once completed, receives the same independent evaluation methodology as the rest of the archive.</p></header>
+   <header className="page-title"><div className="eyebrow">Expand the TORC archive</div><h1>Commission an artifact.</h1><p className="lede">Choose a known public artifact that is not yet in the archive. For <b>$9.99</b>, you commission its TORC/DIP evaluation and help bring it permanently into the public archive.</p></header>
 
    <section className="commissionIntro">
-    <div className="commissionPrice"><span>Public artifact commission</span><b>$9.99</b><small>One artifact · one public TORC/DIP evaluation</small></div>
-    <div className="commissionPrinciple"><b>You choose what gets evaluated. You do not influence the result.</b><p>Payment determines queue inclusion only. It never affects TORC classification, CMS, dimensional scores, evaluator reasoning, publication language, or whether the result is flattering.</p></div>
+    <div className="commissionPrice"><span>Public artifact commission</span><b>$9.99</b><small>One artifact · one public TORC/DIP evaluation</small><div className="commissionCreditPreview"><span>Your commission can be credited permanently</span><strong>Commissioned by A. Smith · September 2026</strong></div></div>
+    <div className="commissionPrinciple"><b>Your commission. Your place in the archive.</b><p>If you want, the published artifact page will permanently credit you as the person who commissioned its evaluation. Use your full name, initials, a nickname, or remain anonymous.</p><p><b>You choose what gets evaluated. You do not influence the result.</b> Payment determines queue inclusion only. It never affects TORC classification, CMS, dimensional scores, evaluator reasoning, publication language, or whether the result is flattering.</p></div>
    </section>
 
    <section className="section commissionLayout">
@@ -58,9 +58,9 @@ export default function Commission(){
 
       <div className="formDivider"/>
       <div className="eyebrow">Commissioner credit</div>
-      <p className="formHelp">When the evaluation is published, you can be permanently credited on the artifact page as the person who commissioned its addition to the TORC Archive.</p>
-      <label className={anonymous?'disabledField':''}><span>Display name</span><input disabled={anonymous} value={name} onChange={e=>setName(e.target.value)} placeholder="e.g. J. Johnson"/></label>
-      <label className="checkRow"><input type="checkbox" checked={anonymous} onChange={e=>setAnonymous(e.target.checked)}/><span>Publish my commission anonymously</span></label>
+      <p className="formHelp"><b>Optional permanent credit.</b> When the evaluation is published, your chosen display name can appear on the artifact page as the person who commissioned its addition to the TORC Archive.</p><div className="creditExample"><span>Example on the finished artifact page</span><strong>Commissioned by A. Smith · September 2026</strong></div>
+      <label className={anonymous?'disabledField':''}><span>Display name</span><input disabled={anonymous} value={name} onChange={e=>setName(e.target.value)} placeholder="e.g. A. Smith"/></label>
+      <label className="checkRow"><input type="checkbox" checked={anonymous} onChange={e=>setAnonymous(e.target.checked)}/><span>Keep this commission anonymous</span></label><p className="microHelp">You may use a full name, initials, or nickname. The display name is public only if you choose attribution.</p>
       <label><span>Email *</span><input required type="email" value={email} onChange={e=>setEmail(e.target.value)} placeholder="For payment receipt and fulfillment contact"/></label>
 
       <div className="formDivider"/>
@@ -71,7 +71,7 @@ export default function Commission(){
     </form>
 
     <aside className="commissionAside">
-      <div><div className="eyebrow">What happens next</div><ol><li>You commission the artifact.</li><li>It enters the evaluation queue.</li><li>TORC applies the same independent methodology used throughout the archive.</li><li>The final evaluation becomes public.</li><li>If selected, your commissioner credit remains on the artifact page.</li></ol></div>
+      <div><div className="eyebrow">What happens next</div><ol><li>You commission the artifact.</li><li>It enters the evaluation queue.</li><li>TORC applies the same independent methodology used throughout the archive.</li><li>The final evaluation becomes public.</li><li>If you choose attribution, your commissioner credit remains permanently on the artifact page.</li></ol></div>
       <div><div className="eyebrow">Public artifacts only</div><p>This commission form is for already-known, externally identifiable artifacts. Do not upload unpublished manuscripts, private screenplays, confidential work, or copyrighted source files here.</p><Link href="/evaluate-your-work">Want your own work evaluated? →</Link></div>
       <div><div className="eyebrow">No score shopping</div><p>A low, disputed, or unexpected TORC/DIP result is still the result. Commissioning buys the evaluation process and archive addition—not a particular outcome.</p></div>
     </aside>
