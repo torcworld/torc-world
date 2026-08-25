@@ -16,3 +16,11 @@ a{color:inherit;text-decoration:none}.shell{max-width:1180px;margin:0 auto;paddi
 .auditReport ul{padding-left:22px}.auditReport code{font-size:.9em}
 .methodDimension{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);max-width:850px}
 .methodDimension h3{margin:0 0 7px}.methodDimension p{margin:0;font-size:17px;line-height:1.55}
+
+.tableScroll{overflow-x:auto;margin:18px 0 30px;border-top:1px solid var(--ink)}
+.cleanTable{width:100%;min-width:780px;border-collapse:collapse;font:12px/1.35 Arial,sans-serif}
+.cleanTable th{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+.cleanTable th,.cleanTable td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.cleanTable th:first-child,.cleanTable td:first-child{text-align:left}
+.cleanTable tbody tr:hover{background:rgba(0,0,0,.025)}
+.cleanTable.compact{min-width:650px}
