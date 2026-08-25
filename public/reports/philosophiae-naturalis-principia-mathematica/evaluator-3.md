@@ -1,0 +1,105 @@
+## GΩ — Generative Consciousness: Successor-Baseline Necessity
+
+*Philosophiæ Naturalis Principia Mathematica* warrants **GΩ** under the supplied protocol.
+
+The decisive operation is not merely mathematical sophistication, successful prediction, or synthesis. The artifact relocates the explanatory basis of terrestrial and celestial motion: observed trajectories are treated as consequences of mathematically characterizable forces acting according to general laws, with universal gravitation supplying a single dynamical mechanism across planetary, lunar, cometary, terrestrial, and tidal phenomena. Newton's own preface states the architecture explicitly: infer forces from motions, then derive further phenomena from those forces; Book III applies that architecture to the system of the world. 
+
+That matters because the protocol defines G as **explanatory relocation**, not exceptional complexity or technical achievement, and GΩ adds the requirement that the relocation become a non-optional baseline for adequate successor inquiry. 
+
+### G gate analysis
+
+**1. Independent Target Test — PASS.**
+
+The independently identifiable target is **the motion of material bodies, especially the observed motions of terrestrial and celestial bodies and the physical causes producing those motions**. This target exists independently of the Principia's formal construction.
+
+**2. Previously unseen generative structure — PASS.**
+
+The governing structure combines laws of motion with force-based dynamics and universal inverse-square gravitation. It does not simply classify planetary paths. From gravitational forces it derives consequences for planets, the Moon, comets, and the sea; the universal attraction is extended across terrestrial and celestial bodies. 
+
+**3. Generative Mechanism rather than explanatory schema — PASS.**
+
+The structure explains *why* otherwise different motions take the forms they do. Force laws generate trajectories and perturbations rather than merely arranging observed trajectories into a descriptive picture. Book I develops the relation between forces and resulting motions; Book III moves from astronomical phenomena to gravitational forces and back from those forces to further motions. 
+
+**4. Explanatory Replacement Principle — PASS.**
+
+Once this structure is operating, a merely kinematic account of planetary trajectories is insufficient to explain the artifact. The central question has shifted from describing motions to determining the forces capable of producing them and deriving phenomena from those forces. That is precisely the protocol's distinction between adding an interpretation and relocating what explains the target. 
+
+**5. Explanatory-Object Firewall — PASS.**
+
+This is not merely a superior calculating technique. The explanatory object itself changes: observed motions become effects requiring dynamical explanation through forces and laws. Hence the achievement survives the protocol's prohibition on treating improved calculation, representation, or tractability as G.
+
+**6. Computational/Procedural Generativity Firewall — PASS.**
+
+The mathematics is not the sole source of generativity. The artifact uses mathematical derivation to establish physical consequences concerning an independently constrained empirical target.
+
+**7. Artifact-Internal Generativity Firewall — PASS.**
+
+The mechanism does not merely generate the Principia's own formal world. Its claims are constrained by independently observable planetary, lunar, cometary, tidal, and terrestrial phenomena. Newton explicitly uses astronomical phenomena to infer gravitational forces and then derives additional phenomena. 
+
+**8. Fallible Explanation Principle — PASS.**
+
+The later limitations of Newtonian gravitation do not invalidate G. The protocol explicitly separates ultimate truth from successful explanatory relocation. Newtonian gravity can therefore be superseded while the Principia's completed operation remains generative.
+
+Thus **Levels 1–3 are insufficient**. Representation, symbolism, correction, existential confrontation, or recursive integration do not capture the artifact's dominant operation. Its organizing achievement is construction of a generative explanatory basis for physical motion.
+
+### Why GΩ rather than G
+
+The additional Ω condition also passes. The protocol requires independent successor evidence rather than reputation or mere historical influence. 
+
+Successor mechanics did not simply return to the pre-Principia explanatory landscape. Eighteenth-century mechanics generalized and reformulated the dynamical project—Euler, for example, developed the laws into the later form of Newtonian mechanics—and subsequent celestial mechanics explicitly proceeded from research predicated on the Principia.  Even the relativistic replacement does not make the transformed problem disappear: Newtonian gravity survives as a limiting approximation of general relativity. 
+
+So the **Successor-Baseline Test passes**: adequate successor theories can reject Newton's particular gravitational ontology, absolute-space framework, or equations at fundamental scales, but they cannot simply revert to treating celestial motions as an autonomous descriptive astronomy with no dynamical explanatory problem. They must supply an account of the dynamical relations the Principia made explanatory.
+
+## Boundary analysis
+
+**Why not merely G:** G captures the artifact-internal explanatory relocation, but stops short of the independently evidenced successor constraint. Here that additional evidence exists: subsequent mechanics, celestial mechanics, and ultimately relativistic gravitation continue to formulate the problem in a landscape transformed by the Principia. That satisfies the Ω requirement rather than merely documenting fame or influence.
+
+**Why not M:** the Principia does **not** establish an unavoidable constraint upon the entire space of admissible physical frameworks. M requires a structural constraint that alternative adequate frameworks cannot evade while remaining adequate.  General relativity demonstrates the relevant distinction particularly clearly: gravitational force in Newton's sense can be replaced by spacetime geometry, while Newtonian gravitation survives only as an appropriate limiting case. 
+
+Therefore the **Framework-Space Test fails for M**. The Principia permanently transforms the explanatory problem, but its particular force/space framework does not constrain every adequate successor framework. That is GΩ, not M.
+
+---
+
+## Cognitive Magnitude Score
+
+I scored the six dimensions independently before aggregation, as required. The protocol explicitly forbids TORC leakage and aggregate tuning, requires decimal scores to be anchored between substantive integer levels, and defines CMS only after commitment of the six-dimensional profile. 
+
+**RL — 9.0.** The artifact coordinates mathematical definitions, laws of motion, geometrical demonstrations, force relations, orbital geometry, mass, distance, perturbation, terrestrial gravity, lunar motion, cometary motion, and tides in a mutually consequential architecture. This meets the protocol's 9 anchor of heterogeneous interdependence across substantially different levels rather than merely displaying many components.  Principal evidence: the passage from general dynamics in Books I–II to multiple interdependent physical systems in Book III.
+
+**AD — 8.7.** The work moves far beyond individual observations to abstract invariants governing arbitrary bodies and forces, then maps those structures back onto empirical systems. This clearly satisfies 8's “deep constrained abstraction” and approaches 9, but I stop below 9 because its abstraction architecture, though exceptionally deep, remains predominantly within a coherent mathematical-physical ontology rather than demonstrating the broader heterogeneous meta-level organization required by the full 9 anchor.  Principal evidence: general mathematical treatment of forces and trajectories followed by systematic physical instantiation.
+
+**CD — 9.0.** Numerous heterogeneous constraints converge: the same architecture must respect mathematical proofs, the laws of motion, orbital relations, measured astronomical phenomena, terrestrial gravity, mass relations, perturbations, comet trajectories, and lunar/tidal behavior. Changing central assumptions propagates across much of the construction. This satisfies the protocol's exceptional solution-space-compression anchor rather than merely being “difficult.”  Principal evidence: the simultaneous empirical and mathematical obligations imposed on universal gravitation.
+
+**ID — 9.0.** The inferential transition from observed motions and existing geometrical/astronomical information to a unified dynamical structure of universal gravitation is profoundly underdetermined by routine procedure. The artifact must discover non-obvious relations between apparently distinct terrestrial and celestial phenomena rather than execute an established algorithm. This meets the protocol's 9 anchor of exceptional inferential reconstruction.  Principal evidence: deriving gravitational structure from phenomena and then reversing the inferential direction to derive further phenomena.
+
+**IC — 9.0.** A comparatively compact governing architecture—laws of motion plus mathematically specified force relations and gravitation—organizes a very large heterogeneous field while retaining enough structure to derive detailed consequences. That directly satisfies the protocol's 9 anchor: economical architecture, unusually fine preservation, and extensive derivational/reconstructive power.  Principal evidence: the same core dynamical architecture generates accounts of planetary, lunar, cometary, terrestrial, and tidal phenomena.
+
+**GR — 8.8.** The architecture transfers with high fidelity from terrestrial projectiles and falling bodies to satellites, planets, comets, many-body interactions, and other mechanical systems. This strongly approaches 9, but I keep it below 9 because these are highly heterogeneous *cases* while remaining largely within the physical-mechanical problem-space; the protocol specifically warns that repeated success within one ontology cannot by itself establish extreme GR.  Principal evidence: preservation of the force/motion architecture across radically different scales and physical configurations, with a bounded mechanical domain.
+
+The committed profile is therefore **9.0 / 8.7 / 9.0 / 9.0 / 9.0 / 8.8**.
+
+Under the protocol, all dimensions receive equal weight, CMS is the mean multiplied by 100, and the result is rounded to the nearest integer.  
+
+CMS=69.0+8.7+9.0+9.0+9.0+8.8​×100=888.33… 
+
+**CMS = 888**
+
+**Demonstrated Intelligence Profile (DIP)**
+
+**GΩ | 888**
+
+RL: 9.0
+
+AD: 8.7
+
+CD: 9.0
+
+ID: 9.0
+
+IC: 9.0
+
+GR: 8.8
+
+**Confidence:** Moderate
+
+**Primary uncertainty:** Whether successor-baseline necessity should be attributed specifically to the completed *Principia*, rather than partly to the later Eulerian/Lagrangian reformulation of its dynamical architecture; this affects GΩ versus G more than it affects the dimensional scores.
