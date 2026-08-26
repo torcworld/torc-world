@@ -1,25 +1,19 @@
-# TORC Navigation / Compare Repair
+# TORC — Artifacts Page Cleanup
 
-REPAIR OVERLAY — not a complete repository.
+UPDATE/OVERLAY PATCH — not a complete repository.
 
-This fixes the prior TORC_NAV_COMPARE_REPOSITION patch.
-
-Cause of the visual break:
-The previous patch accidentally replaced `app/globals.css` with only the small new Compare CSS block. Because `globals.css` controls the entire site, that stripped the site's real design and made the website look like a fallback/backup version.
-
-This repair:
-- Restores the COMPLETE original TORC global stylesheet.
-- Appends the small Compare utility styling safely at the end.
-- Keeps the intended primary navigation:
-  Artifacts · Theory · Evaluate an Artifact · Organizations · About
-- Keeps Compare removed from primary navigation.
-- Keeps Compare as a secondary feature on the Artifacts page.
-- Keeps the improved Evaluate an Artifact copy.
+Changes:
+- “Artifacts” becomes the dominant page heading.
+- “Evaluated objects · growing database” sits directly beneath it.
+- Removes the long Operational Order / Cognitive Magnitude paragraph.
+- Adds the simple prompt: “Explore the TORC database.”
+- Moves “Want your own artifact analyzed?” and the black evaluation button into the header on the right.
+- Removes the large evaluation CTA box from above the archive.
+- Removes Compare from above the archive.
+- Places Compare below the full artifact table as a secondary archive tool.
+- Search, filters, sort, artifact data, and Compare functionality are unchanged.
+- Uses a local CSS module only; no global stylesheet is touched.
 
 Files:
-- app/globals.css — full stylesheet restored + Compare rules appended
-- app/layout.tsx
 - app/artifacts/page.tsx
-- app/evaluate-your-work/page.tsx
-
-Use this repair OVER the currently broken deployment.
+- app/artifacts/artifacts.module.css

@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import {useEffect,useMemo,useState} from 'react';
 import {artifacts} from '@/lib/artifacts';
+import styles from './artifacts.module.css';
 
 const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
 const torcOrder=['M','GΩ','G','3c','3b','3a','2','1'];
@@ -33,7 +34,8 @@ export default function Artifacts(){
      return 0;
    });
  },[domain,torc,query,sort,seed]);
- return <main><header className="page-title"><div className="eyebrow">Evaluated objects · growing database</div><h1>Artifacts</h1><p className="lede">Search, filter, sort, or explore the TORC database. Operational Order and Cognitive Magnitude are separate coordinates. Together they form the artifact's TORC evaluation.</p></header>
+ return <main><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Evaluated objects · growing database</div></div><div className={styles.headerCta}><div><b>Want your own artifact analyzed?</b><span>Independent TORC evaluation for original work.</span></div><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div></header>
+ <div className={styles.exploreIntro}>Explore the TORC database.</div>
  <section className="artifactTools">
    <label className="artifactSearch"><span>Search</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search artifact, creator, medium, Operational Order…"/></label>
    <label><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value)}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude Score — highest first</option><option value="cms-asc">Cognitive Magnitude Score — lowest first</option><option value="torc-desc">Operational Order — high to low</option><option value="torc-asc">Operational Order — low to high</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
@@ -41,8 +43,7 @@ export default function Artifacts(){
    <label><span>Operational Order</span><select value={torc} onChange={e=>setTorc(e.target.value)}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
  <div className="artifactToolbar"><span>{rows.length} artifacts shown</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
- <div className="archiveCommission"><div><b>Want your own artifact analyzed?</b><span>TORC evaluation is available for original screenplays, manuscripts, research, music, games, and other work. Your work is evaluated on the same framework as the public archive.</span></div><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div>
- <div className="archiveCompare"><div><b>Compare two artifacts</b><span>Put two published TORC profiles side by side to examine differences in Operational Order and cognitive magnitude.</span></div><Link className="button" href="/compare">Compare artifacts →</Link></div>
  <div className="table artifactTable"><div className="row header"><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact ↕</button><span>Medium</span><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order ↕</button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score ↕</button><span>Status</span></div>{rows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span><span className={a.status==='evaluated'?'status done':'status'}>{a.status==='evaluated'?'Published':'Evaluation in progress'}</span></Link>)}</div>
+ <section className={styles.compareFooter}><div><div className="eyebrow">Archive tool</div><h2>Compare two artifacts</h2><p>Place two published TORC profiles side by side and examine how their Operational Order and cognitive magnitude differ.</p></div><Link className="button" href="/compare">Compare artifacts →</Link></section>
  </main>
 }
