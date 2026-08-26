@@ -3,7 +3,7 @@
   grid-template-columns: minmax(0,1fr) minmax(330px,520px);
   gap: 70px;
   align-items: center;
-  padding: 48px 0 42px;
+  padding: 48px 0 120px;
   margin-bottom: 30px;
   border-bottom: 1px solid var(--ink);
 }
@@ -52,11 +52,11 @@
 .inlineCompareAction { margin-top:15px; text-align:right; }
 .inlineCompareAction :global(.button) { display:inline-block; }
 @media(max-width:860px){
- .artifactHeader { grid-template-columns:1fr; gap:0; align-items:start; }
+ .artifactHeader { grid-template-columns:1fr; gap:0; align-items:start; padding-bottom:96px; }
  .primaryCta { justify-self:start; width:100%; max-width:460px; margin-top:48px; padding-top:0; }
 }
 @media(max-width:620px){
- .artifactHeader { padding-top:30px; }
+ .artifactHeader { padding-top:30px; padding-bottom:88px; }
  .primaryCta { margin-top:46px; }
  .primaryCta :global(.button) { display:block; width:fit-content; }
  .exploreIntro { font-size:21px; }
