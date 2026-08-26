@@ -8,7 +8,6 @@ export default function Theory(){
    <p className="lede">A Theory of Representational Consciousness — and a framework for evaluating the cognition demonstrated in completed artifacts.</p>
    <div className="buttons">
     <Link className="button primary" href="/theory/book">Read the living edition</Link>
-    <Link className="button" href="/artifacts">Explore evaluations</Link>
    </div>
   </header>
 

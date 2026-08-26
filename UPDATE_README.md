@@ -1,11 +1,17 @@
-# TORC Reservoir Dogs + Shannon Repair
+# TORC Theory / Living Book UI cleanup
 
-UPDATE/OVERLAY PATCH — not a complete repository.
+Replace these files in the website repository with the files in this package.
 
-This repairs the actual cause of the two failed integrations: both slugs already existed in `lib/artifacts.ts` as `in-progress`, and the earlier patches failed to replace those existing records.
+## Changes
 
-This package replaces those records in place and includes all artifact/report/evaluator pages.
+### `/theory`
+- Removed the white **Explore evaluations** button beside **Read the living edition**.
+- The black **Read the living edition** button remains unchanged.
 
-Reservoir Dogs: Level 2 | 745 (5/7 Level 2; 1 Level 1; 1 3b).
-
-A Mathematical Theory of Communication: NEW authoritative result GΩ | 908 (6/7 GΩ; 1 M), replacing the earlier Shannon aggregate.
+### `/theory/book`
+- Removed the white **Theory overview** button from the book header.
+- Kept the opening book title, subtitle, author, and **A Theory of Representational Consciousness** presentation in the page header.
+- Kept the **Living edition** notice unchanged.
+- Removed the duplicated title/subtitle/theory label/author block from the book body.
+- The actual book text now begins immediately with **Personal Motivation** after the Living Edition notice.
+- No chapter/body prose was otherwise changed.
