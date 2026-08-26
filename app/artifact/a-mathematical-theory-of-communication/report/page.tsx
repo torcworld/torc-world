@@ -9,4 +9,4 @@ function renderLine(line:string,i:number){
  if(t==='---')return <hr key={i}/>;
  return <p key={i}>{line.replace(/\*\*/g,'')}</p>;
 }
-export default function Page(){return <main><header className="page-title"><div className="eyebrow">Consensus report</div><h1>A Mathematical Theory of Communication</h1><p className="lede">GΩ (modal; no majority consensus) | 913 · Seven-evaluator aggregate</p></header><section className="section prose">{consensusReport.split('\n').map(renderLine)}</section><Link className="button" href="/artifact/a-mathematical-theory-of-communication">← Back to artifact</Link></main>}
+export default function Page(){return <main><header className="page-title"><div className="eyebrow">Consensus report</div><h1>A Mathematical Theory of Communication</h1><p className="lede">GΩ | 908 · Seven-evaluator consensus</p></header><section className="section prose">{consensusReport.split('\n').map(renderLine)}</section><Link className="button" href="/artifact/a-mathematical-theory-of-communication">← Back to artifact</Link></main>}
