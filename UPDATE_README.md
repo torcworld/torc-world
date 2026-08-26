@@ -14,7 +14,7 @@ The old commission API/success files are intentionally not deleted by this patch
 
 ## Faust evaluation update
 - Promotes `faust` from in-progress to evaluated.
-- Consensus DIP: **3c | 883** (7/7 TORC agreement).
+- Consensus DIP: **3c | 883** (7/7 Operational Order agreement).
 - Adds the Faust artifact page, seven independent evaluator pages, and the full supplied consensus report.
 - Consensus dimensions: RL 9.0 · AD 9.2 · CD 8.6 · ID 8.7 · IC 9.0 · GR 8.3.
 - Keeps the artifact-analysis commercial route introduced by this patch; no commission artifacts are restored.
