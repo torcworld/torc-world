@@ -1,20 +1,20 @@
-# TORC.world update — A Serious Man + artifact analysis
+# TORC.world — canonical theory/book update
 
-Upload these files to the repository root, preserving paths.
+Upload the contents of this ZIP to the repository root, preserving paths.
 
-## Included
-- Adds **A Serious Man** (screenplay) as **3b | 800**, with the seven-evaluator record and consensus report.
-- Replaces public-facing **Commission an artifact** messaging on the homepage and artifact archive with **Have your artifact evaluated**.
-- Rebuilds `/evaluate-your-work` as the main artifact-analysis service page.
-- Redirects the old `/commission` route to `/evaluate-your-work`, so old links no longer expose the discontinued commission product.
-- No price has been invented. The page leaves evaluation depth/pricing open until you decide the actual packages.
+## What this changes
+- Replaces the Theory placeholder with **TORC: The Theory**.
+- Publishes the canonical book:
+  **The Age of False Depth: Intelligence, Representation, and What Artifacts Actually Do**
+  by **G. K. Muijlaert**.
+- Adds PDF and Word downloads under `/public/books/`.
+- Updates About to the locked terminology:
+  TORC = framework; Operational Order = depth/kind of cognitive disclosure;
+  Cognitive Magnitude = magnitude/architecture; CMS = Cognitive Magnitude Score;
+  DIP = combined profile.
+- Writes out **Cognitive Magnitude Score** in the Artifacts ranking interface instead of unexplained `CMS`.
 
-The old commission API/success files are intentionally not deleted by this patch; they become unreachable through the user-facing flow. They can be removed later once you decide whether any payment code should be reused for evaluation checkout.
-
-
-## Faust evaluation update
-- Promotes `faust` from in-progress to evaluated.
-- Consensus DIP: **3c | 883** (7/7 Operational Order agreement).
-- Adds the Faust artifact page, seven independent evaluator pages, and the full supplied consensus report.
-- Consensus dimensions: RL 9.0 · AD 9.2 · CD 8.6 · ID 8.7 · IC 9.0 · GR 8.3.
-- Keeps the artifact-analysis commercial route introduced by this patch; no commission artifacts are restored.
+## Deliberately untouched
+- Compare logic and artifact data are not changed.
+- Existing artifact pages/evaluator reports are not changed.
+- Existing navigation is not changed: keep the short nav label **Theory**.
