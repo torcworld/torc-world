@@ -1,19 +1,16 @@
-# TORC — Artifacts Page Cleanup
+# TORC — Artifacts Header Rebalance
 
 UPDATE/OVERLAY PATCH — not a complete repository.
 
-Changes:
-- “Artifacts” becomes the dominant page heading.
-- “Evaluated objects · growing database” sits directly beneath it.
-- Removes the long Operational Order / Cognitive Magnitude paragraph.
-- Adds the simple prompt: “Explore the TORC database.”
-- Moves “Want your own artifact analyzed?” and the black evaluation button into the header on the right.
-- Removes the large evaluation CTA box from above the archive.
-- Removes Compare from above the archive.
-- Places Compare below the full artifact table as a secondary archive tool.
-- Search, filters, sort, artifact data, and Compare functionality are unchanged.
-- Uses a local CSS module only; no global stylesheet is touched.
+This is the next layout experiment for the Artifacts page.
 
-Files:
-- app/artifacts/page.tsx
-- app/artifacts/artifacts.module.css
+Changes:
+- Keeps the large Artifacts heading and “Evaluated objects · growing database” beneath it.
+- Moves “Want your own artifact analyzed?” + the black evaluation button directly beneath the Artifacts heading.
+- On mobile, that CTA stays directly under the Artifacts identity, matching the preferred phone layout.
+- Moves Compare into a quiet, lightweight right-hand archive-tool area on desktop.
+- Compare becomes a simple text link rather than another heavy button.
+- On mobile, Compare stacks beneath the evaluation CTA and remains visible without crowding the search controls.
+- Removes the Compare block from the bottom of the artifact list.
+- Keeps “Explore the TORC database.” immediately before search/filter controls.
+- No global CSS changes; only the Artifacts page and its local CSS module are touched.
