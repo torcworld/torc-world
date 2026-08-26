@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {useEffect,useMemo,useState} from 'react';
 import {artifacts} from '@/lib/artifacts';
 
-const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Screenplays','Music','Chess','Art'];
+const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
 const torcOrder=['M','GΩ','G','3c','3b','3a','2','1'];
 function rank(t?:string){if(!t)return 99; const n=t.toLowerCase().replace('level ',''); const i=torcOrder.map(x=>x.toLowerCase()).indexOf(n); return i<0?98:i}
 function hash(s:string,seed:number){let h=seed|0;for(let i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;return h>>>0}
@@ -41,7 +41,7 @@ export default function Artifacts(){
    <label><span>TORC</span><select value={torc} onChange={e=>setTorc(e.target.value)}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
  <div className="artifactToolbar"><span>{rows.length} artifacts shown</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
- <div className="archiveCommission"><div><b>Can’t find an artifact?</b><span>Commission an independent TORC/DIP evaluation and add it permanently to the archive, with optional commissioner credit.</span></div><Link className="button" href="/commission">Commission an artifact →</Link></div>
+ <div className="archiveCommission"><div><b>Want your own artifact analyzed?</b><span>TORC/DIP evaluation is available for original screenplays, manuscripts, research, music, games, and other work. Your work is evaluated on the same framework as the public archive.</span></div><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div>
  <div className="table artifactTable"><div className="row header"><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact ↕</button><span>Medium</span><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>TORC ↕</button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>CMS ↕</button><span>Status</span></div>{rows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span><span className={a.status==='evaluated'?'status done':'status'}>{a.status==='evaluated'?'Published':'Evaluation in progress'}</span></Link>)}</div>
  </main>
 }
