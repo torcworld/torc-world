@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import {useEffect,useMemo,useState} from 'react';
 import {artifacts} from '@/lib/artifacts';
-import styles from './artifacts-v2.module.css';
+import styles from './artifacts-v3.module.css';
 
 const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
 const torcOrder=['M','GΩ','G','3c','3b','3a','2','1'];
@@ -15,6 +15,8 @@ export default function Artifacts(){
  const [query,setQuery]=useState('');
  const [sort,setSort]=useState('explore');
  const [seed,setSeed]=useState(17);
+ const [pageNumber,setPageNumber]=useState(1);
+ const pageSize=30;
  useEffect(()=>setSeed(Math.floor(Math.random()*1000000000)),[]);
  const torcs=useMemo(()=>['All',...Array.from(new Set(artifacts.filter(a=>a.status==='evaluated'&&a.torc).map(a=>String(a.torc)))).sort((a,b)=>rank(a)-rank(b))],[ ]);
  const rows=useMemo(()=>{
@@ -34,7 +36,11 @@ export default function Artifacts(){
      return 0;
    });
  },[domain,torc,query,sort,seed]);
- return <main><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Evaluated objects · growing database</div><div className={styles.primaryCta}><div><b>Want your own artifact analyzed?</b><span>Independent TORC evaluation for original work.</span></div><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div></div><aside className={styles.compareHeader}><div className="eyebrow">Archive tool</div><h2>Compare two artifacts</h2><p>See how two published TORC profiles differ in Operational Order and cognitive magnitude.</p><Link className={styles.compareLink} href="/compare">Compare artifacts →</Link></aside></header>
+ const totalPages=Math.max(1,Math.ceil(rows.length/pageSize));
+ const currentPage=Math.min(pageNumber,totalPages);
+ const visibleRows=rows.slice((currentPage-1)*pageSize,currentPage*pageSize);
+ useEffect(()=>setPageNumber(1),[domain,torc,query,sort,seed]);
+ return <main><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Evaluated objects · growing database</div><div className={styles.primaryCta}><div><b>Want your own artifact analyzed?</b><span>Independent TORC evaluation for original work.</span></div><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div></div></header>
  <div className={styles.exploreIntro}>Explore the TORC database.</div>
  <section className={`artifactTools ${styles.artifactToolsStrong}`}>
    <label className={`artifactSearch ${styles.controlLabel}`}><span>Search</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search artifact, creator, medium, Operational Order…"/></label>
@@ -42,7 +48,13 @@ export default function Artifacts(){
    <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>setDomain(e.target.value)}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
    <label className={styles.controlLabel}><span>Operational Order</span><select value={torc} onChange={e=>setTorc(e.target.value)}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
- <div className="artifactToolbar"><span>{rows.length} artifacts shown</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
- <div className="table artifactTable"><div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact ↕</button><span>Medium</span><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order ↕</button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score ↕</button><span>Status</span></div>{rows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span><span className={a.status==='evaluated'?'status done':'status'}>{a.status==='evaluated'?'Published':'Evaluation in progress'}</span></Link>)}</div>
+ <div className="artifactToolbar"><span>{rows.length} artifacts found · page {currentPage} of {totalPages}</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
+ <div className="table artifactTable"><div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact ↕</button><span>Medium</span><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order ↕</button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score ↕</button><span>Status</span></div>{visibleRows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span><span className={a.status==='evaluated'?'status done':'status'}>{a.status==='evaluated'?'Published':'Evaluation in progress'}</span></Link>)}</div>
+ <nav className={styles.pagination} aria-label="Artifact pages">
+   <button disabled={currentPage===1} onClick={()=>setPageNumber(p=>Math.max(1,p-1))}>← Previous</button>
+   <div className={styles.pageNumbers}>{Array.from({length:totalPages},(_,i)=>i+1).map(n=><button key={n} className={n===currentPage?styles.activePage:''} aria-current={n===currentPage?'page':undefined} onClick={()=>setPageNumber(n)}>{n}</button>)}</div>
+   <button disabled={currentPage===totalPages} onClick={()=>setPageNumber(p=>Math.min(totalPages,p+1))}>Next →</button>
+ </nav>
+ <section className={styles.compareFooter}><div><div className="eyebrow">Archive tool</div><h2>Compare two artifacts</h2><p>Choose two published TORC profiles and see how their Operational Order and cognitive magnitude differ.</p></div><Link className={styles.compareFooterLink} href="/compare">Compare artifacts →</Link></section>
  </main>
 }
