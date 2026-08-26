@@ -1,20 +1,22 @@
-# TORC.world — canonical theory/book update
+# TORC.world — living book + navigation update
 
 Upload the contents of this ZIP to the repository root, preserving paths.
 
-## What this changes
-- Replaces the Theory placeholder with **TORC: The Theory**.
-- Publishes the canonical book:
-  **The Age of False Depth: Intelligence, Representation, and What Artifacts Actually Do**
-  by **G. K. Muijlaert**.
-- Adds PDF and Word downloads under `/public/books/`.
-- Updates About to the locked terminology:
-  TORC = framework; Operational Order = depth/kind of cognitive disclosure;
-  Cognitive Magnitude = magnitude/architecture; CMS = Cognitive Magnitude Score;
-  DIP = combined profile.
-- Writes out **Cognitive Magnitude Score** in the Artifacts ranking interface instead of unexplained `CMS`.
+## Navigation order
+Artifacts · Compare · Theory · Evaluate an Artifact · Organizations · About
+
+## Theory / book
+- Keeps the short navigation label **Theory**.
+- Theory page title remains **TORC: The Theory**.
+- The canonical book is now read directly on the website at `/theory/book`.
+- No PDF/Word download buttons are shown.
+- The online text is explicitly labeled the **canonical living edition**.
+- Author: **G. K. Muijlaert**.
+
+## Important: previously uploaded downloads
+The earlier update already put the full PDF and Word files under `/public/books/`.
+This overlay intentionally replaces those two files with short withdrawal notices,
+so the old full manuscript is no longer sitting at those public download URLs.
 
 ## Deliberately untouched
-- Compare logic and artifact data are not changed.
-- Existing artifact pages/evaluator reports are not changed.
-- Existing navigation is not changed: keep the short nav label **Theory**.
+Artifact data, Compare logic, evaluator reports, and current evaluation pages are not changed.
