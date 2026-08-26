@@ -1,5 +1,3 @@
-# TORC — Dianetics update
+# TORC — Critique of Pure Reason update
 
-Overlay/update patch for the current complete `torcworld/torc-world` main-branch repository. **This is not a complete repository.**
-
-Adds *Dianetics: The Modern Science of Mental Health* (1950), consensus Level 2 (6/7; 1/7 G), median CMS 650, full consensus report, and all seven evaluator reports.
+Overlay patch for the current source-of-truth repository. Adds the artifact registry entry, artifact page, consensus report, seven evaluator reports, and artifact data. Do not treat this ZIP as a complete repository.
