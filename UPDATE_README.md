@@ -1,17 +1,17 @@
-# TORC — Artifacts Pagination + Compare Footer
+# TORC — Artifacts Pagination + Inline Compare + Header Alignment
 
 UPDATE/OVERLAY PATCH — not a complete repository.
 
 Changes:
-- Caps the archive view at 30 artifacts per page.
-- Pagination is applied after search, filtering, and sorting, so those controls still operate across the complete database.
-- Adds Previous / numbered pages / Next below each 30-result page.
-- Moves Compare out of the page header and places it directly below pagination as a secondary archive option.
-- Removes underlining from sortable table headings while retaining dark/bold clickable styling.
-- Keeps the evaluation CTA beneath the main Artifacts heading.
-- Uses a newly named local CSS module (`artifacts-v3.module.css`) to avoid stale styling.
-- No global CSS, artifact data, or comparison functionality is modified.
+- Pagination remains 30 artifacts per page.
+- Clicking Previous, Next, or a page number now scrolls smoothly back to the top of the page.
+- Replaces the bottom Compare promo/link with the actual two-artifact selector UI and swap control.
+- Once both artifacts are chosen, a Compare selected artifacts button opens the existing full comparison page with both artifacts preselected.
+- Repositions the evaluation CTA into the centered/right desktop header area beneath the primary navigation zone.
+- Mobile keeps the evaluation CTA stacked beneath the Artifacts heading with generous spacing.
+- Sort headers remain dark and clickable, without underlines.
+- No global CSS is changed.
 
 Files:
 - app/artifacts/page.tsx
-- app/artifacts/artifacts-v3.module.css
+- app/artifacts/artifacts-v4.module.css
