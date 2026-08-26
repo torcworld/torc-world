@@ -1,12 +1,10 @@
-# TORC — Artifacts Header Breathing Room
+# TORC Homepage Redesign
 
-UPDATE/OVERLAY PATCH — not a complete repository.
+Replace these files in the current TORC project:
 
-Based directly on TORC_ARTIFACTS_PAGINATION_INLINE_COMPARE.
+- `app/page.tsx`
+- `app/globals.css`
 
-Changes:
-- Moves the black divider below the Artifacts / evaluation CTA header substantially downward.
-- Adds more clean white space beneath “Have your artifact evaluated”.
-- “Explore the TORC database” and everything below therefore begins lower on the page.
-- Desktop receives the largest breathing room; tablet/mobile are increased proportionally.
-- Pagination, inline Compare, filters, data, and behavior are unchanged.
+This update redesigns only the front page. It introduces the large TORC-first hero, removes “Intelligence leaves evidence,” explains TORC through its two coordinates, keeps a curated artifact preview, gives the Living Edition a clear theory section, preserves the creator evaluation path, and retains a simplified professional applications section for organizations.
+
+Important: apply this over the current website project so the recent Artifacts/Theory changes remain intact.
