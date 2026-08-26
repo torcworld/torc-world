@@ -1,7 +1,5 @@
-# TORC — The Secret update
+# TORC — Dianetics update
 
 Overlay/update patch for the current complete `torcworld/torc-world` main-branch repository. **This is not a complete repository.**
 
-Adds Rhonda Byrne’s *The Secret* (2006) as an evaluated artifact with unanimous Level 2 consensus, median CMS 522, the full consensus report, and all seven evaluator reports.
-
-Apply over the current source-of-truth repository, preserving all other files.
+Adds *Dianetics: The Modern Science of Mental Health* (1950), consensus Level 2 (6/7; 1/7 G), median CMS 650, full consensus report, and all seven evaluator reports.
