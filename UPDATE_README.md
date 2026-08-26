@@ -1,22 +1,16 @@
-# TORC.world — living book + navigation update
+# TORC Notes from Underground — UPDATE PATCH
 
-Upload the contents of this ZIP to the repository root, preserving paths.
+This is an overlay/update patch for the current `torcworld/torc-world` main-branch repository. It is **not** a complete repository.
 
-## Navigation order
-Artifacts · Compare · Theory · Evaluate an Artifact · Organizations · About
+Adds Fyodor Dostoevsky’s *Notes from Underground* (1864) as a fully evaluated artifact using the supplied seven evaluator reports and consensus aggregation.
 
-## Theory / book
-- Keeps the short navigation label **Theory**.
-- Theory page title remains **TORC: The Theory**.
-- The canonical book is now read directly on the website at `/theory/book`.
-- No PDF/Word download buttons are shown.
-- The online text is explicitly labeled the **canonical living edition**.
-- Author: **G. K. Muijlaert**.
+Consensus: TORC 3b — Fractured Recursive Consciousness; CMS 797; profile RL 7.7 / AD 8.4 / CD 7.7 / ID 8.1 / IC 8.4 / GR 7.4.
 
-## Important: previously uploaded downloads
-The earlier update already put the full PDF and Word files under `/public/books/`.
-This overlay intentionally replaces those two files with short withdrawal notices,
-so the old full manuscript is no longer sitting at those public download URLs.
+Files included:
+- updated `lib/artifacts.ts`
+- new `lib/artifact_notes_from_underground.ts`
+- artifact page
+- full consensus report page
+- seven full evaluator report pages
 
-## Deliberately untouched
-Artifact data, Compare logic, evaluator reports, and current evaluation pages are not changed.
+Apply these paths over the source-of-truth repository.
