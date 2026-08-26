@@ -1,16 +1,7 @@
-# TORC Notes from Underground — UPDATE PATCH
+# TORC — The Secret update
 
-This is an overlay/update patch for the current `torcworld/torc-world` main-branch repository. It is **not** a complete repository.
+Overlay/update patch for the current complete `torcworld/torc-world` main-branch repository. **This is not a complete repository.**
 
-Adds Fyodor Dostoevsky’s *Notes from Underground* (1864) as a fully evaluated artifact using the supplied seven evaluator reports and consensus aggregation.
+Adds Rhonda Byrne’s *The Secret* (2006) as an evaluated artifact with unanimous Level 2 consensus, median CMS 522, the full consensus report, and all seven evaluator reports.
 
-Consensus: TORC 3b — Fractured Recursive Consciousness; CMS 797; profile RL 7.7 / AD 8.4 / CD 7.7 / ID 8.1 / IC 8.4 / GR 7.4.
-
-Files included:
-- updated `lib/artifacts.ts`
-- new `lib/artifact_notes_from_underground.ts`
-- artifact page
-- full consensus report page
-- seven full evaluator report pages
-
-Apply these paths over the source-of-truth repository.
+Apply over the current source-of-truth repository, preserving all other files.
