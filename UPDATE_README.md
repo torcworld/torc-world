@@ -1,18 +1,11 @@
-# TORC — Artifacts Header Polish
+# TORC Artifacts polish — forced refresh repair
 
-UPDATE/OVERLAY PATCH — not a complete repository.
+This patch intentionally uses a NEW CSS module filename (`artifacts-v2.module.css`) and changes the page markup so deployment cannot silently reuse the previous styling asset.
 
 Changes:
-- Adds more vertical breathing room between the large “Artifacts” heading and the evaluation CTA.
-- Keeps “Want your own artifact analyzed?” and “Independent TORC evaluation for original work.” together.
-- Places the large black “Have your artifact evaluated” button clearly underneath that text on desktop and mobile.
-- Makes the Compare utility modestly larger, wider, and easier to notice without turning it into the dominant action.
-- Strengthens the visual affordance of clickable/filter controls:
-  - archive filter labels are darker and bolder;
-  - Operational Order and Cognitive Magnitude Score table-header controls are black, bold, underlined, and clearly clickable;
-  - hover states remain restrained.
-- Uses only the local Artifacts CSS module. No global stylesheet is changed.
-
-Files:
-- app/artifacts/page.tsx
-- app/artifacts/artifacts.module.css
+- More vertical breathing room between Artifacts and the evaluation CTA.
+- Black evaluation button sits clearly below its descriptive copy.
+- Compare block is larger and more legible without becoming dominant.
+- Search/filter labels are darker and bolder.
+- Operational Order / Cognitive Magnitude table sort controls are clearly black, bold, underlined, and clickable.
+- No global CSS changes.
