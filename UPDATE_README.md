@@ -10,3 +10,11 @@ Upload these files to the repository root, preserving paths.
 - No price has been invented. The page leaves evaluation depth/pricing open until you decide the actual packages.
 
 The old commission API/success files are intentionally not deleted by this patch; they become unreachable through the user-facing flow. They can be removed later once you decide whether any payment code should be reused for evaluation checkout.
+
+
+## Faust evaluation update
+- Promotes `faust` from in-progress to evaluated.
+- Consensus DIP: **3c | 883** (7/7 TORC agreement).
+- Adds the Faust artifact page, seven independent evaluator pages, and the full supplied consensus report.
+- Consensus dimensions: RL 9.0 · AD 9.2 · CD 8.6 · ID 8.7 · IC 9.0 · GR 8.3.
+- Keeps the artifact-analysis commercial route introduced by this patch; no commission artifacts are restored.
