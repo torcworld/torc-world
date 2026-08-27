@@ -1,10 +1,20 @@
-# TORC Homepage Redesign
+# TORC — About / Origin Redesign
 
-Replace these files in the current TORC project:
+UPDATE/OVERLAY PATCH — not a complete repository.
 
-- `app/page.tsx`
-- `app/globals.css`
+Changes only the About page.
 
-This update redesigns only the front page. It introduces the large TORC-first hero, removes “Intelligence leaves evidence,” explains TORC through its two coordinates, keeps a curated artifact preview, gives the Living Edition a clear theory section, preserves the creator evaluation path, and retains a simplified professional applications section for organizations.
+- Moves Origin to the top of the page.
+- Removes the repeated “Measure what the work demonstrates” hero.
+- Makes the formal name visually legible as the TORC acronym:
+  Theory Of Representational Consciousness.
+- Keeps the authorial name as G. K. Muijlaert.
+- Gives The Age of False Depth greater visual prominence and links directly to the Living Edition.
+- Compresses Artifact First to a short, clear statement.
+- Reduces the repeated explanation of Operational Order and Cognitive Magnitude to one compact section.
+- Removes the old “Order ≠ magnitude ≠ quality...” footer string.
+- Uses page-local CSS only. No global stylesheet is changed.
 
-Important: apply this over the current website project so the recent Artifacts/Theory changes remain intact.
+Files:
+- app/about/page.tsx
+- app/about/about.module.css
