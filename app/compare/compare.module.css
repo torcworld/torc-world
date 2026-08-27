@@ -1,0 +1,159 @@
+.resultSection {
+  padding-top: 30px;
+}
+
+.resultLines {
+  max-width: 980px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.resultLines p {
+  margin: 0 0 10px;
+}
+
+.orderLesson {
+  margin-top: 38px;
+  padding-top: 30px;
+  border-top: 1px solid var(--ink);
+  max-width: 1080px;
+}
+
+.orderLesson > h2 {
+  margin-bottom: 14px;
+}
+
+.orderLesson > p {
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.artifactOrderGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.artifactOrderGrid article {
+  border: 1px solid var(--line);
+  padding: 24px;
+  background: var(--paper);
+}
+
+.artifactOrderGrid h3 {
+  margin: 8px 0 13px;
+  font-size: 24px;
+}
+
+.artifactOrderGrid p {
+  line-height: 1.6;
+}
+
+.evidence {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.orderVsMagnitude {
+  margin-top: 28px;
+  padding: 18px 20px;
+  border-left: 2px solid var(--ink);
+  background: rgba(0,0,0,.025);
+}
+
+.evaluationLinks {
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.evaluationLinks p {
+  max-width: 620px;
+  margin-bottom: 0;
+}
+
+.dimensionIntro {
+  max-width: 760px;
+  color: var(--muted);
+}
+
+.dimensionName {
+  position: relative;
+  padding-right: 42px !important;
+}
+
+.dimHelp {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.dimHelp summary {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font: 700 11px/1 Arial,sans-serif;
+  cursor: help;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.dimHelp summary::-webkit-details-marker {
+  display: none;
+}
+
+.dimHelp div {
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  transform: translateX(-50%);
+  width: 270px;
+  padding: 12px 13px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  font: 12px/1.5 Arial,sans-serif;
+  color: var(--ink);
+}
+
+@media (hover:hover) {
+  .dimHelp:not([open]) summary:hover + div {
+    display: block;
+  }
+}
+
+@media (max-width:760px) {
+  .resultLines {
+    font-size: 18px;
+  }
+
+  .artifactOrderGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .artifactOrderGrid article {
+    padding: 20px;
+  }
+
+  .orderLesson > p {
+    font-size: 17px;
+  }
+
+  .dimHelp div {
+    left: auto;
+    right: 0;
+    transform: none;
+    width: min(250px,70vw);
+  }
+}
