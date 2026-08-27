@@ -161,6 +161,7 @@
 
 .bookTitlePage { padding-top: 34px; }
 .theoryName { margin: 22px 0 0; color: var(--book-ink); font-size: 19px; line-height: 1.45; font-weight: 600; }
-.authorLine { margin: 10px 0 0; color: var(--book-ink); font-size: 18px; line-height: 1.4; }
-.authorLine b { font-weight: 700; }
-@media (max-width: 700px) { .bookTitlePage { padding-top: 24px; } .theoryName { margin-top: 18px; font-size: 18px; } .authorLine { font-size: 17px; } }
+.authorLine { margin: 18px 0 0; color: var(--book-ink); font-size: 18px; line-height: 1.4; display: flex; align-items: baseline; }
+.byLabel { margin-right: 0.55em; }
+.authorLine b { font-weight: 700; font-size: 21px; }
+@media (max-width: 700px) { .bookTitlePage { padding-top: 24px; } .theoryName { margin-top: 18px; font-size: 18px; } .authorLine { margin-top: 16px; font-size: 17px; } .authorLine b { font-size: 20px; } }

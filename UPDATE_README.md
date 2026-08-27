@@ -1,12 +1,9 @@
-# TORC — Theory + Living Edition Author Hierarchy
+# TORC Book Author Spacing Refinement
 
-UPDATE/OVERLAY PATCH — not a complete repository.
+Surgical overlay on top of the current Theory/book hierarchy update.
 
-Built from `torc-world-main 6.zip`.
-
-- Removes author/book eyebrow from Theory landing page.
-- Uses `A Theory Of Representational Consciousness`.
-- Keeps author credit only on the book title page.
-- Removes redundant `Canonical living edition · TORC` eyebrow from the book.
-- Makes the book theory-name and `by G. K. Muijlaert` darker and more prominent.
-- Manuscript text unchanged.
+- Adds more vertical breathing room between `A Theory Of Representational Consciousness` and the author credit.
+- Adds deliberate spacing between `by` and `G. K. Muijlaert`.
+- Makes the author name slightly larger while keeping the existing restrained book typography.
+- Does not introduce a handwritten/script style; this keeps the title page more serious and consistent.
+- No manuscript content is changed.
