@@ -1,12 +1,13 @@
-# TORC Submission Form 4 MB Fix
+# TORC — Nodemailer TypeScript Build Fix
 
-This is a one-file overlay patch.
+One-file deployment patch.
 
-It replaces only:
-- app/evaluate-your-work/SubmissionForm.tsx
+Replaces only:
+- package.json
 
-Changes:
-- visible upload limit now says 4 MB instead of 8 MB
-- client-side validation prevents files above 4 MB
-- adds the hidden anti-bot honeypot field expected by the backend
-- keeps the existing /api/artifact-submission endpoint
+Fix:
+- Adds `@types/nodemailer` to devDependencies.
+- This resolves the Vercel build error:
+  `Could not find a declaration file for module 'nodemailer'`.
+
+No website content, styling, submission logic, DNS, or email settings are changed.
