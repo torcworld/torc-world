@@ -6,9 +6,8 @@ export default function Theory(){
    <h1>TORC: The Theory</h1>
    <p className="lede"><b>A Theory Of Representational Consciousness</b></p>
    <p>A framework for evaluating the cognition demonstrated in completed artifacts.</p>
-   <p><b>G. K. Muijlaert</b></p>
    <div className="buttons">
-    <Link className="button primary" href="/theory/book">Read the living edition</Link>
+    <Link className="button primary" href="/theory/book">Read the Living Edition</Link>
    </div>
   </header>
 

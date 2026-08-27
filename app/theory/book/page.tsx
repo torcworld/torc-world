@@ -19,11 +19,11 @@ const styledBody=enhanceBookHtml(body);
 
 export default function Book(){
  return <main className={styles.bookPage}>
-  <header className="page-title">
-   <div className="eyebrow">Canonical living edition · TORC</div>
+  <header className={`page-title ${styles.bookTitlePage}`}>
    <h1>The Age of False Depth</h1>
    <p className="lede">Intelligence, Representation, and What Artifacts Actually Do</p>
-   <p className="small"><b>G. K. Muijlaert</b> · A Theory of Representational Consciousness</p>
+   <p className={styles.theoryName}>A Theory Of Representational Consciousness</p>
+   <p className={styles.authorLine}>by <b>G. K. Muijlaert</b></p>
   </header>
   <section className={`section prose auditReport ${styles.bookReader}`}>
    <div className={`auditNote ${styles.editionNote}`}><b>Living edition.</b> This online text is the current canonical version. It may be refined as TORC is tested against additional artifacts and boundary cases.</div>
