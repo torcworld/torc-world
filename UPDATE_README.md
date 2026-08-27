@@ -1,18 +1,11 @@
-# TORC Compare Teaching Prototype
+# TORC Living Edition manuscript update
 
-UPDATE/OVERLAY PATCH — not a complete repository.
+This patch replaces the online book body from **Personal Motivation** onward with the newly supplied Living Edition manuscript.
 
-Built against the current GitHub repository snapshot supplied as `torc-world-main 6.zip`.
+It preserves the existing website title block (title, subtitle, theory name, and author) and the current book-page styling.
 
-Prototype changes to `/compare`:
-- Keeps the existing two-artifact picker and URL-based selection.
-- Makes the first result about Operational Order, then CMS.
-- Adds a concise explanation of what the specific Operational Order boundary means.
-- Uses each artifact's stored `summary` and `why` fields to connect the generic boundary to artifact-specific evidence.
-- Adds an explicit `Order is not magnitude` explanation.
-- Moves `Open the full evaluations` above the dimensional table.
-- Keeps dimension-by-dimension scores below as supporting detail.
-- Adds an information control to RL / AD / CD / ID / IC / GR with plain-language definitions; it works by click/tap and also exposes a native hover tooltip.
-- Adds contextual language for small/moderate/substantial CMS differences.
-- Does not modify `lib/artifacts.ts`, artifact evaluations, or any artifact page.
-- Uses a Compare-local CSS module; global styles are untouched.
+One requested editorial revision is included in Chapter Seven:
+
+> Cognitive Magnitude asks how much cognition the artifact demonstrates in achieving it.
+
+Upload these files over the matching paths in the current TORC website project and redeploy.
