@@ -1,12 +1,15 @@
-# TORC — Navigation underline + Organizations route
+# TORC — Theory Header Refinement
 
 UPDATE/OVERLAY PATCH — not a complete repository.
 
-Changes:
-- Navigation no longer fades/lightens on hover.
-- Hover/focus now shows a subtle black underline beneath the active navigation word.
-- Keeps navigation dark and readable.
-- Adds a working `/for-organizations` page to replace the current 404.
-- Organizations page includes private evaluation, comparative analysis, portfolio/batch analysis, licensing/custom applications, and a project-contact action.
+Source of truth: the user-uploaded current GitHub repository ZIP `torc-world-main 6.zip`.
 
-No artifact data is changed.
+Only `app/theory/page.tsx` is changed.
+
+Changes:
+- Removes the small top eyebrow `The Age of False Depth · G. K. Muijlaert`.
+- Makes `TORC: The Theory` the first and dominant page identity.
+- Changes the formal expansion to `A Theory Of Representational Consciousness`, with a capital O in Of so the T-O-R-C acronym is visible.
+- Separates the explanatory sentence from the formal theory name.
+- Places `G. K. Muijlaert` beneath the theory description in a deliberate author-credit position.
+- Keeps the Living Edition button and every section below the header unchanged.

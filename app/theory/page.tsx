@@ -3,9 +3,10 @@ import Link from 'next/link';
 export default function Theory(){
  return <main>
   <header className="page-title">
-   <div className="eyebrow">The Age of False Depth · G. K. Muijlaert</div>
    <h1>TORC: The Theory</h1>
-   <p className="lede">A Theory of Representational Consciousness — and a framework for evaluating the cognition demonstrated in completed artifacts.</p>
+   <p className="lede"><b>A Theory Of Representational Consciousness</b></p>
+   <p>A framework for evaluating the cognition demonstrated in completed artifacts.</p>
+   <p><b>G. K. Muijlaert</b></p>
    <div className="buttons">
     <Link className="button primary" href="/theory/book">Read the living edition</Link>
    </div>
