@@ -4,15 +4,25 @@
   justify-content: flex-end;
 }
 
-.submitLink {
-  margin-left: 12px;
+.submitLink,
+.orgLink {
+  margin-left: 10px;
   padding: 9px 13px;
+  font-weight: 700 !important;
+  letter-spacing: .11em;
+  transition:
+    background .16s ease,
+    border-color .16s ease,
+    color .16s ease,
+    transform .16s ease,
+    box-shadow .16s ease;
+}
+
+/* Individual / creator-facing entry point */
+.submitLink {
   border: 1px solid #b9aa90;
   background: #d8c9ad;
   color: #171714 !important;
-  font-weight: 700 !important;
-  letter-spacing: .11em;
-  transition: background .16s ease, border-color .16s ease, transform .16s ease;
 }
 
 .submitLink:hover,
@@ -20,23 +30,46 @@
   background: #cdbb9b;
   border-color: #a89574;
   transform: translateY(-1px);
+  box-shadow: 0 7px 18px rgba(56, 43, 26, .10);
 }
 
-/* The CTA is already visually distinct; suppress the ordinary nav underline on it. */
-.submitLink::after { display: none !important; }
+/* Institutional entry point: slightly more premium and formal */
+.orgLink {
+  margin-left: 7px;
+  border: 1px solid #4a1e27;
+  background: #5b2630;
+  color: #fff !important;
+}
+
+.orgLink:hover,
+.orgLink:focus-visible {
+  background: #431b23;
+  border-color: #34141a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(67, 27, 35, .18);
+}
+
+/* CTA buttons do not use the ordinary nav underline. */
+.submitLink::after,
+.orgLink::after {
+  display: none !important;
+}
 
 @media (max-width: 800px) {
   .navLinks {
     row-gap: 10px;
   }
-  .submitLink {
+
+  .submitLink,
+  .orgLink {
     margin-left: 4px;
     padding: 8px 10px;
   }
 }
 
 @media (max-width: 620px) {
-  .submitLink {
+  .submitLink,
+  .orgLink {
     margin-left: 0;
   }
 }

@@ -1,17 +1,17 @@
-# TORC Organizations — Luxury / Hover Pass
+# TORC Organizations luxury pass + navigation correction
 
-One-file visual refinement to the Organizations page.
+This patch does three things:
 
-Changes:
-- richer warm/oxblood background treatment in the top half
-- dark oxblood capability strip instead of another white band
-- warmer Problem and Applications sections
-- application cards now look interactive before clicking
-- visible lift, border, shadow and accent movement on hover
-- stronger typography inside cards
-- numbered oxblood pills
-- circular + controls
-- opened cards get a premium tinted reveal state
-- mobile spacing adjusted for the new section backgrounds
+1. Fixes the failed Organizations luxury patch by removing the accidentally reintroduced global `:root{}` selector from the CSS module.
+2. Keeps all of the richer warm/oxblood Organizations styling and hover behavior.
+3. Refines the main navigation:
+   - standard links: Artifacts · Theory · Compare · About
+   - warm creator CTA: Submit Your Artifact
+   - deep oxblood institutional CTA at the far right: Organizations
 
-No content, page logic, backend, navigation, submission flow, or other TORC page is changed.
+Files:
+- app/for-organizations/organizations.module.css
+- app/layout.tsx
+- app/nav.module.css
+
+No API, SMTP, submission backend, artifact data, Theory content, About content, or payment code is changed.
