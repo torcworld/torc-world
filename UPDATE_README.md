@@ -1,13 +1,12 @@
-# TORC Navigation Polish — UPDATE
+# TORC — Navigation underline + Organizations route
 
-Surgical site-wide navigation styling update.
+UPDATE/OVERLAY PATCH — not a complete repository.
 
 Changes:
-- primary navigation is 1px larger on desktop
-- darker/near-black navigation text
-- medium/semibold weight for stronger legibility
-- slightly more spacing between links
-- restrained hover/focus treatment
-- mobile navigation receives a smaller proportional legibility increase
+- Navigation no longer fades/lightens on hover.
+- Hover/focus now shows a subtle black underline beneath the active navigation word.
+- Keeps navigation dark and readable.
+- Adds a working `/for-organizations` page to replace the current 404.
+- Organizations page includes private evaluation, comparative analysis, portfolio/batch analysis, licensing/custom applications, and a project-contact action.
 
-Install as an overlay on the current working TORC repository. This is not a full repository.
+No artifact data is changed.
