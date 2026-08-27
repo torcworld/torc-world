@@ -1,2 +1,77 @@
-import Link from 'next/link';
-export default function OwnWork(){return <main><header className="page-title"><div className="eyebrow">TORC artifact analysis</div><h1>Have your artifact evaluated.</h1><p className="lede">Find out what your work actually demonstrates. TORC provides an independent analysis of the cognitive operation your artifact performs and the magnitude of cognition embodied in its construction.</p></header><section className="section prose"><h2>What can be evaluated?</h2><p>Completed screenplays, manuscripts, essays, research, music, games, visual work, narrative projects, and other original artifacts can be evaluated. TORC is not a conventional review and does not score prestige, marketability, taste, or commercial potential. It asks what the finished work actually accomplishes.</p><div className="orgCards"><article><h3>Individual evaluation</h3><p>Receive an Operational Order classification, six-dimensional cognitive profile, Cognitive Magnitude Score (CMS), boundary analysis, and written rationale for one artifact.</p></article><article><h3>Multi-evaluator analysis</h3><p>Multiple independent evaluations can be combined into a consensus profile showing agreement, score ranges, and the most important points of disagreement.</p></article><article><h3>Comparative analysis</h3><p>Several artifacts can be evaluated under the same framework to reveal how their Operational Orders and cognitive architectures differ.</p></article></div></section><section className="section prose"><div className="eyebrow">Evaluation options &amp; pricing</div><h2>Choose the depth that fits the work.</h2><p>The appropriate evaluation depends on the artifact and what you want to learn from it. The number of independent evaluators, confidentiality, turnaround, and whether the result is intended for private use or possible publication can vary by project. Pricing is agreed before the evaluation begins.</p><div className="buttons"><a className="button primary" href="mailto:contact@torc.world?subject=TORC%2FDIP%20Artifact%20Evaluation">Request an evaluation</a><Link className="button" href="/artifacts">See published evaluations</Link></div></section></main>}
+import styles from './submit.module.css';
+import SubmissionForm from './SubmissionForm';
+
+const dimensions = [
+  ['Operational ceiling', 'Where the work currently stops, why that boundary matters, and what a genuinely deeper operation would require.'],
+  ['Cognitive Magnitude', 'Where the work is carrying substantial cognitive load — and where its architecture is still comparatively thin, loose, or underused.'],
+  ['False-depth audit', 'Where complexity, symbolism, ambiguity, recursion, or philosophical language may be signalling more than the structure itself demonstrates.'],
+];
+
+export default function SubmitArtifactPage(){
+ return <main className={styles.page}>
+  <header className={styles.hero}>
+   <div className={styles.eyebrow}>TORC DEVELOPMENT ANALYSIS</div>
+   <h1>Find where your work is now —<br/>and what would have to change for it to go further.</h1>
+   <p>TORC evaluates the cognitive operation your artifact actually performs, the magnitude of cognition demonstrated in its construction, and — where useful — the structural boundary preventing the work from doing more.</p>
+   <a className={styles.primary} href="#submit">Submit your artifact</a>
+  </header>
+
+  <section className={styles.intro}>
+   <div><span className={styles.number}>01</span><h2>Not conventional coverage.</h2></div>
+   <div className={styles.copy}>
+    <p>TORC does not primarily ask whether a work follows established conventions, feels prestigious, or appears intellectually sophisticated. It asks what the completed artifact <em>demonstrates</em>.</p>
+    <p>A Level 2 work does not become Level 3 by adding symbolism or self-reference. A high Cognitive Magnitude Score does not automatically mean a higher Operational Order. Development begins by locating the work precisely enough to understand what kind of change would actually matter.</p>
+   </div>
+  </section>
+
+  <section className={styles.darkSection}>
+   <div className={styles.sectionHead}><span>WHAT TORC CAN REVEAL</span><h2>“Make it deeper” is not a development note.</h2></div>
+   <div className={styles.revealGrid}>{dimensions.map(([title,text],i)=><article key={title}><div className={styles.cardNo}>0{i+1}</div><h3>{title}</h3><p>{text}</p></article>)}</div>
+  </section>
+
+  <section className={styles.example}>
+   <div className={styles.exampleLabel}>A TORC DEVELOPMENT QUESTION</div>
+   <blockquote>“Your work reaches Level 2. What, specifically, prevents the transition to 3a?”</blockquote>
+   <p>The answer might not be “more complexity.” The work may already be highly symbolic and relationally dense. The missing operation may be that the framework through which the protagonist understands reality never itself becomes implicated in the problem. TORC development isolates that distinction and identifies where the artifact would have to change for the transition to become structurally real.</p>
+  </section>
+
+  <section className={styles.pricing}>
+   <div className={styles.sectionHeadLight}><span>FOUNDING SERVICES</span><h2>Choose how far you want to go.</h2><p>Founding rates are intentionally below the intended standard pricing while the service builds its first body of client work.</p></div>
+   <div className={styles.priceGrid}>
+    <article className={styles.priceCard}>
+     <div><span className={styles.package}>TORC Evaluation</span><div className={styles.price}>€149</div><p className={styles.priceLead}>What does the work demonstrate?</p></div>
+     <ul><li>Operational Order</li><li>Six-dimensional cognitive profile</li><li>Cognitive Magnitude Score + DIP</li><li>Boundary analysis</li><li>Principal strengths and limitations</li></ul>
+     <a href="#submit">Choose Evaluation</a>
+    </article>
+    <article className={`${styles.priceCard} ${styles.featured}`}>
+     <div className={styles.recommended}>RECOMMENDED · FOUNDING RATE</div>
+     <div><span className={styles.package}>TORC Development</span><div className={styles.price}>€349 <small>standard €495</small></div><p className={styles.priceLead}>Where does the work stop — and what could make it stronger?</p></div>
+     <ul><li>Everything in TORC Evaluation</li><li>Operational-ceiling diagnosis</li><li>Next-Order boundary analysis</li><li>Cognitive Magnitude development</li><li>False-depth audit</li><li>Prioritized structural opportunities</li></ul>
+     <a href="#submit">Choose Development</a>
+    </article>
+    <article className={styles.priceCard}>
+     <div><span className={styles.package}>TORC Deep Analysis</span><div className={styles.price}>from €695</div><p className={styles.priceLead}>A deeper examination of the artifact as a complete cognitive architecture.</p></div>
+     <ul><li>Everything in TORC Development</li><li>Section / sequence-level analysis</li><li>Competing interpretations tested</li><li>Order × Magnitude interaction</li><li>Extended revision priorities</li><li>Substantial final report</li></ul>
+     <a href="#submit">Choose Deep Analysis</a>
+    </article>
+   </div>
+   <p className={styles.scopeNote}>Final scope and turnaround are confirmed before any work begins. Very long or unusually complex artifacts may require a custom quote.</p>
+  </section>
+
+  <section className={styles.higher}>
+   <div className={styles.rule}/><h2>Higher isn’t always better.</h2>
+   <p>TORC development is not an attempt to force every artifact toward the highest possible Operational Order or CMS. A thriller, comedy, proof, novel, game, or screenplay can succeed brilliantly at the operation it performs. The question is whether the work fully realizes <em>its own</em> cognitive architecture — and, where a deeper operation is genuinely latent, what would be required to reach it.</p>
+  </section>
+
+  <section id="submit" className={styles.submitSection}>
+   <div className={styles.submitIntro}><span>SUBMIT YOUR ARTIFACT</span><h2>Start with the work.</h2><p>Upload the artifact and tell us what you want to understand. Submission is a scope request, not an automatic purchase. You will receive confirmation of scope, price, and turnaround before an evaluation begins.</p></div>
+   <SubmissionForm />
+  </section>
+
+  <section className={styles.finePrint}>
+   <div><h3>Private by default</h3><p>Submitted work is treated as private evaluation material. Public inclusion in the TORC archive is a separate decision and is never implied by submission.</p></div>
+   <div><h3>Artifact first</h3><p>Payment does not purchase a higher score or Operational Order. The evaluation follows the evidence preserved in the artifact.</p></div>
+   <div><h3>No forced “upgrade”</h3><p>If moving toward a higher Order would damage the work, the analysis should say so. Development recommendations serve the artifact, not the ladder.</p></div>
+  </section>
+ </main>
+}
