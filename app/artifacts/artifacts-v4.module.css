@@ -1,70 +1,58 @@
-.artifactHeader {
-  display: grid;
-  grid-template-columns: minmax(0,1fr) minmax(330px,520px);
-  gap: 70px;
-  align-items: center;
-  padding: 48px 0 120px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid var(--ink);
+.artifactHeader{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(330px,520px);
+  gap:70px;align-items:center;padding:52px 0 96px;margin-bottom:30px;border-bottom:1px solid var(--ink)
 }
-.artifactHeading h1 { margin:0 0 13px; font-size:clamp(54px,8vw,96px); line-height:.9; letter-spacing:-.055em; }
-.primaryCta { justify-self:center; width:min(100%,430px); text-align:left; padding-top:18px; }
-.primaryCta b,.primaryCta span { display:block; }
-.primaryCta b { font-size:18px; line-height:1.25; }
-.primaryCta span { margin-top:7px; font:13px/1.5 Arial,sans-serif; color:var(--muted); }
-.primaryCta :global(.button) { display:inline-block; margin-top:21px; padding:13px 27px; white-space:nowrap; }
-.exploreIntro { margin:0 0 20px; font-size:23px; line-height:1.35; }
-.artifactToolsStrong { color:var(--ink); }
-.controlLabel > span { color:var(--ink)!important; opacity:1!important; font-weight:800!important; letter-spacing:.01em; }
-.controlLabel select,.controlLabel input { color:var(--ink)!important; border-color:rgba(17,17,17,.45)!important; }
-.tableHeader button { color:var(--ink)!important; opacity:1!important; font-weight:800!important; text-decoration:none!important; cursor:pointer; }
-.tableHeader button:hover { opacity:.62!important; }
-.tableHeader span { color:var(--ink)!important; opacity:1!important; }
-.pagination { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:22px; margin-top:34px; padding-top:23px; border-top:1px solid var(--line); }
-.pagination > button,.pageNumbers button { appearance:none; border:0; background:transparent; color:var(--ink); font:700 13px/1.2 Arial,sans-serif; cursor:pointer; padding:9px 10px; }
-.pagination > button:first-child { justify-self:start; padding-left:0; }
-.pagination > button:last-child { justify-self:end; padding-right:0; }
-.pagination button:disabled { opacity:.28; cursor:default; }
-.pageNumbers { display:flex; gap:5px; align-items:center; }
-.pageNumbers button { min-width:34px; height:34px; border:1px solid transparent; }
-.pageNumbers button:hover { border-color:var(--line); }
-.pageNumbers .activePage { background:var(--ink); color:#fff; border-color:var(--ink); }
-.inlineCompare { margin:30px 0 8px; padding:26px 0 4px; border-top:1px solid var(--line); }
-.inlineCompareHead { margin-bottom:18px; }
-.inlineCompareHead h2 { margin:6px 0 0; font-size:21px; line-height:1.2; }
-.inlineCompareControls { display:grid; grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr); gap:14px; align-items:end; }
-.inlinePicker { position:relative; }
-.inlinePicker > label { display:block; margin-bottom:7px; color:var(--ink); font:800 12px/1.2 Arial,sans-serif; }
-.inlineSelected { width:100%; min-height:72px; padding:13px 15px; text-align:left; background:#fff; color:var(--ink); border:1px solid rgba(17,17,17,.28); cursor:pointer; }
-.inlineSelected span,.inlineSelected small { display:block; }
-.inlineSelected span { font-size:15px; font-weight:800; }
-.inlineSelected small { margin-top:5px; color:var(--muted); font:12px/1.35 Arial,sans-serif; }
-.inlineSwap { width:44px; height:44px; margin-bottom:14px; border:1px solid rgba(17,17,17,.28); background:#fff; color:var(--ink); font-size:19px; cursor:pointer; }
-.inlineDropdown { position:absolute; z-index:30; left:0; right:0; top:100%; margin-top:5px; padding:9px; background:#fff; border:1px solid var(--ink); box-shadow:0 14px 30px rgba(0,0,0,.09); }
-.inlineDropdown input { width:100%; box-sizing:border-box; padding:10px; border:1px solid var(--line); color:var(--ink); }
-.inlineOptions { max-height:260px; overflow:auto; margin-top:7px; }
-.inlineOptions button { display:block; width:100%; padding:10px; text-align:left; border:0; border-top:1px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; }
-.inlineOptions button:hover { background:rgba(0,0,0,.035); }
-.inlineOptions span,.inlineOptions small { display:block; }
-.inlineOptions span { font-weight:700; }
-.inlineOptions small { margin-top:3px; color:var(--muted); }
-.inlineEmpty { padding:12px; color:var(--muted); }
-.inlineCompareAction { margin-top:15px; text-align:right; }
-.inlineCompareAction :global(.button) { display:inline-block; }
-@media(max-width:860px){
- .artifactHeader { grid-template-columns:1fr; gap:0; align-items:start; padding-bottom:96px; }
- .primaryCta { justify-self:start; width:100%; max-width:460px; margin-top:48px; padding-top:0; }
+.artifactHeading h1{margin:0 0 13px;font-size:clamp(54px,8vw,94px);line-height:.9;letter-spacing:-.055em}
+.artifactHeading :global(.eyebrow){color:#5b2630;font-weight:700}
+.primaryCta{
+  justify-self:center;width:min(100%,430px);text-align:left;padding:23px 24px;
+  background:linear-gradient(145deg,#eee7dc,#f8f5ef);
+  border:1px solid #c9bfb4;
+  box-shadow:0 11px 26px rgba(45,31,25,.045)
 }
+.primaryCta b,.primaryCta span{display:block}
+.primaryCta b{font-size:18px;line-height:1.25}
+.primaryCta span{margin-top:7px;font:13px/1.5 Arial,sans-serif;color:var(--muted)}
+.primaryCta :global(.button){display:inline-block;margin-top:18px;padding:12px 21px;white-space:nowrap;background:#5b2630;border-color:#5b2630}
+.exploreIntro{margin:0 0 20px;font-size:22px;line-height:1.35}
+.artifactToolsStrong{color:var(--ink)}
+.controlLabel>span{color:var(--ink)!important;opacity:1!important;font-weight:800!important;letter-spacing:.01em}
+.controlLabel select,.controlLabel input{color:var(--ink)!important;border-color:rgba(17,17,17,.38)!important;background:#fbfaf6!important}
+.tableHeader button{color:var(--ink)!important;opacity:1!important;font-weight:800!important;text-decoration:none!important;cursor:pointer}
+.tableHeader button:hover{color:#5b2630!important}
+.tableHeader span{color:var(--ink)!important;opacity:1!important}
+.pagination{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;margin-top:34px;padding-top:23px;border-top:1px solid var(--line)}
+.pagination>button,.pageNumbers button{appearance:none;border:0;background:transparent;color:var(--ink);font:700 13px/1.2 Arial,sans-serif;cursor:pointer;padding:9px 10px}
+.pagination>button:first-child{justify-self:start;padding-left:0}.pagination>button:last-child{justify-self:end;padding-right:0}
+.pagination button:disabled{opacity:.28;cursor:default}.pageNumbers{display:flex;gap:5px;align-items:center}
+.pageNumbers button{min-width:34px;height:34px;border:1px solid transparent}.pageNumbers button:hover{border-color:#a8898f}
+.pageNumbers .activePage{background:#5b2630;color:#fff;border-color:#5b2630}
+.inlineCompare{
+  margin:36px 0 8px;padding:28px;
+  border:1px solid #c9bfb4;
+  background:linear-gradient(135deg,#f2ece3,#faf8f3)
+}
+.inlineCompareHead{margin-bottom:18px}.inlineCompareHead :global(.eyebrow){color:#5b2630;font-weight:700}
+.inlineCompareHead h2{margin:6px 0 0;font-size:21px;line-height:1.2}
+.inlineCompareControls{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);gap:14px;align-items:end}
+.inlinePicker{position:relative}.inlinePicker>label{display:block;margin-bottom:7px;color:var(--ink);font:800 12px/1.2 Arial,sans-serif}
+.inlineSelected{width:100%;min-height:72px;padding:13px 15px;text-align:left;background:#fff;color:var(--ink);border:1px solid rgba(17,17,17,.28);cursor:pointer;transition:border-color .15s ease,box-shadow .15s ease}
+.inlineSelected:hover{border-color:#5b2630;box-shadow:0 7px 17px rgba(55,35,31,.07)}
+.inlineSelected span,.inlineSelected small{display:block}.inlineSelected span{font-size:15px;font-weight:800}
+.inlineSelected small{margin-top:5px;color:var(--muted);font:12px/1.35 Arial,sans-serif}
+.inlineSwap{width:44px;height:44px;margin-bottom:14px;border:1px solid rgba(17,17,17,.28);background:#fff;color:var(--ink);font-size:19px;cursor:pointer;transition:background .15s ease,color .15s ease}
+.inlineSwap:hover{background:#5b2630;color:#fff;border-color:#5b2630}
+.inlineDropdown{position:absolute;z-index:30;left:0;right:0;top:100%;margin-top:5px;padding:9px;background:#fff;border:1px solid var(--ink);box-shadow:0 14px 30px rgba(0,0,0,.09)}
+.inlineDropdown input{width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);color:var(--ink)}
+.inlineOptions{max-height:260px;overflow:auto;margin-top:7px}.inlineOptions button{display:block;width:100%;padding:10px;text-align:left;border:0;border-top:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.inlineOptions button:hover{background:rgba(91,38,48,.045)}.inlineOptions span,.inlineOptions small{display:block}.inlineOptions span{font-weight:700}.inlineOptions small{margin-top:3px;color:var(--muted)}
+.inlineEmpty{padding:12px;color:var(--muted)}.inlineCompareAction{margin-top:15px;text-align:right}.inlineCompareAction :global(.button){display:inline-block}
+@media(max-width:860px){.artifactHeader{grid-template-columns:1fr;gap:0;align-items:start;padding-bottom:86px}.primaryCta{justify-self:start;width:100%;max-width:460px;margin-top:42px}}
 @media(max-width:620px){
- .artifactHeader { padding-top:30px; padding-bottom:88px; }
- .primaryCta { margin-top:46px; }
- .primaryCta :global(.button) { display:block; width:fit-content; }
- .exploreIntro { font-size:21px; }
- .pagination { grid-template-columns:1fr 1fr; gap:13px; }
- .pageNumbers { grid-column:1/-1; grid-row:1; justify-content:center; }
- .pagination > button:first-child { grid-column:1; grid-row:2; }
- .pagination > button:last-child { grid-column:2; grid-row:2; }
- .inlineCompareControls { grid-template-columns:1fr; }
- .inlineSwap { justify-self:center; margin:0; transform:rotate(90deg); }
- .inlineCompareAction { text-align:left; }
+ .artifactHeader{padding-top:30px;padding-bottom:72px}.primaryCta{margin-top:38px;padding:21px}
+ .primaryCta :global(.button){display:block;width:fit-content}.exploreIntro{font-size:20px}
+ .pagination{grid-template-columns:1fr 1fr;gap:13px}.pageNumbers{grid-column:1/-1;grid-row:1;justify-content:center}
+ .pagination>button:first-child{grid-column:1;grid-row:2}.pagination>button:last-child{grid-column:2;grid-row:2}
+ .inlineCompare{padding:22px 18px}.inlineCompareControls{grid-template-columns:1fr}.inlineSwap{justify-self:center;margin:0;transform:rotate(90deg)}.inlineCompareAction{text-align:left}
 }

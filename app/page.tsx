@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { artifacts } from '@/lib/artifacts';
+import styles from './home.module.css';
 
 const featured = [
   'pale-fire',
@@ -13,77 +14,129 @@ const featured = [
 export default function Home() {
   const picks = featured.map(slug => artifacts.find(a => a.slug === slug)).filter(Boolean);
 
-  return <main className="homeV2">
-    <section className="homeHero">
-      <h1>TORC</h1>
-      <div className="homeHeroRule" />
-      <p className="homeTagline">Demonstrated intelligence in artifacts.</p>
-      <p className="homeIntro">TORC evaluates artifacts by asking two different questions: <strong>what kind of cognitive operation does the work actually perform?</strong> And <strong>how much structured cognition does it demonstrate in performing it?</strong></p>
-      <div className="buttons homeHeroButtons">
-        <Link className="button primary" href="/artifacts">Explore artifacts</Link>
-        <Link className="button" href="/theory">Read the theory</Link>
+  return <main className={styles.home}>
+    <section className={styles.hero}>
+      <div className={styles.heroCopy}>
+        <div className={styles.kicker}>THEORY OF REPRESENTATIONAL CONSCIOUSNESS</div>
+        <h1>TORC</h1>
+        <p className={styles.tagline}>Demonstrated intelligence in artifacts.</p>
+        <p className={styles.intro}>
+          TORC evaluates completed works by separating two questions that are often confused:
+          <strong> what kind of cognitive operation does the artifact actually perform?</strong> And
+          <strong> how much structured cognition does it demonstrate in performing it?</strong>
+        </p>
+        <div className={styles.heroActions}>
+          <Link className={styles.darkAction} href="/artifacts">Explore the archive</Link>
+          <Link className={styles.textAction} href="/theory">Enter the theory <span>→</span></Link>
+        </div>
       </div>
+
+      <aside className={styles.coordinateMark} aria-label="TORC evaluates Operational Order and Cognitive Magnitude">
+        <div className={styles.markTop}>
+          <span>DEMONSTRATED<br/>INTELLIGENCE PROFILE</span>
+          <b>DIP</b>
+        </div>
+        <div className={styles.axis}>
+          <div className={styles.axisY}><span>OPERATIONAL ORDER</span><i/></div>
+          <div className={styles.field}>
+            <i/><i/><i/><i/><i/><i/><i/>
+            <b>ORDER</b>
+            <em>×</em>
+            <strong>MAGNITUDE</strong>
+          </div>
+          <div className={styles.axisX}><i/><span>COGNITIVE MAGNITUDE</span></div>
+        </div>
+        <div className={styles.markBottom}>
+          <span>ORDER ≠ MAGNITUDE</span>
+          <span>ARTIFACT FIRST</span>
+        </div>
+      </aside>
     </section>
 
-    <section className="section homeCoordinates">
-      <div className="eyebrow">Two coordinates</div>
-      <div className="coordinateGrid">
+    <section className={styles.routeStrip}>
+      <Link href="/artifacts"><span>01</span><b>Archive</b><small>See TORC applied to completed works.</small><em>→</em></Link>
+      <Link href="/compare"><span>02</span><b>Compare</b><small>Put two demonstrated intelligence profiles side by side.</small><em>→</em></Link>
+      <Link href="/theory"><span>03</span><b>Theory</b><small>Understand the framework and read the living edition.</small><em>→</em></Link>
+    </section>
+
+    <section className={styles.coordinates}>
+      <div className={styles.sectionLead}>
+        <span>TWO COORDINATES</span>
+        <h2>Different questions.<br/>Different evidence.</h2>
+      </div>
+      <div className={styles.coordinateGrid}>
         <article>
-          <span className="coordinateNo">01</span>
-          <h2>Operational Order</h2>
-          <p>What does the artifact actually do? TORC classifies the highest cognitive operation required to explain the work — not its prestige, difficulty, reputation, or subject matter.</p>
-          <Link href="/theory" className="small homeTextLink">Understand Operational Order →</Link>
+          <div className={styles.coordinateLabel}>01 / CATEGORICAL</div>
+          <h3>Operational Order</h3>
+          <p>What does the artifact actually do? TORC identifies the highest cognitive operation required to explain the work — not its prestige, difficulty, reputation, or subject matter.</p>
+          <div className={styles.microGraphic}>
+            <span>1</span><i/><span>2</span><i/><span>3a</span><i/><span>3b</span><i/><span>3c</span><i/><span>G</span>
+          </div>
+          <Link href="/theory">Understand Operational Order <b>→</b></Link>
         </article>
         <article>
-          <span className="coordinateNo">02</span>
-          <h2>Cognitive Magnitude Score</h2>
-          <p>How much structured cognition does the artifact demonstrate while performing that operation? The score measures the architecture of the achievement across six independent dimensions.</p>
-          <Link href="/theory" className="small homeTextLink">Understand Cognitive Magnitude →</Link>
+          <div className={styles.coordinateLabel}>02 / MAGNITUDE</div>
+          <h3>Cognitive Magnitude</h3>
+          <p>How much structured cognition does the artifact demonstrate while performing that operation? Magnitude is distributed across six independent dimensions rather than treated as a vague impression of complexity.</p>
+          <div className={styles.dimensionMini}>
+            {['RL','AD','CD','ID','IC','GR'].map((d,i)=><div key={d}><span>{d}</span><i style={{width:`${46+i*8}%`}}/></div>)}
+          </div>
+          <Link href="/theory">Understand Cognitive Magnitude <b>→</b></Link>
         </article>
       </div>
-      <p className="homePrinciple">The two coordinates are not interchangeable. A higher score does not automatically mean a higher operation, and a higher operation does not automatically mean a higher score.</p>
+      <p className={styles.principle}>A higher score does not automatically mean a higher operation. A higher operation does not automatically mean a higher score. Neither is a synonym for quality, truth, influence, or creator intelligence.</p>
     </section>
 
-    <section className="section">
-      <div className="section-head homeSectionHead">
-        <div><div className="eyebrow">From the archive</div><h2>See the framework at work.</h2></div>
-        <Link href="/artifacts" className="small homeTextLink">Explore the full database →</Link>
+    <section className={styles.archive}>
+      <div className={styles.sectionHead}>
+        <div><span>FROM THE ARCHIVE</span><h2>See the framework at work.</h2></div>
+        <Link href="/artifacts">Explore all artifacts →</Link>
       </div>
-      <div className="grid homeArtifactGrid">{picks.map((a:any) => <Link className="card" key={a.slug} href={`/artifact/${a.slug}`}>
-        <div className="meta">{a.domain} · {a.year}</div>
-        <h3>{a.title}</h3>
-        <div className="small">{a.creator}</div>
-        <div className="dip">{a.status === 'evaluated' ? `${a.torc} | ${a.cms}` : 'Evaluation in progress'}</div>
-      </Link>)}</div>
-    </section>
-
-    <section className="section homeTheoryBand">
-      <div>
-        <div className="eyebrow">The theory behind TORC</div>
-        <h2>The Age of False Depth</h2>
-      </div>
-      <div>
-        <p className="lede">TORC grows out of a broader theory of representation, intelligence, and the difference between appearing cognitively deep and actually performing a deep cognitive operation.</p>
-        <div className="buttons"><Link className="button primary" href="/theory">Read the Living Edition</Link></div>
+      <div className={styles.artifactGrid}>
+        {picks.map((a:any) => <Link key={a.slug} href={`/artifact/${a.slug}`} className={styles.artifactCard}>
+          <div className={styles.artifactMeta}>{a.domain} · {a.year}</div>
+          <h3>{a.title}</h3>
+          <p>{a.creator}</p>
+          <div className={styles.profileLine}>
+            <span>{a.status === 'evaluated' ? a.torc : '—'}</span>
+            <i/>
+            <b>{a.status === 'evaluated' ? a.cms : 'Pending'}</b>
+          </div>
+          <small>Open evaluation <em>→</em></small>
+        </Link>)}
       </div>
     </section>
 
-    <section className="section commissionBand homeCreatorBand">
-      <div><div className="eyebrow">Original work</div><h2>Want your own artifact analyzed?</h2><p className="lede">Independent TORC evaluation for screenplays, manuscripts, research, music, games, and other original work.</p></div>
-      <div className="buttons"><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div>
+    <section className={styles.theoryBand}>
+      <div className={styles.bookMark}>
+        <span>THE LIVING EDITION</span>
+        <b>THE<br/>AGE OF<br/>FALSE<br/>DEPTH</b>
+        <small>G. K. MUIJLAERT</small>
+      </div>
+      <div className={styles.theoryCopy}>
+        <span>THE THEORY BEHIND TORC</span>
+        <h2>The appearance of depth is not the same as a deep operation.</h2>
+        <p>TORC grows out of a broader theory of representation, intelligence, and what completed artifacts preserve as evidence. The canonical statement is maintained as a living edition on TORC.world.</p>
+        <div className={styles.theoryActions}>
+          <Link href="/theory">Explore the theory</Link>
+          <Link href="/theory/book">Read the Living Edition <b>→</b></Link>
+        </div>
+      </div>
     </section>
 
-    <section id="organizations" className="section homeOrganizations">
-      <div className="eyebrow">TORC for organizations</div>
-      <h2>Professional applications.</h2>
-      <p className="lede">For producers, studios, publishers, research groups, universities, AI teams, and other organizations evaluating complex creative or intellectual work.</p>
-      <div className="orgCards">
-        <article><h3>Private evaluation</h3><p>Apply TORC to unreleased screenplays, manuscripts, narrative projects, research outputs, games, or other original work without adding it to the public archive.</p></article>
-        <article><h3>Comparative analysis</h3><p>Compare several artifacts under the same framework — for example a slate of scripts, submissions, concepts, or competing project options.</p></article>
-        <article><h3>Portfolio & batch analysis</h3><p>Map recurring strengths, bottlenecks, and cognitive architectures across a body of work rather than evaluating one artifact in isolation.</p></article>
-        <article><h3>Licensing & custom applications</h3><p>Discuss internal use of the TORC methodology, custom evaluation workflows, or other organizational applications of the framework.</p></article>
-      </div>
-      <div className="orgInquiry homeOrgInquiry"><b>Clients choose the material and scope — not the result.</b><p>Professional engagements are scoped individually. Pricing, turnaround, confidentiality, and deliverables are agreed before any work begins.</p><div className="buttons"><a className="button primary" href="mailto:contact@torc.world?subject=TORC%20Professional%20Inquiry">Discuss a project</a></div></div>
+    <section className={styles.twoDoors}>
+      <Link href="/evaluate-your-work" className={styles.creatorDoor}>
+        <span>FOR CREATORS</span>
+        <h2>What does your work actually demonstrate?</h2>
+        <p>Independent TORC evaluation and development analysis for original artifacts.</p>
+        <b>Submit your artifact →</b>
+      </Link>
+      <Link href="/for-organizations" className={styles.orgDoor}>
+        <span>FOR ORGANIZATIONS</span>
+        <h2>Evaluate cognition at scale.</h2>
+        <p>Standardized evaluation, comparative intelligence, portfolio analysis, and custom institutional applications.</p>
+        <b>Explore institutional use →</b>
+      </Link>
     </section>
   </main>;
 }

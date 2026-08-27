@@ -1,0 +1,76 @@
+/* TORC site-wide refinement: deliberately subtle on analytical pages. */
+:root{
+  --torc-accent:#5b2630;
+  --torc-accent-deep:#431b23;
+  --torc-warm:#eee7dc;
+}
+
+/* Common controls and buttons get a little more tactility. */
+.button{
+  transition:transform .16s ease,box-shadow .16s ease,background .16s ease,border-color .16s ease;
+}
+.button:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(44,31,25,.08)}
+.button.primary:hover{background:#2a2925}
+
+/* Archive rows: remain sober, but unmistakably interactive. */
+.artifactTable .row:not(.header){
+  transition:background .14s ease,padding-left .14s ease;
+}
+.artifactTable .row:not(.header):hover{
+  background:rgba(91,38,48,.045);
+  padding-left:8px;
+}
+.artifactTools input:focus,.artifactTools select:focus{
+  outline:1px solid rgba(91,38,48,.45);
+  outline-offset:-1px;
+}
+
+/* Compare is a tool: restrained data-console treatment rather than decorative cards. */
+.compareControls{
+  padding:20px;
+  margin-left:-20px!important;
+  margin-right:-20px!important;
+  background:linear-gradient(135deg,#eee7dc,#f8f5ef);
+  border-top:1px solid #d1c8be;
+  border-bottom:1px solid #d1c8be;
+}
+.compareSelected{
+  transition:border-color .15s ease,box-shadow .15s ease,background .15s ease;
+}
+.compareSelected:hover,.compareSelected:focus-visible{
+  border-color:var(--torc-accent)!important;
+  box-shadow:0 8px 18px rgba(55,35,31,.07);
+  background:#fff!important;
+}
+.compareSwap{
+  transition:background .15s ease,color .15s ease,border-color .15s ease,transform .15s ease;
+}
+.compareSwap:hover{
+  background:var(--torc-accent)!important;
+  color:#fff!important;
+  border-color:var(--torc-accent)!important;
+}
+.compareHeadline{
+  background:#171714;
+  color:#f6f1e8;
+  margin-left:-20px!important;
+  margin-right:-20px!important;
+  padding-left:20px!important;
+  padding-right:20px!important;
+}
+.compareHeadline p,.compareHeadline .meta,.compareHeadline .compareVs{color:#a9a39b!important}
+.compareHeadline .bigDip i{color:#8f6069!important}
+.compareTable{background:#fbfaf6}
+.compareRow:not(.compareRowHead){transition:background .12s ease}
+.compareRow:not(.compareRowHead):hover{background:rgba(91,38,48,.04)}
+.compareAhead{color:#5b2630}
+
+/* Footer: slightly more deliberate institutional close. */
+footer{
+  letter-spacing:.025em;
+  border-top-color:#bdb5aa!important;
+}
+
+@media(max-width:760px){
+  .compareControls,.compareHeadline{margin-left:-20px!important;margin-right:-20px!important}
+}
