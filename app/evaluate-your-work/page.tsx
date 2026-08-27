@@ -63,6 +63,21 @@ export default function SubmitArtifactPage(){
    <p>TORC development is not an attempt to force every artifact toward the highest possible Operational Order or CMS. A thriller, comedy, proof, novel, game, or screenplay can succeed brilliantly at the operation it performs. The question is whether the work fully realizes <em>its own</em> cognitive architecture — and, where a deeper operation is genuinely latent, what would be required to reach it.</p>
   </section>
 
+  <section className={styles.experienceSection}>
+   <div className={styles.sectionHeadLight}><span>EXPERIENCES WITH TORC</span><h2>What did the analysis reveal?</h2><p>The most useful feedback is not simply whether someone liked the report, but whether TORC exposed something in the work they could act on.</p></div>
+   <div className={styles.experienceEmpty}>
+    <p>Client experiences will appear here as the founding evaluations are completed.</p>
+    <p className={styles.experienceNote}>Testimonials are published only with the client’s explicit permission. Anonymous attribution is available.</p>
+   </div>
+  </section>
+
+  <section className={styles.revisionSection}>
+   <span>AFTER THE REVISION</span>
+   <h2>See what actually changed.</h2>
+   <p>After revising from a TORC Development Analysis, clients can request a focused re-evaluation. The purpose is not to reward revision with a higher score, but to test whether the intended structural changes are actually present in the new artifact.</p>
+   <div className={styles.revisionPrice}><strong>Revision Re-evaluation</strong><span>Founding price to be confirmed after the first client cycle.</span></div>
+  </section>
+
   <section id="submit" className={styles.submitSection}>
    <div className={styles.submitIntro}><span>SUBMIT YOUR ARTIFACT</span><h2>Start with the work.</h2><p>Upload the artifact and tell us what you want to understand. Submission is a scope request, not an automatic purchase. You will receive confirmation of scope, price, and turnaround before an evaluation begins.</p></div>
    <SubmissionForm />
