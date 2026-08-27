@@ -195,3 +195,17 @@
  .revisionPrice{display:block}.revisionPrice span{display:block;text-align:left;margin-top:8px}
  .finePrint{gap:1px;margin-top:50px}
 }
+
+.protocolNote{
+  display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;
+  padding:52px 34px;margin:18px 0 70px;border:1px solid #c8bcb2;
+  background:linear-gradient(145deg,#eee5da,#f8f4ed);
+}
+.protocolNote span{font:700 9px Arial,sans-serif;letter-spacing:.15em;color:var(--accent)}
+.protocolNote h2{margin:10px 0 0;font-size:35px;line-height:1.07}
+.protocolNote p{margin:0 0 15px;font-size:15px;line-height:1.68;color:#4e4943}
+.protocolNote small{
+  display:block;margin-top:23px;padding-top:15px;border-top:1px solid #cfc4ba;
+  font:700 8px Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:#716961
+}
+@media(max-width:720px){.protocolNote{grid-template-columns:1fr;gap:22px;padding:35px 22px;margin-bottom:55px}}

@@ -1,64 +1,30 @@
-# TORC Sitewide Refinement V1
+# TORC Instrument + Protocol Overhaul V2
 
-A coordinated refinement of the public/intellectual side of TORC.
+This pass changes the public story from “two scores” to the fuller system:
 
-## Changed
-- `app/layout.tsx`
-- `app/nav.module.css`
-- `app/site-polish.css` (new)
-- `app/page.tsx`
-- `app/home.module.css` (new)
-- `app/theory/page.tsx`
-- `app/theory/theory.module.css` (new)
-- `app/about/about.module.css`
-- `app/artifacts/artifacts-v4.module.css`
+THEORY → FRAMEWORK → PROPRIETARY PROTOCOL → ANALYSIS
 
-## Homepage
-- TORC now has a real institutional identity/hero rather than just an oversized word.
-- New visual TORC coordinate/DIP motif using CSS only.
-- Clear routes into Archive, Compare, and Theory.
-- More tactile coordinate explanation.
-- Refined featured-artifact cards.
-- Stronger Theory / Living Edition section.
-- Replaces the duplicated mini-Organizations page with two concise commercial doors:
-  creators and organizations.
+TORC is now presented as a theory that became an analytical / diagnostic instrument for completed artifacts.
 
-## Header
-- TORC becomes a compact home/brand lockup.
-- Small “Theory Of Representational Consciousness” descriptor on wider screens.
-- Submit Your Artifact and Organizations remain the two commercial CTAs.
+Operational Order, Cognitive Magnitude, and the six-dimensional model remain central, but are explicitly presented as the visible analytical architecture rather than the complete evaluation procedure.
 
-## Theory
-- Becomes a real intellectual gateway, not merely a button before the book.
-- Book object, problem statement, coordinate architecture, DIP equation, canonical edition section.
-- Existing theory claims preserved.
+The site names selected categories of methodological machinery to demonstrate rigor without revealing mechanisms, thresholds, sequences, triggers, scoring procedures, or reproducible instructions. The complete TORC Evaluation Protocol is explicitly described as proprietary and not publicly disclosed.
 
-## About
-- Same content, stronger provenance/identity treatment.
-- TORC acronym initials become restrained oxblood marks.
-- Canonical book gets a warm-paper institutional panel.
-- Sections gain rhythm without becoming “marketing”.
+Pages refined:
+- Homepage: major From Theory to Instrument section, protocol panel, six dimensions as analytical lenses.
+- Theory: new From Framework to Assessment section.
+- About: origin expanded into theory → framework → protocol → analysis.
+- Submit Your Artifact: diagnostic positioning and concise proprietary-protocol explanation.
+- Organizations: methodological independence now includes consistent proprietary protocol controls across a corpus.
+- Existing sitewide visual refinement remains included.
 
-## Artifacts
-- Intentionally remains the most sober page.
-- Creator CTA is warmer and more intentional.
-- Better focus/hover states.
-- Pagination gets restrained TORC accent.
-- Embedded comparison tool receives a subtle warm analytical panel.
-
-## Compare
-- No logic changes.
-- `site-polish.css` adds a restrained data-console treatment:
-  warmer picker panel, clearer hover/focus, dark comparison headline, row feedback.
-
-## Safety
-No changes to:
-- submission API/backend/SMTP
+Not changed:
+- submission API
+- SMTP / email
+- SubmissionForm component
 - artifact data
 - compare logic
 - book reader
-- Organizations page
-- Submit page
-- payments
+- payment infrastructure
 
-No CSS Module contains a global `:root` selector.
+No complete protocol procedures are disclosed or reproduced.

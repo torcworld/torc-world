@@ -35,7 +35,7 @@ export default function SubmitArtifactPage(){
   </section>
 
   <section className={styles.intro}>
-   <div><span className={styles.number}>01</span><h2>Not conventional coverage.</h2></div>
+   <div><span className={styles.number}>01</span><h2>Not conventional coverage. A diagnostic analysis of the artifact.</h2></div>
    <div className={styles.copy}>
     <p>TORC does not primarily ask whether a work follows established conventions, feels prestigious, or appears intellectually sophisticated. It asks what the completed artifact <em>demonstrates</em>.</p>
     <p>A Level 2 work does not become Level 3 by adding symbolism or self-reference. A high Cognitive Magnitude Score does not automatically mean a higher Operational Order. Development begins by locating the work precisely enough to understand what kind of change would actually matter.</p>

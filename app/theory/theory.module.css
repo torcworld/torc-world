@@ -66,3 +66,68 @@
  .problem,.bookSection{grid-template-columns:1fr;gap:25px}.sectionHead{display:block}.sectionHead>p{margin-top:18px}
  .cards{grid-template-columns:1fr}.bookSection{margin:0 -20px;padding:55px 20px}.bookNumber{font-size:80px}
 }
+
+.protocol{
+  margin:0 -28px;
+  padding:68px 54px;
+  display:grid;
+  grid-template-columns:.32fr 1.68fr;
+  gap:55px;
+  background:#171714;
+  color:#f5f1e8;
+}
+.protocolNo{
+  font:700 clamp(75px,11vw,130px)/.8 Arial,sans-serif;
+  letter-spacing:-.07em;
+  color:#6c4149;
+}
+.protocolBody>span{
+  font:700 9px Arial,sans-serif;
+  letter-spacing:.15em;
+  color:#c78591;
+}
+.protocolBody h2{
+  max-width:780px;
+  margin:11px 0 21px;
+  font-size:clamp(34px,4.3vw,50px);
+  line-height:1.05;
+  letter-spacing:-.03em;
+  font-weight:500;
+}
+.protocolBody p{
+  max-width:820px;
+  color:#c9c3bc;
+  font-size:16px;
+  line-height:1.68;
+}
+.protocolLede{font-size:18px!important;color:#e0dad3!important}
+.protocolTerms{
+  display:flex;
+  flex-wrap:wrap;
+  gap:7px;
+  margin:28px 0;
+}
+.protocolTerms span{
+  padding:8px 10px;
+  border:1px solid #5d5550;
+  background:#211f1d;
+  font:700 8px Arial,sans-serif;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#d5cec7;
+}
+.protocolBody small{
+  display:block;
+  max-width:820px;
+  margin-top:28px;
+  padding-top:18px;
+  border-top:1px solid #48423e;
+  font:700 8px Arial,sans-serif;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:#9d9790;
+}
+@media(max-width:700px){
+  .protocol{margin:0 -20px;padding:55px 20px;grid-template-columns:1fr;gap:25px}
+  .protocolNo{font-size:80px}
+}

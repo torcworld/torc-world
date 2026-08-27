@@ -62,8 +62,24 @@ export default function Theory(){
       </div>
     </section>
 
+    <section className={styles.protocol}>
+      <div className={styles.protocolNo}>03</div>
+      <div className={styles.protocolBody}>
+        <span>FROM FRAMEWORK TO ASSESSMENT</span>
+        <h2>TORC is not applied by reading six numbers off an artifact.</h2>
+        <p className={styles.protocolLede}>The public framework identifies the principal coordinates and dimensions. The evaluation itself is governed by a proprietary protocol developed to operationalize the theory consistently across difficult, ambiguous, and structurally different artifacts.</p>
+
+        <div className={styles.protocolTerms}>
+          {['Evidentiary requirements','Boundary tests','Exception rules','Interpretive safeguards','Anti-inflation firewalls','Cross-dimensional checks','Ambiguous-signal procedures'].map(x=><span key={x}>{x}</span>)}
+        </div>
+
+        <p>These controls do not replace interpretation; they discipline it. Their purpose is to prevent complexity, prestige, obscurity, symbolism, or surface sophistication from being mistaken for demonstrated cognitive operation without adequate structural evidence.</p>
+        <small>The complete TORC Evaluation Protocol is proprietary and is not publicly disclosed.</small>
+      </div>
+    </section>
+
     <section className={styles.bookSection}>
-      <div className={styles.bookNumber}>03</div>
+      <div className={styles.bookNumber}>04</div>
       <div>
         <span>THE CANONICAL EDITION</span>
         <h2><i>The Age of False Depth</i></h2>
