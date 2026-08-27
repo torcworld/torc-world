@@ -1,0 +1,42 @@
+.navLinks {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.submitLink {
+  margin-left: 12px;
+  padding: 9px 13px;
+  border: 1px solid #b9aa90;
+  background: #d8c9ad;
+  color: #171714 !important;
+  font-weight: 700 !important;
+  letter-spacing: .11em;
+  transition: background .16s ease, border-color .16s ease, transform .16s ease;
+}
+
+.submitLink:hover,
+.submitLink:focus-visible {
+  background: #cdbb9b;
+  border-color: #a89574;
+  transform: translateY(-1px);
+}
+
+/* The CTA is already visually distinct; suppress the ordinary nav underline on it. */
+.submitLink::after { display: none !important; }
+
+@media (max-width: 800px) {
+  .navLinks {
+    row-gap: 10px;
+  }
+  .submitLink {
+    margin-left: 4px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .submitLink {
+    margin-left: 0;
+  }
+}

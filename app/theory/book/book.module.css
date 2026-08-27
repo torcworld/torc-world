@@ -236,3 +236,19 @@
  .readerNavPanel { position:absolute; right:0; bottom:44px; }
  .readerNav:hover .readerNavPanel,.readerNav:focus-within .readerNavPanel { width:min(310px, calc(100vw - 28px)); max-height:68vh; border-width:1px; }
 }
+
+/* First-visit discovery: show the contents panel immediately, then let it collapse. */
+.readerNavIntroOpen { opacity: 1; }
+.readerNavIntroOpen .readerNavPanel {
+  width: 285px;
+  padding: 20px 20px 22px;
+  border-width: 1px 0 1px 1px;
+}
+
+@media (max-width: 900px) {
+  .readerNavIntroOpen .readerNavPanel {
+    width: min(310px, calc(100vw - 28px));
+    max-height: 68vh;
+    border-width: 1px;
+  }
+}

@@ -1,7 +1,37 @@
-# TORC Living Edition — restored reading design + chapter navigation
+# TORC — Navigation + Living Edition Contents Discovery
 
-This patch keeps the revised Living Edition manuscript (including the Chapter Seven wording change), restores the book-style paper layout and chapter treatment, and adds a discreet table of contents for jumping between Personal Motivation, Parts, Chapters 1–9, and the Epilogue.
+UPDATE/OVERLAY PATCH — not a complete repository.
 
-The contents control fades when the reader is inactive, wakes when the pointer moves / the page scrolls / the screen is touched, and expands only on hover or focus. On mobile it becomes a compact floating Contents pill.
+Changes:
 
-Replace the matching files under `app/theory/book/` and redeploy. No artifact/evaluation data is changed.
+## Living Edition
+- The table of contents opens automatically when the reader first enters the book page.
+- It remains visibly open for about 5 seconds if the reader does nothing.
+- Clicking/tapping into the reading page collapses it immediately.
+- After that it returns to the existing discreet/fading Contents control.
+- Hover/focus/tap still makes the contents available whenever needed.
+- The manuscript, book-paper styling, chapter formatting, and author/title presentation are preserved.
+
+## Main navigation
+New order:
+- Artifacts
+- Theory
+- Compare
+- Organizations
+- About
+- Submit Your Artifact
+
+Compare is restored as a first-class navigation destination now that the comparison page has a stronger explanatory/teaching role.
+
+## Submit Your Artifact
+- Replaces the navigation wording `Evaluate an Artifact` with `Submit Your Artifact`.
+- Still points to the existing `/evaluate-your-work` route; no service functionality is removed.
+- Styled as a restrained warm-toned CTA, separated visually from the ordinary navigation links.
+- Designed to stand out as the primary commercial action without turning the header into an advertising banner.
+
+Files:
+- app/layout.tsx
+- app/nav.module.css
+- app/theory/book/BookNavigator.tsx
+- app/theory/book/book.module.css
+- app/theory/book/page.tsx
