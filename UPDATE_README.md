@@ -1,11 +1,7 @@
-# TORC Living Edition manuscript update
+# TORC Living Edition — restored reading design + chapter navigation
 
-This patch replaces the online book body from **Personal Motivation** onward with the newly supplied Living Edition manuscript.
+This patch keeps the revised Living Edition manuscript (including the Chapter Seven wording change), restores the book-style paper layout and chapter treatment, and adds a discreet table of contents for jumping between Personal Motivation, Parts, Chapters 1–9, and the Epilogue.
 
-It preserves the existing website title block (title, subtitle, theory name, and author) and the current book-page styling.
+The contents control fades when the reader is inactive, wakes when the pointer moves / the page scrolls / the screen is touched, and expands only on hover or focus. On mobile it becomes a compact floating Contents pill.
 
-One requested editorial revision is included in Chapter Seven:
-
-> Cognitive Magnitude asks how much cognition the artifact demonstrates in achieving it.
-
-Upload these files over the matching paths in the current TORC website project and redeploy.
+Replace the matching files under `app/theory/book/` and redeploy. No artifact/evaluation data is changed.
