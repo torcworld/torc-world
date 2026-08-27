@@ -1,13 +1,19 @@
-# TORC — Nodemailer TypeScript Build Fix
+# TORC Organizations — First Institutional Draft
 
-One-file deployment patch.
+Small overlay patch.
 
-Replaces only:
-- package.json
+Files:
+- app/for-organizations/page.tsx
+- app/for-organizations/organizations.module.css
 
-Fix:
-- Adds `@types/nodemailer` to devDependencies.
-- This resolves the Vercel build error:
-  `Could not find a declaration file for module 'nodemailer'`.
+Rebuilds the Organizations page around:
+- portfolio / high-volume evaluation
+- comparative intelligence
+- development and selection support
+- licensing and custom implementation
+- a concrete 50-artifacts-per-week scenario
+- custom institutional scoping
+- direct contact via contact@torc.world
+- responsive desktop/mobile layout
 
-No website content, styling, submission logic, DNS, or email settings are changed.
+No global CSS, artifact data, submission backend, navigation, Theory, or Compare files are changed.
