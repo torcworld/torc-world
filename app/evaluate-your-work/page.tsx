@@ -10,11 +10,29 @@ const dimensions = [
 export default function SubmitArtifactPage(){
  return <main className={styles.page}>
   <header className={styles.hero}>
-   <div className={styles.eyebrow}>TORC DEVELOPMENT ANALYSIS</div>
-   <h1>Find where your work is now —<br/>and what would have to change for it to go further.</h1>
-   <p>TORC evaluates the cognitive operation your artifact actually performs, the magnitude of cognition demonstrated in its construction, and — where useful — the structural boundary preventing the work from doing more.</p>
-   <a className={styles.primary} href="#submit">Submit your artifact</a>
+   <div className={styles.heroCopy}>
+    <div className={styles.eyebrow}>TORC DEVELOPMENT ANALYSIS</div>
+    <h1>Find where your work is now —<br/>and what would have to change for it to go further.</h1>
+    <p>TORC evaluates the cognitive operation your artifact actually performs, the magnitude of cognition demonstrated in its construction, and — where useful — the structural boundary preventing the work from doing more.</p>
+    <a className={styles.primary} href="#submit">Submit your artifact</a>
+   </div>
+   <aside className={styles.heroIndex}>
+    <span>ANALYSIS / 01</span>
+    <div><b>ORDER</b><p>What kind of cognitive operation is actually present?</p></div>
+    <div><b>MAGNITUDE</b><p>How much cognitive architecture does the artifact sustain?</p></div>
+    <div><b>BOUNDARY</b><p>What prevents the next structural operation, if one is genuinely latent?</p></div>
+   </aside>
   </header>
+
+  <section className={styles.processStrip}>
+   <div><span>01</span><b>Submit</b><small>Scope request</small></div>
+   <i>→</i>
+   <div><span>02</span><b>Review</b><small>Scope · price · turnaround</small></div>
+   <i>→</i>
+   <div><span>03</span><b>Evaluate</b><small>Artifact-first analysis</small></div>
+   <i>→</i>
+   <div><span>04</span><b>Develop</b><small>Evidence-based next moves</small></div>
+  </section>
 
   <section className={styles.intro}>
    <div><span className={styles.number}>01</span><h2>Not conventional coverage.</h2></div>
@@ -26,7 +44,7 @@ export default function SubmitArtifactPage(){
 
   <section className={styles.darkSection}>
    <div className={styles.sectionHead}><span>WHAT TORC CAN REVEAL</span><h2>“Make it deeper” is not a development note.</h2></div>
-   <div className={styles.revealGrid}>{dimensions.map(([title,text],i)=><article key={title}><div className={styles.cardNo}>0{i+1}</div><h3>{title}</h3><p>{text}</p></article>)}</div>
+   <div className={styles.revealGrid}>{dimensions.map(([title,text],i)=><article key={title}><div className={styles.cardNo}>0{i+1}</div><h3>{title}</h3><p>{text}</p><div className={styles.cardSignal}/></article>)}</div>
   </section>
 
   <section className={styles.example}>
@@ -41,18 +59,18 @@ export default function SubmitArtifactPage(){
     <article className={styles.priceCard}>
      <div><span className={styles.package}>TORC Evaluation</span><div className={styles.price}>€149</div><p className={styles.priceLead}>What does the work demonstrate?</p></div>
      <ul><li>Operational Order</li><li>Six-dimensional cognitive profile</li><li>Cognitive Magnitude Score + DIP</li><li>Boundary analysis</li><li>Principal strengths and limitations</li></ul>
-     <a href="#submit">Choose Evaluation</a>
+     <a href="#submit">Choose Evaluation <span>→</span></a>
     </article>
     <article className={`${styles.priceCard} ${styles.featured}`}>
      <div className={styles.recommended}>RECOMMENDED · FOUNDING RATE</div>
      <div><span className={styles.package}>TORC Development</span><div className={styles.price}>€349 <small>standard €495</small></div><p className={styles.priceLead}>Where does the work stop — and what could make it stronger?</p></div>
      <ul><li>Everything in TORC Evaluation</li><li>Operational-ceiling diagnosis</li><li>Next-Order boundary analysis</li><li>Cognitive Magnitude development</li><li>False-depth audit</li><li>Prioritized structural opportunities</li></ul>
-     <a href="#submit">Choose Development</a>
+     <a href="#submit">Choose Development <span>→</span></a>
     </article>
     <article className={styles.priceCard}>
      <div><span className={styles.package}>TORC Deep Analysis</span><div className={styles.price}>from €695</div><p className={styles.priceLead}>A deeper examination of the artifact as a complete cognitive architecture.</p></div>
      <ul><li>Everything in TORC Development</li><li>Section / sequence-level analysis</li><li>Competing interpretations tested</li><li>Order × Magnitude interaction</li><li>Extended revision priorities</li><li>Substantial final report</li></ul>
-     <a href="#submit">Choose Deep Analysis</a>
+     <a href="#submit">Choose Deep Analysis <span>→</span></a>
     </article>
    </div>
    <p className={styles.scopeNote}>Final scope and turnaround are confirmed before any work begins. Very long or unusually complex artifacts may require a custom quote.</p>
@@ -66,6 +84,7 @@ export default function SubmitArtifactPage(){
   <section className={styles.experienceSection}>
    <div className={styles.sectionHeadLight}><span>EXPERIENCES WITH TORC</span><h2>What did the analysis reveal?</h2><p>The most useful feedback is not simply whether someone liked the report, but whether TORC exposed something in the work they could act on.</p></div>
    <div className={styles.experienceEmpty}>
+    <div className={styles.quoteMark}>“</div>
     <p>Client experiences will appear here as the founding evaluations are completed.</p>
     <p className={styles.experienceNote}>Testimonials are published only with the client’s explicit permission. Anonymous attribution is available.</p>
    </div>
@@ -79,14 +98,22 @@ export default function SubmitArtifactPage(){
   </section>
 
   <section id="submit" className={styles.submitSection}>
-   <div className={styles.submitIntro}><span>SUBMIT YOUR ARTIFACT</span><h2>Start with the work.</h2><p>Upload the artifact and tell us what you want to understand. Submission is a scope request, not an automatic purchase. You will receive confirmation of scope, price, and turnaround before an evaluation begins.</p></div>
+   <div className={styles.submitIntro}>
+    <span>SUBMIT YOUR ARTIFACT</span><h2>Start with the work.</h2>
+    <p>Upload the artifact and tell us what you want to understand. Submission is a scope request, not an automatic purchase. You will receive confirmation of scope, price, and turnaround before an evaluation begins.</p>
+    <div className={styles.submitTrust}>
+     <div><b>01</b><span>Private by default</span></div>
+     <div><b>02</b><span>No payment at submission</span></div>
+     <div><b>03</b><span>Scope confirmed first</span></div>
+    </div>
+   </div>
    <SubmissionForm />
   </section>
 
   <section className={styles.finePrint}>
-   <div><h3>Private by default</h3><p>Submitted work is treated as private evaluation material. Public inclusion in the TORC archive is a separate decision and is never implied by submission.</p></div>
-   <div><h3>Artifact first</h3><p>Payment does not purchase a higher score or Operational Order. The evaluation follows the evidence preserved in the artifact.</p></div>
-   <div><h3>No forced “upgrade”</h3><p>If moving toward a higher Order would damage the work, the analysis should say so. Development recommendations serve the artifact, not the ladder.</p></div>
+   <div><span>01</span><h3>Private by default</h3><p>Submitted work is treated as private evaluation material. Public inclusion in the TORC archive is a separate decision and is never implied by submission.</p></div>
+   <div><span>02</span><h3>Artifact first</h3><p>Payment does not purchase a higher score or Operational Order. The evaluation follows the evidence preserved in the artifact.</p></div>
+   <div><span>03</span><h3>No forced “upgrade”</h3><p>If moving toward a higher Order would damage the work, the analysis should say so. Development recommendations serve the artifact, not the ladder.</p></div>
   </section>
  </main>
 }
