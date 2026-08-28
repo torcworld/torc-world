@@ -1,13 +1,12 @@
-TORC War and Peace Clean Slate V4
+TORC War and Peace Clean Slate V5
 
-Overlay these files onto the repository root.
+Changes from V4:
+- Compresses opening analysis from six paragraphs to three denser paragraphs.
+- Refocuses analysis on TORC-specific insight: history retrospectively compresses distributed causation into visible authorship.
+- Tightens 3c/G boundary to three paragraphs and removes repeated generic explanation.
+- Compresses final exceptional section to two paragraphs.
+- Removes redundant bottom TORC Determination / G 915 card entirely.
+- Integrates the strongest concluding sentence into the analysis itself.
+- Leaves the interactive six-dimensional model and CTA structure intact.
 
-Changes from V3:
-- Shortens the opening analysis by two paragraphs and removes repeated setup.
-- Moves the six-dimensional model directly beneath the opening analysis.
-- Removes the repeated CMS 915/range block from the dimension section.
-- Adds visible dimension score bars.
-- Makes each entire dimension row clickable; clicking again collapses it.
-- Adds hover movement to the whole row/bar so interactivity is obvious without an info icon.
-- Keeps Formal definition / In plain language / War and Peace-specific analysis inside each expandable dimension.
-- Continues the essay below the dimensions with the G vs 3c boundary and final G determination.
+Overlay this ZIP at repository root, commit, and deploy.

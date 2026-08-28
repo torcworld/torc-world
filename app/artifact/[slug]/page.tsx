@@ -31,15 +31,11 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
      <section>
        <div className={styles.kicker}>Analysis</div>
        <h2>History gets bigger as its heroes get smaller.</h2>
-       <p><em>War and Peace</em> begins in a world with obvious centers of power. Emperors decide. Generals command. Armies move. Historians later arrange the consequences around the names of the people who appeared to control them. Tolstoy spends the novel making that picture harder and harder to believe.</p>
-       <p>Napoleon gives orders, but every order enters a reality already crowded with distance, timing, terrain, fear, misunderstanding, resistance, competing decisions and events in motion. From far away a battle can look like the execution of a plan. From inside it, the plan fragments into thousands of local actions no commander sees in full and no commander owns.</p>
-       <p>Kutuzov matters for almost the opposite reason. His intelligence lies partly in recognizing the limits of command. He does not become a better master of history than Napoleon; he understands more clearly that history has no single master.</p>
-       <p>The same pressure reaches private life. Pierre, Andrei, Natasha and the families around them act with real intentions, but those intentions pass into other people, social structures, accident, mortality and consequences they could not have represented in advance. The human story is not separate from Tolstoy's argument. It is where the argument keeps becoming visible.</p>
-       <p>This is why the scale of <em>War and Peace</em> matters. Its characters, institutions, battles and private lives allow Tolstoy to test the same problem at radically different scales: how much of what happens can actually be explained by what somebody intended to happen?</p>
-       <p>Again and again, the answer is: less than the stories told afterward suggest. Historical narration cleans up distributed events, finds a visible agent and turns an outcome produced by innumerable conditions into a story with a protagonist. Napoleon becomes evidence of the error itself: mistaking the most visible agent for the sufficient cause.</p>
+       <p><em>War and Peace</em> begins with the familiar grammar of history: emperors decide, generals command, armies move, and the event is later named after the people who appeared to control it. Tolstoy dismantles that grammar from inside the event. An order enters a world already occupied by distance, timing, terrain, fear, incomplete knowledge, resistance, competing intentions and actions already underway. From far away, Borodino can look authored. From inside it, authorship dissolves.</p>
+       <p>That makes Napoleon more than a man who overestimates his power. He becomes a demonstration of how history manufactures the illusion of authorship: distributed events are retrospectively compressed around their most visible participant. Kutuzov forms the inverse. The more accurately he understands what produces events, the less causal sovereignty he attributes to himself. Tolstoy reverses the usual relation between power and understanding.</p>
+       <p>The private lives obey the same architecture. Pierre, Andrei and Natasha act, choose and interpret, but reality returns consequences no intention contains. The domestic and historical plots are therefore not parallel subjects. They are different scales of the same problem: human beings participate in causes they cannot individually possess. The novel's protagonists remain dramatically indispensable while becoming increasingly insufficient as explanations of the world they inhabit.</p>
      </section>
    </article>
-
    <section className={styles.cmsSection}>
      <div className={styles.kicker}>Cognitive architecture</div>
      <h2 className={styles.dimensionsTitle}>The six-dimensional model</h2>
@@ -66,20 +62,18 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
      <section className={styles.boundary}>
        <div className={styles.kicker}>The boundary</div>
        <h2>Why G, not 3c?</h2>
-       <p>A serious 3c reading of <em>War and Peace</em> is possible because Pierre and Andrei undergo profound changes in their relation to agency, mortality, meaning and themselves. Their earlier orientations break; the novel does not simply restore the certainty they began with.</p>
-       <p>But that still does not account for the completed work. Tolstoy asks why people so consistently misunderstand the forces producing the world around them. Individual failures of control become evidence for a larger account of historical causation: outcomes emerge through distributed actions, constraints, circumstances and interactions that exceed every participant.</p>
-       <p>That is why TORC places the novel at G. <em>War and Peace</em> does not only show consciousness confronting the limits of its relation to reality. It builds an explanation for why individual intention and historical outcome come apart in the first place.</p>
+       <p>Pierre and Andrei make 3c a serious alternative. Their earlier orientations toward agency, mortality and meaning break, and the novel does not simply restore them. But their transformations still leave a larger question unanswered: why do people so persistently mistake intention for control?</p>
+       <p>Tolstoy answers by changing the status of the characters themselves. Napoleon, Kutuzov, Pierre and the rest cease to function only as agents inside events; they become evidence about how events are produced and then misunderstood. Orders become contributions rather than sufficient causes. Outcomes emerge from interactions no participant can represent in full. History then performs a final distortion: it compresses that distributed process back into the biography of a visible individual.</p>
+       <p>This is where the novel crosses into G. It does not merely show consciousness discovering that reality exceeds it. <em>War and Peace</em> does not merely portray the limits of human agency. It explains why those limits exist—and why, afterward, we are tempted to erase them.</p>
      </section>
    </article>
 
    <section className={styles.exceptional}>
      <div className={styles.kicker}>What makes it exceptional</div>
      <h2>G is extraordinarily rare in narrative artifacts.</h2>
-     <p><em>War and Peace</em> reaches it because Tolstoy does more than portray the limits of human agency. He makes those limits intelligible. The novel takes a world apparently organized by powerful individuals and reveals a deeper architecture of intention, constraint, circumstance, collective action and retrospective interpretation.</p>
-     <p>The apparent makers of history remain inside history, but they can no longer explain it. Tolstoy does not leave that insight beside the story. He makes the novel demonstrate it.</p>
-     <div className={styles.finalVerdict}><span>TORC determination</span><strong>G · 915</strong><p><em>War and Peace</em> does not merely portray the limits of human agency. It explains why those limits exist.</p></div>
+     <p>Tolstoy's deepest move is not to make the great man smaller. It is to explain how the great man becomes "great" as an explanatory object at all. Visibility, power and retrospective narration conspire to give a human face to causes that were never contained in one human being.</p>
+     <p>Napoleon therefore remains at the center of the spectacle while losing his place at the center of the explanation. The novel's scale is not excess around that insight; it is the machinery required to demonstrate it across war, family, consciousness and history.</p>
    </section>
-
    <section className={styles.bottomCta}>
      <div><span>TORC Development Analysis</span><h2>What is your artifact actually doing?</h2><p>Where is its deepest operation already working—and what is keeping the rest of the artifact from reaching it?</p></div>
      <Link className="button primary" href="/evaluate-your-work">Submit your artifact →</Link>
