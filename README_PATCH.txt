@@ -1,18 +1,13 @@
-TORC WAR AND PEACE — CLEAN SLATE V3
+TORC War and Peace Clean Slate V4
 
-Overlay this ZIP at the repository root.
+Overlay these files onto the repository root.
 
-Changes from V2:
-- Removes all oversized pull quotes / blockquotes from the analysis.
-- Removes the numbered five-point card/list treatment.
-- Rewrites the page as a continuous editorial essay.
-- Keeps the top immediately factual: War and Peace / Leo Tolstoy / Operational Order G / CMS 915.
-- Corrects the 3c discussion: 3c is treated as an operational alternative, not something "powerfully present."
-- Restores the old site's clickable six-dimension interaction.
-- Each dimension now opens to: formal definition / plain-language definition / artifact-specific rationale.
-- Keeps current public dimension scores: RL 9.8, AD 9.0, CD 9.1, ID 9.1, IC 9.4, GR 8.4.
-- Keeps CMS 915 and observed range 900–922.
-- Compresses the final G section and retains the TORC determination.
-- Strengthens the bottom Development Analysis CTA without turning the essay into sales copy.
-
-The public corpus remains a clean slate with War and Peace as the sole artifact.
+Changes from V3:
+- Shortens the opening analysis by two paragraphs and removes repeated setup.
+- Moves the six-dimensional model directly beneath the opening analysis.
+- Removes the repeated CMS 915/range block from the dimension section.
+- Adds visible dimension score bars.
+- Makes each entire dimension row clickable; clicking again collapses it.
+- Adds hover movement to the whole row/bar so interactivity is obvious without an info icon.
+- Keeps Formal definition / In plain language / War and Peace-specific analysis inside each expandable dimension.
+- Continues the essay below the dimensions with the G vs 3c boundary and final G determination.
