@@ -21,10 +21,9 @@ const orderInfo:Record<string,{name:string;short:string}>={
   '3c':{name:'Integrated Recursive Consciousness',short:'The contradiction remains real, but consciousness develops a coherent orientation capable of containing it without eliminating it.'},
   'G':{name:'Generative Consciousness',short:'The artifact relocates what explains an independently identifiable target by disclosing a generative structure or mechanism.'},
   'GΩ':{name:'Generative Consciousness — Successor-Baseline Necessity',short:'The explanatory relocation becomes a non-optional baseline that adequate successor inquiry must reckon with.'},
-  'M':{name:'Constitutive Consciousness',short:'The artifact establishes a structural constraint on the space of admissible frameworks themselves.'},
 };
 
-const torcOrder=['1','2','3a','3b','3c','G','GΩ','M'];
+const torcOrder=['1','2','3a','3b','3c','G','GΩ'];
 function cleanTorc(t?:string){return (t||'').replace(/^Level\s+/i,'')}
 function torcRank(t?:string){
   const clean=cleanTorc(t);
@@ -50,7 +49,6 @@ function boundaryIntro(a:Artifact,b:Artifact){
   if((hc==='3a'&&lc==='2'))return `The decisive boundary here is Level 2 → 3a. Level 2 organizes experience through a symbolic or abstract framework. At 3a that framework itself becomes part of the problem: the structure producing distortion is recursively exposed and becomes available to correction.`;
   if((hc==='G'&&['3a','3b','3c'].includes(lc)))return `This comparison crosses the Generative threshold. Level 3 transforms consciousness's relation to a problem; G changes what explains the independently identifiable target. The higher Order is therefore not simply “more recursive” or “more complex”—a different explanatory operation has occurred.`;
   if((hc==='GΩ'&&lc==='G'))return `The decisive boundary here is G → GΩ. Both artifacts relocate explanation. GΩ adds a stricter historical-structural condition: adequate successor inquiry can no longer simply return to the earlier explanatory landscape without recovering or answering the relocation.`;
-  if((hc==='M'&&lc==='GΩ'))return `The decisive boundary here is GΩ → M. GΩ makes an explanatory relocation unavoidable for successor inquiry. M goes further by establishing a constraint on the space of admissible frameworks themselves.`;
   return `${high.title} occupies the higher Operational Order (${high.torc} versus ${low.torc}). Operational Order is categorical rather than a point bonus: it identifies a different kind of operation, not simply a larger quantity of cognition.`;
 }
 

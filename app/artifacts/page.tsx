@@ -5,7 +5,7 @@ import {artifacts,Artifact} from '@/lib/artifacts';
 import styles from './artifacts-v4.module.css';
 
 const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
-const torcOrder=['M','GΩ','G','3c','3b','3a','2','1'];
+const torcOrder=['GΩ','G','3c','3b','3a','2','1'];
 function rank(t?:string){if(!t)return 99; const n=t.toLowerCase().replace('level ',''); const i=torcOrder.map(x=>x.toLowerCase()).indexOf(n); return i<0?98:i}
 function hash(s:string,seed:number){let h=seed|0;for(let i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;return h>>>0}
 

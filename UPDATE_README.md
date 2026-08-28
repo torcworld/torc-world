@@ -1,30 +1,25 @@
-# TORC Instrument + Protocol Overhaul V2
+# TORC Framework + Living Edition Revision V1
 
-This pass changes the public story from “two scores” to the fuller system:
+This is a surgical overlay for the current TORC site. Copy the `app/` folder over the repository root and commit the changed files.
 
-THEORY → FRAMEWORK → PROPRIETARY PROTOCOL → ANALYSIS
+## Public-site changes
 
-TORC is now presented as a theory that became an analytical / diagnostic instrument for completed artifacts.
+- Removes **M / Constitutive Consciousness** from the active public framework.
+- Operational Order now terminates at **GΩ**: `1 → 2 → 3a → 3b → 3c → G → GΩ`.
+- Removes M from Archive Operational Order sorting and Compare metadata/boundary explanations.
+- Revises *The Age of False Depth* Living Edition so its taxonomy and discussion no longer contain M as an Operational Order.
 
-Operational Order, Cognitive Magnitude, and the six-dimensional model remain central, but are explicitly presented as the visible analytical architecture rather than the complete evaluation procedure.
+## Protocol delivered separately
 
-The site names selected categories of methodological machinery to demonstrate rigor without revealing mechanisms, thresholds, sequences, triggers, scoring procedures, or reproducible instructions. The complete TORC Evaluation Protocol is explicitly described as proprietary and not publicly disclosed.
+`TORC_Demonstrated_Intelligence_Protocol_v1.5.0.txt` is the revised proprietary evaluator protocol and is intentionally not included in the public website overlay.
 
-Pages refined:
-- Homepage: major From Theory to Instrument section, protocol panel, six dimensions as analytical lenses.
-- Theory: new From Framework to Assessment section.
-- About: origin expanded into theory → framework → protocol → analysis.
-- Submit Your Artifact: diagnostic positioning and concise proprietary-protocol explanation.
-- Organizations: methodological independence now includes consistent proprietary protocol controls across a corpus.
-- Existing sitewide visual refinement remains included.
+Protocol changes include:
+- complete removal of M as an Operational Order;
+- GΩ as the terminal Operational Order;
+- explicit substantive **10.0 anchors for all six dimensions**, restoring unambiguous 9.1–9.9 interpolation when a complete 9 anchor is met and evidence supports movement toward 10;
+- clarified artifact eligibility, attributional integrity, complete-access requirements, faithful digital representations, and bounded evaluative units;
+- no requirement for an original physical manuscript when a faithful complete source/edition is available.
 
-Not changed:
-- submission API
-- SMTP / email
-- SubmissionForm component
-- artifact data
-- compare logic
-- book reader
-- payment infrastructure
+## Intentionally not rewritten
 
-No complete protocol procedures are disclosed or reproduced.
+Existing historical evaluator/audit text under individual artifact reports may still contain old M-boundary language. Those records are not silently rewritten here; they should be replaced when the archive is freshly reevaluated under the revised protocol.
