@@ -1,6 +1,86 @@
-import Link from 'next/link';import {gatsby as g} from '@/lib/gatsby';
-export default function Page(){return <main><header className="page-title"><div className="eyebrow">Literature · 1925</div><h1>The Great Gatsby</h1><p className="lede">F. Scott Fitzgerald</p></header>
-<section className="dipHero"><div><div className="eyebrow">Demonstrated Intelligence Profile (DIP)</div><div className="bigDip">Level 2 <i>|</i> 713</div></div><div className="dipFacts"><p><b>7 independent evaluations</b></p><p>TORC consensus: <b>{g.torcDistribution}</b></p><p>CMS median: <b>713</b> · mean <b>710.6</b> · range <b>{g.cmsRange}</b></p></div></section>
-<section className="section prose"><div className="eyebrow">Operational Order</div><h2>Level 2 — Symbolic Consciousness</h2><p>All seven evaluators independently classify <i>The Great Gatsby</i> at Level 2. Their recurring finding is that the novel transforms represented social and personal reality into a globally coordinated symbolic architecture: Gatsby’s pursuit of Daisy, the green light, wealth and status, social geography, parties, automobiles, self-invention, memory, aspiration and the past/future relation repeatedly acquire significance beyond their literal narrative functions.</p><p>The decisive upward question is whether that symbolic architecture becomes insufficient. Evaluators identify genuine recursive signals from class hierarchy and social irresponsibility on one side, and from idealization, Nick’s retrospective mediation and reality’s resistance to Gatsby’s projected world on the other. They nevertheless converge that no distinct Level-3 operation becomes globally dominant.</p><p>The result is therefore a sophisticated but symbolically sufficient artifact: <b>Level 2 by 7/7 evaluators</b>, with its strongest magnitude feature in Integrative Compression.</p></section>
-<section className="section"><div className="section-head"><div><div className="eyebrow">Capacity Architecture (CA)</div><h2>Six-dimensional architecture</h2></div><div className="score">CMS 713 / 1000</div></div><div className="dimensions">{g.dimensions.map(x=><details className="dimension" key={x.key}><summary><span className="dimKey">{x.key}</span><span><b>{x.name}</b><small>Click for formal definition + explanation + artifact rationale</small></span><strong>{x.score}</strong></summary><div className="dimBody"><p className="formalDefinition"><b>Formal definition.</b> {x.formalDefinition}</p><p className="definition"><b>In plain language.</b> {x.definition}</p><p><b>Why Gatsby scores {x.score}.</b> {x.rationale}</p><p className="small">Evaluator range: {x.range} · <Link href="/methodology#dimensions">Full dimension methodology →</Link></p></div></details>)}</div></section>
-<section className="section audit"><div className="eyebrow">Evaluation record</div><h2>Inspect the result</h2><div className="auditGrid"><div><span>TORC agreement</span><b>{g.torcAgreement}</b></div><div><span>CMS stability</span><b>{g.cmsStability}</b></div><div><span>Dimensional stability</span><b>{g.dimensionalStability}</b></div></div><div className="buttons"><Link className="button primary" href="/artifact/the-great-gatsby/report">Read full consensus report</Link><a className="button" href="#evaluators">View evaluator results</a></div><div id="evaluators" className="evaluators">{g.evaluators.map((e,i)=><Link href={`/artifact/the-great-gatsby/evaluator-${i+1}`} key={String(e[0])}><span>{e[0]}</span><b>{e[1]} | {e[2]} →</b></Link>)}</div></section></main>}
+import Link from 'next/link';
+import {getArtifact} from '@/lib/artifacts';
+import styles from './gatsby.module.css';
+
+const dimensions = [
+  {key:'RL',name:'Relational Load',score:'7.4',formal:'Quantity, heterogeneity, interdependence, and coordination of necessary relations.',plain:'How many meaningful relationships must the artifact maintain and coordinate simultaneously? Not simply how many components it contains, but how many genuinely influence and constrain one another.',artifact:'The novel coordinates Gatsby, Daisy, Tom, Nick, Myrtle and Wilson through money, marriage, class, geography, desire and consequence. The network is dense and consequential, but it remains compact enough that its principal relations can still be separated and followed without destroying the whole.'},
+  {key:'AD',name:'Abstraction Depth',score:'7.4',formal:'Controlled distance through abstraction layers while preserving relevant distinctions.',plain:'How far can the artifact move beyond the concrete case toward deeper or more general structures while preserving the relationships that made the concrete case meaningful?',artifact:'Gatsby’s private attempt to recover Daisy expands into a structure about self-invention, class, desire, memory and the American promise of beginning again. The abstraction is substantial, but the novel keeps returning those ideas to the same symbolic and social field rather than constructing a deeper explanatory architecture beneath it.'},
+  {key:'CD',name:'Constraint Density',score:'7.6',formal:'Density of heterogeneous, interacting, simultaneously binding conditions.',plain:'How many interconnected requirements must the artifact satisfy at once, and how strongly do those requirements restrict what can successfully happen or be explained?',artifact:'The novel tightly coordinates chronology, Nick’s retrospective narration, class position, romantic history, geography, recurring objects and the fatal sequence linking Gatsby’s dream to Myrtle’s death. Its construction is disciplined, though it does not approach the extreme multi-domain constraint density of TORC’s highest-magnitude artifacts.'},
+  {key:'ID',name:'Inferential Distance',score:'6.9',formal:'Distance between available premises/conditions and the non-obvious successful solution or relation derived from them.',plain:'How large and non-routine is the reasoning movement from what is immediately available to the deeper relation or explanation the artifact establishes?',artifact:'The reader reconstructs Gatsby from rumor, performance, testimony and Nick’s changing judgment, and must connect the personal tragedy to larger structures of class and temporal desire. The movement is sophisticated but comparatively legible: the novel progressively supplies the symbolic relations needed to make its governing pattern intelligible.'},
+  {key:'IC',name:'Integrative Compression',score:'8.2',formal:'How economically a structure coordinates and preserves a substantially larger body of information and relations.',plain:'How much diverse complexity can the artifact organize through a smaller underlying architecture without flattening the differences that matter?',artifact:'This is the novel’s strongest dimension. A remarkably small set of characters, places and recurring objects carries class, money, desire, self-invention, memory, violence and historical longing. The green light can move from one man’s desire to a much larger structure of receding futurity without ceasing to belong to Gatsby’s particular story.'},
+  {key:'GR',name:'Generalization Reach',score:'6.8',formal:'How far the demonstrated structure remains applicable across materially heterogeneous problem-spaces.',plain:'How far can the same underlying structure travel into substantially different cases or domains while preserving the relationships that make it work?',artifact:'The architecture travels well to other forms of status aspiration, romantic idealization, self-invention and nostalgia. Its reach is real, but it remains strongly dependent on a recognizable social-symbolic problem-space rather than establishing a mechanism that transfers across radically different domains.'}
+];
+
+const orderDefinitions = {
+  L2:{name:'2 — Symbolic Consciousness',formal:'The completed artifact organizes meaning through symbolic, relational, thematic or systemic representation while a stable orientation toward the represented reality remains sufficient to account for the governing operation.',plain:'The work can be deep, complex and highly integrated while still making its meaning through a world we can interpret from a stable position.',artifact:'The green light, East and West Egg, Gatsby’s mansion, Daisy’s voice, cars, money and the attempted recovery of the past form one tightly coordinated symbolic system. That system is sufficient to explain the novel’s governing achievement.'},
+  a3:{name:'3a — Corrective Recursive Consciousness',formal:'Consciousness recognizes a fundamental problem in its relation to reality but principally locates the source of that problem in the external world or order.',plain:'Something is fundamentally wrong with the world, and consciousness understands the problem as principally outside itself. Its orientation becomes corrective: the external order is what must be resisted, exposed, escaped, changed or otherwise answered.',artifact:'The novel exposes class privilege, carelessness and the impossibility of Gatsby’s project, but it never requires a governing fracture in consciousness’s orientation toward reality. Nick can finally judge the world he has witnessed; the symbolic diagnosis remains available to him and to the reader.'}
+};
+
+export default function GreatGatsbyPage(){
+ const a=getArtifact('the-great-gatsby');
+ if(!a)return null;
+ return <main className={styles.page}>
+   <header className={styles.hero}>
+     <div className="eyebrow">{a.domain} · {a.year} · TORC analysis</div>
+     <h1>{a.title}</h1>
+     <p className={styles.creator}>{a.creator}</p>
+     <div className={styles.verdictGrid}>
+       <div><span>Operational Order</span><strong>2</strong><small>Symbolic consciousness</small></div>
+       <div><span>Cognitive Magnitude</span><strong>763</strong><small>Pooled CMS estimate</small></div>
+     </div>
+   </header>
+
+   <article className={styles.essay}>
+     <section>
+       <div className={styles.kicker}>Analysis</div>
+       <h2>Gatsby does not want the future. He wants the past to become the future.</h2>
+       <p><em>The Great Gatsby</em> is built around a deceptively simple distortion. Gatsby appears to be the great self-inventor: he changes his name, accumulates wealth, constructs a mansion and turns himself into the kind of man who might finally possess the life he once imagined. But nearly every act of reinvention points backward. The money, the parties and the performance of Gatsby are instruments for recovering a moment that has already disappeared.</p>
+       <p>Fitzgerald makes that contradiction visible through objects. The green light is powerful because it is both concrete and structurally unstable: while Daisy is distant, it can hold the magnitude of Gatsby’s desire; once she is physically present, it becomes merely a light on a dock. The mansion behaves similarly. Its spectacular excess is not an end but a device for attracting one particular person. Even Daisy’s charm is inseparable from money. Desire, class and representation continually collapse into one another.</p>
+       <p>That is why the novel’s economy matters. East Egg and West Egg, the valley of ashes, the cars, the parties, the eyes, the shirts, the house and the green light are not decorative symbols scattered across the story. They are a compact system for showing what happens when desire mistakes representation for recovery. Gatsby can manufacture the image, the setting and the social position. What he cannot manufacture is the past those things are meant to restore.</p>
+     </section>
+   </article>
+
+   <section className={styles.cmsSection}>
+     <div className={styles.kicker}>Cognitive architecture</div>
+     <h2 className={styles.dimensionsTitle}>The six-dimensional model</h2>
+     <p className={styles.cmsIntro}>See how TORC’s Cognitive Magnitude Score (CMS) is carried across the artifact.</p>
+     <div className={styles.dimensions}>
+       {dimensions.map(d=><details className={styles.dimension} key={d.key}>
+         <summary>
+           <span className={styles.dimKey}>{d.key}</span>
+           <span className={styles.dimName}><b>{d.name}</b><small>Definition + artifact analysis</small></span>
+           <span className={styles.bar} aria-hidden="true"><span style={{width:`${Number(d.score)*10}%`}} /></span>
+           <strong>{d.score}</strong>
+         </summary>
+         <div className={styles.dimBody}>
+           <p><b>Formal definition.</b> {d.formal}</p>
+           <p><b>In plain language.</b> {d.plain}</p>
+           <p><b>Why <em>The Great Gatsby</em> scores {d.score}.</b> {d.artifact}</p>
+         </div>
+       </details>)}
+     </div>
+   </section>
+
+   <article className={`${styles.essay} ${styles.essayAfterDimensions}`}>
+     <section className={styles.boundary}>
+       <Link className={`${styles.methodologyCta} ${styles.orderModelCta}`} href="/methodology#operational-order"><span>TORC classification model</span><strong>Explore the 7 Cognitive Orders</strong><span aria-hidden="true">→</span></Link>
+       <h2>Why <details className={styles.orderTerm}><summary>2</summary><div className={styles.orderPopover}><b>{orderDefinitions.L2.name}</b><p><strong>Formal.</strong> {orderDefinitions.L2.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.L2.plain}</p><p><strong>Here.</strong> {orderDefinitions.L2.artifact}</p></div></details>, not <details className={styles.orderTerm}><summary>3a</summary><div className={styles.orderPopover}><b>{orderDefinitions.a3.name}</b><p><strong>Formal.</strong> {orderDefinitions.a3.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.a3.plain}</p><p><strong>Here.</strong> {orderDefinitions.a3.artifact}</p></div></details>?</h2>
+       <p>The novel is full of failed orientation: Gatsby mistakes recovery for possibility, Daisy turns feeling into performance, and Nick begins by presenting himself as unusually tolerant before arriving at severe judgments. None of that is enough for Level 3. The question is whether the completed work makes consciousness’s relation to reality itself the governing problem. It does not.</p>
+       <p>Gatsby’s error remains intelligible from outside Gatsby. The reader can see the impossible demand built into his project: Daisy must not merely choose him now; she must erase the intervening years so that the present confirms the story he has constructed about the past. When reality refuses, the novel does not force us into a deeper fracture about whether reality can be known. It makes the symbolic contradiction clearer.</p>
+       <p>This is what a strong Level 2 artifact can do. Fitzgerald does not need recursive fracture to achieve depth. He builds an unusually compressed representational system in which money can become voice, geography can become class, a light can become futurity, and a love story can become a structure of American self-invention. The operation remains symbolic—but the symbolic architecture is exceptionally disciplined.</p>
+     </section>
+   </article>
+
+   <section className={styles.exceptional}>
+     <div className={styles.kicker}>What makes it exceptional</div>
+     <h2>Very little in the novel is allowed to mean only one thing.</h2>
+     <p>Its achievement is compression. Gatsby’s dream is simultaneously romantic, economic, social and temporal without those meanings having to be explained in separate systems. Fitzgerald keeps folding them back into the same small field of objects and relations.</p>
+     <p>That economy is also the limit TORC identifies. The novel intensifies and perfects its representation of desire; it does not cross into a different cognitive operation. Its final enlargement—from Gatsby’s private longing to the recurring human movement toward a receding future—completes the symbolic structure rather than breaking beyond it.</p>
+   </section>
+
+   <section className={styles.bottomCta}>
+     <Link className={styles.submitButton} href="/evaluate-your-work">Submit your artifact →</Link>
+     <div><span>TORC Development Analysis</span><h2>What is your artifact actually doing?</h2><p>Find the deepest operation already present in the work—and the structural boundary keeping it from becoming fully realized.</p></div>
+   </section>
+ </main>
+}
