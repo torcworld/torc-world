@@ -1,16 +1,17 @@
-TORC artifact batch 2 patch
+TORC Artifact Batch 2 — corrected patch
 
-Fixes
-- 2001: A Space Odyssey can no longer fall through to the War and Peace analysis in the dynamic artifact route.
-- The dynamic route now explicitly dispatches all batch-1 and batch-2 custom pages, preventing accidental War and Peace copy from appearing under those slugs.
+Apply this on top of Batch 1 / the current repository.
 
-Adds
-- Pulp Fiction — Level 2 | CMS 787
-- Gospel of John — Level 2 | CMS pending
-- Romans — G | CMS pending
-- Nāgārjuna, Mūlamadhyamakakārikā — GΩ | CMS pending
-- Dependent Arising, Kaccānagotta Sutta (SN 12.15) — G | CMS pending
+IMPORTANT FIX:
+- This patch does NOT replace app/artifact/[slug]/page.tsx.
+- Each new artifact uses its own static App Router route, so the existing dynamic War and Peace fallback remains untouched.
+- 2001: A Space Odyssey is included as its own static route to prevent it from rendering War and Peace copy.
 
-Notes
-- Pages with pending CMS intentionally omit the six-dimensional score rows while retaining the settled Operational Order and TORC analysis.
-- Existing styling/component architecture is preserved.
+Adds/updates:
+- 2001: A Space Odyssey
+- Pulp Fiction
+- Gospel of John
+- Romans
+- Mūlamadhyamakakārikā
+- Dependent Arising — Kaccānagotta Sutta
+- lib/artifacts.ts
