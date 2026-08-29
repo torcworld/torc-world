@@ -1,2 +1,2 @@
-ONE-LINE FIX ONLY
-Removes .cmsSection's full-width black border-bottom. Keeps the short .dimensions::after black rule and the Cognitive Orders block frame.
+SPACING-ONLY FOLLOW-UP
+Adds roughly 50% more white space above the Explore the 7 Cognitive Orders block. No other changes.
