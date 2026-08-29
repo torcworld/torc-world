@@ -164,3 +164,26 @@
 @media(max-width:620px){
   .inlineCompare{margin-bottom:58px}
 }
+
+/* Batch 16: comparison action sits symmetrically below the two selectors. */
+.inlineCompareAction {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 6px;
+  text-align: center;
+}
+.inlineCompareAction :global(.button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 154px;
+  padding: 12px 24px;
+}
+@media(max-width:620px){
+  .inlineCompareAction {
+    grid-column: 1;
+    justify-self: center;
+    margin-top: 8px;
+    text-align: center;
+  }
+}

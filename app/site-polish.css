@@ -84,3 +84,61 @@ footer{
 .compareHeadline{background:#4b4945 !important;color:#f3eee6 !important;}
 .compareHeadline p,.compareHeadline .meta,.compareHeadline .compareVs{color:#c9c1b7!important}
 .compareHeadline .bigDip i{color:#5b2630!important}
+
+/* Batch 16: definitive Compare result styling. These global selectors intentionally
+   override older Compare polish so desktop and mobile render the same composition. */
+.compareResultBand{
+  width:min(780px,calc(100% - 56px))!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding-left:28px!important;
+  padding-right:28px!important;
+  background:#3a3936!important;
+  border:0!important;
+  grid-template-columns:minmax(0,1fr) 76px minmax(0,1fr)!important;
+  gap:8px!important;
+}
+.compareResultBand .compareVs{
+  color:#9b626b!important;
+  font:800 24px/1 Arial,sans-serif!important;
+  letter-spacing:.06em!important;
+  text-align:center!important;
+}
+.compareResultBand p,.compareResultBand .meta{color:#cfc7bc!important}
+.compareAnalysisPanel{
+  display:block!important;
+  max-width:840px!important;
+  margin-left:0!important;
+  border:0!important;
+  background:rgba(23,23,20,.045)!important;
+}
+.compareFullAnalysisGrid{
+  max-width:920px;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  padding:16px!important;
+  background:#45433f!important;
+  border:0!important;
+}
+.compareFullAnalysisGrid a{
+  min-height:188px!important;
+  background:#d7c8b0!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.compareFullAnalysisGrid a:hover{background:#cebea4!important}
+.compareFullAnalysisGrid span{color:#5b2630!important}
+@media(max-width:760px){
+  .compareResultBand{
+    width:calc(100% - 24px)!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    padding-left:13px!important;
+    padding-right:13px!important;
+    grid-template-columns:minmax(0,1fr) 44px minmax(0,1fr)!important;
+    gap:4px!important;
+  }
+  .compareResultBand .compareVs{font-size:18px!important;text-align:center!important}
+  .compareFullAnalysisGrid{padding:12px!important}
+  .compareFullAnalysisGrid a{min-height:150px!important}
+}

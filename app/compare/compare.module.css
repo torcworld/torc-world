@@ -380,3 +380,168 @@
   .analysisBody p:first-child,
   .determination { padding: 16px; font-size: 16.5px; line-height: 1.5; }
 }
+
+/* Batch 15: tighter result band, unified analysis, stronger full-analysis cards. */
+.readyPage .scoreBand {
+  width: min(920px, calc(100% - 48px));
+  margin-left: auto !important;
+  margin-right: auto !important;
+  grid-template-columns: minmax(0,1fr) 92px minmax(0,1fr) !important;
+  gap: 14px !important;
+  padding: 28px 34px !important;
+  background: #3f3e3a !important;
+  border: 0 !important;
+}
+.readyPage .scoreBand > div:first-child,
+.readyPage .scoreBand > div:last-child {
+  min-width: 0;
+}
+.readyPage .scoreBand :global(.compareVs) {
+  color: #5b2630 !important;
+  font: 800 19px/1 Arial,sans-serif !important;
+  letter-spacing: .08em !important;
+}
+.readyPage .scoreBand h2 {
+  font-size: 27px;
+  line-height: 1.08;
+}
+.readyPage .scoreBand :global(.bigDip) {
+  font-size: clamp(40px,5vw,62px);
+}
+
+.analysisBody {
+  display: block;
+  max-width: 920px;
+  margin-top: 18px;
+  padding: 26px 30px;
+  background: rgba(23,23,20,.055);
+}
+.analysisBody p,
+.analysisBody p:first-child,
+.determination {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  color: var(--ink);
+  font: 700 18px/1.58 Arial,sans-serif;
+  letter-spacing: -.006em;
+}
+.analysisBody p + p { margin-top: 19px !important; }
+.determination { color: var(--ink) !important; }
+
+.analysisLinks {
+  gap: 16px;
+  margin-top: 8px;
+  margin-bottom: 50px;
+}
+.analysisLinks a {
+  min-height: 164px;
+  padding: 34px 74px 30px 30px;
+  border: 1px solid #b9ab98;
+  background: #d7c8b0;
+  box-shadow: inset 0 4px 0 #4a4843;
+}
+.analysisLinks a:hover { background: #cebea4; }
+.analysisLinks span {
+  margin-bottom: 17px;
+  color: #5b2630;
+  font: 800 13px/1.2 Arial,sans-serif;
+  letter-spacing: .12em;
+}
+.analysisLinks b {
+  font-size: clamp(25px,2.4vw,32px);
+  line-height: 1.08;
+}
+.analysisLinks i {
+  right: 28px;
+  font-size: 30px;
+  color: #5b2630;
+}
+
+@media(max-width:760px){
+  .readyPage .scoreBand {
+    width: calc(100% - 28px);
+    grid-template-columns: minmax(0,1fr) 52px minmax(0,1fr) !important;
+    gap: 8px !important;
+    padding: 22px 16px !important;
+  }
+  .readyPage .scoreBand > div:last-child { text-align: right !important; }
+  .readyPage .scoreBand :global(.compareVs) {
+    text-align: center !important;
+    font-size: 16px !important;
+    align-self: center;
+  }
+  .readyPage .scoreBand h2 { font-size: 20px; }
+  .readyPage .scoreBand p,
+  .readyPage .scoreBand :global(.meta) { font-size: 11px; }
+  .readyPage .scoreBand :global(.bigDip) {
+    font-size: 34px;
+    margin: 7px 0 2px;
+  }
+  .analysisBody {
+    padding: 22px 20px;
+  }
+  .analysisBody p,
+  .analysisBody p:first-child,
+  .determination {
+    font-size: 16.5px;
+    line-height: 1.5;
+  }
+  .analysisLinks { gap: 12px; }
+  .analysisLinks a {
+    min-height: 132px;
+    padding: 27px 58px 25px 23px;
+  }
+  .analysisLinks span { font-size: 12px; }
+  .analysisLinks b { font-size: 25px; }
+}
+
+/* Batch 16: force the intended compare composition through the global polish layer too. */
+.readyPage .scoreBand {
+  width: min(780px, calc(100% - 56px)) !important;
+  grid-template-columns: minmax(0,1fr) 76px minmax(0,1fr) !important;
+  gap: 8px !important;
+  padding: 28px 28px !important;
+  background: #3a3936 !important;
+}
+.readyPage .scoreBand :global(.compareVs) {
+  color: #9b626b !important;
+  font: 800 24px/1 Arial,sans-serif !important;
+  letter-spacing: .06em !important;
+}
+.analysisBody {
+  max-width: 840px;
+  padding: 28px 30px;
+  background: rgba(23,23,20,.045);
+}
+.analysisLinks {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  gap: 16px;
+  background: #45433f;
+}
+.analysisLinks a {
+  min-height: 188px;
+  padding: 38px 76px 34px 32px;
+  border: 0;
+  background: #d7c8b0;
+  box-shadow: none;
+}
+.analysisLinks span { font-size: 14px; margin-bottom: 20px; }
+.analysisLinks b { font-size: clamp(28px,2.7vw,35px); }
+.analysisLinks i { font-size: 32px; }
+@media(max-width:760px){
+  .readyPage .scoreBand {
+    width: calc(100% - 24px) !important;
+    grid-template-columns: minmax(0,1fr) 44px minmax(0,1fr) !important;
+    gap: 4px !important;
+    padding: 20px 13px !important;
+  }
+  .readyPage .scoreBand :global(.compareVs) { font-size: 18px !important; }
+  .analysisBody { padding: 22px 19px; }
+  .analysisLinks { padding: 12px; }
+  .analysisLinks a { min-height: 150px; padding: 30px 58px 28px 24px; }
+}

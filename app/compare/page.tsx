@@ -143,7 +143,7 @@ export default function Compare(){
     </>}
 
     {ready&&result&&<>
-      <section className={`compareHeadline ${styles.scoreBand}`}>
+      <section className={`compareHeadline compareResultBand ${styles.scoreBand}`}>
         <div><div className="meta">{A.domain}</div><h2>{A.title}</h2><p>{A.creator}</p><div className="bigDip">{A.torc} <i>|</i> {A.cms}</div></div>
         <div className="compareVs">VS</div>
         <div><div className="meta">{B.domain}</div><h2>{B.title}</h2><p>{B.creator}</p><div className="bigDip">{B.torc} <i>|</i> {B.cms}</div></div>
@@ -151,14 +151,14 @@ export default function Compare(){
 
       <section className={styles.resultSection}>
         <div className="eyebrow">What separates them?</div>
-        <div className={styles.analysisBody}>
+        <div className={`compareAnalysisPanel ${styles.analysisBody}`}>
           <p>{torcRank(A.torc)===torcRank(B.torc)?`Both artifacts demonstrate ${A.torc}.`:`${torcRank(A.torc)>torcRank(B.torc)?A.title:B.title} demonstrates a higher Operational Order.`} {result.order}</p>
           <p>{result.magnitude}</p>
           <p className={styles.determination}>{result.determination}</p>
         </div>
       </section>
 
-      <section className={styles.analysisLinks}>
+      <section className={`compareFullAnalysisGrid ${styles.analysisLinks}`}>
         <Link href={`/artifact/${A.slug}`}><span>Read full analysis</span><b>{A.title}</b><i>→</i></Link>
         <Link href={`/artifact/${B.slug}`}><span>Read full analysis</span><b>{B.title}</b><i>→</i></Link>
       </section>
