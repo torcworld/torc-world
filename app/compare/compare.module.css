@@ -263,3 +263,73 @@
   .analysisLinks a { min-height:94px; }
   .scoreBand { margin-bottom:30px !important; }
 }
+
+/* Batch 8: tighter comparison hierarchy on desktop and mobile. */
+.comparePageTitle {
+  padding-bottom: 26px;
+}
+.comparePageTitle h1 {
+  max-width: 760px;
+  font-size: clamp(42px, 5vw, 60px);
+  line-height: .98;
+  margin-bottom: 0;
+}
+.emptyState {
+  padding: 18px 0 54px;
+  color: var(--muted);
+  font-size: 15px;
+}
+.resultSection {
+  padding: 38px 0 42px;
+  border-top: 0;
+}
+.analysisBody {
+  max-width: 850px;
+  margin-top: 18px;
+  padding-left: 24px;
+  border-left: 2px solid var(--ink);
+  font-size: 18px;
+  line-height: 1.68;
+}
+.analysisLead {
+  font-size: 21px;
+  line-height: 1.45;
+}
+.scoreBand {
+  margin-top: 10px !important;
+  margin-bottom: 0 !important;
+  padding-top: 24px !important;
+  padding-bottom: 22px !important;
+}
+.scoreBand :global(.bigDip) {
+  font-size: clamp(42px, 6vw, 72px);
+  margin: 8px 0 10px;
+}
+.scoreBand h2 { font-size: 27px; }
+.analysisLinks { margin-top: 0; }
+
+@media(max-width:760px){
+  .comparePageTitle { padding: 42px 0 22px; }
+  .comparePageTitle h1 {
+    max-width: 330px;
+    font-size: 40px;
+    line-height: .98;
+  }
+  .resultSection { padding: 30px 0 34px; }
+  .analysisBody {
+    margin-top: 15px;
+    padding-left: 16px;
+    font-size: 16.5px;
+    line-height: 1.62;
+  }
+  .analysisLead { font-size: 18px; }
+  .scoreBand {
+    padding-top: 18px !important;
+    padding-bottom: 17px !important;
+  }
+  .scoreBand :global(.bigDip) {
+    font-size: 44px;
+    margin: 5px 0 7px;
+  }
+  .scoreBand h2 { font-size: 23px; }
+}

@@ -128,10 +128,9 @@ export default function Compare(){
   },[ready,A,B]);
 
   return <main>
-    <header className="page-title">
-      <div className="eyebrow">TORC diagnostic comparison</div>
-      <h1>Compare two artifacts. What separates them?</h1>
-      <p className="lede">Put two completed artifacts under the same instrument. TORC identifies the difference in Operational Order first, then the difference in Cognitive Magnitude.</p>
+    <header className={`page-title ${styles.comparePageTitle}`}>
+      <div className="eyebrow">Compare two artifacts</div>
+      <h1>What separates them?</h1>
     </header>
 
     <section className="compareControls">
@@ -140,19 +139,19 @@ export default function Compare(){
       <ArtifactPicker label="Artifact B" value={right} onChange={setRight}/>
     </section>
 
-    {!ready&&<section className="section compareIntro">
-      <div className="eyebrow">What separates them?</div>
-      <h2>Put two cognitive architectures under the same instrument.</h2>
-      <p>Choose any two evaluated artifacts. TORC compares the demonstrated operation, then the magnitude of the cognition required to realize it.</p>
-      <p className="small">{evaluated.length} evaluated artifacts are currently available for comparison.</p>
-    </section>}
+    {!ready&&<div className={styles.emptyState}>Choose two evaluated artifacts above.</div>}
 
     {ready&&result&&<>
-      <section className={`section ${styles.resultSection}`}>
+      <section className={`compareHeadline ${styles.scoreBand}`}>
+        <div><div className="meta">{A.domain}</div><h2>{A.title}</h2><p>{A.creator}</p><div className="bigDip">{A.torc} <i>|</i> {A.cms}</div></div>
+        <div className="compareVs">VS</div>
+        <div><div className="meta">{B.domain}</div><h2>{B.title}</h2><p>{B.creator}</p><div className="bigDip">{B.torc} <i>|</i> {B.cms}</div></div>
+      </section>
+
+      <section className={styles.resultSection}>
         <div className="eyebrow">What separates them?</div>
-        <h2 className={styles.analysisTitle}>{A.title} vs. {B.title}</h2>
         <div className={styles.analysisBody}>
-          <p><b>{torcRank(A.torc)===torcRank(B.torc)?`Both artifacts demonstrate ${A.torc}.`:`${torcRank(A.torc)>torcRank(B.torc)?A.title:B.title} demonstrates a higher Operational Order.`}</b></p>
+          <p className={styles.analysisLead}><b>{torcRank(A.torc)===torcRank(B.torc)?`Both artifacts demonstrate ${A.torc}.`:`${torcRank(A.torc)>torcRank(B.torc)?A.title:B.title} demonstrates a higher Operational Order.`}</b></p>
           <p>{result.order}</p>
           <p>{result.magnitude}</p>
           <p className={styles.determination}><b>{result.determination}</b></p>
@@ -162,12 +161,6 @@ export default function Compare(){
       <section className={styles.analysisLinks}>
         <Link href={`/artifact/${A.slug}`}><span>Read full analysis</span><b>{A.title}</b><i>→</i></Link>
         <Link href={`/artifact/${B.slug}`}><span>Read full analysis</span><b>{B.title}</b><i>→</i></Link>
-      </section>
-
-      <section className={`compareHeadline ${styles.scoreBand}`}>
-        <div><div className="meta">{A.domain}</div><h2>{A.title}</h2><p>{A.creator}</p><div className="bigDip">{A.torc} <i>|</i> {A.cms}</div></div>
-        <div className="compareVs">VS</div>
-        <div><div className="meta">{B.domain}</div><h2>{B.title}</h2><p>{B.creator}</p><div className="bigDip">{B.torc} <i>|</i> {B.cms}</div></div>
       </section>
 
       <details className={styles.dimensionDetails}>
