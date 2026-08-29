@@ -31,43 +31,44 @@ function torcRank(t?:string){
 }
 function fmt(n?:number){return typeof n==='number'?n.toFixed(1):'—'}
 function eligible(a:Artifact){return a.status==='evaluated' && typeof a.cms==='number'}
-function cmsContext(diff:number){
+function magnitudeSentence(a:Artifact,b:Artifact){
+  const diff=(a.cms||0)-(b.cms||0);
+  if(Math.abs(diff)<0.5)return `Their Cognitive Magnitude is effectively tied: ${a.cms} versus ${b.cms}. The distinction therefore lies in Operational Order and in how that magnitude is distributed across the six dimensions.`;
+  const high=diff>0?a:b, low=diff>0?b:a;
   const d=Math.abs(diff);
-  if(d<0.5)return 'Their Cognitive Magnitude Scores are effectively tied.';
-  if(d<=30)return `The ${d}-point CMS difference is small. Their overall demonstrated magnitude is broadly similar even if their architectures differ.`;
-  if(d<=75)return `The ${d}-point CMS difference is noticeable, but it remains a magnitude difference—not a verdict on quality and not an Operational Order bonus.`;
-  return `The ${d}-point CMS difference is substantial. It describes demonstrated cognitive magnitude, not which artifact is the better work.`;
+  if(d<=30)return `${high.title} also records the higher Cognitive Magnitude, ${high.cms} versus ${low.cms}. The difference is modest in aggregate, so the more revealing question is where the two profiles carry their cognitive load.`;
+  if(d<=75)return `${high.title} also demonstrates greater Cognitive Magnitude: ${high.cms} versus ${low.cms}. The separation is meaningful, though the dimensional profile shows where that additional magnitude actually resides.`;
+  return `The difference in Cognitive Magnitude is substantial as well: ${high.cms} versus ${low.cms}. ${high.title} sustains the larger demonstrated cognitive structure across TORC's magnitude architecture.`;
 }
-function boundaryIntro(a:Artifact,b:Artifact){
+function orderAnalysis(a:Artifact,b:Artifact){
   const ar=torcRank(a.torc), br=torcRank(b.torc);
-  const ac=cleanTorc(a.torc), bc=cleanTorc(b.torc);
-  if(ar===br)return `Both artifacts occupy ${a.torc}: ${orderInfo[ac]?.name||a.torc}. The useful comparison is therefore not a hierarchy. It is how two artifacts can perform the same kind of operation through different cognitive architectures.`;
+  if(ar===br)return `Both artifacts occupy ${a.torc}. Neither requires a higher Operational Order than the other; what separates them is how strongly, densely, and extensively that shared operation is realized.`;
   const high=ar>br?a:b, low=ar>br?b:a;
   const hc=cleanTorc(high.torc), lc=cleanTorc(low.torc);
-  if((hc==='3c'&&lc==='3b'))return `The decisive boundary is 3b → 3c. Both artifacts are recursive. At 3b the fracture remains irreducible; at 3c the contradiction remains real but the completed artifact establishes a coherent orientation capable of containing it.`;
-  if((hc==='3b'&&lc==='3a'))return `The decisive boundary is 3a → 3b. At 3a the framework producing distortion becomes available to correction. At 3b the contradiction survives correction because it reaches the relation between consciousness and existence itself.`;
-  if((hc==='3a'&&lc==='2'))return `The decisive boundary is Level 2 → 3a. Level 2 organizes represented reality through symbolic or abstract structure. At 3a the adequacy of that organizing framework itself becomes part of the artifact's governing problem.`;
-  if((hc==='G'&&['3a','3b','3c'].includes(lc)))return `This comparison crosses the Generative threshold. Level 3 reorganizes the subject's relation to reality. G reorganizes the explanation of reality: the artifact changes what must be invoked to explain an independently identifiable target.`;
-  if((hc==='GΩ'&&lc==='G'))return `The decisive boundary is G → GΩ. Both artifacts relocate explanation. GΩ adds successor-baseline necessity: later adequate inquiry may revise or reject the relocation, but it cannot simply proceed as though the old explanatory baseline remained untouched.`;
-  if(hc==='GΩ'&&['1','2','3a','3b','3c'].includes(lc))return `${high.title} crosses both the generative threshold and the successor-baseline threshold. ${low.title} does not need explanatory relocation to account for its governing operation. That is a categorical difference in what the artifacts do—not a claim that one is better art, more important, or more enjoyable.`;
-  return `${high.title} occupies ${high.torc} while ${low.title} occupies ${low.torc}. The point is not that one sits ${Math.abs(ar-br)} “steps above” the other. Operational Order identifies the lowest sufficient account of each artifact's governing cognitive operation.`;
+  if(hc==='G'&&['1','2','3a','3b','3c'].includes(lc))return `${low.title} remains sufficiently explained by ${low.torc}: its governing cognitive work can be accounted for without explanatory relocation. ${high.title} goes further. Its completed operation makes the prior explanatory basis insufficient and changes what must be invoked to explain its target. One artifact works within a representational structure; the other changes the explanatory basis through which part of reality is represented.`;
+  if(hc==='GΩ'&&lc==='G')return `Both artifacts perform explanatory relocation, but ${high.title} goes further. Its relocated foundation becomes a successor-baseline constraint: adequate later inquiry may revise or replace it, but cannot simply return to the previous explanatory basis as though the relocation had never occurred.`;
+  if(hc==='GΩ')return `${low.title} remains sufficiently explained at ${low.torc}. ${high.title} crosses the generative threshold and the successor-baseline threshold: it not only relocates explanation, but establishes a foundation that adequate successor inquiry must reckon with.`;
+  if(hc==='3c'&&lc==='3b')return `Both artifacts are recursive, but ${high.title} integrates what ${low.title} leaves fractured. At 3b the contradiction remains irreducible; at 3c it remains real while the completed artifact establishes a coherent orientation capable of containing it.`;
+  if(hc==='3b'&&lc==='3a')return `${low.title} makes the distorting framework available to correction. ${high.title} reaches a deeper fracture: the contradiction survives correction because it belongs to the relation between consciousness and existence itself.`;
+  if(hc==='3a'&&lc==='2')return `${low.title} organizes represented reality through symbolic or abstract structure. ${high.title} makes the adequacy of that organizing framework itself part of the governing problem. That recursive turn is what separates Level 2 from 3a.`;
+  return `${high.title} demonstrates the higher Operational Order: ${high.torc} versus ${low.torc}. The lower Order remains sufficient for ${low.title}; explaining the governing operation of ${high.title} requires the additional representational operation identified by ${high.torc}.`;
 }
-function decisiveDifference(a:Artifact,b:Artifact){
-  const ar=torcRank(a.torc), br=torcRank(b.torc);
-  if(ar===br){
-    return `The interesting difference is architectural, not categorical. ${a.title} and ${b.title} reach the same Operational Order, so the comparison asks where each carries its cognitive load rather than which one “wins.”`;
-  }
-  const high=ar>br?a:b, low=ar>br?b:a;
-  return `${low.title} remains adequately explained at ${low.torc}; ${high.title} does not. The comparison is valuable precisely at that point of insufficiency: what must be added to explain the governing operation of ${high.title} that is unnecessary for ${low.title}?`;
+function determination(a:Artifact,b:Artifact){
+  const ar=torcRank(a.torc), br=torcRank(b.torc), cd=(a.cms||0)-(b.cms||0);
+  if(ar===br&&Math.abs(cd)<0.5)return `The result is unusually close: both artifacts demonstrate ${a.torc} and essentially equal Cognitive Magnitude.`;
+  if(ar===br){const h=cd>0?a:b,l=cd>0?b:a;return `The Operational Order is the same, but ${h.title} demonstrates greater Cognitive Magnitude — ${h.cms} versus ${l.cms}.`;}
+  const oh=ar>br?a:b, ol=ar>br?b:a;
+  if((ar>br&&cd>0)||(br>ar&&cd<0))return `The result is decisive: ${oh.title} demonstrates both a higher Operational Order and greater Cognitive Magnitude — ${oh.torc} versus ${ol.torc}, with a CMS of ${oh.cms} versus ${ol.cms}.`;
+  const mh=cd>0?a:b, ml=cd>0?b:a;
+  return `The two coordinates split: ${oh.title} demonstrates the higher Operational Order (${oh.torc} versus ${ol.torc}), while ${mh.title} demonstrates greater Cognitive Magnitude (${mh.cms} versus ${ml.cms}).`;
 }
 function architectureInsight(a:Artifact,b:Artifact){
   const scored=dims.map(([k,short,name])=>({k,short,name,av:a[k] as number|undefined,bv:b[k] as number|undefined})).filter(x=>typeof x.av==='number'&&typeof x.bv==='number');
   if(!scored.length)return 'The published dimensional profiles are not yet complete enough for a structural comparison.';
-  const aWins=scored.filter(x=>(x.av as number)>(x.bv as number)+.05).sort((x,y)=>((y.av as number)-(y.bv as number))-((x.av as number)-(x.bv as number)));
-  const bWins=scored.filter(x=>(x.bv as number)>(x.av as number)+.05).sort((x,y)=>((y.bv as number)-(y.av as number))-((x.bv as number)-(x.av as number)));
-  if(aWins.length&&bWins.length)return `${a.title}'s clearest relative advantage is ${aWins[0].name}; ${b.title}'s is ${bWins[0].name}. That crossover is exactly why CMS should not be read as a single ladder of “better” artifacts.`;
-  const leader=aWins.length?a:b, wins=aWins.length?aWins:bWins;
-  return `${leader.title} scores higher across most directly comparable dimensions, with the largest separation in ${wins[0]?.name||'the profile'}. Even here, the profile describes magnitude architecture rather than artistic or intellectual worth.`;
+  const gaps=scored.map(x=>({...x,d:(x.av as number)-(x.bv as number)})).sort((x,y)=>Math.abs(y.d)-Math.abs(x.d));
+  const top=gaps[0]; if(!top||Math.abs(top.d)<.05)return 'The six-dimensional profiles are nearly identical despite the artifacts being distinct constructions.';
+  const leader=top.d>0?a:b;
+  return `The largest dimensional separation is ${top.name}, where ${leader.title} carries the stronger profile. The table below shows how the aggregate CMS difference is built rather than treating the score as a black box.`;
 }
 function ArtifactPicker({label,value,onChange}:{label:string;value:string;onChange:(slug:string)=>void}){
   const [query,setQuery]=useState('');
@@ -123,22 +124,14 @@ export default function Compare(){
 
   const result=useMemo(()=>{
     if(!ready)return null;
-    const cmsDiff=(A.cms||0)-(B.cms||0);
-    const tr=torcRank(A.torc)-torcRank(B.torc);
-    const orderLine=tr===0
-      ?`Both artifacts share the same Operational Order (${A.torc}).`
-      :`${tr>0?A.title:B.title} has the higher Operational Order (${tr>0?A.torc:B.torc} versus ${tr>0?B.torc:A.torc}).`;
-    const cmsLine=Math.abs(cmsDiff)<0.5
-      ?`Their CMS scores are effectively tied at ${A.cms} and ${B.cms}.`
-      :`${cmsDiff>0?A.title:B.title} has the higher CMS by ${Math.abs(cmsDiff)} points (${A.cms} versus ${B.cms}).`;
-    return {cmsDiff,orderLine,cmsLine,boundary:boundaryIntro(A,B),decisive:decisiveDifference(A,B),architecture:architectureInsight(A,B)};
+    return {order:orderAnalysis(A,B),magnitude:magnitudeSentence(A,B),determination:determination(A,B),architecture:architectureInsight(A,B)};
   },[ready,A,B]);
 
   return <main>
     <header className="page-title">
       <div className="eyebrow">TORC diagnostic comparison</div>
-      <h1>Compare two artifacts. Find the difference that matters.</h1>
-      <p className="lede">TORC comparison does not determine which artifact is better. It identifies where their demonstrated cognitive operations diverge—and where magnitude and Operational Order refuse to collapse into the same ranking.</p>
+      <h1>Compare two artifacts. What separates them?</h1>
+      <p className="lede">Put two completed artifacts under the same instrument. TORC identifies the difference in Operational Order first, then the difference in Cognitive Magnitude.</p>
     </header>
 
     <section className="compareControls">
@@ -148,76 +141,55 @@ export default function Compare(){
     </section>
 
     {!ready&&<section className="section compareIntro">
-      <div className="eyebrow">Not a winner picker</div>
+      <div className="eyebrow">What separates them?</div>
       <h2>Put two cognitive architectures under the same instrument.</h2>
-      <p>Cross-medium comparisons are allowed on purpose. The question is not whether a novel is “better” than a film or a theorem “better” than a scripture. The question is what changes when the same TORC model has to explain what each completed artifact actually does.</p>
+      <p>Choose any two evaluated artifacts. TORC compares the demonstrated operation, then the magnitude of the cognition required to realize it.</p>
       <p className="small">{evaluated.length} evaluated artifacts are currently available for comparison.</p>
     </section>}
 
     {ready&&result&&<>
-      <section className="compareHeadline">
+      <section className={`section ${styles.resultSection}`}>
+        <div className="eyebrow">What separates them?</div>
+        <h2 className={styles.analysisTitle}>{A.title} vs. {B.title}</h2>
+        <div className={styles.analysisBody}>
+          <p><b>{torcRank(A.torc)===torcRank(B.torc)?`Both artifacts demonstrate ${A.torc}.`:`${torcRank(A.torc)>torcRank(B.torc)?A.title:B.title} demonstrates a higher Operational Order.`}</b></p>
+          <p>{result.order}</p>
+          <p>{result.magnitude}</p>
+          <p className={styles.determination}><b>{result.determination}</b></p>
+        </div>
+      </section>
+
+      <section className={styles.analysisLinks}>
+        <Link href={`/artifact/${A.slug}`}><span>Read full analysis</span><b>{A.title}</b><i>→</i></Link>
+        <Link href={`/artifact/${B.slug}`}><span>Read full analysis</span><b>{B.title}</b><i>→</i></Link>
+      </section>
+
+      <section className={`compareHeadline ${styles.scoreBand}`}>
         <div><div className="meta">{A.domain}</div><h2>{A.title}</h2><p>{A.creator}</p><div className="bigDip">{A.torc} <i>|</i> {A.cms}</div></div>
         <div className="compareVs">VS</div>
         <div><div className="meta">{B.domain}</div><h2>{B.title}</h2><p>{B.creator}</p><div className="bigDip">{B.torc} <i>|</i> {B.cms}</div></div>
       </section>
 
-      <section className={`section ${styles.resultSection}`}>
-        <div className="eyebrow">The decisive difference</div>
-        <p className={styles.decisive}>{result.decisive}</p>
-        <div className={styles.resultLines}>
-          <p><b>{result.orderLine}</b></p>
-          <p>{result.cmsLine} {cmsContext(result.cmsDiff)}</p>
-        </div>
-        <div className={styles.orderLesson}>
-          <div className="eyebrow">Order boundary</div><h2>Why {A.torc} and {B.torc} are not the same operation</h2>
-          <p>{result.boundary}</p>
-          <div className={styles.artifactOrderGrid}>
-            <article>
-              <div className="meta">{A.torc} · {orderInfo[cleanTorc(A.torc)]?.name}</div>
-              <h3>{A.title}</h3>
-              <p>{A.summary}</p>
-              {A.why&&<p className={styles.evidence}><b>Why this Order:</b> {A.why}</p>}
-            </article>
-            <article>
-              <div className="meta">{B.torc} · {orderInfo[cleanTorc(B.torc)]?.name}</div>
-              <h3>{B.title}</h3>
-              <p>{B.summary}</p>
-              {B.why&&<p className={styles.evidence}><b>Why this Order:</b> {B.why}</p>}
-            </article>
+      <details className={styles.dimensionDetails}>
+        <summary>Compare the six CMS dimensions <span>+</span></summary>
+        <div className={styles.dimensionInner}>
+          <div className="eyebrow">Cognitive Magnitude</div>
+          <h2>Dimension by dimension</h2>
+          <p className={styles.architectureInsight}>{result.architecture}</p>
+          <div className="compareTable">
+            <div className="compareRow compareRowHead"><span>Dimension</span><b>{A.title}</b><b>{B.title}</b><b>Difference</b></div>
+            {dims.map(([k,short,name,definition])=>{
+              const av=A[k] as number|undefined,bv=B[k] as number|undefined;
+              const d=(av??0)-(bv??0);
+              return <div className="compareRow" key={k}>
+                <span className={styles.dimensionName}><strong>{short}</strong><small>{name}</small><details className={styles.dimHelp}><summary title={definition} aria-label={`What ${name} means`}>i</summary><div>{definition}</div></details></span>
+                <b>{fmt(av)}</b><b>{fmt(bv)}</b>
+                <b className={Math.abs(d)<0.05?'compareTie':d>0?'compareAhead':'compareBehind'}>{Math.abs(d)<0.05?'—':`${d>0?'+':''}${d.toFixed(1)}`}</b>
+              </div>
+            })}
           </div>
-          <p className={styles.orderVsMagnitude}><b>Order is not magnitude.</b> A higher Operational Order identifies a categorically different cognitive operation. CMS separately estimates how much cognitive magnitude is demonstrated in performing the operation.</p>
         </div>
-      </section>
-
-      <section className={`section compareLinks ${styles.evaluationLinks}`}>
-        <div><div className="eyebrow">Inspect the evidence</div><h2>Open the full evaluations</h2><p>Read the consensus rationale, boundary analysis, and evaluator reports behind each published profile.</p></div>
-        <div className="buttons">
-          <Link className="button" href={`/artifact/${A.slug}`}>{A.title} →</Link>
-          <Link className="button" href={`/artifact/${B.slug}`}>{B.title} →</Link>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="eyebrow">Cognitive architecture</div>
-        <h2>Dimension by dimension</h2>
-        <p className={styles.dimensionIntro}>These six dimensions describe the architecture of Cognitive Magnitude. They can cross even when one artifact occupies a higher Operational Order.</p>
-        <p className={styles.architectureInsight}>{result.architecture}</p>
-        <div className="compareTable">
-          <div className="compareRow compareRowHead"><span>Dimension</span><b>{A.title}</b><b>{B.title}</b><b>Difference</b></div>
-          {dims.map(([k,short,name,definition])=>{
-            const av=A[k] as number|undefined,bv=B[k] as number|undefined;
-            const d=(av??0)-(bv??0);
-            return <div className="compareRow" key={k}>
-              <span className={styles.dimensionName}><strong>{short}</strong><small>{name}</small><details className={styles.dimHelp}><summary title={definition} aria-label={`What ${name} means`}>i</summary><div>{definition}</div></details></span>
-              <b>{fmt(av)}</b><b>{fmt(bv)}</b>
-              <b className={Math.abs(d)<0.05?'compareTie':d>0?'compareAhead':'compareBehind'}>
-                {Math.abs(d)<0.05?'—':`${d>0?'+':''}${d.toFixed(1)}`}
-              </b>
-            </div>
-          })}
-        </div>
-        <p className="small compareNote">A positive difference means Artifact A scores higher on that dimension; a negative difference means Artifact B scores higher. Dimensional advantages describe cognitive architecture, not an overall winner.</p>
-      </section>
+      </details>
     </>}
   </main>
 }

@@ -180,3 +180,86 @@
   .decisive { font-size: 25px; }
   .architectureInsight { padding: 15px 16px; }
 }
+
+/* Batch 7: comparison as analysis first, scores second. */
+.analysisTitle {
+  margin: 7px 0 22px;
+  font-size: clamp(30px, 4vw, 48px);
+  letter-spacing: -.025em;
+}
+.analysisBody {
+  max-width: 930px;
+  font-size: 18px;
+  line-height: 1.68;
+}
+.analysisBody p { margin: 0 0 18px; }
+.analysisBody p:first-child { font-size: 21px; }
+.determination {
+  margin-top: 27px !important;
+  padding-top: 20px;
+  border-top: 1px solid var(--ink);
+  font-size: 20px;
+  line-height: 1.5;
+}
+.analysisLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin: 2px 0 42px;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+.analysisLinks a {
+  position: relative;
+  min-height: 118px;
+  padding: 23px 56px 22px 24px;
+  background: var(--paper);
+  color: var(--ink);
+  text-decoration: none;
+  transition: background .14s ease;
+}
+.analysisLinks a:hover { background: rgba(91,38,48,.045); }
+.analysisLinks span,.analysisLinks b { display:block; }
+.analysisLinks span {
+  margin-bottom: 12px;
+  color: var(--muted);
+  font: 10px Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+}
+.analysisLinks b { font-size: 22px; line-height: 1.2; }
+.analysisLinks i {
+  position:absolute;
+  right:24px;
+  top:50%;
+  transform:translateY(-50%);
+  font: normal 22px Arial,sans-serif;
+}
+.scoreBand { margin-bottom: 44px !important; }
+.dimensionDetails {
+  margin: 0 0 72px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+.dimensionDetails > summary {
+  list-style: none;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 19px 0;
+  cursor:pointer;
+  font: 600 13px Arial,sans-serif;
+  letter-spacing:.02em;
+}
+.dimensionDetails > summary::-webkit-details-marker { display:none; }
+.dimensionDetails > summary span { font-size:21px; font-weight:400; }
+.dimensionDetails[open] > summary span { transform:rotate(45deg); }
+.dimensionInner { padding: 30px 0 46px; }
+
+@media(max-width:760px){
+  .analysisBody { font-size:17px; }
+  .analysisBody p:first-child,.determination { font-size:18px; }
+  .analysisLinks { grid-template-columns:1fr; margin-bottom:30px; }
+  .analysisLinks a { min-height:94px; }
+  .scoreBand { margin-bottom:30px !important; }
+}

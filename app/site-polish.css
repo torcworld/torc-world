@@ -40,7 +40,7 @@
 .compareSelected:hover,.compareSelected:focus-visible{
   border-color:var(--torc-accent)!important;
   box-shadow:0 8px 18px rgba(55,35,31,.07);
-  background:#fff!important;
+  background:#f3eee6!important;
 }
 .compareSwap{
   transition:background .15s ease,color .15s ease,border-color .15s ease,transform .15s ease;
@@ -74,3 +74,7 @@ footer{
 @media(max-width:760px){
   .compareControls,.compareHeadline{margin-left:-20px!important;margin-right:-20px!important}
 }
+
+/* Batch 7: artifact selectors are fields, not white cards. */
+.compareSelected{background:#f3eee6!important;border-color:#c8beb2!important}
+.compareSelected:hover,.compareSelected:focus-visible{background:#eee7dc!important}
