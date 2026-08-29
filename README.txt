@@ -1,7 +1,9 @@
-TORC Great Gatsby Artifact Page V2
+TORC Gatsby / War and Peace layout + taxonomy patch
 
-- Rewrites the opening around the TORC-specific Level 2 determination rather than a generic Gatsby insight.
-- Moves Explore the 7 Cognitive Orders below the Why 2, not 3a? analysis.
-- Adds breathing room beneath the final black rule.
-- Keeps current pooled Gatsby CMS at 763.
-- War and Peace CMS is intentionally NOT changed yet while additional calibration runs are pending.
+Files changed: 6.
+- Gatsby: boundary is now “Why Level 2, not Level 3?”; 3b is identified as the strongest Level 3 pressure.
+- War and Peace: “Explore the 7 Cognitive Orders” moved below the Why G/not 3c text, matching Gatsby.
+- Both artifact pages: more whitespace above the CTA's upper black rule, with balanced space below its lower rule.
+- Methodology: adds the hierarchy line 1 → 2 → 3a – 3b – 3c → G → GΩ, using hyphens within Level 3 rather than arrows.
+
+No CMS values were changed in this patch.

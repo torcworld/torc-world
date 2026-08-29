@@ -124,3 +124,18 @@
     padding-top:26px !important;
   }
 }
+
+/* Cognitive Orders now follows the boundary analysis and has balanced breathing room. */
+.boundary > h2{
+  padding-top:0 !important;
+}
+.boundary .orderModelCta{
+  margin-top:58px !important;
+  margin-bottom:54px !important;
+}
+@media(max-width:720px){
+  .boundary .orderModelCta{
+    margin-top:50px !important;
+    margin-bottom:46px !important;
+  }
+}
