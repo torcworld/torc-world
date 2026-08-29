@@ -49,7 +49,24 @@ export default function SubmissionForm(){
   <div className={styles.two}><label>Artifact title<input name="title" required/></label><label>Artifact type<select name="type" required defaultValue=""><option value="" disabled>Select type</option><option>Screenplay</option><option>Manuscript / novel</option><option>Essay / philosophy</option><option>Research / theory</option><option>Film / audiovisual work</option><option>Music</option><option>Game / formal system</option><option>Other</option></select></label></div>
   <label>Analysis<select name="package" required value={selectedPackage} onChange={e=>setSelectedPackage(e.target.value)}><option>{packages.evaluation}</option><option>{packages.development}</option><option>{packages.deep}</option></select></label>
   <label className={styles.upload}>Upload artifact <span>PDF, DOCX, TXT or MD · max 4 MB</span><input name="artifact" type="file" required accept=".pdf,.doc,.docx,.txt,.md,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown"/></label>
-  <label>What do you most want to understand? <span className={styles.optional}>Optional</span><textarea name="notes" rows={5} placeholder="For example: I’m rewriting the ending and want to understand whether the work actually reaches the recursive operation it is aiming for."/></label>
+  <label>What do you most want to understand? <span className={styles.optional}>Optional</span>
+   <select name="focus" defaultValue="">
+    <option value="">Choose a question or leave this open</option>
+    <option>What Operational Order does my artifact actually reach — and why?</option>
+    <option>What specifically prevents the work from reaching the next Operational Order?</option>
+    <option>Where does the work create genuine depth, and where does it only appear deep?</option>
+    <option>Which dimensions most limit its Cognitive Magnitude?</option>
+    <option>How can I increase relational load without simply adding more material?</option>
+    <option>How can I deepen abstraction without making it empty or obscure?</option>
+    <option>Where does the work introduce structure that it fails to integrate?</option>
+    <option>Are the work’s contradictions genuinely recursive or merely unresolved?</option>
+    <option>Does the ending reorganize the artifact, or only conclude it?</option>
+    <option>Which structural changes would produce the greatest cognitive gain?</option>
+    <option>What could be removed without reducing what the artifact demonstrates?</option>
+    <option>I have another question.</option>
+   </select>
+  </label>
+  <label>Anything specific you want TORC to examine? <span className={styles.optional}>Optional</span><textarea name="notes" rows={4} placeholder="Add context, a revision question, a passage you are unsure about, or the operation you are trying to achieve."/></label>
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
   <label className={styles.check}><input type="checkbox" name="permission" value="yes" required/><span>I own this work or have permission to submit it for evaluation.</span></label>
   <button className={styles.submitButton} disabled={status==='sending'}>{status==='sending'?'Sending…':'Submit artifact for review'}</button>

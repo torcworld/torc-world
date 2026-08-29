@@ -1,5 +1,6 @@
 import styles from './submit.module.css';
 import SubmissionForm from './SubmissionForm';
+import PricingCards from './PricingCards';
 
 export default function SubmitArtifactPage(){
  return <main className={styles.page}>
@@ -12,26 +13,7 @@ export default function SubmitArtifactPage(){
 
   <section id="pricing" className={styles.pricing}>
    <div className={styles.sectionHeadLight}><h2>Choose how far you want to go.</h2></div>
-   <div className={styles.priceGrid}>
-    <article className={styles.priceCard}>
-     <div><span className={styles.package}>TORC Evaluation</span><div className={styles.price}>€149</div><p className={styles.priceLead}>A complete TORC profile of the artifact as it stands.</p></div>
-     <ul><li>Operational Order</li><li>Six-dimensional cognitive profile</li><li>Cognitive Magnitude Score + DIP</li><li>Boundary analysis</li><li>Principal strengths and limitations</li></ul>
-     <a href="?package=evaluation#submit">Choose Evaluation <span>→</span></a>
-    </article>
-
-    <article className={`${styles.priceCard} ${styles.featured}`}>
-     <div className={styles.recommended}>RECOMMENDED · FOUNDING RATE</div>
-     <div><span className={styles.package}>TORC Development</span><div className={styles.price}>€349 <small>standard €495</small></div><p className={styles.priceLead}>Where the work stops — and what could make it structurally stronger.</p></div>
-     <ul><li>Everything in TORC Evaluation</li><li>Operational-ceiling diagnosis</li><li>Next-Order boundary analysis</li><li>Cognitive Magnitude development</li><li>False-depth audit</li><li>Prioritized structural opportunities</li></ul>
-     <a href="?package=development#submit">Choose Development <span>→</span></a>
-    </article>
-
-    <article className={styles.priceCard}>
-     <div><span className={styles.package}>TORC Deep Analysis</span><div className={styles.price}>from €695</div><p className={styles.priceLead}>A deeper examination of the artifact as a complete cognitive architecture.</p></div>
-     <ul><li>Everything in TORC Development</li><li>Section / sequence-level analysis</li><li>Competing interpretations tested</li><li>Order × Magnitude interaction</li><li>Extended revision priorities</li><li>Substantial final report</li></ul>
-     <a href="?package=deep#submit">Choose Deep Analysis <span>→</span></a>
-    </article>
-   </div>
+   <PricingCards />
    <p className={styles.scopeNote}>Final scope, price, and turnaround are confirmed before any work begins. Very long or unusually complex artifacts may require a custom quote.</p>
   </section>
 

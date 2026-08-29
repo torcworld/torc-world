@@ -112,3 +112,15 @@
  .pricing{padding:56px 0 64px}.example{margin:0 auto 62px;padding:34px 26px}
  .submitSection{margin-left:-20px;margin-right:-20px;padding:54px 20px}.two{grid-template-columns:1fr;gap:0}.form{padding:25px 20px}
 }
+
+/* Batch 20: package selection + question focus */
+.priceCard.selectedPriceCard{
+ background:#d7c29d;
+ border:2px solid var(--accent);
+ padding:28px 25px 24px;
+ box-shadow:0 16px 38px rgba(91,38,48,.12)
+}
+.selectedPriceCard .package{color:var(--accent)}
+.selectedPriceCard a{border-color:var(--accent);color:var(--accent)}
+.priceCard:not(.selectedPriceCard){background:var(--surface);border-color:#b8aa97;box-shadow:none}
+.form select[name="focus"]{line-height:1.35}
