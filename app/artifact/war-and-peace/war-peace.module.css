@@ -115,16 +115,12 @@
   }
 }
 
-
-
-/* FIXED: symmetric spacing around the Cognitive Orders block */
-.orderModelCta{
-  margin-top:26px !important;
-  margin-bottom:26px !important;
+/* Move Why G, not 3c? DOWN without changing the Cognitive Orders block */
+.boundary > h2{
+  padding-top:26px !important;
 }
 @media (max-width:720px){
-  .orderModelCta{
-    margin-top:26px !important;
-    margin-bottom:26px !important;
+  .boundary > h2{
+    padding-top:26px !important;
   }
 }

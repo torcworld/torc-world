@@ -1,2 +1,2 @@
-FIXED SPACING ONLY
-Changes the actual controlling property: the Cognitive Orders block's bottom margin. Top and bottom whitespace are both set to 26px so 'Why G, not 3c?' moves down visibly.
+WHY G DOWN ONLY
+Built from the last good Cognitive Orders spacing patch. Does not change the block's margins. Adds non-collapsing top padding to 'Why G, not 3c?' so the heading moves DOWN.
