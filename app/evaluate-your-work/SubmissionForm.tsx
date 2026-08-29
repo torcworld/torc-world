@@ -14,7 +14,7 @@ type PackageKey = keyof typeof packages;
 export default function SubmissionForm(){
  const [status,setStatus]=useState<'idle'|'sending'|'sent'|'error'>('idle');
  const [message,setMessage]=useState('');
- const [selectedPackage,setSelectedPackage]=useState(packages.development);
+ const [selectedPackage,setSelectedPackage]=useState<string>(packages.development);
 
  useEffect(()=>{
   const key=new URLSearchParams(window.location.search).get('package') as PackageKey | null;
