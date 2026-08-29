@@ -7,6 +7,16 @@ export default function Page(){return <ArtifactAnalysis
  creator='Kaccānagotta Sutta · SN 12.15'
  order='G'
  orderName='Generative consciousness · explanatory relocation'
+ cms={816}
+ range='Median of 20 evaluations · range 647–888'
+ dimensions={[
+  {key:'RL',name:'Relational Load',score:'7.2',artifact:'Existence, non-existence, self-appropriation, arising, cessation, suffering and the dependent sequence are consequentially linked in a compact field.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'The discourse moves beyond the surface binary of being/non-being toward a deeper account of conditionality, cognition and ontological orientation.'},
+  {key:'CD',name:'Constraint Density',score:'7.7',artifact:'The middle account must preserve arising and cessation, avoid both ontological extremes and remain compatible with the conditional sequence.'},
+  {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'Replacing an apparently exhaustive existence/non-existence opposition with conditional arising is a substantial non-routine conceptual shift.'},
+  {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A very small conditional architecture integrates ontology, causation, self-clinging, suffering and right orientation with exceptional economy.'},
+  {key:'GR',name:'Generalization Reach',score:'8.3',artifact:'Conditionality is applied across multiple experiential and ontological relations, although the bounded discourse remains comparatively compact.'},
+ ]}
  headline='The middle way is not a compromise between existence and non-existence. It changes what has to explain arising at all.'
  analysis={[
   'The sutta begins with a conceptual trap: the world is ordinarily approached through the poles of existence and non-existence. It does not solve that problem by choosing a midpoint or by declaring both propositions partially true. Instead, dependent arising changes the explanatory object. What appears to demand an answer about whether a thing simply is or is not becomes a question about the conditions under which phenomena arise and cease.',

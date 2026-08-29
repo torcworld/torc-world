@@ -7,6 +7,16 @@ export default function Page(){return <ArtifactAnalysis
  creator='Nāgārjuna'
  order='GΩ'
  orderName='Generative consciousness · successor-baseline necessity'
+ cms={945}
+ range='Median of 15 evaluations · range 905–975'
+ dimensions={[
+  {key:'RL',name:'Relational Load',score:'9.3',artifact:'Causation, motion, self, aggregates, action, time, suffering, truth and nirvāṇa are tested through an exceptionally dense shared dependency structure.'},
+  {key:'AD',name:'Abstraction Depth',score:'9.8',artifact:'The work repeatedly operates on the conditions under which metaphysical explanation itself can coherently invoke intrinsic nature.'},
+  {key:'CD',name:'Constraint Density',score:'9.3',artifact:'The emptiness/dependence architecture must preserve causation, change, conventional truth and liberation while surviving its own self-application.'},
+  {key:'ID',name:'Inferential Distance',score:'9.7',artifact:'The move from self-grounding entities to dependent emptiness is an exceptionally non-routine reconstruction repeated across heterogeneous philosophical targets.'},
+  {key:'IC',name:'Integrative Compression',score:'9.6',artifact:'One compact anti-essentialist architecture reconstructs a remarkable number of distinct philosophical problems without simply flattening them.'},
+  {key:'GR',name:'Generalization Reach',score:'9.1',artifact:'The same governing test transfers across unusually distant philosophical targets with strong structural fidelity.'},
+ ]}
  headline='Nāgārjuna does not replace one metaphysical answer with another. He attacks the kind of answer the problem had been asking for.'
  analysis={[
   'The governing target is not simply a list of Buddhist doctrines. It is a style of explanation: the attempt to make things finally intelligible by locating an intrinsic nature—svabhāva—that would ground what they are independently of relations and conditions. Chapter after chapter tests that explanatory move against causation, motion, change, aggregates, self, time and nirvāṇa.',

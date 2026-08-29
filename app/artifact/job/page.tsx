@@ -7,6 +7,16 @@ export default function Page(){return <ArtifactAnalysis
  creator='Hebrew Bible'
  order='3c'
  orderName='Integrated recursive consciousness'
+ cms={838}
+ range='Median of 15 evaluations · range 810–872'
+ dimensions={[
+  {key:'RL',name:'Relational Load',score:'8.7',artifact:'Prologue knowledge, innocence, accusation, legal imagery, wisdom, divine justice, creation and the epilogue remain mutually consequential.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.1',artifact:'The book moves from one person’s suffering to questions of justice, knowledge, cosmic order and the limits of human explanatory position.'},
+  {key:'CD',name:'Constraint Density',score:'8.3',artifact:'Job’s innocence, the friends’ theology, the reader’s privileged knowledge and the divine speeches restrict one another throughout the work.'},
+  {key:'ID',name:'Inferential Distance',score:'8.4',artifact:'The movement from retributive explanation to transformed epistemic orientation requires a substantial non-routine reconstruction of the original problem.'},
+  {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'Court tale, disputation, wisdom poetry, creation imagery and personal suffering converge in a highly economical architecture.'},
+  {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'The structure travels widely across suffering, justice, knowledge and orientation, but its demonstrated transfer remains mostly existential and theological.'},
+ ]}
  headline='The book does not solve suffering. It destroys the demand that suffering become intelligible on the sufferer’s terms.'
  analysis={[
   'Job begins inside an apparently stable moral grammar: suffering should be explainable through guilt, justice and deserved consequence. The dialogues progressively exhaust that grammar. Job’s friends preserve it by redescribing the sufferer until the theory survives; Job preserves the reality of his experience by refusing the explanation. The conflict therefore becomes more than a dispute about which event caused which punishment. The framework through which suffering is made intelligible becomes part of the problem.',
