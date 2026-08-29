@@ -43,7 +43,7 @@ export default function Artifacts(){
  const [pageNumber,setPageNumber]=useState(1);
  const [compareLeft,setCompareLeft]=useState('');
  const [compareRight,setCompareRight]=useState('');
- const pageSize=30;
+ const pageSize=20;
  useEffect(()=>setSeed(Math.floor(Math.random()*1000000000)),[]);
  const torcs=useMemo(()=>['All',...Array.from(new Set(artifacts.filter(a=>a.status==='evaluated'&&a.torc).map(a=>String(a.torc)))).sort((a,b)=>rank(a)-rank(b))],[ ]);
  const rows=useMemo(()=>{
