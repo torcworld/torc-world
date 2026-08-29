@@ -115,12 +115,16 @@
   }
 }
 
-/* Match whitespace below Cognitive Orders block to whitespace above it */
-.boundary > h2{
+
+
+/* FIXED: symmetric spacing around the Cognitive Orders block */
+.orderModelCta{
   margin-top:26px !important;
+  margin-bottom:26px !important;
 }
 @media (max-width:720px){
-  .boundary > h2{
+  .orderModelCta{
     margin-top:26px !important;
+    margin-bottom:26px !important;
   }
 }
