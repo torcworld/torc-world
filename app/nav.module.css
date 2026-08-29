@@ -49,3 +49,7 @@
 @media(max-width:620px){
   .submitLink,.orgLink{margin-left:0}
 }
+
+/* Batch 10: strengthen the brand lockup without deciding the root-page destination yet. */
+.brandLockup b{color:#5b2630}
+.brandLockup span{font-size:7.5px;letter-spacing:.12em;color:#5e5952}

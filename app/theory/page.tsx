@@ -66,8 +66,8 @@ export default function Theory(){
       <div className={styles.protocolNo}>03</div>
       <div className={styles.protocolBody}>
         <span>FROM FRAMEWORK TO ASSESSMENT</span>
-        <h2>TORC is not applied by reading six numbers off an artifact.</h2>
-        <p className={styles.protocolLede}>The public framework identifies the principal coordinates and dimensions. The evaluation itself is governed by a proprietary protocol developed to operationalize the theory consistently across difficult, ambiguous, and structurally different artifacts.</p>
+        <h2>The profile is the result. Not the procedure.</h2>
+        <p className={styles.protocolLede}>The public framework identifies the principal coordinates and dimensions. The evaluation itself is governed by a proprietary protocol developed to test evidence, competing interpretations and operational boundaries consistently across structurally different artifacts.</p>
 
         <div className={styles.protocolTerms}>
           {['Evidentiary requirements','Boundary tests','Exception rules','Interpretive safeguards','Anti-inflation firewalls','Cross-dimensional checks','Ambiguous-signal procedures'].map(x=><span key={x}>{x}</span>)}
