@@ -3,7 +3,7 @@ import ArtifactAnalysis from '../components/ArtifactAnalysis';
 export default function Page(){return <ArtifactAnalysis
  domain='Philosophy'
  year='c. 2nd–3rd century CE'
- title='Mūlamadhyamakakārikā'
+ title='Fundamental Verses on the Middle Way'
  creator='Nāgārjuna'
  order='GΩ'
  orderName='Generative consciousness · successor-baseline necessity'

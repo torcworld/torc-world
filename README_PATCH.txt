@@ -1,17 +1,13 @@
-TORC Artifact Batch 2 — corrected patch
+TORC artifact batch 3
 
-Apply this on top of Batch 1 / the current repository.
+Apply this ZIP on top of the current working repository.
 
-IMPORTANT FIX:
-- This patch does NOT replace app/artifact/[slug]/page.tsx.
-- Each new artifact uses its own static App Router route, so the existing dynamic War and Peace fallback remains untouched.
-- 2001: A Space Odyssey is included as its own static route to prevent it from rendering War and Peace copy.
+Includes:
+- hard fallback fix so 2001: A Space Odyssey cannot display the War and Peace analysis
+- easier public title: Fundamental Verses on the Middle Way (internal slug unchanged)
+- easier public title: Dependent Arising
+- new pages: De revolutionibus (Copernicus), No Country for Old Men, The Social Network
+- Tractatus CMS corrected to 925
+- Republic CMS corrected to 887
 
-Adds/updates:
-- 2001: A Space Odyssey
-- Pulp Fiction
-- Gospel of John
-- Romans
-- Mūlamadhyamakakārikā
-- Dependent Arising — Kaccānagotta Sutta
-- lib/artifacts.ts
+CMS remains intentionally blank where Operational Order is settled but the magnitude estimate is not yet being published.

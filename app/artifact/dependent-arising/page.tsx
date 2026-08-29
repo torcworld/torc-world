@@ -3,8 +3,8 @@ import ArtifactAnalysis from '../components/ArtifactAnalysis';
 export default function Page(){return <ArtifactAnalysis
  domain='Scripture'
  year='Early Buddhist canon'
- title='Dependent Arising — Kaccānagotta Sutta'
- creator='Saṃyutta Nikāya 12.15'
+ title='Dependent Arising'
+ creator='Kaccānagotta Sutta · SN 12.15'
  order='G'
  orderName='Generative consciousness · explanatory relocation'
  headline='The middle way is not a compromise between existence and non-existence. It changes what has to explain arising at all.'
