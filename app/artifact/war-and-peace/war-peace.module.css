@@ -114,3 +114,13 @@
     margin-top:26px !important;
   }
 }
+
+/* Match whitespace below Cognitive Orders block to whitespace above it */
+.boundary > h2{
+  margin-top:26px !important;
+}
+@media (max-width:720px){
+  .boundary > h2{
+    margin-top:26px !important;
+  }
+}
