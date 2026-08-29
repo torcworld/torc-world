@@ -25,7 +25,5 @@ export default function RootLayout({children}:{children:React.ReactNode}){
     </nav>
 
     {children}
-
-    <footer>TORC.world · Operational Order × Cognitive Magnitude · Order ≠ magnitude ≠ quality ≠ truth ≠ influence ≠ creator IQ.</footer>
   </div></body></html>
 }
