@@ -157,3 +157,26 @@
     width: min(250px,70vw);
   }
 }
+
+.decisive {
+  max-width: 980px;
+  margin: 8px 0 30px;
+  font-size: clamp(25px, 3vw, 39px);
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+
+.architectureInsight {
+  max-width: 900px;
+  margin: 18px 0 26px;
+  padding: 18px 20px;
+  border-left: 2px solid var(--ink);
+  background: rgba(0,0,0,.025);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+@media (max-width:760px) {
+  .decisive { font-size: 25px; }
+  .architectureInsight { padding: 15px 16px; }
+}
