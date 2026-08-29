@@ -97,3 +97,10 @@
   background:var(--ink,#171714);
   margin-top:0;
 }
+
+/* V19: no full-width transition rule above the Cognitive Orders block */
+.essayAfterDimensions::before,
+.boundary::before{
+  content:none !important;
+  display:none !important;
+}
