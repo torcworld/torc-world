@@ -663,3 +663,50 @@
   .dimensionItem > summary > b { font-size: 13px; }
   .dimensionExplanation { padding: 16px 17px 18px; font-size: 14px; }
 }
+
+
+/* Batch 18: desktop centering pass. Keep prose readable, center the composition. */
+.readyPage{
+  width:100%;
+}
+.readyPage .scoreBand{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+.readyPage .scoreBand > div:first-child,
+.readyPage .scoreBand > div:last-child{
+  text-align:center !important;
+}
+.readyPage .scoreBand :global(.compareVs){
+  align-self:center;
+  justify-self:center;
+  text-align:center !important;
+}
+.resultSection{
+  width:min(840px,100%);
+  margin-left:auto;
+  margin-right:auto;
+}
+.resultSection > :global(.eyebrow){
+  text-align:center;
+}
+.analysisBody{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.analysisLinks{
+  width:min(920px,100%);
+  margin-left:auto;
+  margin-right:auto;
+}
+.dimensionSection{
+  width:min(980px,100%);
+  margin-left:auto;
+  margin-right:auto;
+}
+@media(min-width:761px){
+  .readyPage .scoreBand{
+    width:min(780px,100%) !important;
+  }
+}

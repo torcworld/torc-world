@@ -187,3 +187,42 @@
     text-align: center;
   }
 }
+
+
+/* Batch 18: make the corpus Compare tool unmistakable and easier to enter. */
+.inlineCompareHead{
+  text-align:center;
+  margin:0 auto 24px;
+}
+.inlineCompareHead :global(.eyebrow){
+  color:#8a3645 !important;
+  font:800 27px/1.05 Arial,sans-serif !important;
+  letter-spacing:-.02em !important;
+  text-transform:none !important;
+}
+.inlineCompareHead h2{
+  margin:9px auto 0;
+  max-width:560px;
+  color:#e9e1d7;
+  font-size:16px;
+  line-height:1.35;
+  font-weight:500;
+}
+.inlineSelected,
+.inlineSwap,
+.inlineDropdown,
+.inlineOptions button{
+  background:#e5d8c5 !important;
+}
+.inlineDropdown input{background:#ede3d5 !important;}
+.inlineCompareAction :global(.button){
+  min-width:220px !important;
+  padding:14px 34px !important;
+  font-size:13px !important;
+  font-weight:800 !important;
+}
+@media(max-width:620px){
+  .inlineCompareHead :global(.eyebrow){font-size:24px !important;}
+  .inlineCompareHead h2{font-size:15px;}
+  .inlineCompareAction :global(.button){min-width:205px !important;padding:14px 28px !important;}
+}

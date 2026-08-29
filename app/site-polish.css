@@ -142,3 +142,15 @@ footer{
   .compareFullAnalysisGrid{padding:12px!important}
   .compareFullAnalysisGrid a{min-height:150px!important}
 }
+
+
+/* Batch 18: final desktop alignment overrides for comparison result. */
+.compareResultBand > div:first-child,
+.compareResultBand > div:last-child{
+  text-align:center!important;
+}
+.compareResultBand .compareVs{
+  align-self:center!important;
+  justify-self:center!important;
+  text-align:center!important;
+}
