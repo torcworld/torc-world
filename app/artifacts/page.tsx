@@ -68,11 +68,10 @@ export default function Artifacts(){
  const visibleRows=rows.slice((currentPage-1)*pageSize,currentPage*pageSize);
  useEffect(()=>setPageNumber(1),[domain,torc,query,sort,seed]);
  const goToPage=(n:number)=>{setPageNumber(Math.max(1,Math.min(totalPages,n)));window.scrollTo({top:0,behavior:'smooth'});};
- return <main><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Curated TORC analyses</div></div><div className={styles.primaryCta}><div><b>Want your own artifact analyzed?</b><span>Independent TORC evaluation for original work.</span></div><Link className="button primary" href="/evaluate-your-work">Have your artifact evaluated</Link></div></header>
+ return <main><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Curated TORC analyses</div></div></header>
  <div className={styles.exploreIntro}>Explore published TORC analyses.</div>
  <section className={`artifactTools ${styles.artifactToolsStrong}`}>
-   <label className={`artifactSearch ${styles.controlLabel}`}><span>Search</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search artifact, creator, medium, Operational Order…"/></label>
-   <label className={styles.controlLabel}><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value)}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude Score — highest first</option><option value="cms-asc">Cognitive Magnitude Score — lowest first</option><option value="torc-desc">Operational Order — high to low</option><option value="torc-asc">Operational Order — low to high</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
+   <label className={`artifactSearch ${styles.controlLabel} ${styles.searchControl}`}><span>Search</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search artifact, creator, medium, Operational Order…"/></label>
    <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>setDomain(e.target.value)}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
    <label className={styles.controlLabel}><span>Operational Order</span><select value={torc} onChange={e=>setTorc(e.target.value)}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>

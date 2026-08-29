@@ -56,3 +56,27 @@
  .pagination>button:first-child{grid-column:1;grid-row:2}.pagination>button:last-child{grid-column:2;grid-row:2}
  .inlineCompare{padding:22px 18px}.inlineCompareControls{grid-template-columns:1fr}.inlineSwap{justify-self:center;margin:0;transform:rotate(90deg)}.inlineCompareAction{text-align:left}
 }
+
+/* Corpus-first Artifacts page: the archive itself is the primary content. */
+.artifactHeader{
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  align-items:start;
+  padding:52px 0 40px;
+  margin-bottom:24px;
+}
+.artifactToolsStrong{
+  grid-template-columns:minmax(280px,1.8fr) minmax(150px,.7fr) minmax(170px,.8fr) !important;
+  gap:10px;
+}
+@media(max-width:800px){
+  .artifactHeader{padding:34px 0 30px;margin-bottom:20px}
+  .artifactToolsStrong{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:8px}
+  .searchControl{grid-column:1/-1}
+}
+@media(max-width:520px){
+  .artifactHeader{padding:28px 0 26px;margin-bottom:18px}
+  .artifactToolsStrong{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:8px}
+  .searchControl{grid-column:1/-1}
+  .controlLabel select,.controlLabel input{padding:10px 11px!important;font-size:13px!important}
+}

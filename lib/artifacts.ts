@@ -21,6 +21,11 @@ export const artifacts:Artifact[]=[
 {slug:'dependent-arising',title:'Dependent Arising',creator:'Kaccānagotta Sutta · SN 12.15',year:'Early Buddhist canon',domain:'Scripture',status:'evaluated',torc:'G'},
 {slug:'copernicus-de-revolutionibus',title:'De revolutionibus',creator:'Nicolaus Copernicus',year:'1543',domain:'Science',status:'evaluated',torc:'GΩ'},
 {slug:'no-country-for-old-men',title:'No Country for Old Men',creator:'Joel & Ethan Coen',year:'2007',domain:'Film',status:'evaluated',torc:'3b',cms:765,rl:8.0,ad:7.3,cd:8.2,id:7.4,ic:8.4,gr:6.6},
+{slug:'philosophiae-naturalis-principia-mathematica',title:'Principia Mathematica',creator:'Isaac Newton',year:'1687',domain:'Science',status:'evaluated',torc:'GΩ',cms:982,rl:9.7,ad:9.7,cd:9.9,id:9.9,ic:9.9,gr:9.8},
+{slug:'die-grundlage-der-allgemeinen-relativitatstheorie',title:'The Foundation of the General Theory of Relativity',creator:'Albert Einstein',year:'1916',domain:'Science',status:'evaluated',torc:'GΩ',cms:953,rl:8.6,ad:9.8,cd:10.0,id:9.8,ic:9.8,gr:9.2},
+{slug:'on-the-origin-of-species',title:'On the Origin of Species',creator:'Charles Darwin',year:'1859',domain:'Science',status:'evaluated',torc:'GΩ',cms:937,rl:9.5,ad:8.9,cd:9.2,id:9.5,ic:9.6,gr:9.5},
+{slug:'critique-of-pure-reason',title:'Critique of Pure Reason',creator:'Immanuel Kant',year:'1781 / 1787',domain:'Philosophy',status:'evaluated',torc:'GΩ',cms:950,rl:9.5,ad:10.0,cd:9.4,id:9.6,ic:9.8,gr:8.7},
+{slug:'on-the-genealogy-of-morality',title:'On the Genealogy of Morality',creator:'Friedrich Nietzsche',year:'1887',domain:'Philosophy',status:'evaluated',torc:'G',cms:867,rl:8.8,ad:9.1,cd:8.1,id:9.0,ic:9.0,gr:8.0},
 {slug:'the-social-network',title:'The Social Network',creator:'David Fincher / Aaron Sorkin',year:'2010',domain:'Film',status:'evaluated',torc:'2'},
 ]
 export function getArtifact(slug:string){return artifacts.find(a=>a.slug===slug)}
