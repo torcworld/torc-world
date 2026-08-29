@@ -18,7 +18,6 @@ export default function RootLayout({children}:{children:React.ReactNode}){
         <Link href="/artifacts">Artifacts</Link>
         <Link href="/theory">Theory</Link>
         <Link href="/compare">Compare</Link>
-        <Link href="/about">About</Link>
         <Link className={styles.submitLink} href="/evaluate-your-work">Submit Your Artifact</Link>
         <Link className={styles.orgLink} href="/for-organizations">Organizations</Link>
       </div>

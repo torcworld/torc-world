@@ -8,6 +8,7 @@ export default function Theory(){
         <div className={styles.eyebrow}>TORC / THE THEORY</div>
         <h1>A Theory Of<br/>Representational<br/>Consciousness</h1>
         <p className={styles.lede}>A framework for evaluating the cognition demonstrated in completed artifacts.</p>
+        <p className={styles.byline}>TORC was developed by G. K. Muijlaert as a theory and diagnostic framework for evaluating demonstrated cognition in completed artifacts.</p>
         <div className={styles.actions}>
           <Link className={styles.primary} href="/theory/book">Read the Living Edition</Link>
           <a className={styles.secondary} href="#framework">See the framework</a>
@@ -87,7 +88,6 @@ export default function Theory(){
         <p>The book is the canonical theoretical statement of TORC and is maintained on TORC.world as a living edition while the framework continues to be tested and refined. The online text is the authoritative version.</p>
         <div className={styles.bookActions}>
           <Link href="/theory/book">Read the full book <b>→</b></Link>
-          <Link href="/about">About TORC</Link>
         </div>
         <small>G. K. Muijlaert</small>
       </div>

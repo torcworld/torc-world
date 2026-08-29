@@ -131,3 +131,6 @@
   .protocol{margin:0 -20px;padding:55px 20px;grid-template-columns:1fr;gap:25px}
   .protocolNo{font-size:80px}
 }
+
+/* Batch 11 — authorship retained after About consolidation */
+.byline{max-width:660px;margin:18px 0 0;color:var(--muted);font-size:13px;line-height:1.55;}
