@@ -57,16 +57,14 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
            <p><b>Formal definition.</b> {d.formal}</p>
            <p><b>In plain language.</b> {d.plain}</p>
            <p><b>Why <em>War and Peace</em> scores {d.score}.</b> {d.artifact}</p>
-           <p className={styles.methodLink}><Link href="/methodology#dimensions">Full dimension methodology →</Link></p>
          </div>
        </details>)}
      </div>
-     <Link className={styles.methodologyCta} href="/methodology#dimensions"><span>Explore the model</span><strong>Full Dimension Methodology</strong><span aria-hidden="true">→</span></Link>
    </section>
 
    <article className={`${styles.essay} ${styles.essayAfterDimensions}`}>
      <section className={styles.boundary}>
-       <Link className={`${styles.methodologyCta} ${styles.orderModelCta}`} href="/methodology#operational-order"><span>TORC classification model</span><strong>Explore the Seven Cognitive Orders</strong><span aria-hidden="true">→</span></Link>
+       <Link className={`${styles.methodologyCta} ${styles.orderModelCta}`} href="/methodology#operational-order"><span>TORC classification model</span><strong>Explore the 7 Cognitive Orders</strong><span aria-hidden="true">→</span></Link>
        <h2>Why <details className={styles.orderTerm}><summary>G</summary><div className={styles.orderPopover}><b>{orderDefinitions.G.name}</b><p><strong>Formal.</strong> {orderDefinitions.G.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.G.plain}</p><p><strong>Here.</strong> {orderDefinitions.G.artifact}</p></div></details>, not <details className={styles.orderTerm}><summary>3c</summary><div className={styles.orderPopover}><b>{orderDefinitions.c3.name}</b><p><strong>Formal.</strong> {orderDefinitions.c3.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.c3.plain}</p><p><strong>Here.</strong> {orderDefinitions.c3.artifact}</p></div></details>?</h2>
        <p>Pierre and Andrei make 3c a serious alternative. Their earlier orientations toward agency, mortality and meaning break, and the novel does not simply restore them. But their transformations still leave a larger question unanswered: why do people so persistently mistake intention for control?</p>
        <p>Tolstoy answers by changing the status of the characters themselves. Napoleon, Kutuzov, Pierre and the rest cease to function only as agents inside events; they become evidence about how events are produced and then misunderstood. Orders become contributions rather than sufficient causes. Outcomes emerge from interactions no participant can represent in full. History then performs a final distortion: it compresses that distributed process back into the biography of a visible individual.</p>
