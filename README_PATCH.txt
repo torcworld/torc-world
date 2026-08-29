@@ -1,13 +1,13 @@
-TORC War and Peace Clean Slate V6
+TORC WAR AND PEACE CLEAN SLATE V7
 
-Changes from V5:
-- Moves the final exceptional section upward by reducing the preceding visual gap.
-- Makes G and 3c directly clickable inside “Why G, not 3c?” with compact Formal / In plain language / Here definitions.
-- Adds hover motion so the Order terms visibly invite interaction.
-- Removes the tiny repeated “Full dimension methodology” link from every expanded dimension.
-- Adds one prominent Full Dimension Methodology row beneath the complete six-dimensional model.
-- Keeps the six-dimensional profile itself visible and interactive.
+Overlay this ZIP at the repository root.
 
-Important: this overlay does not invent or overwrite the repository's existing /methodology page because that source was not present in V5. The new prominent link continues to /methodology#dimensions. Any old evaluator-count language on that methodology page should be removed in a repository-level pass once that source is included.
-
-Overlay this ZIP at repository root, commit, and deploy.
+Changes from V6:
+- fixes G / 3c definitions on mobile by replacing inline/fixed popovers with robust expandable cards
+- adds a visible Full Operational Order Model link directly above the G vs 3c boundary
+- patches /methodology with the complete public Operational Order sequence: 1 → 2 → 3a → 3b → 3c → G → GΩ
+- removes stale public language claiming seven independent evaluators
+- keeps Full Dimension Methodology and six-dimensional definitions
+- moves Submit Your Artifact before the closing CTA copy
+- gives Submit Your Artifact the TORC oxblood treatment and full-width mobile button
+- no changes to War and Peace scores or core essay text

@@ -67,7 +67,12 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
    <article className={`${styles.essay} ${styles.essayAfterDimensions}`}>
      <section className={styles.boundary}>
        <div className={styles.kicker}>The boundary</div>
-       <h2>Why <details className={styles.orderTerm}><summary>G</summary><div className={styles.orderPopover}><b>{orderDefinitions.G.name}</b><p><strong>Formal.</strong> {orderDefinitions.G.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.G.plain}</p><p><strong>Here.</strong> {orderDefinitions.G.artifact}</p></div></details>, not <details className={styles.orderTerm}><summary>3c</summary><div className={styles.orderPopover}><b>{orderDefinitions.c3.name}</b><p><strong>Formal.</strong> {orderDefinitions.c3.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.c3.plain}</p><p><strong>Here.</strong> {orderDefinitions.c3.artifact}</p></div></details>?</h2>
+       <Link className={`${styles.methodologyCta} ${styles.orderModelCta}`} href="/methodology#operational-order"><span>Explore the model</span><strong>Full Operational Order Model</strong><span aria-hidden="true">→</span></Link>
+       <h2>Why G, not 3c?</h2>
+       <div className={styles.orderExplainers}>
+         <details className={styles.orderCard}><summary><span>G</span><b>Generative Cognition</b><i>Open definition</i></summary><div><p><strong>Formal.</strong> {orderDefinitions.G.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.G.plain}</p><p><strong>Here.</strong> {orderDefinitions.G.artifact}</p></div></details>
+         <details className={styles.orderCard}><summary><span>3c</span><b>Integrated Consciousness</b><i>Open definition</i></summary><div><p><strong>Formal.</strong> {orderDefinitions.c3.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.c3.plain}</p><p><strong>Here.</strong> {orderDefinitions.c3.artifact}</p></div></details>
+       </div>
        <p>Pierre and Andrei make 3c a serious alternative. Their earlier orientations toward agency, mortality and meaning break, and the novel does not simply restore them. But their transformations still leave a larger question unanswered: why do people so persistently mistake intention for control?</p>
        <p>Tolstoy answers by changing the status of the characters themselves. Napoleon, Kutuzov, Pierre and the rest cease to function only as agents inside events; they become evidence about how events are produced and then misunderstood. Orders become contributions rather than sufficient causes. Outcomes emerge from interactions no participant can represent in full. History then performs a final distortion: it compresses that distributed process back into the biography of a visible individual.</p>
        <p>This is where the novel crosses into G. It does not merely show consciousness discovering that reality exceeds it. <em>War and Peace</em> does not merely portray the limits of human agency. It explains why those limits exist—and why, afterward, we are tempted to erase them.</p>
@@ -81,8 +86,8 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
      <p>Napoleon therefore remains at the center of the spectacle while losing his place at the center of the explanation. The novel's scale is not excess around that insight; it is the machinery required to demonstrate it across war, family, consciousness and history.</p>
    </section>
    <section className={styles.bottomCta}>
-     <div><span>TORC Development Analysis</span><h2>What is your artifact actually doing?</h2><p>Where is its deepest operation already working—and what is keeping the rest of the artifact from reaching it?</p></div>
-     <Link className="button primary" href="/evaluate-your-work">Submit your artifact →</Link>
+     <Link className={styles.submitButton} href="/evaluate-your-work">Submit your artifact →</Link>
+     <div><span>TORC Development Analysis</span><h2>What is your artifact actually doing?</h2><p>Find the deepest operation already present in the work—and the structural boundary keeping it from becoming fully realized.</p></div>
    </section>
  </main>
 }
