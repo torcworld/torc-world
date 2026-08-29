@@ -44,7 +44,7 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
    <section className={styles.cmsSection}>
      <div className={styles.kicker}>Cognitive architecture</div>
      <h2 className={styles.dimensionsTitle}>The six-dimensional model</h2>
-     <p className={styles.cmsIntro}>TORC's six dimensions show where the artifact's cognitive magnitude is actually carried. Select any dimension to open its definition and the evidence specific to <em>War and Peace</em>.</p>
+     <p>See how TORC’s <strong>Cognitive Magnitude Score (CMS)</strong> is carried across the artifact.</p>
      <div className={styles.dimensions}>
        {dimensions.map(d=><details className={styles.dimension} key={d.key}>
          <summary>
