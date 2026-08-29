@@ -142,3 +142,8 @@
 @media(max-width:760px){
  .form select[name="focus"]{font-size:16px;line-height:1.45;min-height:54px;background:#ddceb3;color:#171714}
 }
+
+
+/* Batch 23: product ladder */
+.questionNote{margin:-4px 0 22px;padding:13px 14px;background:#d9cbb8;border-left:3px solid var(--accent);font:12px/1.55 Arial,sans-serif;color:#514940}
+.questionNote b{color:#2e2925}

@@ -7,14 +7,14 @@ export default function SubmitArtifactPage(){
   <header className={styles.hero}>
    <div className={styles.eyebrow}>SUBMIT YOUR ARTIFACT</div>
    <h1>Find out what your work actually demonstrates.</h1>
-   <p>Choose the depth of analysis you want, submit the artifact, and TORC will assess the work itself: its Operational Order, Cognitive Magnitude, and the structural boundary that matters.</p>
+   <p>Choose what you need: a rigorous diagnosis, a development analysis, or a full diagnose–revise–re-evaluate cycle.</p>
    <a className={styles.primary} href="#pricing">Choose an analysis</a>
   </header>
 
   <section id="pricing" className={styles.pricing}>
    <div className={styles.sectionHeadLight}><h2>Choose how far you want to go.</h2></div>
    <PricingCards />
-   <p className={styles.scopeNote}>Final scope, price, and turnaround are confirmed before any work begins. Very long or unusually complex artifacts may require a custom quote.</p>
+   <p className={styles.scopeNote}>One artifact, three levels of engagement. Scope and turnaround are confirmed before work begins; unusually long or complex artifacts may require a custom quote.</p>
   </section>
 
   <section className={styles.example}>

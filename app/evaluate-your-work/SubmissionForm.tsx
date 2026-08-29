@@ -4,9 +4,9 @@ import {FormEvent, useEffect, useState} from 'react';
 import styles from './submit.module.css';
 
 const packages = {
- evaluation: 'TORC Evaluation — €149',
- development: 'TORC Development — €349 founding rate',
- deep: 'TORC Deep Analysis — from €695',
+ evaluation: 'TORC Evaluation — €195',
+ development: 'TORC Development — €495',
+ cycle: 'TORC Development Cycle — €895',
 } as const;
 
 type PackageKey = keyof typeof packages;
@@ -26,9 +26,7 @@ export default function SubmissionForm(){
   const form=e.currentTarget; const data=new FormData(form);
   const file=data.get('artifact');
   if(file instanceof File && file.size > 4 * 1024 * 1024){
-   setStatus('error');
-   setMessage('Please upload a file smaller than 4 MB.');
-   return;
+   setStatus('error'); setMessage('Please upload a file smaller than 4 MB.'); return;
   }
   try{
    const res=await fetch('/api/artifact-submission',{method:'POST',body:data});
@@ -36,20 +34,18 @@ export default function SubmissionForm(){
    if(!res.ok) throw new Error(body?.error||'Submission could not be sent.');
    setStatus('sent');
    setMessage('Artifact received. We’ll review the scope and reply before any evaluation begins.');
-   form.reset();
-   setSelectedPackage(packages.development);
+   form.reset(); setSelectedPackage(packages.development);
   }catch(err:any){
-   setStatus('error');
-   setMessage(err?.message||'Submission could not be sent.');
+   setStatus('error'); setMessage(err?.message||'Submission could not be sent.');
   }
  }
 
  return <form className={styles.form} onSubmit={submit}>
   <div className={styles.two}><label>Your name<input name="name" required autoComplete="name"/></label><label>Email<input name="email" required type="email" autoComplete="email"/></label></div>
   <div className={styles.two}><label>Artifact title<input name="title" required/></label><label>Artifact type<select name="type" required defaultValue=""><option value="" disabled>Select type</option><option>Screenplay</option><option>Manuscript / novel</option><option>Essay / philosophy</option><option>Research / theory</option><option>Film / audiovisual work</option><option>Music</option><option>Game / formal system</option><option>Other</option></select></label></div>
-  <label>Analysis<select name="package" required value={selectedPackage} onChange={e=>setSelectedPackage(e.target.value)}><option>{packages.evaluation}</option><option>{packages.development}</option><option>{packages.deep}</option></select></label>
+  <label>Analysis<select name="package" required value={selectedPackage} onChange={e=>setSelectedPackage(e.target.value)}><option>{packages.evaluation}</option><option>{packages.development}</option><option>{packages.cycle}</option></select></label>
   <label className={styles.upload}>Upload artifact <span>PDF, DOCX, TXT or MD · max 4 MB</span><input name="artifact" type="file" required accept=".pdf,.doc,.docx,.txt,.md,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown"/></label>
-  <label>What do you most want to understand? <span className={styles.optional}>Optional</span>
+  <label>What do you most want TORC to answer? <span className={styles.optional}>Optional</span>
    <select name="focus" defaultValue="">
     <option value="">Choose a question or leave this open</option>
     <option>What Operational Order does my artifact actually reach — and why?</option>
@@ -66,11 +62,12 @@ export default function SubmissionForm(){
     <option>I have another question.</option>
    </select>
   </label>
+  <p className={styles.questionNote}><b>Evaluation</b> diagnoses the artifact and includes one clarification after delivery. <b>Development</b> uses your questions as part of the development diagnosis and includes one follow-up round. <b>Development Cycle</b> adds revision support and one re-evaluation of the revised artifact.</p>
   <label>Anything specific you want TORC to examine? <span className={styles.optional}>Optional</span><textarea name="notes" rows={4} placeholder="Add context, a revision question, a passage you are unsure about, or the operation you are trying to achieve."/></label>
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
   <label className={styles.check}><input type="checkbox" name="permission" value="yes" required/><span>I own this work or have permission to submit it for evaluation.</span></label>
   <button className={styles.submitButton} disabled={status==='sending'}>{status==='sending'?'Sending…':'Submit artifact for review'}</button>
-  <p className={styles.noCharge}>No payment is taken at submission.</p>
+  <p className={styles.noCharge}>No payment is taken at submission. Scope and turnaround are confirmed first.</p>
   {message&&<p className={status==='sent'?styles.success:styles.error} role="status">{message}</p>}
  </form>
 }
