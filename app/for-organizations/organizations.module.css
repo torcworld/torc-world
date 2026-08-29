@@ -341,3 +341,11 @@
   .flow em{display:none}
   .contact{margin:0 -20px -80px;padding:58px 20px 65px;grid-template-columns:1fr;gap:44px}
 }
+
+/* Batch 21: tighter institutional page, warmer surfaces */
+.hero{background:linear-gradient(135deg,#e8e0d4 0%,#eee6da 58%,#e5d8d2 100%)}
+.applications{background:linear-gradient(180deg,#e8e0d4 0%,#eee6da 100%)}
+.card,.card:hover,.card[open]{background:#e7ded1}
+.card:hover,.card[open]{background:#ddceb3}
+.principle{background:linear-gradient(180deg,#eee6da 0%,#e8e0d4 100%)}
+@media(max-width:760px){.volume{margin-top:0}}

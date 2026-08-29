@@ -124,3 +124,21 @@
 .selectedPriceCard a{border-color:var(--accent);color:var(--accent)}
 .priceCard:not(.selectedPriceCard){background:var(--surface);border-color:#b8aa97;box-shadow:none}
 .form select[name="focus"]{line-height:1.35}
+
+/* Batch 21: make package selection immediate and calm the mobile question control */
+.priceCard{cursor:pointer}
+.priceCard:focus-visible{outline:3px solid rgba(91,38,48,.28);outline-offset:3px}
+.form select[name="focus"]{
+ background:#ddceb3;
+ color:#171714;
+ border:1px solid #9d8f7c;
+ padding:14px 38px 14px 13px;
+ min-height:49px;
+ font-family:Georgia,'Times New Roman',serif;
+ font-size:15px;
+ line-height:1.4;
+}
+.form select[name="focus"] option{background:#e8ddca;color:#171714}
+@media(max-width:760px){
+ .form select[name="focus"]{font-size:16px;line-height:1.45;min-height:54px;background:#ddceb3;color:#171714}
+}
