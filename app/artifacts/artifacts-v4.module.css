@@ -140,3 +140,27 @@
 @media(max-width:620px){
   .inlineCompare{padding:24px 18px;margin-top:36px}
 }
+
+
+/* Batch 13: warmer site ground + quieter Compare hierarchy. */
+.inlineCompare{
+  margin-bottom:72px;
+  border-color:#4b4945;
+  background:#4b4945;
+  color:#f2ede5;
+}
+.inlineCompareHead h2{color:#f2ede5}
+.inlineCompareHead :global(.eyebrow){color:#d0aeb3}
+.inlinePicker>label{color:#e8e1d7}
+.inlineSelected,
+.inlineSwap,
+.inlineDropdown,
+.inlineOptions button{
+  background:#e8ddcc;
+}
+.inlineDropdown input{background:#f0e7da}
+.inlineOptions button:hover{background:#dccbb5}
+.inlineCompareAction :global(.button){background:#5b2630;color:#f4eee6}
+@media(max-width:620px){
+  .inlineCompare{margin-bottom:58px}
+}
