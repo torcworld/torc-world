@@ -1,11 +1,14 @@
-TORC War and Peace Clean Slate V8
+TORC WAR AND PEACE CLEAN SLATE — V9
 
-Changes from V7:
-- Removes the redundant “The boundary” label.
-- Replaces “Full Operational Order Model” with clearer visitor-facing “Explore all seven cognitive orders.”
-- G and 3c are compact inline interactive definitions in the essay heading, with mobile-safe in-flow expansion.
-- Replaces public G and GΩ definitions with protocol-faithful v1.6.3 wording, especially the successor-baseline necessity requirement for GΩ.
-- Renames methodology section “The seven cognitive orders.”
-- Pulls “What makes it exceptional” closer to preceding analysis.
-- Tightens bottom CTA spacing and adds a lower rule.
-- Removes the sitewide footer disclaimer strip from app/layout.tsx.
+Changes from V8:
+- Renames public 3a label to “Corrective Recursive Consciousness.”
+- Rewrites the public 3a definition so “corrective” describes orientation toward an externally located problem, not successful repair.
+- Avoids using fracture as the defining public concept for 3a; fracture remains central to 3b.
+- Nudges the Analysis kicker upward slightly.
+- Tightens the gap between the opening analysis and Cognitive Architecture.
+- Pulls the cognitive-order methodology entry much closer to Full Dimension Methodology.
+- Adds a little breathing room before “Why G, not 3c?”.
+- Pulls “What makes it exceptional” slightly higher again.
+- Gives the bottom Submit Your Artifact CTA slightly more balanced vertical breathing room.
+
+No War and Peace scores or substantive classification were changed.
