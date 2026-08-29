@@ -70,6 +70,16 @@ function architectureInsight(a:Artifact,b:Artifact){
   const leader=top.d>0?a:b;
   return `The largest dimensional separation is ${top.name}, where ${leader.title} carries the stronger profile. The table below shows how the aggregate CMS difference is built rather than treating the score as a black box.`;
 }
+
+function dimensionComparison(a:Artifact,b:Artifact,name:string,definition:string,av?:number,bv?:number){
+  if(typeof av!=='number'||typeof bv!=='number')return `The published ${name} profile is not yet complete enough for a direct comparison.`;
+  const d=av-bv;
+  if(Math.abs(d)<0.05)return `${a.title} and ${b.title} are effectively tied on ${name} at ${fmt(av)}. ${definition}`;
+  const high=d>0?a:b, low=d>0?b:a;
+  const hv=d>0?av:bv, lv=d>0?bv:av;
+  return `${high.title} is higher on ${name}: ${fmt(hv)} versus ${fmt(lv)}. In TORC, ${name.toLowerCase()} tracks ${definition.charAt(0).toLowerCase()+definition.slice(1)} This is where ${high.title} carries more of the demonstrated cognitive magnitude on this dimension.`;
+}
+
 function ArtifactPicker({label,value,onChange}:{label:string;value:string;onChange:(slug:string)=>void}){
   const [query,setQuery]=useState('');
   const [open,setOpen]=useState(false);
@@ -163,26 +173,26 @@ export default function Compare(){
         <Link href={`/artifact/${B.slug}`}><span>Read full analysis</span><b>{B.title}</b><i>→</i></Link>
       </section>
 
-      <details className={styles.dimensionDetails}>
-        <summary>Compare the six CMS dimensions <span>+</span></summary>
-        <div className={styles.dimensionInner}>
-          <div className="eyebrow">Cognitive Magnitude</div>
-          <h2>Dimension by dimension</h2>
-          <p className={styles.architectureInsight}>{result.architecture}</p>
-          <div className="compareTable">
-            <div className="compareRow compareRowHead"><span>Dimension</span><b>{A.title}</b><b>{B.title}</b><b>Difference</b></div>
-            {dims.map(([k,short,name,definition])=>{
-              const av=A[k] as number|undefined,bv=B[k] as number|undefined;
-              const d=(av??0)-(bv??0);
-              return <div className="compareRow" key={k}>
-                <span className={styles.dimensionName}><strong>{short}</strong><small>{name}</small><details className={styles.dimHelp}><summary title={definition} aria-label={`What ${name} means`}>i</summary><div>{definition}</div></details></span>
+      <section className={styles.dimensionSection}>
+        <div className="eyebrow">Cognitive Magnitude</div>
+        <h2>Dimension by dimension</h2>
+        <p className={styles.architectureInsight}>{result.architecture}</p>
+        <div className={styles.dimensionTable}>
+          <div className={`${styles.dimensionRow} ${styles.dimensionHead}`}><span>Dimension</span><b>{A.title}</b><b>{B.title}</b><b>Difference</b></div>
+          {dims.map(([k,short,name,definition])=>{
+            const av=A[k] as number|undefined,bv=B[k] as number|undefined;
+            const d=(av??0)-(bv??0);
+            return <details className={styles.dimensionItem} key={k}>
+              <summary className={styles.dimensionRow} aria-label={`Compare ${name}`}>
+                <span className={styles.dimensionName}><strong>{short}</strong><small>{name}</small></span>
                 <b>{fmt(av)}</b><b>{fmt(bv)}</b>
-                <b className={Math.abs(d)<0.05?'compareTie':d>0?'compareAhead':'compareBehind'}>{Math.abs(d)<0.05?'—':`${d>0?'+':''}${d.toFixed(1)}`}</b>
-              </div>
-            })}
-          </div>
+                <b className={Math.abs(d)<0.05?styles.dimensionTie:d>0?styles.dimensionAhead:styles.dimensionBehind}>{Math.abs(d)<0.05?'—':`${d>0?'+':''}${d.toFixed(1)}`}</b>
+              </summary>
+              <div className={styles.dimensionExplanation}>{dimensionComparison(A,B,name,definition,av,bv)}</div>
+            </details>
+          })}
         </div>
-      </details>
+      </section>
     </>}
   </main>
 }

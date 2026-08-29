@@ -545,3 +545,121 @@
   .analysisLinks { padding: 12px; }
   .analysisLinks a { min-height: 150px; padding: 30px 58px 28px 24px; }
 }
+
+/* Batch 17: dimensions are part of the page, not a disclosure. Each row opens its own comparison note. */
+.dimensionSection {
+  max-width: 980px;
+  margin: 12px auto 82px;
+  padding-top: 8px;
+}
+.dimensionSection > h2 {
+  margin: 6px 0 12px;
+  font-size: clamp(30px, 4vw, 44px);
+  letter-spacing: -.025em;
+}
+.dimensionSection .architectureInsight {
+  max-width: 820px;
+  margin: 0 0 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+}
+.dimensionTable {
+  overflow: hidden;
+  border: 1px solid #4e4b46;
+  background: #3a3936;
+  color: #f1ece4;
+}
+.dimensionRow {
+  display: grid;
+  grid-template-columns: minmax(220px,1.45fr) repeat(3,minmax(110px,.72fr));
+  align-items: center;
+  min-height: 70px;
+}
+.dimensionHead {
+  min-height: 48px;
+  background: #45433f;
+  color: #cfc7bc;
+  font: 800 10px/1.2 Arial,sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+.dimensionHead > * { padding: 12px 18px; }
+.dimensionHead b { text-align: right; }
+.dimensionItem {
+  border-top: 1px solid rgba(241,236,228,.14);
+}
+.dimensionItem > summary {
+  list-style: none;
+  cursor: pointer;
+  transition: background .14s ease;
+}
+.dimensionItem > summary::-webkit-details-marker { display: none; }
+.dimensionItem > summary:hover,
+.dimensionItem[open] > summary { background: rgba(255,255,255,.055); }
+.dimensionItem > summary > * { padding: 15px 18px; }
+.dimensionItem > summary > b {
+  text-align: right;
+  color: #f1ece4;
+  font-variant-numeric: tabular-nums;
+}
+.dimensionName {
+  position: relative;
+  padding-right: 40px !important;
+}
+.dimensionName::after {
+  content: '＋';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a96b75;
+  font: 700 16px/1 Arial,sans-serif;
+}
+.dimensionItem[open] .dimensionName::after { content: '−'; }
+.dimensionName strong {
+  display: block;
+  color: #b77a83;
+  font: 800 13px/1 Arial,sans-serif;
+  letter-spacing: .08em;
+}
+.dimensionName small {
+  display: block;
+  margin-top: 5px;
+  color: #f1ece4;
+  font: 700 14px/1.2 Arial,sans-serif;
+}
+.dimensionAhead,
+.dimensionBehind { color: #d0a4aa !important; }
+.dimensionTie { color: #b8b0a6 !important; }
+.dimensionExplanation {
+  padding: 18px 22px 20px;
+  border-top: 1px solid rgba(241,236,228,.1);
+  background: #45433f;
+  color: #e4ddd4;
+  font: 600 15px/1.6 Arial,sans-serif;
+}
+
+@media(max-width:760px){
+  .dimensionSection { margin: 8px 0 62px; }
+  .dimensionSection > h2 { font-size: 31px; }
+  .dimensionTable { margin-left: -12px; margin-right: -12px; }
+  .dimensionRow {
+    grid-template-columns: minmax(125px,1.35fr) repeat(3,minmax(58px,.65fr));
+    min-height: 64px;
+  }
+  .dimensionHead > *,
+  .dimensionItem > summary > * { padding: 12px 8px; }
+  .dimensionHead > b { font-size: 0; }
+  .dimensionHead > b::after { content: 'Score'; font-size: 9px; }
+  .dimensionHead > b:last-child::after { content: 'Δ'; }
+  .dimensionName { padding-right: 28px !important; }
+  .dimensionName::after { right: 7px; font-size: 14px; }
+  .dimensionName strong { font-size: 12px; }
+  .dimensionName small { font-size: 11px; line-height: 1.15; }
+  .dimensionItem > summary > b { font-size: 13px; }
+  .dimensionExplanation { padding: 16px 17px 18px; font-size: 14px; }
+}
