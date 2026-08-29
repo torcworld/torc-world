@@ -1,11 +1,25 @@
 'use client';
 
-import {FormEvent, useState} from 'react';
+import {FormEvent, useEffect, useState} from 'react';
 import styles from './submit.module.css';
+
+const packages = {
+ evaluation: 'TORC Evaluation — €149',
+ development: 'TORC Development — €349 founding rate',
+ deep: 'TORC Deep Analysis — from €695',
+} as const;
+
+type PackageKey = keyof typeof packages;
 
 export default function SubmissionForm(){
  const [status,setStatus]=useState<'idle'|'sending'|'sent'|'error'>('idle');
  const [message,setMessage]=useState('');
+ const [selectedPackage,setSelectedPackage]=useState(packages.development);
+
+ useEffect(()=>{
+  const key=new URLSearchParams(window.location.search).get('package') as PackageKey | null;
+  if(key && packages[key]) setSelectedPackage(packages[key]);
+ },[]);
 
  async function submit(e:FormEvent<HTMLFormElement>){
   e.preventDefault(); setStatus('sending'); setMessage('');
@@ -23,6 +37,7 @@ export default function SubmissionForm(){
    setStatus('sent');
    setMessage('Artifact received. We’ll review the scope and reply before any evaluation begins.');
    form.reset();
+   setSelectedPackage(packages.development);
   }catch(err:any){
    setStatus('error');
    setMessage(err?.message||'Submission could not be sent.');
@@ -32,7 +47,7 @@ export default function SubmissionForm(){
  return <form className={styles.form} onSubmit={submit}>
   <div className={styles.two}><label>Your name<input name="name" required autoComplete="name"/></label><label>Email<input name="email" required type="email" autoComplete="email"/></label></div>
   <div className={styles.two}><label>Artifact title<input name="title" required/></label><label>Artifact type<select name="type" required defaultValue=""><option value="" disabled>Select type</option><option>Screenplay</option><option>Manuscript / novel</option><option>Essay / philosophy</option><option>Research / theory</option><option>Film / audiovisual work</option><option>Music</option><option>Game / formal system</option><option>Other</option></select></label></div>
-  <label>Analysis<select name="package" required defaultValue="TORC Development — €349 founding rate"><option>TORC Evaluation — €149</option><option>TORC Development — €349 founding rate</option><option>TORC Deep Analysis — from €695</option></select></label>
+  <label>Analysis<select name="package" required value={selectedPackage} onChange={e=>setSelectedPackage(e.target.value)}><option>{packages.evaluation}</option><option>{packages.development}</option><option>{packages.deep}</option></select></label>
   <label className={styles.upload}>Upload artifact <span>PDF, DOCX, TXT or MD · max 4 MB</span><input name="artifact" type="file" required accept=".pdf,.doc,.docx,.txt,.md,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown"/></label>
   <label>What do you most want to understand? <span className={styles.optional}>Optional</span><textarea name="notes" rows={5} placeholder="For example: I’m rewriting the ending and want to understand whether the work actually reaches the recursive operation it is aiming for."/></label>
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
