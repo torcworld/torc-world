@@ -78,3 +78,9 @@ footer{
 /* Batch 7: artifact selectors are fields, not white cards. */
 .compareSelected{background:#f3eee6!important;border-color:#c8beb2!important}
 .compareSelected:hover,.compareSelected:focus-visible{background:#eee7dc!important}
+
+
+/* Batch 14: quieter result surface; override the earlier near-black Compare treatment. */
+.compareHeadline{background:#4b4945 !important;color:#f3eee6 !important;}
+.compareHeadline p,.compareHeadline .meta,.compareHeadline .compareVs{color:#c9c1b7!important}
+.compareHeadline .bigDip i{color:#5b2630!important}

@@ -333,3 +333,50 @@
   }
   .scoreBand h2 { font-size: 23px; }
 }
+
+
+/* Batch 14: result-first comparison page and stronger analytical typography. */
+.readyPage { padding-top: 34px; }
+.readyPage .scoreBand { margin-top: 0 !important; }
+.analysisBody {
+  max-width: 900px;
+  margin-top: 18px;
+  padding-left: 0;
+  border-left: 0;
+  display: grid;
+  gap: 12px;
+}
+.analysisBody p,
+.analysisBody p:first-child,
+.determination {
+  margin: 0 !important;
+  padding: 18px 20px;
+  border: 0;
+  background: rgba(23,23,20,.045);
+  color: var(--ink);
+  font: 700 18px/1.55 Arial,sans-serif;
+  letter-spacing: -.006em;
+}
+.determination { background: rgba(91,38,48,.075) !important; }
+.analysisLinks {
+  gap: 12px;
+  border: 0;
+  background: transparent;
+}
+.analysisLinks a {
+  border: 1px solid #c9c0b4;
+  background: #e4d8c5;
+}
+.analysisLinks a:hover { background: #ddd0bb; }
+.analysisLinks span {
+  color: #5b2630;
+  font-weight: 800;
+  font-size: 11px;
+}
+.analysisLinks i { color:#5b2630; font-weight:700; }
+@media(max-width:760px){
+  .readyPage { padding-top: 22px; }
+  .analysisBody p,
+  .analysisBody p:first-child,
+  .determination { padding: 16px; font-size: 16.5px; line-height: 1.5; }
+}

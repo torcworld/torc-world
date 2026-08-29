@@ -127,19 +127,20 @@ export default function Compare(){
     return {order:orderAnalysis(A,B),magnitude:magnitudeSentence(A,B),determination:determination(A,B),architecture:architectureInsight(A,B)};
   },[ready,A,B]);
 
-  return <main>
-    <header className={`page-title ${styles.comparePageTitle}`}>
-      <div className="eyebrow">Compare two artifacts</div>
-      <h1>What separates them?</h1>
-    </header>
+  return <main className={ready?styles.readyPage:undefined}>
+    {!ready&&<>
+      <header className={`page-title ${styles.comparePageTitle}`}>
+        <div className="eyebrow">Compare two artifacts</div>
+        <h1>What separates them?</h1>
+      </header>
 
-    <section className="compareControls">
-      <ArtifactPicker label="Artifact A" value={left} onChange={setLeft}/>
-      <button className="compareSwap" type="button" onClick={()=>{setLeft(right);setRight(left)}} aria-label="Swap artifacts">⇄</button>
-      <ArtifactPicker label="Artifact B" value={right} onChange={setRight}/>
-    </section>
-
-    {!ready&&<div className={styles.emptyState}>Choose two evaluated artifacts above.</div>}
+      <section className="compareControls">
+        <ArtifactPicker label="Artifact A" value={left} onChange={setLeft}/>
+        <button className="compareSwap" type="button" onClick={()=>{setLeft(right);setRight(left)}} aria-label="Swap artifacts">⇄</button>
+        <ArtifactPicker label="Artifact B" value={right} onChange={setRight}/>
+      </section>
+      <div className={styles.emptyState}>Choose two evaluated artifacts above.</div>
+    </>}
 
     {ready&&result&&<>
       <section className={`compareHeadline ${styles.scoreBand}`}>
@@ -151,10 +152,9 @@ export default function Compare(){
       <section className={styles.resultSection}>
         <div className="eyebrow">What separates them?</div>
         <div className={styles.analysisBody}>
-          <p className={styles.analysisLead}><b>{torcRank(A.torc)===torcRank(B.torc)?`Both artifacts demonstrate ${A.torc}.`:`${torcRank(A.torc)>torcRank(B.torc)?A.title:B.title} demonstrates a higher Operational Order.`}</b></p>
-          <p>{result.order}</p>
+          <p>{torcRank(A.torc)===torcRank(B.torc)?`Both artifacts demonstrate ${A.torc}.`:`${torcRank(A.torc)>torcRank(B.torc)?A.title:B.title} demonstrates a higher Operational Order.`} {result.order}</p>
           <p>{result.magnitude}</p>
-          <p className={styles.determination}><b>{result.determination}</b></p>
+          <p className={styles.determination}>{result.determination}</p>
         </div>
       </section>
 

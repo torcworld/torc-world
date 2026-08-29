@@ -108,3 +108,7 @@ a{color:inherit;text-decoration:none}.shell{max-width:1180px;margin:0 auto;paddi
 .site-nav a::after, nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -5px; height: 1px; background: #111; transform: scaleX(0); transform-origin: left center; transition: transform 140ms ease; }
 .site-nav a:hover, .site-nav a:focus-visible, nav a:hover, nav a:focus-visible { opacity: 1 !important; color: #111 !important; }
 .site-nav a:hover::after, .site-nav a:focus-visible::after, nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); }
+
+
+/* Batch 14: force the warm-stone ground consistently across desktop and mobile. */
+html, body, .shell { background:#e8e2d8 !important; }
