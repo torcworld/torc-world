@@ -14,6 +14,11 @@ const dimensions = [
   {key:'GR',name:'Generalization Reach',score:'8.4',formal:'How far the demonstrated structure remains applicable across materially heterogeneous problem-spaces.',plain:'How far can the same underlying structure travel into substantially different cases or domains while preserving the relationships that make it work?',artifact:'The novel’s account reaches beyond Napoleon, Kutuzov or 1812. Its structure applies across military, political, interpersonal and historical scales and challenges a broader human habit: assigning complex outcomes to the most visible agent.'}
 ];
 
+const orderDefinitions = {
+  G:{name:'G — Generative Cognition',formal:'The artifact establishes a generative explanation for an independently identifiable target, making lower-order accounts insufficient.',plain:'The work does more than show a difficult reality or a changed consciousness. It builds an account of why the thing it is examining happens the way it does.',artifact:'War and Peace makes individual intention insufficient as an explanation of history and demonstrates a larger causal structure: distributed action, constraint, circumstance and retrospective interpretation.'},
+  c3:{name:'3c — Integrated Consciousness',formal:'A fundamental fracture in consciousness\'s relation to reality is integrated into a coherent higher orientation without the fracture being erased.',plain:'The work reaches a way of living or orienting through a fracture that cannot simply be solved or undone.',artifact:'Pierre and Andrei make 3c a serious alternative: their earlier orientations collapse and are not simply restored. But those transformations do not by themselves explain the novel\'s larger account of historical causation.'}
+};
+
 export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
  if(!a)return null;
  return <main className={styles.page}>
@@ -56,12 +61,13 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
          </div>
        </details>)}
      </div>
+     <Link className={styles.methodologyCta} href="/methodology#dimensions"><span>Explore the model</span><strong>Full Dimension Methodology</strong><span aria-hidden="true">→</span></Link>
    </section>
 
    <article className={`${styles.essay} ${styles.essayAfterDimensions}`}>
      <section className={styles.boundary}>
        <div className={styles.kicker}>The boundary</div>
-       <h2>Why G, not 3c?</h2>
+       <h2>Why <details className={styles.orderTerm}><summary>G</summary><div className={styles.orderPopover}><b>{orderDefinitions.G.name}</b><p><strong>Formal.</strong> {orderDefinitions.G.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.G.plain}</p><p><strong>Here.</strong> {orderDefinitions.G.artifact}</p></div></details>, not <details className={styles.orderTerm}><summary>3c</summary><div className={styles.orderPopover}><b>{orderDefinitions.c3.name}</b><p><strong>Formal.</strong> {orderDefinitions.c3.formal}</p><p><strong>In plain language.</strong> {orderDefinitions.c3.plain}</p><p><strong>Here.</strong> {orderDefinitions.c3.artifact}</p></div></details>?</h2>
        <p>Pierre and Andrei make 3c a serious alternative. Their earlier orientations toward agency, mortality and meaning break, and the novel does not simply restore them. But their transformations still leave a larger question unanswered: why do people so persistently mistake intention for control?</p>
        <p>Tolstoy answers by changing the status of the characters themselves. Napoleon, Kutuzov, Pierre and the rest cease to function only as agents inside events; they become evidence about how events are produced and then misunderstood. Orders become contributions rather than sufficient causes. Outcomes emerge from interactions no participant can represent in full. History then performs a final distortion: it compresses that distributed process back into the biography of a visible individual.</p>
        <p>This is where the novel crosses into G. It does not merely show consciousness discovering that reality exceeds it. <em>War and Peace</em> does not merely portray the limits of human agency. It explains why those limits exist—and why, afterward, we are tempted to erase them.</p>

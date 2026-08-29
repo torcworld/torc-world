@@ -1,12 +1,13 @@
-TORC War and Peace Clean Slate V5
+TORC War and Peace Clean Slate V6
 
-Changes from V4:
-- Compresses opening analysis from six paragraphs to three denser paragraphs.
-- Refocuses analysis on TORC-specific insight: history retrospectively compresses distributed causation into visible authorship.
-- Tightens 3c/G boundary to three paragraphs and removes repeated generic explanation.
-- Compresses final exceptional section to two paragraphs.
-- Removes redundant bottom TORC Determination / G 915 card entirely.
-- Integrates the strongest concluding sentence into the analysis itself.
-- Leaves the interactive six-dimensional model and CTA structure intact.
+Changes from V5:
+- Moves the final exceptional section upward by reducing the preceding visual gap.
+- Makes G and 3c directly clickable inside “Why G, not 3c?” with compact Formal / In plain language / Here definitions.
+- Adds hover motion so the Order terms visibly invite interaction.
+- Removes the tiny repeated “Full dimension methodology” link from every expanded dimension.
+- Adds one prominent Full Dimension Methodology row beneath the complete six-dimensional model.
+- Keeps the six-dimensional profile itself visible and interactive.
+
+Important: this overlay does not invent or overwrite the repository's existing /methodology page because that source was not present in V5. The new prominent link continues to /methodology#dimensions. Any old evaluator-count language on that methodology page should be removed in a repository-level pass once that source is included.
 
 Overlay this ZIP at repository root, commit, and deploy.
