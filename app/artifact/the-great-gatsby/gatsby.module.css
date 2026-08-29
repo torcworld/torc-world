@@ -124,3 +124,27 @@
     padding-top:26px !important;
   }
 }
+
+
+/* Gatsby V2: classification model follows the boundary analysis. */
+.boundary > h2{
+  padding-top:0 !important;
+}
+.boundary .orderModelCta{
+  margin-top:32px !important;
+  margin-bottom:0 !important;
+}
+
+/* Give the page breathing room beneath the final black rule. */
+.page{
+  padding-bottom:72px !important;
+}
+@media(max-width:720px){
+  .boundary .orderModelCta{
+    margin-top:28px !important;
+    margin-bottom:0 !important;
+  }
+  .page{
+    padding-bottom:64px !important;
+  }
+}

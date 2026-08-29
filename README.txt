@@ -1,12 +1,7 @@
-TORC — The Great Gatsby artifact page
+TORC Great Gatsby Artifact Page V2
 
-Adds:
-- /artifact/the-great-gatsby
-- The Great Gatsby to the clean-slate public artifact corpus
-
-Public determination:
-- Operational Order: 2 — Symbolic Consciousness
-- CMS: 763 pooled estimate
-- Dimension display: RL 7.4 · AD 7.4 · CD 7.6 · ID 6.9 · IC 8.2 · GR 6.8
-
-The page intentionally mirrors the current War and Peace artifact-page layout and interaction model.
+- Rewrites the opening around the TORC-specific Level 2 determination rather than a generic Gatsby insight.
+- Moves Explore the 7 Cognitive Orders below the Why 2, not 3a? analysis.
+- Adds breathing room beneath the final black rule.
+- Keeps current pooled Gatsby CMS at 763.
+- War and Peace CMS is intentionally NOT changed yet while additional calibration runs are pending.
