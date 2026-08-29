@@ -1,6 +1,36 @@
-import Link from 'next/link';import {paleFire as a} from '@/lib/paleFire';
-export default function Page(){return <main><header className="page-title"><div className="eyebrow">Literature · 1962</div><h1>Pale Fire</h1><p className="lede">Vladimir Nabokov</p></header>
-<section className="dipHero"><div><div className="eyebrow">Demonstrated Intelligence Profile (DIP)</div><div className="bigDip">3b <i>|</i> 855</div></div><div className="dipFacts"><p><b>7 independent evaluations</b></p><p>TORC consensus: <b>{a.torcDistribution}</b></p><p>CMS median: <b>855</b> · mean <b>856.1</b> · range <b>{a.cmsRange}</b></p></div></section>
-<section className="section prose"><div className="eyebrow">Operational Order</div><h2>3b — Fractured Recursive Consciousness</h2><p>All seven evaluators independently classify <i>Pale Fire</i> at <b>3b</b>. The poem, commentary, foreword, index and cross-reference system make interpretation itself part of the represented problem: the reader must model not only events, but how consciousness constructs and appropriates the evidence from which reality is inferred.</p><p>The recurring 3b/3c question concerns Shade’s poem, which contains a genuine integrative movement around mortality, uncertainty, pattern and meaning. The evaluators nevertheless agree that the completed poem-plus-commentary artifact does not let that integration govern globally; Kinbote’s apparatus reopens and intensifies the fracture.</p><p>The G boundary is also unanimously rejected. The work’s extraordinary semantic and recursive generativity remains principally artifact-internal, without the explanatory relocation of an independently identifiable target required for G.</p></section>
-<section className="section"><div className="section-head"><div><div className="eyebrow">Capacity Architecture (CA)</div><h2>Six-dimensional architecture</h2></div><div className="score">CMS 855 / 1000</div></div><div className="dimensions">{a.dimensions.map(x=><details className="dimension" key={x.key}><summary><span className="dimKey">{x.key}</span><span><b>{x.name}</b><small>Click for formal definition + explanation + artifact rationale</small></span><strong>{x.score}</strong></summary><div className="dimBody"><p className="formalDefinition"><b>Formal definition.</b> {x.formalDefinition}</p><p className="definition"><b>In plain language.</b> {x.definition}</p><p><b>Why Pale Fire scores {x.score}.</b> {x.rationale}</p><p className="small">Evaluator range: {x.range} · <Link href="/methodology#dimensions">Full dimension methodology →</Link></p></div></details>)}</div></section>
-<section className="section audit"><div className="eyebrow">Evaluation record</div><h2>Inspect the result</h2><div className="auditGrid"><div><span>TORC agreement</span><b>{a.torcAgreement}</b></div><div><span>CMS stability</span><b>{a.cmsStability}</b></div><div><span>Dimensional stability</span><b>{a.dimensionalStability}</b></div></div><div className="buttons"><Link className="button primary" href="/artifact/pale-fire/report">Read full consensus report</Link><a className="button" href="#evaluators">View evaluator results</a></div><div id="evaluators" className="evaluators">{a.evaluators.map((e,i)=><Link href={`/artifact/pale-fire/evaluator-${i+1}`} key={String(e[0])}><span>{e[0]}</span><b>{e[1]} | {e[2]} →</b></Link>)}</div></section></main>}
+import ArtifactAnalysis from '../components/ArtifactAnalysis';
+
+export default function Page(){return <ArtifactAnalysis
+ domain='Literature'
+ year='1962'
+ title='Pale Fire'
+ creator='Vladimir Nabokov'
+ order='3b'
+ orderName='Fractured recursive consciousness'
+ cms={887}
+ range='Median across 10 evaluations'
+ headline='Interpretation does not uncover the object. It begins to manufacture the object it claims to explain.'
+ analysis={[
+  'The poem, Foreword, Commentary and Index initially look like separable layers: one text and the scholarly apparatus surrounding it. Kinbote destroys that separation. His commentary progressively converts Shade’s poem into evidence for a Zemblan narrative whose relevance depends on the very interpretive consciousness claiming merely to annotate what is already there.',
+  'The reader is therefore forced to reconstruct two things at once: the putative object of interpretation and the process by which that object is being appropriated. Kinbote cannot stand outside the evidence because his needs, identity and representational habits alter what the evidence is allowed to become. The interpreting consciousness is no longer a transparent route to the represented reality; it is one of the conditions producing the contradiction.',
+  'That is why TORC stops treating the novel as merely metafictional. Its governing operation is not that texts refer to other texts. It is that interpretation becomes causally entangled with the reality interpretation is supposed to recover.'
+ ]}
+ dimensions={[
+  {key:'RL',name:'Relational Load',score:'9.2',artifact:'Poem, commentary, biography, chronology, invented geography, cross-reference and index remain mutually consequential rather than merely adjacent.'},
+  {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'The novel repeatedly moves from represented events to interpretation of representation and then to the conditions under which interpretation itself constructs reality.'},
+  {key:'CD',name:'Constraint Density',score:'9.2',artifact:'Cross-references, chronology, textual echoes, competing identities and documentary claims sharply restrict how any local passage can be read.'},
+  {key:'ID',name:'Inferential Distance',score:'8.9',artifact:'The reader must reconstruct Shade, Kinbote, Zembla and their relations from a deliberately contaminated evidentiary field.'},
+  {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'An extraordinary amount of narrative and epistemic structure is encoded in the relation among a poem and the apparatus ostensibly explaining it.'},
+  {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'The architecture transfers strongly to interpretation, commentary, authorship and unreliable mediation without becoming a broadly external explanatory mechanism.'}
+ ]}
+ boundaryTitle='Why 3b, not 3c—or G?'
+ boundary={[
+  'Shade’s poem contains real 3c pressure: mortality, pattern, uncertainty and meaning are approached through an orientation that can survive the failure of complete explanation. But the completed artifact does not allow that integration to govern. Kinbote’s apparatus reopens the fracture and makes interpretation itself unstable.',
+  'G is also blocked. The novel is extraordinarily generative inside its constructed textual world, but the mechanism primarily explains Kinbote, Shade, Zembla and the relations among the documents. Artifact-internal explanatory productivity is not enough to relocate the explanation of an independently constrained external target.'
+ ]}
+ exceptionalTitle='The commentary is not outside the poem, and the reader is not outside the commentary.'
+ exceptional={[
+  'Pale Fire makes a normally invisible dependency explicit: evidence does not arrive already interpreted. The act that organizes evidence can become part of what must itself be explained.',
+  'That recursive contamination is why the novel can sustain such high magnitude without resolving upward into 3c. The reader may become better at diagnosing Kinbote, but the completed artifact never grants interpretation a fully secure position from which the fracture disappears.'
+ ]}
+/>}

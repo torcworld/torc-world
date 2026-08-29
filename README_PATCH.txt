@@ -1,14 +1,17 @@
-TORC WAR AND PEACE CLEAN SLATE — V9
+TORC WORLD — ARTIFACT BATCH 1 PATCH
 
-Changes from V8:
-- Renames public 3a label to “Corrective Recursive Consciousness.”
-- Rewrites the public 3a definition so “corrective” describes orientation toward an externally located problem, not successful repair.
-- Avoids using fracture as the defining public concept for 3a; fracture remains central to 3b.
-- Nudges the Analysis kicker upward slightly.
-- Tightens the gap between the opening analysis and Cognitive Architecture.
-- Pulls the cognitive-order methodology entry much closer to Full Dimension Methodology.
-- Adds a little breathing room before “Why G, not 3c?”.
-- Pulls “What makes it exceptional” slightly higher again.
-- Gives the bottom Submit Your Artifact CTA slightly more balanced vertical breathing room.
+Replace/copy these files into the repository root, preserving paths.
 
-No War and Peace scores or substantive classification were changed.
+Adds/updates:
+- Das Kapital, Vol. I — G | 915
+- Synecdoche, New York — 3b | 863
+- 2001: A Space Odyssey — 2 | 843
+- Job — 3c | CMS intentionally pending
+- Pale Fire — 3b | 887 (rewritten into current War-and-Peace-style analysis component)
+- War and Peace CMS corrected to 895
+- Artifact index now safely displays an em dash for published artifacts whose CMS is pending
+- Medium filter now derives from the actual published artifact domains
+
+No layout redesign was introduced. The new pages use the existing shared ArtifactAnalysis component and CSS.
+
+NOTE: A full Next.js production build could not be run in this environment because npm dependency installation timed out. Modified TSX files were checked for balanced delimiters and path consistency.

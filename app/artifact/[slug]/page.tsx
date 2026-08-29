@@ -28,7 +28,7 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
      <p className={styles.creator}>{a.creator}</p>
      <div className={styles.verdictGrid}>
        <div><span>Operational Order</span><strong>G</strong><small>Generative cognition</small></div>
-       <div><span>Cognitive Magnitude</span><strong>915</strong><small>Observed range 900–922</small></div>
+       <div><span>Cognitive Magnitude</span><strong>895</strong><small>Production CMS</small></div>
      </div>
    </header>
 
