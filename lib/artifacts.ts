@@ -14,5 +14,10 @@ export const artifacts:Artifact[]=[
 {slug:'synecdoche-new-york',title:'Synecdoche, New York',creator:'Charlie Kaufman',year:'2008',domain:'Film',status:'evaluated',torc:'3b',cms:863,rl:9.1,ad:8.9,cd:8.7,id:8.8,ic:8.6,gr:7.5},
 {slug:'2001-a-space-odyssey',title:'2001: A Space Odyssey',creator:'Stanley Kubrick',year:'1968',domain:'Film',status:'evaluated',torc:'2',cms:843,rl:8.4,ad:8.6,cd:8.6,id:8.3,ic:8.8,gr:7.7},
 {slug:'job',title:'Job',creator:'Hebrew Bible',year:'Ancient',domain:'Scripture',status:'evaluated',torc:'3c'},
+{slug:'pulp-fiction',title:'Pulp Fiction',creator:'Quentin Tarantino',year:'1994',domain:'Film',status:'evaluated',torc:'2',cms:787,rl:8.6,ad:6.9,cd:8.8,id:7.8,ic:8.7,gr:6.4},
+{slug:'gospel-of-john',title:'Gospel of John',creator:'New Testament',year:'1st century CE',domain:'Scripture',status:'evaluated',torc:'2'},
+{slug:'romans',title:'Romans',creator:'Paul the Apostle',year:'c. 57 CE',domain:'Scripture',status:'evaluated',torc:'G'},
+{slug:'mulamadhyamakakarika',title:'Mūlamadhyamakakārikā',creator:'Nāgārjuna',year:'c. 2nd–3rd century CE',domain:'Philosophy',status:'evaluated',torc:'GΩ'},
+{slug:'dependent-arising',title:'Dependent Arising — Kaccānagotta Sutta',creator:'Saṃyutta Nikāya 12.15',year:'Early Buddhist canon',domain:'Scripture',status:'evaluated',torc:'G'},
 ]
 export function getArtifact(slug:string){return artifacts.find(a=>a.slug===slug)}
