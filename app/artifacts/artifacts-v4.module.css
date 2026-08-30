@@ -928,3 +928,26 @@
   color:#5b2630!important;
   border-color:#5b2630!important;
 }
+
+
+/* Batch 75 — black filter values again */
+.controlLabel select,
+.controlLabel select option{
+  color:#171714!important;
+}
+
+/* Artifact row separators become very thin black rules. */
+.artifactTableFour :global(.row:not(.header)){
+  border-bottom:1px solid rgba(23,23,20,.72)!important;
+}
+
+/* Clear row location on hover/focus: a fine black rectangle around the row. */
+.artifactTableFour :global(a.row:not(.header)){
+  position:relative;
+}
+.artifactTableFour :global(a.row:not(.header):hover),
+.artifactTableFour :global(a.row:not(.header):focus-visible){
+  outline:1px solid #171714!important;
+  outline-offset:-1px!important;
+  background:rgba(217,199,166,.16)!important;
+}

@@ -54,9 +54,22 @@ export default function BookNavigator(){
   };
  },[]);
 
- return <nav ref={navRef} className={`${styles.readerNav} ${awake?styles.readerNavAwake:''} ${introOpen?styles.readerNavIntroOpen:''}`} aria-label="Book contents">
-   <button className={styles.readerNavTab} aria-label="Open table of contents" onClick={()=>setIntroOpen(v=>!v)}>Contents</button>
-   <div className={styles.readerNavPanel}>
+ return <nav
+   ref={navRef}
+   className={`${styles.readerNav} ${awake?styles.readerNavAwake:''} ${introOpen?styles.readerNavIntroOpen:''}`}
+   aria-label="Book contents"
+   data-open={introOpen?'true':'false'}
+  >
+   <button
+    className={styles.readerNavTab}
+    aria-label={introOpen?'Close table of contents':'Open table of contents'}
+    aria-expanded={introOpen}
+    aria-controls="book-contents-panel"
+    onClick={(e)=>{e.stopPropagation();setIntroOpen(v=>!v)}}
+   >
+    Contents
+   </button>
+   <div id="book-contents-panel" className={styles.readerNavPanel} aria-hidden={!introOpen}>
     <div className={styles.readerNavTitle}>The Age of False Depth</div>
     {items.map(([label,id,kind])=> kind==='part'
       ? <div key={id} className={styles.readerNavPart}>{label}</div>

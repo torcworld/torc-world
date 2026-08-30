@@ -726,3 +726,34 @@
     pointer-events:auto!important;
   }
 }
+
+
+/* Batch 75 — explicit mobile open state from BookNavigator data-open */
+@media(max-width:760px){
+  .readerNav[data-open="false"] .readerNavPanel{
+    display:none!important;
+  }
+
+  .readerNav[data-open="true"]{
+    pointer-events:auto!important;
+    opacity:1!important;
+  }
+
+  .readerNav[data-open="true"] .readerNavPanel{
+    display:block!important;
+    position:absolute!important;
+    right:0!important;
+    left:auto!important;
+    top:auto!important;
+    bottom:calc(100% + 8px)!important;
+    width:min(310px,calc(100vw - 28px))!important;
+    padding:20px 20px 22px!important;
+    border:1px solid #5b2630!important;
+    background:#d9c7a6!important;
+    max-height:68vh!important;
+    overflow:auto!important;
+    opacity:1!important;
+    visibility:visible!important;
+    z-index:95!important;
+  }
+}
