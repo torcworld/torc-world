@@ -235,3 +235,122 @@
  .tableHeader button,.tableHeader span{font-size:12px!important}
  .sortArrow{font-size:17px!important}
 }
+
+
+/* Batch 56 — corpus table hierarchy + compare emphasis */
+.artifactTableFour :global(.row){
+  grid-template-columns:
+    minmax(250px,1.55fr)
+    minmax(165px,.92fr)
+    minmax(210px,1.08fr)
+    minmax(285px,1.45fr)!important;
+  column-gap:24px;
+}
+
+/* Column headings now read as TORC structure, not generic table chrome. */
+.tableHeader button,
+.tableHeader span{
+  color:#5b2630!important;
+  font-size:15px!important;
+  font-weight:800!important;
+  letter-spacing:.005em;
+  white-space:nowrap;
+}
+.tableHeader button{
+  padding:7px 9px;
+  margin-left:-9px;
+  border:1px solid transparent;
+  transition:border-color .15s ease,background .15s ease;
+}
+.tableHeader button:hover,
+.tableHeader button:focus-visible{
+  color:#5b2630!important;
+  border-color:#5b2630;
+  background:rgba(217,199,166,.32);
+  outline:none;
+}
+.sortArrow{
+  font-size:21px!important;
+  color:#5b2630!important;
+}
+
+/* Keep result values visually centered beneath their respective result headings. */
+.artifactTableFour :global(.row)>:nth-child(3),
+.artifactTableFour :global(.row)>:nth-child(4){
+  text-align:left!important;
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(3),
+.artifactTableFour :global(.row:not(.header))>:nth-child(4){
+  text-align:center!important;
+}
+.artifactTableFour :global(.score){
+  font-size:16px;
+  font-weight:700;
+}
+
+/* Search/filter environment matches the lighter resting navigation gold. */
+.artifactToolsStrong{
+  background:#d9c7a6!important;
+  border-color:rgba(91,38,48,.5)!important;
+}
+
+/* Compare becomes a visible section rather than a small utility box. */
+.inlineCompare{
+  background:#d9c7a6!important;
+  padding:36px 34px 32px;
+  margin-top:48px;
+}
+.inlineCompareHead{
+  text-align:center;
+  margin:0 auto 28px;
+  max-width:680px;
+}
+.inlineCompareHead :global(.eyebrow){
+  color:#5b2630!important;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:30px;
+  line-height:1.05;
+  font-weight:700;
+  letter-spacing:-.025em;
+  text-transform:none;
+}
+.inlineCompareHead h2{
+  margin:10px 0 0;
+  color:var(--ink);
+  font:400 18px/1.45 Arial,sans-serif;
+}
+.inlineCompareControls{
+  max-width:900px;
+  margin:0 auto;
+}
+.inlineCompareAction{
+  max-width:900px;
+  margin:18px auto 0;
+}
+
+@media(max-width:1050px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:
+     minmax(220px,1.4fr)
+     minmax(145px,.85fr)
+     minmax(185px,1fr)
+     minmax(240px,1.28fr)!important;
+   column-gap:18px;
+ }
+ .tableHeader button,.tableHeader span{font-size:13px!important}
+}
+@media(max-width:860px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:minmax(0,1.45fr) minmax(105px,.78fr) minmax(112px,.8fr) minmax(138px,.92fr)!important;
+ }
+ .tableHeader button,.tableHeader span{
+   white-space:normal;
+   font-size:12px!important;
+ }
+ .artifactTableFour :global(.row:not(.header))>:nth-child(3),
+ .artifactTableFour :global(.row:not(.header))>:nth-child(4){
+   text-align:left!important;
+ }
+ .inlineCompare{padding:28px 20px}
+ .inlineCompareHead :global(.eyebrow){font-size:26px}
+}
