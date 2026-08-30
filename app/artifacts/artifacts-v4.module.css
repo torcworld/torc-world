@@ -993,3 +993,15 @@
 .controlLabel select option{
   color:#171714!important;
 }
+
+
+/* Batch 77 — black search-console perimeter + oxblood Artifacts title trial */
+.artifactToolsStrong{
+  border:1px solid #171714!important;
+}
+
+/* Keep the field visually quieter: title carries the oxblood accent,
+   while the institutional subtitle stays warm/light on charcoal. */
+.artifactHeading h1{
+  color:#5b2630!important;
+}
