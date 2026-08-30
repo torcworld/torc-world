@@ -515,3 +515,64 @@
 .contact>div:first-child>p{
   color:#eadfe0!important;
 }
+
+
+/* Batch 80 — Organizations hierarchy refinement */
+
+/* Submit-family structural rails: very fine oxblood lines rising to the nav rule. */
+.page{
+  position:relative!important;
+  border-left:1px solid rgba(91,38,48,.72)!important;
+  border-right:1px solid rgba(91,38,48,.72)!important;
+  box-sizing:border-box!important;
+}
+.page::before{
+  content:"";
+  position:absolute;
+  left:-1px;
+  right:-1px;
+  top:-18px;
+  height:18px;
+  border-left:1px solid rgba(91,38,48,.72);
+  border-right:1px solid rgba(91,38,48,.72);
+  pointer-events:none;
+}
+
+/* Treat the chart as a deliberate analytical instrument rather than a floating card. */
+.heroVisual{
+  align-self:center;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  transform:translateY(-8px);
+}
+.heroVisualLabel{
+  color:#d9c7a6;
+  font:700 10px/1.2 Arial,sans-serif;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  text-align:left;
+}
+.heroPanel{
+  margin-top:0!important;
+}
+
+/* Let the inquiry field float above the bottom like Submit Your Artifact. */
+.contact{
+  margin-bottom:0!important;
+}
+.page{
+  padding-bottom:151px!important; /* ~4cm breathing field on desktop */
+}
+
+@media(max-width:760px){
+  .page{
+    border-left:0!important;
+    border-right:0!important;
+    padding-bottom:72px!important;
+  }
+  .page::before{display:none!important;}
+  .heroVisual{
+    transform:none;
+  }
+}

@@ -46,7 +46,9 @@ export default function Organizations(){
           </div>
         </div>
 
-        <div className={styles.heroPanel} aria-label="Illustrative TORC portfolio view">
+        <div className={styles.heroVisual}>
+          <div className={styles.heroVisualLabel}>STATISTICAL ANALYSIS</div>
+          <div className={styles.heroPanel} aria-label="Illustrative TORC portfolio view">
           <div className={styles.panelTop}>
             <span>ILLUSTRATIVE PORTFOLIO VIEW</span>
             <span>TORC / 50</span>
@@ -69,6 +71,7 @@ export default function Organizations(){
             <span>OUTLIERS</span>
           </div>
           <p>Conceptual display only — not client data.</p>
+          </div>
         </div>
       </header>
 
