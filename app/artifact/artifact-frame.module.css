@@ -64,3 +64,11 @@
     transform:none!important;
   }
 }
+
+
+/* Batch 61 — move the Theory-like analysis field farther right */
+@media(min-width:981px){
+  .frame::after{
+    right:-38px!important;
+  }
+}

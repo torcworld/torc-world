@@ -542,3 +542,23 @@
     transform:none!important;
   }
 }
+
+
+/* Batch 61 — monochrome side architecture + frameless search */
+.artifactsPage::before,
+.artifactsPage::after{
+  background:#171714!important;
+}
+.artifactsPage::before{
+  box-shadow:-55vw 0 0 55vw #171714!important;
+}
+.artifactsPage::after{
+  box-shadow:55vw 0 0 55vw #171714!important;
+}
+
+/* Remove the large search/filter outline entirely; page ground remains continuous. */
+.artifactToolsStrong{
+  border:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+}

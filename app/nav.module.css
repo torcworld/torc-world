@@ -182,3 +182,29 @@
   border-color:#8f744e!important;
   color:#171714!important;
 }
+
+
+/* Batch 61 — persistent page location + stronger TORC wordmark */
+.mainLink.activeLink,
+.submitLink.activeLink,
+a[aria-current="page"].mainLink,
+a[aria-current="page"].submitLink{
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+  color:#171714!important;
+  box-shadow:0 7px 18px rgba(56,43,26,.10);
+}
+.brandLockup span{
+  display:none!important;
+}
+.brandLockup{
+  min-width:170px;
+}
+.brandLockup b{
+  font-size:31px!important;
+  line-height:.9!important;
+  letter-spacing:.18em!important;
+}
+@media(max-width:900px){
+  .brandLockup{display:none!important}
+}
