@@ -431,3 +431,61 @@
   background:transparent!important;
   border:1px solid rgba(91,38,48,.5)!important;
 }
+
+
+/* Batch 59 — black inner rails / oxblood outer fields trial */
+
+/* Replace the oxblood rails with black inner rails. */
+.artifactsPage::before,
+.artifactsPage::after{
+  background:#171714!important;
+  width:22px!important;
+  z-index:-1;
+}
+.artifactsPage::before{left:-42px!important}
+.artifactsPage::after{right:-42px!important}
+
+/* Add oxblood outer fields beyond the black rails. */
+.artifactHeader::before,
+.artifactHeader::after{
+  content:"";
+  position:absolute;
+  z-index:-2;
+  top:-118px;
+  bottom:-76px;
+  width:max(42px,calc((100vw - 1180px)/2));
+  background:#5b2630;
+}
+.artifactHeader::before{right:calc(100% + 42px)}
+.artifactHeader::after{left:calc(100% + 42px)}
+.artifactHeader{position:relative}
+
+/* Remove the extra rule immediately above the search/filter console. */
+.artifactHeader{
+  border-bottom:0!important;
+}
+
+/* Search console keeps only a quiet black structural outline. */
+.artifactToolsStrong{
+  border:1px solid #171714!important;
+}
+
+/* Shift Medium heading and values right to open breathing room after long titles. */
+.artifactTableFour :global(.header)>:nth-child(2){
+  transform:translateX(18px);
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(2){
+  transform:translateX(10px);
+}
+
+@media(max-width:1100px){
+ .artifactsPage::before{left:-32px!important}
+ .artifactsPage::after{right:-32px!important}
+ .artifactHeader::before{right:calc(100% + 32px);width:32px}
+ .artifactHeader::after{left:calc(100% + 32px);width:32px}
+}
+@media(max-width:860px){
+ .artifactHeader::before,.artifactHeader::after{display:none}
+ .artifactTableFour :global(.header)>:nth-child(2),
+ .artifactTableFour :global(.row:not(.header))>:nth-child(2){transform:none}
+}
