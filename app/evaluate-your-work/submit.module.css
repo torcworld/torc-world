@@ -288,3 +288,112 @@
  .processStep:first-child{border-top:0}
  .processStep::after{display:none!important}
 }
+
+/* Batch 46 — Submit luxury / process refinement trial */
+.page{
+  position:relative;
+  border-left:1px solid rgba(91,38,48,.55);
+  border-right:1px solid rgba(91,38,48,.55);
+}
+
+/* Smaller, tighter charcoal arrival panel. */
+.hero{
+  margin:0 -28px;
+  padding:42px 58px 44px;
+  border-top:4px solid var(--accent);
+}
+.hero::after{background:var(--accent)}
+.hero h1{
+  max-width:920px;
+  margin:0;
+  font-size:clamp(38px,4.45vw,58px);
+  line-height:1.02;
+  letter-spacing:-.035em;
+}
+.hero h1 span{display:block;white-space:nowrap}
+.heroTagline{
+  display:block!important;
+  margin:18px 0 0!important;
+  max-width:none!important;
+  color:#cbbda9!important;
+  font:italic 400 18px/1.25 Georgia,'Times New Roman',serif!important;
+  letter-spacing:.01em;
+}
+
+/* One oxblood-outlined four-stage mechanism. No black dividers, no numbers. */
+.process{
+  grid-template-columns:repeat(4,1fr);
+  margin:24px 0 0;
+  padding:0;
+  background:transparent;
+  border:2px solid var(--accent);
+}
+.processStep{
+  min-height:178px;
+  padding:25px 24px 23px;
+  border:0;
+  border-right:1px solid rgba(91,38,48,.42);
+  justify-content:flex-start;
+}
+.processStep:last-child{border-right:0}
+.processStep h3{
+  margin:0 0 18px;
+  color:var(--accent);
+  font:500 28px/1 Georgia,'Times New Roman',serif;
+  letter-spacing:-.025em;
+}
+.processStep p{
+  margin:0;
+  color:#514a42;
+  font-size:13px;
+  line-height:1.52;
+}
+.processStep:not(:last-child)::after{
+  content:"→";
+  right:-18px;
+  top:29px;
+  width:36px;
+  height:30px;
+  background:var(--ground);
+  color:var(--accent);
+  font:700 27px/1 Arial,sans-serif;
+}
+
+/* Pricing cards sit in the same warm material family as the submission form. */
+.priceCard:not(.selectedPriceCard){
+  background:#e6dccd;
+  border-color:#a99780;
+}
+.priceCard.selectedPriceCard{
+  background:#d7c29d;
+  border-color:var(--accent);
+}
+.pricing{padding-top:58px}
+
+@media(max-width:860px){
+ .process{grid-template-columns:1fr 1fr}
+ .processStep{border-right:1px solid rgba(91,38,48,.42)!important}
+ .processStep:nth-child(2),.processStep:nth-child(4){border-right:0!important}
+ .processStep:nth-child(3),.processStep:nth-child(4){border-top:1px solid rgba(91,38,48,.42)}
+ .processStep:nth-child(2)::after{display:none}
+}
+@media(max-width:760px){
+ .page{border-left:0;border-right:0}
+ .hero{margin:0 -20px;padding:36px 24px 38px}
+ .hero h1{font-size:clamp(34px,9vw,46px)}
+ .hero h1 span{white-space:normal}
+ .heroTagline{font-size:16px!important}
+ .process{margin-top:18px}
+}
+@media(max-width:520px){
+ .process{grid-template-columns:1fr}
+ .processStep{
+   min-height:0;
+   padding:22px 20px 21px;
+   border:0!important;
+   border-bottom:1px solid rgba(91,38,48,.42)!important;
+ }
+ .processStep:last-child{border-bottom:0!important}
+ .processStep h3{font-size:26px;margin-bottom:11px}
+ .processStep::after{display:none!important}
+}
