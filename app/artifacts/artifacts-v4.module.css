@@ -876,3 +876,16 @@
 .artifactHeader{
   margin-top:71px!important;
 }
+
+
+/* Batch 71 — Artifacts: move the charcoal composition ~3 mm upward */
+.artifactHeader{
+  margin-top:60px!important;
+}
+
+
+/* Batch 72 — use the same exact rail-to-global-rule junction as the Theory book frame */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-54px!important;
+}

@@ -556,3 +556,99 @@
     transform-origin:top right!important;
   }
 }
+
+
+/* Batch 71 — Theory Book: remove thin rails and shift the entire composition left */
+.bookPage{
+  border-left:0!important;
+  border-right:0!important;
+  transform:translateX(-19px);
+}
+
+/* Move the floating oxblood field with the book composition. */
+.bookPage::after{
+  right:-19px!important;
+}
+
+/* Keep title and book locked to the same left edge after the shift. */
+.bookTitlePage,
+.bookReader{
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+@media(max-width:760px){
+  .bookPage{
+    transform:none;
+  }
+}
+
+
+/* Batch 72 — restore house-style rails and fit the full book composition exactly between them */
+.bookPage{
+  transform:none!important;
+  border-left:1px solid #5b2630!important;
+  border-right:1px solid #5b2630!important;
+  padding-left:0!important;
+  padding-right:238px!important;
+}
+
+/* Left edge of charcoal + gold book sits directly on the left oxblood rail. */
+.bookTitlePage,
+.bookReader{
+  margin-left:0!important;
+  margin-right:0!important;
+}
+
+/* Right oxblood field fills the remaining width and terminates at the right rail. */
+.bookPage::after{
+  right:0!important;
+  width:238px!important;
+}
+
+/* Keep the title and reading block joined as one object. */
+.bookTitlePage{
+  margin-bottom:0!important;
+}
+.bookReader{
+  margin-top:0!important;
+  border-top:0!important;
+}
+
+/* Table of contents remains at the far-right screen edge, independent of book plane. */
+@media(min-width:981px){
+  .readerNav{
+    position:fixed!important;
+    right:18px!important;
+    left:auto!important;
+    top:150px!important;
+    z-index:40!important;
+  }
+}
+
+/* The thin rails visually continue upward to the existing translucent nav rule. */
+.bookPage{
+  margin-top:18px!important;
+}
+.bookPage::before{
+  content:"";
+  position:absolute;
+  left:-1px;
+  right:-1px;
+  top:-18px;
+  height:18px;
+  border-left:1px solid #5b2630;
+  border-right:1px solid #5b2630;
+  pointer-events:none;
+}
+
+@media(max-width:760px){
+  .bookPage{
+    border-left:0!important;
+    border-right:0!important;
+    padding-right:0!important;
+  }
+  .bookPage::before{
+    display:none;
+  }
+}
