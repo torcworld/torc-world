@@ -22,3 +22,18 @@
  .content{padding:46px 22px 64px}.content h1{font-size:clamp(42px,13vw,60px);margin-bottom:36px}.book{min-height:555px;padding:34px 28px 30px}.bookTitle b{font-size:clamp(50px,16vw,68px)}.book p{font-size:16px}
  .bookExcerpt{grid-template-columns:30px minmax(0,1fr);gap:2px;margin-top:44px}.openQuote{font-size:62px;transform:translateY(4px)}.bookExcerpt p{font-size:19px;line-height:1.52}.bookExcerpt strong{font-size:23px}.closeQuote{font-size:34px;margin-left:5px}.readBook{margin:28px 0 0 32px;padding:14px 18px}
 }
+
+/* Batch 39 — desktop optical alignment only */
+@media(min-width:901px){
+ .book{transform:translateX(72px)}
+ .bookExcerpt{transform:translateX(-36px)}
+ .readBook{transform:translateX(-36px)}
+}
+
+/* Batch 40 — desktop inset Theory banner trial.
+   Keep the site's ground visible to the right of the oxblood field so the
+   accent reads as an inserted banner rather than a full-page split. */
+@media(min-width:901px){
+ .theoryLayout{grid-template-columns:minmax(0,3fr) minmax(300px,2fr);background:var(--ground)}
+ .colorField{width:75%;justify-self:start;background:var(--accent)}
+}
