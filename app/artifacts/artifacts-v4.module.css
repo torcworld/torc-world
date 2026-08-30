@@ -864,3 +864,15 @@
 .artifactsPage::after{
   top:-58px!important;
 }
+
+
+/* Batch 70 — exact top-frame geometry */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-48px!important;
+}
+
+/* Move the complete composition from the charcoal Artifacts hero downward by 5 mm. */
+.artifactHeader{
+  margin-top:71px!important;
+}

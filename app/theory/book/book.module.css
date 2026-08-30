@@ -511,3 +511,48 @@
     left:auto!important;
   }
 }
+
+
+/* Batch 70 — hard join between title field and book body */
+.bookTitlePage{
+  margin-bottom:0!important;
+}
+.bookReader{
+  margin-top:0!important;
+}
+.bookTitlePage + .bookReader{
+  margin-top:0!important;
+}
+
+/* If an outer reading wrapper contributes the visible gap, neutralize it. */
+.bookPage > .bookReader{
+  margin-top:0!important;
+}
+
+/* Desktop TOC: remove it from the book plane and dock it at the right edge
+   of the viewport, above the oxblood field rather than over the text. */
+@media(min-width:981px){
+  .readerNav{
+    position:fixed!important;
+    left:auto!important;
+    right:18px!important;
+    top:150px!important;
+    z-index:40!important;
+    margin:0!important;
+    transform:none!important;
+  }
+  .readerNavTab{
+    position:relative!important;
+    left:auto!important;
+    right:auto!important;
+    margin:0!important;
+  }
+  .readerNavPanel{
+    position:absolute!important;
+    left:auto!important;
+    right:0!important;
+    top:100%!important;
+    margin-top:8px!important;
+    transform-origin:top right!important;
+  }
+}
