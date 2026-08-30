@@ -771,3 +771,65 @@
     font-size:54px!important;
   }
 }
+
+
+/* Batch 66 — close the Artifacts frame at the navigation rule */
+
+/* One top rule only. The vertical oxblood rules now meet this exact rule. */
+.artifactsPage{
+  margin-top:18px!important;
+  padding-top:0!important;
+  border-top:1px solid rgba(53,52,50,.24)!important;
+}
+
+/* Remove any second/header-level horizontal rule. */
+.artifactHeader{
+  border-top:0!important;
+  border-bottom:0!important;
+}
+
+/* Vertical oxblood sides begin at the single translucent top rule. */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:0!important;
+  bottom:-56px!important;
+  width:1px!important;
+  background:#5b2630!important;
+}
+.artifactsPage::before{left:0!important}
+.artifactsPage::after{right:0!important}
+
+/* Bring the composition up: roughly 1.5–2 cm below the top rule.
+   The charcoal Artifacts field now touches both vertical oxblood sides. */
+.artifactHeader{
+  margin-top:58px!important;
+  margin-left:0!important;
+  margin-right:0!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+}
+
+/* Everything below remains inset, so the full-width charcoal arrival field
+   visibly establishes the frame before the functional surfaces begin. */
+.artifactToolsStrong,
+.corpusSurface{
+  margin-left:28px!important;
+  margin-right:28px!important;
+}
+
+@media(max-width:860px){
+  .artifactsPage{
+    margin-top:10px!important;
+    border-top:1px solid rgba(53,52,50,.24)!important;
+  }
+  .artifactHeader{
+    margin-top:34px!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  .artifactToolsStrong,
+  .corpusSurface{
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+}
