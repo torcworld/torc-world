@@ -37,3 +37,13 @@
  .theoryLayout{grid-template-columns:minmax(0,3fr) minmax(300px,2fr);background:var(--ground)}
  .colorField{width:75%;justify-self:start;background:var(--accent)}
 }
+
+/* Batch 41 — desktop floating Theory color field trial.
+   The oxblood field now sits inside the continuing site ground instead of
+   touching the top/bottom of the Theory section. */
+@media(min-width:901px){
+ .colorField{
+   margin-top:38px;
+   margin-bottom:92px;
+ }
+}
