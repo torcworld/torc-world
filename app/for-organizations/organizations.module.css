@@ -342,10 +342,176 @@
   .contact{margin:0 -20px -80px;padding:58px 20px 65px;grid-template-columns:1fr;gap:44px}
 }
 
-/* Batch 21: tighter institutional page, warmer surfaces */
-.hero{background:linear-gradient(135deg,#e8e0d4 0%,#eee6da 58%,#e5d8d2 100%)}
-.applications{background:linear-gradient(180deg,#e8e0d4 0%,#eee6da 100%)}
-.card,.card:hover,.card[open]{background:#e7ded1}
-.card:hover,.card[open]{background:#ddceb3}
-.principle{background:linear-gradient(180deg,#eee6da 0%,#e8e0d4 100%)}
-@media(max-width:760px){.volume{margin-top:0}}
+
+/* Batch 79 — Organizations house-style trial */
+.page{
+  --house-ground:#ddceb3;
+  --house-gold:#d9c7a6;
+  --house-gold-deep:#c7aa76;
+  --house-charcoal:#353432;
+  --house-oxblood:#5b2630;
+}
+
+/* Top arrival field: preserve the existing composition and black data graphic,
+   but replace the pale field with the TORC charcoal environment. */
+.hero{
+  background:#353432!important;
+  border-top:4px solid #5b2630!important;
+  border-bottom:1px solid rgba(255,255,255,.18)!important;
+}
+.hero .eyebrow{
+  color:#d9c7a6!important;
+}
+.hero h1{
+  color:#f3eee6!important;
+}
+.hero .lede{
+  color:#ddd5c8!important;
+}
+.heroPanel{
+  background:#141413!important;
+}
+.actions{
+  margin-top:30px!important;
+}
+.primary{
+  background:#5b2630!important;
+  color:#fff!important;
+  border-color:#5b2630!important;
+}
+.primary:hover,
+.primary:focus-visible{
+  background:#431b23!important;
+}
+
+/* Keep a breathing zone between the arrival field and the large volume field. */
+.signalStrip{
+  background:#ddceb3!important;
+  color:#171714!important;
+  border-bottom:1px solid rgba(23,23,20,.22)!important;
+}
+.signalStrip i{
+  background:#5b2630!important;
+}
+.intro,
+.applications{
+  background:#ddceb3!important;
+}
+.intro{
+  border-bottom:0!important;
+}
+.applications{
+  padding-top:54px!important;
+}
+
+/* Existing use-case cards stay structurally intact but enter the same material family. */
+.card{
+  background:#d9c7a6!important;
+  border:1px solid rgba(91,38,48,.5)!important;
+  box-shadow:none!important;
+}
+.card:hover,
+.card[open]{
+  background:#c7aa76!important;
+  border-color:#5b2630!important;
+  box-shadow:none!important;
+}
+.card h3,
+.card summary p{
+  color:#171714!important;
+}
+
+/* Fifty artifacts a week: gold instead of black, while preserving the layout. */
+.volume{
+  background:#d9c7a6!important;
+  color:#171714!important;
+  border-top:1px solid #171714!important;
+  border-bottom:1px solid #171714!important;
+}
+.bigNumber{
+  color:#5b2630!important;
+}
+.volumeCopy .eyebrow{
+  color:#5b2630!important;
+}
+.volume h2{
+  color:#171714!important;
+}
+.volumeCopy>p{
+  color:#3f382f!important;
+}
+.volumeCopy>a{
+  color:#171714!important;
+  border-bottom-color:#171714!important;
+}
+.volumeCopy>a span{
+  color:#5b2630!important;
+}
+.flow{
+  border-top-color:rgba(23,23,20,.5)!important;
+}
+.flow div{
+  border-color:rgba(23,23,20,.55)!important;
+  background:rgba(255,255,255,.08)!important;
+}
+.flow div b,
+.flow div span{
+  color:#5b2630!important;
+}
+.flow em{
+  color:#5b2630!important;
+}
+
+/* Institutional output: four permanent gold/brown modules with oxblood typography.
+   Hover deepens the gold rather than introducing a new material. */
+.output{
+  padding-top:86px!important;
+  padding-bottom:92px!important;
+  background:#ddceb3!important;
+}
+.output .sectionHeading h2{
+  color:#171714!important;
+}
+.outputGrid article{
+  background:#d9c7a6!important;
+  border:1px solid #5b2630!important;
+  color:#5b2630!important;
+  transition:background .18s ease, transform .18s ease;
+}
+.outputGrid article:hover{
+  background:#c7aa76!important;
+  transform:translateY(-2px);
+}
+.outputGrid article>span,
+.outputGrid h3,
+.outputGrid p{
+  color:#5b2630!important;
+}
+.miniBars i,
+.rangeGraphic i,
+.rangeGraphic i:before,
+.rangeGraphic i:after,
+.dimensionGraphic i:after,
+.dotGraphic i:nth-child(6){
+  background:#5b2630!important;
+}
+.dimensionGraphic i,
+.dotGraphic i{
+  background:rgba(91,38,48,.28)!important;
+}
+
+/* Small breathing interval before the closing institutional inquiry field. */
+.contact{
+  margin-top:34px!important;
+  background:#5b2630!important;
+  color:#fff!important;
+}
+.contact .eyebrow{
+  color:#d9c7a6!important;
+}
+.contact h2{
+  color:#fff!important;
+}
+.contact>div:first-child>p{
+  color:#eadfe0!important;
+}

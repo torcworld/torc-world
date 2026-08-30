@@ -1092,3 +1092,40 @@
     display:none!important;
   }
 }
+
+
+/* Batch 79 — consolidate the right-side corpus mark into one emblem */
+.artifactHeroMark{
+  width:min(360px,36%)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  text-align:center!important;
+  color:#d9c7a6!important;
+}
+.artifactHeroMark span{
+  display:block!important;
+  width:100%!important;
+  font-size:12px!important;
+  line-height:1.2!important;
+  letter-spacing:.18em!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+}
+.artifactHeroMark i{
+  display:block!important;
+  width:100%!important;
+  height:1px!important;
+  background:#5b2630!important;
+}
+.artifactHeroMark b{
+  display:block!important;
+  width:100%!important;
+  color:#f3eee6!important;
+  font-size:13px!important;
+  line-height:1.25!important;
+  letter-spacing:.13em!important;
+  text-align:center!important;
+}
