@@ -85,31 +85,12 @@ export default function Organizations(){
         <span>AGGREGATE INSIGHT</span>
       </section>
 
-      <section className={styles.intro}>
-        <div className={styles.sectionLabel}>THE PROBLEM</div>
-        <div>
-          <h2>When the volume grows, consistency becomes part of the evaluation.</h2>
-          <div className={styles.twoCopy}>
-            <p>
-              Fifty independent opinions do not automatically become intelligence. TORC
-              gives an organization a common analytical structure across the corpus.
-            </p>
-            <p>
-              Operational Order and Cognitive Magnitude remain distinct, allowing works
-              to be compared without reducing different kinds of cognitive achievement
-              to a single prestige ranking.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className={styles.applications}>
         <div className={styles.sectionHeading}>
           <div>
             <div className={styles.eyebrow}>APPLICATIONS</div>
             <h2>Built for more than one artifact at a time.</h2>
           </div>
-          <p>Select a use case to see how it could work in practice.</p>
         </div>
 
         <div className={styles.cards}>

@@ -576,3 +576,83 @@
     transform:none;
   }
 }
+
+
+/* Batch 81 — Organizations application block consolidation */
+
+/* Reduce the bottom breathing field by one third: 151px -> ~101px. */
+.page{
+  padding-bottom:101px!important;
+}
+
+/* The applications section becomes one contained ochre field after a short
+   site-ground interval, with an oxblood cap and four permanently deep-gold cards. */
+.applications{
+  margin-top:34px!important;
+  padding:0 34px 54px!important;
+  background:#ddceb3!important;
+  border-top:1px solid #5b2630!important;
+  box-sizing:border-box!important;
+}
+.applications .sectionHeading{
+  margin:0 0 28px!important;
+  padding:24px 0 20px!important;
+  border-bottom:1px solid rgba(23,23,20,.28)!important;
+}
+.applications .sectionHeading>div{
+  width:100%!important;
+}
+.applications .sectionHeading .eyebrow{
+  color:#5b2630!important;
+}
+.applications .sectionHeading h2{
+  margin-bottom:0!important;
+  color:#171714!important;
+}
+
+/* The four clickable application cards are deep gold at rest. */
+.cards{
+  background:transparent!important;
+}
+.card,
+.card[open]{
+  background:#c7aa76!important;
+  border:1px solid #5b2630!important;
+  box-shadow:none!important;
+}
+.card:hover,
+.card:focus-within{
+  background:#bfa06a!important;
+  border-color:#5b2630!important;
+}
+.card h3,
+.card summary p,
+.cardNo,
+.explore,
+.cardReveal,
+.cardReveal span,
+.cardReveal p{
+  color:#5b2630!important;
+}
+
+/* Preserve a small site-ground separation after the application field. */
+.volume{
+  margin-top:34px!important;
+}
+
+/* Mobile keeps the same hierarchy without oversized gaps. */
+@media(max-width:760px){
+  .page{
+    padding-bottom:48px!important;
+  }
+  .applications{
+    margin-top:22px!important;
+    padding:0 18px 34px!important;
+  }
+  .applications .sectionHeading{
+    padding-top:20px!important;
+  }
+  .volume{
+    margin-top:22px!important;
+  }
+}
