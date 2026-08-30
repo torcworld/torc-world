@@ -139,3 +139,16 @@
     letter-spacing:.07em;
   }
 }
+
+/* Batch 50 — permanent gold navigation family */
+.mainLink,.submitLink{
+  background:#d7c29d!important;
+  border-color:#ad956f!important;
+  color:#171714!important;
+}
+.mainLink:hover,.mainLink:focus-visible,
+.submitLink:hover,.submitLink:focus-visible{
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+  color:#171714!important;
+}
