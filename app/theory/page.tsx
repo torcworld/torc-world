@@ -22,6 +22,16 @@ export default function Theory(){
           <p>Intelligence, Representation, and What Artifacts Actually Do</p>
           <small>G. K. MUIJLAERT</small>
         </article>
+
+        <blockquote className={styles.bookExcerpt}>
+          <span className={styles.openQuote} aria-hidden="true">“</span>
+          <p>Why do some artifacts genuinely reorganize the way reality becomes intelligible, while others create the appearance of having done so? We have many words for extraordinary achievement: profound, original, complex, revolutionary, brilliant, genius.</p>
+          <p>But these words often collapse very different things. A work can be enormously complicated without revealing anything new. Another can be almost embarrassingly simple once understood and nevertheless change the structure through which a problem can be seen. One thinker can display extraordinary intelligence while operating entirely inside an inherited framework.</p>
+          <p>Another can notice that the framework itself is the problem. These are not merely differences of taste. Something different has happened. Eventually I found a simpler question:</p>
+          <strong>What has actually been accomplished?</strong>
+          <span className={styles.closeQuote} aria-hidden="true">…”</span>
+        </blockquote>
+
         <Link className={styles.readBook} href="/theory/book">Read the full book <b>→</b></Link>
       </div>
     </header>

@@ -11,6 +11,11 @@
 .bookTitle{margin:auto 0 42px}
 .bookTitle b{display:block;font:500 clamp(54px,6vw,76px)/.87 Georgia,serif;letter-spacing:-.055em}
 .book p{max-width:390px;margin:0 0 34px;font-size:18px;line-height:1.5;color:#cfc6bd}
+.bookExcerpt{position:relative;max-width:690px;margin:58px auto 0;padding:26px 38px 8px;text-align:left;color:var(--dark);font-family:Georgia,serif}
+.openQuote{display:block;margin-left:-10px;height:54px;font-size:92px;line-height:.8;font-weight:700;color:var(--dark)}
+.bookExcerpt p{margin:0 0 20px;font-size:clamp(21px,2.3vw,28px);line-height:1.48;letter-spacing:-.018em}
+.bookExcerpt strong{display:block;margin-top:28px;font-size:clamp(25px,2.7vw,34px);line-height:1.25;font-weight:700;letter-spacing:-.025em}
+.closeQuote{display:block;margin-top:14px;text-align:right;font-size:54px;line-height:.8;font-weight:700;color:var(--dark)}
 .readBook{display:inline-flex;align-items:center;gap:22px;margin-top:24px;padding:15px 23px;background:var(--accent);color:#fff;font:700 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 .readBook b{font-size:16px}
 .statement{max-width:880px;margin:0 auto;padding:76px 0 92px}
@@ -20,6 +25,12 @@
 @media(max-width:800px){.bookStage{width:100%}.book{width:min(500px,100%);min-height:620px}}
 @media(max-width:700px){
  .hero{padding:48px 0 62px}.intro{margin-bottom:40px}.hero h1{font-size:clamp(44px,14vw,64px)}.lede{font-size:18px}
- .book{min-height:570px;padding:34px 28px 30px}.bookTitle{margin:auto 0 34px}.bookTitle b{font-size:clamp(52px,16vw,70px)}.book p{font-size:16px}.readBook{margin-top:20px;padding:14px 18px}
+ .book{min-height:570px;padding:34px 28px 30px}.bookTitle{margin:auto 0 34px}.bookTitle b{font-size:clamp(52px,16vw,70px)}.book p{font-size:16px}.bookExcerpt{position:relative;max-width:690px;margin:58px auto 0;padding:26px 38px 8px;text-align:left;color:var(--dark);font-family:Georgia,serif}
+.openQuote{display:block;margin-left:-10px;height:54px;font-size:92px;line-height:.8;font-weight:700;color:var(--dark)}
+.bookExcerpt p{margin:0 0 20px;font-size:clamp(21px,2.3vw,28px);line-height:1.48;letter-spacing:-.018em}
+.bookExcerpt strong{display:block;margin-top:28px;font-size:clamp(25px,2.7vw,34px);line-height:1.25;font-weight:700;letter-spacing:-.025em}
+.closeQuote{display:block;margin-top:14px;text-align:right;font-size:54px;line-height:.8;font-weight:700;color:var(--dark)}
+.readBook{margin-top:20px;padding:14px 18px}
+ .bookExcerpt{margin-top:44px;padding:22px 8px 6px}.openQuote{margin-left:0;font-size:76px;height:46px}.bookExcerpt p{font-size:20px}.bookExcerpt strong{font-size:25px}.closeQuote{font-size:46px}
  .statement{padding:58px 0 72px}.statement p{font-size:17px}
 }
