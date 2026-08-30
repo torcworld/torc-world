@@ -889,3 +889,12 @@
 .artifactsPage::after{
   top:-54px!important;
 }
+
+
+/* Batch 73 — final Artifacts top junction + finer oxblood hairline */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-62px!important;
+  width:1px!important;
+  background:rgba(91,38,48,.72)!important;
+}

@@ -652,3 +652,49 @@
     display:none;
   }
 }
+
+
+/* Batch 73 — mobile book join + persistent TOC recovery control */
+@media(max-width:760px){
+  .bookTitlePage{
+    margin-bottom:0!important;
+  }
+  .bookReader{
+    margin-top:0!important;
+    border-top:0!important;
+  }
+
+  /* Keep the navigation control visible at the right edge even after the
+     contents panel itself is dismissed. */
+  .readerNav{
+    position:fixed!important;
+    right:10px!important;
+    left:auto!important;
+    top:112px!important;
+    z-index:90!important;
+    width:auto!important;
+    max-width:calc(100vw - 20px)!important;
+    pointer-events:none;
+  }
+  .readerNavTab{
+    display:block!important;
+    position:relative!important;
+    right:0!important;
+    left:auto!important;
+    opacity:1!important;
+    visibility:visible!important;
+    pointer-events:auto!important;
+    z-index:92!important;
+  }
+  .readerNavPanel{
+    position:absolute!important;
+    right:0!important;
+    left:auto!important;
+    top:calc(100% + 8px)!important;
+    max-width:min(330px,calc(100vw - 20px))!important;
+    max-height:calc(100vh - 180px)!important;
+    overflow:auto!important;
+    pointer-events:auto!important;
+    z-index:91!important;
+  }
+}
