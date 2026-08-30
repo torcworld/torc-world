@@ -51,6 +51,7 @@ export default function Compare(){
   const evaluated=artifacts.filter(eligible);
   const [left,setLeft]=useState('');
   const [right,setRight]=useState('');
+  const [restored,setRestored]=useState(false);
 
   useEffect(()=>{
     const p=new URLSearchParams(window.location.search);
@@ -58,16 +59,18 @@ export default function Compare(){
     const b=p.get('b')||'';
     if(evaluated.some(x=>x.slug===a))setLeft(a);
     if(evaluated.some(x=>x.slug===b))setRight(b);
+    setRestored(true);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 
   useEffect(()=>{
+    if(!restored)return;
     const p=new URLSearchParams();
     if(left)p.set('a',left);
     if(right)p.set('b',right);
     const q=p.toString();
     window.history.replaceState(null,'',q?`/compare?${q}`:'/compare');
-  },[left,right]);
+  },[left,right,restored]);
 
   const A=artifacts.find(a=>a.slug===left);
   const B=artifacts.find(a=>a.slug===right);
