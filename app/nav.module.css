@@ -7,7 +7,7 @@
   display:flex!important;
   flex-direction:column;
   align-items:flex-start;
-  gap:3px;
+  gap:4px;
   min-width:190px;
   padding:3px 0;
   line-height:1!important;
@@ -15,12 +15,13 @@
 .brandLockup b{
   font:900 20px/1 Arial,sans-serif;
   letter-spacing:.18em;
+  color:#171714;
 }
 .brandLockup span{
-  font:700 6.5px/1.1 Arial,sans-serif;
-  letter-spacing:.135em;
+  font:700 7.5px/1.1 Arial,sans-serif;
+  letter-spacing:.12em;
   text-transform:uppercase;
-  color:#777168;
+  color:#5e5952;
   white-space:nowrap;
 }
 .brandLockup::after{display:none!important}
@@ -38,6 +39,46 @@
 .orgLink:hover,.orgLink:focus-visible{background:#431b23;border-color:#34141a;transform:translateY(-1px);box-shadow:0 8px 20px rgba(67,27,35,.18)}
 .submitLink::after,.orgLink::after{display:none!important}
 
+/* Batch 42 — desktop navigation family + stronger TORC lockup */
+@media(min-width:901px){
+  .navLinks{gap:10px}
+  .mainLink,.submitLink{
+    margin-left:0;
+    padding:11px 17px;
+    border:1px solid #b9aa90;
+    background:#d8c9ad;
+    color:#171714!important;
+    font-weight:700!important;
+    letter-spacing:.11em;
+    transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease,box-shadow .16s ease;
+  }
+  .mainLink:hover,.mainLink:focus-visible,
+  .submitLink:hover,.submitLink:focus-visible{
+    background:#cdbb9b;
+    border-color:#a89574;
+    transform:translateY(-1px);
+    box-shadow:0 7px 18px rgba(56,43,26,.10);
+  }
+  .mainLink::after,.submitLink::after{display:none!important}
+  .orgLink{margin-left:0;padding:11px 17px}
+
+  .brandLockup{
+    min-width:245px;
+    padding:0;
+    transform:translateY(4px);
+  }
+  .brandLockup b{
+    font-size:27px;
+    line-height:.9;
+    letter-spacing:.20em;
+  }
+  .brandLockup span{
+    margin-top:3px;
+    font-size:8px;
+    letter-spacing:.13em;
+  }
+}
+
 @media(max-width:900px){
   .brandLockup{min-width:auto}
   .brandLockup span{display:none}
@@ -49,7 +90,3 @@
 @media(max-width:620px){
   .submitLink,.orgLink{margin-left:0}
 }
-
-/* Batch 10: strengthen the brand lockup without deciding the root-page destination yet. */
-.brandLockup b{color:#5b2630}
-.brandLockup span{font-size:7.5px;letter-spacing:.12em;color:#5e5952}

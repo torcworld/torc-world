@@ -15,8 +15,8 @@ export default function RootLayout({children}:{children:React.ReactNode}){
       </Link>
 
       <div className={`navlinks ${styles.navLinks}`}>
-        <Link href="/artifacts">Artifacts</Link>
-        <Link href="/theory">Theory</Link>
+        <Link className={styles.mainLink} href="/artifacts">Artifacts</Link>
+        <Link className={styles.mainLink} href="/theory">Theory</Link>
         <Link className={styles.submitLink} href="/evaluate-your-work">Submit Your Artifact</Link>
         <Link className={styles.orgLink} href="/for-organizations">Organizations</Link>
       </div>
