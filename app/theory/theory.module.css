@@ -47,3 +47,10 @@
    margin-bottom:92px;
  }
 }
+
+/* Batch 43 — desktop Theory heading optical alignment */
+@media(min-width:901px){
+ .content h1{
+   transform:translate(54px,-8px);
+ }
+}

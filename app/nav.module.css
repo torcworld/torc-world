@@ -90,3 +90,8 @@
 @media(max-width:620px){
   .submitLink,.orgLink{margin-left:0}
 }
+
+/* Batch 43 — oxblood TORC wordmark */
+.brandLockup b{
+  color:#5b2630;
+}
