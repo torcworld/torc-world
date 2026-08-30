@@ -54,3 +54,17 @@
    transform:translate(54px,-8px);
  }
 }
+
+/* Batch 45 — the book itself is the primary reading link */
+.book{
+  text-decoration:none;
+  cursor:pointer;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+@media(min-width:901px){
+ .book:hover,.book:focus-visible{
+   transform:translate(60px,-4px);
+   box-shadow:0 32px 66px rgba(34,25,19,.23);
+ }
+ .book:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+}

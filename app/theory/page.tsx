@@ -7,7 +7,7 @@ export default function Theory(){
       <div className={styles.content}>
         <h1>Theory Of Representational Consciousness</h1>
 
-        <article className={styles.book}>
+        <Link className={styles.book} href="/theory/book" aria-label="Read The Age of False Depth">
           <span>THE AGE OF FALSE DEPTH</span>
           <div className={styles.bookTitle}>
             <b>The Age</b>
@@ -16,7 +16,7 @@ export default function Theory(){
           </div>
           <p>Intelligence, Representation, and What Artifacts Actually Do</p>
           <small>G. K. MUIJLAERT</small>
-        </article>
+        </Link>
 
         <blockquote className={styles.bookExcerpt}>
           <span className={styles.openQuote} aria-hidden="true">“</span>

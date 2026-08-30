@@ -7,32 +7,18 @@ export default function SubmitArtifactPage(){
   <header className={styles.hero}>
    <div className={styles.eyebrow}>SUBMIT YOUR ARTIFACT</div>
    <h1>Find out what your work does — and what it can become.</h1>
-   <p>TORC can diagnose the cognitive architecture your artifact already demonstrates, identify where that architecture is not yet fully realized, and show you which revisions can have the greatest structural effect.</p>
-   <a className={styles.primary} href="#pricing">Choose an analysis</a>
   </header>
 
-  <section className={styles.developmentMethod}>
-   <div className={styles.methodLabel}>TORC DEVELOPMENT</div>
-   <h2>Not generic feedback. Structural diagnosis.</h2>
-   <p className={styles.methodLead}>Development begins with the work that is already there. TORC identifies its strongest warranted operation, finds what still prevents that operation from becoming fully necessary, and turns that gap into a small number of high-leverage revision priorities.</p>
-   <div className={styles.methodGrid}>
-    <div><b>01</b><h3>Diagnose</h3><p>Establish what the artifact demonstrably does now — including its governing operation and strongest genuine alternative.</p></div>
-    <div><b>02</b><h3>Find the gap</h3><p>Identify where a simpler explanation still accounts for too much of the work, or where the strongest architecture remains under-realized.</p></div>
-    <div><b>03</b><h3>Intervene</h3><p>Prioritize the smallest structural changes capable of making more of the existing artifact necessary, integrated, and causally active.</p></div>
-    <div><b>04</b><h3>Test again</h3><p>In a Development Cycle, the revised artifact is evaluated again to determine what actually changed — not what was intended to change.</p></div>
-   </div>
-   <p className={styles.methodPrinciple}>The goal is not to add complexity. It is to make the work more fully become what its own architecture already demands.</p>
+  <section className={styles.process} aria-label="TORC development process">
+   <div className={styles.processStep}><b>01</b><span>Diagnose</span></div>
+   <div className={styles.processStep}><b>02</b><span>Find the gap</span></div>
+   <div className={styles.processStep}><b>03</b><span>Intervene</span></div>
+   <div className={styles.processStep}><b>04</b><span>Test again</span></div>
   </section>
 
   <section id="pricing" className={styles.pricing}>
    <div className={styles.sectionHeadLight}><h2>Choose how far you want to go.</h2></div>
    <PricingCards />
-   <p className={styles.scopeNote}>One artifact, three levels of engagement. Scope and turnaround are confirmed before work begins; unusually long or complex artifacts may require a custom quote.</p>
-  </section>
-
-  <section className={styles.example}>
-   <blockquote>“What still explains too much of this work — and what is the smallest change that would make its deeper architecture necessary?”</blockquote>
-   <p>TORC Development does not prescribe generic “depth.” It finds the development gap, identifies the strongest competing explanation, and shows where a precise revision can propagate through material that is already there.</p>
   </section>
 
   <section id="submit" className={styles.submitSection}>
