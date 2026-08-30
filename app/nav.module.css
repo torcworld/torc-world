@@ -233,11 +233,10 @@ a[aria-current="page"].submitLink{
 }
 
 
-/* Batch 63 — hard persistent active-page state.
-   Literal global class is added by TorcNav in addition to aria-current/module state. */
-:global(.torc-active-nav),
-:global(.torc-active-nav):visited,
-:global(.torc-active-nav):not(:hover){
+/* Batch 63 SAFE — real local nav root for persistent current-page styling */
+.navRoot{}
+.navRoot .mainLink[aria-current="page"],
+.navRoot .submitLink[aria-current="page"]{
   background:#c7aa76!important;
   border-color:#8f744e!important;
   color:#171714!important;
