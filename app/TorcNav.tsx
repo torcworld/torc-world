@@ -7,7 +7,7 @@ import styles from './nav.module.css';
 export default function TorcNav(){
   const pathname=usePathname();
   const active=(href:string)=>pathname===href||pathname.startsWith(href+'/');
-  return <nav className={`nav ${styles.navRoot}`}>
+  return <nav className="nav">
     <Link className={`${styles.brandLockup} brand`} href="/" aria-label="TORC home">
       <b>TORC</b>
       <span>Theory Of Representational Consciousness</span>

@@ -155,9 +155,17 @@ footer{
   text-align:center!important;
 }
 
-/* Batch 48 — global warm ochre site ground.
-   Exact color already used by the neutral "Choose a question or leave this open"
-   control family on Submit. Component/card surfaces remain unchanged. */
-html,body{
-  background:#ddceb3;
+
+/* Batch 64 — desktop current-page navigation state.
+   High-specificity global rule, intentionally loaded from site-polish. */
+@media(min-width:901px){
+  nav.nav .navlinks a[aria-current="page"],
+  nav.nav .navlinks a[aria-current="page"]:visited,
+  nav.nav .navlinks a[aria-current="page"]:not(:hover){
+    background:#c7aa76!important;
+    border-color:#8f744e!important;
+    color:#171714!important;
+    opacity:1!important;
+    box-shadow:0 7px 18px rgba(56,43,26,.10)!important;
+  }
 }

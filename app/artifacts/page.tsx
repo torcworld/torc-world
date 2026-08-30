@@ -75,6 +75,7 @@ export default function Artifacts(){
    <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>setDomain(e.target.value)}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
    <label className={styles.controlLabel}><span>Operational Order</span><select value={torc} onChange={e=>setTorc(e.target.value)}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
+ <section className={styles.corpusSurface}>
  <div className="artifactToolbar"><span>{rows.length} artifacts found · page {currentPage} of {totalPages}</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
  <div className={`table artifactTable ${styles.artifactTableFour}`}><div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact <span className={styles.sortArrow}>↕</span></button><span>Medium</span><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order <span className={styles.sortArrow}>↕</span></button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score <span className={styles.sortArrow}>↕</span></button></div>{visibleRows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span></Link>)}</div>
  <nav className={styles.pagination} aria-label="Artifact pages">
@@ -83,5 +84,6 @@ export default function Artifacts(){
    <button disabled={currentPage===totalPages} onClick={()=>goToPage(currentPage+1)}>Next →</button>
  </nav>
  <section className={styles.inlineCompare}><div className={styles.inlineCompareHead}><div className="eyebrow">Compare Artifacts</div><h2>Put two TORC profiles side by side.</h2></div><div className={styles.inlineCompareControls}><InlineArtifactPicker label="Artifact A" value={compareLeft} onChange={setCompareLeft}/><button className={styles.inlineSwap} type="button" onClick={()=>{setCompareLeft(compareRight);setCompareRight(compareLeft)}} aria-label="Swap artifacts">⇄</button><InlineArtifactPicker label="Artifact B" value={compareRight} onChange={setCompareRight}/></div>{compareLeft&&compareRight&&<div className={styles.inlineCompareAction}><Link className="button" href={`/compare?a=${compareLeft}&b=${compareRight}`}>Compare selected artifacts →</Link></div>}</section>
+ </section>
  </main>
 }
