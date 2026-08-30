@@ -147,16 +147,46 @@
 }
 
 
-/* Batch 52 — gold Artifacts instrument panel */
+/* Batch 53 — quieter gold corpus console + inset Compare */
 .artifactToolsStrong{
-  background:#c7aa76;
-  border:2px solid #5b2630;
+  background:#d2bb91;
+  border:1px solid rgba(91,38,48,.55);
 }
-.controlLabel>span{
-  color:#2a2118!important;
-}
-.controlLabel select,
-.controlLabel input{
+.controlLabel select,.controlLabel input{
   background:#f1ede7!important;
-  border-color:#9f8e78!important;
+  border-color:#aa9f93!important;
+}
+.inlineCompare{
+  margin-left:18px;
+  margin-right:18px;
+  background:#d2bb91;
+  border:1px solid rgba(91,38,48,.58);
+}
+.inlineSelected,.inlineSwap,.inlineDropdown,.inlineOptions button{
+  background:#f1ede7;
+}
+.artifactsPage::before,.artifactsPage::after{
+  bottom:-56px;
+}
+@media(max-width:860px){
+ .inlineCompare{margin-left:0;margin-right:0}
+}
+
+
+/* Batch 54 — four-column corpus table; publication status removed */
+.artifactTableFour :global(.row){
+  grid-template-columns:minmax(260px,2.2fr) minmax(150px,1.15fr) minmax(150px,.9fr) minmax(170px,1fr)!important;
+}
+.artifactTableFour :global(.row)>:nth-child(3),
+.artifactTableFour :global(.row)>:nth-child(4){
+  text-align:right;
+}
+.artifactTableFour :global(.score){
+  font-variant-numeric:tabular-nums;
+  letter-spacing:.01em;
+}
+@media(max-width:860px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:minmax(0,1.7fr) minmax(105px,.85fr) minmax(92px,.65fr) minmax(108px,.72fr)!important;
+ }
 }
