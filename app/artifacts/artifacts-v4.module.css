@@ -57,172 +57,91 @@
  .inlineCompare{padding:22px 18px}.inlineCompareControls{grid-template-columns:1fr}.inlineSwap{justify-self:center;margin:0;transform:rotate(90deg)}.inlineCompareAction{text-align:left}
 }
 
-/* Corpus-first Artifacts page: the archive itself is the primary content. */
-.artifactHeader{
-  grid-template-columns:minmax(0,1fr);
-  gap:0;
-  align-items:start;
-  padding:52px 0 40px;
-  margin-bottom:24px;
-}
-.artifactToolsStrong{
-  grid-template-columns:minmax(280px,1.8fr) minmax(150px,.7fr) minmax(170px,.8fr) !important;
-  gap:10px;
-}
-@media(max-width:800px){
-  .artifactHeader{padding:34px 0 30px;margin-bottom:20px}
-  .artifactToolsStrong{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:8px}
-  .searchControl{grid-column:1/-1}
-}
-@media(max-width:520px){
-  .artifactHeader{padding:28px 0 26px;margin-bottom:18px}
-  .artifactToolsStrong{grid-template-columns:minmax(0,1fr) minmax(0,1fr) !important;gap:8px}
-  .searchControl{grid-column:1/-1}
-  .controlLabel select,.controlLabel input{padding:10px 11px!important;font-size:13px!important}
-}
 
-
-/* Batch 12: make Compare a distinct corpus tool without using white surfaces. */
-.inlineCompare{
+/* Batch 51 — Artifacts architectural composition trial */
+.artifactsPage{
   position:relative;
-  margin:42px 0 8px;
-  padding:30px;
-  border:1px solid #343330;
-  background:#343330;
-  color:#f1ece3;
+  isolation:isolate;
 }
-.inlineCompare::before{
+.artifactsPage::before,
+.artifactsPage::after{
   content:"";
   position:absolute;
-  left:-1px;right:-1px;top:-1px;
-  height:4px;
+  z-index:-1;
+  top:22px;
+  bottom:18px;
+  width:54px;
   background:#5b2630;
 }
-.inlineCompareHead :global(.eyebrow){color:#c9a3a9;font-weight:800}
-.inlineCompareHead h2{color:#f1ece3}
-.inlinePicker>label{color:#e3ddd2}
-.inlineSelected{
-  background:#e5dac9;
-  color:#211f1b;
-  border-color:#b8aa96;
-  box-shadow:none;
+.artifactsPage::before{left:-82px}
+.artifactsPage::after{right:-82px}
+
+.artifactHeader{
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:72px;
+  min-height:180px;
+  padding:46px 0 58px;
+  margin-bottom:28px;
+  border-bottom:1px solid rgba(91,38,48,.45);
 }
-.inlineSelected:hover{
-  border-color:#8f6b6f;
-  box-shadow:0 7px 18px rgba(0,0,0,.13);
+.corpusMarker{
+  align-self:center;
+  min-width:220px;
+  padding:18px 0 18px 24px;
+  border-left:2px solid #5b2630;
+  text-align:left;
 }
-.inlineSelected small{color:#655e54}
-.inlineSwap{
-  background:#e5dac9;
+.corpusMarker b,.corpusMarker span{display:block}
+.corpusMarker b{
   color:#5b2630;
-  border-color:#b8aa96;
+  font:700 11px/1.2 Arial,sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
 }
-.inlineSwap:hover{background:#5b2630;color:#f3ede3;border-color:#5b2630}
-.inlineDropdown{
-  background:#e5dac9;
-  border-color:#211f1b;
-  box-shadow:0 14px 30px rgba(0,0,0,.18);
-}
-.inlineDropdown input{
-  background:#eee5d8;
-  border-color:#b8aa96;
-  color:#211f1b;
-}
-.inlineOptions button{background:#e5dac9;color:#211f1b;border-top-color:#c4b7a4}
-.inlineOptions button:hover{background:#d9c9b5}
-.inlineOptions small,.inlineEmpty{color:#655e54}
-.inlineCompareAction :global(.button){
-  border-color:#9f777d;
-  background:#5b2630;
-  color:#f3ede3;
-}
-.inlineCompareAction :global(.button):hover{background:#6c303b}
-@media(max-width:620px){
-  .inlineCompare{padding:24px 18px;margin-top:36px}
+.corpusMarker span{
+  max-width:230px;
+  margin-top:9px;
+  color:var(--ink);
+  font:400 19px/1.25 Georgia,'Times New Roman',serif;
 }
 
+/* The filter area reads as a quiet instrument panel rather than white form fields. */
+.artifactToolsStrong{
+  padding:20px;
+  border:1px solid rgba(91,38,48,.38);
+  background:#e9e4dc;
+}
+.controlLabel select,
+.controlLabel input{
+  background:#f1ede7!important;
+  border:1px solid #b9afa4!important;
+}
+.controlLabel select:focus,
+.controlLabel input:focus{
+  outline:2px solid rgba(91,38,48,.28);
+  outline-offset:1px;
+  border-color:#5b2630!important;
+}
 
-/* Batch 13: warmer site ground + quieter Compare hierarchy. */
+/* Bring the inline Compare controls into the same material family. */
 .inlineCompare{
-  margin-bottom:72px;
-  border-color:#4b4945;
-  background:#4b4945;
-  color:#f2ede5;
+  border-color:rgba(91,38,48,.34);
+  background:#e9e4dc;
 }
-.inlineCompareHead h2{color:#f2ede5}
-.inlineCompareHead :global(.eyebrow){color:#d0aeb3}
-.inlinePicker>label{color:#e8e1d7}
-.inlineSelected,
-.inlineSwap,
-.inlineDropdown,
-.inlineOptions button{
-  background:#e8ddcc;
-}
-.inlineDropdown input{background:#f0e7da}
-.inlineOptions button:hover{background:#dccbb5}
-.inlineCompareAction :global(.button){background:#5b2630;color:#f4eee6}
-@media(max-width:620px){
-  .inlineCompare{margin-bottom:58px}
+.inlineSelected,.inlineSwap,.inlineDropdown,.inlineOptions button{
+  background:#f1ede7;
 }
 
-/* Batch 16: comparison action sits symmetrically below the two selectors. */
-.inlineCompareAction {
-  grid-column: 1 / -1;
-  justify-self: center;
-  margin-top: 6px;
-  text-align: center;
+@media(max-width:1100px){
+ .artifactsPage::before{left:-58px;width:34px}
+ .artifactsPage::after{right:-58px;width:34px}
 }
-.inlineCompareAction :global(.button) {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 154px;
-  padding: 12px 24px;
+@media(max-width:860px){
+ .artifactHeader{grid-template-columns:1fr;gap:26px;min-height:0;padding-bottom:58px}
+ .corpusMarker{min-width:0;max-width:300px;align-self:start}
+ .artifactsPage::before,.artifactsPage::after{display:none}
 }
 @media(max-width:620px){
-  .inlineCompareAction {
-    grid-column: 1;
-    justify-self: center;
-    margin-top: 8px;
-    text-align: center;
-  }
-}
-
-
-/* Batch 18: make the corpus Compare tool unmistakable and easier to enter. */
-.inlineCompareHead{
-  text-align:center;
-  margin:0 auto 24px;
-}
-.inlineCompareHead :global(.eyebrow){
-  color:#8a3645 !important;
-  font:800 27px/1.05 Arial,sans-serif !important;
-  letter-spacing:-.02em !important;
-  text-transform:none !important;
-}
-.inlineCompareHead h2{
-  margin:9px auto 0;
-  max-width:560px;
-  color:#e9e1d7;
-  font-size:16px;
-  line-height:1.35;
-  font-weight:500;
-}
-.inlineSelected,
-.inlineSwap,
-.inlineDropdown,
-.inlineOptions button{
-  background:#e5d8c5 !important;
-}
-.inlineDropdown input{background:#ede3d5 !important;}
-.inlineCompareAction :global(.button){
-  min-width:220px !important;
-  padding:14px 34px !important;
-  font-size:13px !important;
-  font-weight:800 !important;
-}
-@media(max-width:620px){
-  .inlineCompareHead :global(.eyebrow){font-size:24px !important;}
-  .inlineCompareHead h2{font-size:15px;}
-  .inlineCompareAction :global(.button){min-width:205px !important;padding:14px 28px !important;}
+ .artifactToolsStrong{padding:14px}
+ .corpusMarker span{font-size:17px}
 }
