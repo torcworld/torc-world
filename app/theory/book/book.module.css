@@ -757,3 +757,36 @@
     z-index:95!important;
   }
 }
+
+
+/* Batch 76 — mobile contents panel centered in the viewport */
+@media(max-width:760px){
+  .readerNav[data-open="true"] .readerNavPanel{
+    position:fixed!important;
+    top:50%!important;
+    bottom:auto!important;
+    right:14px!important;
+    left:auto!important;
+    transform:translateY(-50%)!important;
+    width:min(310px,calc(100vw - 28px))!important;
+    max-height:72vh!important;
+    margin:0!important;
+    z-index:120!important;
+  }
+}
+
+
+/* Batch 76 — detached right oxblood bar trial */
+@media(min-width:981px){
+  .bookPage{
+    /* book ends first, then a strip of site ground, then the oxblood bar */
+    padding-right:190px!important;
+  }
+
+  .bookPage::after{
+    right:0!important;
+    width:132px!important;
+    top:38px!important;
+    bottom:92px!important;
+  }
+}

@@ -57,6 +57,8 @@ export default function Artifacts(){
      if(sort==='torc-asc') return rank(b.torc)-rank(a.torc)||(a.cms??99999)-(b.cms??99999);
      if(sort==='title-asc') return a.title.localeCompare(b.title);
      if(sort==='title-desc') return b.title.localeCompare(a.title);
+     if(sort==='medium-asc') return a.domain.localeCompare(b.domain)||a.title.localeCompare(b.title);
+     if(sort==='medium-desc') return b.domain.localeCompare(a.domain)||a.title.localeCompare(b.title);
      if(sort==='creator-asc') return a.creator.localeCompare(b.creator)||a.title.localeCompare(b.title);
      if(sort==='date-new') return Number(b.year)-Number(a.year);
      if(sort==='date-old') return Number(a.year)-Number(b.year);
@@ -77,7 +79,7 @@ export default function Artifacts(){
  </section>
  <section className={styles.corpusSurface}>
  <div className="artifactToolbar"><span>{rows.length} artifacts found · page {currentPage} of {totalPages}</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
- <div className={`table artifactTable ${styles.artifactTableFour}`}><div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact <span className={styles.sortArrow}>↕</span></button><span>Medium</span><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order <span className={styles.sortArrow}>↕</span></button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score <span className={styles.sortArrow}>↕</span></button></div>{visibleRows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span></Link>)}</div>
+ <div className={`table artifactTable ${styles.artifactTableFour}`}><div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact <span className={styles.sortArrow}>↕</span></button><button onClick={()=>setSort(sort==='medium-asc'?'medium-desc':'medium-asc')}>Medium <span className={styles.sortArrow}>↕</span></button><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order <span className={styles.sortArrow}>↕</span></button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score <span className={styles.sortArrow}>↕</span></button></div>{visibleRows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span></Link>)}</div>
  <nav className={styles.pagination} aria-label="Artifact pages">
    <button disabled={currentPage===1} onClick={()=>goToPage(currentPage-1)}>← Previous</button>
    <div className={styles.pageNumbers}>{Array.from({length:totalPages},(_,i)=>i+1).map(n=><button key={n} className={n===currentPage?styles.activePage:''} aria-current={n===currentPage?'page':undefined} onClick={()=>goToPage(n)}>{n}</button>)}</div>
