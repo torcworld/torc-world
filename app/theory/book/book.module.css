@@ -301,3 +301,175 @@
     padding-right:24px!important;
   }
 }
+
+
+/* Batch 68 — Theory Book as an Analysis-family object */
+.bookPage{
+  --book-paper:#d9c7a6;
+  --book-paper-deep:#d2bb91;
+  --book-ink:#171714;
+  --book-muted:#5e5548;
+  --book-rule:rgba(91,38,48,.56);
+  position:relative;
+  max-width:1280px;
+  margin:0 auto;
+  padding:38px 300px 92px 28px;
+  border-left:1px solid #5b2630;
+  border-right:1px solid #5b2630;
+  box-sizing:border-box;
+}
+
+/* Analysis-like floating oxblood field at right. */
+.bookPage::after{
+  content:"";
+  position:absolute;
+  top:38px;
+  right:-38px;
+  bottom:92px;
+  width:238px;
+  background:#5b2630;
+  pointer-events:none;
+  z-index:0;
+}
+.bookPage > *{
+  position:relative;
+  z-index:1;
+}
+
+/* Large charcoal title field, same family as artifact analysis headers. */
+.bookTitlePage{
+  max-width:none!important;
+  margin:0!important;
+  padding:52px 46px 50px!important;
+  background:#353432!important;
+  border-top:4px solid #5b2630!important;
+  border-bottom:1px solid #5b2630!important;
+  color:#f3eee6!important;
+}
+.bookPage :global(.page-title h1){
+  color:#f3eee6!important;
+  font-size:clamp(48px,5.8vw,78px)!important;
+  line-height:.98!important;
+  letter-spacing:-.045em!important;
+}
+.bookTitlePage :global(.lede){
+  color:#d8cfc1!important;
+  font-size:20px!important;
+  line-height:1.45!important;
+}
+.theoryName{
+  color:#d9c7a6!important;
+  font-size:14px!important;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.authorLine,
+.authorLine b{
+  color:#f3eee6!important;
+}
+.byLabel{
+  color:#cbbda9!important;
+}
+
+/* The book itself: warm gold paper, black type, oxblood book architecture. */
+.bookReader{
+  max-width:none!important;
+  margin:28px 0 0!important;
+  padding:64px clamp(36px,5vw,72px) 96px!important;
+  background:
+    linear-gradient(90deg,rgba(91,38,48,.035),transparent 8%,transparent 92%,rgba(91,38,48,.035)),
+    #d9c7a6!important;
+  border:1px solid #5b2630!important;
+  box-shadow:0 18px 45px rgba(41,34,24,.10)!important;
+  color:#171714!important;
+}
+.bookReader::before,
+.bookReader::after{
+  background:linear-gradient(to bottom,transparent,#5b2630 8%,#5b2630 92%,transparent)!important;
+}
+.editionNote{
+  background:rgba(229,216,193,.34)!important;
+  border-top:1px solid rgba(91,38,48,.55)!important;
+  border-bottom:1px solid rgba(91,38,48,.55)!important;
+  color:#5e5548!important;
+}
+.bookReader :global(.book-part){
+  border-top-color:#5b2630!important;
+  border-bottom-color:rgba(91,38,48,.55)!important;
+  color:#5b2630!important;
+}
+.bookReader :global(.book-chapter)::after{
+  background:#5b2630!important;
+}
+.bookReader :global(.book-front-heading){
+  border-bottom-color:rgba(91,38,48,.55)!important;
+}
+.bookReader :global(.book-emphasis){
+  border-left-color:#5b2630!important;
+  border-right-color:rgba(91,38,48,.2)!important;
+  background:rgba(91,38,48,.045)!important;
+}
+.bookReader :global(.book-kicker){
+  color:#5b2630!important;
+}
+
+/* Table of contents becomes a deliberate TORC instrument: gold + oxblood. */
+.readerNavTab{
+  border:1px solid #5b2630!important;
+  border-right:0!important;
+  background:#d9c7a6!important;
+  color:#5b2630!important;
+  box-shadow:0 8px 22px rgba(41,34,24,.10)!important;
+}
+.readerNavPanel{
+  background:#d9c7a6!important;
+  border-color:#5b2630!important;
+  color:#171714!important;
+}
+.readerNavTitle{
+  color:#5b2630!important;
+}
+.readerNavPart{
+  color:#5b2630!important;
+}
+.readerNavPanel a{
+  color:#171714!important;
+}
+.readerNavPanel a:hover,
+.readerNavPanel a:focus{
+  border-bottom-color:#5b2630!important;
+  color:#5b2630!important;
+}
+
+@media(max-width:980px){
+  .bookPage{
+    padding-right:220px;
+  }
+  .bookPage::after{
+    width:180px;
+    right:0;
+  }
+}
+@media(max-width:760px){
+  .bookPage{
+    padding:16px 0 48px;
+    border-left:0;
+    border-right:0;
+  }
+  .bookPage::after{
+    display:none;
+  }
+  .bookTitlePage{
+    padding:40px 24px!important;
+  }
+  .bookPage :global(.page-title h1){
+    font-size:46px!important;
+  }
+  .bookReader{
+    margin:20px 0 0!important;
+    padding:44px 28px 70px!important;
+  }
+  .readerNavTab{
+    border-right:1px solid #5b2630!important;
+  }
+}

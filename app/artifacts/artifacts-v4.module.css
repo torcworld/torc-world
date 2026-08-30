@@ -850,3 +850,10 @@
   margin-top:52px!important;
   border-top:4px solid #5b2630!important;
 }
+
+
+/* Batch 68 — final 1 cm bridge to the existing global translucent nav rule */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-38px!important;
+}
