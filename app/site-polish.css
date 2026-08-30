@@ -154,3 +154,10 @@ footer{
   justify-self:center!important;
   text-align:center!important;
 }
+
+/* Batch 48 — global warm ochre site ground.
+   Exact color already used by the neutral "Choose a question or leave this open"
+   control family on Submit. Component/card surfaces remain unchanged. */
+html,body{
+  background:#ddceb3;
+}
