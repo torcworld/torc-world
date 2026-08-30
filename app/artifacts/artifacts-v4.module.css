@@ -584,9 +584,7 @@
 }
 
 
-/* Batch 63 — bring Artifacts into the Submit composition family */
-
-/* Charcoal arrival panel, echoing Submit Your Artifact. */
+/* Batch 63 FIXED — Submit-family Artifacts trial, CSS-only and conservative */
 .artifactHeader{
   position:relative;
   display:block!important;
@@ -598,16 +596,6 @@
   border-bottom:0!important;
   color:#f3eee6!important;
 }
-.artifactHeader::after{
-  content:"";
-  position:absolute;
-  right:58px;
-  top:50%;
-  width:104px;
-  height:1px;
-  background:#5b2630;
-  opacity:.95;
-}
 .artifactHeading h1{
   margin:0!important;
   color:#f3eee6!important;
@@ -616,15 +604,13 @@
   letter-spacing:-.04em!important;
 }
 .artifactHeading :global(.eyebrow){
-  display:block;
   margin-top:18px;
   color:#cbbda9!important;
-  font:italic 400 18px/1.25 Georgia,'Times New Roman',serif!important;
-  letter-spacing:.01em!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:18px!important;
+  font-style:italic;
   text-transform:none!important;
 }
-
-/* Search/filter instrument becomes the Artifacts equivalent of the Submit process strip. */
 .artifactToolsStrong{
   margin:24px 0 0!important;
   transform:none!important;
@@ -632,36 +618,9 @@
   background:#d9c7a6!important;
   border:2px solid #5b2630!important;
   box-shadow:none!important;
-  outline:0!important;
 }
-.controlLabel>span{
-  color:#5b2630!important;
-  font-weight:800!important;
-  letter-spacing:.04em!important;
-}
-.controlLabel select,
-.controlLabel input{
-  background:#f1ede7!important;
-  border-color:#aa9f93!important;
-}
-.controlLabel select:focus,
-.controlLabel input:focus{
-  outline:2px solid rgba(91,38,48,.24)!important;
-  outline-offset:1px;
-  border-color:#5b2630!important;
-}
-
 @media(max-width:760px){
-  .artifactHeader{
-    margin-left:0!important;
-    margin-right:0!important;
-    padding:36px 24px 38px!important;
-  }
-  .artifactHeader::after{display:none}
+  .artifactHeader{padding:36px 24px 38px!important}
   .artifactHeading h1{font-size:46px!important}
-  .artifactHeading :global(.eyebrow){font-size:16px!important}
-  .artifactToolsStrong{
-    margin-top:18px!important;
-    padding:18px!important;
-  }
+  .artifactToolsStrong{padding:18px!important}
 }
