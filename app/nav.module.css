@@ -95,3 +95,47 @@
 .brandLockup b{
   color:#5b2630;
 }
+
+/* Batch 44 — mobile full-width navigation blocks */
+@media(max-width:900px){
+  .brandLockup{display:none!important}
+  .navLinks{
+    width:100%;
+    display:grid!important;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  .mainLink,.submitLink,.orgLink{
+    box-sizing:border-box;
+    width:100%;
+    min-height:44px;
+    margin:0!important;
+    padding:11px 10px!important;
+    display:flex!important;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    font-weight:700!important;
+    letter-spacing:.09em;
+  }
+  .mainLink,.submitLink{
+    border:1px solid #b9aa90;
+    background:#d8c9ad;
+    color:#171714!important;
+  }
+  .orgLink{
+    border:1px solid #4a1e27;
+    background:#5b2630;
+    color:#fff!important;
+  }
+  .mainLink::after,.submitLink::after,.orgLink::after{display:none!important}
+}
+@media(max-width:430px){
+  .navLinks{gap:6px}
+  .mainLink,.submitLink,.orgLink{
+    min-height:42px;
+    padding:10px 7px!important;
+    font-size:8px!important;
+    letter-spacing:.07em;
+  }
+}

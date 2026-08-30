@@ -25,7 +25,7 @@
 
 /* Batch 39 — desktop optical alignment only */
 @media(min-width:901px){
- .book{transform:translateX(72px)}
+ .book{transform:translateX(60px)}
  .bookExcerpt{transform:translateX(-36px)}
  .readBook{transform:translateX(-36px)}
 }
