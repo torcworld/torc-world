@@ -857,3 +857,10 @@
 .artifactsPage::after{
   top:-38px!important;
 }
+
+
+/* Batch 69 — close the last visible gap to the global translucent rule */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-58px!important;
+}

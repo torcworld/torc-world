@@ -473,3 +473,41 @@
     border-right:1px solid #5b2630!important;
   }
 }
+
+
+/* Batch 69 — join the book directly to its charcoal title block */
+.bookReader{
+  margin-top:0!important;
+  border-top:0!important;
+}
+
+/* Keep the Table of Contents docked to the RIGHT of the reading object.
+   Override older/floating left-side rules with a stable right-side dock. */
+.readerNav{
+  left:auto!important;
+  right:-238px!important;
+  top:34px!important;
+}
+.readerNavTab{
+  left:auto!important;
+  right:0!important;
+  border-left:1px solid #5b2630!important;
+  border-right:1px solid #5b2630!important;
+}
+.readerNavPanel{
+  left:auto!important;
+  right:0!important;
+  transform-origin:top right!important;
+}
+
+@media(max-width:980px){
+  .readerNav{
+    right:-178px!important;
+  }
+}
+@media(max-width:760px){
+  .readerNav{
+    right:12px!important;
+    left:auto!important;
+  }
+}
