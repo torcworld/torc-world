@@ -65,10 +65,63 @@
   }
 }
 
-
-/* Batch 61 — move the Theory-like analysis field farther right */
+/* Preserve the accepted Batch 61 analysis-field position. */
 @media(min-width:981px){
-  .frame::after{
-    right:-38px!important;
+  .frame::after{right:-38px!important}
+}
+
+
+/* Batch 65 — artifact analysis framed in the Submit material language */
+
+/* The whole analytical column becomes one restrained oxblood-framed object. */
+.frame > :global(main){
+  border-left:1px solid #5b2630;
+  border-right:1px solid #5b2630;
+  padding-left:28px!important;
+  padding-right:28px!important;
+}
+
+/* The title / creator / Order / CMS arrival block becomes charcoal-grey,
+   with the same thin oxblood structural edge used elsewhere in TORC. */
+.frame > :global(main) > header{
+  margin-left:-28px!important;
+  margin-right:-28px!important;
+  padding-left:28px!important;
+  padding-right:28px!important;
+  background:#353432!important;
+  color:#f3eee6!important;
+  border-top:4px solid #5b2630!important;
+  border-bottom:1px solid rgba(91,38,48,.8)!important;
+}
+.frame > :global(main) > header h1,
+.frame > :global(main) > header strong{
+  color:#f3eee6!important;
+}
+.frame > :global(main) > header p,
+.frame > :global(main) > header small,
+.frame > :global(main) > header span{
+  color:#cbbda9!important;
+}
+
+/* Give the framed analysis a small top offset, echoing Submit's space below nav. */
+.frame{
+  padding-top:26px;
+}
+
+@media(max-width:760px){
+  .frame{
+    padding-top:10px;
+  }
+  .frame > :global(main){
+    border-left:0;
+    border-right:0;
+    padding-left:0!important;
+    padding-right:0!important;
+  }
+  .frame > :global(main) > header{
+    margin-left:0!important;
+    margin-right:0!important;
+    padding-left:20px!important;
+    padding-right:20px!important;
   }
 }
