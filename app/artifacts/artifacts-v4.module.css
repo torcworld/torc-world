@@ -489,3 +489,56 @@
  .artifactTableFour :global(.header)>:nth-child(2),
  .artifactTableFour :global(.row:not(.header))>:nth-child(2){transform:none}
 }
+
+
+/* Batch 60 — full-height oxblood outer sides + column registration */
+.artifactsPage::before,
+.artifactsPage::after{
+  /* Black structural rails remain on top; the large shadows fill the entire
+     outside edge in oxblood for the full height of the corpus page. */
+  box-shadow:none!important;
+}
+.artifactsPage::before{
+  box-shadow:-55vw 0 0 55vw #5b2630!important;
+}
+.artifactsPage::after{
+  box-shadow:55vw 0 0 55vw #5b2630!important;
+}
+
+/* Remove the temporary header-only outer-field construction from Batch 59. */
+.artifactHeader::before,
+.artifactHeader::after{
+  display:none!important;
+}
+
+/* Move the clickable Artifact heading substantially right. */
+.artifactTableFour :global(.header)>:nth-child(1){
+  transform:translateX(72px);
+}
+
+/* Give Medium more separation from long artifact titles. */
+.artifactTableFour :global(.header)>:nth-child(2){
+  transform:translateX(36px)!important;
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(2){
+  transform:translateX(25px)!important;
+}
+
+@media(max-width:1050px){
+  .artifactTableFour :global(.header)>:nth-child(1){
+    transform:translateX(44px);
+  }
+  .artifactTableFour :global(.header)>:nth-child(2){
+    transform:translateX(24px)!important;
+  }
+  .artifactTableFour :global(.row:not(.header))>:nth-child(2){
+    transform:translateX(16px)!important;
+  }
+}
+@media(max-width:860px){
+  .artifactTableFour :global(.header)>:nth-child(1),
+  .artifactTableFour :global(.header)>:nth-child(2),
+  .artifactTableFour :global(.row:not(.header))>:nth-child(2){
+    transform:none!important;
+  }
+}

@@ -1,0 +1,66 @@
+
+.frame{
+  position:relative;
+  max-width:1280px;
+  margin:0 auto;
+  min-height:calc(100vh - 80px);
+}
+
+/* Theory-like asymmetric composition:
+   analysis content is carried left; a floating oxblood field occupies the right. */
+.frame::after{
+  content:"";
+  position:absolute;
+  top:38px;
+  right:2px;
+  bottom:92px;
+  width:238px;
+  background:#5b2630;
+  pointer-events:none;
+  z-index:0;
+}
+
+.frame > :global(main){
+  position:relative;
+  z-index:1;
+  width:calc(100% - 300px)!important;
+  max-width:900px!important;
+  margin-left:0!important;
+  margin-right:auto!important;
+  box-sizing:border-box;
+}
+
+/* Keep the left composition aligned with the site's usable page area. */
+@media(min-width:1281px){
+  .frame > :global(main){
+    transform:translateX(-18px);
+  }
+}
+
+@media(max-width:980px){
+  .frame{
+    max-width:none;
+  }
+  .frame::after{
+    width:180px;
+    right:0;
+  }
+  .frame > :global(main){
+    width:calc(100% - 220px)!important;
+    max-width:none!important;
+    transform:none;
+  }
+}
+
+/* Match Theory mobile behavior: the colored architectural field disappears. */
+@media(max-width:760px){
+  .frame::after{
+    display:none;
+  }
+  .frame > :global(main){
+    width:100%!important;
+    max-width:none!important;
+    margin:0 auto!important;
+    transform:none!important;
+  }
+}

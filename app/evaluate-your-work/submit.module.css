@@ -399,17 +399,28 @@
 }
 
 
-/* Batch 52 — stronger gold process + selected package */
+/* Batch 53 — quieter gold process and selected package */
 @media(min-width:901px){
- .process,
- .processStep{
-   background:#c7aa76;
- }
- .processStep:not(:last-child)::after{
-   background:#c7aa76;
- }
+ .process,.processStep{background:#d2bb91;}
+ .processStep:not(:last-child)::after{background:#d2bb91;}
  .priceCard.selectedPriceCard{
-   background:#c7aa76;
+   background:#d2bb91;
    border-color:#5b2630;
  }
+}
+
+
+/* Batch 60 — Submit surfaces match the lighter resting navigation gold */
+@media(min-width:901px){
+  .process,
+  .processStep{
+    background:#d9c7a6!important;
+  }
+  .processStep:not(:last-child)::after{
+    background:#d9c7a6!important;
+  }
+  .priceCard.selectedPriceCard{
+    background:#d9c7a6!important;
+    border-color:#5b2630!important;
+  }
 }
