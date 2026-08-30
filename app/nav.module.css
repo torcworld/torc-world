@@ -152,3 +152,15 @@
   border-color:#8f744e!important;
   color:#171714!important;
 }
+
+
+/* Batch 52 — stronger permanent gold navigation */
+.mainLink,.submitLink{
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+}
+.mainLink:hover,.mainLink:focus-visible,
+.submitLink:hover,.submitLink:focus-visible{
+  background:#b99860!important;
+  border-color:#745b38!important;
+}

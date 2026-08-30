@@ -145,3 +145,18 @@
  .artifactToolsStrong{padding:14px}
  .corpusMarker span{font-size:17px}
 }
+
+
+/* Batch 52 — gold Artifacts instrument panel */
+.artifactToolsStrong{
+  background:#c7aa76;
+  border:2px solid #5b2630;
+}
+.controlLabel>span{
+  color:#2a2118!important;
+}
+.controlLabel select,
+.controlLabel input{
+  background:#f1ede7!important;
+  border-color:#9f8e78!important;
+}

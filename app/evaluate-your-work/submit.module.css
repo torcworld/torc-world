@@ -398,24 +398,18 @@
  .processStep::after{display:none!important}
 }
 
-/* Batch 47 — desktop ochre ground + gold process field trial.
-   The ground is taken directly from the existing neutral focus/question
-   control family, while the process becomes the stronger gold instrument. */
+
+/* Batch 52 — stronger gold process + selected package */
 @media(min-width:901px){
-  .page{
-    --ground:#ddceb3;
-    background:#ddceb3;
-  }
-  .process{
-    background:#d7c29d;
-    border-color:var(--accent);
-  }
-  .processStep{
-    background:#d7c29d;
-    border-right-color:rgba(91,38,48,.48);
-  }
-  .processStep:not(:last-child)::after{
-    background:#d7c29d;
-    color:var(--accent);
-  }
+ .process,
+ .processStep{
+   background:#c7aa76;
+ }
+ .processStep:not(:last-child)::after{
+   background:#c7aa76;
+ }
+ .priceCard.selectedPriceCard{
+   background:#c7aa76;
+   border-color:#5b2630;
+ }
 }
