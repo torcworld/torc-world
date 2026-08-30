@@ -898,3 +898,33 @@
   width:1px!important;
   background:rgba(91,38,48,.72)!important;
 }
+
+
+/* Batch 74 — table-header enclosure + oxblood filter values */
+.artifactTableFour :global(.header){
+  border-top:1px solid #171714!important;
+  border-bottom:1px solid #171714!important;
+  padding-top:13px!important;
+  padding-bottom:13px!important;
+}
+
+/* Selected values inside Sort / Medium / Operational Order become oxblood. */
+.controlLabel select{
+  color:#5b2630!important;
+  font-weight:700!important;
+}
+.controlLabel select option{
+  color:#5b2630!important;
+  background:#d9c7a6!important;
+}
+
+/* The small action button beneath the controls follows the same oxblood language. */
+.corpusSurface :global(.artifactToolbar) button{
+  color:#5b2630!important;
+  border-color:#5b2630!important;
+}
+.corpusSurface :global(.artifactToolbar) button:hover,
+.corpusSurface :global(.artifactToolbar) button:focus-visible{
+  color:#5b2630!important;
+  border-color:#5b2630!important;
+}
