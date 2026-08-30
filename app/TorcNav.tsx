@@ -10,6 +10,7 @@ export default function TorcNav(){
   return <nav className="nav">
     <Link className={`${styles.brandLockup} brand`} href="/" aria-label="TORC home">
       <b>TORC</b>
+      <span>Theory Of Representational Consciousness</span>
     </Link>
     <div className={`navlinks ${styles.navLinks}`}>
       <Link className={`${styles.mainLink} ${active('/artifacts')?styles.activeLink:''}`} aria-current={active('/artifacts')?'page':undefined} href="/artifacts">Artifacts</Link>

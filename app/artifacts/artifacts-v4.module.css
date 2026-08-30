@@ -562,3 +562,23 @@
   box-shadow:none!important;
   outline:0!important;
 }
+
+
+/* Batch 62 — return to ochre outside / black structural rails */
+.artifactsPage::before,
+.artifactsPage::after{
+  background:#171714!important;
+  box-shadow:none!important;
+}
+
+/* Restore the search/filter framing, but lift the complete console upward. */
+.artifactToolsStrong{
+  border:1px solid #171714!important;
+  box-shadow:none!important;
+  outline:0!important;
+}
+@media(min-width:861px){
+  .artifactToolsStrong{
+    transform:translateY(-12px);
+  }
+}

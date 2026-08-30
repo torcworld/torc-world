@@ -208,3 +208,26 @@ a[aria-current="page"].submitLink{
 @media(max-width:900px){
   .brandLockup{display:none!important}
 }
+
+
+/* Batch 62 — restore original TORC lockup */
+.brandLockup{
+  min-width:initial!important;
+}
+.brandLockup b{
+  font-size:inherit!important;
+  line-height:inherit!important;
+  letter-spacing:inherit!important;
+}
+.brandLockup span{
+  display:block!important;
+}
+
+/* Persistent selected-page state: match the hover gold, regardless of link class ordering. */
+.nav a[aria-current="page"],
+.nav a[aria-current="page"]:visited,
+.nav a[aria-current="page"]:not(:hover){
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+  color:#171714!important;
+}
