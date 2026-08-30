@@ -833,3 +833,20 @@
     margin-right:0!important;
   }
 }
+
+
+/* Batch 67 — use the EXISTING global navigation rule as the top of the frame */
+.artifactsPage{
+  border-top:0!important;
+  margin-top:0!important;
+  padding-top:0!important;
+}
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-18px!important;
+}
+/* Restore the Submit-like oxblood cap on the charcoal hero. */
+.artifactHeader{
+  margin-top:52px!important;
+  border-top:4px solid #5b2630!important;
+}

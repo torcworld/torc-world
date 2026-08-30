@@ -252,3 +252,52 @@
     border-width: 1px;
   }
 }
+
+
+/* Batch 67 — Theory book material trial */
+.wrap{
+  position:relative;
+  margin-top:18px;
+  padding-left:28px;
+  padding-right:28px;
+  border-left:1px solid #5b2630;
+  border-right:1px solid #5b2630;
+}
+.bookHeader{
+  margin-left:-28px;
+  margin-right:-28px;
+  padding-left:48px!important;
+  padding-right:48px!important;
+  background:#353432!important;
+  border-top:4px solid #5b2630!important;
+  border-bottom:1px solid rgba(91,38,48,.72)!important;
+  color:#f3eee6!important;
+}
+.bookHeader h1,
+.bookHeader h2{
+  color:#f3eee6!important;
+}
+.bookHeader p,
+.bookHeader span{
+  color:#cbbda9!important;
+}
+.readerShell,
+.pageSurface{
+  background:#d9c7a6!important;
+  border-color:#5b2630!important;
+}
+@media(max-width:760px){
+  .wrap{
+    margin-top:10px;
+    padding-left:0;
+    padding-right:0;
+    border-left:0;
+    border-right:0;
+  }
+  .bookHeader{
+    margin-left:0;
+    margin-right:0;
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+}
