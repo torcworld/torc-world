@@ -354,3 +354,49 @@
  .inlineCompare{padding:28px 20px}
  .inlineCompareHead :global(.eyebrow){font-size:26px}
 }
+
+
+/* Batch 57 — cleaner Artifacts entrance + full-height architectural side fields */
+.artifactHeader{
+  grid-template-columns:1fr;
+  min-height:0;
+  padding:46px 0 54px;
+  margin-bottom:28px;
+}
+.corpusMarker,
+.exploreIntro{
+  display:none!important;
+}
+
+/* Extend the oxblood architecture upward and make it feel structural rather than decorative. */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-118px;
+  bottom:-76px;
+  width:38px;
+}
+.artifactsPage::before{left:-66px}
+.artifactsPage::after{right:-66px}
+
+/* Nudge TORC result headings and values left for cleaner vertical registration. */
+.artifactTableFour :global(.row)>:nth-child(3){
+  transform:translateX(-8px);
+}
+.artifactTableFour :global(.row)>:nth-child(4){
+  transform:translateX(-12px);
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(3),
+.artifactTableFour :global(.row:not(.header))>:nth-child(4){
+  text-align:center!important;
+}
+@media(max-width:1100px){
+ .artifactsPage::before,.artifactsPage::after{width:28px}
+ .artifactsPage::before{left:-46px}
+ .artifactsPage::after{right:-46px}
+}
+@media(max-width:860px){
+ .artifactHeader{padding-bottom:46px}
+ .artifactsPage::before,.artifactsPage::after{display:none}
+ .artifactTableFour :global(.row)>:nth-child(3),
+ .artifactTableFour :global(.row)>:nth-child(4){transform:none}
+}

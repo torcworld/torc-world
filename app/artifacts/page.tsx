@@ -68,8 +68,7 @@ export default function Artifacts(){
  const visibleRows=rows.slice((currentPage-1)*pageSize,currentPage*pageSize);
  useEffect(()=>setPageNumber(1),[domain,torc,query,sort,seed]);
  const goToPage=(n:number)=>{setPageNumber(Math.max(1,Math.min(totalPages,n)));window.scrollTo({top:0,behavior:'smooth'});};
- return <main className={styles.artifactsPage}><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Curated TORC analyses</div></div><div className={styles.corpusMarker}><b>{artifacts.length} artifacts</b><span>Ranked by demonstrated cognition.</span></div></header>
- <div className={styles.exploreIntro}>Explore published TORC analyses.</div>
+ return <main className={styles.artifactsPage}><header className={styles.artifactHeader}><div className={styles.artifactHeading}><h1>Artifacts</h1><div className="eyebrow">Curated TORC analyses</div></div></header>
  <section className={`artifactTools ${styles.artifactToolsStrong}`}>
    <label className={`artifactSearch ${styles.controlLabel}`}><span>Search</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search artifact, creator, medium, Operational Order…"/></label>
    <label className={styles.controlLabel}><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value)}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude Score — highest first</option><option value="cms-asc">Cognitive Magnitude Score — lowest first</option><option value="torc-desc">Operational Order — high to low</option><option value="torc-asc">Operational Order — low to high</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
