@@ -190,3 +190,48 @@
    grid-template-columns:minmax(0,1.7fr) minmax(105px,.85fr) minmax(92px,.65fr) minmax(108px,.72fr)!important;
  }
 }
+
+
+/* Batch 55 — rebalance four-column corpus table */
+.artifactTableFour :global(.row){
+  grid-template-columns:minmax(250px,1.75fr) minmax(175px,1.05fr) minmax(190px,1.05fr) minmax(235px,1.2fr)!important;
+  column-gap:28px;
+}
+.artifactTableFour :global(.row)>:nth-child(3),
+.artifactTableFour :global(.row)>:nth-child(4){
+  text-align:left!important;
+}
+.tableHeader button,
+.tableHeader span{
+  font-size:14px!important;
+  line-height:1.2;
+}
+.tableHeader button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:8px;
+  width:max-content;
+  max-width:100%;
+}
+.sortArrow{
+  display:inline-block;
+  font-size:20px!important;
+  line-height:.8!important;
+  font-weight:500!important;
+  color:#5b2630!important;
+  transform:translateY(-1px);
+}
+.artifactTableFour :global(.score){
+  text-align:left!important;
+  font-size:16px;
+  font-weight:700;
+}
+@media(max-width:860px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:minmax(0,1.55fr) minmax(110px,.9fr) minmax(115px,.82fr) minmax(135px,.92fr)!important;
+   column-gap:16px;
+ }
+ .tableHeader button,.tableHeader span{font-size:12px!important}
+ .sortArrow{font-size:17px!important}
+}

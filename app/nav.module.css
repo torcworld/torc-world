@@ -154,13 +154,31 @@
 }
 
 
-/* Batch 52 — stronger permanent gold navigation */
+/* Batch 53 — quieter gold family with persistent active location */
 .mainLink,.submitLink{
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
+  background:#d2bb91!important;
+  border-color:#a78e68!important;
+  color:#171714!important;
 }
 .mainLink:hover,.mainLink:focus-visible,
-.submitLink:hover,.submitLink:focus-visible{
-  background:#b99860!important;
-  border-color:#745b38!important;
+.submitLink:hover,.submitLink:focus-visible,
+.activeLink{
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+  color:#171714!important;
+}
+
+
+/* Batch 55 — lighter resting navigation, stronger active page */
+.mainLink,.submitLink{
+  background:#d9c7a6!important;
+  border-color:#b5a07d!important;
+  color:#171714!important;
+}
+.mainLink:hover,.mainLink:focus-visible,
+.submitLink:hover,.submitLink:focus-visible,
+.activeLink{
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+  color:#171714!important;
 }
