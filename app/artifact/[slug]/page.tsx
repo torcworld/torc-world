@@ -115,9 +115,37 @@ function OdysseyFallback(){return <ArtifactAnalysis
  ]}
 />}
 
+const orderNames:Record<string,string>={
+ '1':'Direct consciousness','2':'Symbolic consciousness','3a':'Corrective recursive consciousness','3b':'Fractured recursive consciousness','3c':'Integrated recursive consciousness','G':'Generative consciousness','GΩ':'Generative consciousness — successor-baseline necessity'
+};
+function GenericArtifact({a}:{a:NonNullable<ReturnType<typeof getArtifact>>}){
+ const boundary=a.slug==='the-magic-mountain';
+ return <ArtifactAnalysis domain={a.domain} year={a.year} title={a.title} creator={a.creator} order={a.torc??'—'} orderName={orderNames[a.torc??'']??'Operational Order'} cms={a.cms} range='Corpus determination'
+ headline={boundary?'A genuine 3b/3c boundary, resolved at 3c.':`TORC resolves the completed artifact at ${a.torc}.`}
+ analysis={boundary?[
+  'The Magic Mountain sits unusually close to the boundary between fractured and integrated recursive consciousness. Across the current v1.6.3 cohort, both readings survive serious scrutiny.',
+  'The decisive pressure comes from the Snow episode: Hans reaches an orientation that can preserve mortality, irrationality and contradiction without simply choosing one ideological pole. TORC resolves the completed artifact at 3c, while retaining the 3b reading as a structurally credible alternative.'
+ ]:[
+  `The corpus determination for ${a.title} is ${a.torc}, with a median Cognitive Magnitude Score of ${a.cms}. Operational Order and magnitude were determined independently under the TORC protocol.`,
+  'This public corpus entry records the stabilized determination. A fuller artifact-specific analysis can be added without changing the underlying corpus result.'
+ ]}
+ boundaryTitle={boundary?'Why 3c, with a 3b boundary?':`Why ${a.torc}?`}
+ boundary={boundary?[
+  'A 3b reading remains credible because the later trajectory does not simply preserve Hans’s integrative insight as a stable possession. The determination nevertheless resolves at 3c because integration becomes operationally real in the completed artifact even though it is not permanently maintained.'
+ ]:[
+  'TORC assigns the lowest Operational Order sufficient to explain the governing operation of the completed artifact. The corpus determination shown here is the stabilized result of that evaluation process.'
+ ]}
+ exceptionalTitle={boundary?'The disagreement is part of the result.':'Order and magnitude remain separate.'}
+ exceptional={boundary?[
+  'This is a useful boundary artifact precisely because the disagreement is concentrated at one adjacent transition rather than scattered across the taxonomy.'
+ ]:[
+  `A CMS of ${a.cms} describes demonstrated cognitive magnitude; it does not raise or lower the artifact’s Operational Order of ${a.torc}.`
+ ]}/>;
+}
 export default function ArtifactPage({params}:{params:{slug:string}}){
  const {slug}=params;
  if(slug==='2001-a-space-odyssey') return <OdysseyFallback/>;
  const a=getArtifact(slug); if(!a)notFound();
- return <WarAndPeaceAnalysis a={a}/>;
+ if(slug==='war-and-peace') return <WarAndPeaceAnalysis a={a}/>;
+ return <GenericArtifact a={a}/>;
 }
