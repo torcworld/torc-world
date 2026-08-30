@@ -400,3 +400,34 @@
  .artifactTableFour :global(.row)>:nth-child(3),
  .artifactTableFour :global(.row)>:nth-child(4){transform:none}
 }
+
+
+/* Batch 58 — result registration + quieter search surround */
+@media(min-width:861px){
+  /* Keep the Operational Order heading where it is, but pull its values left. */
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3){
+    transform:translateX(-27px)!important;
+    text-align:center!important;
+  }
+
+  /* Move only the CMS heading right; keep the score values where they currently sit. */
+  .artifactTableFour :global(.header)>:nth-child(4){
+    transform:translateX(7px)!important;
+  }
+  .artifactTableFour :global(.row:not(.header))>:nth-child(4){
+    transform:translateX(-12px)!important;
+    text-align:center!important;
+  }
+
+  /* Pull the search/filter console upward by roughly half a centimetre. */
+  .artifactToolsStrong{
+    margin-top:-18px;
+  }
+}
+
+/* Let the filter surround merge back into the page ground.
+   The thin oxblood border remains as the structural edge. */
+.artifactToolsStrong{
+  background:transparent!important;
+  border:1px solid rgba(91,38,48,.5)!important;
+}
