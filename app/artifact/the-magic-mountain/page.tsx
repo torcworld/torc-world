@@ -1,1 +1,21 @@
-import Link from 'next/link';import {magicMountain as m} from '@/lib/magicMountain';export default function Page(){return <main><header className="page-title"><div className="eyebrow">Literature · 1924</div><h1>The Magic Mountain</h1><p className="lede">Thomas Mann</p></header><section className="dipHero"><div><div className="eyebrow">Demonstrated Intelligence Profile (DIP)</div><div className="bigDip">3b <i>|</i> 840</div></div><div className="dipFacts"><p><b>7 independent evaluations</b></p><p>TORC consensus: <b>{m.torcDistribution}</b></p><p>CMS median: <b>840</b> · range <b>{m.cmsRange}</b></p></div></section><section className="section prose"><div className="eyebrow">Operational Order</div><h2>3b — Recursive cognition, integration boundary contested</h2><p>The novel turns its governing frameworks—health and illness, reason and irrationality, life and death, chronological and subjective time, ideology and historical existence—back upon themselves, making those frameworks objects of sustained recursive investigation.</p><p>Four evaluators conclude that this recursive confrontation does not become sufficiently stable and globally integrated for 3c. Three disagree. The result is <b>3b by a narrow 4–3 consensus</b>. All seven place the work within Level 3 and reject G.</p></section><section className="section"><div className="section-head"><div><div className="eyebrow">Cognitive Magnitude</div><h2>Six-dimensional architecture</h2></div><div className="score">CMS 840 / 1000</div></div><div className="dimensions">{m.dimensions.map(d=><details className="dimension" key={d.key}><summary><span className="dimKey">{d.key}</span><span><b>{d.name}</b><small>Click for definition + artifact rationale</small></span><strong>{d.score}</strong></summary><div className="dimBody"><p className="formalDefinition"><b>Formal definition.</b> {d.formalDefinition}</p><p className="definition"><b>In plain language.</b> {d.definition}</p><p><b>Why this artifact scores {d.score}.</b> {d.rationale}</p><p className="small">Evaluator range: {d.range} · <Link href="/methodology#dimensions">Full dimension methodology →</Link></p></div></details>)}</div></section><section className="section audit"><div className="eyebrow">Evaluation record</div><h2>Inspect the result</h2><div className="auditGrid"><div><span>TORC agreement</span><b>{m.torcAgreement}</b></div><div><span>CMS stability</span><b>{m.cmsStability}</b></div><div><span>Dimensional stability</span><b>{m.dimensionalStability}</b></div></div><div className="buttons"><Link className="button primary" href="/artifact/the-magic-mountain/report">Read full consensus report</Link><a className="button" href="#evaluators">View evaluator results</a></div><div id="evaluators" className="evaluators">{m.evaluators.map((e,i)=><Link href={`/artifact/the-magic-mountain/evaluator-${i+1}`} key={String(e[0])}><span>{e[0]}</span><b>{e[1]} | {e[2]} →</b></Link>)}</div></section></main>}
+import ArtifactAnalysis from '../components/ArtifactAnalysis';
+import {getArtifact} from '@/lib/artifacts';
+import {featuredAnalyses} from '../[slug]/featuredAnalyses';
+
+const orderNames:Record<string,string>={
+  '1':'Direct consciousness','2':'Symbolic consciousness','3a':'Corrective recursive consciousness','3b':'Fractured recursive consciousness','3c':'Integrated recursive consciousness','G':'Generative consciousness','GΩ':'Generative consciousness — successor-baseline necessity'
+};
+
+export default function Page(){
+  const a=getArtifact('the-magic-mountain');
+  const featured=featuredAnalyses['the-magic-mountain'];
+  if(!a || !featured) return null;
+  return <ArtifactAnalysis
+    domain={a.domain} year={a.year} title={a.title} creator={a.creator}
+    order={a.torc??'—'} orderName={orderNames[a.torc??'']??'Operational Order'}
+    cms={a.cms} range='Median across 7 evaluations'
+    headline={featured.headline} analysis={featured.analysis} dimensions={featured.dimensions}
+    boundaryTitle={featured.boundaryTitle} boundary={featured.boundary}
+    exceptionalTitle={featured.exceptionalTitle} exceptional={featured.exceptional}
+  />;
+}
