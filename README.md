@@ -1,13 +1,9 @@
-TORC refinement patch
+TORC — Artifact frame refinement trial
 
-1. Theory / Book (desktop)
-   - Restores the top-open version: no oxblood field above the centered book/title composition.
-   - Keeps the paired oxblood side fields flush to the book/title column on their inner edges.
+Changed only:
+- app/artifacts/artifacts-v4.module.css
+- app/artifact/artifact-frame.module.css
 
-2. Artifacts
-   - Preserves the approved oxblood controls and gold artifact-row hover trial.
-   - Makes the existing oxblood side/frame guides slightly more visible (about 1.4px effective weight).
-
-3. Submit Your Artifact (desktop)
-   - Lifts the charcoal hero visually by 8px (~2 mm), increasing the breathing room before the process block.
-   - Keeps the existing card-selection/reveal behavior intact.
+1. Artifacts page desktop side rails are slightly finer than the previous patch, while remaining visibly stronger than the old hairline treatment.
+2. Artifact Analysis desktop composition: the charcoal analysis/header column is extended rightward and the oxblood field is moved left/inward so the two fields meet cleanly inside the outer framed span. The oxblood field's right edge now aligns with the frame edge instead of projecting beyond it.
+3. Mobile artifact-analysis geometry is untouched.
