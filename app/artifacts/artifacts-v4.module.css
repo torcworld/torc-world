@@ -1884,3 +1884,17 @@
     height:56px!important;
   }
 }
+
+/* Batch 103 — uncover the real site navigation.
+   The 100vmax page shadow introduced for full-bleed ground paints upward over
+   earlier siblings in the root shell. Because the body already uses --bg,
+   the shadow is unnecessary and can be removed without changing the approved
+   background colour. Removing the old clip also leaves the approved guide
+   extensions free to reach the upper rule. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:var(--bg)!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+  }
+}

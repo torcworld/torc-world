@@ -10,55 +10,55 @@ export type FeaturedAnalysis={
 
 export const featuredAnalyses:Record<string,FeaturedAnalysis>={
  'a-confederacy-of-dunces':{
-  headline:'The satire works because reality remains visible while nearly everyone invents a version of it that protects themselves.',
+  headline:'Everyone has an explanation for reality. The comedy begins where reality refuses to cooperate.',
   analysis:[
-   'The novel’s governing achievement is an exceptionally dense symbolic and satirical organization of social reality. Ignatius’s medievalist cosmology, Myrna’s activist counter-position, Levy Pants, the Night of Joy, Mancuso’s policing, Jones’s coerced employment and Mrs. Reilly’s family dependence all become systems through which characters explain themselves while repeatedly misreading what their actions produce.',
-   'That recursive pressure makes 3a the strongest higher candidate, but it does not become the completed artifact’s governing operation. The comedy depends on a stable distinction between the characters’ self-conceptions and what the novel lets the reader see. Ignatius can convert failure into confirmation of his worldview precisely because the artifact does not have to share his loss of orientation.',
-   'Level 2 is therefore sufficient. The final convergence reorganizes an enormous number of remote strands, but it does so as symbolic-comic architecture rather than as a demonstrated fracture in the conditions by which reality can be identified. The five evaluations are unanimous on the Order: 2 ×5.'
+   'Ignatius does not merely misunderstand the world. He possesses an entire apparatus for converting humiliation, laziness, appetite, failure and dependence into evidence of his own superiority. His medieval philosophy makes contingency look like cosmic disorder, employment look like persecution, and every collision with ordinary life look like proof that ordinary life is beneath him. The joke is not simply that he is deluded. It is that his delusion is structurally productive: it can absorb almost anything without having to change.',
+   'Toole builds the same pressure outward. Levy Pants, the Night of Joy, police procedure, family obligation, racial and economic coercion, Myrna’s ideological certainty and Mrs. Levy’s therapeutic language all provide systems in which people can redescribe what they are doing while remaining caught inside it. The novel becomes a city of competing explanations, each locally coherent enough to keep its owner moving and distorted enough to collide with everyone else.',
+   'But the novel itself never loses the distinction those characters lose. Their vocabularies remain visible as vocabularies. The reader can see Ignatius’s interpretation and the event it is trying to master at the same time. That preserved distance is decisive: the governing operation is the symbolic organization of a social world in which explanation repeatedly becomes self-protection, not a higher recursive fracture in the artifact’s own orientation to reality.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.3',artifact:'A large ensemble of characters, workplaces, schemes, letters, institutions and misunderstandings remains causally interdependent across long narrative distances.'},
-   {key:'AD',name:'Abstraction Depth',score:'7.2',artifact:'Ideology, self-deception, status, exploitation and competing pictures of order operate above the immediate comedy, but the abstraction remains anchored in character and social satire.'},
-   {key:'CD',name:'Constraint Density',score:'7.8',artifact:'Distinctive voices, intersecting plots, causal reversals, chronology and late payoffs impose many coupled requirements while still leaving meaningful alternative constructions possible.'},
-   {key:'ID',name:'Inferential Distance',score:'7.0',artifact:'The novel discovers non-obvious relations among apparently separate personalities and institutions, but much of the route is supplied through cumulative characterization and comic causality.'},
-   {key:'IC',name:'Integrative Compression',score:'8.1',artifact:'A relatively small set of mechanisms—self-deception, reciprocal exploitation, ideological inversion and accidental consequence—organizes a remarkably heterogeneous social field.'},
-   {key:'GR',name:'Generalization Reach',score:'6.5',artifact:'The architecture transfers well to bureaucracy, status, ideological rationalization and institutional absurdity, but remains substantially embedded in a particular human-social ecology.'}
+   {key:'RL',name:'Relational Load',score:'8.3',artifact:'Ignatius, Mrs. Reilly, Myrna, Levy Pants, Jones, Lana Lee, Mancuso and the surrounding institutions form a dense causal network in which remote comic actions repeatedly return as later constraints.'},
+   {key:'AD',name:'Abstraction Depth',score:'7.2',artifact:'The comedy continually rises from concrete failure into larger structures of ideology, self-deception, status, modernity and social performance without detaching those abstractions from lived scenes.'},
+   {key:'CD',name:'Constraint Density',score:'7.8',artifact:'Voice, timing, intersecting plots, causal reversals, social geography and character consistency have to remain mutually compatible across a crowded narrative while still converging convincingly.'},
+   {key:'ID',name:'Inferential Distance',score:'7.0',artifact:'The novel discovers non-obvious relations between private delusion and institutional absurdity, but it reaches them largely through cumulative characterization and comic causality rather than a single radical inferential leap.'},
+   {key:'IC',name:'Integrative Compression',score:'8.1',artifact:'A small family of mechanisms—self-justification, reciprocal exploitation, ideological inversion and accidental consequence—organizes a very large and differentiated social field.'},
+   {key:'GR',name:'Generalization Reach',score:'6.5',artifact:'Its architecture travels well across bureaucracy, status, ideological rationalization and institutional incompetence, while remaining most securely grounded in human and social situations.'}
   ],
-  boundaryTitle:'Why Level 2 rather than 3a?',
+  boundaryTitle:'Why 2 rather than 3a?',
   boundary:[
-   'The 3a case is real because the novel repeatedly shows pathological external systems reproducing distorted beliefs and behavior. But pathology alone is not enough. A higher Order would have to make consciousness’s orientation toward reality itself structurally problematic as the governing operation.',
-   'Here the artifact preserves a stable satirical standpoint. The reader can still diagnose the mismatch between Ignatius’s representations, the institutions around him and observable consequences. Symbolic organization therefore remains sufficient, so the Operational Order stops at 2.'
+   'The novel contains powerful 3a signals because social systems repeatedly reproduce distorted conduct. Jones is trapped by the interaction of economic exploitation and policing; Levy Pants survives through mutually reinforcing dysfunction; Ignatius turns contradiction into renewed certainty. Yet those systems remain diagnosable from a stable standpoint supplied by the artifact itself.',
+   'A 3a determination would require the external order to make consciousness’s orientation toward reality structurally problematic as the governing operation. Here symbolic satire still explains the whole. The higher-order signal is real, but it never becomes necessary.'
   ],
-  exceptionalTitle:'Its cognitive scale is carried by orchestration, not by promotion of Order.',
+  exceptionalTitle:'Its scale comes from making an entire city participate in the same comic law.',
   exceptional:[
-   'The five CMS runs range from 723 to 772, with a median of 743. The profile peaks in Relational Load and Integrative Compression: Toole coordinates a crowded social ecology without needing a higher governing operation.',
-   'That makes the novel a useful TORC case because high magnitude and lower Operational Order remain cleanly separated rather than being collapsed into one prestige score.'
+   'The novel’s exceptional achievement is architectural. An enormous number of people, institutions, motives and accidents remain distinct while continually being pulled into one another’s consequences.',
+   'The result is a rare high-magnitude Level 2 work: not because it nearly becomes a higher Order, but because it realizes symbolic consciousness at unusual relational and integrative scale.'
   ]
  },
  'genius-the-natural-history-of-creativity':{
-  headline:'Creativity is relocated from an exceptional trait into a causal architecture that tries to explain how exceptional achievement is generated.',
+  headline:'Genius stops being a mysterious possession and becomes an outcome that a causal system must produce.',
   analysis:[
-   'Eysenck’s governing move is not simply to collect correlates of genius. The book attempts to connect intelligence, associative breadth, inhibition, psychoticism, personality, psychopathology, biological variables, motivation and environment into a multilevel account of how creative potential can become exceptional achievement.',
-   'That clears G because the target exists independently of Eysenck’s vocabulary and the proposed mechanism is exposed to evidence that can constrain or defeat it. The book repeatedly distinguishes supported links from speculative ones; empirical weakness in particular links limits magnitude and robustness, but does not turn the theory into a self-sealing construction.',
-   'The relocation is explanatory: genius is no longer adequately organized as merely very high intelligence, mysterious inspiration or a list of personality correlates. The completed artifact asks what interacting mechanisms generate the observed phenomenon. All five evaluations resolve the Order at G.'
+   'Eysenck begins from a familiar explanatory failure. Intelligence matters to creative achievement, personality matters, unusual associative processes matter, psychopathology appears repeatedly in the literature, biological variables matter, and environment matters—but a list of correlations does not yet explain why genius occurs. The book’s governing move is to force those scattered findings into one causal problem.',
+   'The proposed architecture runs across levels. Broad or overinclusive associative production can increase the supply of unusual connections; psychoticism-related dispositions and inhibitory processes help explain why that cognitive field differs between people; intelligence, ego strength, persistence and environmental conditions help determine whether unusual production becomes useful achievement rather than disorganization. Biology, personality, cognition and accomplishment are therefore treated not as separate topics but as stages and constraints inside one generative account.',
+   'That is the decisive relocation. Genius is no longer principally something a person possesses in extraordinary quantity. It becomes an outcome whose appearance has to be generated by interacting mechanisms. The model is imperfect and some links remain speculative, but the book exposes those links to empirical failure. Its explanatory structure therefore carries real risk rather than protecting itself by definition.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.7',artifact:'Intelligence, personality, psychoticism, psychopathology, associative cognition, inhibition, biology, motivation, environment and achievement are made mutually consequential across several explanatory levels.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'The argument moves from observed creative achievement through psychometrics and latent traits toward cognitive and biological mechanisms while preserving a recognizable causal architecture.'},
-   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'The model must reconcile heterogeneous psychometric, experimental, clinical and biological obligations, although several cross-level links remain explicitly provisional.'},
-   {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'Connecting psychopathology-related traits and altered associative or inhibitory processes to productive creativity requires a substantial non-routine reconstruction of dispersed findings.'},
-   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A comparatively economical multilevel model compresses a large literature spanning biology, cognition, personality, creativity and achievement while preserving many internal distinctions.'},
-   {key:'GR',name:'Generalization Reach',score:'7.9',artifact:'The architecture reaches across artistic, scientific and other forms of creative achievement, but its strongest transfer remains within the creativity/genius problem-family.'}
+   {key:'RL',name:'Relational Load',score:'8.7',artifact:'The theory coordinates intelligence, personality, psychoticism, associative cognition, inhibition, psychopathology, biology, motivation, environment and achievement across several explanatory levels.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'The argument moves from observable creative performance through psychometric constructs and personality dimensions toward cognitive and biological mechanisms while preserving a common causal question.'},
+   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'Any successful version of the theory has to accommodate evidence from psychometrics, experimental cognition, psychopathology, personality and biology, although several cross-level links remain provisional.'},
+   {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'The non-obvious move is to connect apparently pathological associative tendencies with productive creativity while also explaining why unusual cognition alone does not yield genius.'},
+   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A comparatively compact multilevel model makes a large and heterogeneous literature reconstructible as parts of one causal architecture rather than a collection of disconnected findings.'},
+   {key:'GR',name:'Generalization Reach',score:'7.9',artifact:'The structure reaches across artistic, scientific and other forms of creative achievement, though its strongest transfer remains within the wider creativity and genius problem-field.'}
   ],
-  boundaryTitle:'Why G rather than Level 3—or GΩ?',
+  boundaryTitle:'Why G rather than a lower Order?',
   boundary:[
-   'Level 3 is insufficient because the governing achievement is not a recursive fracture or integration in consciousness’s orientation toward reality. The artifact is principally constructing a constrained causal explanation of an independently identifiable phenomenon.',
-   'GΩ is not established. The five evaluations agree that later creativity research can revise, replace or bypass Eysenck’s specific psychoticism/inhibition architecture without thereby becoming inadequate. The explanatory relocation is achieved, but successor-baseline necessity is not.'
+   'The book is not principally representing creativity, symbolizing it, or reorganizing consciousness’s relation to it. Its central operation is explanatory: it proposes a mechanism intended to account for why an independently existing phenomenon takes the form it does.',
+   'Lower Orders can describe the conceptual sophistication of the argument, but they cannot explain the completed artifact’s governing move. The causal architecture changes what must be invoked to explain creativity and exceptional achievement. That makes G the lowest sufficient Order.'
   ],
-  exceptionalTitle:'The G result survives because the theory takes explanatory risk.',
+  exceptionalTitle:'The strongest move is the bridge from scattered correlations to a mechanism that can fail.',
   exceptional:[
-   'The five CMS runs range from 800 to 865, with a median of 833. Integrative Compression is the median peak, followed by Relational Load and Abstraction Depth: the distinctive accomplishment is multilevel synthesis rather than one isolated claim.',
-   'TORC does not require every proposed mechanism to remain scientifically correct forever. What matters for the Order is that the completed artifact genuinely relocates explanation under independent constraint instead of merely redescribing the target.'
+   'Eysenck does not solve the problem by declaring every association part of genius. The architecture has to distinguish productive breadth from pathological disorganization, potential from achievement, and correlation from causal explanation.',
+   'Its importance within TORC lies in that constrained synthesis: many partially separate literatures are made to bear on one explanatory structure, while the structure remains exposed to evidence that could force its revision.'
   ]
  },
  'the-logic-of-scientific-discovery':{
