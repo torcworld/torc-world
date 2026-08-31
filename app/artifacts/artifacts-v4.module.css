@@ -1942,3 +1942,51 @@
     left:38px!important;
   }
 }
+
+/* Trial — oxblood instrument interiors + gold corpus hover */
+/* Keep the existing gold panels/frame architecture; only replace the pale/white
+   interactive interiors with oxblood so this can be judged as a material trial. */
+.controlLabel select,
+.controlLabel input{
+  background:#5b2630!important;
+  border-color:#5b2630!important;
+  color:#f3eee6!important;
+}
+.controlLabel input::placeholder{color:rgba(243,238,230,.72)!important}
+.controlLabel select option{
+  background:#5b2630!important;
+  color:#f3eee6!important;
+}
+.controlLabel select:focus,
+.controlLabel input:focus{
+  border-color:#5b2630!important;
+  outline-color:#c7aa76!important;
+}
+
+/* Compare pickers use the same oxblood input material as the upper controls. */
+.inlineSelected,
+.inlineDropdown input{
+  background:#5b2630!important;
+  border-color:#5b2630!important;
+  color:#f3eee6!important;
+}
+.inlineSelected span,
+.inlineSelected small{color:#f3eee6!important}
+.inlineSelected small{opacity:.76!important}
+.inlineDropdown input::placeholder{color:rgba(243,238,230,.72)!important}
+.inlineSelected:hover,
+.inlineSelected:focus-visible{
+  border-color:#c7aa76!important;
+  box-shadow:0 0 0 1px #c7aa76!important;
+}
+
+/* Corpus rows now register in the same deeper gold used by active/hover navigation. */
+.artifactTableFour :global(a.row:not(.header)){
+  transition:background-color .14s ease,border-color .14s ease!important;
+}
+.artifactTableFour :global(a.row:not(.header):hover),
+.artifactTableFour :global(a.row:not(.header):focus-visible){
+  background:#c7aa76!important;
+  border-color:#5b2630!important;
+  outline:none!important;
+}
