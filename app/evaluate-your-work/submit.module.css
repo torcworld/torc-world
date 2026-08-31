@@ -529,3 +529,9 @@
 @media(max-width:760px){
  .packageDetail{scroll-margin-top:20px;}
 }
+
+/* Desktop selector reveal — match the mobile breathing room when a pricing card
+   scrolls to its explanation panel. */
+@media(min-width:761px){
+  .packageDetail{scroll-margin-top:20px;}
+}

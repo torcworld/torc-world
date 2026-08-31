@@ -1,14 +1,9 @@
-# TORC theory centered dual-field + mobile order alignment patch
+TORC theory inner-field + desktop pricing reveal refinement
 
 Changes only:
+1. Theory / Book desktop: the left and right oxblood fields now meet the book/title column on their inner edges, while preserving the white breathing gap toward the outer thin frame lines.
+2. Submit desktop: clicking a pricing card now scrolls to the explanation card with the same small top breathing room already used on mobile.
 
-1. `app/artifacts/artifacts-v4.module.css`
-   - On phone widths, moves the compact Operational/Cognitive Order header cell about 1 cm further left.
-   - Does not move the Order or CMS values.
-
-2. `app/theory/book/book.module.css`
-   - Desktop Theory Book experiment only.
-   - Centers the complete charcoal title + book-reading column between the existing thin outer oxblood frame rails.
-   - Replaces the former single detached right oxblood field with two equal detached oxblood fields, one on each side.
-   - Each side field is slightly narrower than the former single right field.
-   - Mobile Theory layout is unchanged.
+Files:
+- app/theory/book/book.module.css
+- app/evaluate-your-work/submit.module.css

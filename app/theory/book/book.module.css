@@ -820,3 +820,13 @@
     margin-right:0!important;
   }
 }
+
+/* Theory refinement — keep the outer breathing gap, but bring each oxblood field
+   flush to the centered book/title column on its inner edge. Desktop only. */
+@media(min-width:981px){
+  .bookPage{
+    background:
+      linear-gradient(#5b2630,#5b2630) left 22px top 38px / 126px calc(100% - 130px) no-repeat,
+      linear-gradient(#5b2630,#5b2630) right 22px top 38px / 126px calc(100% - 130px) no-repeat!important;
+  }
+}
