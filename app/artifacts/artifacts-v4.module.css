@@ -1697,3 +1697,38 @@
     z-index:1!important;
   }
 }
+
+/* Batch 93 — exact hero-edge frame + warm site-ground correction */
+@media(min-width:761px){
+  /* Match the warm pale ground used around the navigation / Submit composition. */
+  .artifactsPage{
+    background:#ddceb3!important;
+    box-shadow:0 0 0 100vmax #ddceb3!important;
+  }
+
+  /* The frame now sits EXACTLY on the left/right edges of the wide Artifacts hero.
+     It also rises through the pale gap to meet the upper translucent guide. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:0!important;
+    bottom:0!important;
+    width:1px!important;
+    background:#5b2630!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+
+  /* No outward shoulders: the vertical rules themselves are the hero edges. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    display:none!important;
+  }
+
+  /* Preserve the detached blocks, but expose the same warm pale ground between
+     and beside them so the whole page reads as one Submit-family composition. */
+  .artifactToolsStrong,
+  .corpusSurface{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
