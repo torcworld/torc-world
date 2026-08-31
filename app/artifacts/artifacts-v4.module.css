@@ -1732,3 +1732,25 @@
     z-index:1!important;
   }
 }
+
+/* Batch 94 — exact site ground + finer full-height hero-edge guides */
+@media(min-width:761px){
+  /* Use the actual TORC / Submit / Theory site ground token, not the darker ochre trial. */
+  .artifactsPage{
+    background:#f5f2ea!important;
+    box-shadow:0 0 0 100vmax #f5f2ea!important;
+  }
+
+  /* Keep the guides on the exact hero edges, but make them visually finer.
+     Extend them upward through the full pre-hero gap so they meet the nav guide. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:-52px!important;
+    bottom:0!important;
+    width:1px!important;
+    background:rgba(91,38,48,.62)!important;
+    box-shadow:none!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+}
