@@ -535,3 +535,8 @@
 @media(min-width:761px){
   .packageDetail{scroll-margin-top:20px;}
 }
+
+/* Current refinement — lift the charcoal Submit hero by roughly 2 mm without moving the process block. */
+@media(min-width:761px){
+  .hero{transform:translateY(-8px)}
+}

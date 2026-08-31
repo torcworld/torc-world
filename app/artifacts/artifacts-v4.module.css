@@ -1990,3 +1990,14 @@
   border-color:#5b2630!important;
   outline:none!important;
 }
+
+/* Current refinement — make the existing Artifacts oxblood frame rails just a touch more visible. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:2px!important;
+    transform:scaleX(.70)!important;
+  }
+}

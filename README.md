@@ -1,7 +1,13 @@
-TORC Artifacts visual trial
+TORC refinement patch
 
-Changes only app/artifacts/artifacts-v4.module.css.
-- Search / Sort / Medium / Operational Order input interiors: oxblood with light text.
-- Compare Artifact A/B chooser interiors and their search field: matching oxblood.
-- Artifact result rows: deeper gold (#c7aa76) on hover/focus.
-- No Theory files changed in this patch.
+1. Theory / Book (desktop)
+   - Restores the top-open version: no oxblood field above the centered book/title composition.
+   - Keeps the paired oxblood side fields flush to the book/title column on their inner edges.
+
+2. Artifacts
+   - Preserves the approved oxblood controls and gold artifact-row hover trial.
+   - Makes the existing oxblood side/frame guides slightly more visible (about 1.4px effective weight).
+
+3. Submit Your Artifact (desktop)
+   - Lifts the charcoal hero visually by 8px (~2 mm), increasing the breathing room before the process block.
+   - Keeps the existing card-selection/reveal behavior intact.
