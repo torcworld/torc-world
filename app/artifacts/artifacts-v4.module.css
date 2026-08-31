@@ -2182,3 +2182,91 @@
     color:#171714!important;
   }
 }
+
+/* Requested refinement — use the literal site ground for all previously white
+   Artifacts working surfaces. The interaction state remains the quiet light
+   ochre used by the resting navigation family. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:var(--bg)!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+  }
+
+  .artifactToolsStrong,
+  .corpusSurface,
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap,
+  .artifactTableFour :global(a.row:not(.header)){
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  .controlLabel input::placeholder,
+  .inlineDropdown input::placeholder{
+    color:rgba(23,23,20,.58)!important;
+  }
+  .inlineSelected span,
+  .inlineSelected small{
+    color:#171714!important;
+  }
+
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible),
+  .controlLabel select:hover,
+  .controlLabel input:hover,
+  .inlineSelected:hover,
+  .inlineSelected:focus-visible,
+  .inlineOptions button:hover,
+  .inlineOptions button:focus-visible,
+  .inlineSwap:hover,
+  .inlineSwap:focus-visible{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  /* Re-establish the same detached-page rhythm as Theory: the main Artifacts
+     object sits below the navigation rule, while two short oxblood hairlines
+     bridge only that pale gap and then continue down the frame edges. */
+  .artifactsPage{
+    margin-top:18px!important;
+    padding-top:0!important;
+    border-top:0!important;
+  }
+  .artifactHeader{
+    margin-top:60px!important;
+  }
+  .artifactHeader::before,
+  .artifactHeader::after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    top:-78px!important;
+    height:78px!important;
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+    pointer-events:none!important;
+    z-index:3!important;
+  }
+  .artifactHeader::before{left:0!important;right:auto!important}
+  .artifactHeader::after{right:0!important;left:auto!important}
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:60px!important;
+    bottom:0!important;
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}

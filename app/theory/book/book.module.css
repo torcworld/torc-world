@@ -993,3 +993,20 @@
     pointer-events:none!important;
   }
 }
+
+/* Requested refinement — make the now-continuous Theory rails one further visual
+   step thinner, while keeping them saturated and geometrically unbroken. Also
+   lift the desktop contents dock so its opened panel sits closer to the top of
+   the oxblood side field, leaving only the compact CONTENTS control above it. */
+@media(min-width:981px){
+  .bookPage::before{
+    border-left-width:.25px!important;
+    border-right-width:.25px!important;
+  }
+  .readerNav{
+    top:90px!important;
+  }
+  .readerNavPanel{
+    max-height:calc(100vh - 112px)!important;
+  }
+}
