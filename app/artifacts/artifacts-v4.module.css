@@ -2095,3 +2095,17 @@
     opacity:1!important;
   }
 }
+
+/* Current refinement — return the Artifacts rail to the previous sharper half-step. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}

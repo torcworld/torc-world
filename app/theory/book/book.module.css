@@ -895,3 +895,28 @@
     opacity:1!important;
   }
 }
+
+/* Current refinement — thinner Theory rails, with the upper bridge extended far
+   enough to meet the existing translucent horizontal navigation rule. */
+@media(min-width:981px){
+  .bookPage{
+    border-left-width:.35px!important;
+    border-right-width:.35px!important;
+    border-left-color:#5b2630!important;
+    border-right-color:#5b2630!important;
+  }
+  .bookPage::before{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    left:-.35px!important;
+    right:-.35px!important;
+    top:-28px!important;
+    height:28px!important;
+    border-left:.35px solid #5b2630!important;
+    border-right:.35px solid #5b2630!important;
+    background:none!important;
+    opacity:1!important;
+    pointer-events:none!important;
+  }
+}

@@ -264,3 +264,38 @@
     box-sizing:border-box!important;
   }
 }
+
+/* Current refinement — lift the complete Six-Dimensional Model content by ~3mm
+   inside its existing framed gold field. */
+.cmsSection{
+  padding-top:43px!important;
+}
+
+/* Current refinement — make the compact charcoal closing field reach cleanly to
+   the side architecture and keep its oxblood closing rule visible. */
+@media(min-width:761px){
+  .page::after{
+    height:34px!important;
+    margin-left:-40px!important;
+    margin-right:-40px!important;
+    background:#353432!important;
+    border-top:0!important;
+    border-bottom:2px solid #5b2630!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Center the final conversion moment and let the supporting copy share its axis. */
+  .bottomCta{
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+  .bottomCta>div{
+    max-width:720px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .submitButton{
+    align-self:center!important;
+  }
+}

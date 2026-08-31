@@ -1,7 +1,9 @@
-# TORC refinement patch
+TORC refinement patch
 
-Changes only:
-- Artifacts desktop frame rails: another half-step visually thinner, still solid/sharp oxblood.
-- Theory desktop frame rails: thinner; upper rail bridge restored to meet the translucent horizontal rule.
-- Artifact Analysis: Six-Dimensional Model gets a black rule at the top matching its lower rule.
-- Artifact Analysis desktop closing charcoal field: reduced in height, kept flush to the framed composition, with oxblood rule only at the bottom.
+- Artifacts desktop oxblood rails restored to the previous sharp .62 visual weight.
+- Theory desktop rails made finer; upper rail bridge extended to meet the translucent navigation rule.
+- Artifact Analysis Six-Dimensional Model content lifted ~3mm.
+- Bottom charcoal closure extended laterally to meet the side architecture; oxblood closing rule made more visible.
+- Final Submit Your Artifact CTA and supporting copy centered on desktop.
+
+Only the three relevant CSS modules are included.
