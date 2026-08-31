@@ -1,9 +1,9 @@
-TORC theory inner-field + desktop pricing reveal refinement
+TORC Theory full oxblood frame-field trial + mobile Artifact heading refinement
 
 Changes only:
-1. Theory / Book desktop: the left and right oxblood fields now meet the book/title column on their inner edges, while preserving the white breathing gap toward the outer thin frame lines.
-2. Submit desktop: clicking a pricing card now scrolls to the explanation card with the same small top breathing room already used on mobile.
+1. Artifacts mobile: moves only the Artifact column heading about 1 cm to the right. Existing Order/CMS positioning and artifact values are untouched.
+2. Theory / Book desktop: fills the previously white outer side field and the strip above the centered book/title composition with oxblood, up to the existing thin outer frame rails / upper guide. The centered book/title column itself is unchanged. Mobile Theory is unchanged.
 
 Files:
+- app/artifacts/artifacts-v4.module.css
 - app/theory/book/book.module.css
-- app/evaluate-your-work/submit.module.css
