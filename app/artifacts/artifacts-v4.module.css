@@ -1653,3 +1653,47 @@
   /* Compare remains part of the corpus object; pale page ground resumes beneath it. */
   .inlineCompare{background:transparent!important}
 }
+
+/* Batch 92 — Submit-family outer frame around detached Artifacts objects */
+@media(min-width:761px){
+  /* Restore only the thin outer oxblood frame: it begins at the hero's side edges,
+     bridges outward to the page guide, and then runs continuously to the bottom.
+     The hero, search console and corpus remain visibly detached inside the frame. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    z-index:0!important;
+    top:52px!important;
+    bottom:0!important;
+    width:1px!important;
+    background:#5b2630!important;
+    box-shadow:none!important;
+  }
+  .artifactsPage::before{left:-28px!important}
+  .artifactsPage::after{right:-28px!important}
+
+  /* Small horizontal shoulders connect the wider hero to the outer vertical guides,
+     matching the framed-object logic used on Submit. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:28px;
+    height:1px;
+    background:#5b2630;
+    pointer-events:none;
+  }
+  .artifactHeader::before{right:100%}
+  .artifactHeader::after{left:100%}
+
+  /* Keep every detached object above the frame while the pale ground stays visible. */
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
