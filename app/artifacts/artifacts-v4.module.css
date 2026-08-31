@@ -2514,3 +2514,62 @@
     height:54px!important;
   }
 }
+
+/* Current experiment — narrow only the corpus/results stage below the search
+   console. The outer page/header geometry stays intact; the oxblood fields step
+   inward around the results so the moving rows read as a tighter instrument. */
+@media(min-width:861px){
+  /* Lift the complete Artifacts composition another ~3–4 mm toward the nav rule. */
+  .artifactsPage{
+    margin-top:-3px!important;
+  }
+
+  /* Keep search at the broad page width; inset the corpus by ~5 cm total. */
+  .corpusSurface{
+    position:relative!important;
+    margin-left:25px!important;
+    margin-right:25px!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Oxblood shoulders created by the inset: visually continue the side fields
+     inward from the point where the actual artifact corpus begins. */
+  .corpusSurface::before,
+  .corpusSurface::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:25px;
+    background:#5b2630;
+    pointer-events:none;
+    z-index:0;
+  }
+  .corpusSurface::before{left:-25px}
+  .corpusSurface::after{right:-25px}
+  .corpusSurface > *{position:relative;z-index:1}
+
+  /* Rebalance the tighter four-column table rather than simply squeezing it. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:
+      minmax(220px,1.48fr)
+      minmax(135px,.82fr)
+      minmax(165px,.92fr)
+      minmax(205px,1.12fr)!important;
+    column-gap:18px!important;
+  }
+  .tableHeader button,
+  .tableHeader span{
+    font-size:13px!important;
+  }
+  .sortArrow{font-size:17px!important}
+
+  /* Undo older hand-positioning that becomes unnecessary in the tighter grid. */
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3),
+  .artifactTableFour :global(.row:not(.header))>:nth-child(4),
+  .artifactTableFour :global(.header)>:nth-child(4){
+    transform:none!important;
+  }
+}
