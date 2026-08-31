@@ -53,6 +53,35 @@ export default function Home() {
       </aside>
     </section>
 
+    <section className={styles.homeTheory}>
+      <div className={styles.homeTheoryGround}>
+        <div className={styles.homeTheoryHeading}>
+          <span>THE THEORY BEHIND TORC</span>
+          <h2>The appearance of depth is not the same as a deep operation.</h2>
+        </div>
+
+        <Link className={styles.homeBook} href="/theory/book" aria-label="Read The Age of False Depth">
+          <span>THE AGE OF FALSE DEPTH</span>
+          <div className={styles.homeBookTitle}>
+            <b>The Age</b><b>of False</b><b>Depth</b>
+          </div>
+          <p>Intelligence, Representation, and What Artifacts Actually Do</p>
+          <small>G. K. MUIJLAERT</small>
+        </Link>
+
+        <div className={styles.homeTheoryExcerpt}>
+          <p>Why do some artifacts genuinely reorganize the way reality becomes intelligible, while others create the appearance of having done so?</p>
+          <p>A work can be enormously complicated without revealing anything new. Another can be almost embarrassingly simple once understood and nevertheless change the structure through which a problem can be seen.</p>
+          <strong>What has actually been accomplished?</strong>
+        </div>
+      </div>
+      <div className={styles.homeTheoryField}>
+        <span>THE LIVING EDITION</span>
+        <p>TORC grows out of a broader theory of representation, intelligence, and what completed artifacts preserve as evidence.</p>
+        <Link href="/theory/book">Read the Living Edition <b>→</b></Link>
+      </div>
+    </section>
+
     <section className={styles.routeStrip}>
       <Link href="/artifacts"><span>01</span><b>Archive</b><small>See TORC applied to completed works.</small><em>→</em></Link>
       <Link href="/compare"><span>02</span><b>Compare</b><small>Put two demonstrated intelligence profiles side by side.</small><em>→</em></Link>
@@ -72,7 +101,7 @@ export default function Home() {
           <div className={styles.microGraphic}>
             <span>1</span><i/><span>2</span><i/><span>3a</span><i/><span>3b</span><i/><span>3c</span><i/><span>G</span>
           </div>
-          <Link href="/theory">Understand Operational Order <b>→</b></Link>
+          <Link href="/methodology">Understand Operational Order <b>→</b></Link>
         </article>
         <article>
           <div className={styles.coordinateLabel}>02 / MAGNITUDE</div>
@@ -81,7 +110,7 @@ export default function Home() {
           <div className={styles.dimensionMini}>
             {['RL','AD','CD','ID','IC','GR'].map((d,i)=><div key={d}><span>{d}</span><i style={{width:`${46+i*8}%`}}/></div>)}
           </div>
-          <Link href="/theory">Understand Cognitive Magnitude <b>→</b></Link>
+          <Link href="/methodology">Understand Cognitive Magnitude <b>→</b></Link>
         </article>
       </div>
       <p className={styles.principle}><strong>Operational Order is the primary hierarchy.</strong> A higher Order represents a higher demonstrated cognitive operation. Cognitive Magnitude answers a different question: how much structured cognition the artifact demonstrates in accomplishing that operation.</p>
@@ -145,23 +174,6 @@ export default function Home() {
           </div>
           <small>Open evaluation <em>→</em></small>
         </Link>)}
-      </div>
-    </section>
-
-    <section className={styles.theoryBand}>
-      <div className={styles.bookMark}>
-        <span>THE LIVING EDITION</span>
-        <b>THE<br/>AGE OF<br/>FALSE<br/>DEPTH</b>
-        <small>G. K. MUIJLAERT</small>
-      </div>
-      <div className={styles.theoryCopy}>
-        <span>THE THEORY BEHIND TORC</span>
-        <h2>The appearance of depth is not the same as a deep operation.</h2>
-        <p>TORC grows out of a broader theory of representation, intelligence, and what completed artifacts preserve as evidence. The canonical statement is maintained as a living edition on TORC.world.</p>
-        <div className={styles.theoryActions}>
-          <Link href="/theory">Explore the theory</Link>
-          <Link href="/theory/book">Read the Living Edition <b>→</b></Link>
-        </div>
       </div>
     </section>
 

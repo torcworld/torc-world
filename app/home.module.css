@@ -481,3 +481,51 @@
   .home .principle{border-left:0;border-right:0}
   .home .instrument{margin-left:-20px;margin-right:-20px;padding:58px 20px 62px}
 }
+
+/* Batch 84 — fold the former Theory landing experience into TORC home. */
+.homeTheory{
+  margin:0 -28px;
+  display:grid;
+  grid-template-columns:minmax(0,1.55fr) minmax(280px,.45fr);
+  background:#ddceb3;
+  border-top:1px solid #171714;
+  border-bottom:1px solid #171714;
+}
+.homeTheoryGround{
+  position:relative;
+  padding:64px 58px 70px;
+  display:grid;
+  grid-template-columns:minmax(300px,.78fr) minmax(320px,1.22fr);
+  gap:56px;
+  align-items:start;
+  background:#e6dccd;
+}
+.homeTheoryHeading{grid-column:1/-1;display:grid;grid-template-columns:.55fr 1.45fr;gap:36px;align-items:start}
+.homeTheoryHeading>span,.homeTheoryField>span{font:700 9px Arial,sans-serif;letter-spacing:.17em;color:#5b2630}
+.homeTheoryHeading h2{margin:0;max-width:760px;font-size:clamp(38px,4.5vw,58px);line-height:1.02;letter-spacing:-.035em;font-weight:500}
+.homeBook{
+  min-height:470px;padding:31px 32px 29px;background:#353432;color:#f4eee4;
+  border-top:5px solid #5b2630;display:flex;flex-direction:column;text-decoration:none;
+  box-shadow:0 22px 48px rgba(34,25,19,.15);transition:transform .18s ease,box-shadow .18s ease
+}
+.homeBook:hover,.homeBook:focus-visible{transform:translateY(-4px);box-shadow:0 28px 58px rgba(34,25,19,.21)}
+.homeBook>span,.homeBook>small{font:700 8px Arial,sans-serif;letter-spacing:.16em;color:#aaa199}
+.homeBookTitle{margin:auto 0 27px}.homeBookTitle b{display:block;font:500 clamp(43px,4.3vw,60px)/.87 Georgia,serif;letter-spacing:-.055em}
+.homeBook p{max-width:320px;margin:0 0 24px;font-size:15px;line-height:1.5;color:#cfc6bd}
+.homeTheoryExcerpt{padding:18px 4px 0;font-family:Georgia,serif;color:#171714}
+.homeTheoryExcerpt p{margin:0 0 22px;font-size:clamp(20px,1.75vw,25px);line-height:1.52;letter-spacing:-.015em}
+.homeTheoryExcerpt strong{display:block;margin-top:34px;padding-top:25px;border-top:1px solid #9f9383;font-size:clamp(25px,2.3vw,34px);line-height:1.2}
+.homeTheoryField{background:#5b2630;color:#f6eee8;padding:64px 36px 54px;display:flex;flex-direction:column;min-height:100%}
+.homeTheoryField>span{color:#d9c7a6}.homeTheoryField p{margin:42px 0 0;font:400 17px/1.65 Georgia,serif;color:#eadfe1}
+.homeTheoryField a{margin-top:auto;padding-top:28px;border-top:1px solid #8c535d;font:700 9px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+.homeTheoryField a b{float:right;color:#d9c7a6;font-size:16px}
+@media(max-width:850px){
+ .homeTheory{margin-left:-20px;margin-right:-20px;grid-template-columns:1fr}
+ .homeTheoryGround{padding:54px 40px 58px}.homeTheoryField{min-height:280px;padding:44px 40px}
+}
+@media(max-width:720px){
+ .homeTheoryGround{padding:46px 20px 50px;grid-template-columns:1fr;gap:36px}
+ .homeTheoryHeading{grid-template-columns:1fr;gap:12px}.homeTheoryHeading h2{font-size:39px}
+ .homeBook{min-height:520px;max-width:440px}.homeTheoryExcerpt{padding-top:0}
+ .homeTheoryField{padding:40px 20px;min-height:250px}
+}
