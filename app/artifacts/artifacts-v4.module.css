@@ -1866,3 +1866,12 @@
     height:54px!important;
   }
 }
+
+/* Batch 100 — approved guide weight; upper endpoint exactly 1px upward from Batch 99. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-55px!important;
+    height:55px!important;
+  }
+}
