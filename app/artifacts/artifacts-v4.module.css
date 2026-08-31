@@ -1581,3 +1581,75 @@
       #353432 100%)!important;
   }
 }
+
+/* Batch 91 — detached Submit-family composition trial */
+@media(min-width:761px){
+  /* The page becomes a quiet pale ground carrying three independent objects. */
+  .artifactsPage{
+    background:#e6dccd!important;
+    box-shadow:0 0 0 100vmax #e6dccd!important;
+    clip-path:inset(0 -100vmax)!important;
+    padding-bottom:58px!important;
+  }
+
+  /* Remove the continuous vertical architecture: the hero now ends as a rectangle. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:none!important;
+  }
+
+  /* 1. Detached charcoal arrival block, Submit-style. */
+  .artifactHeader{
+    margin:52px 0 0!important;
+    width:100%!important;
+    background:#353432!important;
+    color:#f3eee6!important;
+    border-top:4px solid #5b2630!important;
+    border-left:0!important;
+    border-right:0!important;
+    border-bottom:0!important;
+  }
+  .artifactHeading h1{color:#f3eee6!important}
+  .artifactHeading :global(.eyebrow){color:#d9c7a6!important}
+  .artifactHeroMark{color:#d9c7a6!important}
+  .artifactHeroMark i{background:#5b2630!important}
+  .artifactHeroMark b{color:#f3eee6!important}
+
+  /* 2. Search/filter instrument is its own gold panel after a visible ground gap. */
+  .artifactToolsStrong{
+    margin:38px 28px 0!important;
+    padding:20px!important;
+    background:#d9c7a6!important;
+    border:1px solid #5b2630!important;
+    box-shadow:none!important;
+  }
+  .controlLabel select,
+  .controlLabel input{
+    background:#e6dccd!important;
+    border:1px solid rgba(91,38,48,.72)!important;
+    color:#353432!important;
+  }
+  .controlLabel select option{background:#e6dccd!important}
+
+  /* 3. Corpus/list is a second independent gold object, with another pale gap. */
+  .corpusSurface{
+    margin:38px 28px 0!important;
+    padding:18px 24px 30px!important;
+    background:#d9c7a6!important;
+    border:1px solid #5b2630!important;
+    box-shadow:none!important;
+  }
+
+  /* Keep the corpus rhythm from Batch 90, but let the detached panel define its edge. */
+  .artifactTableFour :global(.header){
+    border-top-color:#5b2630!important;
+    border-bottom-color:#5b2630!important;
+  }
+  .artifactTableFour :global(.row:not(.header)){
+    border-bottom-color:rgba(91,38,48,.72)!important;
+  }
+  .pagination{border-top-color:#5b2630!important}
+
+  /* Compare remains part of the corpus object; pale page ground resumes beneath it. */
+  .inlineCompare{background:transparent!important}
+}
