@@ -50,7 +50,6 @@ export default function PricingCards(){
     const item=details[key];
     return <article key={key} className={cls(key)} onClick={choose(key)} role="button" tabIndex={0} aria-pressed={selected===key} onKeyDown={e=>{if(e.key==='Enter'||e.key===' ') setSelected(key)}}>
      {key==='development'&&<div className={styles.recommended}>RECOMMENDED</div>}
-     {selected===key&&<div className={styles.activePackage}>SELECTED · DETAILS BELOW</div>}
      <div>
       <span className={styles.package}>{item.name}</span>
       <div className={styles.price}>{item.price}</div>
@@ -59,14 +58,13 @@ export default function PricingCards(){
      </div>
      <div>
       <p className={styles.cardBest}><b>Best for:</b> {item.best}</p>
-      <button type="button" className={styles.exploreButton} onClick={e=>{e.stopPropagation();setSelected(key)}}>{selected===key?'Viewing details':`Explore ${key==='cycle'?'Cycle':key[0].toUpperCase()+key.slice(1)}`} <span>{selected===key?'↓':'→'}</span></button>
+      <button type="button" className={styles.exploreButton} onClick={e=>{e.stopPropagation();setSelected(key)}}>{`Explore ${key==='cycle'?'Cycle':key[0].toUpperCase()+key.slice(1)}`} <span>{selected===key?'↓':'→'}</span></button>
      </div>
     </article>
    })}
   </div>
 
   <div className={styles.packageDetail} aria-live="polite">
-   <div className={styles.detailBridge}>SELECTED SERVICE · FULL DETAILS</div>
    <div className={styles.detailHeader}>
     <div><span>{active.name}</span><h3>{active.question}</h3></div>
     <strong>{active.price}</strong>

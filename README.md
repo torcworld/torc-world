@@ -1,17 +1,16 @@
-TORC Submit selector refinement
+# TORC Submit — Selected Material Refinement v2
 
-Apply on top of the currently working Submit Consultancy rewrite (Build Compatible v3 / current deployed state).
+Apply on top of the currently working Submit Consultancy build + selector refinement.
 
-Changes only:
-- shifts desktop hero copy 14px left for more right-side breathing room;
-- keeps the full selected-service detail panel permanently visible;
-- makes the three price cards read clearly as selectors/tabs;
-- selected card gets a small “SELECTED · DETAILS BELOW” marker;
-- selected card action reads “Viewing details”;
-- detail panel gets “SELECTED SERVICE · FULL DETAILS” bridge label.
+Contains exactly two source replacements:
+- `app/evaluate-your-work/PricingCards.tsx`
+- `app/evaluate-your-work/submit.module.css`
 
-Files touched:
-- app/evaluate-your-work/PricingCards.tsx
-- app/evaluate-your-work/submit.module.css
+Changes:
+- removes duplicate Selected/Details labels;
+- selected pricing card remains warm gold;
+- full detail panel uses the same warm-gold background with dark text;
+- hero white text shifts ~3 mm farther left on desktop;
+- small text on charcoal surfaces uses warm gold instead of pink.
 
-No navigation, artifact routes, corpus data, global CSS, or shared ArtifactAnalysis component is included.
+No navigation, artifacts, corpus, global CSS, or shared analysis components are included.
