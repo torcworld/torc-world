@@ -1468,3 +1468,38 @@
     bottom:-56px!important;
   }
 }
+
+/* Batch 89 — pale site-ground surround + light instrument controls */
+@media(min-width:761px){
+  /* Replace the charcoal surround/gaps with the quiet pale neutral used elsewhere
+     in the TORC material system. The black lower closure from Batch 88 remains. */
+  .artifactsPage{
+    background:linear-gradient(to bottom,
+      #e6dccd 0,
+      #e6dccd calc(100% - 52px),
+      #171714 calc(100% - 52px),
+      #171714 100%)!important;
+    box-shadow:0 0 0 100vmax #e6dccd!important;
+  }
+
+  /* Search, Medium, Operational Order and Sort become pale instrument fields,
+     while the containing search/corpus surfaces remain light ochre. */
+  .controlLabel select,
+  .controlLabel input{
+    background:#f1ede7!important;
+    border-color:rgba(23,23,20,.32)!important;
+  }
+  .controlLabel select option{
+    background:#f1ede7!important;
+  }
+
+  /* The broad horizontal gaps and outer surround are now pale rather than charcoal. */
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface,
+  .inlineCompare,
+  .pagination{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
