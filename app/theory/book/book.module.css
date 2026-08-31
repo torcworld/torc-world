@@ -930,3 +930,12 @@
     height:38px!important;
   }
 }
+
+/* Current correction — extend the two Theory upper hairlines to the same
+   navigation-rule reach used by the approved Artifacts frame. */
+@media(min-width:981px){
+  .bookPage::before{
+    top:-56px!important;
+    height:56px!important;
+  }
+}

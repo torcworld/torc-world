@@ -2109,3 +2109,12 @@
     opacity:1!important;
   }
 }
+
+/* Current trial — use the active-navigation gold for the exposed field inside
+   the Artifacts oxblood frame. This changes the gaps around/between the detached
+   hero, search/filter panel and corpus, while leaving the outer site ground alone. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#c7aa76!important;
+  }
+}
