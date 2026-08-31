@@ -512,8 +512,7 @@
 .principle>span{color:#d9c7a6;}
 .packageDetail{
  background:#d2bb91;
- border-color:var(--accent);
- border-width:1px;
+ border-color:#9f8355;
  box-shadow:0 18px 38px rgba(91,38,48,.08);
 }
 .detailHeader{border-bottom-color:rgba(47,44,40,.34);}
@@ -524,4 +523,9 @@
 }
 @media(max-width:860px){
  .detailColumns aside{border-top-color:rgba(47,44,40,.30);}
+}
+
+/* Mobile reveal refinement — leave the selected detail card visually detached from the viewport edge. */
+@media(max-width:760px){
+ .packageDetail{scroll-margin-top:20px;}
 }
