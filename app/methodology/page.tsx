@@ -11,10 +11,42 @@ const orders = [
  {key:'GΩ',name:'Generative Cognition — Successor-Baseline Necessity',formal:'The artifact satisfies G and, in addition, establishes the changed explanatory foundation as an unavoidable baseline constraint upon adequate successor inquiry in its native domain.',plain:'Later work may reject, revise or replace the original explanation, but it cannot simply ignore what was discovered and return to the old problem as though nothing changed.'}
 ];
 
-export default function Methodology(){return <main>
-<header className="page-title"><div className="eyebrow">TORC methodology</div><h1>How the profile is read</h1><p className="lede">TORC evaluates demonstrated cognition in completed artifacts through two coordinates: Operational Order and Cognitive Magnitude. Together they form the Demonstrated Intelligence Profile.</p></header>
-<section className="section prose"><h2>Two coordinates</h2><p><b>Operational Order</b> identifies the kind of cognitive operation the completed artifact demonstrably performs.</p><p><b>Cognitive Magnitude</b> measures the scale and architecture of cognition demonstrated in successfully constructing that operation.</p><p>The coordinates answer different questions. A higher magnitude does not mechanically produce a higher Operational Order, and Operational Order is not calculated from the six magnitude dimensions.</p></section>
-<section className="section" id="operational-order"><div className="eyebrow">TORC classification model</div><h2>The seven cognitive orders</h2><p className={styles.intro}>The sequence is categorical, not a ladder of decoration or difficulty. Each order describes a different governing operation of the completed artifact.</p><div className={styles.orderSequence} aria-label="Operational Order sequence"><span>1</span><i>→</i><span>2</span><i>→</i><span>3a</span><i className={styles.levelThreeJoin}>–</i><span>3b</span><i className={styles.levelThreeJoin}>–</i><span>3c</span><i>→</i><span>G</span><i>→</i><span>GΩ</span></div><div className={styles.orderList}>{orders.map(o=><details className={styles.order} key={o.key}><summary><span>{o.key}</span><strong>{o.name}</strong><em>Open definition</em></summary><div><p><b>Formal definition.</b> {o.formal}</p><p><b>In plain language.</b> {o.plain}</p></div></details>)}</div></section>
-<section className="section" id="dimensions"><div className="eyebrow">Cognitive Magnitude</div><h2>The six dimensions</h2><p className={styles.intro}>The six dimensions show where an artifact's demonstrated cognitive magnitude is carried. They are lenses on the architecture, not six independent ratings added together by intuition.</p><div className="dimensions">{m.dimensions.map(d=><div className="methodDimension" id={d.key.toLowerCase()} key={d.key}><div className="dimKey">{d.key}</div><div><h3>{d.name}</h3><p className="formalDefinition"><b>Formal definition.</b> {d.formalDefinition}</p><p><b>In plain language.</b> {d.definition}</p></div></div>)}</div></section>
-<section className="section prose"><h2>Evaluation transparency</h2><p>TORC conclusions are produced through repeated analytical evaluation and protocol-governed adjudication. Public artifact pages present the final determination, the evidence needed to understand it, and meaningful uncertainty where relevant.</p><p>The complete evaluation protocol, evaluator records, prompts, thresholds and adjudication procedures are proprietary and are not publicly disclosed.</p></section>
+export default function Methodology(){return <main className={styles.page}>
+<section className={styles.hero}>
+  <div className={styles.heroCopy}>
+    <div className={styles.heroLabel}>TORC CLASSIFICATION SYSTEM</div>
+    <h1>How the profile is read.</h1>
+    <p>Operational Order identifies the cognitive operation actually achieved by the completed artifact. Cognitive Magnitude measures the scale and architecture demonstrated in achieving it.</p>
+  </div>
+  <aside className={styles.heroMark} aria-label="The TORC Demonstrated Intelligence Profile">
+    <span>DEMONSTRATED INTELLIGENCE PROFILE</span>
+    <b>ORDER</b><i>×</i><b>MAGNITUDE</b>
+    <small>DIP</small>
+  </aside>
+</section>
+
+<section className={styles.coordinateBand}>
+  <article><span>01 / PRIMARY HIERARCHY</span><h2>Operational Order</h2><p>What kind of cognitive operation does the artifact demonstrably accomplish?</p></article>
+  <article><span>02 / MAGNITUDE</span><h2>Cognitive Magnitude</h2><p>How much structured cognition is demonstrated in accomplishing that operation?</p></article>
+</section>
+
+<section className={styles.ordersSection} id="operational-order">
+  <div className={styles.sectionHead}><div><span>OPERATIONAL ORDER</span><h2>The seven orders.</h2></div><p>Operational Order is hierarchical. A higher Order is a higher demonstrated operational accomplishment. CMS does not erase or flatten that distinction.</p></div>
+  <div className={styles.orderSequence} aria-label="Operational Order sequence"><span>1</span><i>→</i><span>2</span><i>→</i><span>3a</span><i className={styles.levelThreeJoin}>—</i><span>3b</span><i className={styles.levelThreeJoin}>—</i><span>3c</span><i>→</i><span>G</span><i>→</i><span>GΩ</span></div>
+  <div className={styles.orderList}>{orders.map((o,index)=><details className={`${styles.order} ${o.key==='G'||o.key==='GΩ'?styles.generative:''}`} key={o.key}>
+    <summary><span className={styles.orderIndex}>{String(index+1).padStart(2,'0')}</span><b>{o.key}</b><strong>{o.name}</strong><em>Open definition</em></summary>
+    <div><p><b>Formal definition.</b> {o.formal}</p><p><b>In plain language.</b> {o.plain}</p></div>
+  </details>)}</div>
+</section>
+
+<section className={styles.dimensionsSection} id="dimensions">
+  <div className={styles.sectionHead}><div><span>COGNITIVE MAGNITUDE</span><h2>Six dimensions.</h2></div><p>Magnitude is measured separately from Order. It describes the architecture and scale of cognition demonstrated by the artifact.</p></div>
+  <div className={styles.dimensions}>{m.dimensions.map((d,index)=><div className={styles.methodDimension} id={d.key.toLowerCase()} key={d.key}><span>{String(index+1).padStart(2,'0')}</span><div className={styles.dimKey}>{d.key}</div><div><h3>{d.name}</h3><p className={styles.formalDefinition}><b>Formal definition.</b> {d.formalDefinition}</p><p><b>In plain language.</b> {d.definition}</p></div></div>)}</div>
+</section>
+
+<section className={styles.transparency}>
+  <span>PUBLIC RESULT / PROPRIETARY PROCEDURE</span>
+  <h2>The profile is the result. Not the procedure.</h2>
+  <p>Public artifact pages present the final determination, the evidence needed to understand it, and meaningful uncertainty where relevant. The complete evaluation protocol, evaluator records, prompts, thresholds and adjudication procedures are proprietary and are not publicly disclosed.</p>
+</section>
 </main>}

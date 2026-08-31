@@ -336,3 +336,148 @@
   .protocolPanel{padding:30px 22px}
   .sixLens{padding:38px 4px 0}
 }
+
+/* Batch 83 — TORC home: institutional house-style pass */
+.home{
+  --accent:#5b2630;
+  --gold:#d9c7a6;
+  --gold-deep:#c7aa76;
+  --dark:#353432;
+  --ink:#171714;
+  --ground:#ddceb3;
+  --paper:#e6dccd;
+  position:relative;
+}
+
+/* Arrival: same architectural family as Submit / Organizations. */
+.home .hero{
+  position:relative;
+  margin:0 -28px;
+  padding:70px 58px 72px;
+  background:var(--dark);
+  color:#f3eee6;
+  border-top:5px solid var(--accent);
+  grid-template-columns:minmax(0,1.22fr) minmax(320px,.78fr);
+  gap:58px;
+  overflow:hidden;
+}
+.home .hero::before,
+.home .hero::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:var(--accent);
+  opacity:.9;
+}
+.home .hero::before{left:27px}.home .hero::after{right:27px}
+.home .heroCopy,.home .coordinateMark{position:relative;z-index:1}
+.home .kicker{color:var(--gold-deep)}
+.home .hero h1{color:#f5f0e7;margin-top:20px}
+.home .tagline{color:var(--gold);margin-top:4px}
+.home .intro{color:#d9d3cb;max-width:690px;font-size:clamp(20px,2.2vw,27px)}
+.home .intro strong{color:#f3eee6;font-weight:500}
+.home .darkAction{background:var(--gold);color:var(--ink);border:1px solid var(--gold)}
+.home .darkAction:hover{background:var(--gold-deep);box-shadow:none}
+.home .textAction{color:#f2ece3;border-bottom-color:#756d63}
+.home .textAction span{color:var(--gold-deep)}
+.home .coordinateMark{
+  background:#171714;
+  border:1px solid #686059;
+  border-top:4px solid var(--accent);
+  box-shadow:none;
+  min-height:410px;
+}
+.home .coordinateMark::after{display:none}
+.home .field i:nth-child(3){background:var(--gold-deep)}
+.home .field i:nth-child(6){background:var(--accent)}
+.home .markTop b{color:var(--gold)}
+.home .markBottom{border-top-color:#5e554d}
+
+/* Immediate route rail. */
+.home .routeStrip{
+  margin:0 -28px;
+  padding:0 28px;
+  background:var(--gold);
+  border-top:0;
+  border-bottom:1px solid var(--ink);
+}
+.home .routeStrip a{border-right-color:#ad9876;padding:20px 20px 21px}
+.home .routeStrip a:hover{background:var(--gold-deep);transform:none}
+.home .routeStrip span,.home .routeStrip em{color:var(--accent)}
+.home .routeStrip small{color:#514a40}
+
+.home .coordinates{padding:82px 0 72px}
+.home .sectionLead>span,.home .sectionHead span,.home .theoryCopy>span,.home .twoDoors span{color:var(--accent)}
+.home .coordinateGrid{gap:0;border:1px solid var(--ink)}
+.home .coordinateGrid article{
+  border:0;
+  background:var(--gold);
+  min-height:405px;
+  box-shadow:none;
+}
+.home .coordinateGrid article+article{border-left:1px solid var(--ink)}
+.home .coordinateGrid article:hover{transform:none;box-shadow:none;background:#d4c09a;border-color:transparent}
+.home .coordinateGrid h3{font-size:34px}
+.home .coordinateGrid p{color:#403a32}
+.home .coordinateGrid a{border-top-color:#9f8d70}
+.home .microGraphic i{background:#9c8a6e}
+.home .dimensionMini div>i{background:var(--accent)}
+.home .principle{
+  max-width:none;
+  margin:0;
+  padding:22px 28px 24px;
+  border:0;
+  border-left:1px solid var(--ink);
+  border-right:1px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+  background:var(--accent);
+  color:#f7f1e8;
+  font-size:18px;
+  line-height:1.55;
+}
+.home .principle strong{color:var(--gold);font-weight:600}
+
+/* Make theory -> protocol -> diagnosis feel like one institutional apparatus. */
+.home .instrument{
+  margin:0 -28px;
+  padding:76px 54px 80px;
+  background:var(--gold);
+  border-top:1px solid var(--ink);
+  border-bottom:1px solid var(--ink);
+}
+.home .protocolPanel{background:var(--dark)!important;color:#f2ece3!important;border-top:4px solid var(--accent)!important}
+.home .protocolPanel h3,.home .protocolPanel p{color:inherit!important}
+.home .protocolPanel small{color:#bdb6ad!important}
+
+.home .archive{padding:76px 0;border-top:0}
+.home .artifactGrid{background:var(--ink);border-color:var(--ink)}
+.home .artifactCard{background:var(--gold);min-height:258px}
+.home .artifactCard:hover{background:var(--gold-deep)}
+.home .profileLine i{background:#9d896b}
+
+.home .theoryBand{
+  background:var(--dark);
+  border-top:5px solid var(--accent);
+}
+.home .bookMark{background:#171714;border-color:#6b6258}
+.home .bookMark>b{color:var(--gold)}
+.home .theoryActions a:last-child{background:var(--accent);border-color:var(--accent)}
+
+.home .creatorDoor{background:var(--gold);color:var(--ink)}
+.home .orgDoor{background:var(--accent)}
+
+@media(max-width:850px){
+  .home .hero{grid-template-columns:1fr;margin-left:-20px;margin-right:-20px;padding:54px 40px 58px}
+  .home .hero::before{left:19px}.home .hero::after{right:19px}
+  .home .routeStrip{margin-left:-20px;margin-right:-20px;padding:0 20px}
+}
+@media(max-width:720px){
+  .home .hero{padding:46px 20px 50px}.home .hero::before,.home .hero::after{display:none}
+  .home .routeStrip{padding:0}.home .routeStrip a{padding-left:20px;padding-right:20px}
+  .home .coordinateGrid{border-left:0;border-right:0}
+  .home .coordinateGrid article+article{border-left:0;border-top:1px solid var(--ink)}
+  .home .principle{border-left:0;border-right:0}
+  .home .instrument{margin-left:-20px;margin-right:-20px;padding:58px 20px 62px}
+}
