@@ -230,3 +230,17 @@
     margin-top:44px!important;
   }
 }
+
+/* Current page-end refinement — finish the analysis in charcoal/grey with no
+   black rule above it, then close the composition with one thin oxblood rule. */
+@media(min-width:761px){
+  .bottomCta{
+    border-bottom:0!important;
+  }
+  .page::after{
+    background:#353432!important;
+    border-top:0!important;
+    border-bottom:1px solid #5b2630!important;
+    box-sizing:border-box;
+  }
+}

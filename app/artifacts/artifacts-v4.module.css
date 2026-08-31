@@ -2065,3 +2065,19 @@
     opacity:1!important;
   }
 }
+
+/* Current refinement — visually finer than the one-pixel rail while retaining a
+   saturated, hard-edged oxblood mark. Keep a whole-pixel source and narrow it
+   geometrically so browsers do not round a fractional CSS width back up. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}

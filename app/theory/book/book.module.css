@@ -861,3 +861,16 @@
     border-right-color:#5b2630!important;
   }
 }
+
+/* Current refinement — same finer, crisp house rail as Artifacts. */
+@media(min-width:981px){
+  .bookPage{
+    border-left-width:1px!important;
+    border-right-width:1px!important;
+    border-left-color:#5b2630!important;
+    border-right-color:#5b2630!important;
+  }
+  /* Visually reduce the whole-pixel border without relying on unsupported
+     fractional border widths. */
+  .bookPage{clip-path:inset(0 0 0 0)}
+}
