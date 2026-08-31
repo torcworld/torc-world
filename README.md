@@ -1,16 +1,13 @@
-TORC Submit Consultancy Rewrite — Build Compatibility v2
+# TORC Submit Consultancy Rewrite — Build Compatibility v3
 
-Base: Archief(7)
+Based on the v2 Submit rewrite package.
 
-Contains only:
-- app/evaluate-your-work/page.tsx
-- app/evaluate-your-work/PricingCards.tsx
-- app/evaluate-your-work/SubmissionForm.tsx
-- app/evaluate-your-work/submit.module.css
-- app/artifact/components/ArtifactAnalysis.tsx
+Additional compatibility correction:
+- `ArtifactAnalysis` now accepts `cms?: number` because artifact records returned by `getArtifact()` type CMS as optional.
+- Missing CMS renders as an em dash instead of forcing a fabricated numeric fallback.
 
-Compatibility fixes in ArtifactAnalysis.tsx:
-1. range is optional because many existing analysis pages omit it and the component does not render it.
-2. title accepts ReactNode because the existing Mulamadhyamakakarika page intentionally uses a JSX title with a line break.
+Previous compatibility fixes retained:
+- `range` is optional.
+- `title` accepts `ReactNode` for intentional JSX titles such as Nāgārjuna's line-broken title.
 
-No navigation, corpus data, artifact analysis copy, global CSS, or artifact pages are changed.
+No navigation, corpus data, artifact copy, or global CSS is included.
