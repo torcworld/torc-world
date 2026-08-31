@@ -1375,3 +1375,55 @@
     transform:translateX(-8px)!important;
   }
 }
+
+/* Batch 87 — black side bands + resting-gold Artifacts hero trial */
+@media(min-width:761px){
+  /* Replace the oxblood hairlines with solid black architectural side bands.
+     Their 28px width exactly occupies the inset beside the search/corpus surfaces,
+     while the center of the page remains charcoal. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:block!important;
+    top:60px!important;
+    bottom:-56px!important;
+    width:28px!important;
+    background:#171714!important;
+    box-shadow:none!important;
+    z-index:0!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+
+  /* Restore the Artifacts arrival field to the quiet resting-navigation gold. */
+  .artifactHeader{
+    background:#d9c7a6!important;
+    color:#171714!important;
+    border-top:4px solid #5b2630!important;
+  }
+  .artifactHeading h1{
+    color:#171714!important;
+  }
+  .artifactHeading :global(.eyebrow){
+    color:#5b2630!important;
+  }
+  .artifactHeroMark{
+    color:#5b2630!important;
+  }
+  .artifactHeroMark i{
+    background:#5b2630!important;
+  }
+  .artifactHeroMark b{
+    color:#171714!important;
+  }
+
+  /* Keep functional surfaces above the black bands and leave the horizontal
+     space between them as the existing charcoal page ground. */
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface,
+  .inlineCompare,
+  .pagination{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
