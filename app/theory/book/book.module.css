@@ -874,3 +874,24 @@
      fractional border widths. */
   .bookPage{clip-path:inset(0 0 0 0)}
 }
+
+/* Requested refinement — visibly finer Theory rails, with the upper bridge restored
+   all the way to the translucent horizontal rule. */
+@media(min-width:981px){
+  .bookPage{
+    border-left-width:.5px!important;
+    border-right-width:.5px!important;
+    border-left-color:#5b2630!important;
+    border-right-color:#5b2630!important;
+  }
+  .bookPage::before{
+    display:block!important;
+    left:-.5px!important;
+    right:-.5px!important;
+    top:-18px!important;
+    height:18px!important;
+    border-left:.5px solid #5b2630!important;
+    border-right:.5px solid #5b2630!important;
+    opacity:1!important;
+  }
+}

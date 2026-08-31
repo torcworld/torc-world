@@ -244,3 +244,23 @@
     box-sizing:border-box;
   }
 }
+
+/* Requested refinement — frame the Six-Dimensional Model with the same black rule
+   at its top that already closes the model below. */
+.cmsSection{
+  border-top:1px solid var(--ink,#171714)!important;
+}
+
+/* Requested refinement — compact grey page-end closure, flush to the two oxblood
+   side fields, with only the oxblood closing rule at the very bottom. */
+@media(min-width:761px){
+  .page::after{
+    height:34px!important;
+    margin-left:-24px!important;
+    margin-right:-24px!important;
+    background:#353432!important;
+    border-top:0!important;
+    border-bottom:1px solid #5b2630!important;
+    box-sizing:border-box!important;
+  }
+}

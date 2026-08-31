@@ -2081,3 +2081,17 @@
     opacity:1!important;
   }
 }
+
+/* Requested refinement — another half-step finer, still saturated and sharp. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.31)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
