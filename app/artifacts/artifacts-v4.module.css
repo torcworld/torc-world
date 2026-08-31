@@ -2051,3 +2051,17 @@
     background:#5b2630!important;
   }
 }
+
+/* Current refinement — one more step toward the Submit-style hairline: fully
+   saturated and sharp, but visually lighter than the previous .75px rail. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:.5px!important;
+    transform:none!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}

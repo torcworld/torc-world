@@ -203,3 +203,30 @@
 .boundary .orderModelCta:hover{
   background:#d9c7a6!important;
 }
+
+/* Current refinement — pull the Cognitive Orders bridge upward by ~1cm while
+   preserving normal-flow spacing for everything that follows. */
+.boundary .orderModelCta{
+  margin-top:70px!important;
+}
+
+/* Carry the resting navigation gold into the final breathing field below the
+   last black rule instead of leaving the page-end field white. Desktop only. */
+@media(min-width:761px){
+  .page{
+    padding-bottom:0!important;
+  }
+  .page::after{
+    content:"";
+    display:block;
+    height:72px;
+    margin:0 -24px;
+    background:#d9c7a6;
+  }
+}
+
+@media(max-width:760px){
+  .boundary .orderModelCta{
+    margin-top:44px!important;
+  }
+}

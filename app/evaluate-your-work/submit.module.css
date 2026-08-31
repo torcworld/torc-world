@@ -540,3 +540,9 @@
 @media(min-width:761px){
   .hero{transform:translateY(-8px)}
 }
+
+/* Current refinement — use the same resting navigation/card gold on the full
+   selected-package explanation panel at desktop sizes too. */
+.packageDetail{
+  background:#d9c7a6!important;
+}
