@@ -1037,3 +1037,34 @@
     border-right-width:.10px!important;
   }
 }
+
+/* Current refinement — one further visual step finer on the two upper/outer
+   Theory hairlines. Lower the desktop Contents dock by ~1 mm, then tuck the
+   opened drawer farther beyond the right viewport edge and narrow it slightly
+   so no pale strip remains at the extreme right. */
+@media(min-width:981px){
+  .bookPage::before{
+    border-left-width:.05px!important;
+    border-right-width:.05px!important;
+  }
+
+  .readerNav{
+    top:42px!important;
+    right:-40px!important;
+    transform:none!important;
+  }
+
+  .readerNavPanel{
+    max-height:calc(100vh - 62px)!important;
+    overflow-y:auto!important;
+  }
+
+  .readerNav:hover .readerNavPanel,
+  .readerNav:focus-within .readerNavPanel,
+  .readerNav[data-open="true"] .readerNavPanel,
+  .readerNav.readerNavIntroOpen .readerNavPanel{
+    width:255px!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+}

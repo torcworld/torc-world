@@ -2410,3 +2410,55 @@
     opacity:1!important;
   }
 }
+
+/* Current refinement — gold corpus/search surround, ambient-ground row hover,
+   and upper oxblood bridge geometry tuned to terminate just below the nav rule. */
+@media(min-width:761px){
+  /* Search/instrument surround and full corpus field use the deeper TORC gold. */
+  .artifactToolsStrong,
+  .corpusSurface{
+    background:#c7aa76!important;
+    color:#171714!important;
+  }
+
+  /* The actual search/select controls remain on the quiet site ground. */
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  /* Artifact rows rest in gold; hover/focus clears back to the ambient site ground. */
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#c7aa76!important;
+    color:#171714!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:var(--bg)!important;
+    color:#171714!important;
+    outline:none!important;
+  }
+
+  /* Pull the short outer bridges down by ~2 mm so their top endpoint no longer
+     overshoots the translucent nav rule, and increase their visible weight by
+     roughly half a CSS pixel relative to the previous hairline. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-62px!important;
+    height:62px!important;
+    width:1px!important;
+    transform:scaleX(.72)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+  .artifactHeader::before{left:-28px!important;right:auto!important}
+  .artifactHeader::after{right:-28px!important;left:auto!important}
+}
