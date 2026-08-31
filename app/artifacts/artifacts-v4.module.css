@@ -1856,3 +1856,13 @@
     height:58px!important;
   }
 }
+
+/* Batch 99 — move the upper guide endpoints another 4px downward only.
+   Keep the approved Batch 97/98 line weight unchanged. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-54px!important;
+    height:54px!important;
+  }
+}

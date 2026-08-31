@@ -324,3 +324,96 @@ a[aria-current="page"].submitLink{
     white-space:nowrap!important;
   }
 }
+
+/* Batch 99 — authoritative desktop/tablet nav restore.
+   This deliberately sits LAST so older 900px mobile rules cannot collapse or hide
+   the TORC lockup and navigation family at desktop/tablet widths. */
+@media(min-width:761px){
+  .brandLockup{
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    flex:0 0 auto!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    justify-content:center!important;
+    gap:4px!important;
+    min-width:220px!important;
+    width:auto!important;
+    padding:0!important;
+    transform:none!important;
+    line-height:1!important;
+  }
+  .brandLockup b{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    font:900 25px/.92 Arial,sans-serif!important;
+    letter-spacing:.19em!important;
+    color:#5b2630!important;
+    white-space:nowrap!important;
+  }
+  .brandLockup span{
+    display:block!important;
+    visibility:visible!important;
+    opacity:1!important;
+    margin-top:3px!important;
+    font:700 8px/1.1 Arial,sans-serif!important;
+    letter-spacing:.13em!important;
+    text-transform:uppercase!important;
+    color:#5e5952!important;
+    white-space:nowrap!important;
+  }
+  .navLinks{
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    width:auto!important;
+    flex:0 0 auto!important;
+    grid-template-columns:none!important;
+    flex-direction:row!important;
+    flex-wrap:nowrap!important;
+    align-items:center!important;
+    justify-content:flex-end!important;
+    gap:10px!important;
+    row-gap:0!important;
+  }
+  .mainLink,
+  .submitLink,
+  .orgLink{
+    display:inline-flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    box-sizing:border-box!important;
+    width:auto!important;
+    min-width:max-content!important;
+    min-height:44px!important;
+    margin:0!important;
+    padding:12px 16px!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    font:700 11px/1 Arial,sans-serif!important;
+    letter-spacing:.10em!important;
+    text-transform:uppercase!important;
+    white-space:nowrap!important;
+  }
+  .mainLink,.submitLink{
+    background:#d9c7a6!important;
+    border:1px solid #b5a07d!important;
+    color:#171714!important;
+  }
+  .mainLink:hover,.mainLink:focus-visible,
+  .submitLink:hover,.submitLink:focus-visible,
+  .mainLink.activeLink,.submitLink.activeLink,
+  .mainLink[aria-current="page"],.submitLink[aria-current="page"]{
+    background:#c7aa76!important;
+    border-color:#8f744e!important;
+    color:#171714!important;
+  }
+  .orgLink{
+    background:#5b2630!important;
+    border:1px solid #4a1e27!important;
+    color:#fff!important;
+  }
+}
