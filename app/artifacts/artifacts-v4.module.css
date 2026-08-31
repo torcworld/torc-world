@@ -2573,3 +2573,73 @@
     letter-spacing:.055em!important;
   }
 }
+
+/* FINAL REFINEMENT — 2026-09-01
+   Compact column alignment, clearer neutral row separators, charcoal compare
+   closure, and a final 1 mm trim to the upper bridge lines. */
+@media (min-width:761px){
+  /* Give the long Cognitive Magnitude heading a little more breathing room. */
+  .artifactTableFour :global(.header)>:nth-child(4) button,
+  .artifactTableFour :global(.header)>:nth-child(4) span{
+    font-size:9.5px!important;
+    letter-spacing:.025em!important;
+    line-height:1.15!important;
+  }
+
+  /* Pull the information columns inward without moving the Artifact title column:
+     Medium + Operational Order ~0.5 cm left, Cognitive Magnitude ~1 cm left. */
+  .artifactTableFour :global(.row)>:nth-child(2),
+  .artifactTableFour :global(.row)>:nth-child(3){
+    position:relative!important;
+    left:-19px!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(4){
+    position:relative!important;
+    left:-38px!important;
+  }
+
+  /* Replace the oxblood separators with a clearer charcoal row structure. */
+  .artifactTableFour :global(.header){
+    border-top-color:#575653!important;
+    border-bottom-color:#575653!important;
+  }
+  .artifactTableFour :global(a.row:not(.header)){
+    border-bottom:2px solid #575653!important;
+  }
+  .artifactTableFour,
+  .pagination{
+    border-color:#575653!important;
+  }
+
+  /* Compare Artifacts becomes a charcoal closing field. */
+  .inlineCompare{
+    background:#353432!important;
+    color:#f8f3e8!important;
+    border-color:#575653!important;
+  }
+  .inlineCompareHead :global(.eyebrow){
+    color:#f8f3e8!important;
+  }
+  .inlineCompareHead h2{
+    color:#d9c7a6!important;
+  }
+  .inlineCompare .inlinePicker>label{
+    color:#f8f3e8!important;
+  }
+
+  /* Keep the actual artifact selectors in their existing material treatment. */
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    /* Intentionally no background override here: preserve current control colours. */
+  }
+
+  /* Final upper-bridge trim: stop ~1 mm lower while preserving the current
+     outer-edge alignment and visual weight. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-58px!important;
+    height:58px!important;
+  }
+}
