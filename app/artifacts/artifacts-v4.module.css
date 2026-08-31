@@ -2270,3 +2270,76 @@
     opacity:1!important;
   }
 }
+
+/* Requested refinement — restore the oxblood architectural ground while keeping
+   the actual corpus rows and working surfaces on the site ground. The charcoal
+   hero is inset by the same 28px as the functional surfaces, exposing equal
+   oxblood side fields and tightening the hero composition symmetrically. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#5b2630!important;
+  }
+
+  .artifactHeader{
+    margin-top:60px!important;
+    margin-left:28px!important;
+    margin-right:28px!important;
+    width:calc(100% - 56px)!important;
+    box-sizing:border-box!important;
+    background:#353432!important;
+  }
+
+  /* Functional surfaces remain the ambient site ground; individual artifact
+     rows are explicitly kept on that same ground with black typography. */
+  .artifactToolsStrong,
+  .corpusSurface,
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap,
+  .artifactTableFour :global(a.row:not(.header)){
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  /* Navigation-button resting ochre remains the interaction state. */
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible),
+  .controlLabel select:hover,
+  .controlLabel input:hover,
+  .inlineSelected:hover,
+  .inlineSelected:focus-visible,
+  .inlineOptions button:hover,
+  .inlineOptions button:focus-visible,
+  .inlineSwap:hover,
+  .inlineSwap:focus-visible{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  /* Shorten the two upper bridges slightly so they terminate exactly at the
+     translucent navigation rule, and make all frame hairlines one further step
+     finer while keeping them fully saturated oxblood. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-74px!important;
+    height:74px!important;
+    width:1px!important;
+    transform:scaleX(.31)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.31)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
