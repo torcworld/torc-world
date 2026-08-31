@@ -1,17 +1,16 @@
-# TORC Organizations luxury pass + navigation correction
+TORC Submit Consultancy Rewrite — build compatibility revision
 
-This patch does three things:
+Base: Archief(7).zip
 
-1. Fixes the failed Organizations luxury patch by removing the accidentally reintroduced global `:root{}` selector from the CSS module.
-2. Keeps all of the richer warm/oxblood Organizations styling and hover behavior.
-3. Refines the main navigation:
-   - standard links: Artifacts · Theory · Compare · About
-   - warm creator CTA: Submit Your Artifact
-   - deep oxblood institutional CTA at the far right: Organizations
+Includes only:
+- app/evaluate-your-work/page.tsx
+- app/evaluate-your-work/PricingCards.tsx
+- app/evaluate-your-work/SubmissionForm.tsx
+- app/evaluate-your-work/submit.module.css
+- app/artifact/components/ArtifactAnalysis.tsx
 
-Files:
-- app/for-organizations/organizations.module.css
-- app/layout.tsx
-- app/nav.module.css
+Build compatibility fix:
+`range` in ArtifactAnalysis Props is optional (`range?: string`).
+The component does not render or use `range`, and many existing static artifact pages in Archief(7) do not pass it. Making it optional restores compatibility without changing any artifact copy or layout.
 
-No API, SMTP, submission backend, artifact data, Theory content, About content, or payment code is changed.
+No navigation, artifact-page copy, corpus data, global CSS, or other routes are changed.

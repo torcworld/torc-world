@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './artifact-analysis.module.css';
 
 type Dim={key:string;name:string;score:string;artifact:string};
-type Props={domain:string;year:string;title:string;creator:string;order:string;orderName:string;cms:number;range:string;headline:string;analysis:string[];dimensions?:Dim[];boundaryTitle:string;boundary:string[];exceptionalTitle:string;exceptional:string[]};
+type Props={domain:string;year:string;title:string;creator:string;order:string;orderName:string;cms:number;range?:string;headline:string;analysis:string[];dimensions?:Dim[];boundaryTitle:string;boundary:string[];exceptionalTitle:string;exceptional:string[]};
 const defs:Record<string,[string,string]>= {
  RL:['Relational Load','How many meaningful relationships must the artifact maintain and coordinate simultaneously?'],
  AD:['Abstraction Depth','How far can the artifact move beyond the concrete case toward deeper or more general structures while preserving relevant distinctions?'],
