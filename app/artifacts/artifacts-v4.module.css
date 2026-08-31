@@ -1803,3 +1803,24 @@
   .artifactHeader::before{left:0!important;right:auto!important}
   .artifactHeader::after{right:0!important;left:auto!important}
 }
+
+/* Batch 96 — literal global ground + restored upper navigation guide */
+@media(min-width:761px){
+  /* Do not approximate the surrounding page colour locally: use the exact global
+     site-ground token that the navigation sits on, so the Artifacts gaps and side
+     fields are mathematically identical to the rest of the site. */
+  .artifactsPage{
+    background:var(--bg)!important;
+    box-shadow:0 0 0 100vmax var(--bg)!important;
+    border-top:1px solid rgba(201,195,184,.78)!important;
+  }
+
+  /* Keep the two oxblood hairlines on the hero edges. Their explicit 52px upper
+     extensions from Batch 95 now terminate against the restored horizontal rule. */
+  .artifactsPage::before,
+  .artifactsPage::after,
+  .artifactHeader::before,
+  .artifactHeader::after{
+    background:rgba(91,38,48,.50)!important;
+  }
+}
