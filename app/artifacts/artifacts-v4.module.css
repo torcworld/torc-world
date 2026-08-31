@@ -2515,61 +2515,61 @@
   }
 }
 
-/* Current experiment — narrow only the corpus/results stage below the search
-   console. The outer page/header geometry stays intact; the oxblood fields step
-   inward around the results so the moving rows read as a tighter instrument. */
-@media(min-width:861px){
-  /* Lift the complete Artifacts composition another ~3–4 mm toward the nav rule. */
+/* FINAL FORCE OVERRIDE — 2026-09-01
+   This block intentionally sits last in the active Artifacts stylesheet so the
+   requested corpus geometry/background cannot be cancelled by older experiments. */
+@media (min-width:761px){
+  /* Move the ENTIRE Artifacts composition up by ~2 mm. */
   .artifactsPage{
-    margin-top:-3px!important;
-  }
-
-  /* Keep search at the broad page width; inset the corpus by ~5 cm total. */
-  .corpusSurface{
     position:relative!important;
-    margin-left:25px!important;
-    margin-right:25px!important;
-    padding-left:18px!important;
-    padding-right:18px!important;
+    top:-8px!important;
+  }
+
+  /* Keep the detached outer guides on the outside oxblood edges and extend them
+     by the same 8px so their upper endpoints still meet the navigation rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-62px!important;
+    height:62px!important;
+  }
+  .artifactHeader::before{left:-28px!important;right:auto!important}
+  .artifactHeader::after{right:-28px!important;left:auto!important}
+
+  /* Search area stays full width. From the corpus onward, expose much broader
+     oxblood side fields: ~140px each side, i.e. about 3cm farther inward than
+     the original 28px inset. */
+  .corpusSurface{
+    margin-left:140px!important;
+    margin-right:140px!important;
+    width:auto!important;
+    max-width:none!important;
     box-sizing:border-box!important;
+    background:var(--bg)!important;
+    color:#171714!important;
   }
 
-  /* Oxblood shoulders created by the inset: visually continue the side fields
-     inward from the point where the actual artifact corpus begins. */
-  .corpusSurface::before,
-  .corpusSurface::after{
-    content:"";
-    position:absolute;
-    top:0;
-    bottom:0;
-    width:25px;
-    background:#5b2630;
-    pointer-events:none;
-    z-index:0;
+  /* Entire artifact list uses the site's ambient ground; hover uses the same
+     light ochre as the resting navigation buttons/search interaction. */
+  .artifactTableFour,
+  .artifactTableFour :global(.row),
+  .artifactTableFour :global(a.row:not(.header)){
+    background:var(--bg)!important;
+    color:#171714!important;
   }
-  .corpusSurface::before{left:-25px}
-  .corpusSurface::after{right:-25px}
-  .corpusSurface > *{position:relative;z-index:1}
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#d9c7a6!important;
+    color:#171714!important;
+    outline:none!important;
+  }
 
-  /* Rebalance the tighter four-column table rather than simply squeezing it. */
+  /* Compact the four columns so order and magnitude read as a tighter unit. */
   .artifactTableFour :global(.row){
-    grid-template-columns:
-      minmax(220px,1.48fr)
-      minmax(135px,.82fr)
-      minmax(165px,.92fr)
-      minmax(205px,1.12fr)!important;
-    column-gap:18px!important;
+    grid-template-columns:minmax(0,1.65fr) minmax(105px,.72fr) minmax(122px,.72fr) minmax(132px,.78fr)!important;
+    column-gap:14px!important;
   }
-  .tableHeader button,
-  .tableHeader span{
-    font-size:13px!important;
-  }
-  .sortArrow{font-size:17px!important}
-
-  /* Undo older hand-positioning that becomes unnecessary in the tighter grid. */
-  .artifactTableFour :global(.row:not(.header))>:nth-child(3),
-  .artifactTableFour :global(.row:not(.header))>:nth-child(4),
-  .artifactTableFour :global(.header)>:nth-child(4){
-    transform:none!important;
+  .tableHeader button{
+    font-size:11px!important;
+    letter-spacing:.055em!important;
   }
 }
