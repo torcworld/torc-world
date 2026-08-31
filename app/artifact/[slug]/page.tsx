@@ -122,12 +122,12 @@ const orderNames:Record<string,string>={
 function GenericArtifact({a}:{a:NonNullable<ReturnType<typeof getArtifact>>}){
  const featured=featuredAnalyses[a.slug];
  if(featured){
-  return <ArtifactAnalysis domain={a.domain} year={a.year} title={a.title} creator={a.creator} order={a.torc??'—'} orderName={orderNames[a.torc??'']??'Operational Order'} cms={a.cms} range='Median across 7 evaluations'
+  return <ArtifactAnalysis domain={a.domain} year={a.year} title={a.title} creator={a.creator} order={a.torc??'—'} orderName={orderNames[a.torc??'']??'Operational Order'} cms={a.cms ?? 0} range='Production CMS'
    headline={featured.headline} analysis={featured.analysis} dimensions={featured.dimensions}
    boundaryTitle={featured.boundaryTitle} boundary={featured.boundary}
    exceptionalTitle={featured.exceptionalTitle} exceptional={featured.exceptional}/>;
  }
- return <ArtifactAnalysis domain={a.domain} year={a.year} title={a.title} creator={a.creator} order={a.torc??'—'} orderName={orderNames[a.torc??'']??'Operational Order'} cms={a.cms} range='Corpus determination'
+ return <ArtifactAnalysis domain={a.domain} year={a.year} title={a.title} creator={a.creator} order={a.torc??'—'} orderName={orderNames[a.torc??'']??'Operational Order'} cms={a.cms ?? 0} range='Corpus determination'
  headline={`TORC resolves the completed artifact at ${a.torc}.`}
  analysis={[
   `The corpus determination for ${a.title} is ${a.torc}, with a Cognitive Magnitude Score of ${a.cms}. Operational Order and magnitude were determined independently under the TORC protocol.`,
