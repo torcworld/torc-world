@@ -2609,3 +2609,62 @@
   }
   .sortArrow{font-size:16px!important}
 }
+
+/* Current refinement — move the complete Artifacts composition ~2 mm upward,
+   return the corpus rows to the ambient site ground with light-ochre hover, and
+   tighten the results stage a further ~2 cm per side so the oxblood shoulders
+   carry more visual weight. */
+@media(min-width:861px){
+  /* ~2 mm upward from the previous visible state. Because the bridge hairlines
+     are attached to this composition, their upper endpoints move up with it and
+     close the remaining gap to the translucent nav rule. */
+  .artifactsPage{
+    margin-top:-11px!important;
+  }
+
+  /* Narrow the results stage further: previous 95px inset + ~80px extra per side. */
+  .corpusSurface{
+    margin-left:175px!important;
+    margin-right:175px!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  .corpusSurface::before,
+  .corpusSurface::after{
+    width:175px!important;
+    background:#5b2630!important;
+  }
+  .corpusSurface::before{left:-175px!important}
+  .corpusSurface::after{right:-175px!important}
+
+  /* Every artifact rests on the same ambient ground as the search controls;
+     hover/focus uses the light navigation ochre. */
+  .artifactTableFour :global(a.row:not(.header)){
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#d9c7a6!important;
+    color:#171714!important;
+    outline:none!important;
+  }
+
+  /* Rebalance the tighter corpus so the four data columns remain legible. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:
+      minmax(170px,1.42fr)
+      minmax(100px,.76fr)
+      minmax(125px,.9fr)
+      minmax(150px,1.06fr)!important;
+    column-gap:12px!important;
+  }
+  .tableHeader button,
+  .tableHeader span{
+    font-size:11.5px!important;
+  }
+  .sortArrow{font-size:15px!important}
+}
