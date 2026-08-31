@@ -1846,3 +1846,13 @@
     background:rgba(91,38,48,.56)!important;
   }
 }
+
+/* Batch 98 — lower only the TOP endpoint of the upper oxblood guides by 4px.
+   Bottom remains attached to the two top corners of the Artifacts hero. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-58px!important;
+    height:58px!important;
+  }
+}

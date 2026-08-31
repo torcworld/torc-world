@@ -266,3 +266,61 @@ a[aria-current="page"].submitLink{
     white-space:nowrap!important;
   }
 }
+
+/* Batch 98 — restore desktop/tablet navigation family from 761px upward.
+   The earlier 900px mobile breakpoint was hiding the TORC lockup and collapsing
+   the navigation at desktop-like widths. Keep the true mobile treatment <=760px. */
+@media (min-width:761px) and (max-width:900px){
+  .brandLockup{
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:4px!important;
+    min-width:190px!important;
+    padding:3px 0!important;
+    line-height:1!important;
+  }
+  .brandLockup b{
+    display:block!important;
+    font:900 20px/1 Arial,sans-serif!important;
+    letter-spacing:.18em!important;
+    color:#5b2630!important;
+  }
+  .brandLockup span{
+    display:block!important;
+    margin-top:0!important;
+    font:700 7.5px/1.1 Arial,sans-serif!important;
+    letter-spacing:.12em!important;
+    text-transform:uppercase!important;
+    color:#5e5952!important;
+    white-space:nowrap!important;
+  }
+  .navLinks{
+    width:auto!important;
+    display:flex!important;
+    flex-wrap:nowrap!important;
+    grid-template-columns:none!important;
+    justify-content:flex-end!important;
+    align-items:center!important;
+    gap:8px!important;
+    row-gap:0!important;
+  }
+  .mainLink,
+  .submitLink,
+  .orgLink{
+    box-sizing:border-box!important;
+    width:auto!important;
+    min-height:42px!important;
+    margin:0!important;
+    padding:11px 13px!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+    font-size:10px!important;
+    line-height:1!important;
+    font-weight:700!important;
+    letter-spacing:.09em!important;
+    white-space:nowrap!important;
+  }
+}
