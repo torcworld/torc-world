@@ -2643,3 +2643,56 @@
     height:58px!important;
   }
 }
+
+/* CURRENT REFINEMENT — stepped Artifacts widths + full charcoal Compare closure.
+   Hero stays full width; search sits exactly midway between hero and compact corpus. */
+@media (min-width:761px){
+  /* The corpus currently sits 140px in from each side, so 70px creates the
+     visual midpoint: full-width hero -> narrower search -> compact corpus. */
+  .artifactToolsStrong{
+    margin-left:70px!important;
+    margin-right:70px!important;
+    width:auto!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Keep the actual search/filter controls and their colour treatment unchanged;
+     the reduced panel width naturally shortens the long Search field. */
+
+  /* Turn the complete Compare region into one uninterrupted charcoal block.
+     Bleed through the corpus padding so no pale/red strip remains around it. */
+  .inlineCompare{
+    margin-left:-10px!important;
+    margin-right:-10px!important;
+    margin-bottom:-30px!important;
+    padding:28px 30px 30px!important;
+    background:#353432!important;
+    color:#f8f3e8!important;
+    border-top:0!important;
+    border-left:0!important;
+    border-right:0!important;
+    border-bottom:0!important;
+    box-shadow:none!important;
+  }
+  .inlineCompareHead :global(.eyebrow){
+    color:#f8f3e8!important;
+  }
+  .inlineCompareHead h2{
+    color:#d9c7a6!important;
+  }
+  .inlineCompare .inlinePicker>label{
+    color:#f8f3e8!important;
+  }
+
+  /* Trial requested for the two Choose-an-Artifact controls: light ochre inside
+     the charcoal field, while keeping the existing dark typography. */
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+}
