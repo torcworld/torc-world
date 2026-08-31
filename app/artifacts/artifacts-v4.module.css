@@ -1427,3 +1427,44 @@
     z-index:1!important;
   }
 }
+
+/* Batch 88 — restore black Artifacts hero; light-ochre functional field; black lower closure */
+@media(min-width:761px){
+  /* Restore the arrival field exactly to the black/white treatment from Batch 86. */
+  .artifactHeader{
+    background:#171714!important;
+    color:#f3eee6!important;
+    border-top:4px solid #5b2630!important;
+  }
+  .artifactHeading h1{color:#f3eee6!important}
+  .artifactHeading :global(.eyebrow){color:#d9c7a6!important}
+  .artifactHeroMark{color:#d9c7a6!important}
+  .artifactHeroMark i{background:#5b2630!important}
+  .artifactHeroMark b{color:#f3eee6!important}
+
+  /* Search + corpus/list + compare become the quieter light ochre material.
+     The charcoal gaps between those fields remain untouched. */
+  .artifactToolsStrong,
+  .corpusSurface,
+  .controlLabel select,
+  .controlLabel input{
+    background:#d9c7a6!important;
+  }
+  .controlLabel select option{background:#d9c7a6!important}
+  .inlineCompare{background:transparent!important}
+
+  /* Keep the black side bands from Batch 87 and close the composition in black
+     beneath Compare Artifacts instead of returning to charcoal at the foot. */
+  .artifactsPage{
+    background:linear-gradient(to bottom,
+      #353432 0,
+      #353432 calc(100% - 52px),
+      #171714 calc(100% - 52px),
+      #171714 100%)!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    background:#171714!important;
+    bottom:-56px!important;
+  }
+}
