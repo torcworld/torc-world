@@ -9,6 +9,58 @@ export type FeaturedAnalysis={
 };
 
 export const featuredAnalyses:Record<string,FeaturedAnalysis>={
+ 'a-confederacy-of-dunces':{
+  headline:'The satire works because reality remains visible while nearly everyone invents a version of it that protects themselves.',
+  analysis:[
+   'The novel’s governing achievement is an exceptionally dense symbolic and satirical organization of social reality. Ignatius’s medievalist cosmology, Myrna’s activist counter-position, Levy Pants, the Night of Joy, Mancuso’s policing, Jones’s coerced employment and Mrs. Reilly’s family dependence all become systems through which characters explain themselves while repeatedly misreading what their actions produce.',
+   'That recursive pressure makes 3a the strongest higher candidate, but it does not become the completed artifact’s governing operation. The comedy depends on a stable distinction between the characters’ self-conceptions and what the novel lets the reader see. Ignatius can convert failure into confirmation of his worldview precisely because the artifact does not have to share his loss of orientation.',
+   'Level 2 is therefore sufficient. The final convergence reorganizes an enormous number of remote strands, but it does so as symbolic-comic architecture rather than as a demonstrated fracture in the conditions by which reality can be identified. The five evaluations are unanimous on the Order: 2 ×5.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'8.3',artifact:'A large ensemble of characters, workplaces, schemes, letters, institutions and misunderstandings remains causally interdependent across long narrative distances.'},
+   {key:'AD',name:'Abstraction Depth',score:'7.2',artifact:'Ideology, self-deception, status, exploitation and competing pictures of order operate above the immediate comedy, but the abstraction remains anchored in character and social satire.'},
+   {key:'CD',name:'Constraint Density',score:'7.8',artifact:'Distinctive voices, intersecting plots, causal reversals, chronology and late payoffs impose many coupled requirements while still leaving meaningful alternative constructions possible.'},
+   {key:'ID',name:'Inferential Distance',score:'7.0',artifact:'The novel discovers non-obvious relations among apparently separate personalities and institutions, but much of the route is supplied through cumulative characterization and comic causality.'},
+   {key:'IC',name:'Integrative Compression',score:'8.1',artifact:'A relatively small set of mechanisms—self-deception, reciprocal exploitation, ideological inversion and accidental consequence—organizes a remarkably heterogeneous social field.'},
+   {key:'GR',name:'Generalization Reach',score:'6.5',artifact:'The architecture transfers well to bureaucracy, status, ideological rationalization and institutional absurdity, but remains substantially embedded in a particular human-social ecology.'}
+  ],
+  boundaryTitle:'Why Level 2 rather than 3a?',
+  boundary:[
+   'The 3a case is real because the novel repeatedly shows pathological external systems reproducing distorted beliefs and behavior. But pathology alone is not enough. A higher Order would have to make consciousness’s orientation toward reality itself structurally problematic as the governing operation.',
+   'Here the artifact preserves a stable satirical standpoint. The reader can still diagnose the mismatch between Ignatius’s representations, the institutions around him and observable consequences. Symbolic organization therefore remains sufficient, so the Operational Order stops at 2.'
+  ],
+  exceptionalTitle:'Its cognitive scale is carried by orchestration, not by promotion of Order.',
+  exceptional:[
+   'The five CMS runs range from 723 to 772, with a median of 743. The profile peaks in Relational Load and Integrative Compression: Toole coordinates a crowded social ecology without needing a higher governing operation.',
+   'That makes the novel a useful TORC case because high magnitude and lower Operational Order remain cleanly separated rather than being collapsed into one prestige score.'
+  ]
+ },
+ 'genius-the-natural-history-of-creativity':{
+  headline:'Creativity is relocated from an exceptional trait into a causal architecture that tries to explain how exceptional achievement is generated.',
+  analysis:[
+   'Eysenck’s governing move is not simply to collect correlates of genius. The book attempts to connect intelligence, associative breadth, inhibition, psychoticism, personality, psychopathology, biological variables, motivation and environment into a multilevel account of how creative potential can become exceptional achievement.',
+   'That clears G because the target exists independently of Eysenck’s vocabulary and the proposed mechanism is exposed to evidence that can constrain or defeat it. The book repeatedly distinguishes supported links from speculative ones; empirical weakness in particular links limits magnitude and robustness, but does not turn the theory into a self-sealing construction.',
+   'The relocation is explanatory: genius is no longer adequately organized as merely very high intelligence, mysterious inspiration or a list of personality correlates. The completed artifact asks what interacting mechanisms generate the observed phenomenon. All five evaluations resolve the Order at G.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'8.7',artifact:'Intelligence, personality, psychoticism, psychopathology, associative cognition, inhibition, biology, motivation, environment and achievement are made mutually consequential across several explanatory levels.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'The argument moves from observed creative achievement through psychometrics and latent traits toward cognitive and biological mechanisms while preserving a recognizable causal architecture.'},
+   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'The model must reconcile heterogeneous psychometric, experimental, clinical and biological obligations, although several cross-level links remain explicitly provisional.'},
+   {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'Connecting psychopathology-related traits and altered associative or inhibitory processes to productive creativity requires a substantial non-routine reconstruction of dispersed findings.'},
+   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A comparatively economical multilevel model compresses a large literature spanning biology, cognition, personality, creativity and achievement while preserving many internal distinctions.'},
+   {key:'GR',name:'Generalization Reach',score:'7.9',artifact:'The architecture reaches across artistic, scientific and other forms of creative achievement, but its strongest transfer remains within the creativity/genius problem-family.'}
+  ],
+  boundaryTitle:'Why G rather than Level 3—or GΩ?',
+  boundary:[
+   'Level 3 is insufficient because the governing achievement is not a recursive fracture or integration in consciousness’s orientation toward reality. The artifact is principally constructing a constrained causal explanation of an independently identifiable phenomenon.',
+   'GΩ is not established. The five evaluations agree that later creativity research can revise, replace or bypass Eysenck’s specific psychoticism/inhibition architecture without thereby becoming inadequate. The explanatory relocation is achieved, but successor-baseline necessity is not.'
+  ],
+  exceptionalTitle:'The G result survives because the theory takes explanatory risk.',
+  exceptional:[
+   'The five CMS runs range from 800 to 865, with a median of 833. Integrative Compression is the median peak, followed by Relational Load and Abstraction Depth: the distinctive accomplishment is multilevel synthesis rather than one isolated claim.',
+   'TORC does not require every proposed mechanism to remain scientifically correct forever. What matters for the Order is that the completed artifact genuinely relocates explanation under independent constraint instead of merely redescribing the target.'
+  ]
+ },
  'the-logic-of-scientific-discovery':{
   headline:'Science becomes rational not by proving itself right, but by exposing where it could be wrong.',
   analysis:[

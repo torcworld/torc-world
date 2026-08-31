@@ -60,5 +60,7 @@ export const artifacts:Artifact[]=[
 {slug:'in-search-of-lost-time',title:'À la recherche du temps perdu',creator:'Marcel Proust',year:'1913–1927',domain:'Literature',status:'evaluated',torc:'3c',cms:913,rl:9.7,ad:9.1,cd:9.1,id:9.2,ic:9.6,gr:8.1},
 {slug:'dream-of-the-red-chamber',title:'Dream of the Red Chamber',creator:'Cao Xueqin et al.',year:'18th century',domain:'Literature',status:'evaluated',torc:'3c',cms:853,rl:9.5,ad:8.5,cd:8.7,id:8.2,ic:8.6,gr:7.7},
 {slug:'one-hundred-years-of-solitude',title:'One Hundred Years of Solitude',creator:'Gabriel García Márquez',year:'1967',domain:'Literature',status:'evaluated',torc:'3b',cms:887,rl:9.2,ad:8.8,cd:8.7,id:8.6,ic:9.2,gr:8.3},
+{slug:'a-confederacy-of-dunces',title:'A Confederacy of Dunces',creator:'John Kennedy Toole',year:'1980',domain:'Literature',status:'evaluated',torc:'2',cms:743,rl:8.3,ad:7.2,cd:7.8,id:7.0,ic:8.1,gr:6.5},
+{slug:'genius-the-natural-history-of-creativity',title:'Genius: The Natural History of Creativity',creator:'H. J. Eysenck',year:'1995',domain:'Science',status:'evaluated',torc:'G',cms:833,rl:8.7,ad:8.6,cd:8.0,id:8.1,ic:8.8,gr:7.9},
 ]
 export function getArtifact(slug:string){return artifacts.find(a=>a.slug===slug)}
