@@ -148,3 +148,48 @@
     padding-bottom:64px !important;
   }
 }
+
+/* Gold cognitive-architecture trial.
+   Carry the entire Six-Dimensional Model field in the same deep TORC gold used by
+   the active controls, from the pale upper divider through the model itself. */
+.cmsSection{
+  background:#c7aa76!important;
+  margin-left:-28px!important;
+  margin-right:-28px!important;
+  padding-left:28px!important;
+  padding-right:28px!important;
+  padding-top:54px!important;
+  padding-bottom:112px!important;
+  border-top:1px solid var(--line,#c9c3b8)!important;
+  border-bottom:1px solid var(--ink,#171714)!important;
+}
+
+/* Keep the dimensional list's existing black rule beneath the six dimensions;
+   the extra gold below it is intentional breathing room before the second rule. */
+.cmsSection .dimensions::after{
+  background:var(--ink,#171714)!important;
+}
+
+/* The Cognitive Orders bridge uses the same deep-gold material. Move it lower in
+   normal document flow so its existing space below remains intact. */
+.boundary .orderModelCta{
+  background:#c7aa76!important;
+  margin-top:108px!important;
+  border-color:var(--ink,#171714)!important;
+}
+.boundary .orderModelCta:hover{
+  background:#c7aa76!important;
+}
+
+@media(max-width:760px){
+  .cmsSection{
+    margin-left:0!important;
+    margin-right:0!important;
+    padding-left:20px!important;
+    padding-right:20px!important;
+    padding-bottom:86px!important;
+  }
+  .boundary .orderModelCta{
+    margin-top:82px!important;
+  }
+}

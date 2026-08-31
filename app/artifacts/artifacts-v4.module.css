@@ -2024,3 +2024,16 @@
     transform:scaleX(.50)!important;
   }
 }
+
+/* Current refinement — make the Artifacts frame genuinely hairline-sharp rather than
+   visually soft: one physical pixel, solid oxblood, no transform antialiasing. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:none!important;
+    background:#5b2630!important;
+  }
+}

@@ -1,12 +1,9 @@
-# TORC Theory + Artifact Analysis dual-field refinement
+TORC analysis/gold trial patch
 
-This patch changes only three CSS modules.
+Changes only:
+1. Artifacts desktop frame rails: 1px physical solid oxblood, no scale transform, for a finer but sharper/brighter line.
+2. Artifact Analysis: the Six-Dimensional Model section is deep gold (#c7aa76), including the model rows, with the existing black divider below the dimensions, about 3cm of additional gold below it, then a black closing rule.
+3. "Explore the 7 Cognitive Orders" CTA is deep gold and moved lower while remaining in normal flow, preserving the space after it.
+4. Artifact Analysis left/right oxblood side fields now continue to the bottom of the frame.
 
-- Theory / Book (desktop): extends the existing left and right oxblood fields outward until they meet the thin outer frame rails. The space above the book remains light/open.
-- Artifact Analysis (desktop): centers the analysis column and introduces equal oxblood fields on both sides. The analysis/header column begins at the same vertical level as the side fields. Mobile analysis remains unchanged.
-- Artifacts: makes the existing side frame rails one final small step finer than the previous version, while still retaining more presence than the original hairline.
-
-Files:
-- app/theory/book/book.module.css
-- app/artifact/artifact-frame.module.css
-- app/artifacts/artifacts-v4.module.css
+No Theory, Submit, navigation, artifact copy, or protocol content changed.

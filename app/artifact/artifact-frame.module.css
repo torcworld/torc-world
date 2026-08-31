@@ -186,3 +186,12 @@
     display:none!important;
   }
 }
+
+/* Extend both artifact-analysis oxblood side fields all the way to the bottom of
+   the framed analysis composition. */
+@media(min-width:981px){
+  .frame::before,
+  .frame::after{
+    bottom:0!important;
+  }
+}
