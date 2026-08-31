@@ -1503,3 +1503,81 @@
     z-index:1!important;
   }
 }
+
+/* Batch 90 — charcoal framing + oxblood rules + quieter corpus rhythm trial */
+@media(min-width:761px){
+  /* Replace the remaining black architectural material with TORC charcoal. */
+  .artifactHeader{
+    background:#353432!important;
+    color:#f3eee6!important;
+  }
+  .artifactHeading h1{color:#f3eee6!important}
+  .artifactHeading :global(.eyebrow){color:#d9c7a6!important}
+  .artifactHeroMark{color:#d9c7a6!important}
+  .artifactHeroMark b{color:#f3eee6!important}
+
+  .artifactsPage::before,
+  .artifactsPage::after{
+    background:#353432!important;
+  }
+
+  /* Search console itself uses the pale site ground; its internal fields stop reading white. */
+  .artifactToolsStrong{
+    background:#e6dccd!important;
+    border-color:#353432!important;
+  }
+  .controlLabel select,
+  .controlLabel input{
+    background:#e6dccd!important;
+    border-color:#5b2630!important;
+  }
+  .controlLabel select option{background:#e6dccd!important}
+
+  /* Turn the thin horizontal table architecture oxblood instead of black. */
+  .artifactTableFour :global(.header){
+    border-top-color:#5b2630!important;
+    border-bottom-color:#5b2630!important;
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+  }
+  .artifactTableFour :global(.row:not(.header)){
+    border-bottom-color:rgba(91,38,48,.72)!important;
+  }
+  .pagination{
+    border-top-color:#5b2630!important;
+  }
+
+  /* Quiet the list: charcoal typography, slightly lighter weight and tighter rows. */
+  .artifactTableFour :global(.row:not(.header)){
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+  }
+  .artifactTableFour :global(.row:not(.header)) strong,
+  .artifactTableFour :global(.row:not(.header)) b{
+    font-weight:650!important;
+  }
+  .artifactTableFour,
+  .artifactTableFour :global(.row),
+  .tableHeader button,
+  .tableHeader span{
+    color:#353432!important;
+  }
+
+  /* Soften the heavy black enclosures without removing the frame logic. */
+  .corpusSurface{
+    border-color:#353432!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    outline-color:#353432!important;
+  }
+
+  /* The lower closure follows the same charcoal material rather than hard black. */
+  .artifactsPage{
+    background:linear-gradient(to bottom,
+      #e6dccd 0,
+      #e6dccd calc(100% - 52px),
+      #353432 calc(100% - 52px),
+      #353432 100%)!important;
+  }
+}
