@@ -1,0 +1,2611 @@
+.artifactHeader{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(330px,520px);
+  gap:70px;align-items:center;padding:52px 0 96px;margin-bottom:30px;border-bottom:1px solid var(--ink)
+}
+.artifactHeading h1{margin:0 0 13px;font-size:clamp(54px,8vw,94px);line-height:.9;letter-spacing:-.055em}
+.artifactHeading :global(.eyebrow){color:#5b2630;font-weight:700}
+.primaryCta{
+  justify-self:center;width:min(100%,430px);text-align:left;padding:23px 24px;
+  background:linear-gradient(145deg,#eee7dc,#f8f5ef);
+  border:1px solid #c9bfb4;
+  box-shadow:0 11px 26px rgba(45,31,25,.045)
+}
+.primaryCta b,.primaryCta span{display:block}
+.primaryCta b{font-size:18px;line-height:1.25}
+.primaryCta span{margin-top:7px;font:13px/1.5 Arial,sans-serif;color:var(--muted)}
+.primaryCta :global(.button){display:inline-block;margin-top:18px;padding:12px 21px;white-space:nowrap;background:#5b2630;border-color:#5b2630}
+.exploreIntro{margin:0 0 20px;font-size:22px;line-height:1.35}
+.artifactToolsStrong{color:var(--ink)}
+.controlLabel>span{color:var(--ink)!important;opacity:1!important;font-weight:800!important;letter-spacing:.01em}
+.controlLabel select,.controlLabel input{color:var(--ink)!important;border-color:rgba(17,17,17,.38)!important;background:#fbfaf6!important}
+.tableHeader button{color:var(--ink)!important;opacity:1!important;font-weight:800!important;text-decoration:none!important;cursor:pointer}
+.tableHeader button:hover{color:#5b2630!important}
+.tableHeader span{color:var(--ink)!important;opacity:1!important}
+.pagination{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:22px;margin-top:34px;padding-top:23px;border-top:1px solid var(--line)}
+.pagination>button,.pageNumbers button{appearance:none;border:0;background:transparent;color:var(--ink);font:700 13px/1.2 Arial,sans-serif;cursor:pointer;padding:9px 10px}
+.pagination>button:first-child{justify-self:start;padding-left:0}.pagination>button:last-child{justify-self:end;padding-right:0}
+.pagination button:disabled{opacity:.28;cursor:default}.pageNumbers{display:flex;gap:5px;align-items:center}
+.pageNumbers button{min-width:34px;height:34px;border:1px solid transparent}.pageNumbers button:hover{border-color:#a8898f}
+.pageNumbers .activePage{background:#5b2630;color:#fff;border-color:#5b2630}
+.inlineCompare{
+  margin:36px 0 8px;padding:28px;
+  border:1px solid #c9bfb4;
+  background:linear-gradient(135deg,#f2ece3,#faf8f3)
+}
+.inlineCompareHead{margin-bottom:18px}.inlineCompareHead :global(.eyebrow){color:#5b2630;font-weight:700}
+.inlineCompareHead h2{margin:6px 0 0;font-size:21px;line-height:1.2}
+.inlineCompareControls{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);gap:14px;align-items:end}
+.inlinePicker{position:relative}.inlinePicker>label{display:block;margin-bottom:7px;color:var(--ink);font:800 12px/1.2 Arial,sans-serif}
+.inlineSelected{width:100%;min-height:72px;padding:13px 15px;text-align:left;background:#fff;color:var(--ink);border:1px solid rgba(17,17,17,.28);cursor:pointer;transition:border-color .15s ease,box-shadow .15s ease}
+.inlineSelected:hover{border-color:#5b2630;box-shadow:0 7px 17px rgba(55,35,31,.07)}
+.inlineSelected span,.inlineSelected small{display:block}.inlineSelected span{font-size:15px;font-weight:800}
+.inlineSelected small{margin-top:5px;color:var(--muted);font:12px/1.35 Arial,sans-serif}
+.inlineSwap{width:44px;height:44px;margin-bottom:14px;border:1px solid rgba(17,17,17,.28);background:#fff;color:var(--ink);font-size:19px;cursor:pointer;transition:background .15s ease,color .15s ease}
+.inlineSwap:hover{background:#5b2630;color:#fff;border-color:#5b2630}
+.inlineDropdown{position:absolute;z-index:30;left:0;right:0;top:100%;margin-top:5px;padding:9px;background:#fff;border:1px solid var(--ink);box-shadow:0 14px 30px rgba(0,0,0,.09)}
+.inlineDropdown input{width:100%;box-sizing:border-box;padding:10px;border:1px solid var(--line);color:var(--ink)}
+.inlineOptions{max-height:260px;overflow:auto;margin-top:7px}.inlineOptions button{display:block;width:100%;padding:10px;text-align:left;border:0;border-top:1px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.inlineOptions button:hover{background:rgba(91,38,48,.045)}.inlineOptions span,.inlineOptions small{display:block}.inlineOptions span{font-weight:700}.inlineOptions small{margin-top:3px;color:var(--muted)}
+.inlineEmpty{padding:12px;color:var(--muted)}.inlineCompareAction{margin-top:15px;text-align:right}.inlineCompareAction :global(.button){display:inline-block}
+@media(max-width:860px){.artifactHeader{grid-template-columns:1fr;gap:0;align-items:start;padding-bottom:86px}.primaryCta{justify-self:start;width:100%;max-width:460px;margin-top:42px}}
+@media(max-width:620px){
+ .artifactHeader{padding-top:30px;padding-bottom:72px}.primaryCta{margin-top:38px;padding:21px}
+ .primaryCta :global(.button){display:block;width:fit-content}.exploreIntro{font-size:20px}
+ .pagination{grid-template-columns:1fr 1fr;gap:13px}.pageNumbers{grid-column:1/-1;grid-row:1;justify-content:center}
+ .pagination>button:first-child{grid-column:1;grid-row:2}.pagination>button:last-child{grid-column:2;grid-row:2}
+ .inlineCompare{padding:22px 18px}.inlineCompareControls{grid-template-columns:1fr}.inlineSwap{justify-self:center;margin:0;transform:rotate(90deg)}.inlineCompareAction{text-align:left}
+}
+
+
+/* Batch 51 — Artifacts architectural composition trial */
+.artifactsPage{
+  position:relative;
+  isolation:isolate;
+}
+.artifactsPage::before,
+.artifactsPage::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  top:22px;
+  bottom:18px;
+  width:54px;
+  background:#5b2630;
+}
+.artifactsPage::before{left:-82px}
+.artifactsPage::after{right:-82px}
+
+.artifactHeader{
+  grid-template-columns:minmax(0,1fr) auto;
+  gap:72px;
+  min-height:180px;
+  padding:46px 0 58px;
+  margin-bottom:28px;
+  border-bottom:1px solid rgba(91,38,48,.45);
+}
+.corpusMarker{
+  align-self:center;
+  min-width:220px;
+  padding:18px 0 18px 24px;
+  border-left:2px solid #5b2630;
+  text-align:left;
+}
+.corpusMarker b,.corpusMarker span{display:block}
+.corpusMarker b{
+  color:#5b2630;
+  font:700 11px/1.2 Arial,sans-serif;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.corpusMarker span{
+  max-width:230px;
+  margin-top:9px;
+  color:var(--ink);
+  font:400 19px/1.25 Georgia,'Times New Roman',serif;
+}
+
+/* The filter area reads as a quiet instrument panel rather than white form fields. */
+.artifactToolsStrong{
+  padding:20px;
+  border:1px solid rgba(91,38,48,.38);
+  background:#e9e4dc;
+}
+.controlLabel select,
+.controlLabel input{
+  background:#f1ede7!important;
+  border:1px solid #b9afa4!important;
+}
+.controlLabel select:focus,
+.controlLabel input:focus{
+  outline:2px solid rgba(91,38,48,.28);
+  outline-offset:1px;
+  border-color:#5b2630!important;
+}
+
+/* Bring the inline Compare controls into the same material family. */
+.inlineCompare{
+  border-color:rgba(91,38,48,.34);
+  background:#e9e4dc;
+}
+.inlineSelected,.inlineSwap,.inlineDropdown,.inlineOptions button{
+  background:#f1ede7;
+}
+
+@media(max-width:1100px){
+ .artifactsPage::before{left:-58px;width:34px}
+ .artifactsPage::after{right:-58px;width:34px}
+}
+@media(max-width:860px){
+ .artifactHeader{grid-template-columns:1fr;gap:26px;min-height:0;padding-bottom:58px}
+ .corpusMarker{min-width:0;max-width:300px;align-self:start}
+ .artifactsPage::before,.artifactsPage::after{display:none}
+}
+@media(max-width:620px){
+ .artifactToolsStrong{padding:14px}
+ .corpusMarker span{font-size:17px}
+}
+
+
+/* Batch 53 — quieter gold corpus console + inset Compare */
+.artifactToolsStrong{
+  background:#d2bb91;
+  border:1px solid rgba(91,38,48,.55);
+}
+.controlLabel select,.controlLabel input{
+  background:#f1ede7!important;
+  border-color:#aa9f93!important;
+}
+.inlineCompare{
+  margin-left:18px;
+  margin-right:18px;
+  background:#d2bb91;
+  border:1px solid rgba(91,38,48,.58);
+}
+.inlineSelected,.inlineSwap,.inlineDropdown,.inlineOptions button{
+  background:#f1ede7;
+}
+.artifactsPage::before,.artifactsPage::after{
+  bottom:-56px;
+}
+@media(max-width:860px){
+ .inlineCompare{margin-left:0;margin-right:0}
+}
+
+
+/* Batch 54 — four-column corpus table; publication status removed */
+.artifactTableFour :global(.row){
+  grid-template-columns:minmax(260px,2.2fr) minmax(150px,1.15fr) minmax(150px,.9fr) minmax(170px,1fr)!important;
+}
+.artifactTableFour :global(.row)>:nth-child(3),
+.artifactTableFour :global(.row)>:nth-child(4){
+  text-align:right;
+}
+.artifactTableFour :global(.score){
+  font-variant-numeric:tabular-nums;
+  letter-spacing:.01em;
+}
+@media(max-width:860px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:minmax(0,1.7fr) minmax(105px,.85fr) minmax(92px,.65fr) minmax(108px,.72fr)!important;
+ }
+}
+
+
+/* Batch 55 — rebalance four-column corpus table */
+.artifactTableFour :global(.row){
+  grid-template-columns:minmax(250px,1.75fr) minmax(175px,1.05fr) minmax(190px,1.05fr) minmax(235px,1.2fr)!important;
+  column-gap:28px;
+}
+.artifactTableFour :global(.row)>:nth-child(3),
+.artifactTableFour :global(.row)>:nth-child(4){
+  text-align:left!important;
+}
+.tableHeader button,
+.tableHeader span{
+  font-size:14px!important;
+  line-height:1.2;
+}
+.tableHeader button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:8px;
+  width:max-content;
+  max-width:100%;
+}
+.sortArrow{
+  display:inline-block;
+  font-size:20px!important;
+  line-height:.8!important;
+  font-weight:500!important;
+  color:#5b2630!important;
+  transform:translateY(-1px);
+}
+.artifactTableFour :global(.score){
+  text-align:left!important;
+  font-size:16px;
+  font-weight:700;
+}
+@media(max-width:860px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:minmax(0,1.55fr) minmax(110px,.9fr) minmax(115px,.82fr) minmax(135px,.92fr)!important;
+   column-gap:16px;
+ }
+ .tableHeader button,.tableHeader span{font-size:12px!important}
+ .sortArrow{font-size:17px!important}
+}
+
+
+/* Batch 56 — corpus table hierarchy + compare emphasis */
+.artifactTableFour :global(.row){
+  grid-template-columns:
+    minmax(250px,1.55fr)
+    minmax(165px,.92fr)
+    minmax(210px,1.08fr)
+    minmax(285px,1.45fr)!important;
+  column-gap:24px;
+}
+
+/* Column headings now read as TORC structure, not generic table chrome. */
+.tableHeader button,
+.tableHeader span{
+  color:#5b2630!important;
+  font-size:15px!important;
+  font-weight:800!important;
+  letter-spacing:.005em;
+  white-space:nowrap;
+}
+.tableHeader button{
+  padding:7px 9px;
+  margin-left:-9px;
+  border:1px solid transparent;
+  transition:border-color .15s ease,background .15s ease;
+}
+.tableHeader button:hover,
+.tableHeader button:focus-visible{
+  color:#5b2630!important;
+  border-color:#5b2630;
+  background:rgba(217,199,166,.32);
+  outline:none;
+}
+.sortArrow{
+  font-size:21px!important;
+  color:#5b2630!important;
+}
+
+/* Keep result values visually centered beneath their respective result headings. */
+.artifactTableFour :global(.row)>:nth-child(3),
+.artifactTableFour :global(.row)>:nth-child(4){
+  text-align:left!important;
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(3),
+.artifactTableFour :global(.row:not(.header))>:nth-child(4){
+  text-align:center!important;
+}
+.artifactTableFour :global(.score){
+  font-size:16px;
+  font-weight:700;
+}
+
+/* Search/filter environment matches the lighter resting navigation gold. */
+.artifactToolsStrong{
+  background:#d9c7a6!important;
+  border-color:rgba(91,38,48,.5)!important;
+}
+
+/* Compare becomes a visible section rather than a small utility box. */
+.inlineCompare{
+  background:#d9c7a6!important;
+  padding:36px 34px 32px;
+  margin-top:48px;
+}
+.inlineCompareHead{
+  text-align:center;
+  margin:0 auto 28px;
+  max-width:680px;
+}
+.inlineCompareHead :global(.eyebrow){
+  color:#5b2630!important;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:30px;
+  line-height:1.05;
+  font-weight:700;
+  letter-spacing:-.025em;
+  text-transform:none;
+}
+.inlineCompareHead h2{
+  margin:10px 0 0;
+  color:var(--ink);
+  font:400 18px/1.45 Arial,sans-serif;
+}
+.inlineCompareControls{
+  max-width:900px;
+  margin:0 auto;
+}
+.inlineCompareAction{
+  max-width:900px;
+  margin:18px auto 0;
+}
+
+@media(max-width:1050px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:
+     minmax(220px,1.4fr)
+     minmax(145px,.85fr)
+     minmax(185px,1fr)
+     minmax(240px,1.28fr)!important;
+   column-gap:18px;
+ }
+ .tableHeader button,.tableHeader span{font-size:13px!important}
+}
+@media(max-width:860px){
+ .artifactTableFour :global(.row){
+   grid-template-columns:minmax(0,1.45fr) minmax(105px,.78fr) minmax(112px,.8fr) minmax(138px,.92fr)!important;
+ }
+ .tableHeader button,.tableHeader span{
+   white-space:normal;
+   font-size:12px!important;
+ }
+ .artifactTableFour :global(.row:not(.header))>:nth-child(3),
+ .artifactTableFour :global(.row:not(.header))>:nth-child(4){
+   text-align:left!important;
+ }
+ .inlineCompare{padding:28px 20px}
+ .inlineCompareHead :global(.eyebrow){font-size:26px}
+}
+
+
+/* Batch 57 — cleaner Artifacts entrance + full-height architectural side fields */
+.artifactHeader{
+  grid-template-columns:1fr;
+  min-height:0;
+  padding:46px 0 54px;
+  margin-bottom:28px;
+}
+.corpusMarker,
+.exploreIntro{
+  display:none!important;
+}
+
+/* Extend the oxblood architecture upward and make it feel structural rather than decorative. */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-118px;
+  bottom:-76px;
+  width:38px;
+}
+.artifactsPage::before{left:-66px}
+.artifactsPage::after{right:-66px}
+
+/* Nudge TORC result headings and values left for cleaner vertical registration. */
+.artifactTableFour :global(.row)>:nth-child(3){
+  transform:translateX(-8px);
+}
+.artifactTableFour :global(.row)>:nth-child(4){
+  transform:translateX(-12px);
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(3),
+.artifactTableFour :global(.row:not(.header))>:nth-child(4){
+  text-align:center!important;
+}
+@media(max-width:1100px){
+ .artifactsPage::before,.artifactsPage::after{width:28px}
+ .artifactsPage::before{left:-46px}
+ .artifactsPage::after{right:-46px}
+}
+@media(max-width:860px){
+ .artifactHeader{padding-bottom:46px}
+ .artifactsPage::before,.artifactsPage::after{display:none}
+ .artifactTableFour :global(.row)>:nth-child(3),
+ .artifactTableFour :global(.row)>:nth-child(4){transform:none}
+}
+
+
+/* Batch 58 — result registration + quieter search surround */
+@media(min-width:861px){
+  /* Keep the Operational Order heading where it is, but pull its values left. */
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3){
+    transform:translateX(-27px)!important;
+    text-align:center!important;
+  }
+
+  /* Move only the CMS heading right; keep the score values where they currently sit. */
+  .artifactTableFour :global(.header)>:nth-child(4){
+    transform:translateX(7px)!important;
+  }
+  .artifactTableFour :global(.row:not(.header))>:nth-child(4){
+    transform:translateX(-12px)!important;
+    text-align:center!important;
+  }
+
+  /* Pull the search/filter console upward by roughly half a centimetre. */
+  .artifactToolsStrong{
+    margin-top:-18px;
+  }
+}
+
+/* Let the filter surround merge back into the page ground.
+   The thin oxblood border remains as the structural edge. */
+.artifactToolsStrong{
+  background:transparent!important;
+  border:1px solid rgba(91,38,48,.5)!important;
+}
+
+
+/* Batch 59 — black inner rails / oxblood outer fields trial */
+
+/* Replace the oxblood rails with black inner rails. */
+.artifactsPage::before,
+.artifactsPage::after{
+  background:#171714!important;
+  width:22px!important;
+  z-index:-1;
+}
+.artifactsPage::before{left:-42px!important}
+.artifactsPage::after{right:-42px!important}
+
+/* Add oxblood outer fields beyond the black rails. */
+.artifactHeader::before,
+.artifactHeader::after{
+  content:"";
+  position:absolute;
+  z-index:-2;
+  top:-118px;
+  bottom:-76px;
+  width:max(42px,calc((100vw - 1180px)/2));
+  background:#5b2630;
+}
+.artifactHeader::before{right:calc(100% + 42px)}
+.artifactHeader::after{left:calc(100% + 42px)}
+.artifactHeader{position:relative}
+
+/* Remove the extra rule immediately above the search/filter console. */
+.artifactHeader{
+  border-bottom:0!important;
+}
+
+/* Search console keeps only a quiet black structural outline. */
+.artifactToolsStrong{
+  border:1px solid #171714!important;
+}
+
+/* Shift Medium heading and values right to open breathing room after long titles. */
+.artifactTableFour :global(.header)>:nth-child(2){
+  transform:translateX(18px);
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(2){
+  transform:translateX(10px);
+}
+
+@media(max-width:1100px){
+ .artifactsPage::before{left:-32px!important}
+ .artifactsPage::after{right:-32px!important}
+ .artifactHeader::before{right:calc(100% + 32px);width:32px}
+ .artifactHeader::after{left:calc(100% + 32px);width:32px}
+}
+@media(max-width:860px){
+ .artifactHeader::before,.artifactHeader::after{display:none}
+ .artifactTableFour :global(.header)>:nth-child(2),
+ .artifactTableFour :global(.row:not(.header))>:nth-child(2){transform:none}
+}
+
+
+/* Batch 60 — full-height oxblood outer sides + column registration */
+.artifactsPage::before,
+.artifactsPage::after{
+  /* Black structural rails remain on top; the large shadows fill the entire
+     outside edge in oxblood for the full height of the corpus page. */
+  box-shadow:none!important;
+}
+.artifactsPage::before{
+  box-shadow:-55vw 0 0 55vw #5b2630!important;
+}
+.artifactsPage::after{
+  box-shadow:55vw 0 0 55vw #5b2630!important;
+}
+
+/* Remove the temporary header-only outer-field construction from Batch 59. */
+.artifactHeader::before,
+.artifactHeader::after{
+  display:none!important;
+}
+
+/* Move the clickable Artifact heading substantially right. */
+.artifactTableFour :global(.header)>:nth-child(1){
+  transform:translateX(72px);
+}
+
+/* Give Medium more separation from long artifact titles. */
+.artifactTableFour :global(.header)>:nth-child(2){
+  transform:translateX(36px)!important;
+}
+.artifactTableFour :global(.row:not(.header))>:nth-child(2){
+  transform:translateX(25px)!important;
+}
+
+@media(max-width:1050px){
+  .artifactTableFour :global(.header)>:nth-child(1){
+    transform:translateX(44px);
+  }
+  .artifactTableFour :global(.header)>:nth-child(2){
+    transform:translateX(24px)!important;
+  }
+  .artifactTableFour :global(.row:not(.header))>:nth-child(2){
+    transform:translateX(16px)!important;
+  }
+}
+@media(max-width:860px){
+  .artifactTableFour :global(.header)>:nth-child(1),
+  .artifactTableFour :global(.header)>:nth-child(2),
+  .artifactTableFour :global(.row:not(.header))>:nth-child(2){
+    transform:none!important;
+  }
+}
+
+
+/* Batch 61 — monochrome side architecture + frameless search */
+.artifactsPage::before,
+.artifactsPage::after{
+  background:#171714!important;
+}
+.artifactsPage::before{
+  box-shadow:-55vw 0 0 55vw #171714!important;
+}
+.artifactsPage::after{
+  box-shadow:55vw 0 0 55vw #171714!important;
+}
+
+/* Remove the large search/filter outline entirely; page ground remains continuous. */
+.artifactToolsStrong{
+  border:0!important;
+  box-shadow:none!important;
+  outline:0!important;
+}
+
+
+/* Batch 62 — return to ochre outside / black structural rails */
+.artifactsPage::before,
+.artifactsPage::after{
+  background:#171714!important;
+  box-shadow:none!important;
+}
+
+/* Restore the search/filter framing, but lift the complete console upward. */
+.artifactToolsStrong{
+  border:1px solid #171714!important;
+  box-shadow:none!important;
+  outline:0!important;
+}
+@media(min-width:861px){
+  .artifactToolsStrong{
+    transform:translateY(-12px);
+  }
+}
+
+
+/* Batch 63 SAFE — Artifacts in the Submit visual family */
+.artifactHeader{
+  position:relative;
+  display:block!important;
+  min-height:0!important;
+  margin:0 0 24px!important;
+  padding:42px 58px 44px!important;
+  background:#353432!important;
+  border-top:4px solid #5b2630!important;
+  border-bottom:0!important;
+  color:#f3eee6!important;
+}
+.artifactHeading h1{
+  margin:0!important;
+  color:#f3eee6!important;
+  font-size:clamp(48px,6vw,78px)!important;
+  line-height:1.02!important;
+  letter-spacing:-.04em!important;
+}
+.artifactHeading :global(.eyebrow){
+  margin-top:18px;
+  color:#cbbda9!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:18px!important;
+  font-style:italic;
+  text-transform:none!important;
+}
+.artifactToolsStrong{
+  margin:24px 0 0!important;
+  transform:none!important;
+  padding:22px 24px!important;
+  background:#d9c7a6!important;
+  border:2px solid #5b2630!important;
+  box-shadow:none!important;
+}
+@media(max-width:760px){
+  .artifactHeader{padding:36px 24px 38px!important}
+  .artifactHeading h1{font-size:46px!important}
+  .artifactToolsStrong{padding:18px!important}
+}
+
+
+/* Batch 64 — more institutional Artifacts typography + unified gold corpus */
+
+/* Replace the italic subtitle experiment with a restrained institutional label. */
+.artifactHeading :global(.eyebrow){
+  margin-top:20px!important;
+  color:#d9c7a6!important;
+  font-family:Arial,sans-serif!important;
+  font-size:11px!important;
+  font-style:normal!important;
+  font-weight:800!important;
+  line-height:1.2!important;
+  letter-spacing:.19em!important;
+  text-transform:uppercase!important;
+}
+
+/* Search fields become part of the same gold material instead of white inserts. */
+.controlLabel select,
+.controlLabel input{
+  background:#d9c7a6!important;
+  color:#171714!important;
+  border:1px solid rgba(91,38,48,.42)!important;
+}
+.controlLabel select:focus,
+.controlLabel input:focus{
+  background:#d9c7a6!important;
+  border-color:#5b2630!important;
+}
+
+/* Side architecture becomes an extremely thin oxblood rule only. */
+.artifactsPage::before,
+.artifactsPage::after{
+  width:1px!important;
+  background:#5b2630!important;
+  box-shadow:none!important;
+  top:0!important;
+  bottom:-56px!important;
+}
+.artifactsPage::before{left:-36px!important}
+.artifactsPage::after{right:-36px!important}
+
+/* Everything from the corpus toolbar through Compare now sits on one gold field. */
+.corpusSurface{
+  margin-top:18px;
+  padding:18px 24px 30px;
+  background:#d9c7a6;
+}
+.corpusSurface :global(.artifactToolbar){
+  margin-top:0;
+}
+.corpusSurface .artifactTableFour{
+  background:transparent;
+}
+.corpusSurface .inlineCompare{
+  margin-left:0!important;
+  margin-right:0!important;
+  background:transparent!important;
+  border-top:1px solid rgba(91,38,48,.55)!important;
+  border-left:0!important;
+  border-right:0!important;
+  border-bottom:0!important;
+}
+@media(max-width:860px){
+  .corpusSurface{
+    margin-left:0;
+    margin-right:0;
+    padding:15px 14px 24px;
+  }
+}
+
+
+/* Batch 65 — Submit-like page framing */
+
+/* A little breathing room below the site navigation, then the quiet horizontal rule. */
+.artifactsPage{
+  position:relative;
+  margin-top:18px!important;
+  padding-top:72px!important;
+  border-top:1px solid rgba(53,52,50,.24);
+  border-left:0!important;
+  border-right:0!important;
+}
+
+/* The vertical oxblood frame begins only after the quiet top breathing zone. */
+.artifactsPage::before,
+.artifactsPage::after{
+  display:block!important;
+  content:"";
+  position:absolute!important;
+  top:54px!important;
+  bottom:-56px!important;
+  width:1px!important;
+  background:#5b2630!important;
+  box-shadow:none!important;
+  z-index:0;
+}
+.artifactsPage::before{left:0!important}
+.artifactsPage::after{right:0!important}
+
+/* Keep all actual page material inside the thin structural frame. */
+.artifactHeader,
+.artifactToolsStrong,
+.corpusSurface{
+  position:relative;
+  z-index:1;
+  margin-left:28px!important;
+  margin-right:28px!important;
+}
+
+/* Give the charcoal arrival field more presence and make the title ceremonial. */
+.artifactHeader{
+  text-align:center;
+  padding-top:58px!important;
+  padding-bottom:60px!important;
+}
+.artifactHeading h1{
+  font-size:clamp(66px,8vw,104px)!important;
+  line-height:.9!important;
+  letter-spacing:-.055em!important;
+}
+.artifactHeading :global(.eyebrow){
+  margin-top:24px!important;
+  font-size:12px!important;
+  letter-spacing:.22em!important;
+  color:#d9c7a6!important;
+}
+
+@media(max-width:860px){
+  .artifactsPage{
+    margin-top:10px!important;
+    padding-top:40px!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:none!important;
+  }
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface{
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  .artifactHeading h1{
+    font-size:54px!important;
+  }
+}
+
+
+/* Batch 66 — close the Artifacts frame at the navigation rule */
+
+/* One top rule only. The vertical oxblood rules now meet this exact rule. */
+.artifactsPage{
+  margin-top:18px!important;
+  padding-top:0!important;
+  border-top:1px solid rgba(53,52,50,.24)!important;
+}
+
+/* Remove any second/header-level horizontal rule. */
+.artifactHeader{
+  border-top:0!important;
+  border-bottom:0!important;
+}
+
+/* Vertical oxblood sides begin at the single translucent top rule. */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:0!important;
+  bottom:-56px!important;
+  width:1px!important;
+  background:#5b2630!important;
+}
+.artifactsPage::before{left:0!important}
+.artifactsPage::after{right:0!important}
+
+/* Bring the composition up: roughly 1.5–2 cm below the top rule.
+   The charcoal Artifacts field now touches both vertical oxblood sides. */
+.artifactHeader{
+  margin-top:58px!important;
+  margin-left:0!important;
+  margin-right:0!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+}
+
+/* Everything below remains inset, so the full-width charcoal arrival field
+   visibly establishes the frame before the functional surfaces begin. */
+.artifactToolsStrong,
+.corpusSurface{
+  margin-left:28px!important;
+  margin-right:28px!important;
+}
+
+@media(max-width:860px){
+  .artifactsPage{
+    margin-top:10px!important;
+    border-top:1px solid rgba(53,52,50,.24)!important;
+  }
+  .artifactHeader{
+    margin-top:34px!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+  .artifactToolsStrong,
+  .corpusSurface{
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+}
+
+
+/* Batch 67 — use the EXISTING global navigation rule as the top of the frame */
+.artifactsPage{
+  border-top:0!important;
+  margin-top:0!important;
+  padding-top:0!important;
+}
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-18px!important;
+}
+/* Restore the Submit-like oxblood cap on the charcoal hero. */
+.artifactHeader{
+  margin-top:52px!important;
+  border-top:4px solid #5b2630!important;
+}
+
+
+/* Batch 68 — final 1 cm bridge to the existing global translucent nav rule */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-38px!important;
+}
+
+
+/* Batch 69 — close the last visible gap to the global translucent rule */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-58px!important;
+}
+
+
+/* Batch 70 — exact top-frame geometry */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-48px!important;
+}
+
+/* Move the complete composition from the charcoal Artifacts hero downward by 5 mm. */
+.artifactHeader{
+  margin-top:71px!important;
+}
+
+
+/* Batch 71 — Artifacts: move the charcoal composition ~3 mm upward */
+.artifactHeader{
+  margin-top:60px!important;
+}
+
+
+/* Batch 72 — use the same exact rail-to-global-rule junction as the Theory book frame */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-54px!important;
+}
+
+
+/* Batch 73 — final Artifacts top junction + finer oxblood hairline */
+.artifactsPage::before,
+.artifactsPage::after{
+  top:-62px!important;
+  width:1px!important;
+  background:rgba(91,38,48,.72)!important;
+}
+
+
+/* Batch 74 — table-header enclosure + oxblood filter values */
+.artifactTableFour :global(.header){
+  border-top:1px solid #171714!important;
+  border-bottom:1px solid #171714!important;
+  padding-top:13px!important;
+  padding-bottom:13px!important;
+}
+
+/* Selected values inside Sort / Medium / Operational Order become oxblood. */
+.controlLabel select{
+  color:#5b2630!important;
+  font-weight:700!important;
+}
+.controlLabel select option{
+  color:#5b2630!important;
+  background:#d9c7a6!important;
+}
+
+/* The small action button beneath the controls follows the same oxblood language. */
+.corpusSurface :global(.artifactToolbar) button{
+  color:#5b2630!important;
+  border-color:#5b2630!important;
+}
+.corpusSurface :global(.artifactToolbar) button:hover,
+.corpusSurface :global(.artifactToolbar) button:focus-visible{
+  color:#5b2630!important;
+  border-color:#5b2630!important;
+}
+
+
+/* Batch 75 — black filter values again */
+.controlLabel select,
+.controlLabel select option{
+  color:#171714!important;
+}
+
+/* Artifact row separators become very thin black rules. */
+.artifactTableFour :global(.row:not(.header)){
+  border-bottom:1px solid rgba(23,23,20,.72)!important;
+}
+
+/* Clear row location on hover/focus: a fine black rectangle around the row. */
+.artifactTableFour :global(a.row:not(.header)){
+  position:relative;
+}
+.artifactTableFour :global(a.row:not(.header):hover),
+.artifactTableFour :global(a.row:not(.header):focus-visible){
+  outline:1px solid #171714!important;
+  outline-offset:-1px!important;
+  background:rgba(217,199,166,.16)!important;
+}
+
+
+/* Batch 76 — black sortable headings; gold on hover/focus */
+.tableHeader button,
+.tableHeader span{
+  color:#171714!important;
+}
+.tableHeader button{
+  cursor:pointer!important;
+}
+.tableHeader button:hover,
+.tableHeader button:focus-visible{
+  color:#c7aa76!important;
+  border-color:#c7aa76!important;
+  background:transparent!important;
+}
+.tableHeader button:hover .sortArrow,
+.tableHeader button:focus-visible .sortArrow{
+  color:#c7aa76!important;
+}
+
+/* The complete ochre corpus gets its own fine black perimeter. */
+.corpusSurface{
+  border:1px solid #171714!important;
+  box-sizing:border-box!important;
+}
+
+/* Keep the internal artifact separators and row-location outline fine and black. */
+.artifactTableFour :global(.row:not(.header)){
+  border-bottom:1px solid rgba(23,23,20,.78)!important;
+}
+.artifactTableFour :global(a.row:not(.header):hover),
+.artifactTableFour :global(a.row:not(.header):focus-visible){
+  outline:1px solid #171714!important;
+  outline-offset:-1px!important;
+}
+
+/* Filter values remain black. */
+.controlLabel select,
+.controlLabel select option{
+  color:#171714!important;
+}
+
+
+/* Batch 77 — black search-console perimeter + oxblood Artifacts title trial */
+.artifactToolsStrong{
+  border:1px solid #171714!important;
+}
+
+/* Keep the field visually quieter: title carries the oxblood accent,
+   while the institutional subtitle stays warm/light on charcoal. */
+.artifactHeading h1{
+  color:#5b2630!important;
+}
+
+
+/* Batch 78 — left editorial hero + black control language */
+.artifactHeader{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:48px!important;
+  padding-left:46px!important;
+  padding-right:46px!important;
+}
+.artifactHeading{
+  text-align:left!important;
+  margin:0!important;
+}
+.artifactHeading h1{
+  color:#f3eee6!important;
+  text-align:left!important;
+  margin-left:0!important;
+}
+
+/* Quiet editorial counterweight on the right — typography + rule, not decoration. */
+.artifactHeroMark{
+  width:min(330px,34%);
+  display:grid;
+  grid-template-columns:auto 1fr;
+  align-items:center;
+  column-gap:14px;
+  row-gap:8px;
+  color:#d9c7a6;
+  font:700 10px/1.2 Arial,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.artifactHeroMark span{
+  white-space:nowrap;
+}
+.artifactHeroMark i{
+  display:block;
+  height:1px;
+  background:#5b2630;
+}
+.artifactHeroMark b{
+  grid-column:1 / -1;
+  color:#f3eee6;
+  font:500 12px/1.35 Arial,sans-serif;
+  letter-spacing:.11em;
+  text-align:right;
+}
+
+/* Every small outline inside the search/filter console is black. */
+.artifactToolsStrong{
+  border-color:#171714!important;
+}
+.controlLabel select,
+.controlLabel input{
+  border-color:#171714!important;
+  color:#171714!important;
+}
+.controlLabel select:focus,
+.controlLabel input:focus{
+  border-color:#171714!important;
+  outline:1px solid #171714!important;
+  outline-offset:1px!important;
+}
+
+/* Shuffle Again returns to black. */
+.corpusSurface :global(.artifactToolbar) button{
+  color:#171714!important;
+  border-color:#171714!important;
+}
+.corpusSurface :global(.artifactToolbar) button:hover,
+.corpusSurface :global(.artifactToolbar) button:focus-visible{
+  color:#171714!important;
+  border-color:#171714!important;
+}
+
+@media(max-width:760px){
+  .artifactHeader{
+    display:block!important;
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+  .artifactHeroMark{
+    display:none!important;
+  }
+}
+
+
+/* Batch 79 — consolidate the right-side corpus mark into one emblem */
+.artifactHeroMark{
+  width:min(360px,36%)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  text-align:center!important;
+  color:#d9c7a6!important;
+}
+.artifactHeroMark span{
+  display:block!important;
+  width:100%!important;
+  font-size:12px!important;
+  line-height:1.2!important;
+  letter-spacing:.18em!important;
+  text-align:center!important;
+  white-space:nowrap!important;
+}
+.artifactHeroMark i{
+  display:block!important;
+  width:100%!important;
+  height:1px!important;
+  background:#5b2630!important;
+}
+.artifactHeroMark b{
+  display:block!important;
+  width:100%!important;
+  color:#f3eee6!important;
+  font-size:13px!important;
+  line-height:1.25!important;
+  letter-spacing:.13em!important;
+  text-align:center!important;
+}
+
+/* Batch 85 — Artifacts gold-surface trial + mobile corpus repair */
+
+/* Desktop: test the stronger active-navigation gold as the dominant Artifacts material. */
+@media(min-width:761px){
+  .artifactHeader{
+    background:#c7aa76!important;
+    color:#171714!important;
+    border-top-color:#5b2630!important;
+  }
+  .artifactHeading h1{
+    color:#171714!important;
+  }
+  .artifactHeading :global(.eyebrow){
+    color:#5b2630!important;
+  }
+  .artifactHeroMark{
+    color:#5b2630!important;
+  }
+  .artifactHeroMark i{
+    background:#5b2630!important;
+  }
+  .artifactHeroMark b{
+    color:#171714!important;
+  }
+  .artifactToolsStrong,
+  .controlLabel select,
+  .controlLabel input,
+  .corpusSurface{
+    background:#c7aa76!important;
+  }
+  .controlLabel select option{
+    background:#c7aa76!important;
+  }
+  .inlineCompare{
+    background:transparent!important;
+  }
+  .inlineSelected,
+  .inlineSwap,
+  .inlineDropdown,
+  .inlineOptions button{
+    background:#d9c7a6!important;
+  }
+}
+
+/* Phone: keep the corpus emblem present and give it a real right-hand position. */
+@media(max-width:760px){
+  .artifactHeader{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(112px,34%)!important;
+    gap:18px!important;
+    align-items:center!important;
+    padding:30px 20px 32px!important;
+  }
+  .artifactHeading h1{
+    font-size:44px!important;
+  }
+  .artifactHeading :global(.eyebrow){
+    margin-top:14px!important;
+    font-size:9px!important;
+    letter-spacing:.16em!important;
+  }
+  .artifactHeroMark{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    gap:7px!important;
+    align-self:center!important;
+  }
+  .artifactHeroMark span{
+    white-space:normal!important;
+    font-size:8px!important;
+    line-height:1.25!important;
+    letter-spacing:.12em!important;
+  }
+  .artifactHeroMark b{
+    font-size:9px!important;
+    line-height:1.25!important;
+    letter-spacing:.09em!important;
+  }
+
+  /* Replace the squeezed four-column desktop table with a stable three-column phone register.
+     Medium sits under the artifact title; Order and CMS each get a fixed numeric column. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:minmax(0,1fr) 58px 72px!important;
+    grid-template-rows:auto auto!important;
+    column-gap:10px!important;
+    row-gap:4px!important;
+    align-items:center!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(1){
+    grid-column:1!important;
+    grid-row:1!important;
+    min-width:0!important;
+    transform:none!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(2){
+    grid-column:1!important;
+    grid-row:2!important;
+    min-width:0!important;
+    transform:none!important;
+    font-size:11px!important;
+    line-height:1.25!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(3){
+    grid-column:2!important;
+    grid-row:1 / 3!important;
+    transform:none!important;
+    text-align:center!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(4){
+    grid-column:3!important;
+    grid-row:1 / 3!important;
+    transform:none!important;
+    text-align:right!important;
+  }
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3),
+  .artifactTableFour :global(.row:not(.header))>:nth-child(4){
+    text-align:inherit!important;
+    font-size:15px!important;
+    font-variant-numeric:tabular-nums!important;
+  }
+  .artifactTableFour :global(.header){
+    grid-template-rows:auto!important;
+    padding:10px 0!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(1){
+    grid-column:1!important;
+    grid-row:1!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(2){
+    display:none!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(3){
+    grid-column:2!important;
+    grid-row:1!important;
+    text-align:center!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(4){
+    grid-column:3!important;
+    grid-row:1!important;
+    text-align:right!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(3) button,
+  .artifactTableFour :global(.header)>:nth-child(4) button{
+    font-size:0!important;
+    padding:5px 0!important;
+    margin:0!important;
+    width:100%!important;
+    justify-content:center!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(3) button::before{
+    content:"ORDER";
+    font:800 9px/1 Arial,sans-serif;
+    letter-spacing:.08em;
+  }
+  .artifactTableFour :global(.header)>:nth-child(4) button::before{
+    content:"CMS";
+    font:800 9px/1 Arial,sans-serif;
+    letter-spacing:.08em;
+  }
+  .artifactTableFour :global(.header)>:nth-child(3) .sortArrow,
+  .artifactTableFour :global(.header)>:nth-child(4) .sortArrow{
+    display:none!important;
+  }
+}
+
+@media(max-width:430px){
+  .artifactHeader{
+    grid-template-columns:minmax(0,1fr) 108px!important;
+    gap:12px!important;
+    padding-left:17px!important;
+    padding-right:17px!important;
+  }
+  .artifactHeading h1{font-size:39px!important}
+  .corpusSurface{padding-left:10px!important;padding-right:10px!important}
+  .artifactTableFour :global(.row){
+    grid-template-columns:minmax(0,1fr) 52px 62px!important;
+    column-gap:7px!important;
+  }
+}
+
+/* Batch 86 — charcoal Artifacts ground + black hero trial; mobile Order heading correction */
+
+/* Desktop only: turn the pale page ground into the established TORC charcoal material.
+   Keep the gold search/corpus surfaces from Batch 85 intact so this trial tests the
+   page architecture rather than changing every material at once. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#353432!important;
+    box-shadow:0 0 0 100vmax #353432;
+    clip-path:inset(0 -100vmax);
+    padding-bottom:52px!important;
+  }
+
+  /* The Artifacts arrival field becomes the darkest object in the composition. */
+  .artifactHeader{
+    background:#171714!important;
+    color:#f3eee6!important;
+  }
+  .artifactHeading h1{
+    color:#f3eee6!important;
+  }
+  .artifactHeading :global(.eyebrow){
+    color:#d9c7a6!important;
+  }
+  .artifactHeroMark{
+    color:#d9c7a6!important;
+  }
+  .artifactHeroMark i{
+    background:#5b2630!important;
+  }
+  .artifactHeroMark b{
+    color:#f3eee6!important;
+  }
+
+  /* Anything that sits directly on the new charcoal ground remains legible. */
+  .pagination{
+    border-top-color:rgba(217,199,166,.36)!important;
+  }
+  .pagination>button,
+  .pageNumbers button{
+    color:#f3eee6!important;
+  }
+  .pageNumbers button:hover{
+    border-color:#d9c7a6!important;
+  }
+  .pageNumbers .activePage{
+    background:#5b2630!important;
+    color:#fff!important;
+    border-color:#5b2630!important;
+  }
+}
+
+/* Phone: the compact ORDER heading was still sitting too close to CMS.
+   Pull only that heading left; keep the already-corrected numeric columns untouched. */
+@media(max-width:760px){
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:translateX(-20px)!important;
+  }
+}
+@media(max-width:430px){
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:translateX(-18px)!important;
+  }
+}
+
+/* Batch 87 — black side bands + resting-gold Artifacts hero trial */
+@media(min-width:761px){
+  /* Replace the oxblood hairlines with solid black architectural side bands.
+     Their 28px width exactly occupies the inset beside the search/corpus surfaces,
+     while the center of the page remains charcoal. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:block!important;
+    top:60px!important;
+    bottom:-56px!important;
+    width:28px!important;
+    background:#171714!important;
+    box-shadow:none!important;
+    z-index:0!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+
+  /* Restore the Artifacts arrival field to the quiet resting-navigation gold. */
+  .artifactHeader{
+    background:#d9c7a6!important;
+    color:#171714!important;
+    border-top:4px solid #5b2630!important;
+  }
+  .artifactHeading h1{
+    color:#171714!important;
+  }
+  .artifactHeading :global(.eyebrow){
+    color:#5b2630!important;
+  }
+  .artifactHeroMark{
+    color:#5b2630!important;
+  }
+  .artifactHeroMark i{
+    background:#5b2630!important;
+  }
+  .artifactHeroMark b{
+    color:#171714!important;
+  }
+
+  /* Keep functional surfaces above the black bands and leave the horizontal
+     space between them as the existing charcoal page ground. */
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface,
+  .inlineCompare,
+  .pagination{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
+
+/* Batch 88 — restore black Artifacts hero; light-ochre functional field; black lower closure */
+@media(min-width:761px){
+  /* Restore the arrival field exactly to the black/white treatment from Batch 86. */
+  .artifactHeader{
+    background:#171714!important;
+    color:#f3eee6!important;
+    border-top:4px solid #5b2630!important;
+  }
+  .artifactHeading h1{color:#f3eee6!important}
+  .artifactHeading :global(.eyebrow){color:#d9c7a6!important}
+  .artifactHeroMark{color:#d9c7a6!important}
+  .artifactHeroMark i{background:#5b2630!important}
+  .artifactHeroMark b{color:#f3eee6!important}
+
+  /* Search + corpus/list + compare become the quieter light ochre material.
+     The charcoal gaps between those fields remain untouched. */
+  .artifactToolsStrong,
+  .corpusSurface,
+  .controlLabel select,
+  .controlLabel input{
+    background:#d9c7a6!important;
+  }
+  .controlLabel select option{background:#d9c7a6!important}
+  .inlineCompare{background:transparent!important}
+
+  /* Keep the black side bands from Batch 87 and close the composition in black
+     beneath Compare Artifacts instead of returning to charcoal at the foot. */
+  .artifactsPage{
+    background:linear-gradient(to bottom,
+      #353432 0,
+      #353432 calc(100% - 52px),
+      #171714 calc(100% - 52px),
+      #171714 100%)!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    background:#171714!important;
+    bottom:-56px!important;
+  }
+}
+
+/* Batch 89 — pale site-ground surround + light instrument controls */
+@media(min-width:761px){
+  /* Replace the charcoal surround/gaps with the quiet pale neutral used elsewhere
+     in the TORC material system. The black lower closure from Batch 88 remains. */
+  .artifactsPage{
+    background:linear-gradient(to bottom,
+      #e6dccd 0,
+      #e6dccd calc(100% - 52px),
+      #171714 calc(100% - 52px),
+      #171714 100%)!important;
+    box-shadow:0 0 0 100vmax #e6dccd!important;
+  }
+
+  /* Search, Medium, Operational Order and Sort become pale instrument fields,
+     while the containing search/corpus surfaces remain light ochre. */
+  .controlLabel select,
+  .controlLabel input{
+    background:#f1ede7!important;
+    border-color:rgba(23,23,20,.32)!important;
+  }
+  .controlLabel select option{
+    background:#f1ede7!important;
+  }
+
+  /* The broad horizontal gaps and outer surround are now pale rather than charcoal. */
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface,
+  .inlineCompare,
+  .pagination{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
+
+/* Batch 90 — charcoal framing + oxblood rules + quieter corpus rhythm trial */
+@media(min-width:761px){
+  /* Replace the remaining black architectural material with TORC charcoal. */
+  .artifactHeader{
+    background:#353432!important;
+    color:#f3eee6!important;
+  }
+  .artifactHeading h1{color:#f3eee6!important}
+  .artifactHeading :global(.eyebrow){color:#d9c7a6!important}
+  .artifactHeroMark{color:#d9c7a6!important}
+  .artifactHeroMark b{color:#f3eee6!important}
+
+  .artifactsPage::before,
+  .artifactsPage::after{
+    background:#353432!important;
+  }
+
+  /* Search console itself uses the pale site ground; its internal fields stop reading white. */
+  .artifactToolsStrong{
+    background:#e6dccd!important;
+    border-color:#353432!important;
+  }
+  .controlLabel select,
+  .controlLabel input{
+    background:#e6dccd!important;
+    border-color:#5b2630!important;
+  }
+  .controlLabel select option{background:#e6dccd!important}
+
+  /* Turn the thin horizontal table architecture oxblood instead of black. */
+  .artifactTableFour :global(.header){
+    border-top-color:#5b2630!important;
+    border-bottom-color:#5b2630!important;
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+  }
+  .artifactTableFour :global(.row:not(.header)){
+    border-bottom-color:rgba(91,38,48,.72)!important;
+  }
+  .pagination{
+    border-top-color:#5b2630!important;
+  }
+
+  /* Quiet the list: charcoal typography, slightly lighter weight and tighter rows. */
+  .artifactTableFour :global(.row:not(.header)){
+    padding-top:10px!important;
+    padding-bottom:10px!important;
+  }
+  .artifactTableFour :global(.row:not(.header)) strong,
+  .artifactTableFour :global(.row:not(.header)) b{
+    font-weight:650!important;
+  }
+  .artifactTableFour,
+  .artifactTableFour :global(.row),
+  .tableHeader button,
+  .tableHeader span{
+    color:#353432!important;
+  }
+
+  /* Soften the heavy black enclosures without removing the frame logic. */
+  .corpusSurface{
+    border-color:#353432!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    outline-color:#353432!important;
+  }
+
+  /* The lower closure follows the same charcoal material rather than hard black. */
+  .artifactsPage{
+    background:linear-gradient(to bottom,
+      #e6dccd 0,
+      #e6dccd calc(100% - 52px),
+      #353432 calc(100% - 52px),
+      #353432 100%)!important;
+  }
+}
+
+/* Batch 91 — detached Submit-family composition trial */
+@media(min-width:761px){
+  /* The page becomes a quiet pale ground carrying three independent objects. */
+  .artifactsPage{
+    background:#e6dccd!important;
+    box-shadow:0 0 0 100vmax #e6dccd!important;
+    clip-path:inset(0 -100vmax)!important;
+    padding-bottom:58px!important;
+  }
+
+  /* Remove the continuous vertical architecture: the hero now ends as a rectangle. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:none!important;
+  }
+
+  /* 1. Detached charcoal arrival block, Submit-style. */
+  .artifactHeader{
+    margin:52px 0 0!important;
+    width:100%!important;
+    background:#353432!important;
+    color:#f3eee6!important;
+    border-top:4px solid #5b2630!important;
+    border-left:0!important;
+    border-right:0!important;
+    border-bottom:0!important;
+  }
+  .artifactHeading h1{color:#f3eee6!important}
+  .artifactHeading :global(.eyebrow){color:#d9c7a6!important}
+  .artifactHeroMark{color:#d9c7a6!important}
+  .artifactHeroMark i{background:#5b2630!important}
+  .artifactHeroMark b{color:#f3eee6!important}
+
+  /* 2. Search/filter instrument is its own gold panel after a visible ground gap. */
+  .artifactToolsStrong{
+    margin:38px 28px 0!important;
+    padding:20px!important;
+    background:#d9c7a6!important;
+    border:1px solid #5b2630!important;
+    box-shadow:none!important;
+  }
+  .controlLabel select,
+  .controlLabel input{
+    background:#e6dccd!important;
+    border:1px solid rgba(91,38,48,.72)!important;
+    color:#353432!important;
+  }
+  .controlLabel select option{background:#e6dccd!important}
+
+  /* 3. Corpus/list is a second independent gold object, with another pale gap. */
+  .corpusSurface{
+    margin:38px 28px 0!important;
+    padding:18px 24px 30px!important;
+    background:#d9c7a6!important;
+    border:1px solid #5b2630!important;
+    box-shadow:none!important;
+  }
+
+  /* Keep the corpus rhythm from Batch 90, but let the detached panel define its edge. */
+  .artifactTableFour :global(.header){
+    border-top-color:#5b2630!important;
+    border-bottom-color:#5b2630!important;
+  }
+  .artifactTableFour :global(.row:not(.header)){
+    border-bottom-color:rgba(91,38,48,.72)!important;
+  }
+  .pagination{border-top-color:#5b2630!important}
+
+  /* Compare remains part of the corpus object; pale page ground resumes beneath it. */
+  .inlineCompare{background:transparent!important}
+}
+
+/* Batch 92 — Submit-family outer frame around detached Artifacts objects */
+@media(min-width:761px){
+  /* Restore only the thin outer oxblood frame: it begins at the hero's side edges,
+     bridges outward to the page guide, and then runs continuously to the bottom.
+     The hero, search console and corpus remain visibly detached inside the frame. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    z-index:0!important;
+    top:52px!important;
+    bottom:0!important;
+    width:1px!important;
+    background:#5b2630!important;
+    box-shadow:none!important;
+  }
+  .artifactsPage::before{left:-28px!important}
+  .artifactsPage::after{right:-28px!important}
+
+  /* Small horizontal shoulders connect the wider hero to the outer vertical guides,
+     matching the framed-object logic used on Submit. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    content:"";
+    position:absolute;
+    top:0;
+    width:28px;
+    height:1px;
+    background:#5b2630;
+    pointer-events:none;
+  }
+  .artifactHeader::before{right:100%}
+  .artifactHeader::after{left:100%}
+
+  /* Keep every detached object above the frame while the pale ground stays visible. */
+  .artifactHeader,
+  .artifactToolsStrong,
+  .corpusSurface{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
+
+/* Batch 93 — exact hero-edge frame + warm site-ground correction */
+@media(min-width:761px){
+  /* Match the warm pale ground used around the navigation / Submit composition. */
+  .artifactsPage{
+    background:#ddceb3!important;
+    box-shadow:0 0 0 100vmax #ddceb3!important;
+  }
+
+  /* The frame now sits EXACTLY on the left/right edges of the wide Artifacts hero.
+     It also rises through the pale gap to meet the upper translucent guide. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:0!important;
+    bottom:0!important;
+    width:1px!important;
+    background:#5b2630!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+
+  /* No outward shoulders: the vertical rules themselves are the hero edges. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    display:none!important;
+  }
+
+  /* Preserve the detached blocks, but expose the same warm pale ground between
+     and beside them so the whole page reads as one Submit-family composition. */
+  .artifactToolsStrong,
+  .corpusSurface{
+    position:relative!important;
+    z-index:1!important;
+  }
+}
+
+/* Batch 94 — exact site ground + finer full-height hero-edge guides */
+@media(min-width:761px){
+  /* Use the actual TORC / Submit / Theory site ground token, not the darker ochre trial. */
+  .artifactsPage{
+    background:#f5f2ea!important;
+    box-shadow:0 0 0 100vmax #f5f2ea!important;
+  }
+
+  /* Keep the guides on the exact hero edges, but make them visually finer.
+     Extend them upward through the full pre-hero gap so they meet the nav guide. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:-52px!important;
+    bottom:0!important;
+    width:1px!important;
+    background:rgba(91,38,48,.62)!important;
+    box-shadow:none!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+}
+
+/* Batch 95 — exact Submit ground + explicit hero-corner guide extensions */
+@media(min-width:761px){
+  /* Match the actual Submit page ground token. This is the pale warm grey-ochre
+     surrounding its detached blocks, lighter than the gold navigation buttons. */
+  .artifactsPage{
+    background:#e8e0d4!important;
+    box-shadow:0 0 0 100vmax #e8e0d4!important;
+    /* Batch 91 clipped anything above the page edge. Open the clip at the top so
+       the short guides can physically reach the upper navigation rule. */
+    clip-path:inset(-60px -100vmax 0 -100vmax)!important;
+  }
+
+  /* Downward guides begin exactly at the lower continuation of the hero's
+     left/right corners (the hero itself starts 52px below the page guide). */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:52px!important;
+    bottom:0!important;
+    width:1px!important;
+    background:rgba(91,38,48,.50)!important;
+    transform:scaleX(.55);
+    transform-origin:center;
+    box-shadow:none!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+
+  /* Separate, explicit 52px upward extensions. These are attached to the ACTUAL
+     top corners of the charcoal Artifacts rectangle, rather than inferred from
+     the page pseudo-elements, so the red hairlines visibly run all the way from
+     those corners to the pale grey navigation rule above. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    top:-52px!important;
+    width:1px!important;
+    height:52px!important;
+    background:rgba(91,38,48,.50)!important;
+    transform:scaleX(.55);
+    transform-origin:center;
+    pointer-events:none!important;
+    z-index:3!important;
+  }
+  .artifactHeader::before{left:0!important;right:auto!important}
+  .artifactHeader::after{right:0!important;left:auto!important}
+}
+
+/* Batch 96 — literal global ground + restored upper navigation guide */
+@media(min-width:761px){
+  /* Do not approximate the surrounding page colour locally: use the exact global
+     site-ground token that the navigation sits on, so the Artifacts gaps and side
+     fields are mathematically identical to the rest of the site. */
+  .artifactsPage{
+    background:var(--bg)!important;
+    box-shadow:0 0 0 100vmax var(--bg)!important;
+    border-top:1px solid rgba(201,195,184,.78)!important;
+  }
+
+  /* Keep the two oxblood hairlines on the hero edges. Their explicit 52px upper
+     extensions from Batch 95 now terminate against the restored horizontal rule. */
+  .artifactsPage::before,
+  .artifactsPage::after,
+  .artifactHeader::before,
+  .artifactHeader::after{
+    background:rgba(91,38,48,.50)!important;
+  }
+}
+
+/* Batch 97 — final guide reach + intermediate hairline weight */
+@media(min-width:761px){
+  /* Add the last few millimetres needed for the two upper oxblood guides to
+     physically overlap the restored pale horizontal rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-62px!important;
+    height:62px!important;
+    width:1px!important;
+    transform:scaleX(.78)!important;
+    background:rgba(91,38,48,.56)!important;
+  }
+
+  /* Match the downward continuation to the same intermediate line weight. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.78)!important;
+    background:rgba(91,38,48,.56)!important;
+  }
+}
+
+/* Batch 98 — lower only the TOP endpoint of the upper oxblood guides by 4px.
+   Bottom remains attached to the two top corners of the Artifacts hero. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-58px!important;
+    height:58px!important;
+  }
+}
+
+/* Batch 99 — move the upper guide endpoints another 4px downward only.
+   Keep the approved Batch 97/98 line weight unchanged. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-54px!important;
+    height:54px!important;
+  }
+}
+
+/* Batch 100 — approved guide weight; upper endpoint exactly 1px upward from Batch 99. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-55px!important;
+    height:55px!important;
+  }
+}
+
+/* Batch 101 — approved guide weight; endpoint exactly 1px upward from Batch 100. */
+@media(min-width:861px){
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-56px!important;
+    height:56px!important;
+  }
+}
+
+/* Batch 103 — uncover the real site navigation.
+   The 100vmax page shadow introduced for full-bleed ground paints upward over
+   earlier siblings in the root shell. Because the body already uses --bg,
+   the shadow is unnecessary and can be removed without changing the approved
+   background colour. Removing the old clip also leaves the approved guide
+   extensions free to reach the upper rule. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:var(--bg)!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+  }
+}
+
+/* Mobile TORC result heading refinement — move Operational/Cognitive Order a further ~1cm left. */
+@media(max-width:760px){
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:translateX(-58px)!important;
+  }
+}
+@media(max-width:430px){
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:translateX(-56px)!important;
+  }
+}
+
+/* Mobile refinement — move the ORDER/Cognitive Order header cell itself left.
+   Previous button-only transforms could be neutralized by the compact grid layout;
+   shifting the grid item makes the movement explicit while leaving score values untouched. */
+@media(max-width:760px){
+  .artifactTableFour :global(.header)>:nth-child(3){
+    position:relative!important;
+    left:-38px!important;
+    transform:none!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:none!important;
+  }
+}
+@media(max-width:430px){
+  .artifactTableFour :global(.header)>:nth-child(3){
+    left:-38px!important;
+  }
+}
+
+/* Mobile column-header refinement — move only the Artifact column heading ~1cm right. */
+@media(max-width:760px){
+  .artifactTableFour :global(.header)>:nth-child(1){
+    position:relative!important;
+    left:38px!important;
+  }
+}
+@media(max-width:430px){
+  .artifactTableFour :global(.header)>:nth-child(1){
+    left:38px!important;
+  }
+}
+
+/* Trial — oxblood instrument interiors + gold corpus hover */
+/* Keep the existing gold panels/frame architecture; only replace the pale/white
+   interactive interiors with oxblood so this can be judged as a material trial. */
+.controlLabel select,
+.controlLabel input{
+  background:#5b2630!important;
+  border-color:#5b2630!important;
+  color:#f3eee6!important;
+}
+.controlLabel input::placeholder{color:rgba(243,238,230,.72)!important}
+.controlLabel select option{
+  background:#5b2630!important;
+  color:#f3eee6!important;
+}
+.controlLabel select:focus,
+.controlLabel input:focus{
+  border-color:#5b2630!important;
+  outline-color:#c7aa76!important;
+}
+
+/* Compare pickers use the same oxblood input material as the upper controls. */
+.inlineSelected,
+.inlineDropdown input{
+  background:#5b2630!important;
+  border-color:#5b2630!important;
+  color:#f3eee6!important;
+}
+.inlineSelected span,
+.inlineSelected small{color:#f3eee6!important}
+.inlineSelected small{opacity:.76!important}
+.inlineDropdown input::placeholder{color:rgba(243,238,230,.72)!important}
+.inlineSelected:hover,
+.inlineSelected:focus-visible{
+  border-color:#c7aa76!important;
+  box-shadow:0 0 0 1px #c7aa76!important;
+}
+
+/* Corpus rows now register in the same deeper gold used by active/hover navigation. */
+.artifactTableFour :global(a.row:not(.header)){
+  transition:background-color .14s ease,border-color .14s ease!important;
+}
+.artifactTableFour :global(a.row:not(.header):hover),
+.artifactTableFour :global(a.row:not(.header):focus-visible){
+  background:#c7aa76!important;
+  border-color:#5b2630!important;
+  outline:none!important;
+}
+
+/* Current refinement — make the existing Artifacts oxblood frame rails just a touch more visible. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:2px!important;
+    transform:scaleX(.70)!important;
+  }
+}
+
+/* Fine rail refinement — retain the stronger presence, but step back from the previous 2px treatment. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:2px!important;
+    transform:scaleX(.58)!important;
+  }
+}
+
+/* Current refinement — one final step finer than the previous rail treatment,
+   while remaining visibly stronger than the original hairline. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:2px!important;
+    transform:scaleX(.50)!important;
+  }
+}
+
+/* Current refinement — make the Artifacts frame genuinely hairline-sharp rather than
+   visually soft: one physical pixel, solid oxblood, no transform antialiasing. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:none!important;
+    background:#5b2630!important;
+  }
+}
+
+/* Current refinement — keep the frame fully saturated and crisp, but reduce its
+   physical weight below one CSS pixel on high-density displays. No opacity or
+   transform softening. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:.75px!important;
+    transform:none!important;
+    background:#5b2630!important;
+  }
+}
+
+/* Current refinement — one more step toward the Submit-style hairline: fully
+   saturated and sharp, but visually lighter than the previous .75px rail. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:.5px!important;
+    transform:none!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Current refinement — visually finer than the one-pixel rail while retaining a
+   saturated, hard-edged oxblood mark. Keep a whole-pixel source and narrow it
+   geometrically so browsers do not round a fractional CSS width back up. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Requested refinement — another half-step finer, still saturated and sharp. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.31)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Current refinement — return the Artifacts rail to the previous sharper half-step. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Current trial — use the active-navigation gold for the exposed field inside
+   the Artifacts oxblood frame. This changes the gaps around/between the detached
+   hero, search/filter panel and corpus, while leaving the outer site ground alone. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#c7aa76!important;
+  }
+}
+
+/* Current trial — replace the exposed Artifacts frame field trial from active gold
+   with TORC oxblood. The existing cards, controls and corpus surfaces remain intact. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#5b2630!important;
+  }
+}
+
+/* Current trial — white corpus/search material with resting black typography.
+   Keep the oxblood architectural field/frame from the previous trial, but turn
+   every pale-ochre working surface into white. On interaction, use the lighter
+   resting-navigation ochre rather than the deeper active gold. */
+@media(min-width:761px){
+  .artifactToolsStrong,
+  .corpusSurface{
+    background:#fff!important;
+  }
+
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:#fff!important;
+    color:#171714!important;
+  }
+  .controlLabel input::placeholder,
+  .inlineDropdown input::placeholder{
+    color:rgba(23,23,20,.58)!important;
+  }
+  .inlineSelected span,
+  .inlineSelected small{
+    color:#171714!important;
+  }
+
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#fff!important;
+    color:#171714!important;
+    transition:background-color .14s ease,border-color .14s ease!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#d9c7a6!important;
+    color:#171714!important;
+    border-color:#5b2630!important;
+    outline:none!important;
+  }
+
+  .controlLabel select:hover,
+  .controlLabel input:hover,
+  .inlineSelected:hover,
+  .inlineSelected:focus-visible,
+  .inlineOptions button:hover,
+  .inlineOptions button:focus-visible,
+  .inlineSwap:hover,
+  .inlineSwap:focus-visible{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+}
+
+/* Requested refinement — use the literal site ground for all previously white
+   Artifacts working surfaces. The interaction state remains the quiet light
+   ochre used by the resting navigation family. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:var(--bg)!important;
+    box-shadow:none!important;
+    clip-path:none!important;
+  }
+
+  .artifactToolsStrong,
+  .corpusSurface,
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap,
+  .artifactTableFour :global(a.row:not(.header)){
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  .controlLabel input::placeholder,
+  .inlineDropdown input::placeholder{
+    color:rgba(23,23,20,.58)!important;
+  }
+  .inlineSelected span,
+  .inlineSelected small{
+    color:#171714!important;
+  }
+
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible),
+  .controlLabel select:hover,
+  .controlLabel input:hover,
+  .inlineSelected:hover,
+  .inlineSelected:focus-visible,
+  .inlineOptions button:hover,
+  .inlineOptions button:focus-visible,
+  .inlineSwap:hover,
+  .inlineSwap:focus-visible{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  /* Re-establish the same detached-page rhythm as Theory: the main Artifacts
+     object sits below the navigation rule, while two short oxblood hairlines
+     bridge only that pale gap and then continue down the frame edges. */
+  .artifactsPage{
+    margin-top:18px!important;
+    padding-top:0!important;
+    border-top:0!important;
+  }
+  .artifactHeader{
+    margin-top:60px!important;
+  }
+  .artifactHeader::before,
+  .artifactHeader::after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    top:-78px!important;
+    height:78px!important;
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+    pointer-events:none!important;
+    z-index:3!important;
+  }
+  .artifactHeader::before{left:0!important;right:auto!important}
+  .artifactHeader::after{right:0!important;left:auto!important}
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:60px!important;
+    bottom:0!important;
+    width:1px!important;
+    transform:scaleX(.62)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Requested refinement — restore the oxblood architectural ground while keeping
+   the actual corpus rows and working surfaces on the site ground. The charcoal
+   hero is inset by the same 28px as the functional surfaces, exposing equal
+   oxblood side fields and tightening the hero composition symmetrically. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#5b2630!important;
+  }
+
+  .artifactHeader{
+    margin-top:60px!important;
+    margin-left:28px!important;
+    margin-right:28px!important;
+    width:calc(100% - 56px)!important;
+    box-sizing:border-box!important;
+    background:#353432!important;
+  }
+
+  /* Functional surfaces remain the ambient site ground; individual artifact
+     rows are explicitly kept on that same ground with black typography. */
+  .artifactToolsStrong,
+  .corpusSurface,
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap,
+  .artifactTableFour :global(a.row:not(.header)){
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  /* Navigation-button resting ochre remains the interaction state. */
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible),
+  .controlLabel select:hover,
+  .controlLabel input:hover,
+  .inlineSelected:hover,
+  .inlineSelected:focus-visible,
+  .inlineOptions button:hover,
+  .inlineOptions button:focus-visible,
+  .inlineSwap:hover,
+  .inlineSwap:focus-visible{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  /* Shorten the two upper bridges slightly so they terminate exactly at the
+     translucent navigation rule, and make all frame hairlines one further step
+     finer while keeping them fully saturated oxblood. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-74px!important;
+    height:74px!important;
+    width:1px!important;
+    transform:scaleX(.31)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.31)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Current refinement — restore the light-ochre instrument/corpus material while
+   leaving the actual search/select fields on the quieter broken-white site ground.
+   Artifact rows rest on the same ochre and lift to the deeper TORC gold on hover. */
+@media(min-width:761px){
+  .artifactToolsStrong,
+  .corpusSurface{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#d9c7a6!important;
+    color:#171714!important;
+    transition:background-color .14s ease,border-color .14s ease!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#c7aa76!important;
+    color:#171714!important;
+    outline:none!important;
+  }
+
+  /* Put the two short upper guides on the OUTER edge of the oxblood side strips,
+     not on the inset charcoal hero. Shorten them so their top endpoint finishes
+     against — rather than crossing — the translucent navigation rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-70px!important;
+    height:70px!important;
+    width:1px!important;
+    transform:scaleX(.22)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+  .artifactHeader::before{
+    left:-28px!important;
+    right:auto!important;
+  }
+  .artifactHeader::after{
+    right:-28px!important;
+    left:auto!important;
+  }
+
+  /* Match the visible outer frame to the finer guide weight. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.22)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+}
+
+/* Current refinement — gold corpus/search surround, ambient-ground row hover,
+   and upper oxblood bridge geometry tuned to terminate just below the nav rule. */
+@media(min-width:761px){
+  /* Search/instrument surround and full corpus field use the deeper TORC gold. */
+  .artifactToolsStrong,
+  .corpusSurface{
+    background:#c7aa76!important;
+    color:#171714!important;
+  }
+
+  /* The actual search/select controls remain on the quiet site ground. */
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  /* Artifact rows rest in gold; hover/focus clears back to the ambient site ground. */
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#c7aa76!important;
+    color:#171714!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:var(--bg)!important;
+    color:#171714!important;
+    outline:none!important;
+  }
+
+  /* Pull the short outer bridges down by ~2 mm so their top endpoint no longer
+     overshoots the translucent nav rule, and increase their visible weight by
+     roughly half a CSS pixel relative to the previous hairline. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-62px!important;
+    height:62px!important;
+    width:1px!important;
+    transform:scaleX(.72)!important;
+    transform-origin:center!important;
+    background:#5b2630!important;
+    opacity:1!important;
+  }
+  .artifactHeader::before{left:-28px!important;right:auto!important}
+  .artifactHeader::after{right:-28px!important;left:auto!important}
+}
+
+/* Current refinement — lift the complete Artifacts composition by ~2 mm, place
+   the search/instrument surround in charcoal, and return the corpus to the light
+   navigation ochre. The controls themselves stay on the ambient site ground;
+   artifact hover lifts to the deeper gold. */
+@media(min-width:761px){
+  .artifactsPage{
+    margin-top:10px!important;
+  }
+
+  .artifactToolsStrong{
+    background:#353432!important;
+    color:#f8f3e8!important;
+  }
+  .artifactToolsStrong label,
+  .artifactToolsStrong label > span,
+  .artifactToolsStrong :global(label > span){
+    color:#f8f3e8!important;
+  }
+
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  .corpusSurface,
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#c7aa76!important;
+    color:#171714!important;
+    outline:none!important;
+  }
+
+  /* Because the full object moved upward, shorten only the detached bridges by
+     the same amount so they still terminate at the translucent nav rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-54px!important;
+    height:54px!important;
+  }
+}
+
+/* Current experiment — narrow only the corpus/results stage below the search
+   console. The outer page/header geometry stays intact; the oxblood fields step
+   inward around the results so the moving rows read as a tighter instrument. */
+@media(min-width:861px){
+  /* Lift the complete Artifacts composition another ~3–4 mm toward the nav rule. */
+  .artifactsPage{
+    margin-top:-3px!important;
+  }
+
+  /* Keep search at the broad page width; inset the corpus by ~5 cm total. */
+  .corpusSurface{
+    position:relative!important;
+    margin-left:25px!important;
+    margin-right:25px!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Oxblood shoulders created by the inset: visually continue the side fields
+     inward from the point where the actual artifact corpus begins. */
+  .corpusSurface::before,
+  .corpusSurface::after{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:25px;
+    background:#5b2630;
+    pointer-events:none;
+    z-index:0;
+  }
+  .corpusSurface::before{left:-25px}
+  .corpusSurface::after{right:-25px}
+  .corpusSurface > *{position:relative;z-index:1}
+
+  /* Rebalance the tighter four-column table rather than simply squeezing it. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:
+      minmax(220px,1.48fr)
+      minmax(135px,.82fr)
+      minmax(165px,.92fr)
+      minmax(205px,1.12fr)!important;
+    column-gap:18px!important;
+  }
+  .tableHeader button,
+  .tableHeader span{
+    font-size:13px!important;
+  }
+  .sortArrow{font-size:17px!important}
+
+  /* Undo older hand-positioning that becomes unnecessary in the tighter grid. */
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3),
+  .artifactTableFour :global(.row:not(.header))>:nth-child(4),
+  .artifactTableFour :global(.header)>:nth-child(4){
+    transform:none!important;
+  }
+}
+
+/* Correction — the previous corpus inset was only 25px per side (~1.3cm total),
+   so the requested ~5cm reduction was barely visible. Make the results stage
+   unmistakably narrower: ~190px total (~95px each side), beginning only where
+   the corpus/results section starts. */
+@media(min-width:861px){
+  .corpusSurface{
+    margin-left:95px!important;
+    margin-right:95px!important;
+    padding-left:20px!important;
+    padding-right:20px!important;
+  }
+
+  .corpusSurface::before,
+  .corpusSurface::after{
+    width:95px!important;
+    background:#5b2630!important;
+  }
+  .corpusSurface::before{left:-95px!important}
+  .corpusSurface::after{right:-95px!important}
+
+  /* Tighten the table to the genuinely narrower corpus width. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:
+      minmax(190px,1.45fr)
+      minmax(120px,.78fr)
+      minmax(145px,.9fr)
+      minmax(180px,1.08fr)!important;
+    column-gap:14px!important;
+  }
+  .tableHeader button,
+  .tableHeader span{
+    font-size:12px!important;
+  }
+  .sortArrow{font-size:16px!important}
+}
