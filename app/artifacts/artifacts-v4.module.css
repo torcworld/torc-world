@@ -1754,3 +1754,52 @@
   .artifactsPage::before{left:0!important}
   .artifactsPage::after{right:0!important}
 }
+
+/* Batch 95 — exact Submit ground + explicit hero-corner guide extensions */
+@media(min-width:761px){
+  /* Match the actual Submit page ground token. This is the pale warm grey-ochre
+     surrounding its detached blocks, lighter than the gold navigation buttons. */
+  .artifactsPage{
+    background:#e8e0d4!important;
+    box-shadow:0 0 0 100vmax #e8e0d4!important;
+    /* Batch 91 clipped anything above the page edge. Open the clip at the top so
+       the short guides can physically reach the upper navigation rule. */
+    clip-path:inset(-60px -100vmax 0 -100vmax)!important;
+  }
+
+  /* Downward guides begin exactly at the lower continuation of the hero's
+     left/right corners (the hero itself starts 52px below the page guide). */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:52px!important;
+    bottom:0!important;
+    width:1px!important;
+    background:rgba(91,38,48,.50)!important;
+    transform:scaleX(.55);
+    transform-origin:center;
+    box-shadow:none!important;
+  }
+  .artifactsPage::before{left:0!important}
+  .artifactsPage::after{right:0!important}
+
+  /* Separate, explicit 52px upward extensions. These are attached to the ACTUAL
+     top corners of the charcoal Artifacts rectangle, rather than inferred from
+     the page pseudo-elements, so the red hairlines visibly run all the way from
+     those corners to the pale grey navigation rule above. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    top:-52px!important;
+    width:1px!important;
+    height:52px!important;
+    background:rgba(91,38,48,.50)!important;
+    transform:scaleX(.55);
+    transform-origin:center;
+    pointer-events:none!important;
+    z-index:3!important;
+  }
+  .artifactHeader::before{left:0!important;right:auto!important}
+  .artifactHeader::after{right:0!important;left:auto!important}
+}
