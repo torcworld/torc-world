@@ -327,3 +327,19 @@
     box-sizing:border-box!important;
   }
 }
+
+/* Current refinement — move the final oxblood closing rule a few millimetres
+   nearer the page bottom without restoring the charcoal end-cap. Keep the same
+   total closing depth, but place most of the remaining breathing space above it. */
+@media(min-width:761px){
+  .page::after{
+    height:7px!important;
+    margin-top:10px!important;
+    margin-left:-28px!important;
+    margin-right:-28px!important;
+    background:transparent!important;
+    border-top:1px solid #5b2630!important;
+    border-bottom:0!important;
+    box-sizing:border-box!important;
+  }
+}

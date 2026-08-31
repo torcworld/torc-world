@@ -1068,3 +1068,37 @@
     padding-right:18px!important;
   }
 }
+
+/* Current refinement — keep the Contents trigger visible at the upper-right when
+   the drawer is closed, while moving the opened drawer back left by roughly 1 cm
+   from the previous over-tucked position. Preserve the approved vertical height. */
+@media(min-width:981px){
+  .readerNav{
+    top:42px!important;
+    right:0!important;
+    transform:none!important;
+  }
+
+  .readerNavPanel{
+    position:relative!important;
+    right:-2px!important;
+    max-height:calc(100vh - 62px)!important;
+    overflow-y:auto!important;
+  }
+
+  .readerNav:hover .readerNavPanel,
+  .readerNav:focus-within .readerNavPanel,
+  .readerNav[data-open="true"] .readerNavPanel,
+  .readerNav.readerNavIntroOpen .readerNavPanel{
+    width:255px!important;
+    padding-left:18px!important;
+    padding-right:18px!important;
+  }
+
+  /* On high-density displays sub-pixel borders clamp to a physical pixel. Keep
+     the rail geometry untouched and reduce its visual weight one final step. */
+  .bookPage::before{
+    border-left-color:rgba(91,38,48,.68)!important;
+    border-right-color:rgba(91,38,48,.68)!important;
+  }
+}

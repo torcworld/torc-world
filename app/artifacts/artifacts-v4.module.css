@@ -2462,3 +2462,55 @@
   .artifactHeader::before{left:-28px!important;right:auto!important}
   .artifactHeader::after{right:-28px!important;left:auto!important}
 }
+
+/* Current refinement — lift the complete Artifacts composition by ~2 mm, place
+   the search/instrument surround in charcoal, and return the corpus to the light
+   navigation ochre. The controls themselves stay on the ambient site ground;
+   artifact hover lifts to the deeper gold. */
+@media(min-width:761px){
+  .artifactsPage{
+    margin-top:10px!important;
+  }
+
+  .artifactToolsStrong{
+    background:#353432!important;
+    color:#f8f3e8!important;
+  }
+  .artifactToolsStrong label,
+  .artifactToolsStrong label > span,
+  .artifactToolsStrong :global(label > span){
+    color:#f8f3e8!important;
+  }
+
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:var(--bg)!important;
+    color:#171714!important;
+  }
+
+  .corpusSurface,
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#c7aa76!important;
+    color:#171714!important;
+    outline:none!important;
+  }
+
+  /* Because the full object moved upward, shorten only the detached bridges by
+     the same amount so they still terminate at the translucent nav rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-54px!important;
+    height:54px!important;
+  }
+}
