@@ -1310,3 +1310,68 @@
     column-gap:7px!important;
   }
 }
+
+/* Batch 86 — charcoal Artifacts ground + black hero trial; mobile Order heading correction */
+
+/* Desktop only: turn the pale page ground into the established TORC charcoal material.
+   Keep the gold search/corpus surfaces from Batch 85 intact so this trial tests the
+   page architecture rather than changing every material at once. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#353432!important;
+    box-shadow:0 0 0 100vmax #353432;
+    clip-path:inset(0 -100vmax);
+    padding-bottom:52px!important;
+  }
+
+  /* The Artifacts arrival field becomes the darkest object in the composition. */
+  .artifactHeader{
+    background:#171714!important;
+    color:#f3eee6!important;
+  }
+  .artifactHeading h1{
+    color:#f3eee6!important;
+  }
+  .artifactHeading :global(.eyebrow){
+    color:#d9c7a6!important;
+  }
+  .artifactHeroMark{
+    color:#d9c7a6!important;
+  }
+  .artifactHeroMark i{
+    background:#5b2630!important;
+  }
+  .artifactHeroMark b{
+    color:#f3eee6!important;
+  }
+
+  /* Anything that sits directly on the new charcoal ground remains legible. */
+  .pagination{
+    border-top-color:rgba(217,199,166,.36)!important;
+  }
+  .pagination>button,
+  .pageNumbers button{
+    color:#f3eee6!important;
+  }
+  .pageNumbers button:hover{
+    border-color:#d9c7a6!important;
+  }
+  .pageNumbers .activePage{
+    background:#5b2630!important;
+    color:#fff!important;
+    border-color:#5b2630!important;
+  }
+}
+
+/* Phone: the compact ORDER heading was still sitting too close to CMS.
+   Pull only that heading left; keep the already-corrected numeric columns untouched. */
+@media(max-width:760px){
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:translateX(-10px)!important;
+  }
+}
+@media(max-width:430px){
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:translateX(-8px)!important;
+  }
+}
