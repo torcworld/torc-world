@@ -830,3 +830,13 @@
       linear-gradient(#5b2630,#5b2630) right 22px top 38px / 126px calc(100% - 130px) no-repeat!important;
   }
 }
+
+/* Current refinement — extend the paired oxblood book fields outward until they
+   meet the existing thin outer frame rails. Keep the top field open/light. */
+@media(min-width:981px){
+  .bookPage{
+    background:
+      linear-gradient(#5b2630,#5b2630) left 0 top 38px / 148px calc(100% - 130px) no-repeat,
+      linear-gradient(#5b2630,#5b2630) right 0 top 38px / 148px calc(100% - 130px) no-repeat!important;
+  }
+}

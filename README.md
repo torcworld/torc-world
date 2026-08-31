@@ -1,9 +1,12 @@
-TORC — Artifact frame refinement trial
+# TORC Theory + Artifact Analysis dual-field refinement
 
-Changed only:
-- app/artifacts/artifacts-v4.module.css
+This patch changes only three CSS modules.
+
+- Theory / Book (desktop): extends the existing left and right oxblood fields outward until they meet the thin outer frame rails. The space above the book remains light/open.
+- Artifact Analysis (desktop): centers the analysis column and introduces equal oxblood fields on both sides. The analysis/header column begins at the same vertical level as the side fields. Mobile analysis remains unchanged.
+- Artifacts: makes the existing side frame rails one final small step finer than the previous version, while still retaining more presence than the original hairline.
+
+Files:
+- app/theory/book/book.module.css
 - app/artifact/artifact-frame.module.css
-
-1. Artifacts page desktop side rails are slightly finer than the previous patch, while remaining visibly stronger than the old hairline treatment.
-2. Artifact Analysis desktop composition: the charcoal analysis/header column is extended rightward and the oxblood field is moved left/inward so the two fields meet cleanly inside the outer framed span. The oxblood field's right edge now aligns with the frame edge instead of projecting beyond it.
-3. Mobile artifact-analysis geometry is untouched.
+- app/artifacts/artifacts-v4.module.css

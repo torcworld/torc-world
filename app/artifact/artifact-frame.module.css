@@ -139,3 +139,50 @@
     transform:none!important;
   }
 }
+
+/* Current trial — center the analysis object between two equal oxblood fields,
+   echoing the Theory book composition. The title/header begins level with the
+   colored fields; mobile remains unchanged. */
+@media(min-width:981px){
+  .frame{
+    padding-top:38px!important;
+  }
+
+  .frame::before,
+  .frame::after{
+    content:"";
+    position:absolute;
+    top:38px!important;
+    bottom:92px!important;
+    width:190px!important;
+    background:#5b2630;
+    pointer-events:none;
+    z-index:0;
+  }
+
+  .frame::before{
+    display:block;
+    left:0!important;
+    right:auto!important;
+  }
+
+  .frame::after{
+    display:block!important;
+    right:0!important;
+    left:auto!important;
+  }
+
+  .frame > :global(main){
+    width:calc(100% - 380px)!important;
+    max-width:900px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    transform:none!important;
+  }
+}
+
+@media(max-width:760px){
+  .frame::before{
+    display:none!important;
+  }
+}

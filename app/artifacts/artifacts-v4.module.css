@@ -2012,3 +2012,15 @@
     transform:scaleX(.58)!important;
   }
 }
+
+/* Current refinement — one final step finer than the previous rail treatment,
+   while remaining visibly stronger than the original hairline. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:2px!important;
+    transform:scaleX(.50)!important;
+  }
+}
