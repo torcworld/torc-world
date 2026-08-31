@@ -6,6 +6,113 @@ export type FeaturedAnalysis={
  boundary:string[];
  exceptionalTitle:string;
  exceptional:string[];
+ 'the-logic-of-scientific-discovery':{
+  headline:'Science becomes rational not by proving itself right, but by exposing where it could be wrong.',
+  analysis:[
+   'Popper’s governing move is not the slogan that theories should be falsifiable. The deeper relocation concerns what makes empirical science rational at all. Universal theories cannot be established by accumulating confirming instances in the way an inductivist picture suggests; they can, however, be placed at risk by consequences that may conflict with observation.',
+   'That reversal reorganizes the surrounding architecture. Basic statements, degrees of testability, corroboration, simplicity and methodological decisions become parts of one structure: a scientific theory earns empirical content by forbidding possible states of affairs and submitting those prohibitions to criticism. Evidence no longer functions primarily as accumulated verification of a universal claim.',
+   'The result clears G because the object of explanation—scientific testability and rational empirical inquiry—is independently identifiable, while the relocation is constrained by the logical asymmetry between universal statements and counterinstances. Popper changes what has to be invoked to explain why a theory is empirically scientific.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'8.2',artifact:'Theory, observation, basic statements, falsification, corroboration, probability, simplicity and scientific progress remain densely connected, though the field is more methodologically concentrated than the largest GΩ works.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'The book operates at a deep meta-scientific level while repeatedly returning abstract logical relations to concrete empirical testing.'},
+   {key:'CD',name:'Constraint Density',score:'9.0',artifact:'Logical form, testability, methodological rules and evidential exposure sharply restrict which relations can count as successful scientific testing.'},
+   {key:'ID',name:'Inferential Distance',score:'9.1',artifact:'The move from induction and verification toward deductive critical testing is a large, non-routine reconstruction of the problem of scientific rationality.'},
+   {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'A compact architecture of falsifiability, testing and corroboration reorganizes an exceptionally broad methodological field.'},
+   {key:'GR',name:'Generalization Reach',score:'9.1',artifact:'The structure transfers robustly across empirical theories and methodological problems without depending on one scientific domain.'}
+  ],
+  boundaryTitle:'Why GΩ rather than G?',
+  boundary:[
+   'G is the easy part of the determination: Popper relocates the explanatory basis of scientific rationality from inductive establishment toward conjectural theories exposed to possible refutation.',
+   'Ω is stricter. The claim is not that later philosophy of science accepted falsificationism. Much of it did not. The stronger point is that successor accounts of demarcation, testing, confirmation and empirical vulnerability cannot simply restore the earlier verification landscape as though Popper’s relocation had never occurred. Kuhnian, Lakatosian, Bayesian and other departures answer a problem-space that the Popperian intervention helped make non-optional.',
+   'That is why the corpus keeps GΩ: rejection of Popper’s solution remains compatible with successor-baseline necessity. The boundary would fall to G if later adequate inquiry could bypass the relocated testing problem rather than answer, revise or replace it.'
+  ],
+  exceptionalTitle:'Its successor power lies in changing the question, not winning the argument.',
+  exceptional:[
+   'Popper does not need later philosophy of science to remain Popperian. TORC asks whether the old explanatory baseline can simply be resumed without loss. Here the answer is no.',
+   'That makes this a useful GΩ case: successor necessity is visible precisely because major successors can oppose the original theory while remaining organized around the transformed methodological problem.'
+  ]
+ },
+ 'being-and-nothingness':{
+  headline:'Consciousness is explained by the distance it creates inside being.',
+  analysis:[
+   'Sartre does not begin with a substantial inner self that subsequently happens to choose, deceive itself or encounter other minds. The for-itself is constituted as a relation that is not identical with what it is: consciousness nihilates, exceeds its facticity and projects possibilities. That ontological displacement becomes the engine of the book.',
+   'Bad faith is the sharpest local demonstration. Ordinary deception can separate deceiver and deceived; self-deception cannot do so without reproducing the problem inside one consciousness. Sartre uses that contradiction to make an ordinary substantial psychology insufficient. Facticity and transcendence are not decorative existential terms—they explain why consciousness can both know and evade what it is.',
+   'The same architecture then generates temporality, freedom, the Look, being-for-others, embodiment, desire and action. G is warranted because the ontology changes what explains the target phenomena. They cease to be a list of psychological properties and become consequences of the structure of the for-itself.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'9.3',artifact:'Ontology, negation, temporality, freedom, bad faith, embodiment, intersubjectivity, desire and action remain mutually consequential across the work.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.7',artifact:'Concrete situations are carried through an exceptionally long phenomenological and ontological abstraction chain without losing the relations that motivate them.'},
+   {key:'CD',name:'Constraint Density',score:'8.8',artifact:'The for-itself/in-itself architecture imposes strong obligations across later analyses, though some phenomenological transitions preserve more interpretive latitude than the strictest formal systems.'},
+   {key:'ID',name:'Inferential Distance',score:'9.4',artifact:'Everyday phenomena such as negation and bad faith are reconstructed through a highly non-routine enabling ontology of nothingness, facticity and transcendence.'},
+   {key:'IC',name:'Integrative Compression',score:'9.4',artifact:'A small ontological vocabulary renders an enormous field of consciousness, action and interpersonal experience reconstructible.'},
+   {key:'GR',name:'Generalization Reach',score:'8.6',artifact:'The structure transfers powerfully across self-deception, temporality, embodiment, relations with others, desire and freedom while remaining centered on human reality.'}
+  ],
+  boundaryTitle:'Why G, not 3c—or GΩ?',
+  boundary:[
+   'A 3c reading can capture the extraordinary recursive treatment of freedom, self-knowledge and contradiction, but it remains insufficient for the completed artifact. Sartre is not only establishing an orientation toward a fracture in consciousness; he is proposing an ontology intended to explain why the fracture and its characteristic phenomena exist in the forms they do.',
+   'GΩ does not follow from magnitude or historical importance. Later adequate inquiry into consciousness, agency or self-deception can reject Sartre’s specific ontological basis rather than being compelled to retain it as a successor baseline. The explanatory relocation is achieved; successor necessity is not.'
+  ],
+  exceptionalTitle:'The magnitude comes from making ontology do explanatory work.',
+  exceptional:[
+   'The book’s abstraction is extreme, but TORC does not reward abstraction by itself. What matters is that the abstract structure repeatedly returns to explain concrete phenomena that generated the inquiry.',
+   'That combination—near-reference abstraction with a governing explanatory relocation—is why Being and Nothingness can sit at G | 920 without requiring GΩ.'
+  ]
+ },
+ 'in-search-of-lost-time':{
+  headline:'The consciousness that loses time becomes the form through which time can finally be inhabited.',
+  analysis:[
+   'Across the sequence, remembering, desiring, loving and perceiving do not simply reveal an external world. They repeatedly produce distortions through which that world is encountered. Names outrun places, jealousy manufactures objects from incomplete evidence, habit conceals change, and memory returns a past that voluntary recollection could not command.',
+   'That makes 3b unavoidable: consciousness discovers that its own attempt to possess reality is part of what makes reality unstable. The completed sequence, however, does not stop at exposure. Involuntary memory and artistic construction retrospectively reorganize losses, errors and temporal transformations into the possibility of the work itself.',
+   'The result is 3c because the fracture remains real. Art does not restore lost time as though loss never happened; it establishes an orientation capable of containing temporal destruction and perspectival instability without cancelling them. The life that could not be possessed becomes reconstructible as form.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'9.7',artifact:'Persons, places, names, artworks, social positions, erotic attachments, sensations and memories change one another’s significance across enormous temporal distances.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.1',artifact:'Minute sensations and social encounters repeatedly open into deep structures of memory, time, desire, identity and art while remaining anchored in lived experience.'},
+   {key:'CD',name:'Constraint Density',score:'9.1',artifact:'Chronology, remote echoes, social relations, repeated encounters and retrospective transformations severely constrain how the completed sequence can cohere.'},
+   {key:'ID',name:'Inferential Distance',score:'9.2',artifact:'The governing relation among involuntary memory, temporal loss, failed interpretation and artistic necessity requires exceptional retrospective reconstruction.'},
+   {key:'IC',name:'Integrative Compression',score:'9.6',artifact:'A comparatively small architecture of memory, time, desire, habit and art renders an immense heterogeneous experiential field reconstructible.'},
+   {key:'GR',name:'Generalization Reach',score:'8.1',artifact:'The structure transfers strongly across love, memory, social perception, identity, art and temporality, but remains primarily within human experiential problem-spaces.'}
+  ],
+  boundaryTitle:'Why 3c, not 3b—or G?',
+  boundary:[
+   '3b is genuinely present throughout the sequence: the narrator’s own remembering, desiring and interpreting repeatedly generate the conditions of his misrecognition. What moves the completed artifact higher is that Time Regained establishes an operationally real orientation through art that preserves rather than erases that fracture.',
+   'G is tempting because Proust often feels explanatory. TORC stops at 3c because the novel’s constructed experiential field does not provide the independent target-constraint required to turn its extraordinary phenomenological disclosure into a G-level explanatory relocation.'
+  ],
+  exceptionalTitle:'A CMS above 900 without G is exactly the point.',
+  exceptional:[
+   'Proust is one of the clearest demonstrations that cognitive magnitude and Operational Order are separate coordinates. The sequence can sustain near-reference relational load and compression while remaining 3c.',
+   'Its achievement is not smaller because it is non-generative. It is a different operation: recursive fracture becomes inhabitable through the very artistic form produced from it.'
+  ]
+ },
+ 'dream-of-the-red-chamber':{
+  headline:'An immense social world becomes intelligible only as the consciousness inhabiting it learns that attachment cannot make it stable.',
+  analysis:[
+   'The Jia household is not merely a huge cast inside an elaborate plot. Kinship, rank, money, ritual, poetry, erotic attachment, illness, dream and decline continually alter one another. The Stone/Jade and dream/waking structures make the represented world itself unstable: social identity and value are lived as real while repeatedly disclosed as transient, constructed and vulnerable to disappearance.',
+   'Baoyu is therefore not standing outside the system diagnosing it. His desire, attachments and resistance to the roles assigned to him become implicated in the same instability. That is the 3b pressure in the work: consciousness cannot secure a standpoint from which attachment, identity and the household order become simply knowable.',
+   'The corpus nevertheless resolves at 3c. The completed trajectory toward relinquishment and retrospective comprehension establishes an orientation capable of containing impermanence without pretending that the losses were unreal. The world is not repaired; attachment is not vindicated; but the fracture becomes inhabitable rather than merely recursive.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'9.5',artifact:'Family, economic, erotic, ritual, political, poetic and metaphysical relations remain consequential across an exceptionally large social field.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'Concrete household life repeatedly opens into dream, illusion, desire, fate and impermanence while preserving the lived social distinctions.'},
+   {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Kinship, hierarchy, ritual, chronology, household economy and character psychology strongly constrain one another across the narrative.'},
+   {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The completed relation between social flourishing, attachment, decline and relinquishment requires substantial retrospective reconstruction.'},
+   {key:'IC',name:'Integrative Compression',score:'8.6',artifact:'Stone/Jade, dream/waking, attachment/impermanence and household decline organize an enormous field without reducing it to a single allegory.'},
+   {key:'GR',name:'Generalization Reach',score:'7.7',artifact:'The architecture transfers strongly across family, status, desire, mortality and social decay while remaining embedded in its social-metaphysical world.'}
+  ],
+  boundaryTitle:'Why 3c, with real 3b pressure?',
+  boundary:[
+   'The seven-run determination was not unanimous: five evaluations resolved at 3c and two at 3b. That disagreement is structurally meaningful. The 3b case is that Baoyu’s self-implication and the collapse of the Jia world remain stronger than any achieved orientation, making relinquishment look more like exit than integration.',
+   'The 3c determination turns on a narrower claim: the completed artifact does not merely abandon the fracture. Retrospective comprehension preserves the reality of attachment and loss while establishing a way of orienting through their impermanence. The contradiction survives the integration.',
+   'G remains unnecessary. The dream and cosmological structures are immensely powerful inside the novel, but they do not establish a sufficiently independently constrained explanatory relocation of a target outside the artifact’s constructed representational world.'
+  ],
+  exceptionalTitle:'Its uncertainty is concentrated exactly where TORC says it should be.',
+  exceptional:[
+   'The 3b pressure is not noise around the classification. It identifies the decisive question: whether relinquishment constitutes an achieved orientation or merely the terminal consequence of an unresolved fracture.',
+   'The corpus answer is 3c | 853, but the surviving 3b reading should remain visible because it clarifies what the completed work had to achieve in order to cross the boundary.'
+  ]
+ },
+
 };
 
 export const featuredAnalyses:Record<string,FeaturedAnalysis>={
