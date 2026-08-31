@@ -1910,3 +1910,22 @@
     transform:translateX(-56px)!important;
   }
 }
+
+/* Mobile refinement — move the ORDER/Cognitive Order header cell itself left.
+   Previous button-only transforms could be neutralized by the compact grid layout;
+   shifting the grid item makes the movement explicit while leaving score values untouched. */
+@media(max-width:760px){
+  .artifactTableFour :global(.header)>:nth-child(3){
+    position:relative!important;
+    left:-38px!important;
+    transform:none!important;
+  }
+  .artifactTableFour :global(.header)>:nth-child(3) button{
+    transform:none!important;
+  }
+}
+@media(max-width:430px){
+  .artifactTableFour :global(.header)>:nth-child(3){
+    left:-38px!important;
+  }
+}

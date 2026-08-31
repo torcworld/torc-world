@@ -1,11 +1,14 @@
-# TORC mobile card reveal + Order heading refinement
+# TORC theory centered dual-field + mobile order alignment patch
 
-This patch makes only the two requested refinements:
+Changes only:
 
-1. On phone, selecting a Submit price card scrolls to the explanation panel with ~20px breathing room above it, so the whole top edge is visibly detached from the viewport while the previous price card stays out of view.
-2. On phone, the Operational/Cognitive Order header on Artifacts is moved about another centimetre to the left. Numeric result columns are untouched.
+1. `app/artifacts/artifacts-v4.module.css`
+   - On phone widths, moves the compact Operational/Cognitive Order header cell about 1 cm further left.
+   - Does not move the Order or CMS values.
 
-Files included:
-- app/evaluate-your-work/PricingCards.tsx
-- app/evaluate-your-work/submit.module.css
-- app/artifacts/artifacts-v4.module.css
+2. `app/theory/book/book.module.css`
+   - Desktop Theory Book experiment only.
+   - Centers the complete charcoal title + book-reading column between the existing thin outer oxblood frame rails.
+   - Replaces the former single detached right oxblood field with two equal detached oxblood fields, one on each side.
+   - Each side field is slightly narrower than the former single right field.
+   - Mobile Theory layout is unchanged.

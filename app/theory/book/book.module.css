@@ -790,3 +790,33 @@
     bottom:92px!important;
   }
 }
+
+/* Theory composition trial — center the complete title/book column between the
+   existing thin oxblood frame rails and give it equal detached oxblood fields
+   on both sides. Desktop only; mobile composition remains unchanged. */
+@media(min-width:981px){
+  .bookPage{
+    /* Equal side reserves center the charcoal title + gold book as one column. */
+    padding-left:148px!important;
+    padding-right:148px!important;
+
+    /* Two equal oxblood fields, each slightly narrower than the former single rail.
+       They remain detached from the centered book column and from the outer hairlines. */
+    background:
+      linear-gradient(#5b2630,#5b2630) left 22px top 38px / 104px calc(100% - 130px) no-repeat,
+      linear-gradient(#5b2630,#5b2630) right 22px top 38px / 104px calc(100% - 130px) no-repeat!important;
+  }
+
+  /* Retire the old one-sided field; the paired fields now live in bookPage background. */
+  .bookPage::after{
+    display:none!important;
+  }
+
+  /* Keep title and reader locked together as the centered central object. */
+  .bookTitlePage,
+  .bookReader{
+    width:100%!important;
+    margin-left:0!important;
+    margin-right:0!important;
+  }
+}
