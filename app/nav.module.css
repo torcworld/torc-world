@@ -242,3 +242,27 @@ a[aria-current="page"].submitLink{
   color:#171714!important;
   box-shadow:0 7px 18px rgba(56,43,26,.10)!important;
 }
+
+/* Batch 97 — restore full desktop navigation control dimensions */
+@media(min-width:901px){
+  .navLinks{
+    gap:10px!important;
+    align-items:center!important;
+  }
+  .mainLink,
+  .submitLink,
+  .orgLink{
+    box-sizing:border-box!important;
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    min-height:42px!important;
+    padding:11px 17px!important;
+    margin-left:0!important;
+    font-size:11px!important;
+    line-height:1!important;
+    font-weight:700!important;
+    letter-spacing:.11em!important;
+    white-space:nowrap!important;
+  }
+}

@@ -1824,3 +1824,25 @@
     background:rgba(91,38,48,.50)!important;
   }
 }
+
+/* Batch 97 — final guide reach + intermediate hairline weight */
+@media(min-width:761px){
+  /* Add the last few millimetres needed for the two upper oxblood guides to
+     physically overlap the restored pale horizontal rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-62px!important;
+    height:62px!important;
+    width:1px!important;
+    transform:scaleX(.78)!important;
+    background:rgba(91,38,48,.56)!important;
+  }
+
+  /* Match the downward continuation to the same intermediate line weight. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    transform:scaleX(.78)!important;
+    background:rgba(91,38,48,.56)!important;
+  }
+}
