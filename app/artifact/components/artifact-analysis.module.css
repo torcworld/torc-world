@@ -310,3 +310,20 @@
     margin-right:-28px!important;
   }
 }
+
+/* Current refinement — remove the charcoal end-cap from analysis pages. Keep only
+   the oxblood closing hairline, lifted to the midpoint of the former 34px cap so
+   the page ends with a tighter 17px breathing field beneath it. */
+@media(min-width:761px){
+  .page::after{
+    display:block!important;
+    content:""!important;
+    height:17px!important;
+    margin-left:-28px!important;
+    margin-right:-28px!important;
+    background:transparent!important;
+    border-top:1px solid #5b2630!important;
+    border-bottom:0!important;
+    box-sizing:border-box!important;
+  }
+}

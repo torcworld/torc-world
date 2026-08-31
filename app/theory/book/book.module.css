@@ -1028,3 +1028,12 @@
     overflow-y:auto!important;
   }
 }
+
+/* Current refinement — make only the continuous Theory oxblood hairline another
+   visual step finer while preserving the exact approved geometry to the nav rule. */
+@media(min-width:981px){
+  .bookPage::before{
+    border-left-width:.10px!important;
+    border-right-width:.10px!important;
+  }
+}
