@@ -1,244 +1,86 @@
+/* Batch 101 — clean navigation reset. Intentionally replaces accumulated nav overrides. */
 .navLinks{
+  display:flex;
   align-items:center;
-  flex-wrap:wrap;
   justify-content:flex-end;
+  flex-wrap:nowrap;
+  gap:10px;
+  width:auto;
 }
 .brandLockup{
-  display:flex!important;
+  display:flex;
+  flex:0 0 auto;
   flex-direction:column;
   align-items:flex-start;
+  justify-content:center;
   gap:4px;
-  min-width:190px;
-  padding:3px 0;
-  line-height:1!important;
+  min-width:245px;
+  padding:0;
+  font-family:Arial,sans-serif;
+  text-transform:none;
+  line-height:1;
 }
 .brandLockup b{
-  font:900 20px/1 Arial,sans-serif;
-  letter-spacing:.18em;
-  color:#171714;
+  display:block;
+  color:#5b2630;
+  font:900 27px/.9 Arial,sans-serif;
+  letter-spacing:.20em;
 }
 .brandLockup span{
-  font:700 7.5px/1.1 Arial,sans-serif;
-  letter-spacing:.12em;
-  text-transform:uppercase;
+  display:block;
+  margin-top:3px;
   color:#5e5952;
+  font:700 8px/1.1 Arial,sans-serif;
+  letter-spacing:.13em;
+  text-transform:uppercase;
   white-space:nowrap;
 }
 .brandLockup::after{display:none!important}
-
-.submitLink,.orgLink{
-  margin-left:10px;
-  padding:9px 13px;
-  font-weight:700!important;
+.mainLink,.submitLink,.orgLink{
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  width:auto;
+  min-width:0;
+  min-height:42px;
+  margin:0;
+  padding:11px 17px;
+  white-space:nowrap;
+  font:700 12px/1 Arial,sans-serif;
   letter-spacing:.11em;
-  transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease,box-shadow .16s ease;
+  text-transform:uppercase;
+  text-align:center;
+  opacity:1!important;
 }
-.submitLink{border:1px solid #b9aa90;background:#d8c9ad;color:#171714!important}
-.submitLink:hover,.submitLink:focus-visible{background:#cdbb9b;border-color:#a89574;transform:translateY(-1px);box-shadow:0 7px 18px rgba(56,43,26,.10)}
-.orgLink{margin-left:7px;border:1px solid #4a1e27;background:#5b2630;color:#fff!important}
-.orgLink:hover,.orgLink:focus-visible{background:#431b23;border-color:#34141a;transform:translateY(-1px);box-shadow:0 8px 20px rgba(67,27,35,.18)}
-.submitLink::after,.orgLink::after{display:none!important}
-
-/* Batch 42 — desktop navigation family + stronger TORC lockup */
-@media(min-width:901px){
-  .navLinks{gap:10px}
-  .mainLink,.submitLink{
-    margin-left:0;
-    padding:11px 17px;
-    border:1px solid #b9aa90;
-    background:#d8c9ad;
-    color:#171714!important;
-    font-weight:700!important;
-    letter-spacing:.11em;
-    transition:background .16s ease,border-color .16s ease,color .16s ease,transform .16s ease,box-shadow .16s ease;
-  }
-  .mainLink:hover,.mainLink:focus-visible,
-  .submitLink:hover,.submitLink:focus-visible{
-    background:#cdbb9b;
-    border-color:#a89574;
-    transform:translateY(-1px);
-    box-shadow:0 7px 18px rgba(56,43,26,.10);
-  }
-  .mainLink::after,.submitLink::after{display:none!important}
-  .orgLink{margin-left:0;padding:11px 17px}
-
-  .brandLockup{
-    min-width:245px;
-    padding:0;
-    transform:translateY(4px);
-  }
-  .brandLockup b{
-    font-size:27px;
-    line-height:.9;
-    letter-spacing:.20em;
-  }
-  .brandLockup span{
-    margin-top:3px;
-    font-size:8px;
-    letter-spacing:.13em;
-  }
-}
-
-@media(max-width:900px){
-  .brandLockup{min-width:auto}
-  .brandLockup span{display:none}
-}
-@media(max-width:800px){
-  .navLinks{row-gap:10px}
-  .submitLink,.orgLink{margin-left:4px;padding:8px 10px}
-}
-@media(max-width:620px){
-  .submitLink,.orgLink{margin-left:0}
-}
-
-/* Batch 43 — oxblood TORC wordmark */
-.brandLockup b{
-  color:#5b2630;
-}
-
-/* Batch 44 — mobile full-width navigation blocks */
-@media(max-width:900px){
-  .brandLockup{display:none!important}
-  .navLinks{
-    width:100%;
-    display:grid!important;
-    grid-template-columns:1fr 1fr;
-    gap:8px;
-  }
-  .mainLink,.submitLink,.orgLink{
-    box-sizing:border-box;
-    width:100%;
-    min-height:44px;
-    margin:0!important;
-    padding:11px 10px!important;
-    display:flex!important;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    font-weight:700!important;
-    letter-spacing:.09em;
-  }
-  .mainLink,.submitLink{
-    border:1px solid #b9aa90;
-    background:#d8c9ad;
-    color:#171714!important;
-  }
-  .orgLink{
-    border:1px solid #4a1e27;
-    background:#5b2630;
-    color:#fff!important;
-  }
-  .mainLink::after,.submitLink::after,.orgLink::after{display:none!important}
-}
-@media(max-width:430px){
-  .navLinks{gap:6px}
-  .mainLink,.submitLink,.orgLink{
-    min-height:42px;
-    padding:10px 7px!important;
-    font-size:8px!important;
-    letter-spacing:.07em;
-  }
-}
-
-/* Batch 50 — permanent gold navigation family */
 .mainLink,.submitLink{
-  background:#d7c29d!important;
-  border-color:#ad956f!important;
+  border:1px solid #b5a07d;
+  background:#d9c7a6;
   color:#171714!important;
 }
-.mainLink:hover,.mainLink:focus-visible,
-.submitLink:hover,.submitLink:focus-visible{
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
-  color:#171714!important;
-}
-
-
-/* Batch 53 — quieter gold family with persistent active location */
-.mainLink,.submitLink{
-  background:#d2bb91!important;
-  border-color:#a78e68!important;
-  color:#171714!important;
-}
-.mainLink:hover,.mainLink:focus-visible,
-.submitLink:hover,.submitLink:focus-visible,
-.activeLink{
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
-  color:#171714!important;
-}
-
-
-/* Batch 55 — lighter resting navigation, stronger active page */
-.mainLink,.submitLink{
-  background:#d9c7a6!important;
-  border-color:#b5a07d!important;
-  color:#171714!important;
-}
-.mainLink:hover,.mainLink:focus-visible,
-.submitLink:hover,.submitLink:focus-visible,
-.activeLink{
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
-  color:#171714!important;
-}
-
-
-/* Batch 61 — persistent page location + stronger TORC wordmark */
-.mainLink.activeLink,
-.submitLink.activeLink,
-a[aria-current="page"].mainLink,
-a[aria-current="page"].submitLink{
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
+.mainLink:hover,.mainLink:focus-visible,.submitLink:hover,.submitLink:focus-visible,
+.mainLink.activeLink,.submitLink.activeLink,
+.mainLink[aria-current="page"],.submitLink[aria-current="page"]{
+  background:#c7aa76;
+  border-color:#8f744e;
   color:#171714!important;
   box-shadow:0 7px 18px rgba(56,43,26,.10);
 }
-.brandLockup span{
-  display:none!important;
+.orgLink{
+  border:1px solid #4a1e27;
+  background:#5b2630;
+  color:#fff!important;
 }
-.brandLockup{
-  min-width:170px;
-}
-.brandLockup b{
-  font-size:31px!important;
-  line-height:.9!important;
-  letter-spacing:.18em!important;
-}
+.orgLink:hover,.orgLink:focus-visible{background:#431b23;border-color:#34141a;color:#fff!important}
+.mainLink::after,.submitLink::after,.orgLink::after{display:none!important}
+
 @media(max-width:900px){
-  .brandLockup{display:none!important}
+  .brandLockup{display:none}
+  .navLinks{width:100%;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .mainLink,.submitLink,.orgLink{width:100%;min-height:44px;padding:11px 10px;white-space:normal}
 }
-
-
-/* Batch 62 — restore original TORC lockup */
-.brandLockup{
-  min-width:initial!important;
-}
-.brandLockup b{
-  font-size:inherit!important;
-  line-height:inherit!important;
-  letter-spacing:inherit!important;
-}
-.brandLockup span{
-  display:block!important;
-}
-
-/* Persistent selected-page state: match the hover gold, regardless of link class ordering. */
-.nav a[aria-current="page"],
-.nav a[aria-current="page"]:visited,
-.nav a[aria-current="page"]:not(:hover){
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
-  color:#171714!important;
-}
-
-
-/* Batch 63 SAFE — real local nav root for persistent current-page styling */
-.navRoot{}
-.navRoot .mainLink[aria-current="page"],
-.navRoot .submitLink[aria-current="page"]{
-  background:#c7aa76!important;
-  border-color:#8f744e!important;
-  color:#171714!important;
-  box-shadow:0 7px 18px rgba(56,43,26,.10)!important;
+@media(max-width:430px){
+  .navLinks{gap:6px}
+  .mainLink,.submitLink,.orgLink{min-height:42px;padding:10px 7px;font-size:8px;letter-spacing:.07em}
 }
