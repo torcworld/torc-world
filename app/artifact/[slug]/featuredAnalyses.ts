@@ -6,6 +6,9 @@ export type FeaturedAnalysis={
  boundary:string[];
  exceptionalTitle:string;
  exceptional:string[];
+};
+
+export const featuredAnalyses:Record<string,FeaturedAnalysis>={
  'the-logic-of-scientific-discovery':{
   headline:'Science becomes rational not by proving itself right, but by exposing where it could be wrong.',
   analysis:[
@@ -112,10 +115,6 @@ export type FeaturedAnalysis={
    'The corpus answer is 3c | 853, but the surviving 3b reading should remain visible because it clarifies what the completed work had to achieve in order to cross the boundary.'
   ]
  },
-
-};
-
-export const featuredAnalyses:Record<string,FeaturedAnalysis>={
  'the-magic-mountain':{
   headline:'Integration appears once — and that is enough to change the completed work.',
   analysis:[
