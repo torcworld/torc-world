@@ -1,16 +1,12 @@
-# TORC Submit — Selected Material Refinement v2
+TORC — Submit detail outline + Artifacts pagination target
 
-Apply on top of the currently working Submit Consultancy build + selector refinement.
+Changes only:
+1. /app/evaluate-your-work/submit.module.css
+   - Adds the same thin oxblood outline treatment to the selected package detail panel.
+   - Keeps the gold background and dark readable text unchanged.
 
-Contains exactly two source replacements:
-- `app/evaluate-your-work/PricingCards.tsx`
-- `app/evaluate-your-work/submit.module.css`
+2. /app/artifacts/page.tsx
+   - Pagination no longer scrolls to the top of the entire page.
+   - Previous / page number / Next now scroll smoothly to the top of the gold artifact corpus/list surface, below the search/filter area.
 
-Changes:
-- removes duplicate Selected/Details labels;
-- selected pricing card remains warm gold;
-- full detail panel uses the same warm-gold background with dark text;
-- hero white text shifts ~3 mm farther left on desktop;
-- small text on charcoal surfaces uses warm gold instead of pink.
-
-No navigation, artifacts, corpus, global CSS, or shared analysis components are included.
+No navigation, artifact data, analysis pages, global CSS, or other routes changed.

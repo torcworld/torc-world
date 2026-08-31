@@ -512,7 +512,8 @@
 .principle>span{color:#d9c7a6;}
 .packageDetail{
  background:#d2bb91;
- border-color:#9f8355;
+ border-color:var(--accent);
+ border-width:1px;
  box-shadow:0 18px 38px rgba(91,38,48,.08);
 }
 .detailHeader{border-bottom-color:rgba(47,44,40,.34);}
