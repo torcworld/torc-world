@@ -939,3 +939,28 @@
     height:56px!important;
   }
 }
+
+/* Current correction — the previous Theory connector extensions were being clipped
+   at the top edge of .bookPage. Let the pseudo-element escape the page box so the
+   two oxblood hairlines can actually meet the navigation rule. */
+@media(min-width:981px){
+  .bookPage{
+    clip-path:none!important;
+    overflow:visible!important;
+  }
+  .bookPage::before{
+    top:-19px!important;
+    height:19px!important;
+    z-index:3!important;
+  }
+
+  /* Raise the Table of Contents and give the opened panel enough vertical room
+     to present the full contents list on ordinary desktop viewports. */
+  .readerNav{
+    top:108px!important;
+  }
+  .readerNavPanel{
+    max-height:calc(100vh - 132px)!important;
+    overflow-y:auto!important;
+  }
+}

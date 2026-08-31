@@ -2118,3 +2118,11 @@
     background:#c7aa76!important;
   }
 }
+
+/* Current trial — replace the exposed Artifacts frame field trial from active gold
+   with TORC oxblood. The existing cards, controls and corpus surfaces remain intact. */
+@media(min-width:761px){
+  .artifactsPage{
+    background:#5b2630!important;
+  }
+}
