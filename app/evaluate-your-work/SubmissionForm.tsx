@@ -5,8 +5,8 @@ import styles from './submit.module.css';
 
 const packages = {
  evaluation: 'TORC Evaluation — €195',
- development: 'TORC Development — €495',
- cycle: 'TORC Development Cycle — €895',
+ development: 'TORC Development — €595',
+ cycle: 'TORC Development Cycle — €995',
 } as const;
 
 type PackageKey = keyof typeof packages;
@@ -48,22 +48,21 @@ export default function SubmissionForm(){
   <label>What do you most want TORC to answer? <span className={styles.optional}>Optional</span>
    <select name="focus" defaultValue="">
     <option value="">Choose a question or leave this open</option>
-    <option>What Operational Order does my artifact actually reach — and why?</option>
-    <option>What specifically prevents the work from reaching the next Operational Order?</option>
-    <option>Where does the work create genuine depth, and where does it only appear deep?</option>
-    <option>Which dimensions most limit its Cognitive Magnitude?</option>
-    <option>How can I increase relational load without simply adding more material?</option>
-    <option>How can I deepen abstraction without making it empty or obscure?</option>
-    <option>Where does the work introduce structure that it fails to integrate?</option>
-    <option>Are the work’s contradictions genuinely recursive or merely unresolved?</option>
-    <option>Does the ending reorganize the artifact, or only conclude it?</option>
-    <option>Which structural changes would produce the greatest cognitive gain?</option>
-    <option>What could be removed without reducing what the artifact demonstrates?</option>
+    <option>Something feels present in the work but not yet fully realized.</option>
+    <option>The work loses force somewhere, but I cannot identify why.</option>
+    <option>Several problems may be manifestations of the same deeper problem.</option>
+    <option>What existing material could be doing more?</option>
+    <option>What should I protect rather than revise?</option>
+    <option>Is a major revision I am considering structurally warranted?</option>
+    <option>Does the ending change the meaning of what came before?</option>
+    <option>Diagnose the artifact without a preferred outcome.</option>
+    <option>What Operational Order does the artifact actually reach — and why?</option>
+    <option>I have a specific CMS or dimension question.</option>
     <option>I have another question.</option>
    </select>
   </label>
   <p className={styles.questionNote}><b>Evaluation</b> diagnoses the artifact and includes one clarification after delivery. <b>Development</b> uses your questions as part of the development diagnosis and includes one follow-up round. <b>Development Cycle</b> adds revision support and one re-evaluation of the revised artifact.</p>
-  <label>Anything specific you want TORC to examine? <span className={styles.optional}>Optional</span><textarea name="notes" rows={4} placeholder="Add context, a revision question, a passage you are unsure about, or the operation you are trying to achieve."/></label>
+  <label>Anything specific you want TORC to examine? <span className={styles.optional}>Optional</span><textarea name="notes" rows={4} placeholder="Add context, a revision question, a passage you are unsure about, or simply tell us where the work feels unresolved."/></label>
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
   <label className={styles.check}><input type="checkbox" name="permission" value="yes" required/><span>I own this work or have permission to submit it for evaluation.</span></label>
   <button className={styles.submitButton} disabled={status==='sending'}>{status==='sending'?'Sending…':'Submit artifact for review'}</button>
