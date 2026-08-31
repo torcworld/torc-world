@@ -2515,133 +2515,43 @@
   }
 }
 
-/* Current experiment — narrow only the corpus/results stage below the search
-   console. The outer page/header geometry stays intact; the oxblood fields step
-   inward around the results so the moving rows read as a tighter instrument. */
-@media(min-width:861px){
-  /* Lift the complete Artifacts composition another ~3–4 mm toward the nav rule. */
+/* FINAL FORCE OVERRIDE — 2026-09-01
+   This block intentionally sits last in the active Artifacts stylesheet so the
+   requested corpus geometry/background cannot be cancelled by older experiments. */
+@media (min-width:761px){
+  /* Move the ENTIRE Artifacts composition up by ~2 mm. */
   .artifactsPage{
-    margin-top:-3px!important;
-  }
-
-  /* Keep search at the broad page width; inset the corpus by ~5 cm total. */
-  .corpusSurface{
     position:relative!important;
-    margin-left:25px!important;
-    margin-right:25px!important;
-    padding-left:18px!important;
-    padding-right:18px!important;
+    top:-8px!important;
+  }
+
+  /* Keep the detached outer guides on the outside oxblood edges and extend them
+     by the same 8px so their upper endpoints still meet the navigation rule. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-62px!important;
+    height:62px!important;
+  }
+  .artifactHeader::before{left:-28px!important;right:auto!important}
+  .artifactHeader::after{right:-28px!important;left:auto!important}
+
+  /* Search area stays full width. From the corpus onward, expose much broader
+     oxblood side fields: ~140px each side, i.e. about 3cm farther inward than
+     the original 28px inset. */
+  .corpusSurface{
+    margin-left:140px!important;
+    margin-right:140px!important;
+    width:auto!important;
+    max-width:none!important;
     box-sizing:border-box!important;
-  }
-
-  /* Oxblood shoulders created by the inset: visually continue the side fields
-     inward from the point where the actual artifact corpus begins. */
-  .corpusSurface::before,
-  .corpusSurface::after{
-    content:"";
-    position:absolute;
-    top:0;
-    bottom:0;
-    width:25px;
-    background:#5b2630;
-    pointer-events:none;
-    z-index:0;
-  }
-  .corpusSurface::before{left:-25px}
-  .corpusSurface::after{right:-25px}
-  .corpusSurface > *{position:relative;z-index:1}
-
-  /* Rebalance the tighter four-column table rather than simply squeezing it. */
-  .artifactTableFour :global(.row){
-    grid-template-columns:
-      minmax(220px,1.48fr)
-      minmax(135px,.82fr)
-      minmax(165px,.92fr)
-      minmax(205px,1.12fr)!important;
-    column-gap:18px!important;
-  }
-  .tableHeader button,
-  .tableHeader span{
-    font-size:13px!important;
-  }
-  .sortArrow{font-size:17px!important}
-
-  /* Undo older hand-positioning that becomes unnecessary in the tighter grid. */
-  .artifactTableFour :global(.row:not(.header))>:nth-child(3),
-  .artifactTableFour :global(.row:not(.header))>:nth-child(4),
-  .artifactTableFour :global(.header)>:nth-child(4){
-    transform:none!important;
-  }
-}
-
-/* Correction — the previous corpus inset was only 25px per side (~1.3cm total),
-   so the requested ~5cm reduction was barely visible. Make the results stage
-   unmistakably narrower: ~190px total (~95px each side), beginning only where
-   the corpus/results section starts. */
-@media(min-width:861px){
-  .corpusSurface{
-    margin-left:95px!important;
-    margin-right:95px!important;
-    padding-left:20px!important;
-    padding-right:20px!important;
-  }
-
-  .corpusSurface::before,
-  .corpusSurface::after{
-    width:95px!important;
-    background:#5b2630!important;
-  }
-  .corpusSurface::before{left:-95px!important}
-  .corpusSurface::after{right:-95px!important}
-
-  /* Tighten the table to the genuinely narrower corpus width. */
-  .artifactTableFour :global(.row){
-    grid-template-columns:
-      minmax(190px,1.45fr)
-      minmax(120px,.78fr)
-      minmax(145px,.9fr)
-      minmax(180px,1.08fr)!important;
-    column-gap:14px!important;
-  }
-  .tableHeader button,
-  .tableHeader span{
-    font-size:12px!important;
-  }
-  .sortArrow{font-size:16px!important}
-}
-
-/* Current refinement — move the complete Artifacts composition ~2 mm upward,
-   return the corpus rows to the ambient site ground with light-ochre hover, and
-   tighten the results stage a further ~2 cm per side so the oxblood shoulders
-   carry more visual weight. */
-@media(min-width:861px){
-  /* ~2 mm upward from the previous visible state. Because the bridge hairlines
-     are attached to this composition, their upper endpoints move up with it and
-     close the remaining gap to the translucent nav rule. */
-  .artifactsPage{
-    margin-top:-11px!important;
-  }
-
-  /* Narrow the results stage further: previous 95px inset + ~80px extra per side. */
-  .corpusSurface{
-    margin-left:175px!important;
-    margin-right:175px!important;
-    padding-left:18px!important;
-    padding-right:18px!important;
     background:var(--bg)!important;
     color:#171714!important;
   }
 
-  .corpusSurface::before,
-  .corpusSurface::after{
-    width:175px!important;
-    background:#5b2630!important;
-  }
-  .corpusSurface::before{left:-175px!important}
-  .corpusSurface::after{right:-175px!important}
-
-  /* Every artifact rests on the same ambient ground as the search controls;
-     hover/focus uses the light navigation ochre. */
+  /* Entire artifact list uses the site's ambient ground; hover uses the same
+     light ochre as the resting navigation buttons/search interaction. */
+  .artifactTableFour,
+  .artifactTableFour :global(.row),
   .artifactTableFour :global(a.row:not(.header)){
     background:var(--bg)!important;
     color:#171714!important;
@@ -2653,18 +2563,151 @@
     outline:none!important;
   }
 
-  /* Rebalance the tighter corpus so the four data columns remain legible. */
+  /* Compact the four columns so order and magnitude read as a tighter unit. */
   .artifactTableFour :global(.row){
-    grid-template-columns:
-      minmax(170px,1.42fr)
-      minmax(100px,.76fr)
-      minmax(125px,.9fr)
-      minmax(150px,1.06fr)!important;
-    column-gap:12px!important;
+    grid-template-columns:minmax(0,1.65fr) minmax(105px,.72fr) minmax(122px,.72fr) minmax(132px,.78fr)!important;
+    column-gap:14px!important;
   }
-  .tableHeader button,
-  .tableHeader span{
-    font-size:11.5px!important;
+  .tableHeader button{
+    font-size:11px!important;
+    letter-spacing:.055em!important;
   }
-  .sortArrow{font-size:15px!important}
+}
+
+/* FINAL REFINEMENT — 2026-09-01
+   Compact column alignment, clearer neutral row separators, charcoal compare
+   closure, and a final 1 mm trim to the upper bridge lines. */
+@media (min-width:761px){
+  /* Give the long Cognitive Magnitude heading a little more breathing room. */
+  .artifactTableFour :global(.header)>:nth-child(4) button,
+  .artifactTableFour :global(.header)>:nth-child(4) span{
+    font-size:9.5px!important;
+    letter-spacing:.025em!important;
+    line-height:1.15!important;
+  }
+
+  /* Pull the information columns inward without moving the Artifact title column:
+     Medium + Operational Order ~0.5 cm left, Cognitive Magnitude ~1 cm left. */
+  .artifactTableFour :global(.row)>:nth-child(2),
+  .artifactTableFour :global(.row)>:nth-child(3){
+    position:relative!important;
+    left:-19px!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(4){
+    position:relative!important;
+    left:-38px!important;
+  }
+
+  /* Replace the oxblood separators with a clearer charcoal row structure. */
+  .artifactTableFour :global(.header){
+    border-top-color:#575653!important;
+    border-bottom-color:#575653!important;
+  }
+  .artifactTableFour :global(a.row:not(.header)){
+    border-bottom:2px solid #575653!important;
+  }
+  .artifactTableFour,
+  .pagination{
+    border-color:#575653!important;
+  }
+
+  /* Compare Artifacts becomes a charcoal closing field. */
+  .inlineCompare{
+    background:#353432!important;
+    color:#f8f3e8!important;
+    border-color:#575653!important;
+  }
+  .inlineCompareHead :global(.eyebrow){
+    color:#f8f3e8!important;
+  }
+  .inlineCompareHead h2{
+    color:#d9c7a6!important;
+  }
+  .inlineCompare .inlinePicker>label{
+    color:#f8f3e8!important;
+  }
+
+  /* Keep the actual artifact selectors in their existing material treatment. */
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    /* Intentionally no background override here: preserve current control colours. */
+  }
+
+  /* Final upper-bridge trim: stop ~1 mm lower while preserving the current
+     outer-edge alignment and visual weight. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    top:-58px!important;
+    height:58px!important;
+  }
+}
+
+/* CURRENT REFINEMENT — stepped Artifacts widths + full charcoal Compare closure.
+   Hero stays full width; search sits exactly midway between hero and compact corpus. */
+@media (min-width:761px){
+  /* The corpus currently sits 140px in from each side, so 70px creates the
+     visual midpoint: full-width hero -> narrower search -> compact corpus. */
+  .artifactToolsStrong{
+    margin-left:70px!important;
+    margin-right:70px!important;
+    width:auto!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+  }
+
+  /* Keep the actual search/filter controls and their colour treatment unchanged;
+     the reduced panel width naturally shortens the long Search field. */
+
+  /* Turn the complete Compare region into one uninterrupted charcoal block.
+     Bleed through the corpus padding so no pale/red strip remains around it. */
+  .inlineCompare{
+    margin-left:-10px!important;
+    margin-right:-10px!important;
+    margin-bottom:-30px!important;
+    padding:28px 30px 30px!important;
+    background:#353432!important;
+    color:#f8f3e8!important;
+    border-top:0!important;
+    border-left:0!important;
+    border-right:0!important;
+    border-bottom:0!important;
+    box-shadow:none!important;
+  }
+  .inlineCompareHead :global(.eyebrow){
+    color:#f8f3e8!important;
+  }
+  .inlineCompareHead h2{
+    color:#d9c7a6!important;
+  }
+  .inlineCompare .inlinePicker>label{
+    color:#f8f3e8!important;
+  }
+
+  /* Trial requested for the two Choose-an-Artifact controls: light ochre inside
+     the charcoal field, while keeping the existing dark typography. */
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+}
+
+/* FINAL COMPARE CLOSURE — extend the charcoal field across the full Artifacts
+   frame, including the oxblood side gutters, up to the section boundary above. */
+@media (min-width:761px){
+  .corpusSurface .inlineCompare{
+    margin-left:-140px!important;
+    margin-right:-140px!important;
+    width:calc(100% + 280px)!important;
+    max-width:none!important;
+    box-sizing:border-box!important;
+    background:#353432!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
 }
