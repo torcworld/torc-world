@@ -2126,3 +2126,59 @@
     background:#5b2630!important;
   }
 }
+
+/* Current trial — white corpus/search material with resting black typography.
+   Keep the oxblood architectural field/frame from the previous trial, but turn
+   every pale-ochre working surface into white. On interaction, use the lighter
+   resting-navigation ochre rather than the deeper active gold. */
+@media(min-width:761px){
+  .artifactToolsStrong,
+  .corpusSurface{
+    background:#fff!important;
+  }
+
+  .controlLabel select,
+  .controlLabel input,
+  .controlLabel select option,
+  .inlineSelected,
+  .inlineDropdown,
+  .inlineDropdown input,
+  .inlineOptions button,
+  .inlineSwap{
+    background:#fff!important;
+    color:#171714!important;
+  }
+  .controlLabel input::placeholder,
+  .inlineDropdown input::placeholder{
+    color:rgba(23,23,20,.58)!important;
+  }
+  .inlineSelected span,
+  .inlineSelected small{
+    color:#171714!important;
+  }
+
+  .artifactTableFour :global(a.row:not(.header)){
+    background:#fff!important;
+    color:#171714!important;
+    transition:background-color .14s ease,border-color .14s ease!important;
+  }
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#d9c7a6!important;
+    color:#171714!important;
+    border-color:#5b2630!important;
+    outline:none!important;
+  }
+
+  .controlLabel select:hover,
+  .controlLabel input:hover,
+  .inlineSelected:hover,
+  .inlineSelected:focus-visible,
+  .inlineOptions button:hover,
+  .inlineOptions button:focus-visible,
+  .inlineSwap:hover,
+  .inlineSwap:focus-visible{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+}

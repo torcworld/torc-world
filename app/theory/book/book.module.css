@@ -964,3 +964,32 @@
     overflow-y:auto!important;
   }
 }
+
+/* Current correction — draw each Theory outer rail as one uninterrupted element.
+   The previous setup joined a page border to a separate upper connector, which
+   could produce a tiny horizontal step. The pseudo-element now owns the complete
+   rail from the navigation rule downward. */
+@media(min-width:981px){
+  .bookPage{
+    border-left:0!important;
+    border-right:0!important;
+    overflow:visible!important;
+    clip-path:none!important;
+  }
+  .bookPage::before{
+    display:block!important;
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    top:-19px!important;
+    bottom:0!important;
+    height:auto!important;
+    border-left:.5px solid #5b2630!important;
+    border-right:.5px solid #5b2630!important;
+    background:none!important;
+    opacity:1!important;
+    z-index:3!important;
+    pointer-events:none!important;
+  }
+}
