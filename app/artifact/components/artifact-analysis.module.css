@@ -299,3 +299,14 @@
     align-self:center!important;
   }
 }
+
+
+/* Current refinement — keep the compact charcoal page-end closure inside the
+   white analysis column, flush to its oxblood side rails without overlapping
+   the adjacent oxblood fields. */
+@media(min-width:761px){
+  .page::after{
+    margin-left:-28px!important;
+    margin-right:-28px!important;
+  }
+}

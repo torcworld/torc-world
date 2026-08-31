@@ -70,7 +70,7 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
        <p>Pierre and Andrei make 3c a serious alternative. Their earlier orientations toward agency, mortality and meaning break, and the novel does not simply restore them. But their transformations still leave a larger question unanswered: why do people so persistently mistake intention for control?</p>
        <p>Tolstoy answers by changing the status of the characters themselves. Napoleon, Kutuzov, Pierre and the rest cease to function only as agents inside events; they become evidence about how events are produced and then misunderstood. Orders become contributions rather than sufficient causes. Outcomes emerge from interactions no participant can represent in full. History then performs a final distortion: it compresses that distributed process back into the biography of a visible individual.</p>
        <p>This is where the novel crosses into G. It does not merely show consciousness discovering that reality exceeds it. <em>War and Peace</em> does not merely portray the limits of human agency. It explains why those limits exist—and why, afterward, we are tempted to erase them.</p>
-       <Link className={`${styles.methodologyCta} ${styles.orderModelCta}`} href="/methodology#operational-order"><span>TORC classification model</span><strong>Explore the 7 Cognitive Orders</strong><span aria-hidden="true">→</span></Link>
+       <Link className={`${styles.methodologyCta} ${styles.orderModelCta}`} href="/methodology#operational-order"><span>TORC classification model</span><strong>Explore the 7 Operational Orders</strong><span aria-hidden="true">→</span></Link>
      </section>
    </article>
 

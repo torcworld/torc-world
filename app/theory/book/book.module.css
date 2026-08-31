@@ -920,3 +920,13 @@
     pointer-events:none!important;
   }
 }
+
+
+/* Current refinement — close the Theory upper rail connectors exactly against
+   the navigation's translucent horizontal rule. */
+@media(min-width:981px){
+  .bookPage::before{
+    top:-38px!important;
+    height:38px!important;
+  }
+}
