@@ -193,3 +193,13 @@
     margin-top:82px!important;
   }
 }
+
+/* Current refinement — use the resting navigation-button gold rather than the
+   deeper active/hover gold for the two cognitive-model fields. */
+.cmsSection{
+  background:#d9c7a6!important;
+}
+.boundary .orderModelCta,
+.boundary .orderModelCta:hover{
+  background:#d9c7a6!important;
+}

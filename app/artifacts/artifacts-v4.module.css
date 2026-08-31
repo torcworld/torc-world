@@ -2037,3 +2037,17 @@
     background:#5b2630!important;
   }
 }
+
+/* Current refinement — keep the frame fully saturated and crisp, but reduce its
+   physical weight below one CSS pixel on high-density displays. No opacity or
+   transform softening. */
+@media(min-width:761px){
+  .artifactHeader::before,
+  .artifactHeader::after,
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:.75px!important;
+    transform:none!important;
+    background:#5b2630!important;
+  }
+}

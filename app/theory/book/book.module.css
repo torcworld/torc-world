@@ -840,3 +840,14 @@
       linear-gradient(#5b2630,#5b2630) right 0 top 38px / 148px calc(100% - 130px) no-repeat!important;
   }
 }
+
+/* Current refinement — match the crisp, finer house-frame treatment used on
+   Artifacts while retaining full oxblood saturation. */
+@media(min-width:981px){
+  .bookPage{
+    border-left-width:.75px!important;
+    border-right-width:.75px!important;
+    border-left-color:#5b2630!important;
+    border-right-color:#5b2630!important;
+  }
+}
