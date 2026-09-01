@@ -107,3 +107,22 @@
 
 /* Remove the red rule above the final Compare block. */
 .compareSection{border-top:0!important}
+
+/* Editorial v6 — unified light-brown artifact field + 1 mm return */
+@media(min-width:761px){
+  /* Move the gray hero block 1 mm back down from the v5 position. */
+  .artifactsPage{padding-top:calc(74px - 4.5mm)}
+}
+
+/* Every artifact entry and its table field now use the same light-brown tone. */
+.artifactTable{background:var(--ochre)!important}
+.artifactTable :global(a.row:not(.header)),
+.artifactTable :global(a.row:not(.header):nth-of-type(even)){
+  background:var(--ochre)!important;
+}
+
+/* Hover/focus turns the complete row gold, with no broken-white sliver left behind. */
+.artifactTable :global(a.row:not(.header):hover),
+.artifactTable :global(a.row:not(.header):focus-visible){
+  background:var(--gold)!important;
+}

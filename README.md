@@ -1,9 +1,7 @@
-TORC Artifacts — Editorial v5
+TORC Artifacts — Editorial v6
 
-Based directly on Editorial v4.
-Changes only:
-- desktop Artifacts composition lifted a further 1.5 mm;
-- Artifact / Medium / Operational Order / CMS / Open Evaluation header bar is restrained gold;
-- header lettering remains TORC red;
-- active pagination number is gold with black numeral;
-- red top rule above Compare section removed.
+Changes from v5 only:
+- All artifact entries are permanently light brown (ochre), matching the surrounding corpus field.
+- Hover/focus changes the full artifact row to gold, eliminating the remaining broken-white edge/sliver.
+- The gray hero/composition is moved 1 mm back down relative to v5.
+- All other v5 design decisions remain unchanged.
