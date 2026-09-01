@@ -1,4 +1,4 @@
-# TORC Artifacts — B_EDITORIAL_CARDS
+# TORC Artifacts — C_GOLD_OCHRE_BANDS
 
 Drop `app/artifacts/page.tsx` and `app/artifacts/artifacts-v4.module.css` into the current site.
 
