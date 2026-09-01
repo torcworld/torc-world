@@ -3,27 +3,27 @@ import styles from './organizations.module.css';
 const useCases = [
   {
     no: '01',
-    title: 'Portfolio & high-volume evaluation',
-    short: 'One evaluative language across a slate, catalogue, submission pool, or recurring stream of work.',
-    example: 'Example · 250 submissions → standardized TORC profiles → comparative shortlist → deeper analysis of selected works.',
+    title: 'Portfolio intelligence',
+    short: 'Evaluate a slate, catalogue, submission pool, or recurring stream under one consistent analytical standard.',
+    example: 'Example · 250 works → standardized TORC profiles → corpus distribution → outliers and boundary cases → selected deep dives.',
   },
   {
     no: '02',
-    title: 'Comparative intelligence',
-    short: 'See how artifacts differ in Operational Order, Cognitive Magnitude, dimensional architecture, bottlenecks, and outliers.',
-    example: 'Example · Compare a development slate by demonstrated operation rather than reputation, genre, or surface complexity.',
+    title: 'Submission & selection support',
+    short: 'Make large bodies of work more legible before scarce editorial, curatorial, research, or development attention is allocated.',
+    example: 'Example · Evaluate broadly, identify meaningful differences, then investigate the works that genuinely warrant closer human attention.',
   },
   {
     no: '03',
-    title: 'Development & selection support',
-    short: 'Identify where a work currently stops, what transformation would actually matter, and where deeper attention is warranted.',
-    example: 'Example · Separate “promising but elaborate” from work that already demonstrates the target cognitive operation.',
+    title: 'Development intelligence',
+    short: 'Identify where a work currently stops, what operation is not yet fully realized, and which interventions could materially change the artifact.',
+    example: 'Example · Distinguish additional complexity from structural development, then concentrate development resources where they can propagate.',
   },
   {
     no: '04',
-    title: 'Licensing & custom implementation',
-    short: 'Explore internal workflows, evaluator calibration, research collaborations, custom reporting, or methodology licensing.',
-    example: 'Example · Build a TORC-informed review layer around an existing editorial, research, or selection process.',
+    title: 'Comparative & research programs',
+    short: 'Study patterns across creators, media, periods, cohorts, or research corpora without collapsing Operational Order and Cognitive Magnitude into one ranking.',
+    example: 'Example · Compare operational distributions, dimensional architectures, outliers, and recurrent bottlenecks across a defined corpus.',
   },
 ];
 
@@ -33,11 +33,11 @@ export default function Organizations(){
       <header className={styles.hero}>
         <div className={styles.heroCopy}>
           <div className={styles.eyebrow}>TORC FOR ORGANIZATIONS</div>
-          <h1>Evaluate cognition<br/>at scale.</h1>
+          <h1>See what a body of work<br/>is actually doing.</h1>
           <p className={styles.lede}>
-            A standardized framework for evaluating the cognitive operation and magnitude
-            demonstrated in completed artifacts — across individual works, portfolios,
-            submission pools, and recurring evaluation programs.
+            Evaluate cognitive architecture across a slate, catalogue, submission pool,
+            or recurring stream of work — under one consistent analytical standard.
+            TORC turns individual evaluations into a comparative view of the corpus.
           </p>
           <div className={styles.actions}>
             <a className={styles.primary} href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
@@ -47,30 +47,30 @@ export default function Organizations(){
         </div>
 
         <div className={styles.heroVisual}>
-          <div className={styles.heroVisualLabel}>STATISTICAL ANALYSIS</div>
+          <div className={styles.heroVisualLabel}>CORPUS INTELLIGENCE</div>
           <div className={styles.heroPanel} aria-label="Illustrative TORC portfolio view">
-          <div className={styles.panelTop}>
-            <span>ILLUSTRATIVE PORTFOLIO VIEW</span>
-            <span>TORC / 50</span>
-          </div>
-          <div className={styles.orderRows}>
-            <div><span>3c</span><i style={{width:'16%'}}/><b>08</b></div>
-            <div><span>3b</span><i style={{width:'28%'}}/><b>14</b></div>
-            <div><span>3a</span><i style={{width:'38%'}}/><b>19</b></div>
-            <div><span>2</span><i style={{width:'18%'}}/><b>09</b></div>
-          </div>
-          <div className={styles.cmsRange}>
-            <span>CMS RANGE</span>
-            <b>612</b>
-            <div><i/><i/><i/><i/><i/></div>
-            <b>894</b>
-          </div>
-          <div className={styles.panelFoot}>
-            <span>ORDER DISTRIBUTION</span>
-            <span>MAGNITUDE RANGE</span>
-            <span>OUTLIERS</span>
-          </div>
-          <p>Conceptual display only — not client data.</p>
+            <div className={styles.panelTop}>
+              <span>ILLUSTRATIVE PORTFOLIO VIEW</span>
+              <span>TORC / 50</span>
+            </div>
+            <div className={styles.orderRows}>
+              <div><span>3c</span><i style={{width:'16%'}}/><b>08</b></div>
+              <div><span>3b</span><i style={{width:'28%'}}/><b>14</b></div>
+              <div><span>3a</span><i style={{width:'38%'}}/><b>19</b></div>
+              <div><span>2</span><i style={{width:'18%'}}/><b>09</b></div>
+            </div>
+            <div className={styles.cmsRange}>
+              <span>CMS RANGE</span>
+              <b>612</b>
+              <div><i/><i/><i/><i/><i/></div>
+              <b>894</b>
+            </div>
+            <div className={styles.panelFoot}>
+              <span>ORDER DISTRIBUTION</span>
+              <span>MAGNITUDE RANGE</span>
+              <span>OUTLIERS</span>
+            </div>
+            <p>Conceptual display only — not client data.</p>
           </div>
         </div>
       </header>
@@ -82,14 +82,33 @@ export default function Organizations(){
         <i/>
         <span>TRACEABLE EVIDENCE</span>
         <i/>
-        <span>AGGREGATE INSIGHT</span>
+        <span>CORPUS-LEVEL INSIGHT</span>
+      </section>
+
+      <section className={styles.intro}>
+        <div className={styles.eyebrow}>CORPUS INTELLIGENCE</div>
+        <div>
+          <h2>50 artifacts should produce more than 50 reports.</h2>
+          <div className={styles.twoCopy}>
+            <p>
+              A large evaluation program becomes useful when individual profiles begin
+              to reveal the structure of the body of work itself: concentrations, gaps,
+              outliers, recurring bottlenecks, and works that merit deeper investigation.
+            </p>
+            <p>
+              TORC does not predict commercial success and does not replace editorial,
+              curatorial, production, acquisition, or research judgment. It gives those
+              judgments a more disciplined analytical field in which to operate.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section className={styles.applications}>
         <div className={styles.sectionHeading}>
           <div>
             <div className={styles.eyebrow}>APPLICATIONS</div>
-            <h2>Built for more than one artifact at a time.</h2>
+            <h2>Evaluate broadly. Investigate selectively.</h2>
           </div>
         </div>
 
@@ -116,26 +135,26 @@ export default function Organizations(){
       <section className={styles.volume}>
         <div className={styles.bigNumber}>50</div>
         <div className={styles.volumeCopy}>
-          <div className={styles.eyebrow}>HIGH-VOLUME USE</div>
-          <h2>Fifty artifacts a week?</h2>
+          <div className={styles.eyebrow}>FROM CORPUS TO ATTENTION</div>
+          <h2>Fifty artifacts should not behave like fifty isolated commissions.</h2>
           <p>
-            Then TORC should not behave like fifty isolated commissions. Define the
-            artifact class, analytical depth, reporting requirements, volume, and cadence;
-            the engagement can be designed as a repeatable evaluation program.
+            Institutional TORC is designed as an evaluation program: establish a common
+            standard across the corpus, identify meaningful patterns and exceptions, then
+            direct deeper analysis and development attention where it is most warranted.
           </p>
-          <a href="mailto:contact@torc.world?subject=TORC%20High-Volume%20Evaluation%20Inquiry">
-            Discuss a volume workflow <span>→</span>
+          <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Program%20Inquiry">
+            Discuss an evaluation program <span>→</span>
           </a>
         </div>
 
         <div className={styles.flow} aria-label="Illustrative evaluation workflow">
           <div><b>01</b><span>ARTIFACTS</span><strong>50</strong></div>
           <em>→</em>
-          <div><b>02</b><span>PROFILES</span><strong>50</strong></div>
+          <div><b>02</b><span>STANDARDIZED PROFILES</span><strong>50</strong></div>
           <em>→</em>
-          <div><b>03</b><span>PATTERNS</span><strong>06</strong></div>
+          <div><b>03</b><span>CORPUS PATTERNS</span><strong>06</strong></div>
           <em>→</em>
-          <div><b>04</b><span>DEEP DIVES</span><strong>?</strong></div>
+          <div><b>04</b><span>DEEP DIVES</span><strong>SELECTED</strong></div>
         </div>
       </section>
 
@@ -157,7 +176,7 @@ export default function Organizations(){
             <div className={styles.miniBars}>
               <i style={{height:'32%'}}/><i style={{height:'58%'}}/><i style={{height:'86%'}}/><i style={{height:'48%'}}/><i style={{height:'72%'}}/>
             </div>
-            <h3>Where the portfolio operates.</h3>
+            <h3>Where the corpus operates.</h3>
             <p>Operational Orders and meaningful boundary concentrations across the evaluated set.</p>
           </article>
           <article>
@@ -183,25 +202,46 @@ export default function Organizations(){
         </div>
       </section>
 
+      <section className={styles.principle}>
+        <div className={styles.eyebrow}>DECISION SUPPORT</div>
+        <div>
+          <h2>From evaluation to attention.</h2>
+          <p>
+            The purpose of institutional TORC is not to automate judgment. It is to make
+            better allocation of judgment possible — showing where human attention,
+            development resources, comparative investigation, or deeper evaluation are
+            most likely to matter.
+          </p>
+        </div>
+      </section>
+
       <section className={styles.contact}>
         <div>
           <div className={styles.eyebrow}>INSTITUTIONAL ENGAGEMENTS</div>
-          <h2>Start an institutional inquiry.</h2>
+          <h2>Start with the corpus.</h2>
           <p>
-            Institutional work is scoped individually according to artifact type, volume,
-            analytical depth, reporting requirements, cadence, and implementation needs.
+            Portfolio Evaluation, Submission Intelligence, Development Programs,
+            Recurring Evaluation Programs, and Research Collaborations are scoped
+            individually according to the work and the decision problem.
+          </p>
+          <p>
+            <strong>TORC is not an automated greenlight.</strong>
+          </p>
+          <p>
+            The TORC evaluation methodology remains proprietary and is not transferred
+            as part of an engagement.
           </p>
         </div>
         <div className={styles.inquiry}>
           <span>USEFUL TO INCLUDE</span>
           <ul>
             <li>Artifact type or corpus</li>
-            <li>Approximate volume and frequency</li>
-            <li>Selection, development, research, or other purpose</li>
-            <li>Desired reporting or comparison depth</li>
+            <li>Approximate volume and whether the work is one-off or recurring</li>
+            <li>The selection, development, research, or allocation problem</li>
+            <li>Desired reporting and comparison depth</li>
           </ul>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
-            Contact TORC <b>→</b>
+            Discuss an institutional use case <b>→</b>
           </a>
           <small>contact@torc.world</small>
         </div>

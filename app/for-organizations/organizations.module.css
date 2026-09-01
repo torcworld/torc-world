@@ -656,3 +656,22 @@
     margin-top:22px!important;
   }
 }
+
+/* Organizations institutional copy refinement — added from current live stylesheet */
+.notGreenlight{
+  margin-top:24px!important;
+  color:#5b2630!important;
+  font:700 11px/1.35 Arial,sans-serif!important;
+  letter-spacing:.13em!important;
+  text-transform:uppercase!important;
+}
+
+.proprietary{
+  margin-top:24px!important;
+  padding-top:18px!important;
+  border-top:1px solid rgba(255,255,255,.38)!important;
+  color:#f3e9eb!important;
+  font-size:13px!important;
+  line-height:1.6!important;
+  max-width:620px!important;
+}
