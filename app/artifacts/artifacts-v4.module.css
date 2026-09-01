@@ -2644,311 +2644,41 @@
   }
 }
 
-/* CURRENT REFINEMENT — stepped Artifacts widths + full charcoal Compare closure.
-   Hero stays full width; search sits exactly midway between hero and compact corpus. */
-@media (min-width:761px){
-  /* The corpus currently sits 140px in from each side, so 70px creates the
-     visual midpoint: full-width hero -> narrower search -> compact corpus. */
-  .artifactToolsStrong{
-    margin-left:70px!important;
-    margin-right:70px!important;
-    width:auto!important;
-    max-width:none!important;
-    box-sizing:border-box!important;
-  }
 
-  /* Keep the actual search/filter controls and their colour treatment unchanged;
-     the reduced panel width naturally shortens the long Search field. */
-
-  /* Turn the complete Compare region into one uninterrupted charcoal block.
-     Bleed through the corpus padding so no pale/red strip remains around it. */
-  .inlineCompare{
-    margin-left:-10px!important;
-    margin-right:-10px!important;
-    margin-bottom:-30px!important;
-    padding:28px 30px 30px!important;
-    background:#353432!important;
-    color:#f8f3e8!important;
-    border-top:0!important;
-    border-left:0!important;
-    border-right:0!important;
-    border-bottom:0!important;
-    box-shadow:none!important;
-  }
-  .inlineCompareHead :global(.eyebrow){
-    color:#f8f3e8!important;
-  }
-  .inlineCompareHead h2{
-    color:#d9c7a6!important;
-  }
-  .inlineCompare .inlinePicker>label{
-    color:#f8f3e8!important;
-  }
-
-  /* Trial requested for the two Choose-an-Artifact controls: light ochre inside
-     the charcoal field, while keeping the existing dark typography. */
-  .inlineCompare .inlineSelected,
-  .inlineCompare .inlineDropdown,
-  .inlineCompare .inlineDropdown input,
-  .inlineCompare .inlineOptions button,
-  .inlineCompare .inlineSwap{
-    background:#d9c7a6!important;
-    color:#171714!important;
-  }
-}
-
-/* FINAL COMPARE CLOSURE — extend the charcoal field across the full Artifacts
-   frame, including the oxblood side gutters, up to the section boundary above. */
-@media (min-width:761px){
-  .corpusSurface .inlineCompare{
-    margin-left:-140px!important;
-    margin-right:-140px!important;
-    width:calc(100% + 280px)!important;
-    max-width:none!important;
-    box-sizing:border-box!important;
-    background:#353432!important;
-    border:0!important;
-    box-shadow:none!important;
-  }
-}
-
-/* FORCE FIX — full charcoal Compare field + neutral artifact hover separators.
-   Use a dedicated backdrop pseudo-element so the charcoal is not limited by the
-   compact corpus width or earlier margin/width experiments. */
-@media (min-width:761px){
-  .inlineCompare{
-    position:relative!important;
-    isolation:isolate!important;
-    z-index:0!important;
-    background:#353432!important;
-    border:0!important;
-    box-shadow:none!important;
-  }
-
-  .inlineCompare::before{
-    content:""!important;
-    position:absolute!important;
-    z-index:-1!important;
-    top:-36px!important;
-    bottom:-30px!important;
-    left:-140px!important;
-    right:-140px!important;
-    background:#353432!important;
-    pointer-events:none!important;
-  }
-
-  /* Keep every artifact separator neutral on hover/focus; no oxblood flash. */
-  .artifactTableFour :global(a.row:not(.header)),
-  .artifactTableFour :global(a.row:not(.header):hover),
-  .artifactTableFour :global(a.row:not(.header):focus-visible){
-    border-bottom:2px solid #575653!important;
-    border-bottom-color:#575653!important;
-    box-shadow:none!important;
-  }
-}
-
-/* FINAL CONTAINMENT — keep Compare charcoal strictly inside the compact corpus
-   boundaries. Explicitly cancel every earlier bleed, negative margin, expanded
-   width and pseudo-element backdrop. */
-@media (min-width:761px){
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    position:relative!important;
-    isolation:auto!important;
-    z-index:auto!important;
-    margin-left:0!important;
-    margin-right:0!important;
-    margin-top:0!important;
-    margin-bottom:0!important;
-    width:100%!important;
-    max-width:100%!important;
-    box-sizing:border-box!important;
-    padding:28px 30px 30px!important;
-    background:#353432!important;
-    color:#f8f3e8!important;
-    border:0!important;
-    box-shadow:none!important;
-    overflow:hidden!important;
-  }
-
-  .inlineCompare::before,
-  .inlineCompare::after{
-    content:none!important;
-    display:none!important;
-    background:transparent!important;
-  }
-}
-
-/* CURRENT REFINEMENT — 2026-09-01
-   Lower the contained Compare closure, halve only the horizontal bottom rule,
-   and restore readable pagination on the pale page ground. */
-@media (min-width:761px){
-  /* Create a little more pale breathing room after pagination and let the
-     charcoal Compare panel begin ~1 cm lower, without touching the side rails. */
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    margin-top:10px!important;
-  }
-
-  /* Only the horizontal bottom closure is reduced; vertical oxblood rails stay
-     at their existing weight. */
-  .corpusSurface{
-    border-bottom-width:.5px!important;
-  }
-
-  /* Pagination lives on the pale site ground, so use charcoal for inactive
-     controls and keep the current page as the oxblood accent. */
-  .pagination>button,
-  .pageNumbers button{
-    color:#575653!important;
-    opacity:1!important;
-  }
-  .pagination>button:disabled{
-    color:#8b8984!important;
-    opacity:.5!important;
-  }
-  .pageNumbers .activePage{
+/* FINAL TEST — remove the thick oxblood side bands, keep only the thin rails.
+   Also move Operational Order DATA values ~4 mm right; heading stays put. */
+@media(min-width:761px){
+  /* Kill the old full-bleed oxblood fields/shadows without touching the 1px rails. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
     background:#5b2630!important;
-    color:#fff!important;
-    border-color:#5b2630!important;
-  }
-}
-
-
-/* CURRENT REFINEMENT — Compare picker usability + slightly lower closure.
-   Keep the charcoal panel contained, but do not clip its absolute dropdowns. */
-@media (min-width:761px){
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    margin-top:14px!important;
-    margin-bottom:-4px!important;
-    overflow:visible!important;
+    box-shadow:none!important;
   }
 
-  .inlinePicker{
+  /* Keep the current detached thin guide positions. */
+  .artifactsPage::before{left:-28px!important}
+  .artifactsPage::after{right:-28px!important}
+
+  /* Any old header pseudo-elements may only be hairlines, never filled bands. */
+  .artifactHeader::before,
+  .artifactHeader::after{
+    height:1px!important;
+    background:#5b2630!important;
+    box-shadow:none!important;
+  }
+
+  /* Operational Order values only: 4 mm ≈ 15px to the right.
+     The current final alignment is -19px, so -4px gives the requested +15px shift. */
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3){
     position:relative!important;
-    min-width:0!important;
-  }
-
-  /* The selected control never moves when the menu opens. */
-  .inlineSelected{
-    position:relative!important;
-    z-index:1!important;
+    left:-4px!important;
     transform:none!important;
-    margin:0!important;
   }
 
-  /* Always open below the control. The option list itself scrolls, so it can
-     remain usable even this close to the bottom of the page. */
-  .inlineDropdown{
-    position:absolute!important;
-    z-index:200!important;
-    top:calc(100% + 5px)!important;
-    bottom:auto!important;
-    left:0!important;
-    right:0!important;
-    width:100%!important;
-    max-height:300px!important;
-    overflow:hidden!important;
-    box-sizing:border-box!important;
-  }
-  .inlineOptions{
-    max-height:220px!important;
-    overflow-y:auto!important;
-    overscroll-behavior:contain!important;
-  }
-}
-
-/* REAL FIX — based on the last confirmed-working Compare/dropdown build.
-   Use only selectors already present in the live DOM; no new JSX classes needed. */
-@media (min-width:761px){
-  /* Pull the two right-hand columns inward by changing the actual grid geometry,
-     not by visual transforms. This moves headers and every value together. */
-  .artifactTableFour :global(.row){
-    grid-template-columns:minmax(0,1.62fr) minmax(96px,.62fr) minmax(118px,.60fr) minmax(145px,.70fr)!important;
-    column-gap:8px!important;
-  }
-  .artifactTableFour :global(.header)>button:nth-child(3){
-    font-size:10px!important;
-  }
-  .artifactTableFour :global(.header)>button:nth-child(4){
-    font-size:8.8px!important;
-    line-height:1.05!important;
-    letter-spacing:.01em!important;
-  }
-
-  /* More breathing room before Compare while keeping the charcoal panel contained. */
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    margin-top:27px!important;
-    margin-bottom:-4px!important;
-  }
-
-  /* Make the visible lower red closure much thinner without changing side rails. */
-  .corpusSurface{
-    border-bottom:1px solid #5b2630!important;
-    padding-bottom:0!important;
-  }
-
-  /* Center the conditional compare CTA underneath the two selectors. */
-  .inlineCompareAction{
-    margin:20px 0 0!important;
-    width:100%!important;
-    display:flex!important;
-    justify-content:center!important;
-    align-items:center!important;
-    text-align:center!important;
-  }
-  .inlineCompareAction :global(.button){
-    display:inline-flex!important;
-    margin:0 auto!important;
-    align-items:center!important;
-    justify-content:center!important;
-    background:#5b2630!important;
-    border:1px solid #5b2630!important;
-    color:#f5f2ea!important;
-    box-shadow:none!important;
-  }
-  .inlineCompareAction :global(.button:hover),
-  .inlineCompareAction :global(.button:focus-visible){
-    background:#5b2630!important;
-    border-color:#5b2630!important;
-    color:#f5f2ea!important;
-  }
-}
-
-
-/* EXPLICIT STRUCTURAL STRIP — real DOM element below Compare.
-   This avoids relying on corpus padding/margins that earlier cascade rules can neutralize. */
-@media (min-width:761px){
-  .corpusSurface{
-    padding-bottom:0!important;
-    border-bottom:1px solid #5b2630!important;
-    background:var(--bg)!important;
-  }
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    margin-bottom:0!important;
-  }
-  .compareBottomStrip{
-    display:block!important;
-    width:100%!important;
-    height:10px!important;
-    min-height:10px!important;
-    flex:0 0 10px!important;
-    background:var(--bg)!important;
-    border:0!important;
-    margin:0!important;
-    padding:0!important;
+  /* Do not move the Operational Order heading. */
+  .artifactTableFour :global(.header)>:nth-child(3){
     position:relative!important;
-    z-index:3!important;
-  }
-}
-
-/* FINAL MICRO-REFINEMENT — sort arrows remain removed; Compare lifted by ~1 mm only. */
-@media (min-width:761px){
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    margin-top:23px!important;
+    left:-19px!important;
   }
 }
