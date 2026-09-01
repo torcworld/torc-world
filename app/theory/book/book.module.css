@@ -1185,3 +1185,30 @@
     width:calc(100% - 88px)!important;
   }
 }
+
+
+/* Batch 79 — Theory: keep narrow book + thin rails; remove ALL filled side bands */
+@media(min-width:761px){
+  .bookPage{
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+
+  /* The space between the book and thin rails must be neutral, never oxblood. */
+  .bookPage::before{
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+
+  .bookPage::after{
+    display:none!important;
+    content:none!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+
+  .bookTitlePage,
+  .bookReader{
+    background:#f3eee6!important;
+  }
+}
