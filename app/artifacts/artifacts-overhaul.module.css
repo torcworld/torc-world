@@ -15,16 +15,26 @@
 @media(max-width:760px){.artifactsPage{padding-top:38px}.artifactsPage:before,.artifactsPage:after{display:none}.hero,.tools,.orderStrip,.corpus,.compareSection{margin-left:0!important;margin-right:0!important}.hero{padding:42px 24px;min-height:0}.hero h1{font-size:58px}.hero p{font-size:16px}.tools{padding:18px!important}.orderStrip{grid-template-columns:repeat(4,1fr);margin-bottom:40px}.corpus{padding:0 0 28px}.corpusHead{display:block}.resultCount{text-align:left;margin-top:14px}.artifactTable :global(.row){grid-template-columns:minmax(0,1.5fr) 70px 80px!important;padding:17px 8px!important}.artifactTable :global(.row)>:nth-child(2),.artifactTable :global(.row)>:nth-child(4){display:none}.openEvaluation{justify-self:end}.tableHeader>:nth-child(5){display:block!important}.compareSection{padding:34px 20px}.inlineCompareControls{grid-template-columns:1fr}.inlineSwap{justify-self:center;margin:0;transform:rotate(90deg)}.inlineCompareAction{text-align:left}}
 @media(max-width:520px){.orderStrip{grid-template-columns:repeat(2,1fr)}.artifactIdentity b{font-size:18px}.artifactTable :global(.row){grid-template-columns:minmax(0,1fr) 55px!important}.artifactTable :global(.row)>:nth-child(3){display:none}.openEvaluation{font-size:0}.openEvaluation i{font-size:20px}.pagination{grid-template-columns:1fr 1fr}.pageNumbers{grid-column:1/-1;grid-row:1;justify-content:center}}
 
-/* COLOR TRIAL — TORC BLOCKS */
-.artifactsPage{background:#d9c7a6}
+/* COLOR TRIAL — EDITORIAL GOLD */
+.artifactsPage{background:#c7aa76}
 .hero{background:#353432}
-.tools{background:#eadfcf}
-.orderStrip{background:#c7aa76;border-color:#5b2630}
-.orderStrip button:hover,.orderStrip .orderActive{background:#5b2630;color:#f4efe7}
-.orderStrip button:hover span,.orderStrip .orderActive span{color:#d9c7a6}
-.corpus{background:#f0e7d8;padding-top:30px}
-.artifactTable :global(a.row:not(.header)){background:#f0e7d8}
-.artifactTable :global(a.row:not(.header):hover),.artifactTable :global(a.row:not(.header):focus-visible){background:#d9c7a6}
-.compareSection{background:#5b2630}
-.inlineSelected{background:#c7aa76}
-.inlineSwap{background:#d9c7a6}
+.tools{background:#d9c7a6}
+.orderStrip{background:#b89457}
+.orderStripLabel span,.orderStrip button span{color:#5b2630}
+.orderStrip button:hover,.orderStrip .orderActive{background:#d9c7a6}
+.corpus{background:#d9c7a6;padding-top:30px}
+.artifactTable{border-top-color:#5b2630}
+.artifactTable :global(a.row:not(.header)){background:rgba(244,239,231,.32)}
+.artifactTable :global(a.row:not(.header):nth-of-type(even)){background:rgba(199,170,118,.42)}
+.artifactTable :global(a.row:not(.header):hover),.artifactTable :global(a.row:not(.header):focus-visible){background:#f0e7d8}
+.compareSection{background:#353432;border-top:8px solid #5b2630}
+
+/* COLOR REFINEMENT — EDITORIAL GOLD v2
+   Keep the overhaul layout intact; soften the archive field and tools. */
+.tools{background:#d9c7a6!important}
+.controlLabel input,.controlLabel select{background:var(--bg)!important}
+.corpus{background:#d9c7a6}
+.artifactTable :global(a.row:not(.header)),
+.artifactTable :global(a.row:not(.header):nth-of-type(even)){background:var(--bg)}
+.artifactTable :global(a.row:not(.header):hover),
+.artifactTable :global(a.row:not(.header):focus-visible){background:#c7aa76}
