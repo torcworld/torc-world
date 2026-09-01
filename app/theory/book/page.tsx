@@ -4,20 +4,21 @@ const body="<p id=\"personal-motivation\" class=\"book-front-heading\"><strong>P
 
 export default function Book(){
  return <main className={styles.bookPage}>
-  <section className={styles.editorialHero}>
-   <div className={styles.bookObject}>
-    <span>TORC / THEORY</span>
-    <h1>The Age<br/>of False<br/>Depth</h1>
-    <p>G. K. Muijlaert</p>
+  <section className={styles.manifestHero}>
+   <div className={styles.manifestTitle}>
+    <span className={styles.eyebrow}>THE THEORY BEHIND TORC</span>
+    <h1>The Age of<br/>False Depth</h1>
+    <p>Intelligence, Representation, and What Artifacts Actually Do</p>
+    <div className={styles.authorLine}><span className={styles.byLabel}>by</span><b>G. K. Muijlaert</b></div>
    </div>
-   <div className={styles.editorialIntro}>
-    <span className={styles.eyebrow}>THE AGE OF FALSE DEPTH</span>
-    <h2>The appearance of depth is not the same as a deep operation.</h2>
-    <p>This book develops the theory beneath TORC: why representation can carry the signals of understanding without reproducing the cognitive operation that originally gave those signals force.</p>
-    <div className={styles.editorialActions}><a href="#personal-motivation">BEGIN READING ↓</a><a href="/methodology">VIEW METHODOLOGY →</a></div>
+   <div className={styles.manifestThesis}>
+    <span className={styles.eyebrow}>THE CENTRAL QUESTION</span>
+    <h2>What has actually been accomplished?</h2>
+    <p>Complexity can resemble depth. Recursion can resemble insight. TORC begins by separating the appearance of cognition from the operation an artifact actually performs.</p>
+    <a href="#personal-motivation" className={styles.readCta}>READ THE LIVING EDITION ↓</a>
    </div>
   </section>
-  <div className={styles.bookMetaBar}><span>Intelligence, Representation, and What Artifacts Actually Do</span><span>Living edition</span></div>
+  <div className={styles.bookMetaBar}><span>A Theory of Representational Consciousness</span><span>Living edition</span></div>
   <BookNavigator />
   <section className={`section prose auditReport ${styles.bookReader}`}>
    <div className={`auditNote ${styles.editionNote}`}><b>Living edition.</b> This online text is the current canonical version. It may be refined as TORC is tested against additional artifacts and boundary cases.</div>
