@@ -1,9 +1,10 @@
-# TORC homepage exact refinement
+TORC homepage refinement patch
 
-Built on the last working homepage patch.
+Changes:
+- Featured artifact cards alternate dark gold / light ochre / dark gold / light ochre; hover reverses each card.
+- Operational Order and Cognitive Magnitude explanatory copy shortened.
+- Book/theory band moved 2cm lower on desktop.
+- Theory copy panel remains light ochre on hover/focus.
+- “Enter the theory” and its arrow slightly enlarged.
 
-Changes only `app/home.module.css`:
-- Moves the complete “HOW TORC DISTINGUISHES / Two questions. Two kinds of evidence.” lockup a literal 4cm downward on desktop, toward the Operational Order card, while pulling the methodology section upward toward the artifact cards.
-- Explore Artifacts: dark gold at rest, light ochre on hover/focus.
-- Theory copy beside The Age of False Depth: light ochre at rest, dark gold on hover/focus.
-- Creator / See your own work differently: dark gold at rest.
+Replace the included files at the same paths.

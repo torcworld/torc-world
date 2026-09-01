@@ -62,14 +62,14 @@ export default function Home() {
         <Link href="/methodology#operational-order" className={styles.coordinateCard}>
           <div className={styles.coordinateLabel}>01 / PRIMARY HIERARCHY</div>
           <h3>Operational Order</h3>
-          <p>What kind of cognitive operation does the artifact actually achieve? TORC identifies the highest operation required to explain the completed work — not its prestige, difficulty, reputation, or subject matter.</p>
+          <p>Which cognitive operation governs the completed artifact? TORC identifies the highest operation the work actually requires — independent of prestige, difficulty or subject matter.</p>
           <div className={styles.microGraphic}><span>1</span><i/><span>2</span><i/><span>3a</span><i/><span>3b</span><i/><span>3c</span><i/><span>G</span></div>
           <b className={styles.cardAction}>Explore Operational Order <span>→</span></b>
         </Link>
         <Link href="/methodology#dimensions" className={styles.coordinateCard}>
           <div className={styles.coordinateLabel}>02 / MAGNITUDE</div>
           <h3>Cognitive Magnitude</h3>
-          <p>How much structured cognition does the artifact demonstrate in achieving that operation? Magnitude is described across six independent dimensions rather than treated as a vague impression of complexity.</p>
+          <p>How much structured cognition does the artifact demonstrate within that operation? Six dimensions describe its magnitude without reducing complexity to a single impression.</p>
           <div className={styles.dimensionMini}>{['RL','AD','CD','ID','IC','GR'].map((d,i)=><div key={d}><span>{d}</span><i style={{width:`${46+i*8}%`}}/></div>)}</div>
           <b className={styles.cardAction}>Explore Cognitive Magnitude <span>→</span></b>
         </Link>

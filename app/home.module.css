@@ -860,3 +860,51 @@
   background:var(--gold-deep);
   color:var(--ink);
 }
+
+/* Homepage refinement 7 — alternating artifact surfaces, lighter coordinate copy, book-band spacing */
+/* Alternate the four featured artifact cards: gold / ochre / gold / ochre.
+   Hover reverses each resting state. */
+.home .artifactGrid .artifactCard:nth-child(odd){
+  background:var(--gold-deep);
+}
+.home .artifactGrid .artifactCard:nth-child(odd):hover,
+.home .artifactGrid .artifactCard:nth-child(odd):focus-visible{
+  background:var(--gold);
+}
+.home .artifactGrid .artifactCard:nth-child(even){
+  background:var(--gold);
+}
+.home .artifactGrid .artifactCard:nth-child(even):hover,
+.home .artifactGrid .artifactCard:nth-child(even):focus-visible{
+  background:var(--gold-deep);
+}
+
+/* Give the two methodology cards more breathing room by reducing the copy density. */
+.home .coordinateGrid .coordinateCard p{
+  max-width:31em;
+  font-size:15px;
+  line-height:1.55;
+}
+
+/* Add a clear visual pause before the book/theory band. */
+@media(min-width:721px){
+  .home .theoryCompact{
+    margin:2cm -28px 0;
+  }
+}
+
+/* Keep the theory copy field quietly light ochre even on hover/focus. */
+.home .theoryCopyLink,
+.home .theoryCopyLink:hover,
+.home .theoryCopyLink:focus-visible{
+  background:var(--gold);
+}
+
+/* Make the invitation into the theory more legible without turning it into a large button. */
+.home .theoryCopyLink>b{
+  font-size:11px;
+  letter-spacing:.115em;
+}
+.home .theoryCopyLink>b em{
+  font-size:22px;
+}
