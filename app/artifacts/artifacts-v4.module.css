@@ -2750,3 +2750,43 @@
     color:#171714!important;
   }
 }
+
+
+/* FINAL VISUAL CORRECTION
+   - Compare Artifacts: every exposed surrounding surface is charcoal.
+   - Keep only the intended light-ochre controls light.
+   - Raise the two charcoal corpus gutters to the artifact-list top rule. */
+@media(min-width:761px){
+
+  /* Raise side gutters by ~3–4 cm from the previous position. */
+  .corpusSurface::before,
+  .corpusSurface::after{
+    top:0!important;
+  }
+
+  /* Make the complete Compare Artifacts closing area charcoal. */
+  .inlineCompare,
+  .inlineCompareHead,
+  .inlineCompareBody,
+  .inlinePicker,
+  .inlineCompareResult,
+  .inlineCompareResult>div,
+  .inlineCompare footer{
+    background:#353432!important;
+  }
+
+  .inlineCompare{
+    color:#f8f3e8!important;
+  }
+
+  /* Preserve the intended light-ochre interactive fields. */
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+}
