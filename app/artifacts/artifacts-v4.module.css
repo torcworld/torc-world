@@ -2890,3 +2890,21 @@
     background:#c7aa76!important;
   }
 }
+
+
+/* Artifacts — use the EXACT existing artifact-row hover color as the permanent state.
+   Existing hover in this stylesheet is #d9c7a6. */
+@media(min-width:761px){
+  .corpusToolbar,
+  .artifactTableFour :global(a.row:not(.header)),
+  .artifactTableFour :global(a.row:not(.header):hover),
+  .artifactTableFour :global(a.row:not(.header):focus-visible){
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  /* Keep the table heading white. */
+  .artifactTableFour :global(.header){
+    background:#fff!important;
+  }
+}
