@@ -2918,16 +2918,52 @@
 }
 
 
-/* FINAL BOTTOM STRIP FIX — only restore the pale strip beneath Compare.
-   Do not alter artifact columns, headers, picker behaviour, or Compare button. */
+/* EXPLICIT STRUCTURAL STRIP — real DOM element below Compare.
+   This avoids relying on corpus padding/margins that earlier cascade rules can neutralize. */
 @media (min-width:761px){
   .corpusSurface{
-    background:var(--bg)!important;
-    padding-bottom:10px!important;
+    padding-bottom:0!important;
     border-bottom:1px solid #5b2630!important;
+    background:var(--bg)!important;
   }
   .corpusSurface .inlineCompare,
   .inlineCompare{
     margin-bottom:0!important;
+  }
+  .compareBottomStrip{
+    display:block!important;
+    width:100%!important;
+    height:10px!important;
+    min-height:10px!important;
+    flex:0 0 10px!important;
+    background:var(--bg)!important;
+    border:0!important;
+    margin:0!important;
+    padding:0!important;
+    position:relative!important;
+    z-index:3!important;
+  }
+}
+
+/* FINAL MICRO-REFINEMENT — sort arrows remain removed; Compare lifted by ~1 mm only. */
+@media (min-width:761px){
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:23px!important;
+  }
+}
+
+/* FINAL 1 MM + VALUE-ONLY ALIGNMENT — do not move headers or other columns. */
+@media (min-width:761px){
+  /* Visually lift the complete charcoal Compare panel by ~1 mm. */
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    transform:translateY(-4px)!important;
+  }
+
+  /* Operational Order VALUES only (G, GΩ, 2, 3a, etc.): ~2 mm right.
+     Header stays exactly where it is. */
+  .artifactTableFour :global(a.row:not(.header)) > :nth-child(3){
+    transform:translateX(8px)!important;
   }
 }
