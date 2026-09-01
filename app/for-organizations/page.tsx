@@ -95,10 +95,7 @@ export default function Organizations(){
 
         <div className={styles.systemRule}>
           <span>TORC IS NOT AN AUTOMATED GREENLIGHT.</span>
-          <p>
-            TORC informs selection, development, research, and allocation.
-            Editorial, curatorial, production, acquisition, and commercial judgment remain human.
-          </p>
+
         </div>
       </section>
 

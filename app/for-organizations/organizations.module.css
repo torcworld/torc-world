@@ -1652,3 +1652,77 @@
 .signalMatrix article>span{
   color:#5b2630!important;
 }
+
+
+/* Batch 89 — Compress second Organizations block only */
+
+.system{
+  padding-top:48px!important;
+  padding-bottom:42px!important;
+}
+
+.systemIntro h2{
+  margin-top:-19px!important;
+  margin-bottom:12px!important;
+  font-size:clamp(40px,4.7vw,58px)!important;
+}
+
+.systemIntro>p{
+  line-height:1.55!important;
+}
+
+.systemFlow{
+  margin-top:32px!important;
+}
+
+.flowNode{
+  min-height:132px!important;
+  padding-top:15px!important;
+  padding-bottom:15px!important;
+}
+
+.flowNode>b{
+  margin-top:21px!important;
+  margin-bottom:7px!important;
+}
+
+.flowNode>p{
+  line-height:1.42!important;
+}
+
+.systemRule{
+  margin-top:24px!important;
+  padding-top:16px!important;
+  display:block!important;
+}
+
+.systemRule>span{
+  display:block!important;
+  font-size:10px!important;
+  line-height:1.3!important;
+}
+
+/* No explanatory microcopy under the greenlight line in this compact version. */
+.systemRule>p{
+  display:none!important;
+}
+
+@media(max-width:760px){
+  .system{
+    padding-top:40px!important;
+    padding-bottom:36px!important;
+  }
+  .systemIntro h2{
+    margin-top:10px!important;
+  }
+  .systemFlow{
+    margin-top:25px!important;
+  }
+  .flowNode{
+    min-height:118px!important;
+  }
+  .systemRule{
+    margin-top:20px!important;
+    padding-top:14px!important;
+  }
+}
