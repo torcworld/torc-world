@@ -49,28 +49,28 @@ export default function Organizations(){
         <div className={styles.heroVisual}>
           <div className={styles.heroVisualLabel}>CORPUS INTELLIGENCE</div>
           <div className={styles.heroPanel} aria-label="Illustrative TORC portfolio view">
-          <div className={styles.panelTop}>
-            <span>ILLUSTRATIVE PORTFOLIO VIEW</span>
-            <span>TORC / 50</span>
-          </div>
-          <div className={styles.orderRows}>
-            <div><span>3c</span><i style={{width:'16%'}}/><b>08</b></div>
-            <div><span>3b</span><i style={{width:'28%'}}/><b>14</b></div>
-            <div><span>3a</span><i style={{width:'38%'}}/><b>19</b></div>
-            <div><span>2</span><i style={{width:'18%'}}/><b>09</b></div>
-          </div>
-          <div className={styles.cmsRange}>
-            <span>CMS RANGE</span>
-            <b>612</b>
-            <div><i/><i/><i/><i/><i/></div>
-            <b>894</b>
-          </div>
-          <div className={styles.panelFoot}>
-            <span>ORDER DISTRIBUTION</span>
-            <span>MAGNITUDE RANGE</span>
-            <span>OUTLIERS</span>
-          </div>
-          <p>Conceptual display only — not client data.</p>
+            <div className={styles.panelTop}>
+              <span>ILLUSTRATIVE PORTFOLIO VIEW</span>
+              <span>TORC / 50</span>
+            </div>
+            <div className={styles.orderRows}>
+              <div><span>3c</span><i style={{width:'16%'}}/><b>08</b></div>
+              <div><span>3b</span><i style={{width:'28%'}}/><b>14</b></div>
+              <div><span>3a</span><i style={{width:'38%'}}/><b>19</b></div>
+              <div><span>2</span><i style={{width:'18%'}}/><b>09</b></div>
+            </div>
+            <div className={styles.cmsRange}>
+              <span>CMS RANGE</span>
+              <b>612</b>
+              <div><i/><i/><i/><i/><i/></div>
+              <b>894</b>
+            </div>
+            <div className={styles.panelFoot}>
+              <span>ORDER DISTRIBUTION</span>
+              <span>MAGNITUDE RANGE</span>
+              <span>OUTLIERS</span>
+            </div>
+            <p>Conceptual display only — not client data.</p>
           </div>
         </div>
       </header>
@@ -91,12 +91,12 @@ export default function Organizations(){
           <h2>50 artifacts should produce more than 50 reports.</h2>
           <div className={styles.twoCopy}>
             <p>
-              A large evaluation program becomes useful when the individual profiles begin
+              A large evaluation program becomes useful when individual profiles begin
               to reveal the structure of the body of work itself: concentrations, gaps,
               outliers, recurring bottlenecks, and works that merit deeper investigation.
             </p>
             <p>
-              TORC does not predict commercial success and it does not replace editorial,
+              TORC does not predict commercial success and does not replace editorial,
               curatorial, production, acquisition, or research judgment. It gives those
               judgments a more disciplined analytical field in which to operate.
             </p>
@@ -177,7 +177,7 @@ export default function Organizations(){
               <i style={{height:'32%'}}/><i style={{height:'58%'}}/><i style={{height:'86%'}}/><i style={{height:'48%'}}/><i style={{height:'72%'}}/>
             </div>
             <h3>Where the corpus operates.</h3>
-            <p>Operational Orders, meaningful concentrations, and boundary cases across the evaluated set.</p>
+            <p>Operational Orders and meaningful boundary concentrations across the evaluated set.</p>
           </article>
           <article>
             <span>02 / COGNITIVE MAGNITUDE</span>
@@ -205,14 +205,12 @@ export default function Organizations(){
       <section className={styles.principle}>
         <div className={styles.eyebrow}>DECISION SUPPORT</div>
         <div>
-          <h2>Make the allocation of judgment better.</h2>
+          <h2>From evaluation to attention.</h2>
           <p>
             The purpose of institutional TORC is not to automate judgment. It is to make
-            better allocation of judgment possible — showing where attention, development
-            resources, comparative investigation, or deeper evaluation are most likely to matter.
-          </p>
-          <p className={styles.notGreenlight}>
-            TORC is not an automated greenlight.
+            better allocation of judgment possible — showing where human attention,
+            development resources, comparative investigation, or deeper evaluation are
+            most likely to matter.
           </p>
         </div>
       </section>
@@ -226,7 +224,10 @@ export default function Organizations(){
             Recurring Evaluation Programs, and Research Collaborations are scoped
             individually according to the work and the decision problem.
           </p>
-          <p className={styles.proprietary}>
+          <p>
+            <strong>TORC is not an automated greenlight.</strong>
+          </p>
+          <p>
             The TORC evaluation methodology remains proprietary and is not transferred
             as part of an engagement.
           </p>
