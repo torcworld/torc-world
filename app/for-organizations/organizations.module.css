@@ -1464,3 +1464,71 @@
     padding-bottom:62px!important;
   }
 }
+
+
+/* Batch 85 — Organizations macro-block separation
+   Preserve content; introduce deliberate breathing room between major institutional arguments. */
+
+.standardBar{
+  margin-bottom:52px!important;
+}
+
+.system{
+  margin-top:0!important;
+  border:1px solid rgba(91,38,48,.52)!important;
+}
+
+.visibility{
+  margin:64px 0!important;
+  padding:78px 38px 82px!important;
+  background:#eee4d2!important;
+  border-top:1px solid rgba(91,38,48,.48)!important;
+  border-bottom:1px solid rgba(91,38,48,.48)!important;
+}
+
+.applicationsNew{
+  margin:0 -10px!important;
+  border:1px solid #5b2630!important;
+}
+
+.engagementNew{
+  margin:64px -10px 0!important;
+  border:1px solid rgba(91,38,48,.52)!important;
+}
+
+.boundary{
+  margin:64px -10px 0!important;
+  border:1px solid rgba(91,38,48,.9)!important;
+}
+
+.finalContact{
+  margin:64px -28px 0!important;
+  border-top:1px solid rgba(255,255,255,.2)!important;
+}
+
+/* Give the major transitions an intentional editorial pause rather than a continuous dashboard flow. */
+.system + .visibility,
+.visibility + .applicationsNew,
+.applicationsNew + .engagementNew,
+.engagementNew + .boundary,
+.boundary + .finalContact{
+  position:relative;
+}
+
+@media(max-width:760px){
+  .standardBar{margin-bottom:34px!important}
+  .system{margin-top:0!important}
+  .visibility{
+    margin:38px 0!important;
+    padding:58px 20px 60px!important;
+  }
+  .applicationsNew{
+    margin:0!important;
+  }
+  .engagementNew,.boundary{
+    margin:38px 0 0!important;
+  }
+  .finalContact{
+    margin:38px -20px 0!important;
+  }
+}
