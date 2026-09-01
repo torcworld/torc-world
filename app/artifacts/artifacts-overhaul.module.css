@@ -126,3 +126,9 @@
 .artifactTable :global(a.row:not(.header):focus-visible){
   background:var(--gold)!important;
 }
+
+/* Editorial v7 — define the artifact ledger as a bounded block */
+.artifactTable{
+  border-left:1px solid #171714!important;
+  border-right:1px solid #171714!important;
+}
