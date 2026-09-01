@@ -2645,71 +2645,19 @@
 }
 
 
-/* FINAL TEST — remove the thick oxblood side bands, keep only the thin rails.
-   Also move Operational Order DATA values ~4 mm right; heading stays put. */
+/* CORRECTION — remove only the LARGE oxblood fields; preserve every thin rail.
+   Move the entire Operational Order column ~3 mm left. */
 @media(min-width:761px){
-  /* Kill the old full-bleed oxblood fields/shadows without touching the 1px rails. */
-  .artifactsPage::before,
-  .artifactsPage::after{
-    width:1px!important;
-    background:#5b2630!important;
+  /* This is the source of the large red side fields. */
+  .artifactsPage{
+    background:var(--bg)!important;
     box-shadow:none!important;
   }
 
-  /* Keep the current detached thin guide positions. */
-  .artifactsPage::before{left:-28px!important}
-  .artifactsPage::after{right:-28px!important}
-
-  /* Any old header pseudo-elements may only be hairlines, never filled bands. */
-  .artifactHeader::before,
-  .artifactHeader::after{
-    height:1px!important;
-    background:#5b2630!important;
-    box-shadow:none!important;
-  }
-
-  /* Operational Order values only: 4 mm ≈ 15px to the right.
-     The current final alignment is -19px, so -4px gives the requested +15px shift. */
-  .artifactTableFour :global(.row:not(.header))>:nth-child(3){
+  /* Operational Order: existing position -19px; 3 mm left ≈ another 11px. */
+  .artifactTableFour :global(.row)>:nth-child(3){
     position:relative!important;
-    left:-4px!important;
+    left:-30px!important;
     transform:none!important;
-  }
-
-  /* Do not move the Operational Order heading. */
-  .artifactTableFour :global(.header)>:nth-child(3){
-    position:relative!important;
-    left:-19px!important;
-  }
-}
-
-
-/* Artifacts correction — no thick oxblood fields; thin rails only.
-   Operational Order DATA: 3mm (~11px) left from previous test position. */
-@media(min-width:761px){
-  .artifactsPage::before,
-  .artifactsPage::after{
-    width:1px!important;
-    background:#5b2630!important;
-    box-shadow:none!important;
-  }
-
-  .artifactHeader::before,
-  .artifactHeader::after{
-    background:#5b2630!important;
-    box-shadow:none!important;
-  }
-
-  /* Previous test was left:-4px. Move values 11px left => -15px. */
-  .artifactTableFour :global(.row:not(.header))>:nth-child(3){
-    position:relative!important;
-    left:-15px!important;
-    transform:none!important;
-  }
-
-  /* Heading remains where it was. */
-  .artifactTableFour :global(.header)>:nth-child(3){
-    position:relative!important;
-    left:-19px!important;
   }
 }
