@@ -4,12 +4,21 @@ const body="<p id=\"personal-motivation\" class=\"book-front-heading\"><strong>P
 
 export default function Book(){
  return <main className={styles.bookPage}>
-  <header className={`page-title ${styles.bookTitlePage}`}>
-   <h1>The Age of False Depth</h1>
-   <p className="lede">Intelligence, Representation, and What Artifacts Actually Do</p>
-   <p className={styles.theoryName}>A Theory Of Representational Consciousness</p>
-   <p className={styles.authorLine}><span className={styles.byLabel}>by</span><b>G. K. Muijlaert</b></p>
-  </header>
+  <section className={styles.manifestHero}>
+   <div className={styles.manifestTitle}>
+    <span className={styles.eyebrow}>THE THEORY BEHIND TORC</span>
+    <h1>The Age of<br/>False Depth</h1>
+    <p>Intelligence, Representation, and What Artifacts Actually Do</p>
+    <div className={styles.authorLine}><span className={styles.byLabel}>by</span><b>G. K. Muijlaert</b></div>
+   </div>
+   <div className={styles.manifestThesis}>
+    <span className={styles.eyebrow}>THE CENTRAL QUESTION</span>
+    <h2>What has actually been accomplished?</h2>
+    <p>Complexity can resemble depth. Recursion can resemble insight. TORC begins by separating the appearance of cognition from the operation an artifact actually performs.</p>
+    <a href="#personal-motivation" className={styles.readCta}>READ THE LIVING EDITION ↓</a>
+   </div>
+  </section>
+  <div className={styles.bookMetaBar}><span>A Theory of Representational Consciousness</span><span>Living edition</span></div>
   <BookNavigator />
   <section className={`section prose auditReport ${styles.bookReader}`}>
    <div className={`auditNote ${styles.editionNote}`}><b>Living edition.</b> This online text is the current canonical version. It may be refined as TORC is tested against additional artifacts and boundary cases.</div>
