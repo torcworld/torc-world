@@ -2908,3 +2908,26 @@
     background:#fff!important;
   }
 }
+
+
+/* Artifacts — match toolbar to row hover color and close the light gap
+   between the artifact rows and the charcoal side gutters. */
+@media(min-width:761px){
+  /* 61 artifacts found / Shuffle: exact same light-brown as artifact rows */
+  .corpusToolbar{
+    background:#d9c7a6!important;
+  }
+
+  /* Previous gutters were 112px wide at -113px, leaving a light strip.
+     Extend them inward by ~1 cm while keeping their outer edge fixed. */
+  .corpusSurface::before,
+  .corpusSurface::after{
+    width:150px!important;
+  }
+  .corpusSurface::before{
+    left:-113px!important;
+  }
+  .corpusSurface::after{
+    right:-113px!important;
+  }
+}
