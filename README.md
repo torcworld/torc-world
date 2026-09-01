@@ -1,5 +1,8 @@
-# TORC Artifacts — C_GOLD_OCHRE_BANDS
+TORC Artifacts — full-page overhaul trial
 
-Drop `app/artifacts/page.tsx` and `app/artifacts/artifacts-v4.module.css` into the current site.
+This is intentionally a complete Artifacts overview-page redesign, not another row-only experiment.
+Files changed:
+- app/artifacts/page.tsx
+- app/artifacts/artifacts-overhaul.module.css
 
-This is a reversible visual trial and only changes the Artifacts overview page. Artifact detail pages are untouched.
+The artifact detail/evaluation pages are untouched.
