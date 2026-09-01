@@ -1,3 +1,7 @@
-CORRECTED ANTIQUE PARCHMENT TEST
+TORC Theory — Taupe Paper Harmony Trial
 
-This version deliberately uses a visibly brown/golden parchment reading surface (#c9aa72), with darker edge toning and subtle tonal grain. It is intentionally not off-white.
+Changes only the Theory/book presentation from the previous real-parchment trial:
+- parchment shifted greyer / less yellow
+- complete reading environment changed from pale/white to TORC light taupe
+- navigation/meta surfaces harmonized with the same paper family
+- hero architecture and book content unchanged
