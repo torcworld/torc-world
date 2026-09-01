@@ -38,3 +38,13 @@
 .artifactTable :global(a.row:not(.header):nth-of-type(even)){background:var(--bg)}
 .artifactTable :global(a.row:not(.header):hover),
 .artifactTable :global(a.row:not(.header):focus-visible){background:#c7aa76}
+
+/* Editorial Gold v3 — light-brown frame, site-background corpus */
+.artifactsPage{background:var(--ochre)}
+.orderStrip{background:var(--ochre)}
+.orderStrip button:hover,.orderStrip .orderActive{background:var(--ochre)}
+.corpus{background:var(--bg)}
+.artifactTable :global(a.row:not(.header)),
+.artifactTable :global(a.row:not(.header):nth-of-type(even)){background:var(--bg)}
+.artifactTable :global(a.row:not(.header):hover),
+.artifactTable :global(a.row:not(.header):focus-visible){background:var(--ochre)}
