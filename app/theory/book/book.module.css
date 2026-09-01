@@ -1102,3 +1102,15 @@
     border-right-color:rgba(91,38,48,.68)!important;
   }
 }
+
+
+/* Batch 76 — Theory: remove the large oxblood side field; keep thin rails */
+.bookPage::after{
+  display:none!important;
+}
+
+@media(min-width:761px){
+  .bookPage{
+    padding-right:0!important;
+  }
+}
