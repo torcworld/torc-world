@@ -4,22 +4,22 @@ const applications = [
   {
     no: '01',
     title: 'Portfolio Intelligence',
-    text: 'Establish a consistent analytical view across a slate, catalogue, or body of work — then see concentrations, gaps, boundary cases, and outliers that isolated reports cannot show.',
+    text: 'See concentrations, gaps, boundary cases, and outliers across a slate, catalogue, or body of work.',
   },
   {
     no: '02',
     title: 'Submission Intelligence',
-    text: 'Evaluate broadly before scarce human attention is allocated. TORC supports shortlisting and investigation without pretending to automate editorial, curatorial, or acquisition judgment.',
+    text: 'Evaluate broadly before scarce editorial, curatorial, or acquisition attention is allocated.',
   },
   {
     no: '03',
     title: 'Development Programs',
-    text: 'Identify where selected works structurally stop, what is not yet fully realized, and where deeper development attention is most likely to change the artifact rather than merely add to it.',
+    text: 'Identify where selected works structurally stop and where deeper development attention can materially change them.',
   },
   {
     no: '04',
     title: 'Comparative Research',
-    text: 'Compare creators, cohorts, media, periods, or defined corpora through Operational Order, Cognitive Magnitude, and dimensional architecture without collapsing them into a single prestige ranking.',
+    text: 'Compare creators, cohorts, media, periods, or corpora without collapsing distinct cognitive coordinates into one ranking.',
   },
 ];
 
@@ -40,7 +40,7 @@ export default function Organizations(){
           <h1>See what a body of work<br/>is actually doing.</h1>
           <p>
             Evaluate cognitive architecture across a slate, catalogue, submission pool,
-            or recurring stream of work — under one consistent analytical standard.
+            or recurring stream — under one consistent analytical standard.
           </p>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
             Discuss an institutional use case <span>→</span>
@@ -51,9 +51,8 @@ export default function Organizations(){
           <span>THE INSTITUTIONAL PREMISE</span>
           <strong>50 artifacts should produce more than 50 reports.</strong>
           <p>
-            At scale, individual evaluations should become a view of the corpus itself:
-            where it operates, where magnitude accumulates, what repeats, what diverges,
-            and which works deserve deeper attention.
+            At scale, individual evaluations become a view of the corpus itself:
+            where it operates, what repeats, what diverges, and what deserves deeper attention.
           </p>
         </div>
       </header>
@@ -70,8 +69,8 @@ export default function Organizations(){
           <div className={styles.eyebrow}>FROM VOLUME TO JUDGMENT</div>
           <h2>Evaluate broadly.<br/>Investigate selectively.</h2>
           <p>
-            TORC is most useful institutionally when evaluation becomes a disciplined
-            allocation system for human attention — not an automated substitute for it.
+            Evaluation becomes a disciplined way to allocate human attention —
+            not an automated substitute for it.
           </p>
         </div>
 
@@ -104,8 +103,8 @@ export default function Organizations(){
         <div className={styles.systemRule}>
           <span>TORC IS NOT AN AUTOMATED GREENLIGHT.</span>
           <p>
-            It supports selection, development, research, and allocation decisions.
-            Editorial, curatorial, production, acquisition, and commercial judgment remain human decisions.
+            TORC supports selection, development, research, and allocation.
+            Editorial, curatorial, production, acquisition, and commercial judgment remain human.
           </p>
         </div>
       </section>
@@ -117,8 +116,7 @@ export default function Organizations(){
             <h2>One corpus.<br/>A clearer view.</h2>
           </div>
           <p>
-            The same evaluation standard applied across many works makes relationships
-            visible that no isolated score or conventional coverage report can provide.
+            A common standard makes relationships visible that isolated reports cannot.
           </p>
         </div>
 
@@ -168,8 +166,8 @@ export default function Organizations(){
           <div className={styles.eyebrow}>ENGAGEMENTS</div>
           <h2>Built around the decision problem.</h2>
           <p>
-            Institutional work is scoped according to artifact type, corpus size,
-            cadence, analytical depth, and the decision or development problem the work needs to support.
+            Scope follows the corpus, cadence, analytical depth, and the decision
+            or development problem the work needs to support.
           </p>
         </div>
 
@@ -192,7 +190,7 @@ export default function Organizations(){
         <div className={styles.boundaryCopy}>
           <p>
             Organizations receive the agreed evaluations, evidence, comparative reporting,
-            and analytical outputs required by the engagement.
+            and analytical outputs.
           </p>
           <p>
             <strong>The TORC evaluation methodology remains proprietary and is not transferred as part of an engagement.</strong>
@@ -207,9 +205,8 @@ export default function Organizations(){
           <div className={styles.eyebrow}>INSTITUTIONAL INQUIRY</div>
           <h2>Start with the corpus.</h2>
           <p>
-            Tell TORC what kind of work you are evaluating, how much of it there is,
-            whether the program is one-off or recurring, and what decision, development,
-            or research problem the evaluation needs to support.
+            Tell TORC what you are evaluating, the approximate volume, whether the program
+            is one-off or recurring, and what decision or development problem it needs to support.
           </p>
         </div>
         <div className={styles.contactCard}>

@@ -1281,3 +1281,186 @@
   .applicationList article>p,.engagementLine>p{grid-column:2}
   .boundaryCopy{padding-left:0;padding-top:22px;border-left:0;border-top:1px solid rgba(217,199,166,.42)}
 }
+
+
+/* Batch 84 — Executive scan hierarchy / final Organizations polish */
+
+.newHero{
+  padding-top:84px!important;
+  padding-bottom:82px!important;
+  gap:86px!important;
+}
+.heroStatement h1{
+  font-size:clamp(58px,7vw,92px)!important;
+  line-height:.90!important;
+  margin-bottom:31px!important;
+}
+.heroStatement>p{
+  max-width:620px!important;
+  font-size:17px!important;
+  line-height:1.62!important;
+}
+.heroThesis>strong{
+  font-size:31px!important;
+  line-height:1.12!important;
+  margin-top:24px!important;
+}
+.heroThesis>p{
+  max-width:390px!important;
+  font-size:13px!important;
+  line-height:1.6!important;
+}
+
+.standardBar{
+  padding-top:17px!important;
+  padding-bottom:17px!important;
+}
+
+.system{
+  padding-top:82px!important;
+  padding-bottom:76px!important;
+}
+.systemIntro h2{
+  font-size:clamp(44px,5.2vw,64px)!important;
+  line-height:.98!important;
+}
+.systemIntro>p{
+  max-width:590px!important;
+  font-size:15px!important;
+}
+.systemFlow{
+  margin-top:58px!important;
+}
+.flowNode{
+  min-height:176px!important;
+}
+.flowNode>p{
+  font-size:12px!important;
+  line-height:1.52!important;
+}
+.systemRule{
+  margin-top:46px!important;
+  padding-top:25px!important;
+}
+.systemRule>span{
+  font-size:11px!important;
+}
+.systemRule>p{
+  max-width:630px!important;
+  font-size:13px!important;
+}
+
+.visibility{
+  padding-top:108px!important;
+  padding-bottom:104px!important;
+}
+.visibilityHead{
+  margin-bottom:54px!important;
+}
+.visibilityHead h2{
+  font-size:clamp(46px,5.5vw,66px)!important;
+  line-height:.98!important;
+}
+.visibilityHead>p{
+  max-width:420px!important;
+  font-size:13px!important;
+}
+.signalMatrix article{
+  padding-top:29px!important;
+  padding-bottom:30px!important;
+}
+.signalMatrix article>strong{
+  font-size:22px!important;
+}
+.signalMatrix article>p{
+  max-width:590px!important;
+  font-size:13px!important;
+}
+
+.applicationsNew{
+  padding-top:84px!important;
+  padding-bottom:86px!important;
+  gap:88px!important;
+}
+.applicationHead h2{
+  font-size:clamp(42px,4.8vw,58px)!important;
+  line-height:1!important;
+}
+.applicationList article{
+  padding-top:28px!important;
+  padding-bottom:29px!important;
+}
+.applicationList h3{
+  font-size:20px!important;
+}
+.applicationList p{
+  max-width:500px!important;
+  font-size:12.5px!important;
+}
+
+.engagementNew{
+  padding-top:82px!important;
+  padding-bottom:84px!important;
+  gap:88px!important;
+}
+.engagementHead h2{
+  font-size:clamp(42px,4.8vw,58px)!important;
+  line-height:1!important;
+}
+.engagementHead>p{
+  max-width:410px!important;
+  font-size:13.5px!important;
+}
+.engagementLine{
+  padding-top:23px!important;
+  padding-bottom:24px!important;
+}
+.engagementLine>p{
+  font-size:12px!important;
+}
+
+.boundary{
+  padding-top:84px!important;
+  padding-bottom:88px!important;
+  gap:92px!important;
+}
+.boundary h2{
+  font-size:clamp(45px,5.1vw,62px)!important;
+  line-height:.99!important;
+}
+.boundaryCopy p{
+  max-width:620px!important;
+  font-size:14px!important;
+}
+.boundaryCopy p strong{
+  font-size:16px!important;
+  line-height:1.55!important;
+}
+
+.finalContact{
+  padding-top:84px!important;
+  padding-bottom:90px!important;
+  gap:92px!important;
+}
+.finalContact h2{
+  font-size:clamp(46px,5.2vw,64px)!important;
+  line-height:.98!important;
+}
+.finalContact>div:first-child>p{
+  max-width:540px!important;
+  font-size:14px!important;
+}
+.contactCard ul{
+  font-size:13px!important;
+}
+
+@media(max-width:760px){
+  .newHero{padding-top:56px!important;padding-bottom:58px!important}
+  .heroStatement h1{font-size:52px!important}
+  .system{padding-top:56px!important;padding-bottom:54px!important}
+  .visibility{padding-top:72px!important;padding-bottom:70px!important}
+  .applicationsNew,.engagementNew,.boundary,.finalContact{
+    padding-top:58px!important;
+    padding-bottom:62px!important;
+  }
+}
