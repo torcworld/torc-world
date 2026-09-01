@@ -2887,3 +2887,37 @@
     left:-52px!important;
   }
 }
+
+/* HARD POSITION FIX — target the elements that actually render on the page.
+   This intentionally uses transforms (not left offsets) so older positioning
+   rules cannot neutralise the requested movement. */
+@media (min-width:761px){
+  /* Shift Operational Order and every value beneath it ~0.5 cm left. */
+  .artifactTableFour :global(.header) > button:nth-child(3),
+  .artifactTableFour :global(a.row:not(.header)) > span:nth-child(3){
+    transform:translateX(-20px)!important;
+    left:auto!important;
+  }
+
+  /* Shift Cognitive Magnitude Score and every score beneath it farther inward. */
+  .artifactTableFour :global(.header) > button:nth-child(4),
+  .artifactTableFour :global(a.row:not(.header)) > span:nth-child(4){
+    transform:translateX(-40px)!important;
+    left:auto!important;
+  }
+
+  /* The visible lower oxblood closure is the exposed page field beneath the
+     compact corpus, not the corpus border itself. Extend the corpus downward
+     over ~4 mm of that field so the red closure becomes visibly thinner. */
+  .corpusSurface{
+    margin-bottom:-15px!important;
+  }
+
+  /* Preserve a calm pale strip, while lowering the charcoal Compare panel a
+     further ~3 mm away from pagination. */
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:38px!important;
+    margin-bottom:8px!important;
+  }
+}
