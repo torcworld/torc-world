@@ -82,3 +82,28 @@
 @media(max-width:760px){
   .corpus{padding:24px 14px 28px!important}
 }
+
+/* Editorial v5 — micro-spacing + gold table header/pagination */
+@media(min-width:761px){
+  /* A final subtle lift: 1.5 mm beyond v4. */
+  .artifactsPage{padding-top:calc(74px - 5.5mm)}
+}
+
+/* Gold column-heading bar directly above the artifact entries. */
+.artifactTable :global(.row.header),
+.artifactTable .tableHeader{
+  background:var(--gold)!important;
+}
+.tableHeader button,
+.tableHeader span{
+  color:var(--ox)!important;
+}
+
+/* Active page number: gold with a black numeral. */
+.pageNumbers .activePage{
+  background:var(--gold)!important;
+  color:#171714!important;
+}
+
+/* Remove the red rule above the final Compare block. */
+.compareSection{border-top:0!important}
