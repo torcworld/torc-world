@@ -2859,120 +2859,53 @@
   }
 }
 
-/* CURRENT REFINEMENT — more breathing room above Compare + tighter right columns.
-   Keep all existing picker behaviour and contained charcoal geometry intact. */
+/* REAL FIX — based on the last confirmed-working Compare/dropdown build.
+   Use only selectors already present in the live DOM; no new JSX classes needed. */
 @media (min-width:761px){
-  /* Lower the charcoal Compare field by roughly another 3 mm so the pagination
-     has a calmer pale gap before the closing panel. */
+  /* Pull the two right-hand columns inward by changing the actual grid geometry,
+     not by visual transforms. This moves headers and every value together. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:minmax(0,1.62fr) minmax(96px,.62fr) minmax(118px,.60fr) minmax(145px,.70fr)!important;
+    column-gap:8px!important;
+  }
+  .artifactTableFour :global(.header)>button:nth-child(3){
+    font-size:10px!important;
+  }
+  .artifactTableFour :global(.header)>button:nth-child(4){
+    font-size:8.8px!important;
+    line-height:1.05!important;
+    letter-spacing:.01em!important;
+  }
+
+  /* More breathing room before Compare while keeping the charcoal panel contained. */
   .corpusSurface .inlineCompare,
   .inlineCompare{
-    margin-top:26px!important;
+    margin-top:27px!important;
     margin-bottom:-4px!important;
   }
 
-  /* Make only the horizontal bottom oxblood closure finer; side rails stay as-is. */
+  /* Make the visible lower red closure much thinner without changing side rails. */
   .corpusSurface{
-    border-bottom-width:.25px!important;
+    border-bottom:1px solid #5b2630!important;
+    padding-bottom:0!important;
   }
 
-  /* Keep Medium where it is, pull Operational Order another ~0.5 cm left, and
-     bring Cognitive Magnitude farther in so its sort arrow remains inside. */
-  .artifactTableFour :global(.row)>:nth-child(2){
-    left:-19px!important;
-  }
-  .artifactTableFour :global(.row)>:nth-child(3){
-    left:-38px!important;
-  }
-  .artifactTableFour :global(.row)>:nth-child(4){
-    left:-52px!important;
-  }
-}
-
-/* HARD POSITION FIX — target the elements that actually render on the page.
-   This intentionally uses transforms (not left offsets) so older positioning
-   rules cannot neutralise the requested movement. */
-@media (min-width:761px){
-  /* Shift Operational Order and every value beneath it ~0.5 cm left. */
-  .artifactTableFour :global(.header) > button:nth-child(3),
-  .artifactTableFour :global(a.row:not(.header)) > span:nth-child(3){
-    transform:translateX(-20px)!important;
-    left:auto!important;
-  }
-
-  /* Shift Cognitive Magnitude Score and every score beneath it farther inward. */
-  .artifactTableFour :global(.header) > button:nth-child(4),
-  .artifactTableFour :global(a.row:not(.header)) > span:nth-child(4){
-    transform:translateX(-40px)!important;
-    left:auto!important;
-  }
-
-  /* The visible lower oxblood closure is the exposed page field beneath the
-     compact corpus, not the corpus border itself. Extend the corpus downward
-     over ~4 mm of that field so the red closure becomes visibly thinner. */
-  .corpusSurface{
-    margin-bottom:-15px!important;
-  }
-
-  /* Preserve a calm pale strip, while lowering the charcoal Compare panel a
-     further ~3 mm away from pagination. */
-  .corpusSurface .inlineCompare,
-  .inlineCompare{
-    margin-top:38px!important;
-    margin-bottom:8px!important;
-  }
-}
-
-/* HARD DOM-TARGETED REFINEMENT — 2026-09-01
-   These rules use dedicated component classes so older nth-child experiments
-   cannot cancel the requested live positions. */
-@media (min-width:761px){
-  .operationalHeader,
-  .operationalCell{
-    transform:translateX(-20px)!important;
-    position:relative!important;
-    left:0!important;
-  }
-  .magnitudeHeader,
-  .magnitudeCell{
-    transform:translateX(-40px)!important;
-    position:relative!important;
-    left:0!important;
-  }
-  .magnitudeHeader{
-    font-size:9px!important;
-    line-height:1.08!important;
-    letter-spacing:.015em!important;
-  }
-
-  /* Real spacer in the DOM: guarantees more breathing room before Compare,
-     independent of the accumulated margin overrides above. */
-  .compareBreathingRoom{
-    display:block!important;
-    height:14px!important;
-    background:var(--bg)!important;
-    margin:0!important;
-    padding:0!important;
-  }
-  .inlineCompare{
-    margin-top:0!important;
-  }
-
-  /* Center the conditional CTA below the two pickers and swap control. */
+  /* Center the conditional compare CTA underneath the two selectors. */
   .inlineCompareAction{
-    width:100%!important;
     margin:20px 0 0!important;
-    text-align:center!important;
+    width:100%!important;
     display:flex!important;
     justify-content:center!important;
     align-items:center!important;
+    text-align:center!important;
   }
   .inlineCompareAction :global(.button){
     display:inline-flex!important;
+    margin:0 auto!important;
     align-items:center!important;
     justify-content:center!important;
-    margin:0 auto!important;
     background:#5b2630!important;
-    border-color:#5b2630!important;
+    border:1px solid #5b2630!important;
     color:#f5f2ea!important;
     box-shadow:none!important;
   }
@@ -2982,20 +2915,18 @@
     border-color:#5b2630!important;
     color:#f5f2ea!important;
   }
+}
 
-  /* Replace the ambiguous thick lower closure with a controlled pale footer
-     and one fine oxblood rule. Vertical side architecture is untouched. */
+/* BOTTOM-ONLY RESTORE — return to the pale-ground extension from the immediately
+   previous version. Deliberately leaves all artifact table/header positioning alone. */
+@media (min-width:761px){
   .corpusSurface{
-    border-bottom:0!important;
-    margin-bottom:0!important;
-  }
-  .corpusBottomClosure{
-    display:block!important;
-    height:11px!important;
-    margin:0!important;
-    padding:0!important;
     background:var(--bg)!important;
+    padding-bottom:19px!important;
     border-bottom:1px solid #5b2630!important;
-    box-sizing:border-box!important;
+  }
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-bottom:0!important;
   }
 }
