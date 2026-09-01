@@ -1,1 +1,1 @@
-TORC Theory design trial: A_MANIFESTO. Replace app/theory/book files. Book body unchanged.
+TORC Theory design trial: B_EDITORIAL. Replace app/theory/book files. Book body unchanged.
