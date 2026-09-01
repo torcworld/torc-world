@@ -2778,3 +2778,38 @@
     background:transparent!important;
   }
 }
+
+/* CURRENT REFINEMENT — 2026-09-01
+   Lower the contained Compare closure, halve only the horizontal bottom rule,
+   and restore readable pagination on the pale page ground. */
+@media (min-width:761px){
+  /* Create a little more pale breathing room after pagination and let the
+     charcoal Compare panel begin ~1 cm lower, without touching the side rails. */
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:10px!important;
+  }
+
+  /* Only the horizontal bottom closure is reduced; vertical oxblood rails stay
+     at their existing weight. */
+  .corpusSurface{
+    border-bottom-width:.5px!important;
+  }
+
+  /* Pagination lives on the pale site ground, so use charcoal for inactive
+     controls and keep the current page as the oxblood accent. */
+  .pagination>button,
+  .pageNumbers button{
+    color:#575653!important;
+    opacity:1!important;
+  }
+  .pagination>button:disabled{
+    color:#8b8984!important;
+    opacity:.5!important;
+  }
+  .pageNumbers .activePage{
+    background:#5b2630!important;
+    color:#fff!important;
+    border-color:#5b2630!important;
+  }
+}
