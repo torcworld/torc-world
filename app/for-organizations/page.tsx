@@ -27,6 +27,14 @@ const useCases = [
   },
 ];
 
+const engagementTypes = [
+  'Portfolio Evaluation',
+  'Submission Intelligence',
+  'Development Program',
+  'Recurring Evaluation Program',
+  'Research Collaboration',
+];
+
 export default function Organizations(){
   return (
     <main className={styles.page}>
@@ -86,19 +94,20 @@ export default function Organizations(){
       </section>
 
       <section className={styles.intro}>
-        <div className={styles.eyebrow}>CORPUS INTELLIGENCE</div>
+        <div className={styles.eyebrow}>THE INSTITUTIONAL DIFFERENCE</div>
         <div>
           <h2>50 artifacts should produce more than 50 reports.</h2>
           <div className={styles.twoCopy}>
             <p>
-              A large evaluation program becomes useful when individual profiles begin
-              to reveal the structure of the body of work itself: concentrations, gaps,
-              outliers, recurring bottlenecks, and works that merit deeper investigation.
+              At institutional scale, the value is not simply repetition. Individual
+              profiles should begin to reveal the structure of the body of work itself:
+              concentrations, gaps, outliers, recurring bottlenecks, and works that
+              warrant deeper investigation.
             </p>
             <p>
-              TORC does not predict commercial success and does not replace editorial,
-              curatorial, production, acquisition, or research judgment. It gives those
-              judgments a more disciplined analytical field in which to operate.
+              TORC supports selection, development, research, and allocation decisions.
+              It does not predict commercial success and it does not replace editorial,
+              curatorial, production, acquisition, or research judgment.
             </p>
           </div>
         </div>
@@ -135,12 +144,12 @@ export default function Organizations(){
       <section className={styles.volume}>
         <div className={styles.bigNumber}>50</div>
         <div className={styles.volumeCopy}>
-          <div className={styles.eyebrow}>FROM CORPUS TO ATTENTION</div>
+          <div className={styles.eyebrow}>CORPUS → IDENTIFY → INVESTIGATE → DEVELOP</div>
           <h2>Fifty artifacts should not behave like fifty isolated commissions.</h2>
           <p>
             Institutional TORC is designed as an evaluation program: establish a common
-            standard across the corpus, identify meaningful patterns and exceptions, then
-            direct deeper analysis and development attention where it is most warranted.
+            standard across the corpus, identify meaningful patterns and exceptions,
+            then direct deeper analysis and development attention where it is most warranted.
           </p>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Program%20Inquiry">
             Discuss an evaluation program <span>→</span>
@@ -161,7 +170,7 @@ export default function Organizations(){
       <section className={styles.output}>
         <div className={styles.sectionHeading}>
           <div>
-            <div className={styles.eyebrow}>INSTITUTIONAL OUTPUT</div>
+            <div className={styles.eyebrow}>WHAT BECOMES VISIBLE AT SCALE</div>
             <h2>One corpus.<br/>A clearer view.</h2>
           </div>
           <p>
@@ -177,7 +186,7 @@ export default function Organizations(){
               <i style={{height:'32%'}}/><i style={{height:'58%'}}/><i style={{height:'86%'}}/><i style={{height:'48%'}}/><i style={{height:'72%'}}/>
             </div>
             <h3>Where the corpus operates.</h3>
-            <p>Operational Orders and meaningful boundary concentrations across the evaluated set.</p>
+            <p>Operational Orders, meaningful concentrations, and boundary cases across the evaluated set.</p>
           </article>
           <article>
             <span>02 / COGNITIVE MAGNITUDE</span>
@@ -203,41 +212,63 @@ export default function Organizations(){
       </section>
 
       <section className={styles.principle}>
-        <div className={styles.eyebrow}>DECISION SUPPORT</div>
+        <div className={styles.eyebrow}>FROM EVALUATION TO ATTENTION</div>
         <div>
-          <h2>From evaluation to attention.</h2>
+          <h2>Make the allocation of judgment better.</h2>
           <p>
             The purpose of institutional TORC is not to automate judgment. It is to make
             better allocation of judgment possible — showing where human attention,
             development resources, comparative investigation, or deeper evaluation are
             most likely to matter.
           </p>
+          <div className={styles.greenlight}>TORC IS NOT AN AUTOMATED GREENLIGHT.</div>
+        </div>
+      </section>
+
+      <section className={styles.engagements}>
+        <div className={styles.engagementLead}>
+          <div className={styles.eyebrow}>ENGAGEMENT TYPES</div>
+          <h2>Built around the decision problem.</h2>
+          <p>
+            Institutional work is scoped around corpus size, cadence, analytical depth,
+            reporting needs, and what the organization actually needs to decide or develop.
+          </p>
+        </div>
+        <div className={styles.engagementList}>
+          {engagementTypes.map((item, index) => (
+            <div className={styles.engagementRow} key={item}>
+              <span>{String(index + 1).padStart(2, '0')}</span>
+              <strong>{item}</strong>
+            </div>
+          ))}
         </div>
       </section>
 
       <section className={styles.contact}>
         <div>
-          <div className={styles.eyebrow}>INSTITUTIONAL ENGAGEMENTS</div>
+          <div className={styles.eyebrow}>INSTITUTIONAL INQUIRY</div>
           <h2>Start with the corpus.</h2>
           <p>
-            Portfolio Evaluation, Submission Intelligence, Development Programs,
-            Recurring Evaluation Programs, and Research Collaborations are scoped
-            individually according to the work and the decision problem.
+            Tell TORC what kind of work you are evaluating, how much of it there is,
+            whether the program is one-off or recurring, and what decision, development,
+            or research problem the evaluation needs to support.
           </p>
-          <p>
-            <strong>TORC is not an automated greenlight.</strong>
-          </p>
-          <p>
-            The TORC evaluation methodology remains proprietary and is not transferred
-            as part of an engagement.
-          </p>
+          <div className={styles.proprietaryBox}>
+            <span>PROPRIETARY METHODOLOGY</span>
+            <p>
+              The TORC evaluation methodology remains proprietary and is not transferred
+              as part of an engagement. Clients receive the evaluation, evidence, reporting,
+              and agreed analytical outputs — not the underlying adjudication machinery.
+            </p>
+          </div>
         </div>
+
         <div className={styles.inquiry}>
           <span>USEFUL TO INCLUDE</span>
           <ul>
             <li>Artifact type or corpus</li>
-            <li>Approximate volume and whether the work is one-off or recurring</li>
-            <li>The selection, development, research, or allocation problem</li>
+            <li>Approximate volume and frequency</li>
+            <li>Selection, development, research, or allocation purpose</li>
             <li>Desired reporting and comparison depth</li>
           </ul>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">

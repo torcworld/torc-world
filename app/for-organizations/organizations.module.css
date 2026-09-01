@@ -675,3 +675,132 @@
   line-height:1.6!important;
   max-width:620px!important;
 }
+
+
+/* Batch 82 — Organizations institutional architecture refinement */
+
+.intro{
+  margin-top:34px!important;
+  background:#ddceb3!important;
+  border-top:1px solid #5b2630!important;
+  border-bottom:0!important;
+  padding:58px 38px 62px!important;
+}
+.intro .eyebrow{color:#5b2630!important}
+.intro h2{color:#171714!important}
+.twoCopy p{color:#3f382f!important}
+
+.principle{
+  margin:34px -28px 0!important;
+  padding:64px 54px!important;
+  background:#353432!important;
+  color:#f3eee6!important;
+  border-top:1px solid #5b2630!important;
+  border-bottom:1px solid rgba(255,255,255,.16)!important;
+}
+.principle .eyebrow{color:#d9c7a6!important}
+.principle h2{color:#f3eee6!important}
+.principle p{color:#d7d0c5!important}
+.greenlight{
+  margin-top:27px;
+  padding:14px 16px;
+  border:1px solid rgba(217,199,166,.55);
+  color:#d9c7a6;
+  font:700 10px/1.25 Arial,sans-serif;
+  letter-spacing:.16em;
+  width:max-content;
+  max-width:100%;
+}
+
+.engagements{
+  margin:34px -28px 0;
+  padding:58px 54px 62px;
+  display:grid;
+  grid-template-columns:.86fr 1.14fr;
+  gap:72px;
+  background:#ddceb3;
+  border-top:1px solid #5b2630;
+  border-bottom:1px solid rgba(91,38,48,.45);
+}
+.engagementLead .eyebrow{color:#5b2630}
+.engagementLead h2{
+  font-size:clamp(35px,4vw,49px);
+  line-height:1.06;
+  letter-spacing:-.028em;
+  font-weight:500;
+  margin:10px 0 18px;
+  color:#171714;
+}
+.engagementLead p{
+  margin:0;
+  max-width:560px;
+  font-size:16px;
+  line-height:1.65;
+  color:#4c4339;
+}
+.engagementList{
+  border-top:1px solid #5b2630;
+}
+.engagementRow{
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:16px;
+  align-items:center;
+  min-height:64px;
+  border-bottom:1px solid rgba(91,38,48,.42);
+}
+.engagementRow span{
+  font:700 9px Arial,sans-serif;
+  letter-spacing:.14em;
+  color:#5b2630;
+}
+.engagementRow strong{
+  font-size:18px;
+  line-height:1.2;
+  font-weight:500;
+  color:#171714;
+}
+
+.contact{
+  margin-top:34px!important;
+}
+.proprietaryBox{
+  margin-top:28px;
+  padding:18px 0 0;
+  border-top:1px solid rgba(255,255,255,.38);
+  max-width:620px;
+}
+.proprietaryBox>span{
+  display:block;
+  margin-bottom:9px;
+  color:#d9c7a6;
+  font:700 9px/1.2 Arial,sans-serif;
+  letter-spacing:.14em;
+}
+.proprietaryBox p{
+  margin:0!important;
+  color:#eadfe0!important;
+  font-size:13px!important;
+  line-height:1.62!important;
+}
+
+@media(max-width:760px){
+  .intro{
+    margin-top:22px!important;
+    padding:46px 20px 50px!important;
+  }
+  .principle{
+    margin:22px -20px 0!important;
+    padding:50px 20px!important;
+  }
+  .engagements{
+    margin:22px -20px 0;
+    padding:48px 20px 52px;
+    grid-template-columns:1fr;
+    gap:34px;
+  }
+  .engagementRow{
+    grid-template-columns:40px 1fr;
+    min-height:58px;
+  }
+}
