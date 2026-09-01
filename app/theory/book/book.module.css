@@ -1114,3 +1114,17 @@
     padding-right:0!important;
   }
 }
+
+
+/* Batch 77 — Theory: remove left oxblood side field too; preserve thin rails */
+.bookPage::before{
+  display:none!important;
+}
+
+/* Neutralize any full-height left field attached to the book shell itself,
+   without touching the thin border/rail rules. */
+@media(min-width:761px){
+  .bookPage{
+    padding-left:0!important;
+  }
+}
