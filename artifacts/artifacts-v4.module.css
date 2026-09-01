@@ -2994,3 +2994,21 @@
     transform:none!important;
   }
 }
+
+/* FINAL HARD RIGHT MOVE — Operational Order VALUES ONLY.
+   Historical CSS applies left:-19px to the third grid cell. Neutralize that
+   on data rows first, then move the entire value cell 20px RIGHT. */
+@media (min-width:761px){
+  .artifactTableFour :global(a.row:not(.header)) > .operationalOrderValue{
+    position:relative!important;
+    left:0!important;
+    right:auto!important;
+    transform:translateX(20px)!important;
+  }
+  .artifactTableFour :global(a.row:not(.header)) > .operationalOrderValue .operationalOrderText{
+    position:static!important;
+    left:auto!important;
+    right:auto!important;
+    transform:none!important;
+  }
+}
