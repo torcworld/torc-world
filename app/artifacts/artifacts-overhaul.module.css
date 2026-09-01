@@ -132,3 +132,9 @@
   border-left:1px solid #171714!important;
   border-right:1px solid #171714!important;
 }
+
+/* Requested micro-adjustment: move the charcoal arrival block and all following
+   Artifacts content 2mm upward, preserving the existing composition. */
+@media(min-width:761px){
+  .artifactsPage{padding-top:calc(74px - 6.5mm)!important;}
+}

@@ -1136,3 +1136,30 @@
   background:rgba(217,199,166,.38)!important;
   color:#554d42!important;
 }
+
+/* A Manifesto refinement — carry the approved TORC light-brown field down
+   alongside the book, then give only the paper a warmer, aged manuscript tone. */
+@media(min-width:761px){
+  .bookPage{
+    background:linear-gradient(to bottom, transparent 0, transparent 543px, #d9c7a6 543px, #d9c7a6 100%)!important;
+  }
+}
+.bookReader{
+  background:
+    linear-gradient(93deg, transparent 0 9%, rgba(39,31,20,.055) 9.08%, transparent 9.22% 57%, rgba(39,31,20,.04) 57.08%, transparent 57.25%),
+    linear-gradient(177deg, transparent 0 23%, rgba(43,34,22,.045) 23.08%, transparent 23.22% 71%, rgba(43,34,22,.035) 71.08%, transparent 71.22%),
+    radial-gradient(ellipse at 8% 18%, rgba(72,54,29,.10), transparent 24%),
+    radial-gradient(ellipse at 94% 77%, rgba(72,54,29,.085), transparent 27%),
+    repeating-linear-gradient(4deg, rgba(43,34,22,.018) 0, rgba(43,34,22,.018) 1px, transparent 1px, transparent 5px),
+    #d4bd86!important;
+  color:#1c1812!important;
+  border-color:rgba(71,53,31,.48)!important;
+  box-shadow:0 18px 45px rgba(41,34,24,.13), inset 0 0 70px rgba(74,54,28,.09)!important;
+}
+.editionNote{
+  background:rgba(217,199,166,.58)!important;
+  color:#4f4434!important;
+}
+@media(max-width:760px){
+  .bookPage{background:#d9c7a6!important;}
+}

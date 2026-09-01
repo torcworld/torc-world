@@ -1,9 +1,12 @@
-# TORC Theory — A Manifesto / Weathered Taupe Book Trial
+TORC refinement patch
 
-This trial returns to the approved **A Manifesto** composition unchanged and modifies only the reading/book material.
+Theory / Book
+- Based on A Manifesto.
+- Reading-area surround now continues the site's existing light-brown #d9c7a6.
+- Book paper is warmer beige-gold, derived from TORC's existing gold family rather than a new yellow.
+- Added restrained aged-paper tonal variation and fine dark crease lines.
 
-- Manifesto hero: unchanged charcoal + TORC light brown
-- Surrounding bands/meta: unchanged TORC light brown
-- Book paper: darker desaturated taupe/grey-brown derived from the same warm family
-- Texture: restrained tonal/fibre variation; no yellow parchment palette, burns, stains, or decorative ageing
-- Book content/navigation: unchanged
+Artifacts
+- Moves the charcoal hero block and all content beneath it exactly 2mm upward on desktop.
+
+Replace the matching app/... files in the project.
