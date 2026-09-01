@@ -2858,3 +2858,61 @@
     overscroll-behavior:contain!important;
   }
 }
+
+/* REAL FIX — based on the last confirmed-working Compare/dropdown build.
+   Use only selectors already present in the live DOM; no new JSX classes needed. */
+@media (min-width:761px){
+  /* Pull the two right-hand columns inward by changing the actual grid geometry,
+     not by visual transforms. This moves headers and every value together. */
+  .artifactTableFour :global(.row){
+    grid-template-columns:minmax(0,1.62fr) minmax(96px,.62fr) minmax(118px,.60fr) minmax(145px,.70fr)!important;
+    column-gap:8px!important;
+  }
+  .artifactTableFour :global(.header)>button:nth-child(3){
+    font-size:10px!important;
+  }
+  .artifactTableFour :global(.header)>button:nth-child(4){
+    font-size:8.8px!important;
+    line-height:1.05!important;
+    letter-spacing:.01em!important;
+  }
+
+  /* More breathing room before Compare while keeping the charcoal panel contained. */
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:27px!important;
+    margin-bottom:-4px!important;
+  }
+
+  /* Make the visible lower red closure much thinner without changing side rails. */
+  .corpusSurface{
+    border-bottom:1px solid #5b2630!important;
+    padding-bottom:0!important;
+  }
+
+  /* Center the conditional compare CTA underneath the two selectors. */
+  .inlineCompareAction{
+    margin:20px 0 0!important;
+    width:100%!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+    text-align:center!important;
+  }
+  .inlineCompareAction :global(.button){
+    display:inline-flex!important;
+    margin:0 auto!important;
+    align-items:center!important;
+    justify-content:center!important;
+    background:#5b2630!important;
+    border:1px solid #5b2630!important;
+    color:#f5f2ea!important;
+    box-shadow:none!important;
+  }
+  .inlineCompareAction :global(.button:hover),
+  .inlineCompareAction :global(.button:focus-visible){
+    background:#5b2630!important;
+    border-color:#5b2630!important;
+    color:#f5f2ea!important;
+  }
+}
