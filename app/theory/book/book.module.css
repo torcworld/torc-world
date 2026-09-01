@@ -1,8 +1,8 @@
 
 .bookPage {
-  --book-paper: #f8f3e8;
-  --book-paper-deep: #f1eadb;
-  --book-ink: #1d1b17;
+  --book-paper: #e1c991;
+  --book-paper-deep: #d1b675;
+  --book-ink: #2a241a;
   --book-muted: #6e685d;
   --book-rule: rgba(29, 27, 23, 0.34);
 }
@@ -22,7 +22,10 @@
   margin: 0 auto;
   padding: 58px clamp(30px, 6vw, 78px) 92px !important;
   background:
-    linear-gradient(90deg, rgba(71,58,38,.025), transparent 8%, transparent 92%, rgba(71,58,38,.025)),
+    radial-gradient(circle at 14% 9%, rgba(255,255,255,.20), transparent 24%),
+    radial-gradient(circle at 82% 31%, rgba(107,77,31,.07), transparent 28%),
+    repeating-linear-gradient(0deg, rgba(65,48,25,.018) 0 1px, transparent 1px 4px),
+    linear-gradient(90deg, rgba(84,61,29,.055), transparent 7%, transparent 93%, rgba(84,61,29,.055)),
     var(--book-paper);
   border: 1px solid rgba(54, 47, 36, 0.19) !important;
   box-shadow:
@@ -50,7 +53,7 @@
   border: 0 !important;
   border-top: 1px solid var(--book-rule) !important;
   border-bottom: 1px solid var(--book-rule) !important;
-  background: rgba(255,255,255,.24) !important;
+  background: rgba(255,248,225,.10) !important;
   padding: 17px 4px !important;
   color: var(--book-muted);
 }

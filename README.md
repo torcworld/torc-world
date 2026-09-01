@@ -1,3 +1,3 @@
-TORC Theory A/B Hybrid — Paper Edition
+TORC Theory paper trial: 1_AGED_IVORY
 
-Trial only. Uses the Editorial book object inside a Manifesto-style dark-grey / warm-ochre arrival, and replaces the white reading surface with a restrained warm paper treatment. Book text and navigator behavior are unchanged.
+Based on the current A/B Hybrid Paper Edition. Layout and book content unchanged; this trial changes only the reading-paper treatment.
