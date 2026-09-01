@@ -2944,3 +2944,11 @@
     z-index:3!important;
   }
 }
+
+/* FINAL MICRO-REFINEMENT — sort arrows remain removed; Compare lifted by ~1 mm only. */
+@media (min-width:761px){
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:23px!important;
+  }
+}
