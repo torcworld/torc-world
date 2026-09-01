@@ -32,6 +32,7 @@ export default function SubmitArtifactPage(){
    <div className={styles.sectionHeadLight}>
     <h2>Choose how far you want to go.</h2>
     <p className={styles.pricingIntro}>Three different moments in one development process: <b>see the work</b>, <b>intervene in the work</b>, or <b>verify the revision</b>. Start where you need to start.</p>
+    <p className={styles.pricingIntro}><b>Each stage stands on its own.</b> Continue within 30 days and the previous stage is fully credited toward the next.</p>
    </div>
    <PricingCards />
   </section>
@@ -43,21 +44,6 @@ export default function SubmitArtifactPage(){
    <p className={styles.principleClose}>See first. Intervene second. Verify what changed.</p>
   </section>
 
-  <section className={styles.creditBand}>
-   <div>
-    <span>NEW TO TORC?</span>
-    <h2>Start by seeing the work clearly.</h2>
-   </div>
-   <p>The €195 Evaluation stands on its own: a complete diagnosis of what your work is doing, where its architecture is strongest, and the central gap limiting it. If that diagnosis reveals something you want to develop further, upgrade to TORC Development within 30 days and the full €195 fee is credited.</p>
-  </section>
-
-  <section className={styles.creditBand}>
-   <div>
-    <span>ALREADY DEVELOPING WITH TORC?</span>
-    <h2>Verify what the revision actually changed.</h2>
-   </div>
-   <p>TORC Development stands on its own as a complete revision strategy. If you revise the work and continue to the TORC Development Cycle within 30 days, the full €595 Development fee is credited toward the €995 Cycle. You pay €400 to continue from Development to independent verification.</p>
-  </section>
 
   <section id="submit" className={styles.submitSection}>
    <div className={styles.submitIntro}>

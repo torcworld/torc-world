@@ -62,17 +62,17 @@ const details = {
   best:'Serious revision where you want independent before/after verification rather than development advice alone.',
   intro:'The Cycle closes the loop. After Development, the revised artifact is evaluated again as an artifact in its own right. Following TORC advice earns no credit. The new work has to demonstrate the predicted structural change — and the re-evaluation records what propagated, what remained unchanged, and what new weaknesses may have appeared.',
   items:[
-   'Everything in TORC Development',
-   'Deeper sequence, chapter or section mapping where useful',
-   'Revision priorities stress-tested against the diagnosis',
-   'One development consultation during revision',
+   'Everything in TORC Evaluation and Development',
    'Blind TORC re-evaluation of the revised artifact',
    'New committed Demonstrated Intelligence Profile',
    'Before / after architectural comparison',
-   'Analysis of which predicted effects actually propagated',
-   'Identification of any residual explanation that survived revision',
-   'New weaknesses introduced by revision, where present',
-   'Final development diagnosis'
+   'Central Structural Constraint verification',
+   'Development Objective verification',
+   'Intervention and propagation audit',
+   'Preservation and collateral-damage audit',
+   'Unexpected gains and losses introduced by revision',
+   'TORC self-correction audit, where materially warranted',
+   'Committed Cycle Verdict + current-state diagnosis'
   ],
   cta:'Choose Development Cycle'
  }
@@ -132,12 +132,29 @@ export default function PricingCards(){
     <aside>
      <span>BEST FOR</span>
      <p>{active.best}</p>
-     {selected==='evaluation'&&<p className={styles.detailNote}><b>Complete diagnosis, not a teaser.</b> The Evaluation tells you what is structurally happening and why it matters. It stops before a full repair map: exact cuts, rewrites and intervention design belong to Development.</p>}
-     {selected==='evaluation'&&<p className={styles.detailNote}>Continue to Development within 30 days and the full €195 Evaluation fee is credited.</p>}
-     {selected==='development'&&<p className={styles.detailNote}><b>The objective is not a higher TORC classification.</b> It is to more fully realize the strongest architecture the work itself already warrants.</p>}
-     {selected==='cycle'&&<><p className={styles.detailNote}><b>Advice is not evidence.</b> The re-evaluation does not reward the artifact for following TORC recommendations. The revised work has to demonstrate the change.</p><p className={styles.detailNote}>Continue from Development to the Cycle within 30 days and the full €595 Development fee is credited.</p></>}
+     {selected==='evaluation'&&<>
+      <p className={styles.detailNote}><b>Complete diagnosis, not a teaser.</b> The Evaluation tells you what is structurally happening and why it matters. It stops before a full repair map: exact cuts, rewrites and intervention design belong to Development.</p>
+      <p className={styles.detailNote}>Continue to Development within 30 days and your full €195 Evaluation fee is credited toward the €595 Development package.</p>
+     </>}
+     {selected==='development'&&<>
+      <p className={styles.detailNote}><b>The objective is not a higher TORC classification.</b> It is to more fully realize the strongest architecture the work itself already warrants.</p>
+      <p className={styles.detailNote}><b>Already completed a TORC Evaluation?</b> Continue to Development within 30 days and your full €195 fee is credited. <b>You pay €400 to upgrade.</b></p>
+     </>}
+     {selected==='cycle'&&<>
+      <p className={styles.detailNote}><b>Advice is not evidence.</b> The re-evaluation does not reward the artifact for following TORC recommendations. The revised work has to demonstrate the change.</p>
+      <p className={styles.detailNote}><b>Already completed TORC Development?</b> Continue to the Cycle within 30 days and your full €595 fee is credited. <b>You pay €400 to upgrade.</b></p>
+     </>}
     </aside>
    </div>
+   {selected==='development'&&
+    <div className={styles.upgradeCreditPanel}>
+     <span>CONTINUE TO VERIFY</span>
+     <div>
+      <h4>Going on to the TORC Development Cycle?</h4>
+      <p>Continue within 30 days and your full €595 Development fee is credited toward the €995 Cycle. <b>You pay €400 to upgrade.</b></p>
+     </div>
+    </div>
+   }
    <a className={styles.detailCta} href={`?package=${selected}#submit`}>{active.cta} — {active.price} <span>→</span></a>
   </div>
  </>
