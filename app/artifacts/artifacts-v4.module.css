@@ -2880,3 +2880,13 @@
     background:#d9c7a6!important;
   }
 }
+
+
+/* Artifacts — use TORC navigation-button ochre, not the pale paper beige. */
+@media(min-width:761px){
+  .corpusToolbar,
+  .artifactTableFour :global(.row:not(.header)),
+  .artifactTableFour :global(.row:not(.header):hover){
+    background:#c7aa76!important;
+  }
+}
