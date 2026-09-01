@@ -1,4 +1,4 @@
-# TORC Artifacts — A_ARCHIVE_LEDGER
+# TORC Artifacts — B_EDITORIAL_CARDS
 
 Drop `app/artifacts/page.tsx` and `app/artifacts/artifacts-v4.module.css` into the current site.
 

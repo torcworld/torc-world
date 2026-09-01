@@ -84,14 +84,11 @@ export default function Artifacts(){
  </section>
  <section ref={corpusRef} className={styles.corpusSurface}>
  <div className="artifactToolbar"><span>{rows.length} artifacts found · page {currentPage} of {totalPages}</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
- <div className={styles.archiveLedger}>
-  <div className={styles.ledgerHead}><span>Artifact</span><span>Operational Order</span><span>Cognitive Magnitude</span><span></span></div>
-  {visibleRows.map(a=><Link className={styles.ledgerRow} key={a.slug} href={`/artifact/${a.slug}`}>
-    <span className={`${styles.orderFlag} ${styles[orderClass(a.torc)]}`}>{a.status==='evaluated'?a.torc:'—'}</span>
-    <span className={styles.ledgerIdentity}><b>{a.title}</b><small>{a.creator} · {a.year} · {a.domain}</small></span>
-    <span className={styles.ledgerOrder}>{a.status==='evaluated'?a.torc:'—'}</span>
-    <span className={styles.ledgerCms}>{a.status==='evaluated'?a.cms:'—'}</span>
-    <span className={styles.openEvaluation}>Open evaluation <i>→</i></span>
+ <div className={styles.archiveCards}>
+  {visibleRows.map(a=><Link className={`${styles.archiveCard} ${styles[orderClass(a.torc)]}`} key={a.slug} href={`/artifact/${a.slug}`}>
+    <div className={styles.cardTop}><span className={styles.cardOrder}>{a.status==='evaluated'?a.torc:'—'}</span><span className={styles.cardCms}>CMS {a.status==='evaluated'?a.cms:'—'}</span></div>
+    <div className={styles.cardIdentity}><h3>{a.title}</h3><p>{a.creator} · {a.year}</p><small>{a.domain}</small></div>
+    <div className={styles.cardOpen}>Open evaluation <i>→</i></div>
   </Link>)}
  </div> <nav className={styles.pagination} aria-label="Artifact pages">
    <button disabled={currentPage===1} onClick={()=>goToPage(currentPage-1)}>← Previous</button>
