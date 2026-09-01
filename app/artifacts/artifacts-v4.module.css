@@ -2643,3 +2643,33 @@
     height:58px!important;
   }
 }
+
+
+/* Rollback refinement — restore only the Compare Artifacts dark-grey closing panel. */
+@media(min-width:761px){
+  .inlineCompare,
+  .inlineCompareHead,
+  .inlineCompareBody,
+  .inlineCompareResult,
+  .inlineCompareResult>div,
+  .inlineCompare footer{
+    background:#353432!important;
+    color:#f3eee6!important;
+  }
+
+  .inlineCompareHead h2,
+  .inlineCompareHead :global(.eyebrow),
+  .inlineCompare .inlinePicker>label{
+    color:#f3eee6!important;
+  }
+
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+}
