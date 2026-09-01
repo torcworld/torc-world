@@ -658,3 +658,28 @@
   .theoryCopyLink{padding:50px 20px 54px}
   .creatorDoor .doorAction{align-self:stretch}
 }
+
+/* Homepage refinement 3 — methodology heading placement + bottom-door color hierarchy */
+/* Pull the methodology section upward toward the artifact cards, while seating its heading over the first card. */
+.home .coordinates{padding:48px 0 72px}
+.home .coordinates .sectionLead{
+  width:calc(50% - 7px);
+  max-width:none;
+  box-sizing:border-box;
+  padding-left:30px;
+  margin:0 0 12px;
+}
+.home .coordinates .sectionLead>span{margin-bottom:8px}
+
+/* Creator is permanently gold. Organizations remains ochre and lifts to gold on hover. */
+.home .creatorDoor{background:var(--gold);color:var(--ink)}
+.home .creatorDoor:hover{background:var(--gold)}
+.home .orgDoor{background:var(--gold-deep);color:var(--ink)}
+.home .orgDoor p{color:#403a34}
+.home .orgDoor:hover{background:var(--gold)}
+.home .orgDoor span{color:var(--accent)}
+
+@media(max-width:720px){
+  .home .coordinates{padding:42px 0 58px}
+  .home .coordinates .sectionLead{width:100%;padding-left:20px;padding-right:20px;margin-bottom:12px}
+}
