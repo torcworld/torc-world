@@ -2746,3 +2746,35 @@
     box-shadow:none!important;
   }
 }
+
+/* FINAL CONTAINMENT — keep Compare charcoal strictly inside the compact corpus
+   boundaries. Explicitly cancel every earlier bleed, negative margin, expanded
+   width and pseudo-element backdrop. */
+@media (min-width:761px){
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    position:relative!important;
+    isolation:auto!important;
+    z-index:auto!important;
+    margin-left:0!important;
+    margin-right:0!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
+    width:100%!important;
+    max-width:100%!important;
+    box-sizing:border-box!important;
+    padding:28px 30px 30px!important;
+    background:#353432!important;
+    color:#f8f3e8!important;
+    border:0!important;
+    box-shadow:none!important;
+    overflow:hidden!important;
+  }
+
+  .inlineCompare::before,
+  .inlineCompare::after{
+    content:none!important;
+    display:none!important;
+    background:transparent!important;
+  }
+}
