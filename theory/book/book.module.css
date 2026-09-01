@@ -1178,3 +1178,21 @@
 @media(max-width:760px){
   .bookInvitation{min-height:610px!important;padding:56px 22px 68px!important;gap:24px!important}
 }
+
+/* Living Edition copy — content-only refinement */
+.invitationCopy{
+  width:min(560px,calc(100% - 48px));
+  margin:0 auto 34px;
+  text-align:center;
+  color:#2f2d2a;
+}
+.invitationCopy .eyebrow{
+  display:block;
+  margin-bottom:12px;
+}
+.invitationCopy p{
+  margin:0;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:17px;
+  line-height:1.62;
+}
