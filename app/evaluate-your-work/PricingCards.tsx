@@ -7,27 +7,73 @@ type PackageKey = 'evaluation' | 'development' | 'cycle';
 
 const details = {
  evaluation: {
-  name:'TORC Evaluation', price:'€195', question:'What is actually here?',
-  lead:'A rigorous diagnosis of the architecture your work actually demonstrates — its governing operation, structural strengths and current limits.',
-  best:'Understanding the work precisely before deciding whether or how to revise it.',
-  intro:'TORC evaluates the artifact as it exists. Operational Order, cognitive profile and magnitude are consequences of the diagnosis — not targets imposed in advance.',
-  items:['Operational Order + boundary determination','Six-dimensional cognitive architecture','Cognitive Magnitude Score + Demonstrated Intelligence Profile','Governing operation','Strongest serious alternative determination','Core structural strengths and limiting structures','Written TORC Evaluation Report','One post-delivery clarification exchange'],
+  phase:'SEE',
+  name:'TORC Evaluation',
+  price:'€195',
+  question:'What have I actually built?',
+  lead:'See the governing architecture of your work, what it already does unusually well, and the central limitation preventing that architecture from becoming fully necessary.',
+  best:'Understanding the work at a structural level before deciding whether or how to revise it.',
+  intro:'You may already know what your work is about. The Evaluation shows you what it is actually doing. TORC diagnoses the completed artifact as it exists: the architecture carrying it, the strongest structural achievements already present, and the central gap limiting fuller realization. The classification and scores matter, but they are coordinates of the diagnosis — not the product itself.',
+  items:[
+   'Governing architecture of the completed work',
+   'What the work is actually doing beneath its apparent themes or surface structure',
+   'The strongest structural achievements already present',
+   'The central Development Gap',
+   'The highest-leverage development question raised by that gap',
+   'Higher-order potential, where genuinely supported by the work',
+   'Operational Order + concise boundary determination',
+   'Six-dimensional Cognitive Architecture',
+   'Cognitive Magnitude Score + Demonstrated Intelligence Profile',
+   'Written TORC Evaluation Report',
+   'One post-delivery clarification exchange'
+  ],
   cta:'Choose Evaluation'
  },
  development: {
-  name:'TORC Development', price:'€595', question:'What is not yet fully realized?',
-  lead:'Find the strongest architecture already warranted by the work, what still explains too much of it, and the smallest interventions capable of affecting the whole.',
-  best:'Turning structural diagnosis into a precise, minimum-intervention revision strategy.',
-  intro:'Development begins with the work as it actually exists. Where genuinely warranted, TORC identifies a stronger architecture already supported by existing material, locates the Development Gap, and designs interventions around structural leverage — not classification chasing.',
-  items:['Everything in TORC Evaluation','Current Architecture diagnosis','Latent Architecture diagnosis, where genuinely warranted','The central Development Gap','The strongest residual explanation — what still explains too much of the work','3–5 high-leverage structural interventions','Propagation analysis: what each intervention makes existing material do differently','Minimum-intervention priorities','“Do Not Change” preservation guidance','Risks and trade-offs attached to major interventions','Practical revision priorities','One follow-up development round'],
+  phase:'INTERVENE',
+  name:'TORC Development',
+  price:'€595',
+  question:'What should change — and where?',
+  lead:'Turn the diagnosis into a minimum-intervention revision strategy: identify the strongest latent architecture genuinely supported by the work and the few changes capable of affecting the whole.',
+  best:'Creators who want to know not only what the structural problem is, but where and how to intervene.',
+  intro:'Development begins with the work as it actually exists. It maps the Current Architecture, identifies a Latent Architecture only where the existing material genuinely warrants one, and then looks for structural leverage: the smallest changes capable of altering the function of material throughout the artifact. The objective is not a higher TORC classification. It is a stronger realization of the work itself.',
+  items:[
+   'Everything in TORC Evaluation',
+   'Full Current Architecture diagnosis',
+   'Latent Architecture diagnosis, where genuinely warranted',
+   'Detailed Development Gap analysis',
+   'The strongest residual explanation — what still explains too much of the work',
+   '3–5 high-leverage structural interventions',
+   'Propagation analysis: what each intervention changes elsewhere',
+   'Minimum-intervention priorities',
+   '“Do Not Change” preservation guidance',
+   'Risks and trade-offs attached to major interventions',
+   'Practical revision priorities',
+   'One follow-up development round'
+  ],
   cta:'Choose Development'
  },
  cycle: {
-  name:'TORC Development Cycle', price:'€995', question:'Did the revision actually work?',
-  lead:'Diagnose, develop and revise — then test the new artifact again without assuming the recommendations succeeded.',
-  best:'Serious revision where you want independent before/after verification, not just development advice.',
-  intro:'The Cycle closes the loop. The revised artifact is evaluated again as an artifact in its own right. Following TORC advice earns no credit: the work has to demonstrate the predicted structural change.',
-  items:['Everything in TORC Development','Deeper sequence, chapter or section mapping where useful','Revision priorities stress-tested against the diagnosis','One development consultation during revision','Blind TORC re-evaluation of the revised artifact','New committed Demonstrated Intelligence Profile','Before / after architectural comparison','Which predicted effects actually propagated','What remained unchanged and which residual explanation survives','Any new weaknesses introduced by revision','Final development diagnosis'],
+  phase:'VERIFY',
+  name:'TORC Development Cycle',
+  price:'€995',
+  question:'Did the revision actually work?',
+  lead:'Diagnose and develop the work, then test the revised artifact again without assuming the recommendations succeeded.',
+  best:'Serious revision where you want independent before/after verification rather than development advice alone.',
+  intro:'The Cycle closes the loop. After Development, the revised artifact is evaluated again as an artifact in its own right. Following TORC advice earns no credit. The new work has to demonstrate the predicted structural change — and the re-evaluation records what propagated, what remained unchanged, and what new weaknesses may have appeared.',
+  items:[
+   'Everything in TORC Development',
+   'Deeper sequence, chapter or section mapping where useful',
+   'Revision priorities stress-tested against the diagnosis',
+   'One development consultation during revision',
+   'Blind TORC re-evaluation of the revised artifact',
+   'New committed Demonstrated Intelligence Profile',
+   'Before / after architectural comparison',
+   'Analysis of which predicted effects actually propagated',
+   'Identification of any residual explanation that survived revision',
+   'New weaknesses introduced by revision, where present',
+   'Final development diagnosis'
+  ],
   cta:'Choose Development Cycle'
  }
 } as const;
@@ -58,6 +104,7 @@ export default function PricingCards(){
     return <article key={key} className={cls(key)} onClick={choose(key)} role="button" tabIndex={0} aria-pressed={selected===key} onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectAndReveal(key)}}}>
      {key==='development'&&<div className={styles.recommended}>RECOMMENDED</div>}
      <div>
+      <span className={styles.phase}>{item.phase}</span>
       <span className={styles.package}>{item.name}</span>
       <div className={styles.price}>{item.price}</div>
       <h3 className={styles.cardQuestion}>{item.question}</h3>
@@ -73,7 +120,7 @@ export default function PricingCards(){
 
   <div ref={detailRef} className={styles.packageDetail} aria-live="polite">
    <div className={styles.detailHeader}>
-    <div><span>{active.name}</span><h3>{active.question}</h3></div>
+    <div><span>{active.phase} · {active.name}</span><h3>{active.question}</h3></div>
     <strong>{active.price}</strong>
    </div>
    <p className={styles.detailIntro}>{active.intro}</p>
@@ -85,9 +132,10 @@ export default function PricingCards(){
     <aside>
      <span>BEST FOR</span>
      <p>{active.best}</p>
+     {selected==='evaluation'&&<p className={styles.detailNote}><b>Complete diagnosis, not a teaser.</b> The Evaluation tells you what is structurally happening and why it matters. It stops before a full repair map: exact cuts, rewrites and intervention design belong to Development.</p>}
+     {selected==='evaluation'&&<p className={styles.detailNote}>Continue to Development within 30 days and the full €195 Evaluation fee is credited.</p>}
      {selected==='development'&&<p className={styles.detailNote}><b>The objective is not a higher TORC classification.</b> It is to more fully realize the strongest architecture the work itself already warrants.</p>}
-     {selected==='evaluation'&&<p className={styles.detailNote}>If you continue to Development within 30 days, the €195 Evaluation fee is credited in full.</p>}
-     {selected==='cycle'&&<p className={styles.detailNote}>The re-evaluation does not reward the artifact for following TORC advice. The revised work has to demonstrate the change.</p>}
+     {selected==='cycle'&&<p className={styles.detailNote}><b>Advice is not evidence.</b> The re-evaluation does not reward the artifact for following TORC recommendations. The revised work has to demonstrate the change.</p>}
     </aside>
    </div>
    <a className={styles.detailCta} href={`?package=${selected}#submit`}>{active.cta} — {active.price} <span>→</span></a>

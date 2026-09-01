@@ -546,3 +546,18 @@
 .packageDetail{
   background:#d9c7a6!important;
 }
+
+/* Evaluation product architecture rewrite — See / Intervene / Verify */
+.phase{
+ display:block;
+ margin-bottom:8px;
+ font:700 8px/1 Arial,sans-serif;
+ letter-spacing:.18em;
+ color:var(--accent);
+}
+.priceCard .package{display:block}
+.sectionHeadLight b{font-weight:600;color:#342f2a}
+@media(min-width:861px){
+ .priceGrid{gap:16px}
+ .priceCard{min-height:430px}
+}

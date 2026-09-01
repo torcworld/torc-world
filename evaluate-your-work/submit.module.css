@@ -524,3 +524,40 @@
 @media(max-width:860px){
  .detailColumns aside{border-top-color:rgba(47,44,40,.30);}
 }
+
+/* Mobile reveal refinement — leave the selected detail card visually detached from the viewport edge. */
+@media(max-width:760px){
+ .packageDetail{scroll-margin-top:20px;}
+}
+
+/* Desktop selector reveal — match the mobile breathing room when a pricing card
+   scrolls to its explanation panel. */
+@media(min-width:761px){
+  .packageDetail{scroll-margin-top:20px;}
+}
+
+/* Current refinement — lift the charcoal Submit hero by roughly 2 mm without moving the process block. */
+@media(min-width:761px){
+  .hero{transform:translateY(-8px)}
+}
+
+/* Current refinement — use the same resting navigation/card gold on the full
+   selected-package explanation panel at desktop sizes too. */
+.packageDetail{
+  background:#d9c7a6!important;
+}
+
+/* Evaluation product architecture rewrite — See / Intervene / Verify */
+.phase{
+ display:block;
+ margin-bottom:8px;
+ font:700 8px/1 Arial,sans-serif;
+ letter-spacing:.18em;
+ color:var(--accent);
+}
+.priceCard .package{display:block}
+.sectionHeadLight b{font-weight:600;color:#342f2a}
+@media(min-width:861px){
+ .priceGrid{gap:16px}
+ .priceCard{min-height:430px}
+}

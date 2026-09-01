@@ -51,17 +51,19 @@ export default function SubmissionForm(){
     <option>Something feels present in the work but not yet fully realized.</option>
     <option>The work loses force somewhere, but I cannot identify why.</option>
     <option>Several problems may be manifestations of the same deeper problem.</option>
+    <option>What is the work actually doing beneath its surface?</option>
     <option>What existing material could be doing more?</option>
     <option>What should I protect rather than revise?</option>
     <option>Is a major revision I am considering structurally warranted?</option>
     <option>Does the ending change the meaning of what came before?</option>
     <option>Diagnose the artifact without a preferred outcome.</option>
+    <option>Is there evidence of a higher-order possibility in the existing work?</option>
     <option>What Operational Order does the artifact actually reach — and why?</option>
     <option>I have a specific CMS or dimension question.</option>
     <option>I have another question.</option>
    </select>
   </label>
-  <p className={styles.questionNote}><b>Evaluation</b> diagnoses the artifact and includes one clarification after delivery. <b>Development</b> uses your questions as part of the development diagnosis and includes one follow-up round. <b>Development Cycle</b> adds revision support and one re-evaluation of the revised artifact.</p>
+  <p className={styles.questionNote}><b>Evaluation</b> shows you what the work is actually doing, where it is strongest, and the central gap holding it back. <b>Development</b> turns that diagnosis into a concrete intervention strategy. <b>Development Cycle</b> adds revision support and an independent re-evaluation of the revised artifact.</p>
   <label>Anything specific you want TORC to examine? <span className={styles.optional}>Optional</span><textarea name="notes" rows={4} placeholder="Add context, a revision question, a passage you are unsure about, or simply tell us where the work feels unresolved."/></label>
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
   <label className={styles.check}><input type="checkbox" name="permission" value="yes" required/><span>I own this work or have permission to submit it for evaluation.</span></label>
