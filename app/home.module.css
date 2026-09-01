@@ -908,3 +908,10 @@
 .home .theoryCopyLink>b em{
   font-size:22px;
 }
+
+/* Homepage refinement 8 — restore the standard breathing room below the top divider. */
+@media(min-width:721px){
+  .home .hero{
+    margin-top:2cm;
+  }
+}
