@@ -2790,3 +2790,71 @@
     color:#171714!important;
   }
 }
+
+
+/* Compare + rails correction:
+   - charcoal continuously through the whole Compare zone
+   - remove the red separator above Compare
+   - Artifact A/B controls stay ochre
+   - restore crisp 1px oxblood side rails */
+@media(min-width:761px){
+
+  /* Full closing zone: no light site-ground gap above/around Compare. */
+  .inlineCompare{
+    margin-top:0!important;
+    background:#353432!important;
+    border-top:0!important;
+    box-shadow:none!important;
+  }
+
+  .inlineCompare::before,
+  .inlineCompare::after{
+    background:#353432!important;
+    border:0!important;
+    box-shadow:none!important;
+  }
+
+  /* All structural space inside Compare is charcoal. */
+  .inlineCompareHead,
+  .inlineCompareBody,
+  .inlineCompareResult,
+  .inlineCompareResult>div,
+  .inlineCompare footer{
+    background:#353432!important;
+  }
+
+  /* Artifact A / Artifact B labels + their controls stay warm ochre. */
+  .inlineCompare .inlinePicker{
+    background:#353432!important;
+  }
+  .inlineCompare .inlinePicker>label{
+    background:transparent!important;
+    color:#d9c7a6!important;
+  }
+  .inlineCompare .inlineSelected,
+  .inlineCompare .inlineDropdown,
+  .inlineCompare .inlineDropdown input,
+  .inlineCompare .inlineOptions,
+  .inlineCompare .inlineOptions button,
+  .inlineCompare .inlineSwap{
+    background:#d9c7a6!important;
+    color:#171714!important;
+  }
+
+  /* Remove the thin red horizontal separator immediately above Compare. */
+  .pagination{
+    border-bottom:0!important;
+  }
+
+  /* Crisp, continuous TORC side rails up to the upper light-grey line. */
+  .artifactsPage{
+    border-left:1px solid #5b2630!important;
+    border-right:1px solid #5b2630!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    opacity:1!important;
+    background:#5b2630!important;
+    box-shadow:none!important;
+  }
+}
