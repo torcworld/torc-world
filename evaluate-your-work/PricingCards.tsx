@@ -43,7 +43,7 @@ const details = {
    'Latent Architecture diagnosis, where genuinely warranted',
    'Detailed Development Gap analysis',
    'The strongest residual explanation — what still explains too much of the work',
-   '3–5 high-leverage structural interventions',
+   '1–3 governing interventions, expressed through 3–5 priority applications',
    'Propagation analysis: what each intervention changes elsewhere',
    'Minimum-intervention priorities',
    '“Do Not Change” preservation guidance',
@@ -135,7 +135,7 @@ export default function PricingCards(){
      {selected==='evaluation'&&<p className={styles.detailNote}><b>Complete diagnosis, not a teaser.</b> The Evaluation tells you what is structurally happening and why it matters. It stops before a full repair map: exact cuts, rewrites and intervention design belong to Development.</p>}
      {selected==='evaluation'&&<p className={styles.detailNote}>Continue to Development within 30 days and the full €195 Evaluation fee is credited.</p>}
      {selected==='development'&&<p className={styles.detailNote}><b>The objective is not a higher TORC classification.</b> It is to more fully realize the strongest architecture the work itself already warrants.</p>}
-     {selected==='cycle'&&<p className={styles.detailNote}><b>Advice is not evidence.</b> The re-evaluation does not reward the artifact for following TORC recommendations. The revised work has to demonstrate the change.</p>}
+     {selected==='cycle'&&<><p className={styles.detailNote}><b>Advice is not evidence.</b> The re-evaluation does not reward the artifact for following TORC recommendations. The revised work has to demonstrate the change.</p><p className={styles.detailNote}>Continue from Development to the Cycle within 30 days and the full €595 Development fee is credited.</p></>}
     </aside>
    </div>
    <a className={styles.detailCta} href={`?package=${selected}#submit`}>{active.cta} — {active.price} <span>→</span></a>
