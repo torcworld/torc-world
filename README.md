@@ -1,9 +1,12 @@
-TORC Artifacts — Editorial Gold v3 / Light Brown Archive
+TORC Artifacts — Editorial v4
 
-Changes from v2 only:
-- All former gold page framing is now the light-brown/ochre navigation color.
-- Search/filter surround remains light brown; controls remain the site's broken-white background.
-- The entire artifact corpus/list field now uses the site's broken-white background.
-- Artifact entries also use that same broken-white background.
-- Hover on artifact entries uses the light-brown/ochre tone, not gold.
-- Layout and content are unchanged.
+Built directly on Editorial v3 Light Brown Archive.
+
+Changes only:
+- Operational Order buttons turn restrained gold (#c7aa76) on hover/focus and remain gold when selected.
+- Search, Sort, Medium and Operational Order fields use the same restrained gold as the archive count "61".
+- The Corpus heading area and side gutters are light brown/ochre.
+- The artifact list itself remains the site's broken-white background, inset inside the light-brown corpus frame.
+- Operational Order filter is nudged 5 mm left on desktop.
+- The full Artifacts composition starts about 4 mm higher on desktop.
+- Existing layout, content, filtering, links and analysis pages are otherwise unchanged.

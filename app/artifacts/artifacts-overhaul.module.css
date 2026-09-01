@@ -48,3 +48,37 @@
 .artifactTable :global(a.row:not(.header):nth-of-type(even)){background:var(--bg)}
 .artifactTable :global(a.row:not(.header):hover),
 .artifactTable :global(a.row:not(.header):focus-visible){background:var(--ochre)}
+
+/* Editorial v4 — gold order state, light-brown corpus frame, gold controls */
+@media(min-width:761px){
+  /* Bring the complete Artifacts composition about 4 mm closer to the top rule. */
+  .artifactsPage{padding-top:calc(74px - 4mm)}
+
+  /* Nudge the Operational Order filter label/control slightly left. */
+  .tools .controlLabel:nth-child(4){transform:translateX(-5mm)}
+}
+
+/* Search / sort / medium / order fields use the same restrained gold as the corpus count. */
+.controlLabel input,
+.controlLabel select{background:var(--gold)!important}
+
+/* Operational Order: hovered or selected order is always gold. */
+.orderStrip button:hover,
+.orderStrip button:focus-visible,
+.orderStrip .orderActive{background:var(--gold)!important}
+
+/* Let the light-brown field frame the corpus, including its heading and side gutters. */
+.corpus{background:var(--ochre)!important;padding:30px 34px 38px!important}
+.corpusHead{background:var(--ochre)}
+
+/* The actual artifact list remains the site's broken-white background, inset inside that frame. */
+.artifactTable{background:var(--bg)}
+.artifactTable :global(.row.header){background:var(--bg)}
+.artifactTable :global(a.row:not(.header)),
+.artifactTable :global(a.row:not(.header):nth-of-type(even)){background:var(--bg)!important}
+.artifactTable :global(a.row:not(.header):hover),
+.artifactTable :global(a.row:not(.header):focus-visible){background:var(--ochre)!important}
+
+@media(max-width:760px){
+  .corpus{padding:24px 14px 28px!important}
+}
