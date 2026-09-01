@@ -2931,3 +2931,27 @@
     right:-113px!important;
   }
 }
+
+
+/* Artifacts — make the three horizontal transition bands use the exact
+   permanent artifact-row brown (#d9c7a6):
+   1) strip below the top grey block
+   2) strip below the search area / above the register
+   3) artifacts-found / Shuffle Again toolbar */
+@media(min-width:761px){
+  .artifactHeader{
+    background:#d9c7a6!important;
+  }
+
+  .searchPanel{
+    border-bottom-color:#d9c7a6!important;
+  }
+
+  .corpusSurface{
+    border-top-color:#d9c7a6!important;
+  }
+
+  .corpusToolbar{
+    background:#d9c7a6!important;
+  }
+}
