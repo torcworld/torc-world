@@ -4,9 +4,9 @@ import styles from './home.module.css';
 
 const featured = [
   'pale-fire',
-  'on-formally-undecidable-propositions-of-principia-mathematica-and-related-systems-i',
+  'on-formally-undecidable-propositions',
   '2001-a-space-odyssey',
-  'the-art-of-fugue',
+  'dependent-arising',
 ];
 
 export default function Home() {
@@ -22,8 +22,8 @@ export default function Home() {
           TORC asks a simple question of a completed work: <strong>what has actually been accomplished?</strong> It makes the governing architecture of an artifact visible — what the work is doing, where its strongest intelligence resides, and what its apparent depth is actually made of.
         </p>
         <div className={styles.heroActions}>
-          <Link className={styles.darkAction} href="/artifacts">Explore artifacts</Link>
-          <Link className={styles.textAction} href="/methodology">Understand TORC <span>→</span></Link>
+          <Link className={styles.primaryAction} href="/methodology">Understand TORC <span>→</span></Link>
+          <Link className={styles.secondaryAction} href="/artifacts">Explore artifacts <span>→</span></Link>
         </div>
       </div>
 
@@ -59,44 +59,45 @@ export default function Home() {
     <section className={styles.coordinates}>
       <div className={styles.sectionLead}><span>HOW TORC DISTINGUISHES</span><h2>Two questions.<br/>Two kinds of evidence.</h2></div>
       <div className={styles.coordinateGrid}>
-        <article>
+        <Link href="/methodology#operational-order" className={styles.coordinateCard}>
           <div className={styles.coordinateLabel}>01 / PRIMARY HIERARCHY</div>
           <h3>Operational Order</h3>
           <p>What kind of cognitive operation does the artifact actually achieve? TORC identifies the highest operation required to explain the completed work — not its prestige, difficulty, reputation, or subject matter.</p>
           <div className={styles.microGraphic}><span>1</span><i/><span>2</span><i/><span>3a</span><i/><span>3b</span><i/><span>3c</span><i/><span>G</span></div>
-        </article>
-        <article>
+          <b className={styles.cardAction}>Explore Operational Order <span>→</span></b>
+        </Link>
+        <Link href="/methodology#dimensions" className={styles.coordinateCard}>
           <div className={styles.coordinateLabel}>02 / MAGNITUDE</div>
           <h3>Cognitive Magnitude</h3>
           <p>How much structured cognition does the artifact demonstrate in achieving that operation? Magnitude is described across six independent dimensions rather than treated as a vague impression of complexity.</p>
           <div className={styles.dimensionMini}>{['RL','AD','CD','ID','IC','GR'].map((d,i)=><div key={d}><span>{d}</span><i style={{width:`${46+i*8}%`}}/></div>)}</div>
-        </article>
+          <b className={styles.cardAction}>Explore Cognitive Magnitude <span>→</span></b>
+        </Link>
       </div>
-      <div className={styles.methodologyAction}><Link href="/methodology">Explore the Methodology <b>→</b></Link></div>
     </section>
 
     <section className={styles.theoryCompact}>
-      <div>
-        <span>THE THEORY</span>
-        <h2>The appearance of depth is not the same as a deep operation.</h2>
-        <p>Why do some artifacts genuinely reorganize the way reality becomes intelligible, while others create the appearance of having done so?</p>
-      </div>
       <Link className={styles.compactBook} href="/theory/book">
         <span>THE AGE OF FALSE DEPTH</span>
         <strong>The Age<br/>of False<br/>Depth</strong>
         <p>Intelligence, Representation, and What Artifacts Actually Do</p>
         <small>Read the Living Edition →</small>
       </Link>
+      <div>
+        <span>THE THEORY</span>
+        <h2>The appearance of depth is not the same as a deep operation.</h2>
+        <p>Why do some artifacts genuinely reorganize the way reality becomes intelligible, while others create the appearance of having done so?</p>
+      </div>
     </section>
 
     <section className={styles.twoDoors}>
       <Link href="/evaluate-your-work" className={styles.creatorDoor}>
         <span>FOR CREATORS</span><h2>See your own work differently.</h2>
-        <p>Evaluation, structural development and revision verification for original artifacts.</p><b>Submit your artifact →</b>
+        <p>Evaluation, structural development and revision verification for original artifacts.</p><b className={styles.doorAction}>Submit your artifact <span>→</span></b>
       </Link>
       <Link href="/for-organizations" className={styles.orgDoor}>
         <span>FOR ORGANIZATIONS</span><h2>See what a body of work reveals.</h2>
-        <p>Find recurring achievements, structural bottlenecks and meaningful exceptions across a corpus.</p><b>Explore TORC for organizations →</b>
+        <p>Find recurring achievements, structural bottlenecks and meaningful exceptions across a corpus.</p><b className={styles.doorAction}>Explore TORC for organizations <span>→</span></b>
       </Link>
     </section>
   </main>;

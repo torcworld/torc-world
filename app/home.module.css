@@ -548,3 +548,67 @@
 .compactBook>p{margin:0 0 25px;font-size:14px;line-height:1.5;color:#cfc6bd}.compactBook>small{padding-top:18px;border-top:1px solid #5b554e;font:700 8px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff}
 @media(max-width:850px){.home .artifactGrid{grid-template-columns:repeat(2,1fr)}.theoryCompact{grid-template-columns:1fr}.compactBook{min-height:330px}}
 @media(max-width:720px){.home .artifactGrid{grid-template-columns:1fr}.archiveActions{justify-content:flex-start;margin-top:18px}.methodologyAction{text-align:left;border-left:0;border-right:0}.theoryCompact{margin-left:-20px;margin-right:-20px}.theoryCompact>div{padding:50px 20px 54px}.compactBook{padding:30px 20px;min-height:310px}}
+
+/* Homepage CTA + hierarchy refinement — requested after Archief(10) IA pass */
+.home .heroActions{gap:14px}
+.primaryAction,.secondaryAction{
+  display:inline-flex;align-items:center;justify-content:space-between;gap:28px;
+  min-width:190px;padding:15px 18px;border:1px solid var(--gold);
+  font:700 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;
+  transition:background .18s ease,color .18s ease,transform .18s ease
+}
+.primaryAction{background:var(--accent);border-color:var(--accent);color:#fff}
+.primaryAction span{color:var(--gold)}
+.primaryAction:hover{background:#6b2d39;transform:translateY(-2px)}
+.secondaryAction{background:transparent;color:#f3eee6;border-color:#777067}
+.secondaryAction span{color:var(--gold)}
+.secondaryAction:hover{background:#45423e;transform:translateY(-2px)}
+
+/* Canon cards: visible by default, lighter on hover. */
+.home .artifactCard{background:var(--gold-deep)}
+.home .artifactCard:hover{background:var(--gold)}
+
+/* Both methodology coordinates are now full-card links with an explicit CTA. */
+.home .coordinateGrid{gap:14px;border:0;background:transparent}
+.home .coordinateGrid .coordinateCard{
+  min-height:390px;padding:30px;background:var(--accent);color:#f8f1e8;
+  border:1px solid #3f1820;border-top:5px solid var(--gold-deep);
+  display:flex;flex-direction:column;transition:transform .18s ease,background .18s ease
+}
+.home .coordinateGrid .coordinateCard+.coordinateCard{border-left:1px solid #3f1820}
+.home .coordinateGrid .coordinateCard:hover{background:#682c38;transform:translateY(-3px)}
+.home .coordinateGrid .coordinateLabel{color:var(--gold)}
+.home .coordinateGrid .coordinateCard h3{color:#fff}
+.home .coordinateGrid .coordinateCard p{color:#eadde0}
+.home .coordinateGrid .coordinateCard .microGraphic i{background:#b78d82}
+.home .coordinateGrid .coordinateCard .dimensionMini div>i{background:var(--gold)}
+.cardAction{
+  margin-top:auto;padding:15px 17px;background:var(--gold);color:var(--ink);
+  font:700 9px Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  display:flex;justify-content:space-between;align-items:center
+}
+.cardAction span{font-size:16px;color:var(--accent)}
+
+/* Book on the left; theory copy on the right. */
+.theoryCompact{grid-template-columns:.55fr 1.45fr}
+.theoryCompact>div{background:#f4efe7}
+
+/* Make the final two actions unmistakable while keeping the whole panels clickable. */
+.doorAction{
+  align-self:flex-start;margin-top:auto!important;padding:15px 18px!important;
+  min-width:220px;background:var(--ink);color:#fff;
+  display:inline-flex;justify-content:space-between;align-items:center;gap:30px;
+  font:700 10px Arial,sans-serif!important;letter-spacing:.12em;text-transform:uppercase
+}
+.orgDoor .doorAction{background:var(--gold);color:var(--ink)}
+.doorAction span{color:var(--gold)!important;font-size:15px!important;letter-spacing:0!important}
+.orgDoor .doorAction span{color:var(--accent)!important}
+
+@media(max-width:720px){
+  .primaryAction,.secondaryAction{width:100%;min-width:0}
+  .home .coordinateGrid{gap:12px}
+  .home .coordinateGrid .coordinateCard+.coordinateCard{border-left:1px solid #3f1820;border-top:5px solid var(--gold-deep)}
+  .theoryCompact{grid-template-columns:1fr}
+  .compactBook{order:1}.theoryCompact>div{order:2}
+  .doorAction{width:100%;min-width:0}
+}
