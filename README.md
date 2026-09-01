@@ -1,12 +1,12 @@
-TORC refinement patch
+TORC Theory — Book Ritual Trial
 
-Theory / Book
-- Based on A Manifesto.
-- Reading-area surround now continues the site's existing light-brown #d9c7a6.
-- Book paper is warmer beige-gold, derived from TORC's existing gold family rather than a new yellow.
-- Added restrained aged-paper tonal variation and fine dark crease lines.
+Files:
+- app/theory/book/page.tsx              A Manifesto entrance + clickable closed book
+- app/theory/book/book.module.css       existing A styling + book-object additions
+- app/theory/book/BookNavigator.tsx     unchanged
+- app/theory/book/read/page.tsx         existing living-edition reader moved to /theory/book/read
 
-Artifacts
-- Moves the charcoal hero block and all content beneath it exactly 2mm upward on desktop.
+Flow:
+/theory/book → A Manifesto → click book / READ THE BOOK → /theory/book/read
 
-Replace the matching app/... files in the project.
+The book body itself is unchanged.

@@ -1137,29 +1137,15 @@
   color:#554d42!important;
 }
 
-/* A Manifesto refinement — carry the approved TORC light-brown field down
-   alongside the book, then give only the paper a warmer, aged manuscript tone. */
-@media(min-width:761px){
-  .bookPage{
-    background:linear-gradient(to bottom, transparent 0, transparent 543px, #d9c7a6 543px, #d9c7a6 100%)!important;
-  }
-}
-.bookReader{
-  background:
-    linear-gradient(93deg, transparent 0 9%, rgba(39,31,20,.055) 9.08%, transparent 9.22% 57%, rgba(39,31,20,.04) 57.08%, transparent 57.25%),
-    linear-gradient(177deg, transparent 0 23%, rgba(43,34,22,.045) 23.08%, transparent 23.22% 71%, rgba(43,34,22,.035) 71.08%, transparent 71.22%),
-    radial-gradient(ellipse at 8% 18%, rgba(72,54,29,.10), transparent 24%),
-    radial-gradient(ellipse at 94% 77%, rgba(72,54,29,.085), transparent 27%),
-    repeating-linear-gradient(4deg, rgba(43,34,22,.018) 0, rgba(43,34,22,.018) 1px, transparent 1px, transparent 5px),
-    #d4bd86!important;
-  color:#1c1812!important;
-  border-color:rgba(71,53,31,.48)!important;
-  box-shadow:0 18px 45px rgba(41,34,24,.13), inset 0 0 70px rgba(74,54,28,.09)!important;
-}
-.editionNote{
-  background:rgba(217,199,166,.58)!important;
-  color:#4f4434!important;
-}
-@media(max-width:760px){
-  .bookPage{background:#d9c7a6!important;}
-}
+/* Book ritual trial — keep A Manifesto as the Theory entrance, then present the
+   living edition as a separate object before the normal long-form reader. */
+.bookLanding{padding-bottom:0!important}
+.bookInvitation{background:#d9c7a6;min-height:610px;padding:68px clamp(28px,6vw,86px) 82px;display:grid;grid-template-columns:minmax(220px,.72fr) minmax(420px,1.28fr);gap:70px;align-items:center;border-top:1px solid rgba(91,38,48,.55)}
+.invitationCopy{align-self:center;max-width:330px;color:#171714}.invitationCopy .eyebrow{color:#5b2630}.invitationCopy p{font-size:18px;line-height:1.55;margin:22px 0 28px}.openBookLink{font:700 12px/1 Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;color:#5b2630;text-decoration:none}.openBookLink:hover{text-decoration:underline}
+.closedBook{justify-self:center;position:relative;width:min(430px,90%);aspect-ratio:.73;background:linear-gradient(105deg,rgba(78,59,34,.28),transparent 10%),radial-gradient(circle at 28% 18%,rgba(255,255,255,.12),transparent 25%),repeating-linear-gradient(13deg,rgba(50,37,23,.035) 0 1px,transparent 1px 7px),#b99b66;border:1px solid #70522d;border-radius:5px 13px 13px 5px;box-shadow:-16px 18px 0 #8d7044,0 28px 38px rgba(42,31,18,.28),inset 0 0 48px rgba(74,48,21,.16);color:#4f2f1d;text-decoration:none;transition:transform .22s ease,box-shadow .22s ease;overflow:hidden}
+.closedBook:hover,.closedBook:focus-visible{transform:translateY(-5px) rotate(-.35deg);box-shadow:-17px 22px 0 #8d7044,0 34px 44px rgba(42,31,18,.32),inset 0 0 48px rgba(74,48,21,.16)}
+.bookSpine{position:absolute;inset:0 auto 0 0;width:54px;border-right:1px solid rgba(74,47,24,.55);background:linear-gradient(90deg,rgba(69,47,26,.32),rgba(255,255,255,.06) 46%,rgba(72,48,24,.18));box-shadow:inset -8px 0 12px rgba(62,42,23,.12)}
+.coverFrame{position:absolute;inset:26px 25px 26px 72px;border:1px solid rgba(91,38,48,.68);outline:1px solid rgba(91,38,48,.25);outline-offset:7px}.coverFrame::before,.coverFrame::after{content:"";position:absolute;width:32px;height:32px;border-color:rgba(91,38,48,.65)}.coverFrame::before{left:8px;top:8px;border-left:2px solid;border-top:2px solid}.coverFrame::after{right:8px;bottom:8px;border-right:2px solid;border-bottom:2px solid}
+.coverCrest{position:absolute;left:57%;top:44%;transform:translate(-50%,-50%);width:178px;height:206px;text-align:center;color:#5b2630}.crown{display:block;font-size:43px;line-height:1;margin-bottom:4px}.laurel{position:absolute;left:0;right:0;top:57px;font-size:95px;line-height:1;transform:rotate(-90deg);opacity:.62}.coverT{position:relative;display:block;font-family:Georgia,'Times New Roman',serif;font-size:118px;line-height:1;font-weight:600;text-shadow:0 1px rgba(255,255,255,.2)}.laurelBottom{display:block;font-size:55px;line-height:.5;opacity:.58;margin-top:-9px}.coverTitle{position:absolute;left:82px;right:32px;bottom:84px;text-align:center;font:600 16px/1.28 Georgia,'Times New Roman',serif;letter-spacing:.12em}.coverAuthor{position:absolute;left:82px;right:32px;bottom:48px;text-align:center;font:700 9px/1 Arial,sans-serif;letter-spacing:.18em}
+.readingPage{background:#d9c7a6!important;min-height:100vh!important;padding-bottom:88px!important}.readingPage .bookMetaBar{position:relative;z-index:2}.readingPage .bookReader{margin-top:54px!important}
+@media(max-width:760px){.bookInvitation{grid-template-columns:1fr;gap:38px;padding:44px 24px 64px}.invitationCopy{max-width:none}.closedBook{width:min(390px,86vw)}.readingPage{padding-bottom:55px!important}}
