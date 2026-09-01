@@ -49,4 +49,9 @@ export default function Methodology(){return <main className={styles.page}>
   <h2>The profile is the result. Not the procedure.</h2>
   <p>Public artifact pages present the final determination, the evidence needed to understand it, and meaningful uncertainty where relevant. The complete evaluation protocol, evaluator records, prompts, thresholds and adjudication procedures are proprietary and are not publicly disclosed.</p>
 </section>
+
+<section className={styles.nextRoutes}>
+  <a href="/artifacts"><span>SEE TORC APPLIED</span><strong>Explore the artifact archive</strong><b>→</b></a>
+  <a href="/theory/book"><span>READ THE UNDERLYING THEORY</span><strong>The Age of False Depth</strong><b>→</b></a>
+</section>
 </main>}

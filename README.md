@@ -1,9 +1,13 @@
-TORC refinement patch
+# TORC Archief(10) — Homepage Information Architecture Patch
 
-- Artifacts desktop oxblood rails restored to the previous sharp .62 visual weight.
-- Theory desktop rails made finer; upper rail bridge extended to meet the translucent navigation rule.
-- Artifact Analysis Six-Dimensional Model content lifted ~3mm.
-- Bottom charcoal closure extended laterally to meet the side architecture; oxblood closing rule made more visible.
-- Final Submit Your Artifact CTA and supporting copy centered on desktop.
+Baseline: Archief(10).zip
 
-Only the three relevant CSS modules are included.
+Changes only:
+- Homepage reduced to five movements: TORC / applied examples / methodology / theory / use TORC.
+- Removed homepage route strip and detailed protocol/instrument sections from rendered page.
+- Featured artifacts reduced from six to four.
+- Methodology receives two closing routes: Artifacts and Theory/book.
+- Organizations receives a small corpus-value copy refinement (Portfolio Intelligence → Corpus Intelligence).
+- Main navigation, Artifacts, Compare, Submit, and Theory/book are untouched.
+
+This patch intentionally does not update the book or private canonical TORC protocol.

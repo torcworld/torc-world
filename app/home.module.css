@@ -529,3 +529,22 @@
  .homeBook{min-height:520px;max-width:440px}.homeTheoryExcerpt{padding-top:0}
  .homeTheoryField{padding:40px 20px;min-height:250px}
 }
+
+
+/* Archief(10) homepage simplification — five movements, September 2026 */
+.archiveActions{display:flex;gap:22px;flex-wrap:wrap;justify-content:flex-end}
+.archiveActions a{font:700 9px Arial,sans-serif;letter-spacing:.11em;text-transform:uppercase;border-bottom:1px solid #888078;padding-bottom:7px}
+.home .artifactGrid{grid-template-columns:repeat(4,1fr)}
+.methodologyAction{border:1px solid var(--ink);border-top:0;background:var(--gold);padding:20px 28px;text-align:right}
+.methodologyAction a{font:700 9px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.methodologyAction b{margin-left:18px;color:var(--accent);font-size:16px}
+.theoryCompact{margin:0 -28px;display:grid;grid-template-columns:1.45fr .55fr;background:var(--paper);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.theoryCompact>div{padding:66px 58px 70px;display:flex;flex-direction:column;justify-content:center}
+.theoryCompact>div>span,.compactBook>span{font:700 9px Arial,sans-serif;letter-spacing:.17em;color:var(--accent)}
+.theoryCompact h2{max-width:790px;margin:14px 0 22px;font-size:clamp(38px,4.5vw,58px);line-height:1.02;letter-spacing:-.035em;font-weight:500}
+.theoryCompact>div>p{max-width:710px;margin:0;font:400 20px/1.55 Georgia,serif;color:#403a34}
+.compactBook{background:var(--dark);color:#f4eee4;border-top:5px solid var(--accent);padding:31px 32px 29px;min-height:430px;display:flex;flex-direction:column;transition:background .18s ease}
+.compactBook:hover{background:#2c2b29}.compactBook>span{color:#b8afa6}.compactBook>strong{margin:auto 0 22px;font:500 clamp(39px,4vw,54px)/.87 Georgia,serif;letter-spacing:-.055em;color:var(--gold)}
+.compactBook>p{margin:0 0 25px;font-size:14px;line-height:1.5;color:#cfc6bd}.compactBook>small{padding-top:18px;border-top:1px solid #5b554e;font:700 8px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+@media(max-width:850px){.home .artifactGrid{grid-template-columns:repeat(2,1fr)}.theoryCompact{grid-template-columns:1fr}.compactBook{min-height:330px}}
+@media(max-width:720px){.home .artifactGrid{grid-template-columns:1fr}.archiveActions{justify-content:flex-start;margin-top:18px}.methodologyAction{text-align:left;border-left:0;border-right:0}.theoryCompact{margin-left:-20px;margin-right:-20px}.theoryCompact>div{padding:50px 20px 54px}.compactBook{padding:30px 20px;min-height:310px}}
