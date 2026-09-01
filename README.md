@@ -1,13 +1,18 @@
-# TORC homepage refinement 3
+TORC homepage refinement 3
 
-Apply over the current Archief(10) homepage after the previous fixed homepage refinement.
+Built from the reconstructed CURRENT homepage state after these successful patches:
+1. Archief(10) homepage information architecture
+2. Homepage CTA + visual hierarchy
+3. Gold/clickable refinement FIXED
 
-Changes only the homepage stylesheet:
-- moves the “HOW TORC DISTINGUISHES / Two questions. Two kinds of evidence.” heading closer to and visually above the Operational Order card;
-- reduces the vertical gap between artifact cards and methodology;
-- keeps the Creator panel permanently gold;
-- makes the Organizations panel ochre by default and gold on hover.
+Changes in this patch only:
+- moves HOW TORC DISTINGUISHES / Two questions, two kinds of evidence closer to the Operational Order card;
+- positions that heading over the left methodology card on desktop;
+- pulls the methodology section upward toward the artifact cards;
+- theory text panel is ochre by default and gold on hover/focus;
+- creator panel is permanently gold;
+- organizations panel is permanently TORC red.
 
-Files included:
-- app/page.tsx (unchanged from previous fixed patch, included for safe paired replacement)
+Files:
+- app/page.tsx
 - app/home.module.css
