@@ -2747,25 +2747,143 @@
   }
 }
 
-/* CURRENT REFINEMENT — keep the Compare charcoal closure modest and entirely
-   inside the normal light site-ground/corpus boundaries. Do not cover the
-   oxblood side fields or bleed above/below the Compare box. */
+/* FINAL CONTAINMENT — keep Compare charcoal strictly inside the compact corpus
+   boundaries. Explicitly cancel every earlier bleed, negative margin, expanded
+   width and pseudo-element backdrop. */
 @media (min-width:761px){
   .corpusSurface .inlineCompare,
   .inlineCompare{
+    position:relative!important;
+    isolation:auto!important;
+    z-index:auto!important;
     margin-left:0!important;
     margin-right:0!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
     width:100%!important;
     max-width:100%!important;
     box-sizing:border-box!important;
-    overflow:hidden!important;
+    padding:28px 30px 30px!important;
     background:#353432!important;
+    color:#f8f3e8!important;
     border:0!important;
     box-shadow:none!important;
+    overflow:hidden!important;
   }
 
-  .inlineCompare::before{
+  .inlineCompare::before,
+  .inlineCompare::after{
     content:none!important;
     display:none!important;
+    background:transparent!important;
+  }
+}
+
+/* CURRENT REFINEMENT — 2026-09-01
+   Lower the contained Compare closure, halve only the horizontal bottom rule,
+   and restore readable pagination on the pale page ground. */
+@media (min-width:761px){
+  /* Create a little more pale breathing room after pagination and let the
+     charcoal Compare panel begin ~1 cm lower, without touching the side rails. */
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:10px!important;
+  }
+
+  /* Only the horizontal bottom closure is reduced; vertical oxblood rails stay
+     at their existing weight. */
+  .corpusSurface{
+    border-bottom-width:.5px!important;
+  }
+
+  /* Pagination lives on the pale site ground, so use charcoal for inactive
+     controls and keep the current page as the oxblood accent. */
+  .pagination>button,
+  .pageNumbers button{
+    color:#575653!important;
+    opacity:1!important;
+  }
+  .pagination>button:disabled{
+    color:#8b8984!important;
+    opacity:.5!important;
+  }
+  .pageNumbers .activePage{
+    background:#5b2630!important;
+    color:#fff!important;
+    border-color:#5b2630!important;
+  }
+}
+
+
+/* CURRENT REFINEMENT — Compare picker usability + slightly lower closure.
+   Keep the charcoal panel contained, but do not clip its absolute dropdowns. */
+@media (min-width:761px){
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:14px!important;
+    margin-bottom:-4px!important;
+    overflow:visible!important;
+  }
+
+  .inlinePicker{
+    position:relative!important;
+    min-width:0!important;
+  }
+
+  /* The selected control never moves when the menu opens. */
+  .inlineSelected{
+    position:relative!important;
+    z-index:1!important;
+    transform:none!important;
+    margin:0!important;
+  }
+
+  /* Always open below the control. The option list itself scrolls, so it can
+     remain usable even this close to the bottom of the page. */
+  .inlineDropdown{
+    position:absolute!important;
+    z-index:200!important;
+    top:calc(100% + 5px)!important;
+    bottom:auto!important;
+    left:0!important;
+    right:0!important;
+    width:100%!important;
+    max-height:300px!important;
+    overflow:hidden!important;
+    box-sizing:border-box!important;
+  }
+  .inlineOptions{
+    max-height:220px!important;
+    overflow-y:auto!important;
+    overscroll-behavior:contain!important;
+  }
+}
+
+/* CURRENT REFINEMENT — more breathing room above Compare + tighter right columns.
+   Keep all existing picker behaviour and contained charcoal geometry intact. */
+@media (min-width:761px){
+  /* Lower the charcoal Compare field by roughly another 3 mm so the pagination
+     has a calmer pale gap before the closing panel. */
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-top:26px!important;
+    margin-bottom:-4px!important;
+  }
+
+  /* Make only the horizontal bottom oxblood closure finer; side rails stay as-is. */
+  .corpusSurface{
+    border-bottom-width:.25px!important;
+  }
+
+  /* Keep Medium where it is, pull Operational Order another ~0.5 cm left, and
+     bring Cognitive Magnitude farther in so its sort arrow remains inside. */
+  .artifactTableFour :global(.row)>:nth-child(2){
+    left:-19px!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(3){
+    left:-38px!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(4){
+    left:-52px!important;
   }
 }
