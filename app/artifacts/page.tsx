@@ -10,6 +10,7 @@ function rank(t?:string){if(!t)return 99; const n=t.toLowerCase().replace('level
 function hash(s:string,seed:number){let h=seed|0;for(let i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;return h>>>0}
 
 function eligible(a:Artifact){return a.status==='evaluated' && typeof a.cms==='number'}
+function orderClass(t?:string){return 'order'+String(t||'na').replace('Ω','Omega').replace(/[^a-zA-Z0-9]/g,'')}
 function InlineArtifactPicker({label,value,onChange}:{label:string;value:string;onChange:(slug:string)=>void}){
  const [pickerQuery,setPickerQuery]=useState('');
  const [open,setOpen]=useState(false);
@@ -83,8 +84,16 @@ export default function Artifacts(){
  </section>
  <section ref={corpusRef} className={styles.corpusSurface}>
  <div className="artifactToolbar"><span>{rows.length} artifacts found · page {currentPage} of {totalPages}</span>{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle again</button>}</div>
- <div className={`table artifactTable ${styles.artifactTableFour}`}><div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact</button><button onClick={()=>setSort(sort==='medium-asc'?'medium-desc':'medium-asc')}>Medium</button><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order</button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude Score</button></div>{visibleRows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span><b>{a.title}</b><br/><span className="small">{a.creator} · {a.year}</span></span><span>{a.domain}</span><span className="score">{a.status==='evaluated'?a.torc:'—'}</span><span className="score">{a.status==='evaluated'?a.cms:'—'}</span></Link>)}</div>
- <nav className={styles.pagination} aria-label="Artifact pages">
+ <div className={styles.archiveLedger}>
+  <div className={styles.ledgerHead}><span>Artifact</span><span>Operational Order</span><span>Cognitive Magnitude</span><span></span></div>
+  {visibleRows.map(a=><Link className={styles.ledgerRow} key={a.slug} href={`/artifact/${a.slug}`}>
+    <span className={`${styles.orderFlag} ${styles[orderClass(a.torc)]}`}>{a.status==='evaluated'?a.torc:'—'}</span>
+    <span className={styles.ledgerIdentity}><b>{a.title}</b><small>{a.creator} · {a.year} · {a.domain}</small></span>
+    <span className={styles.ledgerOrder}>{a.status==='evaluated'?a.torc:'—'}</span>
+    <span className={styles.ledgerCms}>{a.status==='evaluated'?a.cms:'—'}</span>
+    <span className={styles.openEvaluation}>Open evaluation <i>→</i></span>
+  </Link>)}
+ </div> <nav className={styles.pagination} aria-label="Artifact pages">
    <button disabled={currentPage===1} onClick={()=>goToPage(currentPage-1)}>← Previous</button>
    <div className={styles.pageNumbers}>{Array.from({length:totalPages},(_,i)=>i+1).map(n=><button key={n} className={n===currentPage?styles.activePage:''} aria-current={n===currentPage?'page':undefined} onClick={()=>goToPage(n)}>{n}</button>)}</div>
    <button disabled={currentPage===totalPages} onClick={()=>goToPage(currentPage+1)}>Next →</button>

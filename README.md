@@ -1,10 +1,5 @@
-TORC homepage refinement patch
+# TORC Artifacts — A_ARCHIVE_LEDGER
 
-Changes:
-- Featured artifact cards alternate dark gold / light ochre / dark gold / light ochre; hover reverses each card.
-- Operational Order and Cognitive Magnitude explanatory copy shortened.
-- Book/theory band moved 2cm lower on desktop.
-- Theory copy panel remains light ochre on hover/focus.
-- “Enter the theory” and its arrow slightly enlarged.
+Drop `app/artifacts/page.tsx` and `app/artifacts/artifacts-v4.module.css` into the current site.
 
-Replace the included files at the same paths.
+This is a reversible visual trial and only changes the Artifacts overview page. Artifact detail pages are untouched.
