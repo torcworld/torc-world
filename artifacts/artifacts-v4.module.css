@@ -2917,12 +2917,13 @@
   }
 }
 
-/* BOTTOM-ONLY RESTORE — return to the pale-ground extension from the immediately
-   previous version. Deliberately leaves all artifact table/header positioning alone. */
+
+/* FINAL BOTTOM STRIP FIX — only restore the pale strip beneath Compare.
+   Do not alter artifact columns, headers, picker behaviour, or Compare button. */
 @media (min-width:761px){
   .corpusSurface{
     background:var(--bg)!important;
-    padding-bottom:19px!important;
+    padding-bottom:10px!important;
     border-bottom:1px solid #5b2630!important;
   }
   .corpusSurface .inlineCompare,
