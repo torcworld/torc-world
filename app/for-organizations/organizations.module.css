@@ -1564,3 +1564,56 @@
     margin-top:38px!important;
   }
 }
+
+
+/* Batch 87 — Compress the light corpus-insight panel */
+
+.visibility{
+  margin-top:52px!important;
+  margin-bottom:52px!important;
+  padding-top:48px!important;
+  padding-bottom:50px!important;
+  background:#eee4d2!important;
+}
+
+.visibilityHead{
+  margin-bottom:32px!important;
+  align-items:start!important;
+}
+
+.visibilityHead h2{
+  color:#11110f!important;
+}
+
+.visibilityHead>p{
+  color:#332e28!important;
+}
+
+.signalMatrix article{
+  padding-top:20px!important;
+  padding-bottom:21px!important;
+}
+
+.signalMatrix article>strong{
+  color:#11110f!important;
+}
+
+.signalMatrix article>p{
+  color:#332e28!important;
+}
+
+@media(max-width:760px){
+  .visibility{
+    margin-top:34px!important;
+    margin-bottom:34px!important;
+    padding-top:38px!important;
+    padding-bottom:40px!important;
+  }
+  .visibilityHead{
+    margin-bottom:25px!important;
+  }
+  .signalMatrix article{
+    padding-top:18px!important;
+    padding-bottom:18px!important;
+  }
+}
