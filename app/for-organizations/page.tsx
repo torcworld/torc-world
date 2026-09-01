@@ -23,13 +23,6 @@ const applications = [
   },
 ];
 
-const engagements = [
-  ['01', 'Portfolio Evaluation', 'One-off evaluation of a defined slate or corpus.'],
-  ['02', 'Submission Intelligence', 'High-volume comparative evaluation for selection environments.'],
-  ['03', 'Development Program', 'Evaluation plus targeted investigation of selected works.'],
-  ['04', 'Recurring Evaluation Program', 'A consistent analytical standard applied over time.'],
-  ['05', 'Research Collaboration', 'Defined comparative or corpus-level research questions.'],
-];
 
 export default function Organizations(){
   return (
@@ -40,7 +33,7 @@ export default function Organizations(){
           <h1>See what a body of work<br/>is actually doing.</h1>
           <p>
             Evaluate cognitive architecture across a slate, catalogue, submission pool,
-            or recurring stream — under one consistent analytical standard.
+            or recurring stream — using one consistent analytical standard.
           </p>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
             Discuss an institutional use case <span>→</span>
@@ -51,7 +44,7 @@ export default function Organizations(){
           <span>THE INSTITUTIONAL PREMISE</span>
           <strong>50 artifacts should produce more than 50 reports.</strong>
           <p>
-            At scale, individual evaluations become a view of the corpus itself:
+            At scale, individual evaluations become a view of the corpus:
             where it operates, what repeats, what diverges, and what deserves deeper attention.
           </p>
         </div>
@@ -103,7 +96,7 @@ export default function Organizations(){
         <div className={styles.systemRule}>
           <span>TORC IS NOT AN AUTOMATED GREENLIGHT.</span>
           <p>
-            TORC supports selection, development, research, and allocation.
+            TORC informs selection, development, research, and allocation.
             Editorial, curatorial, production, acquisition, and commercial judgment remain human.
           </p>
         </div>
@@ -157,27 +150,6 @@ export default function Organizations(){
               <h3>{item.title}</h3>
               <p>{item.text}</p>
             </article>
-          ))}
-        </div>
-      </section>
-
-      <section className={styles.engagementNew}>
-        <div className={styles.engagementHead}>
-          <div className={styles.eyebrow}>ENGAGEMENTS</div>
-          <h2>Built around the decision problem.</h2>
-          <p>
-            Scope follows the corpus, cadence, analytical depth, and the decision
-            or development problem the work needs to support.
-          </p>
-        </div>
-
-        <div className={styles.engagementTable}>
-          {engagements.map(([no, title, text]) => (
-            <div className={styles.engagementLine} key={no}>
-              <span>{no}</span>
-              <strong>{title}</strong>
-              <p>{text}</p>
-            </div>
           ))}
         </div>
       </section>

@@ -1532,3 +1532,35 @@
     margin:38px -20px 0!important;
   }
 }
+
+
+/* Batch 86 — Organizations full-page audit
+   Duplicate Engagements section removed; spacing rebalanced. */
+
+.applicationsNew + .boundary{
+  margin-top:64px!important;
+}
+
+.boundary{
+  margin-top:64px!important;
+}
+
+/* Keep the applications as the sole statement of institutional use cases. */
+.applicationList article{
+  min-height:112px;
+}
+
+/* Stronger final progression: applications → proprietary boundary → inquiry. */
+.boundary + .finalContact{
+  margin-top:64px!important;
+}
+
+@media(max-width:760px){
+  .applicationsNew + .boundary,
+  .boundary{
+    margin-top:38px!important;
+  }
+  .boundary + .finalContact{
+    margin-top:38px!important;
+  }
+}
