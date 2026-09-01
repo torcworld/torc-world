@@ -2921,3 +2921,81 @@
     margin-bottom:8px!important;
   }
 }
+
+/* HARD DOM-TARGETED REFINEMENT — 2026-09-01
+   These rules use dedicated component classes so older nth-child experiments
+   cannot cancel the requested live positions. */
+@media (min-width:761px){
+  .operationalHeader,
+  .operationalCell{
+    transform:translateX(-20px)!important;
+    position:relative!important;
+    left:0!important;
+  }
+  .magnitudeHeader,
+  .magnitudeCell{
+    transform:translateX(-40px)!important;
+    position:relative!important;
+    left:0!important;
+  }
+  .magnitudeHeader{
+    font-size:9px!important;
+    line-height:1.08!important;
+    letter-spacing:.015em!important;
+  }
+
+  /* Real spacer in the DOM: guarantees more breathing room before Compare,
+     independent of the accumulated margin overrides above. */
+  .compareBreathingRoom{
+    display:block!important;
+    height:14px!important;
+    background:var(--bg)!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  .inlineCompare{
+    margin-top:0!important;
+  }
+
+  /* Center the conditional CTA below the two pickers and swap control. */
+  .inlineCompareAction{
+    width:100%!important;
+    margin:20px 0 0!important;
+    text-align:center!important;
+    display:flex!important;
+    justify-content:center!important;
+    align-items:center!important;
+  }
+  .inlineCompareAction :global(.button){
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    margin:0 auto!important;
+    background:#5b2630!important;
+    border-color:#5b2630!important;
+    color:#f5f2ea!important;
+    box-shadow:none!important;
+  }
+  .inlineCompareAction :global(.button:hover),
+  .inlineCompareAction :global(.button:focus-visible){
+    background:#5b2630!important;
+    border-color:#5b2630!important;
+    color:#f5f2ea!important;
+  }
+
+  /* Replace the ambiguous thick lower closure with a controlled pale footer
+     and one fine oxblood rule. Vertical side architecture is untouched. */
+  .corpusSurface{
+    border-bottom:0!important;
+    margin-bottom:0!important;
+  }
+  .corpusBottomClosure{
+    display:block!important;
+    height:11px!important;
+    margin:0!important;
+    padding:0!important;
+    background:var(--bg)!important;
+    border-bottom:1px solid #5b2630!important;
+    box-sizing:border-box!important;
+  }
+}
