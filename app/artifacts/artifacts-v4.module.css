@@ -2916,3 +2916,35 @@
     color:#f5f2ea!important;
   }
 }
+
+/* CURRENT REFINEMENT — 2026-09-01
+   Extend the pale site ground below Compare, keep only a fine lower oxblood rule,
+   and make the requested small column/header adjustments. */
+@media (min-width:761px){
+  /* Let the site-ground continue ~5 mm below the charcoal Compare panel. This
+     pushes the bottom closure down while preserving the compact corpus width. */
+  .corpusSurface{
+    background:var(--bg)!important;
+    padding-bottom:19px!important;
+    border-bottom:1px solid #5b2630!important;
+  }
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-bottom:0!important;
+  }
+
+  /* Move Medium and Operational Order ~2 mm farther left, while leaving the
+     Cognitive Magnitude column at its current position. */
+  .artifactTableFour :global(.row)>:nth-child(2),
+  .artifactTableFour :global(.row)>:nth-child(3){
+    transform:translateX(-8px)!important;
+  }
+  .artifactTableFour :global(.row)>:nth-child(4){
+    transform:none!important;
+  }
+
+  /* Bring only the Cognitive Magnitude sort arrow ~1 mm closer to its label. */
+  .artifactTableFour :global(.header)>button:nth-child(4){
+    gap:4px!important;
+  }
+}
