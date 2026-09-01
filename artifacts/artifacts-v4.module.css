@@ -2967,3 +2967,14 @@
     transform:translateX(8px)!important;
   }
 }
+
+
+/* HARD TARGET — Operational Order row values only.
+   Dedicated DOM class so this cannot accidentally target Medium/header/CMS. */
+@media (min-width:761px){
+  .artifactTableFour :global(a.row:not(.header)) > .operationalOrderValue{
+    position:relative!important;
+    left:12px!important;
+    transform:none!important;
+  }
+}
