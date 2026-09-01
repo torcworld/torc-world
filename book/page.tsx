@@ -17,21 +17,22 @@ export default function BookLanding(){
    </div>
   </section>
   <section className={styles.bookInvitation} aria-label="The Age of False Depth book">
+   <div className={styles.invitationCopy}>
+    <span className={styles.eyebrow}>THE LIVING EDITION</span>
+    <p><em>The Age of False Depth</em> develops the theory from first principles — from the distinction between apparent and demonstrated depth to a systematic account of what creative and intellectual works actually accomplish.</p>
+   </div>
    <a href="/theory/book/read" className={styles.closedBook} aria-label="Open The Age of False Depth">
     <span className={styles.bookSpine}></span>
     <span className={styles.coverFrame}></span>
     <span className={styles.coverCrest} aria-hidden="true">
       <span className={styles.crown}>♛</span>
-      <span className={styles.wreath}>
-        <span className={styles.wreathLeft}>❧</span>
-        <span className={styles.coverT}>T</span>
-        <span className={styles.wreathRight}>❧</span>
-      </span>
+      <span className={styles.laurel}>❧</span>
+      <span className={styles.coverT}>T</span>
     </span>
     <span className={styles.coverTitle}>THE AGE OF<br/>FALSE DEPTH</span>
     <span className={styles.coverAuthor}>G. K. MUIJLAERT</span>
    </a>
-   <a href="/theory/book/read" className={styles.centeredReadPrompt}>CLICK THE BOOK TO READ →</a>
+   <a href="/theory/book/read" className={styles.centeredReadPrompt}>READ THE BOOK →</a>
   </section>
  </main>
 }

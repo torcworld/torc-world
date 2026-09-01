@@ -1179,50 +1179,20 @@
   .bookInvitation{min-height:610px!important;padding:56px 22px 68px!important;gap:24px!important}
 }
 
-
-/* Crowned-T seal — applied to the agreed smooth gold book only. */
-.coverCrest{
-  left:57%!important;
-  top:43%!important;
-  width:210px!important;
-  height:190px!important;
-  color:#5b2630!important;
-  display:flex!important;
-  flex-direction:column!important;
-  align-items:center!important;
-  justify-content:center!important;
+/* Living Edition copy — content-only refinement */
+.invitationCopy{
+  width:min(560px,calc(100% - 48px));
+  margin:0 auto 34px;
+  text-align:center;
+  color:#2f2d2a;
 }
-.crown{
-  font-size:42px!important;
-  line-height:.72!important;
-  margin:0 0 -2px!important;
-  color:#5b2630!important;
-  transform:scaleX(1.08);
+.invitationCopy .eyebrow{
+  display:block;
+  margin-bottom:12px;
 }
-.wreath{
-  position:relative;
-  width:190px;
-  height:135px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-}
-.coverT{
-  z-index:2;
-  font-size:112px!important;
-  line-height:.9!important;
-  color:#5b2630!important;
-  text-shadow:0 1px rgba(255,255,255,.22)!important;
-}
-.wreathLeft,.wreathRight{
-  position:absolute;
-  top:26px;
-  font-size:82px;
-  line-height:1;
-  color:#8e7139;
-  opacity:.95;
+.invitationCopy p{
+  margin:0;
   font-family:Georgia,'Times New Roman',serif;
+  font-size:17px;
+  line-height:1.62;
 }
-.wreathLeft{left:2px;transform:rotate(-64deg) scaleY(1.28)}
-.wreathRight{right:2px;transform:scaleX(-1) rotate(-64deg) scaleY(1.28)}
-.laurel{display:none!important}
