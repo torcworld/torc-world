@@ -16,11 +16,11 @@ function InlineArtifactPicker({label,value,onChange}:{label:string;value:string;
  const selected=artifacts.find(a=>a.slug===value);
  const options=useMemo(()=>{
    const q=pickerQuery.trim().toLowerCase();
-   return artifacts.filter(eligible).filter(a=>!q||`${a.title} ${a.creator} ${a.domain}`.toLowerCase().includes(q)).slice(0,10);
+   return artifacts.filter(eligible).filter(a=>!q||`${a.title} ${a.creator} ${a.domain}`.toLowerCase().includes(q)).slice(0,40);
  },[pickerQuery]);
  return <div className={styles.inlinePicker}>
    <label>{label}</label>
-   <button className={styles.inlineSelected} type="button" onClick={()=>setOpen(v=>!v)}>
+   <button className={styles.inlineSelected} type="button" aria-expanded={open} onClick={()=>setOpen(v=>!v)}>
      <span>{selected?selected.title:'Choose an artifact'}</span>
      <small>{selected?`${selected.creator} · ${selected.domain}`:'Search the evaluated archive'}</small>
    </button>
