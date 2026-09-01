@@ -51,6 +51,14 @@ export default function SubmitArtifactPage(){
    <p>The €195 Evaluation stands on its own: a complete diagnosis of what your work is doing, where its architecture is strongest, and the central gap limiting it. If that diagnosis reveals something you want to develop further, upgrade to TORC Development within 30 days and the full €195 fee is credited.</p>
   </section>
 
+  <section className={styles.creditBand}>
+   <div>
+    <span>ALREADY DEVELOPING WITH TORC?</span>
+    <h2>Verify what the revision actually changed.</h2>
+   </div>
+   <p>TORC Development stands on its own as a complete revision strategy. If you revise the work and continue to the TORC Development Cycle within 30 days, the full €595 Development fee is credited toward the €995 Cycle. You pay €400 to continue from Development to independent verification.</p>
+  </section>
+
   <section id="submit" className={styles.submitSection}>
    <div className={styles.submitIntro}>
     <span>START WITH YOUR WORK</span>
