@@ -4,18 +4,20 @@ const body="<p id=\"personal-motivation\" class=\"book-front-heading\"><strong>P
 
 export default function Book(){
  return <main className={styles.bookPage}>
-  <header className={styles.monographHero}>
-   <span className={styles.eyebrow}>A THEORY OF REPRESENTATIONAL CONSCIOUSNESS</span>
-   <h1>The Age of False Depth</h1>
-   <p className={styles.monographSub}>Intelligence, Representation, and What Artifacts Actually Do</p>
-   <div className={styles.monographFoot}><b>G. K. Muijlaert</b><span>Living edition</span></div>
-  </header>
-  <section className={styles.monographQuestion}>
-   <span>THE QUESTION</span>
-   <h2>What has actually been accomplished?</h2>
-   <p>A book about the difference between the signals of intelligence and the cognitive operations those signals appear to represent.</p>
-   <a href="#personal-motivation">ENTER THE BOOK ↓</a>
+  <section className={styles.editorialHero}>
+   <div className={styles.bookObject}>
+    <span>TORC / THEORY</span>
+    <h1>The Age<br/>of False<br/>Depth</h1>
+    <p>G. K. Muijlaert</p>
+   </div>
+   <div className={styles.editorialIntro}>
+    <span className={styles.eyebrow}>THE AGE OF FALSE DEPTH</span>
+    <h2>The appearance of depth is not the same as a deep operation.</h2>
+    <p>This book develops the theory beneath TORC: why representation can carry the signals of understanding without reproducing the cognitive operation that originally gave those signals force.</p>
+    <div className={styles.editorialActions}><a href="#personal-motivation">BEGIN READING ↓</a><a href="/methodology">VIEW METHODOLOGY →</a></div>
+   </div>
   </section>
+  <div className={styles.bookMetaBar}><span>Intelligence, Representation, and What Artifacts Actually Do</span><span>Living edition</span></div>
   <BookNavigator />
   <section className={`section prose auditReport ${styles.bookReader}`}>
    <div className={`auditNote ${styles.editionNote}`}><b>Living edition.</b> This online text is the current canonical version. It may be refined as TORC is tested against additional artifacts and boundary cases.</div>
