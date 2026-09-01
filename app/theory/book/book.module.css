@@ -1104,111 +1104,12 @@
 }
 
 
-/* Batch 76 — Theory: remove the large oxblood side field; keep thin rails */
-.bookPage::after{
-  display:none!important;
-}
-
+/* Theory correction — preserve the complete original book styling;
+   remove only the two filled oxblood side bands. */
 @media(min-width:761px){
-  .bookPage{
-    padding-right:0!important;
-  }
-}
-
-
-/* Batch 77 — Theory: remove left oxblood side field too; preserve thin rails */
-.bookPage::before{
-  display:none!important;
-}
-
-/* Neutralize any full-height left field attached to the book shell itself,
-   without touching the thin border/rail rules. */
-@media(min-width:761px){
-  .bookPage{
-    padding-left:0!important;
-  }
-}
-
-
-/* Batch 78 — Theory: narrower book between restored thin oxblood rails */
-@media(min-width:761px){
-  /* Keep only the thin outer rails; no filled oxblood side fields. */
-  .bookPage{
-    max-width:1280px!important;
-    padding-left:0!important;
-    padding-right:0!important;
-    border-left:1px solid #5b2630!important;
-    border-right:1px solid #5b2630!important;
-  }
-
-  /* Restore the short rail continuation up to the grey/nav rule. */
-  .bookPage::before{
-    display:block!important;
-    content:""!important;
-    position:absolute!important;
-    left:-1px!important;
-    right:-1px!important;
-    top:-18px!important;
-    height:18px!important;
-    border-left:1px solid #5b2630!important;
-    border-right:1px solid #5b2630!important;
-    background:transparent!important;
-    pointer-events:none!important;
-  }
-
-  /* Filled side field remains removed. */
+  .bookPage::before,
   .bookPage::after{
-    display:none!important;
-  }
-
-  /* Give the publication breathing room inside the rails. */
-  .bookTitlePage,
-  .bookReader{
-    width:calc(100% - 136px)!important;
-    margin-left:auto!important;
-    margin-right:auto!important;
-    box-sizing:border-box!important;
-  }
-
-  .bookTitlePage{
-    margin-bottom:0!important;
-  }
-
-  .bookReader{
-    margin-top:0!important;
-  }
-}
-
-@media(min-width:761px) and (max-width:980px){
-  .bookTitlePage,
-  .bookReader{
-    width:calc(100% - 88px)!important;
-  }
-}
-
-
-/* Batch 79 — Theory: keep narrow book + thin rails; remove ALL filled side bands */
-@media(min-width:761px){
-  .bookPage{
     background:transparent!important;
     box-shadow:none!important;
-  }
-
-  /* The space between the book and thin rails must be neutral, never oxblood. */
-  .bookPage::before{
-    background:transparent!important;
-    box-shadow:none!important;
-  }
-
-  .bookPage::after{
-    display:none!important;
-    content:none!important;
-    background:transparent!important;
-    box-shadow:none!important;
-  }
-
-  .bookTitlePage,
-  .bookReader{
-    background:#f3eee6!important;
   }
 }
