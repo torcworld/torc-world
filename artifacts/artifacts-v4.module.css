@@ -3012,3 +3012,25 @@
     transform:none!important;
   }
 }
+
+/* ACTUAL VISUAL MOVE — Operational Order VALUES only.
+   Neutralize every historical cell offset, then move the text itself with margin.
+   Header remains untouched. */
+@media (min-width:761px){
+  .artifactTableFour :global(a.row:not(.header)) > .operationalOrderValue{
+    position:relative!important;
+    left:0!important;
+    right:auto!important;
+    transform:none!important;
+    padding-left:0!important;
+    padding-right:0!important;
+  }
+  .artifactTableFour :global(a.row:not(.header)) > .operationalOrderValue > .operationalOrderText{
+    display:inline-block!important;
+    position:static!important;
+    left:auto!important;
+    right:auto!important;
+    transform:none!important;
+    margin-left:20px!important;
+  }
+}
