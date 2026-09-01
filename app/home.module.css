@@ -703,3 +703,63 @@
     text-align:left;
   }
 }
+
+/* Homepage refinement 4 — tighter methodology lockup + red canon details + hero gold secondary CTA */
+/* Move the whole methodology block upward toward the canon cards, while seating the lead precisely over the first card. */
+.home .coordinates{
+  padding-top:20px;
+}
+.home .coordinates .sectionLead{
+  width:calc((100% - 14px) / 2);
+  margin:0 0 28px 0;
+  padding:0;
+  text-align:center;
+  position:relative;
+  top:14px;
+}
+
+/* Canon cards: keep the gold field, but turn secondary information and rules TORC red. */
+.home .artifactGrid{
+  background:var(--accent);
+  border-color:var(--accent);
+}
+.home .artifactCard>p,
+.home .artifactCard small{
+  color:var(--accent);
+}
+.home .profileLine i{
+  background:var(--accent);
+}
+
+/* Hero pairing: red primary action on the left, gold secondary action on the right. */
+.home .secondaryAction{
+  background:var(--gold);
+  color:var(--ink);
+  border-color:var(--gold);
+}
+.home .secondaryAction:hover,
+.home .secondaryAction:focus-visible{
+  background:var(--gold-deep);
+  border-color:var(--gold-deep);
+}
+
+/* Lower-row state remains explicit: creator gold, organizations TORC red. */
+.home .creatorDoor{
+  background:var(--gold);
+  color:var(--ink);
+}
+.home .orgDoor{
+  background:var(--accent);
+  color:#fff;
+}
+
+@media(max-width:720px){
+  .home .coordinates{padding-top:28px}
+  .home .coordinates .sectionLead{
+    width:auto;
+    margin:0 0 18px;
+    padding:0;
+    text-align:left;
+    top:0;
+  }
+}
