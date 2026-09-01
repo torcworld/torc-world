@@ -90,6 +90,7 @@ export default function Artifacts(){
    <button disabled={currentPage===totalPages} onClick={()=>goToPage(currentPage+1)}>Next →</button>
  </nav>
  <section className={styles.inlineCompare}><div className={styles.inlineCompareHead}><div className="eyebrow">Compare Artifacts</div><h2>Put two TORC profiles side by side.</h2></div><div className={styles.inlineCompareControls}><InlineArtifactPicker label="Artifact A" value={compareLeft} onChange={setCompareLeft}/><button className={styles.inlineSwap} type="button" onClick={()=>{setCompareLeft(compareRight);setCompareRight(compareLeft)}} aria-label="Swap artifacts">⇄</button><InlineArtifactPicker label="Artifact B" value={compareRight} onChange={setCompareRight}/></div>{compareLeft&&compareRight&&<div className={styles.inlineCompareAction}><Link className="button" href={`/compare?a=${compareLeft}&b=${compareRight}`}>Compare selected artifacts →</Link></div>}</section>
+ <div className={styles.compareBottomStrip} aria-hidden="true" />
  </section>
  </main>
 }

@@ -2916,3 +2916,31 @@
     color:#f5f2ea!important;
   }
 }
+
+
+/* EXPLICIT STRUCTURAL STRIP — real DOM element below Compare.
+   This avoids relying on corpus padding/margins that earlier cascade rules can neutralize. */
+@media (min-width:761px){
+  .corpusSurface{
+    padding-bottom:0!important;
+    border-bottom:1px solid #5b2630!important;
+    background:var(--bg)!important;
+  }
+  .corpusSurface .inlineCompare,
+  .inlineCompare{
+    margin-bottom:0!important;
+  }
+  .compareBottomStrip{
+    display:block!important;
+    width:100%!important;
+    height:10px!important;
+    min-height:10px!important;
+    flex:0 0 10px!important;
+    background:var(--bg)!important;
+    border:0!important;
+    margin:0!important;
+    padding:0!important;
+    position:relative!important;
+    z-index:3!important;
+  }
+}
