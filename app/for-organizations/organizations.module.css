@@ -1617,3 +1617,38 @@
     padding-bottom:18px!important;
   }
 }
+
+
+/* Batch 88 — Reversible dark-gold test for the corpus-insight panel */
+
+.visibility{
+  background:#c7aa76!important;
+  border-top-color:#5b2630!important;
+  border-bottom-color:#5b2630!important;
+}
+
+.visibility .eyebrow{
+  color:#5b2630!important;
+}
+
+.visibilityHead h2,
+.signalMatrix article>strong{
+  color:#171714!important;
+}
+
+.visibilityHead>p,
+.signalMatrix article>p{
+  color:#2f2a24!important;
+}
+
+.signalMatrix{
+  border-top-color:#5b2630!important;
+}
+
+.signalMatrix article{
+  border-bottom-color:rgba(91,38,48,.48)!important;
+}
+
+.signalMatrix article>span{
+  color:#5b2630!important;
+}
