@@ -32,8 +32,7 @@ export default function Organizations(){
           <div className={styles.eyebrow}>TORC FOR ORGANIZATIONS</div>
           <h1>See what a body of work<br/>is actually doing.</h1>
           <p>
-            Evaluate cognitive architecture across a slate, catalogue, submission pool,
-            or recurring stream — using one consistent analytical standard.
+            See what repeats, what diverges, where structural bottlenecks recur, and which works deserve scarce human attention across a slate, catalogue, submission pool, or recurring stream.
           </p>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
             Discuss an institutional use case <span>→</span>
@@ -44,17 +43,16 @@ export default function Organizations(){
           <span>THE INSTITUTIONAL PREMISE</span>
           <strong>50 artifacts should produce more than 50 reports.</strong>
           <p>
-            At scale, individual evaluations become a view of the corpus:
-            where it operates, what repeats, what diverges, and what deserves deeper attention.
+            At scale, individual diagnoses become something more useful: a view of the corpus itself — what it repeatedly achieves, where it repeatedly stops, and which exceptions change the picture.
           </p>
         </div>
       </header>
 
       <section className={styles.standardBar}>
         <span>ONE CORPUS</span><i/>
-        <span>ONE EVALUATIVE STANDARD</span><i/>
-        <span>COMPARABLE PROFILES</span><i/>
-        <span>CORPUS-LEVEL INTELLIGENCE</span>
+        <span>REPEATING PATTERNS</span><i/>
+        <span>MEANINGFUL EXCEPTIONS</span><i/>
+        <span>BETTER-PLACED ATTENTION</span>
       </section>
 
       <section className={styles.system}>
@@ -76,8 +74,8 @@ export default function Organizations(){
           <div className={styles.flowLink}>→</div>
           <div className={styles.flowNode}>
             <span>02</span>
-            <b>IDENTIFY</b>
-            <p>Profiles, distributions, bottlenecks, boundaries, and outliers.</p>
+            <b>DISCOVER</b>
+            <p>Find recurring achievements, structural bottlenecks, boundary cases, and meaningful exceptions.</p>
           </div>
           <div className={styles.flowLink}>→</div>
           <div className={styles.flowNode}>
@@ -103,33 +101,33 @@ export default function Organizations(){
         <div className={styles.visibilityHead}>
           <div>
             <div className={styles.eyebrow}>WHAT BECOMES VISIBLE AT SCALE</div>
-            <h2>One corpus.<br/>A clearer view.</h2>
+            <h2>Patterns no single<br/>report can show.</h2>
           </div>
           <p>
-            A common standard makes relationships visible that isolated reports cannot.
+            A common analytical standard lets the corpus answer questions that isolated evaluations cannot.
           </p>
         </div>
 
         <div className={styles.signalMatrix}>
           <article>
             <span>01</span>
-            <strong>Operational distribution</strong>
-            <p>Where the corpus operates, including meaningful concentrations and boundary cases.</p>
+            <strong>What the corpus repeatedly achieves</strong>
+            <p>See which kinds of structural achievement recur across the body of work — and where meaningful boundary cases cluster.</p>
           </article>
           <article>
             <span>02</span>
-            <strong>Cognitive magnitude</strong>
-            <p>How much cognition is carried without confusing magnitude with Operational Order.</p>
+            <strong>Where the work repeatedly stops</strong>
+            <p>Identify recurring structural constraints and bottlenecks that may be invisible when each artifact is considered alone.</p>
           </article>
           <article>
             <span>03</span>
-            <strong>Dimensional architecture</strong>
-            <p>Recurring strengths, weaknesses, and bottlenecks across RL · AD · CD · ID · IC · GR.</p>
+            <strong>Which differences actually matter</strong>
+            <p>Distinguish superficial variation from meaningful differences in cognitive architecture, constraint, inference, integration and reach.</p>
           </article>
           <article>
             <span>04</span>
-            <strong>Outliers & exceptions</strong>
-            <p>Works that diverge meaningfully from the corpus and warrant closer analytical attention.</p>
+            <strong>What deserves deeper attention</strong>
+            <p>Surface works that diverge meaningfully from the corpus so scarce editorial, curatorial, acquisition or development attention can be placed deliberately.</p>
           </article>
         </div>
       </section>

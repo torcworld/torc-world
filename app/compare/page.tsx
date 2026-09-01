@@ -16,7 +16,7 @@ const dims=[
 const orderInfo:Record<string,{name:string;short:string}>={
   '1':{name:'Direct Consciousness',short:'Cognition operates primarily on represented particulars and their relations.'},
   '2':{name:'Symbolic Consciousness',short:'Particulars acquire additional significance through an organizing symbolic, formal, conceptual, or otherwise abstract structure.'},
-  '3a':{name:'External Recursive Consciousness',short:'Consciousness recursively recognizes distortion in its relation to reality while the governing source of that distortion remains principally located in the external world, system or order.'},
+  '3a':{name:'External Recursive Consciousness',short:'Recursive contradiction is established, while its governing source remains principally located in the external world or order.'},
   '3b':{name:'Fractured Recursive Consciousness',short:'Consciousness confronts a contradiction in its relation to existence that improved representation alone cannot repair.'},
   '3c':{name:'Integrated Recursive Consciousness',short:'The contradiction remains real, but consciousness develops a coherent orientation capable of containing it without eliminating it.'},
   'G':{name:'Generative Consciousness',short:'The artifact relocates what explains an independently identifiable target by disclosing a generative structure or mechanism.'},

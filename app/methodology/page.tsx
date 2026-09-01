@@ -4,7 +4,7 @@ import styles from './methodology.module.css';
 const orders = [
  {key:'1',name:'Direct Consciousness',formal:'The artifact performs a direct, bounded cognitive operation without requiring recursive reorientation of consciousness.',plain:'The work solves, organizes, represents or executes something effectively within an accepted frame of reality.'},
  {key:'2',name:'Symbolic Consciousness',formal:'The artifact coordinates complex relations, systems or recursive structures while remaining within a stable orientation toward reality.',plain:'The work can be extremely complex, recursive and intelligent without making consciousness itself fundamentally problematic.'},
- {key:'3a',name:'External Recursive Consciousness',formal:'Consciousness recursively recognizes a fundamental contradiction or distortion in its relation to reality, while the governing source of that contradiction remains principally located in the external world, system or order.',plain:'Consciousness can see that something is fundamentally wrong, including how the external order shapes perception, thought or experience, but the deepest source of the problem still remains outside the self. The world, system or order is what is fractured. At 3b, that explanation becomes insufficient because consciousness itself is necessarily implicated in the fracture.'},
+ {key:'3a',name:'External Recursive Consciousness',formal:'The artifact establishes recursive contradiction or fracture, while the governing source of that fracture remains principally located outside the consciousness being represented.',plain:'Consciousness can see that something is fundamentally wrong, but the work still locates the decisive source of the problem in the world, system, institution, ideology or external order. Level 3b begins when that external explanation becomes insufficient because consciousness itself is necessarily implicated in the fracture.'},
  {key:'3b',name:'Fractured Recursive Consciousness',formal:'The fracture implicates consciousness\'s own attempt to orient itself toward reality.',plain:'The work no longer gives consciousness a secure position outside the problem. The act of seeing, knowing or orienting is itself caught in the fracture.'},
  {key:'3c',name:'Integrated Recursive Consciousness',formal:'A self-implicating fracture is integrated into a coherent higher orientation without being erased, repaired away or falsely resolved.',plain:'The work finds a way of inhabiting the fracture. The contradiction remains real, but consciousness can orient through it rather than simply collapse inside it.'},
  {key:'G',name:'Generative Consciousness — Explanatory Relocation',formal:'The completed artifact changes the explanatory basis of an independently identifiable target through a generative structure that is meaningfully constrained by that target and makes lower Operational Orders insufficient.',plain:'The work does not merely describe, symbolize or deepen a problem. It discovers a structure that makes the problem itself newly explicable.'},
@@ -14,9 +14,9 @@ const orders = [
 export default function Methodology(){return <main className={styles.page}>
 <section className={styles.hero}>
   <div className={styles.heroCopy}>
-    <div className={styles.heroLabel}>TORC CLASSIFICATION SYSTEM</div>
-    <h1>How the profile is read.</h1>
-    <p>Operational Order identifies the cognitive operation actually achieved by the completed artifact. Cognitive Magnitude measures the scale and architecture demonstrated in achieving it.</p>
+    <div className={styles.heroLabel}>TORC METHODOLOGY</div>
+    <h1>Two questions. Two kinds of evidence.</h1>
+    <p>Operational Order identifies the highest-order cognitive operation the completed artifact actually achieves. Cognitive Magnitude describes the magnitude and architecture of cognition demonstrated in achieving it.</p>
   </div>
   <aside className={styles.heroMark} aria-label="The TORC Demonstrated Intelligence Profile">
     <span>DEMONSTRATED INTELLIGENCE PROFILE</span>

@@ -85,7 +85,7 @@
 .markBottom{border-top:1px solid #3d3935;padding-top:15px}
 
 .routeStrip{
-  display:grid;grid-template-columns:repeat(3,1fr);
+  display:grid;grid-template-columns:repeat(4,1fr);
   border-top:1px solid #171714;border-bottom:1px solid #c9c3b8
 }
 .routeStrip a{

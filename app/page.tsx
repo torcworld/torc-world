@@ -21,7 +21,7 @@ export default function Home() {
         <h1>TORC</h1>
         <p className={styles.tagline}>Demonstrated intelligence in artifacts.</p>
         <p className={styles.intro}>
-          TORC evaluates completed works by separating two questions that are often confused:
+          TORC makes the governing architecture of completed artifacts visible. It then disciplines that diagnosis through two questions:
           <strong> what kind of cognitive operation does the artifact actually perform?</strong> And
           <strong> how much structured cognition does it demonstrate in performing it?</strong>
         </p>
@@ -85,7 +85,8 @@ export default function Home() {
     <section className={styles.routeStrip}>
       <Link href="/artifacts"><span>01</span><b>Archive</b><small>See TORC applied to completed works.</small><em>→</em></Link>
       <Link href="/compare"><span>02</span><b>Compare</b><small>Put two demonstrated intelligence profiles side by side.</small><em>→</em></Link>
-      <Link href="/theory"><span>03</span><b>Theory</b><small>Understand the framework and read the living edition.</small><em>→</em></Link>
+      <Link href="/theory"><span>03</span><b>Theory</b><small>Understand the theory of representation behind TORC.</small><em>→</em></Link>
+      <Link href="/methodology"><span>04</span><b>Methodology</b><small>See the seven Orders, six Dimensions, and how a TORC profile is read.</small><em>→</em></Link>
     </section>
 
     <section className={styles.coordinates}>
@@ -119,8 +120,8 @@ export default function Home() {
     <section className={styles.instrument}>
       <div className={styles.instrumentIntro}>
         <span>FROM THEORY TO INSTRUMENT</span>
-        <h2>The profile is the result.<br/>Not the procedure.</h2>
-        <p>TORC began as a theory of demonstrated cognition in artifacts. Developing that theory into a usable assessment method required something more: a disciplined way to interrogate the artifact, test competing interpretations, and locate exactly where its cognitive structure holds — or stops.</p>
+        <h2>Discovery first.<br/>Method underneath.</h2>
+        <p>TORC begins by asking what the completed artifact has actually built: the governing architecture, the operation it achieves, and the condition that most constrains it. Operational Order and Cognitive Magnitude discipline that diagnosis; the proprietary protocol tests whether the evidence is strong enough to support it.</p>
       </div>
 
       <div className={styles.instrumentFlow}>
