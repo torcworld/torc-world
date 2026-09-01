@@ -1,9 +1,9 @@
-# TORC homepage refinement 5
+# TORC homepage exact refinement
 
 Built on the last working homepage patch.
 
 Changes only `app/home.module.css`:
-- moves the full “HOW TORC DISTINGUISHES / Two questions. Two kinds of evidence.” lockup substantially downward toward the Operational Order card while pulling the section upward toward the artifact cards;
-- makes Explore Artifacts explicitly gold (#d9c7a6) at rest and ochre/deeper gold (#c7aa76) on hover/focus;
-- makes the Creator / “See your own work differently” panel explicitly dark gold (#c7aa76) at rest;
-- mobile keeps the methodology heading in normal flow for usability.
+- Moves the complete “HOW TORC DISTINGUISHES / Two questions. Two kinds of evidence.” lockup a literal 4cm downward on desktop, toward the Operational Order card, while pulling the methodology section upward toward the artifact cards.
+- Explore Artifacts: dark gold at rest, light ochre on hover/focus.
+- Theory copy beside The Age of False Depth: light ochre at rest, dark gold on hover/focus.
+- Creator / See your own work differently: dark gold at rest.

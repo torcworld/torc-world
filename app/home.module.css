@@ -813,3 +813,50 @@
     top:0;
   }
 }
+
+/* Homepage refinement 6 — literal 4cm methodology drop + exact requested gold/ochre states */
+/* Desktop: move the complete methodology heading lockup a literal 4cm down toward Operational Order.
+   The methodology section itself is pulled upward toward the artifact grid so the page does not gain empty space. */
+@media(min-width:721px){
+  .home .coordinates{
+    margin-top:-112px;
+    padding-top:0;
+  }
+  .home .coordinates .sectionLead{
+    width:calc((100% - 14px) / 2);
+    margin:0 0 112px 0;
+    padding:0;
+    text-align:center;
+    position:relative;
+    top:0;
+    transform:translateY(4cm);
+  }
+}
+
+/* Hero: Explore Artifacts is DARK GOLD at rest, lighter ochre on hover/focus. */
+.home .secondaryAction{
+  background:var(--gold-deep);
+  border-color:var(--gold-deep);
+  color:var(--ink);
+}
+.home .secondaryAction:hover,
+.home .secondaryAction:focus-visible{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:var(--ink);
+}
+
+/* Theory copy beside The Age of False Depth: LIGHT OCHRE at rest, dark gold on hover/focus. */
+.theoryCopyLink{
+  background:var(--gold);
+}
+.theoryCopyLink:hover,
+.theoryCopyLink:focus-visible{
+  background:var(--gold-deep);
+}
+
+/* Creator panel: keep the requested DARK GOLD resting state. */
+.home .creatorDoor{
+  background:var(--gold-deep);
+  color:var(--ink);
+}
