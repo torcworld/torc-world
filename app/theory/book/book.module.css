@@ -1104,12 +1104,10 @@
 }
 
 
-/* Theory — ONLY remove thick oxblood side bands; preserve book and thin rails */
-@media(min-width:761px){
-  .bookPage::before,
-  .bookPage::after{
-    width:1px!important;
-    background:#5b2630!important;
-    box-shadow:none!important;
+/* Theory — remove ONLY the two thick oxblood side bands.
+   Preserve the book, all internal colors, spacing, and the thin outer rails. */
+@media(min-width:981px){
+  .bookPage{
+    background:none!important;
   }
 }
