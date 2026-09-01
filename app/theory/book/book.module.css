@@ -1,8 +1,8 @@
 
 .bookPage {
-  --book-paper: #e1c991;
-  --book-paper-deep: #d1b675;
-  --book-ink: #2a241a;
+  --book-paper: #c9c0aa;
+  --book-paper-deep: #b5aa92;
+  --book-ink: #24211c;
   --book-muted: #6e685d;
   --book-rule: rgba(29, 27, 23, 0.34);
 }
@@ -22,10 +22,10 @@
   margin: 0 auto;
   padding: 58px clamp(30px, 6vw, 78px) 92px !important;
   background:
-    radial-gradient(circle at 14% 9%, rgba(255,255,255,.20), transparent 24%),
-    radial-gradient(circle at 82% 31%, rgba(107,77,31,.07), transparent 28%),
-    repeating-linear-gradient(0deg, rgba(65,48,25,.018) 0 1px, transparent 1px 4px),
-    linear-gradient(90deg, rgba(84,61,29,.055), transparent 7%, transparent 93%, rgba(84,61,29,.055)),
+    radial-gradient(circle at 18% 12%, rgba(255,255,255,.13), transparent 25%),
+    radial-gradient(circle at 76% 66%, rgba(60,52,39,.08), transparent 32%),
+    repeating-linear-gradient(90deg, rgba(43,39,31,.018) 0 1px, transparent 1px 5px),
+    linear-gradient(90deg, rgba(52,47,38,.06), transparent 8%, transparent 92%, rgba(52,47,38,.06)),
     var(--book-paper);
   border: 1px solid rgba(54, 47, 36, 0.19) !important;
   box-shadow:
