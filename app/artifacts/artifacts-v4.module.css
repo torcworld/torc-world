@@ -2858,3 +2858,25 @@
     box-shadow:none!important;
   }
 }
+
+
+/* Artifacts — permanent light-ochre register surfaces.
+   Keep the column header white and preserve all current row widths. */
+@media(min-width:761px){
+  /* "artifacts found / Shuffle again" bar */
+  .corpusToolbar{
+    background:#d9c7a6!important;
+  }
+
+  /* Medium / Operational Order / etc. stays white */
+  .artifactTableFour :global(.header){
+    background:#fff!important;
+  }
+
+  /* Artifact rows use the same ochre as the navigation/hover state.
+     Background ends at each row's existing edge; no geometry changes. */
+  .artifactTableFour :global(.row:not(.header)),
+  .artifactTableFour :global(.row:not(.header):hover){
+    background:#d9c7a6!important;
+  }
+}
