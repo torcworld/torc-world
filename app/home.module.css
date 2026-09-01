@@ -763,3 +763,53 @@
     top:0;
   }
 }
+
+/* Homepage refinement 5 — explicit requested positioning and gold states */
+/* Seat the methodology lockup substantially lower, visually just above Operational Order,
+   while pulling the complete methodology section upward toward the canon cards. */
+.home .coordinates{
+  margin-top:-72px;
+  padding-top:0;
+}
+.home .coordinates .sectionLead{
+  width:calc((100% - 14px) / 2);
+  margin:0 0 112px 0;
+  padding:0;
+  text-align:center;
+  position:relative;
+  top:92px;
+}
+
+/* Hero: Explore Artifacts is explicitly the lighter navigation gold at rest,
+   with the deeper ochre only on hover/focus. */
+.home .secondaryAction{
+  background:#d9c7a6;
+  border-color:#d9c7a6;
+  color:#171714;
+}
+.home .secondaryAction:hover,
+.home .secondaryAction:focus-visible{
+  background:#c7aa76;
+  border-color:#c7aa76;
+  color:#171714;
+}
+
+/* Creator panel: explicit dark-gold resting surface. */
+.home .creatorDoor{
+  background:#c7aa76;
+  color:#171714;
+}
+
+@media(max-width:720px){
+  .home .coordinates{
+    margin-top:-24px;
+    padding-top:0;
+  }
+  .home .coordinates .sectionLead{
+    width:auto;
+    margin:0 0 18px;
+    padding:0;
+    text-align:left;
+    top:0;
+  }
+}

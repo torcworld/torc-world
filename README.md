@@ -1,13 +1,9 @@
-# TORC homepage refinement 4
+# TORC homepage refinement 5
 
-Apply this patch on top of the last working homepage patch (`TORC_archief10_home_methodology_alignment_FINAL_PATCH.zip`).
+Built on the last working homepage patch.
 
-Changed only:
-- `app/home.module.css`
-
-Changes:
-- moves the methodology section upward toward the artifact cards;
-- centers the methodology lead exactly over the Operational Order card and seats it close above that card;
-- changes canon-card secondary text, creator names, evaluation links, profile divider, and card separators to TORC red;
-- makes the hero `Explore artifacts` button gold while `Understand TORC` remains red;
-- keeps Creator gold and Organizations TORC red.
+Changes only `app/home.module.css`:
+- moves the full “HOW TORC DISTINGUISHES / Two questions. Two kinds of evidence.” lockup substantially downward toward the Operational Order card while pulling the section upward toward the artifact cards;
+- makes Explore Artifacts explicitly gold (#d9c7a6) at rest and ochre/deeper gold (#c7aa76) on hover/focus;
+- makes the Creator / “See your own work differently” panel explicitly dark gold (#c7aa76) at rest;
+- mobile keeps the methodology heading in normal flow for usability.
