@@ -83,11 +83,12 @@ export default function Home() {
         <p>Intelligence, Representation, and What Artifacts Actually Do</p>
         <small>Read the Living Edition →</small>
       </Link>
-      <div>
+      <Link className={styles.theoryCopyLink} href="/theory/book">
         <span>THE THEORY</span>
         <h2>The appearance of depth is not the same as a deep operation.</h2>
         <p>Why do some artifacts genuinely reorganize the way reality becomes intelligible, while others create the appearance of having done so?</p>
-      </div>
+        <b>Enter the theory <em>→</em></b>
+      </Link>
     </section>
 
     <section className={styles.twoDoors}>
