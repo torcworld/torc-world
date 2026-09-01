@@ -1,3 +1,3 @@
-TORC Theory paper trial: 4_DARK_ARCHIVE
+CORRECTED ANTIQUE PARCHMENT TEST
 
-Based on the current A/B Hybrid Paper Edition. Layout and book content unchanged; this trial changes only the reading-paper treatment.
+This version deliberately uses a visibly brown/golden parchment reading surface (#c9aa72), with darker edge toning and subtle tonal grain. It is intentionally not off-white.

@@ -1,8 +1,8 @@
 
 .bookPage {
-  --book-paper: #9c8f78;
-  --book-paper-deep: #847660;
-  --book-ink: #171512;
+  --book-paper: #f8f3e8;
+  --book-paper-deep: #f1eadb;
+  --book-ink: #1d1b17;
   --book-muted: #6e685d;
   --book-rule: rgba(29, 27, 23, 0.34);
 }
@@ -22,10 +22,7 @@
   margin: 0 auto;
   padding: 58px clamp(30px, 6vw, 78px) 92px !important;
   background:
-    radial-gradient(circle at 20% 10%, rgba(255,246,218,.10), transparent 24%),
-    radial-gradient(circle at 78% 62%, rgba(31,26,20,.12), transparent 34%),
-    repeating-linear-gradient(0deg, rgba(28,24,19,.025) 0 1px, transparent 1px 5px),
-    linear-gradient(90deg, rgba(30,25,19,.12), transparent 8%, transparent 92%, rgba(30,25,19,.12)),
+    linear-gradient(90deg, rgba(71,58,38,.025), transparent 8%, transparent 92%, rgba(71,58,38,.025)),
     var(--book-paper);
   border: 1px solid rgba(54, 47, 36, 0.19) !important;
   box-shadow:
@@ -53,7 +50,7 @@
   border: 0 !important;
   border-top: 1px solid var(--book-rule) !important;
   border-bottom: 1px solid var(--book-rule) !important;
-  background: rgba(255,248,225,.10) !important;
+  background: rgba(255,255,255,.24) !important;
   padding: 17px 4px !important;
   color: var(--book-muted);
 }
@@ -1188,3 +1185,24 @@
   .editorialIntro{grid-column:1!important;grid-row:2!important;border-left:0!important;border-top:1px solid #5b2630!important;padding:46px 24px!important}
   .bookReader{background-size:19px 25px,27px 33px,100% 100%!important}
 }
+
+/* CORRECTED ANTIQUE PAPER TEST — deliberately unmistakable parchment, not off-white. */
+.bookReader{
+  background-color:#c9aa72!important;
+  background-image:
+    radial-gradient(ellipse at 16% 8%, rgba(255,239,190,.22) 0 8%, transparent 28%),
+    radial-gradient(ellipse at 84% 26%, rgba(91,57,25,.10) 0 5%, transparent 24%),
+    radial-gradient(ellipse at 32% 72%, rgba(255,231,169,.15) 0 6%, transparent 27%),
+    radial-gradient(ellipse at 76% 88%, rgba(82,48,21,.09) 0 4%, transparent 23%),
+    linear-gradient(90deg, rgba(76,45,21,.16), transparent 4%, transparent 96%, rgba(76,45,21,.16)),
+    linear-gradient(180deg, rgba(76,45,21,.12), transparent 3%, transparent 97%, rgba(76,45,21,.13)),
+    repeating-linear-gradient(7deg, rgba(255,246,213,.035) 0 1px, rgba(91,57,25,.025) 1px 2px, transparent 2px 7px)!important;
+  background-size:auto!important;
+  color:#241b12!important;
+  border:1px solid rgba(76,45,21,.48)!important;
+  box-shadow:0 22px 55px rgba(49,34,19,.18), inset 0 0 48px rgba(91,57,25,.08)!important;
+}
+.bookReader p,.bookReader li,.bookReader blockquote,.bookReader h1,.bookReader h2,.bookReader h3,.bookReader h4,.bookReader strong,.bookReader em{color:#241b12!important}
+.editionNote{background:#b9955d!important;color:#241b12!important;border-color:rgba(76,45,21,.4)!important}
+.readerNavTab,.readerNavPanel{background:#b9955d!important;color:#241b12!important}
+.bookMetaBar{background:#bfa16c!important;color:#5b2630!important}
