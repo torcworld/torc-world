@@ -2682,3 +2682,34 @@
     left:-19px!important;
   }
 }
+
+
+/* Artifacts correction — no thick oxblood fields; thin rails only.
+   Operational Order DATA: 3mm (~11px) left from previous test position. */
+@media(min-width:761px){
+  .artifactsPage::before,
+  .artifactsPage::after{
+    width:1px!important;
+    background:#5b2630!important;
+    box-shadow:none!important;
+  }
+
+  .artifactHeader::before,
+  .artifactHeader::after{
+    background:#5b2630!important;
+    box-shadow:none!important;
+  }
+
+  /* Previous test was left:-4px. Move values 11px left => -15px. */
+  .artifactTableFour :global(.row:not(.header))>:nth-child(3){
+    position:relative!important;
+    left:-15px!important;
+    transform:none!important;
+  }
+
+  /* Heading remains where it was. */
+  .artifactTableFour :global(.header)>:nth-child(3){
+    position:relative!important;
+    left:-19px!important;
+  }
+}
