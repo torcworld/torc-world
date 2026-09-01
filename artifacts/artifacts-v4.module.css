@@ -2978,3 +2978,19 @@
     transform:none!important;
   }
 }
+
+
+/* DEFINITIVE DIRECTION FIX — move ONLY the visible Operational Order text RIGHT by ~5 mm.
+   Inner wrapper isolates the movement from all historical column positioning rules. */
+@media (min-width:761px){
+  .artifactTableFour :global(a.row:not(.header)) > .operationalOrderValue{
+    left:0!important;
+    transform:none!important;
+  }
+  .operationalOrderText{
+    display:inline-block!important;
+    position:relative!important;
+    left:19px!important;
+    transform:none!important;
+  }
+}
