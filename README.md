@@ -1,17 +1,9 @@
-# TORC homepage refinement patch — Archief(10)
+# TORC homepage gold/clickable refinement — FIXED
 
-Applies on top of the previous Archief(10) homepage CTA/visual patch.
+This replaces the previous refinement patch.
 
-Changed files only:
+The previous ZIP accidentally wrote literal `\\n` escape sequences into `app/home.module.css` instead of real line breaks. That can cause the stylesheet/build to fail. This fixed patch contains the same intended visual changes with valid CSS formatting.
+
+Replace:
 - `app/page.tsx`
 - `app/home.module.css`
-
-Changes:
-- “Two questions. Two kinds of evidence.” now sits directly above the Operational Order / Cognitive Magnitude cards.
-- The entire theory-copy half beside *The Age of False Depth* is now clickable and opens the Living Edition.
-- That former white theory field is now ochre/gold, with black type.
-- The creator panel remains gold.
-- The black “Submit your artifact” button is aligned to the right on desktop.
-- Mobile keeps full-width actions for easier tapping.
-
-No changes to navigation, Submit, Methodology, Organizations, Artifacts, Compare, or book content.
