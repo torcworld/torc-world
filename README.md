@@ -1,12 +1,8 @@
-TORC Theory — Book Ritual Trial
-
-Files:
-- app/theory/book/page.tsx              A Manifesto entrance + clickable closed book
-- app/theory/book/book.module.css       existing A styling + book-object additions
-- app/theory/book/BookNavigator.tsx     unchanged
-- app/theory/book/read/page.tsx         existing living-edition reader moved to /theory/book/read
-
-Flow:
-/theory/book → A Manifesto → click book / READ THE BOOK → /theory/book/read
-
-The book body itself is unchanged.
+TORC Theory book ritual refinement
+- Keeps A Manifesto hero unchanged.
+- Centers the closed book precisely beneath the hero.
+- Removes the generic explanatory invitation copy.
+- Places only “Click the book to read” beneath the volume.
+- Darkens/desaturates the binding and adds visible age: hairline creases, scuffs, mottling and worn edges.
+- Keeps the subtle hover lift/rotation.
+- Reader content remains unchanged.

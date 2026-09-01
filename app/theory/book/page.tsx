@@ -17,11 +17,7 @@ export default function BookLanding(){
    </div>
   </section>
   <section className={styles.bookInvitation} aria-label="The Age of False Depth book">
-   <div className={styles.invitationCopy}>
-    <span className={styles.eyebrow}>THE LIVING EDITION</span>
-    <p>The theoretical foundation of TORC, presented as a book rather than another layer of the website.</p>
-    <a href="/theory/book/read" className={styles.openBookLink}>Click the book to read →</a>
-   </div>
+   <div className={styles.bookObjectWrap}>
    <a href="/theory/book/read" className={styles.closedBook} aria-label="Open The Age of False Depth">
     <span className={styles.bookSpine}></span>
     <span className={styles.coverFrame}></span>
@@ -34,6 +30,8 @@ export default function BookLanding(){
     <span className={styles.coverTitle}>THE AGE OF<br/>FALSE DEPTH</span>
     <span className={styles.coverAuthor}>G. K. MUIJLAERT</span>
    </a>
+   <a href="/theory/book/read" className={styles.openBookLink}>CLICK THE BOOK TO READ →</a>
+   </div>
   </section>
  </main>
 }
