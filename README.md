@@ -1,11 +1,12 @@
-TORC Theory trial: centered approved aged-gold book visual.
+TORC Theory — Book Ritual Trial
 
-Changes only the centered closed-book object on app/theory/book.
-- Uses the aged gold/crowned-T book visual selected in the design trial.
-- Book remains centered and clickable to /theory/book/read.
-- Existing A Manifesto split composition is preserved.
-- Existing hover/lift interaction is preserved.
-- Existing reading content is unchanged.
+Files:
+- app/theory/book/page.tsx              A Manifesto entrance + clickable closed book
+- app/theory/book/book.module.css       existing A styling + book-object additions
+- app/theory/book/BookNavigator.tsx     unchanged
+- app/theory/book/read/page.tsx         existing living-edition reader moved to /theory/book/read
 
-New asset:
-public/images/torc-aged-gold-book.jpg
+Flow:
+/theory/book → A Manifesto → click book / READ THE BOOK → /theory/book/read
+
+The book body itself is unchanged.

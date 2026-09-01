@@ -17,12 +17,18 @@ export default function BookLanding(){
    </div>
   </section>
   <section className={styles.bookInvitation} aria-label="The Age of False Depth book">
-   <div className={styles.bookObjectWrap}>
-   <a href="/theory/book/read" className={styles.visualBookLink} aria-label="Open The Age of False Depth">
-    <img className={styles.visualBookCover} src="/images/torc-aged-gold-book.jpg" alt="The Age of False Depth — aged TORC gold binding" />
+   <a href="/theory/book/read" className={styles.closedBook} aria-label="Open The Age of False Depth">
+    <span className={styles.bookSpine}></span>
+    <span className={styles.coverFrame}></span>
+    <span className={styles.coverCrest} aria-hidden="true">
+      <span className={styles.crown}>♛</span>
+      <span className={styles.laurel}>❧</span>
+      <span className={styles.coverT}>T</span>
+    </span>
+    <span className={styles.coverTitle}>THE AGE OF<br/>FALSE DEPTH</span>
+    <span className={styles.coverAuthor}>G. K. MUIJLAERT</span>
    </a>
-   <a href="/theory/book/read" className={styles.openBookLink}>CLICK THE BOOK TO READ →</a>
-   </div>
+   <a href="/theory/book/read" className={styles.centeredReadPrompt}>CLICK THE BOOK TO READ →</a>
   </section>
  </main>
 }
