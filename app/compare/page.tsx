@@ -40,11 +40,11 @@ function profile(a:Artifact,b:Artifact){
 function verdict(a:Artifact,b:Artifact){
  const ar=rank(a.torc),br=rank(b.torc),d=(a.cms||0)-(b.cms||0);
  if(ar===br&&Math.abs(d)<.5)return `These works are unusually close. TORC finds no hierarchy in Operational Order and effectively no separation in Cognitive Magnitude.`;
- if(ar===br){const hi=d>0?a:b,lo=d>0?b:a;return `${hi.title} is the stronger realization of the same Operational Order: the kind of cognition is shared, but its demonstrated magnitude is greater (${hi.cms} vs ${lo.cms}).`;}
+ if(ar===br){const hi=d>0?a:b,lo=d>0?b:a;return `${hi.title} is the stronger realization of the same Operational Order. The kind of cognition is shared, but its demonstrated magnitude is greater.`;}
  const oh=ar>br?a:b,ol=ar>br?b:a;
- if((ar>br&&d>0)||(br>ar&&d<0))return `${oh.title} separates decisively: it requires the higher Operational Order and also demonstrates the greater Cognitive Magnitude. The hierarchy and the magnitude point in the same direction.`;
+ if((ar>br&&d>0)||(br>ar&&d<0))return `${oh.title} separates decisively. It requires the higher Operational Order and also demonstrates the greater Cognitive Magnitude. The hierarchy and magnitude point in the same direction.`;
  const mh=d>0?a:b;
- return `The result splits. ${oh.title} has the higher Operational Order; ${mh.title} has the greater Cognitive Magnitude. TORC does not collapse those facts into one score: Order determines the hierarchy, Magnitude describes the scale within it.`;
+ return `The result splits. ${oh.title} has the higher Operational Order; ${mh.title} has the greater Cognitive Magnitude. Order determines the hierarchy; Magnitude describes the scale within it.`;
 }
 function dimText(a:Artifact,b:Artifact,name:string,definition:string,av?:number,bv?:number){
  if(typeof av!=='number'||typeof bv!=='number')return `The published ${name} evidence is incomplete.`;
