@@ -676,3 +676,16 @@
 
 /* Minimal test: hero title only. */
 .hero h1{color:#c7aa76!important;}
+
+
+/* Submit refinement — compact the choice moment and remove the redundant
+   second charcoal principle card before submission. */
+@media(min-width:761px){
+  .priceGrid{
+    transform:translateY(-2mm)!important;
+    margin-bottom:-2mm!important;
+  }
+}
+.principle{
+  display:none!important;
+}
