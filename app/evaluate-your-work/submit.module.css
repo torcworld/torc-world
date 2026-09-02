@@ -635,47 +635,12 @@
   .principle{margin-bottom:calc(28px + 8mm)!important;}
 }
 
-
-/* 2026-09-02 — Submit refinement from confirmed working archive.
-   Keep the credit sentence only; remove the repeated process explanation. */
-.pricingIntro:first-of-type{
-  display:none!important;
-}
-
-/* Active package = dark gold; inactive packages = TORC light brown. */
-.priceCard:not(.selectedPriceCard){
-  background:#d9c7a6!important;
-}
-.priceCard.selectedPriceCard{
-  background:#c7aa76!important;
-  border-color:#9f8355!important;
-}
-.packageDetail{
-  background:#c7aa76!important;
-  border-color:#9f8355!important;
-}
-
-/* Keep the oxblood submission area, but make the actual form feel like TORC
-   rather than a generic white web form. */
-.form{
-  background:#d9c7a6!important;
-  border:1px solid #171714!important;
-  box-shadow:none!important;
-}
-.form input:not([type=checkbox]),
-.form select,
-.form textarea{
-  background:var(--bg)!important;
-  color:#171714!important;
-  border-color:#171714!important;
-  box-shadow:none!important;
-}
-.form textarea{
-  border:1px solid #171714!important;
-}
-
-/* 2026-09-02 — Submit hero title only: TORC dark gold. */
-.hero h1{
-  color:#c7aa76!important;
-}
-
+/* 2026-09-02 — Submit refinement, direct patch from confirmed Vercel-working archive. */
+.pricingIntro:first-of-type{display:none!important;}
+.priceCard:not(.selectedPriceCard){background:#d9c7a6!important;}
+.priceCard.selectedPriceCard{background:#c7aa76!important;border-color:#9f8355!important;}
+.packageDetail{background:#c7aa76!important;border-color:#9f8355!important;}
+.form{background:#d9c7a6!important;border:1px solid #171714!important;box-shadow:none!important;}
+.form input:not([type=checkbox]),.form select,.form textarea{background:var(--bg)!important;color:#171714!important;border-color:#171714!important;box-shadow:none!important;}
+.form textarea{border:1px solid #171714!important;}
+.hero h1{color:#c7aa76!important;}
