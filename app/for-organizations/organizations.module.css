@@ -1796,3 +1796,22 @@
 @media(min-width:761px){
   .page::before{content:none!important;display:none!important;border:0!important;width:0!important;height:0!important;}
 }
+
+/* 2026-09-02 — remove the remaining short oxblood side-rail segments in the
+   blank gap above the Organizations hero, while keeping the rails below it. */
+@media(min-width:761px){
+  .page::before{
+    content:""!important;
+    display:block!important;
+    position:absolute!important;
+    left:-2px!important;
+    right:-2px!important;
+    top:0!important;
+    height:calc(58px - 11mm)!important;
+    background:var(--paper)!important;
+    border:0!important;
+    width:auto!important;
+    pointer-events:none!important;
+    z-index:3!important;
+  }
+}

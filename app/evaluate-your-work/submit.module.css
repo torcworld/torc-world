@@ -606,3 +606,25 @@
 @media(min-width:761px){
   .page{padding-top:calc(62px - 1mm)!important;}
 }
+
+/* 2026-09-02 — bottom finish: remove the side rails below the final oxblood
+   submit panel and reduce the blank site-background field beneath it by 1cm. */
+@media(min-width:761px){
+  .page{
+    padding-bottom:calc(110px - 1cm)!important;
+    border-left:0!important;
+    border-right:0!important;
+  }
+  .page::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:calc(110px - 1cm);
+    border-left:1px solid rgba(91,38,48,.55);
+    border-right:1px solid rgba(91,38,48,.55);
+    pointer-events:none;
+    z-index:4;
+  }
+}
