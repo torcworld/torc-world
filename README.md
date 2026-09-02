@@ -1,12 +1,5 @@
-TORC Theory — Book Ritual Trial
+# TORC Theory Parchment Reader Trial
 
-Files:
-- app/theory/book/page.tsx              A Manifesto entrance + clickable closed book
-- app/theory/book/book.module.css       existing A styling + book-object additions
-- app/theory/book/BookNavigator.tsx     unchanged
-- app/theory/book/read/page.tsx         existing living-edition reader moved to /theory/book/read
+Copy the `app` folder into the root of the current TORC website project and merge/replace the matching files.
 
-Flow:
-/theory/book → A Manifesto → click book / READ THE BOOK → /theory/book/read
-
-The book body itself is unchanged.
+This trial keeps the Theory entrance and smooth gold closed-book ritual, while the open reader uses a charcoal surround and visibly aged yellow parchment treatment.
