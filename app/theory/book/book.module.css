@@ -1577,30 +1577,19 @@
 }
 
 
-/* Micro-alignment pass.
-   Keep the 4mm light-brown consistency band.
-   THEORY stays essentially anchored; only the main title rises 5mm.
-   Living Edition shifts 5mm up + 3mm right, with CTA 4mm below copy. */
+/* Micro-alignment only — applied to GitHub-confirmed working archive. */
 @media(min-width:761px){
-  .bookLanding .manifest{
-    border-top:4mm solid #d9c7a6!important;
-  }
-
   .bookLanding .manifestTitle .eyebrow{
     transform:translateY(1mm)!important;
   }
-  .bookLanding .manifestTitle h1{
-    transform:translateY(-5mm)!important;
-  }
+  .bookLanding .manifestTitle h1,
   .bookLanding .manifestTitle p{
     transform:translateY(-5mm)!important;
   }
-
   .bookLanding .invitationCopy{
     transform:translate(11mm,-5mm)!important;
     margin-top:-8px!important;
   }
-
   .bookLanding .invitationCopy .readCta{
     display:table!important;
     margin:4mm auto 0!important;
