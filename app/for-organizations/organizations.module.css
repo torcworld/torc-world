@@ -1784,3 +1784,9 @@
 @media(min-width:761px){
   .newHero{padding-top:calc(84px - 7mm)!important;}
 }
+
+/* 2026-09-02 — remove the tiny oxblood rail extensions above the Organizations
+   field so the upper gray rule stands completely free. */
+@media(min-width:761px){
+  .page::before{display:none!important;}
+}

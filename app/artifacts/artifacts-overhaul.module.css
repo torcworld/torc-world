@@ -326,3 +326,11 @@
   box-shadow:0 5px 0 #171714!important;
 }
 .artifactsPage:before,.artifactsPage:after{bottom:0!important;}
+
+/* 2026-09-02 — expose 5mm of the site's normal broken-white ground below the
+   Artifacts closure rule. Keep the oxblood bottom rule and stop the side rails there. */
+.artifactsPage{
+  margin-bottom:5mm!important;
+  box-shadow:none!important;
+}
+.artifactsPage:before,.artifactsPage:after{bottom:0!important;}

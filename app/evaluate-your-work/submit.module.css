@@ -595,3 +595,8 @@
 @media(min-width:761px){
   .pricing{margin-top:-1mm!important;}
 }
+
+/* 2026-09-02 — move the complete Submit composition 1mm downward from its current position. */
+@media(min-width:761px){
+  .page{padding-top:calc(62px - 2mm)!important;}
+}
