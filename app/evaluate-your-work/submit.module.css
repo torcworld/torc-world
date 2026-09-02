@@ -581,13 +581,6 @@
 /* 2026-09-02 — Submit Your Artifact: set the charcoal hero to 3mm upward,
    independently of the following process/pricing block. Desktop only. */
 @media(min-width:761px){
-  .hero{transform:translateY(-3mm)!important;}
-}
-
-
-
-/* 2026-09-02 12:55 — fresh deploy refinement.
-   Submit Your Artifact: move only the charcoal hero another 3mm upward from the current -3mm state. */
-@media(min-width:761px){
   .hero{transform:translateY(-6mm)!important;}
 }
+

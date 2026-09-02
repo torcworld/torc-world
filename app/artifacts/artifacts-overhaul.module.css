@@ -247,10 +247,10 @@
    pull the Compare Artifacts charcoal block upward by 1cm. */
 @media(min-width:761px){
   .hero{
-    min-height:calc(330px - 9mm)!important;
-    height:calc(330px - 9mm)!important;
-    padding-top:calc(62px - 4.5mm)!important;
-    padding-bottom:calc(62px - 4.5mm)!important;
+    min-height:calc(330px - 11mm)!important;
+    height:calc(330px - 11mm)!important;
+    padding-top:calc(62px - 5.5mm)!important;
+    padding-bottom:calc(62px - 5.5mm)!important;
   }
   .tableHeader > :nth-child(3){
     transform:translateX(-15mm)!important;
@@ -298,13 +298,3 @@
   .openEvaluation{transform:translateX(-3mm)!important;}
 }
 
-
-
-/* 2026-09-02 12:55 — fresh deploy refinement.
-   Artifacts: reduce only the top charcoal hero total height by another 2mm. */
-@media(min-width:761px){
-  .hero{
-    min-height:calc(330px - 11mm)!important;
-    height:calc(330px - 11mm)!important;
-  }
-}

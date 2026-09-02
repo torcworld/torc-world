@@ -1791,7 +1791,7 @@
 /* CORRECTED DEPLOY OVERRIDE — the live first Organizations field is .newHero, not .hero.
    Remove 3mm from the TOP of that charcoal field. */
 @media(min-width:761px){
-  .newHero{padding-top:calc(84px - 3mm)!important;}
+  .newHero{padding-top:calc(84px - 5mm)!important;padding-bottom:calc(82px - 1mm)!important;}
 }
 
 /* 2026-09-02 — Organizations precision refinement.
@@ -1816,13 +1816,3 @@
   }
 }
 
-
-
-/* 2026-09-02 12:55 — fresh deploy refinement.
-   Organizations first charcoal card only: 2mm less gray at top, 1mm less gray at bottom. */
-@media(min-width:761px){
-  .newHero{
-    padding-top:calc(84px - 5mm)!important;
-    padding-bottom:calc(82px - 1mm)!important;
-  }
-}
