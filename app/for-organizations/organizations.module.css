@@ -1741,14 +1741,17 @@
   }
 }
 
-/* 2026-09-02 — Organizations arrival field: 5mm less vertical depth at the top,
-   while preserving the oxblood top rule; lift the whole Organizations composition
-   a further 3mm. Desktop only. */
+/* 2026-09-02 — Organizations hero refinement, rebuilt on the last deployable patch.
+   Keep the red top rule. Reduce the charcoal hero's total vertical depth by 5mm
+   while keeping its contents proportionally centered (2.5mm from top + bottom),
+   and lift the full Organizations composition a further 3mm. Desktop only. */
 @media(min-width:761px){
   .page{
     padding-top:calc(58px - 6mm)!important;
   }
   .hero{
-    padding-top:calc(58px - 5mm)!important;
+    padding-top:calc(58px - 2.5mm)!important;
+    padding-bottom:calc(64px - 2.5mm)!important;
+    border-top:4px solid #5b2630!important;
   }
 }
