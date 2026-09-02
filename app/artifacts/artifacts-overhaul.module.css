@@ -262,20 +262,3 @@
     margin-top:calc(54px - 1cm)!important;
   }
 }
-
-/* 2026-09-02 — refinement applied directly to the user's proven working ZIP.
-   Pull the entire corpus section (from THE CORPUS onward) 5mm upward.
-   Move only the Operational Order column heading 1mm further left.
-   Cognitive Magnitude remains exactly where it was. */
-@media(min-width:761px){
-  .corpus{
-    transform:translateY(-5mm)!important;
-    margin-bottom:-5mm!important;
-  }
-  .tableHeader > :nth-child(3){
-    transform:translateX(-16mm)!important;
-  }
-  .tableHeader > :nth-child(4){
-    transform:translateX(-10mm)!important;
-  }
-}

@@ -1756,17 +1756,14 @@
   }
 }
 
-/* 2026-09-02 — refinement applied directly to the user's proven working ZIP.
-   Remove an additional 3mm from the TOP of the charcoal Organizations hero,
-   preserve the red top rule, and lift the whole Organizations composition
-   another 3mm. Desktop only. */
+/* 2026-09-02 — Organizations micro-refinement.
+   Lift the full composition 2mm more. Remove 2mm only from the TOP of the first hero field;
+   preserve the existing red top rule and the current bottom depth. */
 @media(min-width:761px){
   .page{
-    padding-top:calc(58px - 9mm)!important;
+    padding-top:calc(58px - 8mm)!important;
   }
   .hero{
-    padding-top:calc(58px - 5.5mm)!important;
-    padding-bottom:calc(64px - 2.5mm)!important;
-    border-top:4px solid #5b2630!important;
+    padding-top:calc(58px - 4.5mm)!important;
   }
 }

@@ -915,3 +915,16 @@
     margin-top:2cm;
   }
 }
+
+/* 2026-09-02 — Separate the Living Edition/theory band from the final two action cards.
+   Keep the book band itself unchanged; add a clear institutional pause below it. */
+@media(min-width:721px){
+  .home .theoryCompact{
+    margin-bottom:2cm!important;
+  }
+}
+@media(max-width:720px){
+  .home .theoryCompact{
+    margin-bottom:1.2cm!important;
+  }
+}

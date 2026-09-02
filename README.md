@@ -1,8 +1,10 @@
-TORC website patch — Organizations hero retry.
+TORC website patch — homepage + Organizations refinement
 
-This ZIP intentionally uses the exact same top-level/package pattern as the last working Artifacts + Organizations patch: app/ + README.md, including the same Artifacts files.
+Homepage:
+- Adds 2cm breathing room between the Theory/Living Edition book band and the final two cards.
+- Does not alter the book band itself.
 
-Changes on Organizations only:
-- keep the red top rule;
-- make the first charcoal hero 5mm shorter in total (2.5mm top + 2.5mm bottom);
-- move the Organizations composition 3mm further upward.
+Organizations:
+- Entire top composition 2mm higher.
+- Removes another 2mm from the TOP of the first large hero field only.
+- Existing red top rule remains.
