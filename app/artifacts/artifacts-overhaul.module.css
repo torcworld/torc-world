@@ -292,13 +292,19 @@
   .cmsValue{transform:translateX(2mm)!important;}
 }
 
-/* 2026-09-02 — RETRY from last visibly working base.
-   Reduce the Artifacts charcoal arrival field by 2mm total height. */
+/* 2026-09-02 — Artifacts: move every Open evaluation call-to-action a further
+   1mm left from the current position, without moving the CMS column. */
+@media(min-width:761px){
+  .openEvaluation{transform:translateX(-3mm)!important;}
+}
+
+
+
+/* 2026-09-02 — rebased from the last visually working patch.
+   Reduce only the top Artifacts charcoal hero total height by another 2mm. */
 @media(min-width:761px){
   .hero{
     min-height:calc(330px - 11mm)!important;
     height:calc(330px - 11mm)!important;
-    padding-top:calc(62px - 5.5mm)!important;
-    padding-bottom:calc(62px - 5.5mm)!important;
   }
 }
