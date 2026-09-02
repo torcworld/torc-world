@@ -1,8 +1,6 @@
 TORC Artifacts patch
 
-- Charcoal Artifacts hero: another 3mm less vertical height (7mm total from the earlier baseline).
-- Operational Order column heading: 4mm further left.
-- Cognitive Magnitude heading: unchanged from the previous version.
-- Search/filter field text and placeholders: black again.
-
-Copy the app folder over the existing project app folder.
+- Charcoal Artifacts hero: 4 mm shorter in total, balanced 2 mm top / 2 mm bottom.
+- Hero text remains centered in the shortened field.
+- "Open evaluation →" in artifact rows: 2 mm left toward the CMS score.
+- All previous Artifacts refinements remain intact.

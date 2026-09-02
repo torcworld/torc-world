@@ -226,3 +226,17 @@
     transform:translateX(-10mm)!important;
   }
 }
+
+/* 2026-09-02 — Artifacts: make the charcoal hero 4mm shorter in total,
+   trimming evenly from top and bottom while keeping its contents centered.
+   Nudge the Open evaluation call-to-action 2mm left toward the CMS score. */
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 4mm)!important;
+    padding-top:calc(62px - 2mm)!important;
+    padding-bottom:calc(62px - 2mm)!important;
+  }
+  .openEvaluation{
+    transform:translateX(-2mm)!important;
+  }
+}
