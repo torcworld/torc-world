@@ -119,7 +119,7 @@ export default function Artifacts(){
  </section>
 
  <section className={styles.compareSection}>
-   <div className={styles.compareIntro}><div className={styles.kicker}>COMPARE ARTIFACTS</div><h2>See the difference directly.</h2><p>Place two evaluated works side by side and compare their TORC profiles.</p></div>
+   <div className={styles.compareIntro}><div className={styles.kicker}>COMPARE ARTIFACTS</div><p>Place two evaluated works side by side and compare their TORC profiles.</p></div>
    <div className={styles.inlineCompareControls}><InlineArtifactPicker label="Artifact A" value={compareLeft} onChange={setCompareLeft}/><button className={styles.inlineSwap} type="button" onClick={()=>{setCompareLeft(compareRight);setCompareRight(compareLeft)}} aria-label="Swap artifacts">⇄</button><InlineArtifactPicker label="Artifact B" value={compareRight} onChange={setCompareRight}/></div>
    {compareLeft&&compareRight&&<div className={styles.inlineCompareAction}><Link className="button" href={`/compare?a=${compareLeft}&b=${compareRight}`}>Compare selected artifacts →</Link></div>}
  </section>

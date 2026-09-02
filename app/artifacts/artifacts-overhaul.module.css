@@ -271,3 +271,37 @@
     margin-top:-1cm!important;
   }
 }
+
+/* 2026-09-02 — Artifacts latest micro-refinement. Desktop only.
+   Shorten the top charcoal hero by 3mm total, shorten Compare by 3mm total,
+   lift Compare 1mm, and strengthen the Compare hierarchy/materials. */
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 12mm)!important;
+    height:calc(330px - 12mm)!important;
+    padding-top:calc(62px - 6mm)!important;
+    padding-bottom:calc(62px - 6mm)!important;
+  }
+  .compareSection{
+    margin-top:calc(54px - 11mm)!important;
+    padding-top:calc(42px - 1.5mm)!important;
+    padding-bottom:calc(42px - 1.5mm)!important;
+  }
+}
+.inlineSelected{background:var(--gold)!important;}
+.compareIntro{margin-bottom:24px!important;}
+.compareIntro .kicker{
+  color:#5b2630!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:clamp(30px,3.8vw,48px)!important;
+  font-weight:500!important;
+  line-height:1!important;
+  letter-spacing:-.025em!important;
+  text-transform:none!important;
+}
+.compareIntro p{
+  margin-top:8px!important;
+  color:#d7cfc4!important;
+  font-size:17px!important;
+  line-height:1.45!important;
+}

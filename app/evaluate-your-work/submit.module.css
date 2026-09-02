@@ -584,3 +584,8 @@
   .hero{transform:translateY(-5mm)!important;}
 }
 
+
+/* 2026-09-02 — move the complete Submit Your Artifact composition 1mm upward. */
+@media(min-width:761px){
+  .page{padding-top:calc(62px - 5mm)!important;}
+}
