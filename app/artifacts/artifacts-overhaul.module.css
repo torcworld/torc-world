@@ -262,3 +262,18 @@
     margin-top:calc(54px - 1cm)!important;
   }
 }
+
+/* 2026-09-02 — Artifacts: lift the corpus and everything following it by 5mm,
+   beginning at THE CORPUS. Move only the Operational Order table heading
+   another 1mm left; Cognitive Magnitude remains fixed. */
+@media(min-width:761px){
+  .corpus{
+    margin-top:-5mm!important;
+  }
+  .tableHeader > :nth-child(3){
+    transform:translateX(-16mm)!important;
+  }
+  .tableHeader > :nth-child(4){
+    transform:translateX(-10mm)!important;
+  }
+}
