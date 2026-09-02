@@ -1286,7 +1286,7 @@
 /* Batch 84 — Executive scan hierarchy / final Organizations polish */
 
 .newHero{
-  padding-top:calc(84px - 2mm)!important;
+  padding-top:calc(84px - 5mm)!important;
   padding-bottom:calc(82px - 1mm)!important;
   gap:86px!important;
 }
@@ -1736,8 +1736,8 @@
     padding-top:calc(58px - 3mm)!important;
   }
   .page::before{
-    top:calc(-18px + 4mm + 1px)!important;
-    height:calc(18px - 4mm - 1px)!important;
+    top:calc(-18px + 4mm + 2px)!important;
+    height:calc(18px - 4mm - 2px)!important;
   }
 }
 

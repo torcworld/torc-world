@@ -5,7 +5,7 @@
  --ground:#e8e0d4;
  --surface:#eee6da;
  --surface-strong:#ddceb3;
- max-width:1180px;margin:0 auto;padding:62px 28px 110px;color:#171714
+ max-width:1180px;margin:0 auto;padding:calc(62px - 4mm) 28px 110px;color:#171714
 }
 .eyebrow,.submitIntro>span{
  font:700 10px/1.2 Arial,sans-serif;letter-spacing:.18em;color:var(--accent)
