@@ -1283,3 +1283,53 @@
     transform:translateY(-5mm)!important;
   }
 }
+
+
+/* Restore approved Theory invitation composition: copy left, closed book right. */
+@media(min-width:761px){
+  .bookLanding .bookInvitation{
+    min-height:590px!important;
+    padding:54px clamp(28px,6vw,78px) 64px!important;
+    display:grid!important;
+    grid-template-columns:minmax(250px,.78fr) minmax(390px,1.22fr)!important;
+    gap:clamp(44px,6vw,82px)!important;
+    align-items:center!important;
+    justify-items:stretch!important;
+  }
+  .bookLanding .invitationCopy{
+    width:auto!important;
+    max-width:360px!important;
+    margin:0!important;
+    text-align:left!important;
+    justify-self:end!important;
+    transform:translateX(1cm)!important;
+  }
+  .bookLanding .closedBook{
+    justify-self:start!important;
+    width:min(410px,100%)!important;
+    transform:translateX(calc(2.5vw + 1cm))!important;
+  }
+  .bookLanding .closedBook:hover,
+  .bookLanding .closedBook:focus-visible{
+    transform:translateX(calc(2.5vw + 1cm)) translateY(-5px) rotate(-.35deg)!important;
+  }
+  .bookLanding .centeredReadPrompt{
+    grid-column:2!important;
+    justify-self:start!important;
+    margin-left:2.5vw!important;
+    margin-top:-12px!important;
+    transform:translateX(1cm)!important;
+  }
+}
+
+/* Trial: replace only the charcoal reader surround with TORC dark gold.
+   Keep the approved parchment reading surface unchanged. */
+.readingPage{
+  background:#c7aa76!important;
+}
+.bookPage{
+  background:#c7aa76!important;
+}
+.bookPage::after{
+  background:#c7aa76!important;
+}
