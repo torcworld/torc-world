@@ -1756,8 +1756,9 @@
   }
 }
 
-/* 2026-09-02 — Organizations: trim 3mm from the TOP of the charcoal hero only,
-   keep the red top rule, and lift the full Organizations composition another 3mm. */
+/* 2026-09-02 — literal follow-up on the last working ZIP.
+   Organizations: remove 3mm more from the TOP of the charcoal hero only,
+   and lift the whole Organizations composition another 3mm. */
 @media(min-width:761px){
   .page{
     padding-top:calc(58px - 9mm)!important;

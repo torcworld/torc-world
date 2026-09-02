@@ -1,9 +1,8 @@
-TORC website patch
+TORC website patch — Organizations hero retry.
 
-Changes in this patch:
-- Organizations: 3mm removed from the top of the first charcoal hero, while retaining the red top rule.
-- Organizations: the full top composition is lifted another 3mm.
-- Artifacts: from THE CORPUS onward, the content is lifted 5mm.
-- Artifacts: Operational Order column heading moves another 1mm left; Cognitive Magnitude stays fixed.
+This ZIP intentionally uses the exact same top-level/package pattern as the last working Artifacts + Organizations patch: app/ + README.md, including the same Artifacts files.
 
-Package format: app + README.md
+Changes on Organizations only:
+- keep the red top rule;
+- make the first charcoal hero 5mm shorter in total (2.5mm top + 2.5mm bottom);
+- move the Organizations composition 3mm further upward.

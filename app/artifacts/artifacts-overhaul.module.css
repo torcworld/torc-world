@@ -263,12 +263,13 @@
   }
 }
 
-/* 2026-09-02 — Artifacts: lift the corpus and everything following it by 5mm,
-   beginning at THE CORPUS. Move only the Operational Order table heading
-   another 1mm left; Cognitive Magnitude remains fixed. */
+/* 2026-09-02 — literal follow-up on the last working ZIP.
+   Pull THE CORPUS and everything after it 5mm upward by reducing only the
+   spacing immediately before the corpus. Move only Operational Order 1mm
+   farther left; leave Cognitive Magnitude untouched. */
 @media(min-width:761px){
-  .corpus{
-    margin-top:-5mm!important;
+  .orderStrip{
+    margin-bottom:calc(54px - 5mm)!important;
   }
   .tableHeader > :nth-child(3){
     transform:translateX(-16mm)!important;
