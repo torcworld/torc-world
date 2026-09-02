@@ -1363,26 +1363,33 @@
   }
 }
 
-/* 2026-09-02 — Theory entrance + reader refinement.
-   Trim the Manifesto split-field by 1cm from the bottom so the closed book
-   begins to enter the first viewport, without moving either background sideways.
-   Lighten the aged reader/Contents parchment by ~10% toward a quieter beige. */
+
+/* 2026-09-02 — corrected vertical trim.
+   The previous min-height change was ineffective because the Manifesto content
+   itself was taller than the minimum. This removes exactly 1cm from the BOTTOM
+   padding of both split-field columns, so the visible grey + tan block genuinely
+   becomes 1cm shorter without moving its top edge or horizontal backgrounds. */
 @media(min-width:761px){
-  .bookLanding .manifestHero{
-    min-height:calc(500px - 1cm)!important;
+  .bookLanding .manifestTitle{
+    padding-bottom:calc(58px - 1cm)!important;
+  }
+  .bookLanding .manifestThesis{
+    padding-bottom:calc(64px - 1cm)!important;
   }
 }
 
+/* Reader parchment + Contents: another ~10% lighter, more beige/grey, while
+   retaining the existing stains, folds and aged edge contrast. */
 .readingPage .bookReader,
 .readingPage .readerNavTab,
 .readingPage .readerNavPanel{
   background:
-    radial-gradient(ellipse at 8% 7%, rgba(78,48,19,.145) 0 1.1%, transparent 5.5%),
-    radial-gradient(ellipse at 91% 15%, rgba(83,48,17,.125) 0 1.2%, transparent 6%),
-    radial-gradient(ellipse at 15% 89%, rgba(66,43,20,.105) 0 1%, transparent 5%),
-    radial-gradient(ellipse at 83% 83%, rgba(84,52,21,.105) 0 1.3%, transparent 6%),
-    linear-gradient(103deg, transparent 0 27%, rgba(70,48,25,.10) 27.15%, rgba(255,250,232,.19) 27.35%, transparent 27.6% 100%),
-    linear-gradient(76deg, transparent 0 69%, rgba(66,43,22,.09) 69.15%, rgba(255,250,232,.17) 69.35%, transparent 69.6% 100%),
-    linear-gradient(7deg, transparent 0 43%, rgba(73,46,20,.07) 43.15%, transparent 43.45% 100%),
-    radial-gradient(ellipse at center, #ead8ae 0%, #e2cc9f 62%, #cfad7e 100%)!important;
+    radial-gradient(ellipse at 8% 7%, rgba(78,48,19,.13) 0 1.1%, transparent 5.5%),
+    radial-gradient(ellipse at 91% 15%, rgba(83,48,17,.11) 0 1.2%, transparent 6%),
+    radial-gradient(ellipse at 15% 89%, rgba(66,43,20,.095) 0 1%, transparent 5%),
+    radial-gradient(ellipse at 83% 83%, rgba(84,52,21,.095) 0 1.3%, transparent 6%),
+    linear-gradient(103deg, transparent 0 27%, rgba(70,48,25,.09) 27.15%, rgba(255,252,239,.20) 27.35%, transparent 27.6% 100%),
+    linear-gradient(76deg, transparent 0 69%, rgba(66,43,22,.08) 69.15%, rgba(255,252,239,.18) 69.35%, transparent 69.6% 100%),
+    linear-gradient(7deg, transparent 0 43%, rgba(73,46,20,.065) 43.15%, transparent 43.45% 100%),
+    radial-gradient(ellipse at center, #eee0bd 0%, #e8d7b1 62%, #d8bd92 100%)!important;
 }
