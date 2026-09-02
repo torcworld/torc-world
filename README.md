@@ -1,6 +1,6 @@
-TORC Theory patch
+TORC Artifacts patch
 
-Change:
-- On desktop, only the text/content inside the grey Manifesto panel is moved 0.75 cm upward.
-- Grey and tan backgrounds are not moved or resized.
-- All prior Theory book, parchment and Contents refinements are retained.
+Changes:
+- Grey Artifacts block and everything below moved 3mm upward on desktop.
+- Search/filter field text changed from black to TORC red.
+- Artifact list pagination changed from 20 to 15 items per page.

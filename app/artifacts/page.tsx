@@ -44,7 +44,7 @@ export default function Artifacts(){
  const [compareLeft,setCompareLeft]=useState('');
  const [compareRight,setCompareRight]=useState('');
  const corpusRef=useRef<HTMLElement>(null);
- const pageSize=20;
+ const pageSize=15;
  useEffect(()=>setSeed(Math.floor(Math.random()*1000000000)),[]);
  const torcs=useMemo(()=>['All',...Array.from(new Set(artifacts.filter(a=>a.status==='evaluated'&&a.torc).map(a=>String(a.torc)))).sort((a,b)=>rank(a)-rank(b))],[ ]);
  const rows=useMemo(()=>{
