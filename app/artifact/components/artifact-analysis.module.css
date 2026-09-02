@@ -440,3 +440,49 @@
 .bottomCta>div>span{
   color:#c7aa76!important;
 }
+
+
+/* 2026-09-02 — final analysis-page refinement requested after grey footer trial. */
+
+/* Close the gold Six-Dimensional Model with one continuous black rule across
+   the complete central analysis field, directly beneath Generalization Reach. */
+.cmsSection{
+  border-bottom:1px solid var(--ink,#171714)!important;
+}
+.cmsSection .dimension:last-child{
+  border-bottom:0!important;
+}
+
+/* The page now ends exactly at the charcoal Development field: no pale tail,
+   no oxblood closing rule beneath it. */
+.page{
+  padding-bottom:0!important;
+}
+.page::after{
+  content:none!important;
+  display:none!important;
+  height:0!important;
+  margin:0!important;
+  border:0!important;
+}
+.bottomCta{
+  margin-bottom:0!important;
+}
+
+/* Footer hierarchy: light development label, gold question, light supporting
+   copy, and a gold action button. */
+.bottomCta>div>span{
+  color:#d9c7a6!important;
+}
+.bottomCta h2{
+  color:#c7aa76!important;
+}
+.bottomCta p{
+  color:#d9c7a6!important;
+}
+.submitButton,
+.submitButton:hover{
+  background:#c7aa76!important;
+  border-color:#c7aa76!important;
+  color:#f3eee6!important;
+}
