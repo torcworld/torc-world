@@ -1423,3 +1423,45 @@
     z-index:2!important;
   }
 }
+
+
+/* Refine the split-field trial:
+   only the RIGHT charcoal column continues 10cm below the upper split.
+   The lower LEFT field remains the existing TORC light brown.
+   Keep the full lower edge of the book visible. */
+@media(min-width:761px){
+  .bookLanding .manifestThesis::after{
+    left:0!important;
+    right:0!important;
+    top:100%!important;
+    height:10cm!important;
+    background:#353432!important;
+  }
+
+  /* The following section sits above the extension. Its left half stays light brown;
+     the right half is transparent so the charcoal continuation reads through. */
+  .bookLanding .bookInvitation{
+    background:linear-gradient(
+      to right,
+      #d9c7a6 0%,
+      #d9c7a6 50%,
+      transparent 50%,
+      transparent 100%
+    )!important;
+    overflow:visible!important;
+  }
+
+  .bookLanding .manifestThesis{
+    overflow:visible!important;
+  }
+  .bookLanding .manifestThesis .closedBook{
+    width:min(430px,94%)!important;
+    transform:translateY(-10px)!important;
+    margin-bottom:34px!important;
+    overflow:visible!important;
+  }
+  .bookLanding .manifestThesis .closedBook:hover,
+  .bookLanding .manifestThesis .closedBook:focus-visible{
+    transform:translateY(-15px) rotate(-.35deg)!important;
+  }
+}
