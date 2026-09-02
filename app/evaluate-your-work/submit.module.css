@@ -628,3 +628,9 @@
     z-index:4;
   }
 }
+
+/* 2026-09-02 — add 8mm breathing room between the charcoal development-principle
+   panel and the final oxblood submission panel. */
+@media(min-width:761px){
+  .principle{margin-bottom:calc(28px + 8mm)!important;}
+}

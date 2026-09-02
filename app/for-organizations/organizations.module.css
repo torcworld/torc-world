@@ -1815,3 +1815,9 @@
     z-index:3!important;
   }
 }
+
+/* 2026-09-02 — trim the oxblood spacer flush to the Organizations content width;
+   remove the 1–2px side overhang while preserving the red strip itself. */
+@media(min-width:761px){
+  .page::before{left:0!important;right:0!important;}
+}
