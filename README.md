@@ -1,10 +1,6 @@
-TORC website patch — homepage + Organizations refinement
+TORC website refinement patch
 
-Homepage:
-- Adds 2cm breathing room between the Theory/Living Edition book band and the final two cards.
-- Does not alter the book band itself.
-
-Organizations:
-- Entire top composition 2mm higher.
-- Removes another 2mm from the TOP of the first large hero field only.
-- Existing red top rule remains.
+Changes:
+- Homepage: full composition 2cm higher in total, with 2cm site-background breathing room beneath the final two cards; top TORC hero starts higher.
+- Artifacts: from THE CORPUS downward, the corpus/list/remaining sections move 1cm upward.
+- Organizations: another 3mm removed from the top of the first charcoal field; full composition another 1mm upward; red top rule preserved.

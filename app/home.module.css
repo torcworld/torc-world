@@ -928,3 +928,20 @@
     margin-bottom:1.2cm!important;
   }
 }
+
+/* 2026-09-02 — Homepage vertical refinement.
+   Lift the complete homepage composition by 2cm relative to the current version
+   while preserving a clean 2cm field of site background below the final cards.
+   The top hero participates in that lift; its existing 2cm top breathing room is
+   reduced by 1cm so the charcoal TORC field begins visibly higher. Desktop only. */
+@media(min-width:721px){
+  .home{
+    position:relative;
+    top:-1cm;
+    margin-bottom:-1cm;
+    padding-bottom:2cm;
+  }
+  .home .hero{
+    margin-top:1cm!important;
+  }
+}

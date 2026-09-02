@@ -1767,3 +1767,15 @@
     padding-top:calc(58px - 4.5mm)!important;
   }
 }
+
+/* 2026-09-02 — Organizations follow-up refinement.
+   Remove another 3mm from only the TOP of the first charcoal field and lift the
+   complete Organizations composition another 1mm. Keep the red top rule intact. */
+@media(min-width:761px){
+  .page{
+    padding-top:calc(58px - 9mm)!important;
+  }
+  .hero{
+    padding-top:calc(58px - 7.5mm)!important;
+  }
+}

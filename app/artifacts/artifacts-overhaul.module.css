@@ -262,3 +262,12 @@
     margin-top:calc(54px - 1cm)!important;
   }
 }
+
+/* 2026-09-02 — Corpus lift.
+   Pull the corpus heading, ledger and every following Artifacts section 1cm upward
+   without moving the search/filter instrument above it. */
+@media(min-width:761px){
+  .corpus{
+    margin-top:-1cm!important;
+  }
+}
