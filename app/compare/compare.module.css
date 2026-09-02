@@ -28,7 +28,9 @@
     padding-bottom:24px!important;
   }
 }
-\n\n/* Compare refinement: tighter hierarchy and cleaner boundaries. */
+
+
+/* Compare refinement: tighter hierarchy and cleaner boundaries. */
 @media(min-width:801px){
   .hero{
     margin-left:0!important;
