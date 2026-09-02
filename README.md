@@ -1,10 +1,8 @@
-TORC website refinement patch — 2026-09-02
+TORC website patch — Organizations hero retry.
 
-Changes:
-- Artifacts: Corpus section 3mm down from previous position.
-- Artifacts: all Cognitive Magnitude values 2mm right.
-- Home: 1cm less white space below final cards.
-- Submit Your Artifact: charcoal hero 2mm up, independently of following card.
-- Organizations: another 3mm removed from top of first charcoal hero.
+This ZIP intentionally uses the exact same top-level/package pattern as the last working Artifacts + Organizations patch: app/ + README.md, including the same Artifacts files.
 
-Patch layout: app + README.md (with preserved __MACOSX structure where present).
+Changes on Organizations only:
+- keep the red top rule;
+- make the first charcoal hero 5mm shorter in total (2.5mm top + 2.5mm bottom);
+- move the Organizations composition 3mm further upward.

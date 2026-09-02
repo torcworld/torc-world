@@ -1786,3 +1786,10 @@
     padding-top:calc(58px - 10.5mm)!important;
   }
 }
+
+
+/* CORRECTED DEPLOY OVERRIDE — the live first Organizations field is .newHero, not .hero.
+   Remove 3mm from the TOP of that charcoal field. */
+@media(min-width:761px){
+  .newHero{padding-top:calc(84px - 3mm)!important;}
+}

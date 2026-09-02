@@ -571,3 +571,9 @@
     transform:translateY(-2mm)!important;
   }
 }
+
+
+/* CORRECTED DEPLOY OVERRIDE — Submit hero only, 2mm upward. */
+@media(min-width:761px){
+  .hero{transform:translateY(-2mm)!important;}
+}

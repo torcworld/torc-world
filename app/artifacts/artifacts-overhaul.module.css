@@ -282,3 +282,12 @@
     transform:translateX(2mm)!important;
   }
 }
+
+
+/* CORRECTED DEPLOY OVERRIDE — actual Artifacts selectors.
+   Corpus is 7mm above its original position (= 3mm down from the prior 10mm lift).
+   Move only the Cognitive Magnitude row values 2mm right. */
+@media(min-width:761px){
+  .corpus{margin-top:-7mm!important;}
+  .cmsValue{transform:translateX(2mm)!important;}
+}
