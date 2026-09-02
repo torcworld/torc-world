@@ -648,3 +648,36 @@
   background:#c7aa76!important;
   border-color:#9f8355!important;
 }
+
+/* 2026-09-02 — pricing intro: remove the repeated process sentence and keep only
+   the commercially useful credit rule. CSS-only so this patch stays compatible
+   with the confirmed working archive. */
+.pricingIntro{
+  font-size:0!important;
+}
+.pricingIntro::after{
+  content:"Each stage stands on its own. Continue within 30 days and the previous stage is fully credited toward the next.";
+  display:block;
+  color:#5a534a;
+  font:15px/1.55 Georgia,'Times New Roman',serif;
+}
+
+/* Submission form material refinement: retain the oxblood action field, but
+   replace generic white controls with TORC's warm site material and crisp ink. */
+.form{
+  background:#d9c7a6!important;
+  border:1px solid #171714!important;
+  box-shadow:none!important;
+}
+.form input:not([type=checkbox]),
+.form select,
+.form textarea{
+  background:#e8e0d4!important;
+  color:#171714!important;
+  border-color:#171714!important;
+}
+.form textarea{border:1px solid #171714!important;}
+.upload{
+  background:#e8e0d4!important;
+  border-color:#171714!important;
+}
