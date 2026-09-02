@@ -673,3 +673,9 @@
 .form textarea{
   border:1px solid #171714!important;
 }
+
+/* 2026-09-02 — Submit hero title only: TORC dark gold. */
+.hero h1{
+  color:#c7aa76!important;
+}
+
