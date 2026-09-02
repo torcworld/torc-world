@@ -1727,92 +1727,16 @@
   }
 }
 
-/* 2026-09-02 — Organizations top alignment refinement.
-   Shorten the two oxblood side-rail extensions by 4mm at the top so they
-   terminate cleanly at the horizontal gray rule. Lift the first charcoal
-   Organizations field by 3mm without changing its internal layout. */
+/* 2026-09-02 — CANONICAL Organizations top alignment baseline.
+   Consolidated from the last visually working archive.
+   Important: the visible charcoal field is .newHero (not legacy .hero).
+   This block preserves the CURRENT rendered state only; no new visual change. */
 @media(min-width:761px){
   .page{
-    padding-top:calc(58px - 3mm)!important;
+    padding-top:calc(58px - 9mm)!important;
   }
   .page::before{
     top:calc(-18px + 4mm)!important;
     height:calc(18px - 4mm)!important;
   }
 }
-
-/* 2026-09-02 — Organizations hero refinement, rebuilt on the last deployable patch.
-   Keep the red top rule. Reduce the charcoal hero's total vertical depth by 5mm
-   while keeping its contents proportionally centered (2.5mm from top + bottom),
-   and lift the full Organizations composition a further 3mm. Desktop only. */
-@media(min-width:761px){
-  .page{
-    padding-top:calc(58px - 6mm)!important;
-  }
-  .hero{
-    padding-top:calc(58px - 2.5mm)!important;
-    padding-bottom:calc(64px - 2.5mm)!important;
-    border-top:4px solid #5b2630!important;
-  }
-}
-
-/* 2026-09-02 — Organizations micro-refinement.
-   Lift the full composition 2mm more. Remove 2mm only from the TOP of the first hero field;
-   preserve the existing red top rule and the current bottom depth. */
-@media(min-width:761px){
-  .page{
-    padding-top:calc(58px - 8mm)!important;
-  }
-  .hero{
-    padding-top:calc(58px - 4.5mm)!important;
-  }
-}
-
-/* 2026-09-02 — Organizations follow-up refinement.
-   Remove another 3mm from only the TOP of the first charcoal field and lift the
-   complete Organizations composition another 1mm. Keep the red top rule intact. */
-@media(min-width:761px){
-  .page{
-    padding-top:calc(58px - 9mm)!important;
-  }
-  .hero{
-    padding-top:calc(58px - 7.5mm)!important;
-  }
-}
-
-/* 2026-09-02 — Organizations: remove another 3mm from only the TOP of the first charcoal hero. */
-@media(min-width:761px){
-  .hero{
-    padding-top:calc(58px - 10.5mm)!important;
-  }
-}
-
-
-/* CORRECTED DEPLOY OVERRIDE — the live first Organizations field is .newHero, not .hero.
-   Remove 3mm from the TOP of that charcoal field. */
-@media(min-width:761px){
-  .newHero{padding-top:calc(84px - 5mm)!important;padding-bottom:calc(82px - 1mm)!important;}
-}
-
-/* 2026-09-02 — Organizations precision refinement.
-   Make the outer oxblood side rails visually finer; shorten only the TOP of the
-   short rail extensions by 1px so they meet the pale horizontal rule cleanly;
-   and compress the light-ochre "Different problems. One analytical language."
-   block by 1cm at both its top and bottom. Desktop only. */
-@media(min-width:761px){
-  .page{
-    border-left-width:.5px!important;
-    border-right-width:.5px!important;
-  }
-  .page::before{
-    top:calc(-18px + 4mm + 1px)!important;
-    height:calc(18px - 4mm - 1px)!important;
-    border-left-width:.5px!important;
-    border-right-width:.5px!important;
-  }
-  .applicationsNew{
-    padding-top:calc(84px - 1cm)!important;
-    padding-bottom:calc(86px - 1cm)!important;
-  }
-}
-

@@ -247,8 +247,8 @@
    pull the Compare Artifacts charcoal block upward by 1cm. */
 @media(min-width:761px){
   .hero{
-    min-height:calc(330px - 11mm)!important;
-    height:calc(330px - 11mm)!important;
+    min-height:calc(330px - 9mm)!important;
+    height:calc(330px - 9mm)!important;
     padding-top:calc(62px - 4.5mm)!important;
     padding-bottom:calc(62px - 4.5mm)!important;
   }
@@ -272,29 +272,29 @@
   }
 }
 
-/* 2026-09-02 — Artifacts follow-up: ease Corpus back down 3mm from its current 1cm lift,
-   and move only the Cognitive Magnitude values 2mm to the right. Desktop only. */
+
+/* 2026-09-02 — CANONICAL Artifacts geometry baseline.
+   Explicit effective values from the last visually working archive.
+   Future geometry changes should edit THIS block rather than adding another override. */
 @media(min-width:761px){
-  .corpus{
-    margin-top:-7mm!important;
+  .artifactsPage{padding-top:calc(74px - 13.5mm)!important;}
+  .hero{
+    min-height:calc(330px - 9mm)!important;
+    height:calc(330px - 9mm)!important;
+    padding-top:calc(62px - 4.5mm)!important;
+    padding-bottom:calc(62px - 4.5mm)!important;
+    border-top:0!important;
   }
-  .cmsValue{
-    transform:translateX(2mm)!important;
-  }
+  .tools .controlLabel:nth-child(4){transform:none!important;}
+  .tableHeader > :nth-child(3){transform:translateX(-15mm)!important;}
+  .tableHeader > :nth-child(4){transform:translateX(-10mm)!important;}
+  .openEvaluation{transform:translateX(-2mm)!important;}
+  .corpus{margin-top:-1cm!important;}
+  .compareSection{margin-top:calc(54px - 1cm)!important;}
 }
-
-
-/* CORRECTED DEPLOY OVERRIDE — actual Artifacts selectors.
-   Corpus is 7mm above its original position (= 3mm down from the prior 10mm lift).
-   Move only the Cognitive Magnitude row values 2mm right. */
-@media(min-width:761px){
-  .corpus{margin-top:-7mm!important;}
-  .cmsValue{transform:translateX(2mm)!important;}
+.controlLabel input,
+.controlLabel select{
+  border:1px solid var(--ox)!important;
+  color:#171714!important;
 }
-
-/* 2026-09-02 — Artifacts: move every Open evaluation call-to-action a further
-   1mm left from the current position, without moving the CMS column. */
-@media(min-width:761px){
-  .openEvaluation{transform:translateX(-3mm)!important;}
-}
-
+.controlLabel input::placeholder{color:#171714!important;opacity:.72;}

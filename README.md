@@ -1,8 +1,10 @@
-TORC website patch — Organizations hero retry.
+TORC website refinement patch
 
-This ZIP intentionally uses the exact same top-level/package pattern as the last working Artifacts + Organizations patch: app/ + README.md, including the same Artifacts files.
+Changes:
+- Homepage: full composition 2cm higher in total, with 2cm site-background breathing room beneath the final two cards; top TORC hero starts higher.
+- Artifacts: from THE CORPUS downward, the corpus/list/remaining sections move 1cm upward.
+- Organizations: another 3mm removed from the top of the first charcoal field; full composition another 1mm upward; red top rule preserved.
 
-Changes on Organizations only:
-- keep the red top rule;
-- make the first charcoal hero 5mm shorter in total (2.5mm top + 2.5mm bottom);
-- move the Organizations composition 3mm further upward.
+
+## 2026-09-02 clean baseline
+Consolidated effective geometry for Organizations and declared one canonical Artifacts geometry block. No intended visual change. Submit Your Artifact is not present in this source archive and was therefore not touched.
