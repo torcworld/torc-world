@@ -305,3 +305,16 @@
   font-size:17px!important;
   line-height:1.45!important;
 }
+
+/* 2026-09-02 — requested follow-up: top Artifacts hero another 3mm shorter;
+   Compare heading gold; keep a light-ochre landing area below Compare. */
+.artifactsPage{padding-bottom:32px!important;background:var(--ochre)!important;}
+.compareIntro .kicker{color:var(--gold)!important;}
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 15mm)!important;
+    height:calc(330px - 15mm)!important;
+    padding-top:calc(62px - 7.5mm)!important;
+    padding-bottom:calc(62px - 7.5mm)!important;
+  }
+}

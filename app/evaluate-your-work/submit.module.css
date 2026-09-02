@@ -589,3 +589,9 @@
 @media(min-width:761px){
   .page{padding-top:calc(62px - 5mm)!important;}
 }
+
+/* 2026-09-02 — from “Choose how far you want to go” onward, lift the pricing
+   section and everything that follows by 1mm in normal document flow. */
+@media(min-width:761px){
+  .pricing{margin-top:-1mm!important;}
+}
