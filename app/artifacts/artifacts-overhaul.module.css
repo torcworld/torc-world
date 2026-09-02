@@ -292,16 +292,8 @@
   .cmsValue{transform:translateX(2mm)!important;}
 }
 
-/* 2026-09-02 — Artifacts: move every Open evaluation call-to-action a further
-   1mm left from the current position, without moving the CMS column. */
-@media(min-width:761px){
-  .openEvaluation{transform:translateX(-3mm)!important;}
-}
-
-
-/* 2026-09-02 — Artifacts hero micro-height refinement.
-   Remove 2mm total from the charcoal hero height, trimming 1mm from the
-   internal top and bottom while keeping the hero contents centered. */
+/* 2026-09-02 — RETRY from last visibly working base.
+   Reduce the Artifacts charcoal arrival field by 2mm total height. */
 @media(min-width:761px){
   .hero{
     min-height:calc(330px - 11mm)!important;

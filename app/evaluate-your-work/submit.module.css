@@ -578,15 +578,8 @@
   .hero{transform:translateY(-2mm)!important;}
 }
 
-/* 2026-09-02 — Submit Your Artifact: set the charcoal hero to 3mm upward,
-   independently of the following process/pricing block. Desktop only. */
+/* 2026-09-02 — RETRY from last visibly working base.
+   Move ONLY the Submit charcoal hero an additional 3mm upward (total -5mm). */
 @media(min-width:761px){
-  .hero{transform:translateY(-3mm)!important;}
-}
-
-
-/* 2026-09-02 — Submit hero only: move the charcoal card another 3mm upward
-   from its current -3mm position, without moving the following card/content. */
-@media(min-width:761px){
-  .hero{transform:translateY(-6mm)!important;}
+  .hero{transform:translateY(-5mm)!important;}
 }

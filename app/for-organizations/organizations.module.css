@@ -1794,32 +1794,8 @@
   .newHero{padding-top:calc(84px - 3mm)!important;}
 }
 
-/* 2026-09-02 — Organizations precision refinement.
-   Make the outer oxblood side rails visually finer; shorten only the TOP of the
-   short rail extensions by 1px so they meet the pale horizontal rule cleanly;
-   and compress the light-ochre "Different problems. One analytical language."
-   block by 1cm at both its top and bottom. Desktop only. */
-@media(min-width:761px){
-  .page{
-    border-left-width:.5px!important;
-    border-right-width:.5px!important;
-  }
-  .page::before{
-    top:calc(-18px + 4mm + 1px)!important;
-    height:calc(18px - 4mm - 1px)!important;
-    border-left-width:.5px!important;
-    border-right-width:.5px!important;
-  }
-  .applicationsNew{
-    padding-top:calc(84px - 1cm)!important;
-    padding-bottom:calc(86px - 1cm)!important;
-  }
-}
-
-
-/* 2026-09-02 — Organizations hero micro-height refinement.
-   Remove another 2mm from the TOP and 1mm from the BOTTOM of the actual
-   charcoal .newHero field. Leave its external position and red top rule unchanged. */
+/* 2026-09-02 — RETRY from last visibly working base.
+   Actual Organizations hero (.newHero): remove 2mm more from top and 1mm from bottom. */
 @media(min-width:761px){
   .newHero{
     padding-top:calc(84px - 5mm)!important;
