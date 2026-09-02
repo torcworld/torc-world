@@ -1522,3 +1522,56 @@
     border-color:#d9c7a6!important;
   }
 }
+
+
+/* Theory entrance refinement:
+   4mm TORC light-brown cap above the charcoal split, matching Artifacts;
+   restore clear THEORY -> title hierarchy; center the Living Edition under book. */
+@media(min-width:761px){
+  .bookLanding .manifest{
+    border-top:4mm solid #d9c7a6!important;
+    box-sizing:border-box!important;
+  }
+
+  .bookLanding .manifestTitle{
+    padding-top:30px!important;
+  }
+  .bookLanding .manifestTitle > *{
+    transform:none!important;
+  }
+  .bookLanding .manifestTitle .eyebrow{
+    display:block!important;
+    margin-bottom:14px!important;
+  }
+
+  .bookLanding .invitationCopy{
+    grid-column:2!important;
+    justify-self:center!important;
+    width:min(390px,92%)!important;
+    max-width:390px!important;
+    margin-top:-8px!important;
+    transform:translateX(8mm)!important;
+    text-align:left!important;
+  }
+
+  .bookLanding .invitationCopy .readCta{
+    display:table!important;
+    margin:0 auto 20px!important;
+    padding:10px 16px!important;
+    background:#c7aa76!important;
+    border:1px solid #171714!important;
+    color:#171714!important;
+    font-weight:700!important;
+    text-align:center!important;
+  }
+
+  .bookLanding .invitationCopy .eyebrow{
+    display:block!important;
+    margin-top:0!important;
+    margin-bottom:10px!important;
+    color:#d9c7a6!important;
+  }
+  .bookLanding .invitationCopy p{
+    margin-top:0!important;
+  }
+}
