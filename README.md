@@ -1,5 +1,5 @@
-TORC trial patch — artifact analysis palette + Compare A refinement
-- Artifact analysis: charcoal top edge, gold title/order/CMS, light-ochre secondary hero text.
-- Six-Dimensional Model and Explore the 7 Operational Orders headings accented in gold.
-- Compare: findings cards gold / light ochre / gold.
-- Comparative Verdict charcoal block reduced by ~1cm top and bottom; verdict type reduced.
+# TORC Theory Parchment Reader Trial
+
+Copy the `app` folder into the root of the current TORC website project and merge/replace the matching files.
+
+This trial keeps the Theory entrance and smooth gold closed-book ritual, while the open reader uses a charcoal surround and visibly aged yellow parchment treatment.
