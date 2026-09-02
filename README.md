@@ -1,6 +1,5 @@
-TORC patch — Compare A overhaul + artifact analysis gold side fields.
-Includes prior accepted working patch state plus:
-- Compare rebuilt as Comparative Verdict architecture.
-- Small Open analysis buttons retained for both compared artifacts.
-- Stronger comparative verdict / Order / Magnitude / structural divergence copy.
-- Artifact analysis broad side fields changed from oxblood to TORC dark gold as a visual trial.
+TORC trial patch — artifact analysis palette + Compare A refinement
+- Artifact analysis: charcoal top edge, gold title/order/CMS, light-ochre secondary hero text.
+- Six-Dimensional Model and Explore the 7 Operational Orders headings accented in gold.
+- Compare: findings cards gold / light ochre / gold.
+- Comparative Verdict charcoal block reduced by ~1cm top and bottom; verdict type reduced.

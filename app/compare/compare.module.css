@@ -8,3 +8,23 @@
 .dimensions{padding:58px 6% 68px;background:var(--ochre);border-left:1px solid var(--ink);border-right:1px solid var(--ink)}.sectionHead>span{color:var(--ox)}.sectionHead h2{font:clamp(38px,5vw,62px)/1 Georgia,serif;letter-spacing:-.035em;margin:13px 0}.sectionHead p{font:17px/1.5 Georgia,serif;margin:0 0 35px}.table{border-top:1px solid var(--ink)}.row{display:grid;grid-template-columns:1.25fr 1fr 1fr 80px;align-items:center;gap:16px;padding:15px 10px;border-bottom:1px solid rgba(23,23,20,.35)}.head{font:700 9px/1.2 Arial;text-transform:uppercase;letter-spacing:.1em}.row>span strong,.row>span small{display:block}.row>span strong{font:700 11px Arial;color:var(--ox);letter-spacing:.12em}.row>span small{font:15px Georgia,serif;margin-top:3px}.row>b{font:23px/1 Georgia,serif;font-weight:400}.table details summary{cursor:pointer;list-style:none}.table details summary::-webkit-details-marker{display:none}.table details[open]{background:rgba(251,250,246,.45)}.table details>p{font:15px/1.55 Georgia,serif;max-width:850px;padding:4px 10px 20px;margin:0}
 .revisit{display:grid;grid-template-columns:1.1fr .9fr;background:var(--charcoal);color:var(--paper);border:1px solid var(--ink)}.revisit>div{padding:42px}.revisit>div+div{border-left:1px solid var(--gold)}.revisit span{color:var(--gold)}.revisit h2{font:36px/1.05 Georgia,serif;margin:12px 0}.revisit p{font:16px/1.5 Georgia,serif;margin:0;max-width:580px;color:#ddd4c6}.revisit a{display:flex;justify-content:space-between;gap:20px;color:var(--paper);text-decoration:none;padding:16px 0;border-bottom:1px solid rgba(199,170,118,.55);font:19px/1.2 Georgia,serif}.revisit a:first-child{padding-top:0}.revisit a small{font:700 9px Arial;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
 @media(max-width:800px){.page{padding:0 14px 24px}.hero{margin:0 -14px;padding:52px 22px}.controls{grid-template-columns:1fr;padding:18px}.swap{height:44px}.scoreboard{grid-template-columns:1fr}.vs{height:44px;border:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}.scoreboard article{padding:30px 24px}.findings{grid-template-columns:1fr}.findings article+article{border-left:0;border-top:1px solid var(--ink)}.dimensions{padding:42px 20px}.row{grid-template-columns:1.1fr .65fr .65fr 50px;gap:7px;padding-left:0;padding-right:0}.head b{font-size:8px;overflow:hidden;text-overflow:ellipsis}.revisit{grid-template-columns:1fr}.revisit>div{padding:30px 24px}.revisit>div+div{border-left:0;border-top:1px solid var(--gold)}}
+
+/* Comparative Verdict refinement trial. */
+.findings article:first-child{
+  background:var(--gold)!important;
+}
+.verdict{
+  padding-top:14px!important;
+  padding-bottom:14px!important;
+}
+.verdict h2{
+  font-size:clamp(27px,3.5vw,44px)!important;
+  line-height:1.1!important;
+  margin-top:10px!important;
+}
+@media(max-width:800px){
+  .verdict{
+    padding-top:24px!important;
+    padding-bottom:24px!important;
+  }
+}

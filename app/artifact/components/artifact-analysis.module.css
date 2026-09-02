@@ -343,3 +343,22 @@
     box-sizing:border-box!important;
   }
 }
+
+/* Current artifact-analysis typography trial. */
+.hero h1,
+.verdictGrid strong{
+  color:#c7aa76!important;
+}
+.hero,
+.hero p,
+.hero span,
+.hero small,
+.creator{
+  color:#d9c7a6!important;
+}
+.dimensionsTitle{
+  color:#c7aa76!important;
+}
+.boundary .orderModelCta strong{
+  color:#c7aa76!important;
+}
