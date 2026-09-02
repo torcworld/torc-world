@@ -1382,3 +1382,44 @@
 .readingPage{background:#353432!important;}
 .bookPage{background:#353432!important;}
 .bookPage::after{background:#353432!important;}
+
+
+/* Website trial: continue the exact charcoal Theory field through the full
+   right-hand book column and further downward; lift/enlarge the existing book. */
+@media(min-width:761px){
+  .bookLanding .manifestThesis{
+    background:#353432!important;
+    padding-bottom:0!important;
+    position:relative!important;
+    overflow:visible!important;
+  }
+  .bookLanding .manifestThesis::after{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    top:100%!important;
+    height:10cm!important;
+    background:#353432!important;
+    z-index:0!important;
+    pointer-events:none!important;
+  }
+  .bookLanding .manifestThesis .closedBook{
+    width:min(430px,94%)!important;
+    transform:translateY(-10px)!important;
+    position:relative!important;
+    z-index:3!important;
+  }
+  .bookLanding .manifestThesis .closedBook:hover,
+  .bookLanding .manifestThesis .closedBook:focus-visible{
+    transform:translateY(-15px) rotate(-.35deg)!important;
+  }
+  .bookLanding .bookInvitation{
+    position:relative!important;
+    z-index:1!important;
+  }
+  .bookLanding .parkedQuestion{
+    position:relative!important;
+    z-index:2!important;
+  }
+}
