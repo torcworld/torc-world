@@ -202,3 +202,27 @@
     transform:translateX(-10mm)!important;
   }
 }
+
+/* 2026-09-02 — latest Artifacts refinement.
+   Remove another 3mm of vertical height from only the charcoal hero.
+   Keep Cognitive Magnitude where it is; move only Operational Order 4mm
+   further left. Restore black text inside all search/filter controls. */
+.controlLabel input,
+.controlLabel select{
+  color:#171714!important;
+}
+.controlLabel input::placeholder{
+  color:#171714!important;
+  opacity:.72;
+}
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 7mm)!important;
+  }
+  .tableHeader > :nth-child(3){
+    transform:translateX(-14mm)!important;
+  }
+  .tableHeader > :nth-child(4){
+    transform:translateX(-10mm)!important;
+  }
+}
