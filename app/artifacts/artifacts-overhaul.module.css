@@ -160,3 +160,15 @@
 
 /* A subtle 1mm TORC-red edge on the top of the charcoal Artifacts hero. */
 .hero{border-top:1mm solid var(--ox)!important;}
+
+/* Current Artifacts refinement — website only.
+   Remove the red rule on the charcoal hero, lift the full composition 2mm,
+   and use TORC-red borders around the search/filter fields. */
+.hero{border-top:0!important;}
+@media(min-width:761px){
+  .artifactsPage{padding-top:calc(74px - 13.5mm)!important;}
+}
+.controlLabel input,
+.controlLabel select{
+  border:1px solid var(--ox)!important;
+}

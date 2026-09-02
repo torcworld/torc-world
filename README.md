@@ -1,7 +1,8 @@
-TORC Artifacts patch
+TORC Artifacts website patch
 
 Changes:
-- Entire Artifacts composition moved 2 mm further upward on desktop.
-- Added a thin 1 mm TORC-red rule to the top edge of the charcoal Artifacts block.
-- Changed the thin top boundary of the outer Artifacts frame to TORC red, matching its red side rules.
-- Previous red search/filter lettering and 15-artifact pagination remain intact.
+- Removed the thin red line directly on top of the charcoal Artifacts block.
+- Moved the charcoal block and everything below it another 2 mm upward on desktop.
+- Search/filter boxes now have thin TORC-red borders.
+- Existing red outer top rule remains unchanged.
+- Existing red search/filter text and 15 artifacts per page remain unchanged.
