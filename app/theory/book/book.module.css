@@ -1465,3 +1465,60 @@
     transform:translateY(-15px) rotate(-.35deg)!important;
   }
 }
+
+
+/* Compact split-layout refinement.
+   Pull the complete charcoal title copy up directly under THEORY,
+   then use a shorter lower split: question left / Living Edition right. */
+@media(min-width:761px){
+  .bookLanding .manifestTitle{
+    justify-content:flex-start!important;
+    padding-top:22px!important;
+  }
+  .bookLanding .manifestTitle > *{
+    transform:translateY(-18mm)!important;
+  }
+
+  /* Shorten the charcoal continuation by 6cm: 10cm -> 4cm. */
+  .bookLanding .manifestThesis::after{
+    height:4cm!important;
+  }
+
+  .bookLanding .bookInvitation{
+    min-height:0!important;
+    padding:34px clamp(28px,6vw,78px) 38px!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:clamp(42px,6vw,76px)!important;
+    align-items:start!important;
+  }
+
+  .bookLanding .parkedQuestion{
+    grid-column:1!important;
+    justify-self:end!important;
+    width:100%!important;
+    max-width:430px!important;
+    color:#171714!important;
+  }
+  .bookLanding .parkedQuestion h2{
+    margin:22px 0 18px!important;
+  }
+
+  .bookLanding .invitationCopy{
+    grid-column:2!important;
+    justify-self:start!important;
+    width:100%!important;
+    max-width:430px!important;
+    margin-top:18px!important;
+    transform:none!important;
+    color:#d9c7a6!important;
+  }
+  .bookLanding .invitationCopy .eyebrow,
+  .bookLanding .invitationCopy p,
+  .bookLanding .invitationCopy em{
+    color:#d9c7a6!important;
+  }
+  .bookLanding .invitationCopy .readCta{
+    color:#d9c7a6!important;
+    border-color:#d9c7a6!important;
+  }
+}

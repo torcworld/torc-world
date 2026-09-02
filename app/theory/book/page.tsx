@@ -24,14 +24,14 @@ export default function BookLanding(){
    </div>
   </section>
   <section className={styles.bookInvitation} aria-label="The Age of False Depth book">
-   <div className={styles.invitationCopy}>
-    <span className={styles.eyebrow}>THE LIVING EDITION</span>
-    <p><em>The Age of False Depth</em> develops the theory from first principles — from the distinction between apparent and demonstrated depth to a systematic account of what creative and intellectual works actually accomplish.</p>
-   </div>
    <div className={styles.parkedQuestion}>
     <span className={styles.eyebrow}>THE CENTRAL QUESTION</span>
     <h2>What has actually been accomplished?</h2>
     <p>Complexity can resemble depth. Recursion can resemble insight. TORC begins by separating the appearance of cognition from the operation an artifact actually performs.</p>
+   </div>
+   <div className={styles.invitationCopy}>
+    <span className={styles.eyebrow}>THE LIVING EDITION</span>
+    <p><em>The Age of False Depth</em> develops the theory from first principles — from the distinction between apparent and demonstrated depth to a systematic account of what creative and intellectual works actually accomplish.</p>
     <a href="/theory/book/read" className={styles.readCta}>READ THE BOOK →</a>
    </div>
   </section>
