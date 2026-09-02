@@ -1393,3 +1393,11 @@
     linear-gradient(7deg, transparent 0 43%, rgba(73,46,20,.065) 43.15%, transparent 43.45% 100%),
     radial-gradient(ellipse at center, #eee0bd 0%, #e8d7b1 62%, #d8bd92 100%)!important;
 }
+
+/* 2026-09-02 — move ONLY the text/content inside the grey Manifesto panel upward.
+   Background geometry and the tan panel remain untouched. */
+@media(min-width:761px){
+  .bookLanding .manifestTitle > *{
+    transform:translateY(-0.75cm)!important;
+  }
+}
