@@ -1808,7 +1808,7 @@
     right:-2px!important;
     top:0!important;
     height:calc(58px - 11mm)!important;
-    background:var(--paper)!important;
+    background:var(--accent)!important;
     border:0!important;
     width:auto!important;
     pointer-events:none!important;

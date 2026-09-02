@@ -829,7 +829,7 @@
     text-align:center;
     position:relative;
     top:0;
-    transform:translateY(4cm);
+    transform:translateY(calc(4cm + 2mm));
   }
 }
 
