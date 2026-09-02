@@ -486,3 +486,39 @@
   border-color:#c7aa76!important;
   color:#f3eee6!important;
 }
+
+/* 2026-09-02 — material trial: close the Operational Orders bridge and carry
+   the site's light-brown paper through the analysis text fields. */
+.page{
+  background:#d9c7a6!important;
+}
+
+/* Keep the two deliberate architectural bands distinct from the paper field. */
+.cmsSection,
+.boundary .orderModelCta,
+.boundary .orderModelCta:hover{
+  background:#c7aa76!important;
+}
+
+/* Explore the 7 Operational Orders is now a fully closed black-outlined object. */
+.boundary .orderModelCta{
+  border:1px solid var(--ink,#171714)!important;
+  padding-left:14px!important;
+  padding-right:1cm!important;
+  box-sizing:border-box!important;
+}
+.boundary .orderModelCta strong,
+.boundary .orderModelCta>span,
+.boundary .orderModelCta>span:first-child,
+.boundary .orderModelCta>span:last-child{
+  color:var(--ink,#171714)!important;
+}
+
+/* Gold submit action with the requested heavy black lettering. */
+.submitButton,
+.submitButton:hover{
+  background:#c7aa76!important;
+  border-color:#c7aa76!important;
+  color:var(--ink,#171714)!important;
+  font-weight:700!important;
+}
