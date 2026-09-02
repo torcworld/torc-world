@@ -406,3 +406,37 @@
 .page{
   background:var(--bg)!important;
 }
+
+/* Current trial — close the Six-Dimensional Model immediately beneath
+   Generalization Reach: one clean black rule, with no extra gold tail. */
+.cmsSection{
+  padding-bottom:0!important;
+  border-bottom:0!important;
+}
+.cmsSection .dimension:last-child{
+  border-bottom:1px solid var(--ink,#171714)!important;
+}
+.cmsSection .dimensions::after{
+  content:none!important;
+  display:none!important;
+}
+
+/* Current trial — make the final Submit-your-Artifact field charcoal. */
+.bottomCta{
+  background:#353432!important;
+  margin-left:-28px!important;
+  margin-right:-28px!important;
+  padding:42px 28px!important;
+  border-top:0!important;
+  border-bottom:0!important;
+  color:#d9c7a6!important;
+}
+.bottomCta h2{
+  color:#c7aa76!important;
+}
+.bottomCta p{
+  color:#d9c7a6!important;
+}
+.bottomCta>div>span{
+  color:#c7aa76!important;
+}
