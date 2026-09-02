@@ -249,8 +249,8 @@
   .hero{
     min-height:calc(330px - 11mm)!important;
     height:calc(330px - 11mm)!important;
-    padding-top:calc(62px - 5.5mm)!important;
-    padding-bottom:calc(62px - 5.5mm)!important;
+    padding-top:calc(62px - 4.5mm)!important;
+    padding-bottom:calc(62px - 4.5mm)!important;
   }
   .tableHeader > :nth-child(3){
     transform:translateX(-15mm)!important;
