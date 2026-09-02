@@ -1755,16 +1755,3 @@
     border-top:4px solid #5b2630!important;
   }
 }
-
-/* 2026-09-02 — literal follow-up on the last working ZIP.
-   Organizations: remove 3mm more from the TOP of the charcoal hero only,
-   and lift the whole Organizations composition another 3mm. */
-@media(min-width:761px){
-  .page{
-    padding-top:calc(58px - 9mm)!important;
-  }
-  .hero{
-    padding-top:calc(58px - 5.5mm)!important;
-    padding-bottom:calc(64px - 2.5mm)!important;
-  }
-}
