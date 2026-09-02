@@ -1816,3 +1816,13 @@
   }
 }
 
+
+/* 2026-09-02 — Organizations hero micro-height refinement.
+   Remove another 2mm from the TOP and 1mm from the BOTTOM of the actual
+   charcoal .newHero field. Leave its external position and red top rule unchanged. */
+@media(min-width:761px){
+  .newHero{
+    padding-top:calc(84px - 5mm)!important;
+    padding-bottom:calc(82px - 1mm)!important;
+  }
+}

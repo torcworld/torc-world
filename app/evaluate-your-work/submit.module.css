@@ -584,3 +584,9 @@
   .hero{transform:translateY(-3mm)!important;}
 }
 
+
+/* 2026-09-02 — Submit hero only: move the charcoal card another 3mm upward
+   from its current -3mm position, without moving the following card/content. */
+@media(min-width:761px){
+  .hero{transform:translateY(-6mm)!important;}
+}
