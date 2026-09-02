@@ -149,3 +149,14 @@
 .controlLabel input,
 .controlLabel select{color:var(--ox)!important;}
 .controlLabel input::placeholder{color:var(--ox)!important;opacity:.72;}
+
+/* Requested refinement: 2mm further upward + thin TORC-red top rules. */
+@media(min-width:761px){
+  .artifactsPage{padding-top:calc(74px - 11.5mm)!important;}
+}
+
+/* Close the outer red side rules with the same thin red rule across the top. */
+.artifactsPage{border-top-color:var(--ox)!important;}
+
+/* A subtle 1mm TORC-red edge on the top of the charcoal Artifacts hero. */
+.hero{border-top:1mm solid var(--ox)!important;}

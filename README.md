@@ -1,6 +1,7 @@
 TORC Artifacts patch
 
 Changes:
-- Grey Artifacts block and everything below moved 3mm upward on desktop.
-- Search/filter field text changed from black to TORC red.
-- Artifact list pagination changed from 20 to 15 items per page.
+- Entire Artifacts composition moved 2 mm further upward on desktop.
+- Added a thin 1 mm TORC-red rule to the top edge of the charcoal Artifacts block.
+- Changed the thin top boundary of the outer Artifacts frame to TORC red, matching its red side rules.
+- Previous red search/filter lettering and 15-artifact pagination remain intact.
