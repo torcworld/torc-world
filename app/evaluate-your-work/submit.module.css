@@ -586,8 +586,8 @@
 
 
 
-/* 2026-09-02 — rebased from the last visually working patch.
-   Move only the charcoal Submit hero another 3mm upward from its current -3mm state. */
+/* 2026-09-02 12:55 — fresh deploy refinement.
+   Submit Your Artifact: move only the charcoal hero another 3mm upward from the current -3mm state. */
 @media(min-width:761px){
   .hero{transform:translateY(-6mm)!important;}
 }

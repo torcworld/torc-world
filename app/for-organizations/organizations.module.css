@@ -1818,11 +1818,11 @@
 
 
 
-/* 2026-09-02 — rebased from the last visually working patch.
-   First Organizations charcoal card only: remove 2mm from top and 1mm from bottom. */
+/* 2026-09-02 12:55 — fresh deploy refinement.
+   Organizations first charcoal card only: 2mm less gray at top, 1mm less gray at bottom. */
 @media(min-width:761px){
   .newHero{
     padding-top:calc(84px - 5mm)!important;
-    padding-bottom:calc(88px - 1mm)!important;
+    padding-bottom:calc(82px - 1mm)!important;
   }
 }

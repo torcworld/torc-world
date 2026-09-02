@@ -300,8 +300,8 @@
 
 
 
-/* 2026-09-02 — rebased from the last visually working patch.
-   Reduce only the top Artifacts charcoal hero total height by another 2mm. */
+/* 2026-09-02 12:55 — fresh deploy refinement.
+   Artifacts: reduce only the top charcoal hero total height by another 2mm. */
 @media(min-width:761px){
   .hero{
     min-height:calc(330px - 11mm)!important;
