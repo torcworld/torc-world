@@ -526,5 +526,5 @@
 /* 2026-09-02 — compact the top of the Six-Dimensional Model: keep roughly
    5mm between the black top rule and the Cognitive Architecture kicker. */
 .cmsSection{
-  padding-top:5mm!important;
+  padding-top:6mm!important;
 }
