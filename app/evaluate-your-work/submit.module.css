@@ -563,3 +563,11 @@
 }
 
 @media(max-width:760px){.upgradeCreditPanel{grid-template-columns:1fr;gap:8px}.upgradeCreditPanel>span{padding-top:0}}
+
+/* 2026-09-02 — Submit Your Artifact: lift only the charcoal hero visually by 2mm,
+   without moving or pulling the following process/pricing card. Desktop only. */
+@media(min-width:761px){
+  .hero{
+    transform:translateY(-2mm)!important;
+  }
+}

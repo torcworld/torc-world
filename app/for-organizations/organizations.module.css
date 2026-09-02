@@ -1779,3 +1779,10 @@
     padding-top:calc(58px - 7.5mm)!important;
   }
 }
+
+/* 2026-09-02 — Organizations: remove another 3mm from only the TOP of the first charcoal hero. */
+@media(min-width:761px){
+  .hero{
+    padding-top:calc(58px - 10.5mm)!important;
+  }
+}

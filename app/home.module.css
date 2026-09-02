@@ -945,3 +945,10 @@
     margin-top:1cm!important;
   }
 }
+
+/* 2026-09-02 — Reduce only the white breathing room below the final homepage cards by 1cm. */
+@media(min-width:721px){
+  .home{
+    padding-bottom:1cm!important;
+  }
+}

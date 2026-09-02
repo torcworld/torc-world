@@ -271,3 +271,14 @@
     margin-top:-1cm!important;
   }
 }
+
+/* 2026-09-02 — Artifacts follow-up: ease Corpus back down 3mm from its current 1cm lift,
+   and move only the Cognitive Magnitude values 2mm to the right. Desktop only. */
+@media(min-width:761px){
+  .corpus{
+    margin-top:-7mm!important;
+  }
+  .cmsValue{
+    transform:translateX(2mm)!important;
+  }
+}
