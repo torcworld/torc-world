@@ -635,64 +635,16 @@
   .principle{margin-bottom:calc(28px + 8mm)!important;}
 }
 
-/* 2026-09-02 — Submit gold-material trial: bring the established TORC artifact palette into package selection without recoloring the full page. */
-@media(min-width:761px){
-  .priceCard,
-  .priceCard:not(.selectedPriceCard),
-  .priceCard.selectedPriceCard{
-    background:#c7aa76!important;
-    border-color:#2f2c28!important;
-    color:#171714!important;
-  }
-  .priceCard.selectedPriceCard{
-    box-shadow:0 18px 38px rgba(37,25,20,.12)!important;
-  }
-  .priceCard .package,
-  .priceCard.selectedPriceCard .package,
-  .priceCard .price,
-  .priceCard .price small,
-  .priceCard .cardQuestion,
-  .priceCard .priceLead,
-  .priceCard .cardBest{
-    color:#171714!important;
-  }
-  .priceCard .exploreButton,
-  .priceCard.selectedPriceCard .exploreButton{
-    border-top-color:#171714!important;
-    color:#171714!important;
-  }
-  .priceCard .exploreButton span,
-  .priceCard.selectedPriceCard .exploreButton span{
-    color:#5b2630!important;
-  }
-  .packageDetail{
-    background:#c7aa76!important;
-    border-color:#2f2c28!important;
-  }
-}
-
-/* 2026-09-02 — package selector material hierarchy: resting cards light brown; selected card + expanded explanation dark gold. */
-.priceCard,
+/* 2026-09-02 — TORC material trial: inactive package cards use the light-brown
+   house material; the active package and its expanded explanation use dark gold. */
 .priceCard:not(.selectedPriceCard){
   background:#d9c7a6!important;
-  border-color:#2f2c28!important;
-  color:#171714!important;
 }
 .priceCard.selectedPriceCard{
   background:#c7aa76!important;
-  border-color:#2f2c28!important;
-  color:#171714!important;
-}
-.priceCard .package,
-.priceCard.selectedPriceCard .package,
-.priceCard .price,
-.priceCard .price small,
-.priceCard .cardQuestion,
-.priceCard .priceLead,
-.priceCard .cardBest{
-  color:#171714!important;
+  border-color:#9f8355!important;
 }
 .packageDetail{
   background:#c7aa76!important;
-  border-color:#2f2c28!important;
+  border-color:#9f8355!important;
 }
