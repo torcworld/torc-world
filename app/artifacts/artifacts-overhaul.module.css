@@ -172,3 +172,19 @@
 .controlLabel select{
   border:1px solid var(--ox)!important;
 }
+
+/* 2026-09-02 — search/filter spacing correction.
+   Undo the older 5mm left nudge on the far-right Operational Order control.
+   This restores the native 10px (~2.6mm) grid gap between Medium and
+   Operational Order and returns the right edge to the same inset as the left. */
+@media(min-width:761px){
+  .tools .controlLabel:nth-child(4){
+    transform:none!important;
+  }
+
+  /* Move only these two corpus column labels 5mm left, as requested. */
+  .tableHeader > :nth-child(3),
+  .tableHeader > :nth-child(4){
+    transform:translateX(-5mm)!important;
+  }
+}

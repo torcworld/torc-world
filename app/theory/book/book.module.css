@@ -1401,3 +1401,11 @@
     transform:translateY(-0.75cm)!important;
   }
 }
+
+/* 2026-09-02 — micro-alignment: move only the text inside the charcoal
+   Manifesto panel another 1mm upward (0.85cm total from the original position). */
+@media(min-width:761px){
+  .bookLanding .manifestTitle > *{
+    transform:translateY(-0.85cm)!important;
+  }
+}
