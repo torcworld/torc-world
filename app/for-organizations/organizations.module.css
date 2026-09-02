@@ -1790,3 +1790,9 @@
 @media(min-width:761px){
   .page::before{display:none!important;}
 }
+
+
+/* 2026-09-02 — hard-remove the short oxblood connector rails above the Organizations field. */
+@media(min-width:761px){
+  .page::before{content:none!important;display:none!important;border:0!important;width:0!important;height:0!important;}
+}

@@ -334,3 +334,14 @@
   box-shadow:none!important;
 }
 .artifactsPage:before,.artifactsPage:after{bottom:0!important;}
+
+
+/* 2026-09-02 — shave another 1mm from the total vertical depth of the top Artifacts hero. */
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 16mm)!important;
+    height:calc(330px - 16mm)!important;
+    padding-top:calc(62px - 8mm)!important;
+    padding-bottom:calc(62px - 8mm)!important;
+  }
+}

@@ -945,3 +945,18 @@
     margin-top:1cm!important;
   }
 }
+
+
+/* 2026-09-02 — final homepage doors: fine black perimeter + center divider;
+   reduce the broken-white field below the two cards by 1cm. */
+.home .twoDoors{
+  border:1px solid var(--ink)!important;
+  box-sizing:border-box!important;
+}
+.home .twoDoors>a:first-child{border-right:1px solid var(--ink)!important;}
+@media(min-width:721px){
+  .home{padding-bottom:1cm!important;}
+}
+@media(max-width:850px){
+  .home .twoDoors>a:first-child{border-right:0!important;border-bottom:1px solid var(--ink)!important;}
+}
