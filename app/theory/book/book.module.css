@@ -1333,3 +1333,52 @@
 .bookPage::after{
   background:#c7aa76!important;
 }
+
+
+/* Layout trial: the book becomes the right-hand object beside the charcoal
+   Theory title field; the former central-question copy is parked below. */
+@media(min-width:761px){
+  .bookLanding .manifestThesis{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    padding:34px 44px 22px!important;
+    overflow:visible!important;
+  }
+  .bookLanding .manifestThesis .closedBook{
+    width:min(390px,88%)!important;
+    justify-self:auto!important;
+    transform:translateY(34px)!important;
+    z-index:2!important;
+  }
+  .bookLanding .manifestThesis .closedBook:hover,
+  .bookLanding .manifestThesis .closedBook:focus-visible{
+    transform:translateY(29px) rotate(-.35deg)!important;
+  }
+  .bookLanding .bookInvitation{
+    grid-template-columns:minmax(250px,.78fr) minmax(390px,1.22fr)!important;
+  }
+  .bookLanding .parkedQuestion{
+    max-width:480px!important;
+    justify-self:start!important;
+    color:#171714!important;
+  }
+  .bookLanding .parkedQuestion .eyebrow{color:#5b2630!important;}
+  .bookLanding .parkedQuestion h2{
+    font-size:clamp(34px,3.4vw,50px)!important;
+    line-height:1.02!important;
+    letter-spacing:-.035em!important;
+    margin:34px 0 24px!important;
+  }
+  .bookLanding .parkedQuestion p{
+    font-size:18px!important;
+    line-height:1.6!important;
+    max-width:480px!important;
+  }
+}
+
+/* Undo the gold-reader experiment: restore the charcoal surround/top strip.
+   The approved quiet parchment surface itself remains unchanged. */
+.readingPage{background:#353432!important;}
+.bookPage{background:#353432!important;}
+.bookPage::after{background:#353432!important;}
