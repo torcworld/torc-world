@@ -1726,3 +1726,17 @@
     padding-top:14px!important;
   }
 }
+
+/* 2026-09-02 — Organizations top alignment refinement.
+   Shorten the two oxblood side-rail extensions by 4mm at the top so they
+   terminate cleanly at the horizontal gray rule. Lift the first charcoal
+   Organizations field by 3mm without changing its internal layout. */
+@media(min-width:761px){
+  .page{
+    padding-top:calc(58px - 3mm)!important;
+  }
+  .page::before{
+    top:calc(-18px + 4mm)!important;
+    height:calc(18px - 4mm)!important;
+  }
+}

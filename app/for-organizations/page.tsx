@@ -3,8 +3,8 @@ import styles from './organizations.module.css';
 const applications = [
   {
     no: '01',
-    title: 'Corpus Intelligence',
-    text: 'See what recurs, what diverges, where structural limits cluster, and which works change the picture across a slate, catalogue, or body of work.',
+    title: 'Portfolio Intelligence',
+    text: 'See concentrations, gaps, boundary cases, and outliers across a slate, catalogue, or body of work.',
   },
   {
     no: '02',
@@ -104,7 +104,7 @@ export default function Organizations(){
             <h2>Patterns no single<br/>report can show.</h2>
           </div>
           <p>
-            The individual evaluation tells you what a work is doing. At scale, TORC reveals what the body of work is doing.
+            A common analytical standard lets the corpus answer questions that isolated evaluations cannot.
           </p>
         </div>
 

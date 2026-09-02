@@ -240,3 +240,25 @@
     transform:translateX(-2mm)!important;
   }
 }
+
+/* 2026-09-02 — requested Artifacts refinement.
+   Shorten the charcoal hero by another 5mm, evenly top/bottom;
+   move only the Operational Order column label 1mm further left;
+   pull the Compare Artifacts charcoal block upward by 1cm. */
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 9mm)!important;
+    height:calc(330px - 9mm)!important;
+    padding-top:calc(62px - 4.5mm)!important;
+    padding-bottom:calc(62px - 4.5mm)!important;
+  }
+  .tableHeader > :nth-child(3){
+    transform:translateX(-15mm)!important;
+  }
+  .tableHeader > :nth-child(4){
+    transform:translateX(-10mm)!important;
+  }
+  .compareSection{
+    margin-top:calc(54px - 1cm)!important;
+  }
+}

@@ -1,6 +1,13 @@
-TORC Artifacts patch
+TORC website patch — Artifacts + Organizations micro-adjustments
 
-- Charcoal Artifacts hero: 4 mm shorter in total, balanced 2 mm top / 2 mm bottom.
-- Hero text remains centered in the shortened field.
-- "Open evaluation →" in artifact rows: 2 mm left toward the CMS score.
-- All previous Artifacts refinements remain intact.
+Artifacts:
+- charcoal hero another 5mm shorter, trimmed evenly
+- Operational Order table label 1mm further left
+- Cognitive Magnitude unchanged
+- Compare Artifacts block 1cm upward
+
+Organizations:
+- outer red side rails shortened 4mm at the top
+- first charcoal Organizations field 3mm upward
+
+Copy the app folder over the existing app folder.
