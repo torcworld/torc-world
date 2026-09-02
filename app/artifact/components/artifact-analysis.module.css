@@ -400,3 +400,9 @@
 .boundary .orderModelCta>span:last-child{
   color:var(--ink,#171714)!important;
 }
+
+/* Current refinement — analysis paper must use the exact site background material,
+   not a separately chosen off-white. Gold model bands remain untouched. */
+.page{
+  background:var(--bg)!important;
+}
