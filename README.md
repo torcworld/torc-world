@@ -1,13 +1,6 @@
-TORC website patch — Artifacts + Organizations micro-adjustments
+TORC Organizations micro-adjustment
 
-Artifacts:
-- charcoal hero another 5mm shorter, trimmed evenly
-- Operational Order table label 1mm further left
-- Cognitive Magnitude unchanged
-- Compare Artifacts block 1cm upward
-
-Organizations:
-- outer red side rails shortened 4mm at the top
-- first charcoal Organizations field 3mm upward
-
-Copy the app folder over the existing app folder.
+- First charcoal Organizations field: 5mm less vertical height from its top interior.
+- Oxblood/red top rule remains intact.
+- Whole Organizations composition: 3mm further upward than the previous version.
+- No other website sections changed.
