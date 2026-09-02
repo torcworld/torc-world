@@ -1,8 +1,5 @@
-TORC Theory patch — book right / text left + softer parchment
+TORC Theory patch
 
-Replace the matching files in the website with the contents of app/.
-
-Changes:
-- Theory book presentation restored to text left + closed book right.
-- Book is visible as part of the presentation rather than sitting below centered copy.
-- Reader parchment is about 25% less yellow and shifted toward aged beige.
+- Moves the left copy + closed book composition 1cm to the right on desktop.
+- Makes the Contents tab and opened Table of Contents use the exact same parchment treatment as the reader paper.
+- Mobile placement is unchanged.
