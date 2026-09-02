@@ -271,30 +271,3 @@
     margin-top:-1cm!important;
   }
 }
-
-
-/* 2026-09-02 — CANONICAL Artifacts geometry baseline.
-   Explicit effective values from the last visually working archive.
-   Future geometry changes should edit THIS block rather than adding another override. */
-@media(min-width:761px){
-  .artifactsPage{padding-top:calc(74px - 13.5mm)!important;}
-  .hero{
-    min-height:calc(330px - 9mm)!important;
-    height:calc(330px - 9mm)!important;
-    padding-top:calc(62px - 4.5mm)!important;
-    padding-bottom:calc(62px - 4.5mm)!important;
-    border-top:0!important;
-  }
-  .tools .controlLabel:nth-child(4){transform:none!important;}
-  .tableHeader > :nth-child(3){transform:translateX(-15mm)!important;}
-  .tableHeader > :nth-child(4){transform:translateX(-10mm)!important;}
-  .openEvaluation{transform:translateX(-2mm)!important;}
-  .corpus{margin-top:-1cm!important;}
-  .compareSection{margin-top:calc(54px - 1cm)!important;}
-}
-.controlLabel input,
-.controlLabel select{
-  border:1px solid var(--ox)!important;
-  color:#171714!important;
-}
-.controlLabel input::placeholder{color:#171714!important;opacity:.72;}
