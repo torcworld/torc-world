@@ -188,3 +188,17 @@
     transform:translateX(-5mm)!important;
   }
 }
+
+/* 2026-09-02 — requested Artifacts micro-adjustment.
+   Make only the charcoal hero 4mm less tall; keep its content anchored with
+   the same internal bottom spacing. Move the Operational Order and Cognitive
+   Magnitude table headings another 5mm left from their current position. */
+@media(min-width:761px){
+  .hero{
+    min-height:calc(330px - 4mm)!important;
+  }
+  .tableHeader > :nth-child(3),
+  .tableHeader > :nth-child(4){
+    transform:translateX(-10mm)!important;
+  }
+}
