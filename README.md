@@ -1,5 +1,8 @@
-# TORC Theory Parchment Reader Trial
+TORC Theory patch — book right / text left + softer parchment
 
-Copy the `app` folder into the root of the current TORC website project and merge/replace the matching files.
+Replace the matching files in the website with the contents of app/.
 
-This trial keeps the Theory entrance and smooth gold closed-book ritual, while the open reader uses a charcoal surround and visibly aged yellow parchment treatment.
+Changes:
+- Theory book presentation restored to text left + closed book right.
+- Book is visible as part of the presentation rather than sitting below centered copy.
+- Reader parchment is about 25% less yellow and shifted toward aged beige.
