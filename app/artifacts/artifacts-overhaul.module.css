@@ -291,3 +291,10 @@
   .corpus{margin-top:-7mm!important;}
   .cmsValue{transform:translateX(2mm)!important;}
 }
+
+/* 2026-09-02 — Artifacts: move every Open evaluation call-to-action a further
+   1mm left from the current position, without moving the CMS column. */
+@media(min-width:761px){
+  .openEvaluation{transform:translateX(-3mm)!important;}
+}
+
