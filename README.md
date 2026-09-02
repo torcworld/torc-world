@@ -1,6 +1,6 @@
-TORC website refinement patch
-
-Changes:
-- Homepage: full composition 2cm higher in total, with 2cm site-background breathing room beneath the final two cards; top TORC hero starts higher.
-- Artifacts: from THE CORPUS downward, the corpus/list/remaining sections move 1cm upward.
-- Organizations: another 3mm removed from the top of the first charcoal field; full composition another 1mm upward; red top rule preserved.
+TORC patch — Compare A overhaul + artifact analysis gold side fields.
+Includes prior accepted working patch state plus:
+- Compare rebuilt as Comparative Verdict architecture.
+- Small Open analysis buttons retained for both compared artifacts.
+- Stronger comparative verdict / Order / Magnitude / structural divergence copy.
+- Artifact analysis broad side fields changed from oxblood to TORC dark gold as a visual trial.
