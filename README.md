@@ -1,7 +1,9 @@
-TORC Artifacts — full-page gold frame trial
+TORC — Artifacts full gold frame refinement
 
-Desktop-only visual patch.
-- Keeps the current gold band below the charcoal hero for now.
-- Extends the same gold width down both sides of the complete Artifacts page.
-- Rails continue past Compare Artifacts and close at the bottom.
-- No other pages changed.
+Desktop-only visual refinement:
+- thin 3mm gold band above the charcoal Artifacts hero
+- no second light-brown/gold band above the hero
+- accidental horizontal gold band below the hero removed
+- continuous gold side rails run down the complete Artifacts page
+- fine charcoal line on the inside edge of both gold side rails
+- gold horizontal closure beneath the complete lower field

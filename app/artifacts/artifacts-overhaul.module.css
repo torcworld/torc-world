@@ -375,3 +375,34 @@
     background:var(--gold)!important;
   }
 }
+
+/* 2026-09-03 — Artifacts full-frame refinement.
+   One thin gold top rule, continuous gold side rails and a gold bottom closure.
+   Remove the accidental gold band directly beneath the charcoal hero. Add a
+   fine charcoal register line on the inside edge of each side rail. */
+@media(min-width:761px){
+  .artifactsPage{
+    border-top:3mm solid var(--gold)!important;
+    border-bottom:28px solid var(--gold)!important;
+    padding-top:0!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:0!important;
+    bottom:0!important;
+    width:28px!important;
+    background:var(--gold)!important;
+    box-sizing:border-box!important;
+  }
+  .artifactsPage::before{
+    border-right:1px solid var(--charcoal)!important;
+  }
+  .artifactsPage::after{
+    border-left:1px solid var(--charcoal)!important;
+  }
+  .hero{
+    outline:none!important;
+    margin-top:0!important;
+    margin-bottom:30px!important;
+  }
+}
