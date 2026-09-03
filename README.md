@@ -1,13 +1,12 @@
-# TORC Artifacts + Theory closure/spacing micro patch
+# TORC navigation button micro-patch
 
-Canonical motherbase: 3 September 2026.
+Canonical base: current uploaded motherbase.
 
-Changed files only:
-- `app/artifacts/artifacts-overhaul.module.css`
-  - stronger charcoal closing rule under the final artifact row
-  - reduced/balanced space below pagination and above Compare Artifacts
-- `app/theory/book/book.module.css`
-  - charcoal closing rule at the bottom of the Theory landing field
-  - 3mm normal site-background breathing room below the complete field
+Changed only:
+- `app/nav.module.css`
 
-No other files changed.
+Changes:
+- Organizations text softened from pure white to `#ddd4c8`, matching the subdued warm light text used beneath the Artifacts title.
+- Resting light-brown navigation buttons now retain a subtle gold `#c7aa76` outline so they read more clearly as buttons before hover/active state.
+
+No Artifacts frame geometry was changed in this patch.

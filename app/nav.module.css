@@ -89,7 +89,7 @@
   clip-path:none!important;
 }
 .mainLink,.submitLink{
-  border:1px solid #b5a07d!important;
+  border:1px solid #c7aa76!important;
   background:#d9c7a6!important;
   color:#171714!important;
 }
@@ -104,12 +104,12 @@
 .orgLink{
   border:1px solid #4a1e27!important;
   background:#5b2630!important;
-  color:#fff!important;
+  color:#ddd4c8!important;
 }
 .orgLink:hover,.orgLink:focus-visible{
   background:#431b23!important;
   border-color:#34141a!important;
-  color:#fff!important;
+  color:#ddd4c8!important;
 }
 .mainLink::after,.submitLink::after,.orgLink::after{
   display:none!important;
