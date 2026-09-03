@@ -1,12 +1,17 @@
-# TORC Artifacts frame + pagination detail patch
-
-Canonical base: current uploaded motherbase.
+# TORC Artifacts + Submit frame refinement
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
+- `app/evaluate-your-work/submit.module.css`
 
-Changes:
-- Restores an explicit ink-black outer line above the top gold frame band.
-- Strengthens the small constructed lower corner/joint detail on both gold side rails.
-- Active pagination number is now a slightly smaller 30×30px gold square with a crisp 1px ink-black border and black numeral.
-- Existing 2mm site-background gap below the frame remains unchanged.
+Artifacts:
+- Restores the 3mm gold bottom closure band.
+- Side rails continue through that band only, creating the requested short vertical corner joints.
+- Restores a fine charcoal outer rule above the top gold band.
+- Keeps all frame/register lines at a delicate 1px weight.
+- Keeps the existing 2mm site-background gap below the complete frame.
+
+Submit Your Artifact:
+- Removes the red vertical attachment above the charcoal hero by starting the side frame at the hero instead of the navigation gap.
+- Replaces the red hero-top accent with a fine 1px gold rule.
+- Lifts the complete charcoal hero another 3mm (from -5mm to -8mm) to bring it closer to the detached navigation rule.

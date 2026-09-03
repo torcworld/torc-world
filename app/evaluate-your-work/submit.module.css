@@ -797,13 +797,17 @@
   }
 }
 
-/* 2026-09-03 — visible privacy placement correction.
-   Previous margin adjustment was visually absorbed by the composition.
-   Keep the trust divider where it belongs, but lower the privacy content
-   itself so it occupies the calmer middle/lower part of the left column. */
+/* 2026-09-03 — Submit arrival-field refinement.
+   Remove the oxblood attachment above the charcoal hero, replace the heavy
+   red hero accent with a fine gold register, and lift the hero 3mm further
+   toward the detached navigation rule. The page-side rails now begin at the
+   hero itself rather than reaching upward into the navigation gap. */
 @media(min-width:761px){
-  .submitIntro .privacyTrust{
-    margin-top:34px!important;
-    padding-top:38px!important;
+  .hero{
+    transform:translateY(-8mm)!important;
+    border-top:1px solid #c7aa76!important;
+  }
+  .page::before{
+    top:calc(62px - 1mm - 8mm)!important;
   }
 }

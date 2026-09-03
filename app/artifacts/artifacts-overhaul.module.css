@@ -571,39 +571,23 @@
   }
 }
 
-/* 2026-09-03 — Artifacts frame joints + active pagination detail.
-   Restore the outer black register above the top gold band; give both lower
-   gold rails a short charcoal vertical joint at the closure; and make the
-   active page number a compact gold instrument tile with a crisp ink border. */
+/* 2026-09-03 — restore the delicate constructed Artifacts frame.
+   Bottom mirrors the top with a 3mm gold cross-band. The gold side rails
+   continue only through that band, creating two short 3mm vertical joints.
+   All register lines remain fine 1px charcoal rules. */
 @media(min-width:761px){
   .artifactsPage{
-    /* explicit outer top rule; retained bottom rule and 2mm ground */
+    border-bottom:3mm solid var(--gold)!important;
+    margin-bottom:2mm!important;
     box-shadow:
-      0 -1px 0 #171714,
-      inset 0 1px 0 var(--charcoal),
-      inset 0 -1px 0 #171714,
-      0 1px 0 #171714!important;
+      0 -1px 0 rgba(53,52,50,.82),
+      inset 0 1px 0 rgba(53,52,50,.82),
+      inset 0 -1px 0 rgba(53,52,50,.82),
+      0 1px 0 rgba(53,52,50,.82)!important;
   }
-
-  /* Small vertical construction joints at the lower left/right corners. */
   .artifactsPage::before,
   .artifactsPage::after{
-    border-bottom:1px solid #171714!important;
-  }
-  .artifactsPage::before{
-    box-shadow:inset 1px 0 0 var(--charcoal), inset -1px 0 0 var(--charcoal)!important;
-  }
-  .artifactsPage::after{
-    box-shadow:inset 1px 0 0 var(--charcoal), inset -1px 0 0 var(--charcoal)!important;
-  }
-
-  .pageNumbers .activePage{
-    min-width:30px!important;
-    width:30px!important;
-    height:30px!important;
-    padding:0!important;
-    background:var(--gold)!important;
-    color:#171714!important;
-    border:1px solid #171714!important;
+    bottom:-3mm!important;
+    border-bottom:1px solid rgba(53,52,50,.82)!important;
   }
 }
