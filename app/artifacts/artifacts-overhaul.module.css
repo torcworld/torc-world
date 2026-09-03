@@ -345,3 +345,15 @@
     padding-bottom:calc(62px - 8mm)!important;
   }
 }
+
+/* 2026-09-03 — Artifacts hero: TORC gold architectural frame.
+   Desktop only. Wrap the charcoal opening field in one continuous dark-gold
+   band (top, sides and bottom) while leaving the rest of the page untouched. */
+@media(min-width:761px){
+  .hero{
+    position:relative!important;
+    outline:7mm solid var(--gold)!important;
+    outline-offset:0!important;
+    margin-bottom:calc(30px + 7mm)!important;
+  }
+}

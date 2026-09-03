@@ -1,8 +1,6 @@
-TORC Theory page — gold editorial composition trial.
+TORC — Artifacts gold hero frame
 
-Changes only the live Theory landing CSS:
-- TORC gold surround and lower field
-- charcoal title/book hero
-- same book ~10% smaller and 4mm higher
-- compact charcoal Living Edition card shifted 1cm right
-- gold Read the Book CTA
+Desktop-only visual patch.
+- Continuous dark-gold frame around the charcoal Artifacts hero.
+- Gold band runs across the top, down both sides, and beneath the hero.
+- No other page or Artifacts content changed.
