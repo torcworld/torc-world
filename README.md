@@ -1,5 +1,5 @@
-# TORC Theory Parchment Reader Trial
+# TORC Theory + Submission Privacy build fix
 
-Copy the `app` folder into the root of the current TORC website project and merge/replace the matching files.
+Copy the `app` folder into the root of the TORC website project and merge/replace matching files.
 
-This trial keeps the Theory entrance and smooth gold closed-book ritual, while the open reader uses a charcoal surround and visibly aged yellow parchment treatment.
+This patch is based on the last working Theory archive. The Submit page now contains its form and pricing components directly in `page.tsx`, so the build no longer depends on resolving `./SubmissionForm` or `./PricingCards`. It also adds the Submission & Privacy trust statement.
