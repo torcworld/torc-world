@@ -5,7 +5,7 @@
  --ground:#e8e0d4;
  --surface:#eee6da;
  --surface-strong:#ddceb3;
- max-width:1180px;margin:0 auto;padding:62px 28px 110px;color:#171714
+ max-width:1180px;margin:0 auto;padding:calc(62px - 4mm) 28px 110px;color:#171714
 }
 .eyebrow,.submitIntro>span{
  font:700 10px/1.2 Arial,sans-serif;letter-spacing:.18em;color:var(--accent)
@@ -563,3 +563,206 @@
 }
 
 @media(max-width:760px){.upgradeCreditPanel{grid-template-columns:1fr;gap:8px}.upgradeCreditPanel>span{padding-top:0}}
+
+/* 2026-09-02 — Submit Your Artifact: lift only the charcoal hero visually by 2mm,
+   without moving or pulling the following process/pricing card. Desktop only. */
+@media(min-width:761px){
+  .hero{
+    transform:translateY(-2mm)!important;
+  }
+}
+
+
+/* CORRECTED DEPLOY OVERRIDE — Submit hero only, 2mm upward. */
+@media(min-width:761px){
+  .hero{transform:translateY(-2mm)!important;}
+}
+
+/* 2026-09-02 — Submit Your Artifact: set the charcoal hero to 3mm upward,
+   independently of the following process/pricing block. Desktop only. */
+@media(min-width:761px){
+  .hero{transform:translateY(-5mm)!important;}
+}
+
+
+/* 2026-09-02 — move the complete Submit Your Artifact composition 1mm upward. */
+@media(min-width:761px){
+  .page{padding-top:calc(62px - 3mm)!important;}
+}
+
+/* 2026-09-02 — from “Choose how far you want to go” onward, lift the pricing
+   section and everything that follows by 1mm in normal document flow. */
+@media(min-width:761px){
+  .pricing{margin-top:-1mm!important;}
+}
+
+/* 2026-09-02 — move the complete Submit composition 1mm downward from its current position. */
+@media(min-width:761px){
+  .page{padding-top:calc(62px - 2mm)!important;}
+}
+
+
+/* 2026-09-02 — move the complete Submit composition another 1mm downward. */
+@media(min-width:761px){
+  .page{padding-top:calc(62px - 1mm)!important;}
+}
+
+/* 2026-09-02 — bottom finish: remove the side rails below the final oxblood
+   submit panel and reduce the blank site-background field beneath it by 1cm. */
+@media(min-width:761px){
+  .page{
+    padding-bottom:calc(110px - 1cm)!important;
+    border-left:0!important;
+    border-right:0!important;
+  }
+  .page::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:calc(110px - 1cm);
+    border-left:1px solid rgba(91,38,48,.55);
+    border-right:1px solid rgba(91,38,48,.55);
+    pointer-events:none;
+    z-index:4;
+  }
+}
+
+/* 2026-09-02 — add 8mm breathing room between the charcoal development-principle
+   panel and the final oxblood submission panel. */
+@media(min-width:761px){
+  .principle{margin-bottom:calc(28px + 8mm)!important;}
+}
+
+
+/* 2026-09-02 — Submit refinement from confirmed working archive.
+   Keep the credit sentence only; remove the repeated process explanation. */
+.pricingIntro:first-of-type{
+  display:none!important;
+}
+
+/* Active package = dark gold; inactive packages = TORC light brown. */
+.priceCard:not(.selectedPriceCard){
+  background:#d9c7a6!important;
+}
+.priceCard.selectedPriceCard{
+  background:#c7aa76!important;
+  border-color:#9f8355!important;
+}
+.packageDetail{
+  background:#c7aa76!important;
+  border-color:#9f8355!important;
+}
+
+/* Keep the oxblood submission area, but make the actual form feel like TORC
+   rather than a generic white web form. */
+.form{
+  background:#d9c7a6!important;
+  border:1px solid #171714!important;
+  box-shadow:none!important;
+}
+.form input:not([type=checkbox]),
+.form select,
+.form textarea{
+  background:var(--bg)!important;
+  color:#171714!important;
+  border-color:#171714!important;
+  box-shadow:none!important;
+}
+.form textarea{
+  border:1px solid #171714!important;
+}
+
+/* Minimal test: hero title only. */
+.hero h1{color:#c7aa76!important;}
+
+
+/* Submit refinement — compact the choice moment and remove the redundant
+   second charcoal principle card before submission. */
+@media(min-width:761px){
+  .priceGrid{
+    transform:translateY(-2mm)!important;
+    margin-bottom:-2mm!important;
+  }
+}
+.principle{
+  display:none!important;
+}
+
+
+/* Submission privacy — quiet trust disclosure inside the oxblood submit field. */
+.privacyTrust{
+  width:min(760px,calc(100% - 40px));
+  margin:30px auto 0;
+  padding:22px 0 4px;
+  border-top:1px solid rgba(217,199,166,.62);
+  color:#d9c7a6;
+}
+.privacyEyebrow{
+  display:block;
+  margin-bottom:7px;
+  color:#c7aa76;
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.privacySummary{
+  max-width:680px;
+  margin:0 0 13px;
+  font-size:.96rem;
+  line-height:1.55;
+}
+.privacyDetails{
+  border:0;
+}
+.privacyDetails summary{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  list-style:none;
+  color:#c7aa76;
+  font-weight:800;
+}
+.privacyDetails summary::-webkit-details-marker{display:none;}
+.privacyDetails summary span{
+  transition:transform .18s ease;
+}
+.privacyDetails[open] summary span{
+  transform:rotate(90deg);
+}
+.privacyBody{
+  max-width:720px;
+  margin-top:18px;
+  padding:20px 22px;
+  background:#d9c7a6;
+  border:1px solid #171714;
+  color:#171714;
+}
+.privacyBody h3{
+  margin:0 0 14px;
+  font-size:1.2rem;
+}
+.privacyBody p{
+  margin:0 0 12px;
+  line-height:1.6;
+}
+.privacyBody p:last-child{margin-bottom:0;}
+.privacyBody a{
+  color:#5b2630;
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+@media(max-width:760px){
+  .privacyTrust{
+    width:calc(100% - 28px);
+    margin-top:24px;
+  }
+  .privacyBody{
+    padding:18px 16px;
+  }
+}
+
+/* 2026-09-03 — redeploy marker: Submission & Privacy styles retained. */
