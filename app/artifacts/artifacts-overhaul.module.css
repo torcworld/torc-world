@@ -571,19 +571,16 @@
   }
 }
 
-/* 2026-09-03 — mirror the constructed top frame at the bottom.
-   The vertical gold rails now terminate into a matching 3mm gold cross-band,
-   with charcoal precision rules, followed by the existing 2mm site ground. */
+/* 2026-09-03 — bottom frame edge correction.
+   Keep the 2mm site-ground gap; make the OUTER edge beneath the 3mm gold
+   closure unambiguously ink-black, matching the constructed top edge. */
 @media(min-width:761px){
   .artifactsPage{
     border-bottom:3mm solid var(--gold)!important;
     box-shadow:
       inset 0 1px 0 var(--charcoal),
-      0 -1px 0 var(--charcoal),
-      inset 0 -1px 0 var(--charcoal)!important;
-  }
-  .artifactsPage::before,
-  .artifactsPage::after{
-    bottom:-3mm!important;
+      inset 0 -1px 0 #171714,
+      0 1px 0 #171714!important;
+    margin-bottom:2mm!important;
   }
 }

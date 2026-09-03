@@ -89,7 +89,7 @@
   clip-path:none!important;
 }
 .mainLink,.submitLink{
-  border:1px solid #c7aa76!important;
+  border:1px solid #b5a07d!important;
   background:#d9c7a6!important;
   color:#171714!important;
 }
@@ -104,12 +104,12 @@
 .orgLink{
   border:1px solid #4a1e27!important;
   background:#5b2630!important;
-  color:#ddd4c8!important;
+  color:#fff!important;
 }
 .orgLink:hover,.orgLink:focus-visible{
   background:#431b23!important;
   border-color:#34141a!important;
-  color:#ddd4c8!important;
+  color:#fff!important;
 }
 .mainLink::after,.submitLink::after,.orgLink::after{
   display:none!important;
@@ -141,4 +141,11 @@
     font-size:8px!important;
     letter-spacing:.07em!important;
   }
+}
+
+/* 2026-09-03 — navigation resting-outline correction.
+   The pale buttons retain their light fill, but use the same dark-gold edge
+   visible on hover so the button geometry is always crisp. */
+.mainLink,.submitLink{
+  border-color:#8f744e!important;
 }

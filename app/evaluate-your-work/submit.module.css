@@ -797,10 +797,13 @@
   }
 }
 
-/* 2026-09-03 — give the privacy/trust statement more separation from the
-   Submit Your Artifact introduction without disturbing the form column. */
+/* 2026-09-03 — visible privacy placement correction.
+   Previous margin adjustment was visually absorbed by the composition.
+   Keep the trust divider where it belongs, but lower the privacy content
+   itself so it occupies the calmer middle/lower part of the left column. */
 @media(min-width:761px){
   .submitIntro .privacyTrust{
-    margin-top:40px!important;
+    margin-top:34px!important;
+    padding-top:38px!important;
   }
 }
