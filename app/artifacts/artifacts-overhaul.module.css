@@ -406,3 +406,34 @@
     margin-bottom:30px!important;
   }
 }
+
+/* 2026-09-03 — Archive strip + bottom closure refinement.
+   Desktop: turn the complete Operational Order archive strip gold and inset it
+   to the same inner reading line as the artifact corpus, leaving ochre air
+   between the strip and the full-page gold rails. Finish the page immediately
+   after Compare with the gold closure and a fine charcoal register rule. */
+@media(min-width:761px){
+  .orderStrip{
+    margin-left:62px!important;
+    margin-right:62px!important;
+    background:var(--gold)!important;
+    border-top:1px solid rgba(23,23,20,.55)!important;
+    border-bottom:1px solid rgba(23,23,20,.55)!important;
+  }
+  .orderStripLabel{
+    padding-left:18px!important;
+  }
+  .orderStrip button{
+    background:var(--gold)!important;
+    border-left:1px solid rgba(23,23,20,.24)!important;
+  }
+  .orderStrip button:hover,
+  .orderStrip button:focus-visible,
+  .orderStrip .orderActive{
+    background:var(--gold)!important;
+  }
+  .artifactsPage{
+    margin-bottom:0!important;
+    box-shadow:0 1px 0 var(--charcoal)!important;
+  }
+}
