@@ -1760,3 +1760,13 @@
     display:none!important;
   }
 }
+
+/* 2026-09-03 — Theory landing bottom closure.
+   Complete the charcoal precision frame at the bottom and leave a narrow strip
+   of normal site ground below the field, echoing the breathing room above. */
+@media(min-width:761px){
+  .bookLanding{
+    border-bottom:1px solid #353432!important;
+    margin-bottom:3mm!important;
+  }
+}

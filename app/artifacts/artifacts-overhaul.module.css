@@ -554,3 +554,19 @@
     border-top-color:var(--charcoal)!important;
   }
 }
+
+/* 2026-09-03 — Artifact ledger closure + pagination spacing refinement.
+   Desktop only: give the final artifact row the same strong charcoal closure
+   as the top of the ledger, and balance the vertical air around pagination so
+   Compare sits materially closer to the archive without crowding the numbers. */
+@media(min-width:761px){
+  .artifactTable :global(a.row:not(.header):last-child){
+    border-bottom:1px solid #171714!important;
+  }
+  .corpus{
+    padding-bottom:24px!important;
+  }
+  .compareSection{
+    margin-top:24px!important;
+  }
+}
