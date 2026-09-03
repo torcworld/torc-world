@@ -689,3 +689,78 @@
 .principle{
   display:none!important;
 }
+
+
+/* Submission privacy — quiet trust disclosure inside the oxblood submit field. */
+.privacyTrust{
+  width:min(760px,calc(100% - 40px));
+  margin:30px auto 0;
+  padding:22px 0 4px;
+  border-top:1px solid rgba(217,199,166,.62);
+  color:#d9c7a6;
+}
+.privacyEyebrow{
+  display:block;
+  margin-bottom:7px;
+  color:#c7aa76;
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.14em;
+}
+.privacySummary{
+  max-width:680px;
+  margin:0 0 13px;
+  font-size:.96rem;
+  line-height:1.55;
+}
+.privacyDetails{
+  border:0;
+}
+.privacyDetails summary{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  cursor:pointer;
+  list-style:none;
+  color:#c7aa76;
+  font-weight:800;
+}
+.privacyDetails summary::-webkit-details-marker{display:none;}
+.privacyDetails summary span{
+  transition:transform .18s ease;
+}
+.privacyDetails[open] summary span{
+  transform:rotate(90deg);
+}
+.privacyBody{
+  max-width:720px;
+  margin-top:18px;
+  padding:20px 22px;
+  background:#d9c7a6;
+  border:1px solid #171714;
+  color:#171714;
+}
+.privacyBody h3{
+  margin:0 0 14px;
+  font-size:1.2rem;
+}
+.privacyBody p{
+  margin:0 0 12px;
+  line-height:1.6;
+}
+.privacyBody p:last-child{margin-bottom:0;}
+.privacyBody a{
+  color:#5b2630;
+  font-weight:800;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+@media(max-width:760px){
+  .privacyTrust{
+    width:calc(100% - 28px);
+    margin-top:24px;
+  }
+  .privacyBody{
+    padding:18px 16px;
+  }
+}
