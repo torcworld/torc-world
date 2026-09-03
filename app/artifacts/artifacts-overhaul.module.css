@@ -357,3 +357,21 @@
     margin-bottom:calc(30px + 7mm)!important;
   }
 }
+
+/* 2026-09-03 — Artifacts full-page gold frame trial.
+   Keep the current gold band beneath the hero for this trial, but extend the
+   same 28px gold side rails continuously around the complete Artifacts field,
+   through Compare, and close them at the page bottom. Desktop only. */
+@media(min-width:761px){
+  .artifactsPage{
+    border-top:28px solid var(--gold)!important;
+    padding-top:46px!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:0!important;
+    bottom:0!important;
+    width:28px!important;
+    background:var(--gold)!important;
+  }
+}
