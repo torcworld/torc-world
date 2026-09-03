@@ -50,7 +50,7 @@ export default function SubmitArtifactPage(){
     <p>Tell us what you made and what you want to understand. You do not need to know your TORC classification or arrive with a preferred outcome.</p>
     <div className={styles.submitTrust}>
      <div><b>01</b><span>Private by default</span></div>
-     <div><b>02</b><span>No payment at submission</span></div>
+     <div><b>02</b><span>No payment until your artifact is accepted</span></div>
      <div><b>03</b><span>Scope confirmed first</span></div>
     </div>
     <div className={styles.privacyTrust}>

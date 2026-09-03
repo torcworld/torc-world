@@ -7,7 +7,7 @@ type PackageKey = 'evaluation' | 'development' | 'cycle';
 
 const details = {
  evaluation: {
-  phase:'SEE',
+  phase:'DIAGNOSE',
   name:'TORC Evaluation',
   price:'€195',
   question:'What have I actually built?',

@@ -1,16 +1,12 @@
-# TORC Analysis — Six-Dimensional Model refinement
+# TORC Submit — Diagnose + payment acceptance micro-patch
 
-Changed only:
-- `app/artifact/components/ArtifactAnalysis.tsx`
-- `app/artifact/components/artifact-analysis.module.css`
+Changed only the Submit Your Artifact flow:
 
-Changes:
-- Removes “Definition + artifact analysis” from all six closed dimension rows.
-- Makes the six closed rows materially more compact vertically.
-- Hover/open state uses TORC's light-brown interaction material (`#d9c7a6`) for clearer clickability, with only a very restrained positional response.
-- Expanded dimensions now show, in order:
-  1. Formal definition.
-  2. In plain language.
-  3. Why this artifact scores [score].
-- Uses the six formal definitions and six plain-language definitions supplied by the user.
-- Existing artifact-specific score explanations remain unchanged.
+- `app/evaluate-your-work/PricingCards.tsx`
+  - Replaces the €195 Evaluation phase label `SEE` with `DIAGNOSE`.
+- `app/evaluate-your-work/page.tsx`
+  - Replaces `No payment at submission` with `No payment until your artifact is accepted`.
+- `app/evaluate-your-work/SubmissionForm.tsx`
+  - Updates the matching form note to `No payment is taken until your artifact is accepted. Scope and turnaround are confirmed first.`
+
+No CSS, layout, pricing, package contents, or other pages were changed.

@@ -68,7 +68,7 @@ export default function SubmissionForm(){
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
   <label className={styles.check}><input type="checkbox" name="permission" value="yes" required/><span>I own this work or have permission to submit it for evaluation.</span></label>
   <button className={styles.submitButton} disabled={status==='sending'}>{status==='sending'?'Sending…':'Submit artifact for review'}</button>
-  <p className={styles.noCharge}>No payment is taken at submission. Scope and turnaround are confirmed first.</p>
+  <p className={styles.noCharge}>No payment is taken until your artifact is accepted. Scope and turnaround are confirmed first.</p>
   {message&&<p className={status==='sent'?styles.success:styles.error} role="status">{message}</p>}
  </form>
 }
