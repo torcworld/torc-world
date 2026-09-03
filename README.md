@@ -1,5 +1,4 @@
-# TORC Theory + Submission Privacy build fix
+TORC build hotfix
 
-Copy the `app` folder into the root of the TORC website project and merge/replace matching files.
-
-This patch is based on the last working Theory archive. The Submit page now contains its form and pricing components directly in `page.tsx`, so the build no longer depends on resolving `./SubmissionForm` or `./PricingCards`. It also adds the Submission & Privacy trust statement.
+Adds the missing evaluate-your-work/SubmissionForm.tsx required by the duplicate root-level page currently present in the repository.
+No website design files are otherwise changed in this patch.
