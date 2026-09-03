@@ -1,17 +1,12 @@
-# TORC Artifacts + Submit frame refinement
+# TORC navigation / pagination / Submit micro-patch
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
+- `app/nav.module.css`
 - `app/evaluate-your-work/submit.module.css`
 
-Artifacts:
-- Restores the 3mm gold bottom closure band.
-- Side rails continue through that band only, creating the requested short vertical corner joints.
-- Restores a fine charcoal outer rule above the top gold band.
-- Keeps all frame/register lines at a delicate 1px weight.
-- Keeps the existing 2mm site-background gap below the complete frame.
-
-Submit Your Artifact:
-- Removes the red vertical attachment above the charcoal hero by starting the side frame at the hero instead of the navigation gap.
-- Replaces the red hero-top accent with a fine 1px gold rule.
-- Lifts the complete charcoal hero another 3mm (from -5mm to -8mm) to bring it closer to the detached navigation rule.
+Changes:
+- Restores the compact 30×30px gold active page-number tile with a fine black square border.
+- Makes “Theory of Representational Consciousness” under TORC slightly darker for improved legibility, while keeping it subordinate to the wordmark.
+- Leaves the Organizations button color unchanged for now.
+- Lifts the Submit Your Artifact charcoal arrival hero another 2mm, retaining the thin gold top register and detached navigation spacing.

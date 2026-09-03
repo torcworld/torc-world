@@ -811,3 +811,14 @@
     top:calc(62px - 1mm - 8mm)!important;
   }
 }
+
+/* 2026-09-03 — final arrival alignment trial: lift the charcoal hero another
+   2mm toward the detached navigation rule. Keep its gold top register. */
+@media(min-width:761px){
+  .hero{
+    transform:translateY(-10mm)!important;
+  }
+  .page::before{
+    top:calc(62px - 1mm - 10mm)!important;
+  }
+}

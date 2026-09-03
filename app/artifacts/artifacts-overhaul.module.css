@@ -591,3 +591,16 @@
     border-bottom:1px solid rgba(53,52,50,.82)!important;
   }
 }
+
+/* 2026-09-03 — restore the compact framed active pagination tile. */
+@media(min-width:761px){
+  .pageNumbers .activePage{
+    min-width:30px!important;
+    width:30px!important;
+    height:30px!important;
+    padding:0!important;
+    background:var(--gold)!important;
+    color:#171714!important;
+    border:1px solid #171714!important;
+  }
+}

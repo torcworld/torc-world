@@ -143,9 +143,9 @@
   }
 }
 
-/* 2026-09-03 — navigation resting-outline correction.
-   The pale buttons retain their light fill, but use the same dark-gold edge
-   visible on hover so the button geometry is always crisp. */
-.mainLink,.submitLink{
-  border-color:#8f744e!important;
+/* 2026-09-03 — slightly strengthen the TORC descriptor without competing
+   with the TORC wordmark. Organizations treatment intentionally unchanged
+   pending visual choice. */
+.brandLockup span{
+  color:#45423e!important;
 }
