@@ -571,16 +571,39 @@
   }
 }
 
-/* 2026-09-03 — bottom frame edge correction.
-   Keep the 2mm site-ground gap; make the OUTER edge beneath the 3mm gold
-   closure unambiguously ink-black, matching the constructed top edge. */
+/* 2026-09-03 — Artifacts frame joints + active pagination detail.
+   Restore the outer black register above the top gold band; give both lower
+   gold rails a short charcoal vertical joint at the closure; and make the
+   active page number a compact gold instrument tile with a crisp ink border. */
 @media(min-width:761px){
   .artifactsPage{
-    border-bottom:3mm solid var(--gold)!important;
+    /* explicit outer top rule; retained bottom rule and 2mm ground */
     box-shadow:
+      0 -1px 0 #171714,
       inset 0 1px 0 var(--charcoal),
       inset 0 -1px 0 #171714,
       0 1px 0 #171714!important;
-    margin-bottom:2mm!important;
+  }
+
+  /* Small vertical construction joints at the lower left/right corners. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    border-bottom:1px solid #171714!important;
+  }
+  .artifactsPage::before{
+    box-shadow:inset 1px 0 0 var(--charcoal), inset -1px 0 0 var(--charcoal)!important;
+  }
+  .artifactsPage::after{
+    box-shadow:inset 1px 0 0 var(--charcoal), inset -1px 0 0 var(--charcoal)!important;
+  }
+
+  .pageNumbers .activePage{
+    min-width:30px!important;
+    width:30px!important;
+    height:30px!important;
+    padding:0!important;
+    background:var(--gold)!important;
+    color:#171714!important;
+    border:1px solid #171714!important;
   }
 }
