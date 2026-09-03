@@ -73,8 +73,6 @@ function SubmissionForm(){
  </form>
 }
 
-type PackageKey = 'evaluation' | 'development' | 'cycle';
-
 const details = {
  evaluation: {
   phase:'SEE',
