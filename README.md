@@ -1,7 +1,8 @@
-TORC Theory composition refinement
+TORC Theory page — gold editorial composition trial.
 
-- Keeps the charcoal title + book opening.
-- Keeps the 4mm light-brown top band.
-- Returns the lower section to TORC light brown.
-- Turns Living Edition into a compact charcoal publication card.
-- No Submit or other pages changed.
+Changes only the live Theory landing CSS:
+- TORC gold surround and lower field
+- charcoal title/book hero
+- same book ~10% smaller and 4mm higher
+- compact charcoal Living Edition card shifted 1cm right
+- gold Read the Book CTA

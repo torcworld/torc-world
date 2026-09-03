@@ -1669,3 +1669,78 @@
     font-weight:700!important;
   }
 }
+
+/* Theory trial — gold editorial surround.
+   Charcoal title/book hero floats inside the TORC gold field; lower field is
+   fully gold, with a compact charcoal Living Edition card. */
+@media(min-width:761px){
+  .bookLanding{
+    background:#c7aa76!important;
+    padding:2mm 24px 0!important;
+    box-sizing:border-box!important;
+  }
+  .bookLanding .manifestHero{
+    border-top:0!important;
+  }
+  .bookLanding .manifestTitle,
+  .bookLanding .manifestThesis{
+    background:#353432!important;
+  }
+  .bookLanding .manifestThesis::after{
+    display:none!important;
+  }
+
+  /* Keep the same book, slightly smaller and a few millimetres higher. */
+  .bookLanding .manifestThesis .closedBook{
+    width:min(387px,85%)!important;
+    transform:translateY(-4mm)!important;
+    margin-bottom:0!important;
+  }
+  .bookLanding .manifestThesis .closedBook:hover,
+  .bookLanding .manifestThesis .closedBook:focus-visible{
+    transform:translateY(calc(-4mm - 5px)) rotate(-.35deg)!important;
+  }
+
+  .bookLanding .bookInvitation{
+    background:#c7aa76!important;
+    min-height:0!important;
+    padding:34px clamp(28px,6vw,78px) 40px!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:clamp(42px,6vw,76px)!important;
+    align-items:start!important;
+  }
+  .bookLanding .parkedQuestion{
+    color:#171714!important;
+  }
+  .bookLanding .parkedQuestion .eyebrow{
+    color:#5b2630!important;
+  }
+  .bookLanding .invitationCopy{
+    grid-column:2!important;
+    justify-self:center!important;
+    width:min(410px,100%)!important;
+    max-width:410px!important;
+    margin:0!important;
+    padding:28px 30px 26px!important;
+    transform:translateX(1cm)!important;
+    background:#353432!important;
+    border:1px solid #171714!important;
+    color:#d9c7a6!important;
+    box-sizing:border-box!important;
+  }
+  .bookLanding .invitationCopy .eyebrow,
+  .bookLanding .invitationCopy p,
+  .bookLanding .invitationCopy em{
+    color:#d9c7a6!important;
+  }
+  .bookLanding .invitationCopy .readCta{
+    display:table!important;
+    margin:20px 0 0!important;
+    padding:10px 16px!important;
+    transform:none!important;
+    background:#c7aa76!important;
+    border:1px solid #171714!important;
+    color:#171714!important;
+    font-weight:700!important;
+  }
+}
