@@ -64,7 +64,6 @@ export default function SubmitArtifactPage(){
    </div>
    <SubmissionForm />
 
-   {/* 2026-09-03: Submission & Privacy trust disclosure */}
    <div className={styles.privacyTrust}>
     <span className={styles.privacyEyebrow}>YOUR WORK REMAINS YOURS</span>
     <p className={styles.privacySummary}>Submitted artifacts are used only to perform your TORC analysis and are deleted after completion.</p>
