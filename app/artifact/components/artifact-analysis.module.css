@@ -528,3 +528,38 @@
 .cmsSection{
   padding-top:6mm!important;
 }
+
+/* 2026-09-03 — Six-Dimensional Model refinement.
+   Remove redundant closed-row helper copy, compact the instrument vertically,
+   use the established TORC light-brown interaction material on hover/open, and
+   support the three-part expanded reading: formal definition, plain language,
+   and artifact-specific score rationale. */
+@media(min-width:761px){
+  .dimension summary{
+    padding:10px 6px 10px 0!important;
+  }
+  .dimName small{
+    display:none!important;
+  }
+  .dimension summary:hover{
+    background:#d9c7a6!important;
+    transform:translateX(3px)!important;
+    padding-left:5px!important;
+  }
+  .dimension[open] summary{
+    background:#d9c7a6!important;
+  }
+  .dimension summary:hover>strong{
+    transform:none!important;
+  }
+  .dimension summary:hover .bar>span{
+    transform:none!important;
+  }
+  .dimBody{
+    padding-top:12px!important;
+    padding-bottom:20px!important;
+  }
+  .dimBody p{
+    margin-bottom:10px!important;
+  }
+}
