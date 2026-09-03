@@ -796,3 +796,11 @@
     max-width:100%!important;
   }
 }
+
+/* 2026-09-03 — give the privacy/trust statement more separation from the
+   Submit Your Artifact introduction without disturbing the form column. */
+@media(min-width:761px){
+  .submitIntro .privacyTrust{
+    margin-top:40px!important;
+  }
+}
