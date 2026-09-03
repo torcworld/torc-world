@@ -1607,3 +1607,65 @@
     transform:translateX(1mm)!important;
   }
 }
+
+/* Theory landing — balanced house composition.
+   Preserve the strong charcoal title/book opening, then return the lower field
+   to TORC light brown with a compact charcoal Living Edition instrument. */
+@media(min-width:761px){
+  .bookLanding .manifest{
+    border-top:4mm solid #d9c7a6!important;
+  }
+
+  /* End the hero cleanly: no oversized charcoal continuation below the book. */
+  .bookLanding .manifestThesis::after{
+    display:none!important;
+  }
+
+  .bookLanding .bookInvitation{
+    background:#d9c7a6!important;
+    padding:34px clamp(28px,6vw,78px) 38px!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:clamp(42px,6vw,76px)!important;
+    align-items:start!important;
+  }
+
+  .bookLanding .parkedQuestion{
+    grid-column:1!important;
+    justify-self:end!important;
+    width:100%!important;
+    max-width:430px!important;
+    padding:10px 0 8px!important;
+    color:#171714!important;
+  }
+
+  /* A smaller charcoal publication card keeps the asymmetry without turning
+     the entire lower-right quadrant into another dark slab. */
+  .bookLanding .invitationCopy{
+    grid-column:2!important;
+    justify-self:center!important;
+    width:min(410px,100%)!important;
+    max-width:410px!important;
+    margin:0!important;
+    padding:28px 30px 26px!important;
+    transform:none!important;
+    background:#353432!important;
+    border:1px solid #171714!important;
+    color:#d9c7a6!important;
+    box-sizing:border-box!important;
+  }
+  .bookLanding .invitationCopy .eyebrow,
+  .bookLanding .invitationCopy p,
+  .bookLanding .invitationCopy em{
+    color:#d9c7a6!important;
+  }
+  .bookLanding .invitationCopy .readCta{
+    display:table!important;
+    margin:20px 0 0!important;
+    padding:10px 16px!important;
+    transform:none!important;
+    background:#c7aa76!important;
+    border:1px solid #171714!important;
+    color:#171714!important;
+    font-weight:700!important;
+  }
+}

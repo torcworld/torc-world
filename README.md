@@ -1,6 +1,7 @@
-TORC Submit page live-route refinement.
+TORC Theory composition refinement
 
-Changes only app/evaluate-your-work/page.tsx and submit.module.css:
-- removes repeated New to TORC / credit band before submission
-- moves Submission & Privacy into the left column of the oxblood submit section
-- compacts desktop top/bottom spacing
+- Keeps the charcoal title + book opening.
+- Keeps the 4mm light-brown top band.
+- Returns the lower section to TORC light brown.
+- Turns Living Edition into a compact charcoal publication card.
+- No Submit or other pages changed.
