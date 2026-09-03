@@ -43,14 +43,6 @@ export default function SubmitArtifactPage(){
    <p className={styles.principleClose}>That is structural leverage.</p>
   </section>
 
-  <section className={styles.creditBand}>
-   <div>
-    <span>NEW TO TORC?</span>
-    <h2>Start with Evaluation. Continue without paying twice.</h2>
-   </div>
-   <p>Upgrade to TORC Development within 30 days and your €195 Evaluation fee is credited in full. Let the diagnosis show you whether TORC sees something useful in your work before committing to a deeper engagement.</p>
-  </section>
-
   <section id="submit" className={styles.submitSection}>
    <div className={styles.submitIntro}>
     <span>START WITH YOUR WORK</span>
@@ -61,25 +53,25 @@ export default function SubmitArtifactPage(){
      <div><b>02</b><span>No payment at submission</span></div>
      <div><b>03</b><span>Scope confirmed first</span></div>
     </div>
+   <div className={styles.privacyTrust}>
+     <span className={styles.privacyEyebrow}>YOUR WORK REMAINS YOURS</span>
+     <p className={styles.privacySummary}>Submitted artifacts are used only to perform your TORC analysis and are deleted after completion.</p>
+     <details className={styles.privacyDetails}>
+      <summary>Submission &amp; Privacy <span aria-hidden="true">→</span></summary>
+      <div className={styles.privacyBody}>
+       <h3>Submission &amp; Privacy</h3>
+       <p>Your work remains yours. Submitting an artifact to TORC does not transfer any ownership, copyright, or other intellectual-property rights to TORC.</p>
+       <p>Submitted materials are used only for the purpose of providing the TORC service you requested. TORC does not publish, sell, distribute, or use submitted work for promotional purposes without your explicit permission.</p>
+       <p>Access to submitted materials is limited to what is necessary to perform the requested analysis. Submitted files are deleted from TORC&apos;s working records after the requested service has been completed and delivered.</p>
+       <p>Where third-party technical services are required to receive, store, transmit, or process a submission, they may process data only as part of providing those services.</p>
+       <p>TORC analyses, classifications, and recommendations are evaluative judgments. They do not affect the creator&apos;s ownership of the underlying work.</p>
+       <p>If you would like your submitted material deleted earlier, you may contact TORC at <a href="mailto:contact@torc.world">contact@torc.world</a>.</p>
+      </div>
+     </details>
+    </div>
    </div>
    <SubmissionForm />
 
-   <div className={styles.privacyTrust}>
-    <span className={styles.privacyEyebrow}>YOUR WORK REMAINS YOURS</span>
-    <p className={styles.privacySummary}>Submitted artifacts are used only to perform your TORC analysis and are deleted after completion.</p>
-    <details className={styles.privacyDetails}>
-     <summary>Submission &amp; Privacy <span aria-hidden="true">→</span></summary>
-     <div className={styles.privacyBody}>
-      <h3>Submission &amp; Privacy</h3>
-      <p>Your work remains yours. Submitting an artifact to TORC does not transfer any ownership, copyright, or other intellectual-property rights to TORC.</p>
-      <p>Submitted materials are used only for the purpose of providing the TORC service you requested. TORC does not publish, sell, distribute, or use submitted work for promotional purposes without your explicit permission.</p>
-      <p>Access to submitted materials is limited to what is necessary to perform the requested analysis. Submitted files are deleted from TORC&apos;s working records after the requested service has been completed and delivered.</p>
-      <p>Where third-party technical services are required to receive, store, transmit, or process a submission, they may process data only as part of providing those services.</p>
-      <p>TORC analyses, classifications, and recommendations are evaluative judgments. They do not affect the creator&apos;s ownership of the underlying work.</p>
-      <p>If you would like your submitted material deleted earlier, you may contact TORC at <a href="mailto:contact@torc.world">contact@torc.world</a>.</p>
-     </div>
-    </details>
-   </div>
   </section>
  </main>
 }

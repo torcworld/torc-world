@@ -1,4 +1,4 @@
-TORC build hotfix
-
-Adds the missing evaluate-your-work/SubmissionForm.tsx required by the duplicate root-level page currently present in the repository.
-No website design files are otherwise changed in this patch.
+TORC — Submit page refinement
+- removes the repeated “New to TORC?” credit band before submission
+- moves Submission & Privacy into the left column beneath the Submit Your Artifact information
+- compacts the desktop oxblood submission field
