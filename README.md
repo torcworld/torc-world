@@ -1,12 +1,17 @@
-# TORC navigation / pagination / Submit micro-patch
+# TORC Organizations + artifact-analysis frame trial
 
 Changed only:
-- `app/artifacts/artifacts-overhaul.module.css`
 - `app/nav.module.css`
-- `app/evaluate-your-work/submit.module.css`
+- `app/artifact/artifact-frame.module.css`
 
-Changes:
-- Restores the compact 30×30px gold active page-number tile with a fine black square border.
-- Makes “Theory of Representational Consciousness” under TORC slightly darker for improved legibility, while keeping it subordinate to the wordmark.
-- Leaves the Organizations button color unchanged for now.
-- Lifts the Submit Your Artifact charcoal arrival hero another 2mm, retaining the thin gold top register and detached navigation spacing.
+Organizations:
+- Removes the permanently dominant red fill.
+- Uses the same light navigation material as the other buttons.
+- Keeps Organizations distinct with oxblood lettering.
+- Hover shifts to the deeper gold used elsewhere in the navigation.
+
+Artifact analysis:
+- Adds fine charcoal outer side rules around the complete gold / charcoal / gold composition.
+- Adds a fine charcoal lower closure across the gold side fields.
+- Deliberately adds no new horizontal line across the top of the central charcoal analysis field.
+- Leaves 2mm of normal site ground beneath the framed composition.
