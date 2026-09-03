@@ -764,12 +764,3 @@
     padding:18px 16px;
   }
 }
-
-/* Submission privacy placement — keep the trust statement directly beneath the form. */
-@media(min-width:761px){
-  .privacyTrust{
-    grid-column:2!important;
-    width:100%!important;
-    margin:30px 0 0!important;
-  }
-}
