@@ -259,3 +259,26 @@
     border-right:1px solid rgba(53,52,50,.82)!important;
   }
 }
+
+/* 2026-09-03 — analysis inner-edge + vertical-position micro-correction.
+   Match the inner edges of both gold rails to the same charcoal precision rule
+   as their outer edges, and lower the complete analysis object by exactly 1mm. */
+@media(min-width:981px){
+  .frame{
+    padding-top:4mm!important;
+  }
+  .frame::before,
+  .frame::after{
+    top:4mm!important;
+  }
+  .frame::before{
+    border-right:1px solid rgba(53,52,50,.82)!important;
+  }
+  .frame::after{
+    border-left:1px solid rgba(53,52,50,.82)!important;
+  }
+  .frame > :global(main){
+    border-left:1px solid rgba(53,52,50,.82)!important;
+    border-right:1px solid rgba(53,52,50,.82)!important;
+  }
+}

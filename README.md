@@ -1,15 +1,11 @@
-# TORC Analysis frame + Organizations hover correction
+# TORC Analysis inner lines + Organizations active state
 
 Changed only:
 - `app/artifact/artifact-frame.module.css`
+- `app/TorcNav.tsx`
 - `app/nav.module.css`
 
-Analysis:
-- Removes the vertical frame extensions above the gold/analysis composition.
-- Moves the composition upward so its top begins about 3mm below the detached guide.
-- Adds delicate 1px charcoal horizontal closures across the tops of both gold fields.
-- Keeps the existing delicate side rules on the gold fields.
-- Reduces the bottom closure to the same delicate 1px charcoal weight.
-
-Organizations:
-- Hover/focus explicitly remains gold (`#c7aa76`), matching the navigation family.
+Changes:
+- Analysis gold-rail inner edges now use the same delicate charcoal rule as the outer edges; no red inner rails remain.
+- Analysis composition is moved exactly 1mm downward from the previous position.
+- Organizations now receives an active navigation state on `/for-organizations` and stays gold after navigation, matching the persistent selected behavior of the other navigation buttons.
