@@ -524,3 +524,19 @@
     margin-bottom:0!important;
   }
 }
+
+/* 2026-09-03 — Artifacts frame micro-correction.
+   Close the gold instrument frame with the same charcoal precision language:
+   a fine rule on the outer edge of the top gold band, fine horizontal end
+   rules across both gold side rails, and 2mm of normal site ground below the
+   complete Artifacts composition. Desktop only. */
+@media(min-width:761px){
+  .artifactsPage{
+    margin-bottom:2mm!important;
+    box-shadow:inset 0 1px 0 var(--charcoal), 0 -1px 0 var(--charcoal)!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    border-bottom:1px solid var(--charcoal)!important;
+  }
+}

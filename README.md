@@ -1,10 +1,13 @@
-TORC Artifacts refinement — 2026-09-03
+# TORC — Artifacts frame micro-correction
 
-- 3mm gold register below the charcoal hero
-- charcoal precision rules on inner + outer edges of the gold frame
-- artifact rows gold at rest, light-brown on hover/focus
-- Operational Order gold at rest, light-brown on hover/focus
-- search/filter borders changed from TORC red to charcoal
-- Artifacts composition ends directly at the bottom of Compare
+Canonical base: uploaded working motherbase of 3 September 2026.
 
-Only app/artifacts/artifacts-overhaul.module.css is changed.
+Changed only:
+- `app/artifacts/artifacts-overhaul.module.css`
+
+Desktop adjustment:
+- adds a thin charcoal precision line to the outer/top edge of the gold top band;
+- closes the bottom of both gold side rails with a thin charcoal horizontal rule;
+- restores 2mm of the site's normal background below the complete Artifacts/Compare composition.
+
+No other files or page behavior changed.
