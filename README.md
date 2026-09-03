@@ -1,7 +1,10 @@
-TORC Artifacts — archive strip refinement
+TORC Artifacts refinement — 2026-09-03
 
-- Operational Order strip is fully dark gold.
-- Strip is inset from the side rails to align with the artifact field.
-- Operational Order label receives more internal breathing room.
-- Page ends directly after the Compare field with the gold closure and a fine charcoal rule.
-- Desktop only; no other pages changed.
+- 3mm gold register below the charcoal hero
+- charcoal precision rules on inner + outer edges of the gold frame
+- artifact rows gold at rest, light-brown on hover/focus
+- Operational Order gold at rest, light-brown on hover/focus
+- search/filter borders changed from TORC red to charcoal
+- Artifacts composition ends directly at the bottom of Compare
+
+Only app/artifacts/artifacts-overhaul.module.css is changed.

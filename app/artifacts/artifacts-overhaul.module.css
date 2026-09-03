@@ -437,3 +437,90 @@
     box-shadow:0 1px 0 var(--charcoal)!important;
   }
 }
+
+/* 2026-09-03 — Artifacts material pass: framed gold instrument field.
+   Desktop only: add a thin gold register below the charcoal hero; give the
+   complete gold frame fine charcoal rules on both its inner and outer edges;
+   make artifact rows and the Operational Order strip gold at rest with an
+   ochre hover state; neutralize search-field borders; and end the Artifacts
+   composition exactly at the bottom of Compare. */
+@media(min-width:761px){
+  /* The page frame: 3mm gold at the top, gold side rails, charcoal register
+     lines on both edges. No gold/light-brown closure below Compare. */
+  .artifactsPage{
+    border-top:3mm solid var(--gold)!important;
+    border-bottom:0!important;
+    padding-bottom:0!important;
+    margin-bottom:0!important;
+    box-shadow:inset 0 1px 0 var(--charcoal)!important;
+  }
+  .artifactsPage::before,
+  .artifactsPage::after{
+    top:-3mm!important;
+    bottom:0!important;
+    width:28px!important;
+    background:var(--gold)!important;
+    box-sizing:border-box!important;
+  }
+  .artifactsPage::before{
+    border-left:1px solid var(--charcoal)!important;
+    border-right:1px solid var(--charcoal)!important;
+  }
+  .artifactsPage::after{
+    border-left:1px solid var(--charcoal)!important;
+    border-right:1px solid var(--charcoal)!important;
+  }
+
+  /* Matching 3mm gold register immediately below the charcoal arrival field.
+     The extra margin creates a little more air before the search instrument. */
+  .hero{
+    border-bottom:3mm solid var(--gold)!important;
+    margin-bottom:calc(30px + 3mm)!important;
+    box-shadow:0 1px 0 var(--charcoal)!important;
+  }
+
+  /* Search controls become part of the charcoal/precision language rather
+     than introducing a separate oxblood outline. */
+  .controlLabel input,
+  .controlLabel select{
+    border:1px solid rgba(53,52,50,.72)!important;
+  }
+  .controlLabel input:focus,
+  .controlLabel select:focus{
+    border-color:var(--charcoal)!important;
+    outline:2px solid rgba(53,52,50,.18)!important;
+  }
+
+  /* Gold is now the resting material for the order instrument. Hover/focus
+     reveals the surrounding light-brown field. */
+  .orderStrip,
+  .orderStrip button{
+    background:var(--gold)!important;
+  }
+  .orderStrip button:hover,
+  .orderStrip button:focus-visible{
+    background:var(--ochre)!important;
+  }
+  .orderStrip .orderActive{
+    background:var(--gold)!important;
+  }
+
+  /* The artifact ledger uses the same logic: gold at rest, light brown on
+     hover/focus. Keep the gold header visually continuous with the rows. */
+  .artifactTable,
+  .artifactTable :global(.row.header),
+  .artifactTable .tableHeader,
+  .artifactTable :global(a.row:not(.header)),
+  .artifactTable :global(a.row:not(.header):nth-of-type(even)){
+    background:var(--gold)!important;
+  }
+  .artifactTable :global(a.row:not(.header):hover),
+  .artifactTable :global(a.row:not(.header):focus-visible){
+    background:var(--ochre)!important;
+  }
+
+  /* Compare is the physical end of the Artifacts composition. */
+  .compareSection{
+    margin-bottom:0!important;
+  }
+}
