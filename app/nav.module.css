@@ -164,3 +164,10 @@
   color:#451b23!important;
   box-shadow:0 7px 18px rgba(56,43,26,.10)!important;
 }
+
+/* 2026-09-03 — Organizations hover parity: stay in the gold navigation family. */
+.orgLink:hover,.orgLink:focus-visible{
+  background:#c7aa76!important;
+  border-color:#8f744e!important;
+  color:#451b23!important;
+}

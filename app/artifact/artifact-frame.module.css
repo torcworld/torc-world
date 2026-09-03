@@ -231,3 +231,31 @@
     box-sizing:border-box!important;
   }
 }
+
+/* 2026-09-03 — analysis frame precision correction.
+   Start the outer side rules at the analysis object itself (not at the upper
+   guide), close both gold fields with delicate 1px charcoal rules at top and
+   bottom, and lift the composition toward the detached guide. */
+@media(min-width:981px){
+  .frame{
+    padding-top:3mm!important;
+    border-left:0!important;
+    border-right:0!important;
+    border-bottom:0!important;
+    margin-bottom:2mm!important;
+  }
+  .frame::before,
+  .frame::after{
+    top:3mm!important;
+    bottom:0!important;
+    border-top:1px solid rgba(53,52,50,.82)!important;
+    border-bottom:1px solid rgba(53,52,50,.82)!important;
+    box-sizing:border-box!important;
+  }
+  .frame::before{
+    border-left:1px solid rgba(53,52,50,.82)!important;
+  }
+  .frame::after{
+    border-right:1px solid rgba(53,52,50,.82)!important;
+  }
+}

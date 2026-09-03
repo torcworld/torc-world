@@ -1,17 +1,15 @@
-# TORC Organizations + artifact-analysis frame trial
+# TORC Analysis frame + Organizations hover correction
 
 Changed only:
-- `app/nav.module.css`
 - `app/artifact/artifact-frame.module.css`
+- `app/nav.module.css`
+
+Analysis:
+- Removes the vertical frame extensions above the gold/analysis composition.
+- Moves the composition upward so its top begins about 3mm below the detached guide.
+- Adds delicate 1px charcoal horizontal closures across the tops of both gold fields.
+- Keeps the existing delicate side rules on the gold fields.
+- Reduces the bottom closure to the same delicate 1px charcoal weight.
 
 Organizations:
-- Removes the permanently dominant red fill.
-- Uses the same light navigation material as the other buttons.
-- Keeps Organizations distinct with oxblood lettering.
-- Hover shifts to the deeper gold used elsewhere in the navigation.
-
-Artifact analysis:
-- Adds fine charcoal outer side rules around the complete gold / charcoal / gold composition.
-- Adds a fine charcoal lower closure across the gold side fields.
-- Deliberately adds no new horizontal line across the top of the central charcoal analysis field.
-- Leaves 2mm of normal site ground beneath the framed composition.
+- Hover/focus explicitly remains gold (`#c7aa76`), matching the navigation family.
