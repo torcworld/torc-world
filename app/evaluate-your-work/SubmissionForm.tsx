@@ -74,7 +74,7 @@ export default function SubmissionForm(){
 
  return <form className={styles.form} onSubmit={submit}>
   <div className={styles.two}><label>Your name<input name="name" required autoComplete="name"/></label><label>Email<input name="email" required type="email" autoComplete="email"/></label></div>
-  <div className={styles.two}><label>Artifact title<input name="title" required/></label><label>Artifact type<select name="type" required defaultValue=""><option value="" disabled>Select type</option><option>Screenplay</option><option>Manuscript / novel</option><option>Essay / philosophy</option><option>Research / theory</option><option>Film / audiovisual work</option><option>Music</option><option>Game / formal system</option><option>Other</option></select></label></div>
+  <div className={styles.two}><label>Artifact title<input name="title" required/></label><label>Artifact type<select name="type" required defaultValue=""><option value="" disabled>Select type</option><option>Manuscript / novel</option><option>Screenplay / script</option><option>Essay / philosophy</option><option>Other written work</option></select></label></div>
   <label>Analysis<select name="package" required value={selectedPackage} onChange={e=>{setSelectedPackage(e.target.value);setFocus('');}}><option>{packages.evaluation}</option><option>{packages.development}</option><option>{packages.cycle}</option></select></label>
   <label className={styles.upload}>Upload artifact <span>PDF, DOCX, TXT or MD · max 4 MB</span><input name="artifact" type="file" required accept=".pdf,.doc,.docx,.txt,.md,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain,text/markdown"/></label>
   <label>What do you most want TORC to answer? <span className={styles.optional}>Optional</span>
@@ -89,7 +89,7 @@ export default function SubmissionForm(){
   <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:'absolute',left:'-9999px',width:'1px',height:'1px',opacity:0}}/>
   <label className={styles.check}><input type="checkbox" name="permission" value="yes" required/><span>I own this work or have permission to submit it for evaluation.</span></label>
   <button className={styles.submitButton} disabled={status==='sending'}>{status==='sending'?'Sending…':'Submit artifact for review'}</button>
-  <p className={styles.noCharge}>No payment is taken until your artifact is accepted. Scope and turnaround are confirmed first.</p>
+  <p className={styles.noCharge}>No payment is taken until your artifact is accepted. Your turnaround begins after acceptance and payment are confirmed.</p>
   {message&&<p className={status==='sent'?styles.success:styles.error} role="status">{message}</p>}
  </form>
 }
