@@ -1744,3 +1744,19 @@
     font-weight:700!important;
   }
 }
+
+/* 2026-09-03 — Theory landing frame trial.
+   Give the complete Theory landing field the same charcoal precision frame
+   language as Artifacts: charcoal side rules and a charcoal rule directly
+   above the thin gold cap. Remove only the short oxblood connector hairs that
+   previously reached upward toward the translucent navigation rule. */
+@media(min-width:761px){
+  .bookLanding{
+    border-left:1px solid #353432!important;
+    border-right:1px solid #353432!important;
+    border-top:1px solid #353432!important;
+  }
+  .bookLanding::before{
+    display:none!important;
+  }
+}

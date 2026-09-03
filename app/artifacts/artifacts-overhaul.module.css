@@ -540,3 +540,17 @@
     border-bottom:1px solid var(--charcoal)!important;
   }
 }
+
+/* 2026-09-03 — Artifacts final frame-detail pass.
+   Close the inset Operational Order instrument on both sides with the same
+   charcoal precision rule used elsewhere, and neutralize the remaining
+   oxblood rule above the artifact ledger. Desktop only. */
+@media(min-width:761px){
+  .orderStrip{
+    border-left:1px solid var(--charcoal)!important;
+    border-right:1px solid var(--charcoal)!important;
+  }
+  .artifactTable{
+    border-top-color:var(--charcoal)!important;
+  }
+}
