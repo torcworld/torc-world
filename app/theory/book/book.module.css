@@ -1772,3 +1772,23 @@
     repeating-linear-gradient(13deg,rgba(50,37,23,.035) 0 1px,transparent 1px 7px),
     #b99b66!important;
 }
+
+
+/* 2026-09-04 — requested Theory refinements */
+
+/* Author name should be as quiet as the preceding “by”. */
+.bookLanding .authorLine,
+.bookLanding .authorLine b{
+  color:#f3eee6!important;
+  font-weight:400!important;
+}
+
+/* Reading view: turn the surrounding gray field/band into the current darker gold.
+   The book/page surface itself remains untouched. */
+.readingPage{
+  background:#b7955d!important;
+}
+
+.readingPage .bookMetaBar{
+  background:#b7955d!important;
+}

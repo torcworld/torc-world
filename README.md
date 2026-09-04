@@ -1,13 +1,12 @@
-# TORC Theory — darker gold outside the book
+# TORC Theory — quiet author + gold reading surround
 
-Changed only:
+Changed:
 - `app/theory/book/book.module.css`
+- `app/theory/book/page.tsx` included unchanged from canonical.
 
-Exact experiment on the Theory landing page:
-- Gold surrounding the large charcoal hero -> darker gold `#b7955d`.
-- Lower gold field -> darker gold `#b7955d`.
-- `THE AGE OF FALSE DEPTH` hero title -> darker gold `#b7955d`.
-- `READ THE BOOK` button background -> darker gold `#b7955d`.
-- The physical book itself is explicitly preserved in its existing lighter/yellower cover color (`#b99b66` and its existing gradients/shadows).
+Exact changes:
+1. `GK Muilaard` now uses the same quiet light/cream tone and regular visual weight as `by`.
+2. In the opened-book reading view, the surrounding gray page field/band and top meta band are changed to the current darker gold `#b7955d`.
+3. The actual book/reading paper surface is not recolored.
 
-No layout, spacing, copy, book geometry, charcoal, or other styling changed.
+No layout, book geometry, reader typography, or content changes.
