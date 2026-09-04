@@ -3336,3 +3336,38 @@
 .contactCard a{
   transform:translateY(5px)!important;
 }
+
+
+/* 2026-09-04 — brighter type contrast test.
+   Keep the approved darker gold (#b7955d) untouched.
+   Only lift the light/cream typography for cleaner contrast. */
+.hero,
+.diagramSection,
+.closeSection{
+  --org-light-type:#f7f4ed;
+}
+
+.hero h1,
+.hero p,
+.hero strong,
+.diagramSection h2,
+.diagramSection p,
+.closeSection h2,
+.closeSection p{
+  color:var(--org-light-type)!important;
+}
+
+.corpusTransitionBand,
+.corpusStatement{
+  --org-light-type:#f7f4ed;
+}
+
+.corpusTransitionBand h2,
+.corpusTransitionBand p,
+.corpusTransitionBand strong,
+.corpusStatement h2,
+.corpusStatement p,
+.corpusStatement strong,
+.corpusStatement span{
+  color:var(--org-light-type)!important;
+}

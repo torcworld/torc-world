@@ -1,10 +1,10 @@
-# TORC Organizations — darker gold test
+# TORC Organizations — brighter type contrast test
 
 Changed only:
 - `app/for-organizations/organizations.module.css`
 
-Color-only experiment:
-- All existing Organizations gold / yellow-gold accents are unified to `#b7955d`.
-- This includes the large gold transition fields and the other elements that previously used the page's gold variants.
-- The site ground (`#ddceb3`) is intentionally NOT changed.
-- Charcoal, burgundy/red, cream tones, text, spacing, dimensions, and layout are unchanged.
+Test:
+- Keeps the darker Organizations gold exactly at `#b7955d`.
+- Brightens the principal light/cream typography to near-white `#f7f4ed`.
+- Applies this to the major charcoal and gold content fields.
+- No gold, layout, spacing, borders, diagram geometry, or other page structure is changed.
