@@ -1070,3 +1070,79 @@
     margin-bottom:28px!important;
   }
 }
+
+
+/* 2026-09-04 — homepage gold-card correction.
+   Force the resting states the user requested; hover is a separate state. */
+
+/* DIFFERENT WORKS: every artifact card is GOLD at rest, always.
+   Explicitly override legacy alternating/gray treatments. */
+.home .artifactGrid .artifactCard,
+.home .artifactGrid .artifactCard:nth-child(1),
+.home .artifactGrid .artifactCard:nth-child(2),
+.home .artifactGrid .artifactCard:nth-child(3),
+.home .artifactGrid .artifactCard:nth-child(4),
+.home .artifactGrid a.artifactCard,
+.home .artifactGrid a.artifactCard:visited{
+  background:#c7aa76!important;
+  color:#171714!important;
+  border:0!important;
+}
+
+/* Hover/focus: move to the lighter navigation-brown family, not gray. */
+.home .artifactGrid .artifactCard:hover,
+.home .artifactGrid .artifactCard:focus-visible,
+.home .artifactGrid a.artifactCard:hover,
+.home .artifactGrid a.artifactCard:focus-visible{
+  background:#d9c7a6!important;
+  color:#171714!important;
+}
+
+/* One block visually, four distinct cards: hard black vertical separators. */
+.home .artifactGrid{
+  background:#171714!important;
+  gap:1px!important;
+  border-color:#171714!important;
+}
+@media(min-width:721px){
+  .home .artifactGrid .artifactCard + .artifactCard{
+    border-left:1px solid #171714!important;
+  }
+}
+
+/* Bring the “Different works. Different operations.” label 2 mm closer
+   to the gold rectangular card block below it. */
+.home .archiveHeader{
+  transform:translateY(2mm)!important;
+  margin-bottom:2mm!important;
+}
+
+/* THEORY: title itself is gold. */
+.home .theoryCopyLink h2,
+.home .theoryCopyLink h3,
+.home .theoryCopyLink .theoryTitle{
+  color:#8f744e!important;
+}
+
+/* ORGANIZATIONS card: CTA is GOLD in its default/resting state.
+   Hover changes it, rather than gold appearing only on hover. */
+.home .orgDoor .doorAction,
+.home .orgDoor a.doorAction,
+.home .orgDoor .doorAction:visited{
+  background:#c7aa76!important;
+  color:#171714!important;
+  border:1px solid #c7aa76!important;
+}
+.home .orgDoor .doorAction:hover,
+.home .orgDoor .doorAction:focus-visible,
+.home .orgDoor a.doorAction:hover,
+.home .orgDoor a.doorAction:focus-visible{
+  background:#d9c7a6!important;
+  color:#171714!important;
+  border-color:#d9c7a6!important;
+}
+
+/* Move the organizations CTA down about 3 mm. */
+.home .orgDoor .doorAction{
+  transform:translateY(3mm)!important;
+}

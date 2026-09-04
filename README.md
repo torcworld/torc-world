@@ -1,15 +1,16 @@
-# TORC homepage — hierarchy/material pass
+# TORC homepage — gold card correction
 
 Changed only:
-- `app/page.tsx`
+- `app/page.tsx` (included unchanged)
 - `app/home.module.css`
 
-Changes:
-- Hero TORC wordmark becomes gold.
-- Hero white copy is softened to broken-white / warm off-white.
-- All four “Different works. Different operations.” artifact cards use the same gold resting surface; neutral charcoal/black separators replace the red grid treatment.
-- Reorders the homepage so the Living Edition / The Age of False Depth block is the third major card, directly after the featured works.
-- Theory copy field changes from cream/ochre treatment to the light navigation-brown material.
-- “See what a body of work reveals.” Organizations card changes from red to charcoal gray, with gold heading/label and a gold action button.
-- “Two questions. Two kinds of evidence.” moves below the theory and creator/organization action cards.
-- Resets the old negative methodology positioning so that section works in its new lower position.
+Corrections:
+- Forces all four “Different works. Different operations.” cards to be gold at rest.
+- Hover/focus changes those cards to the lighter navigation-brown, never gray.
+- Adds black vertical separators between the four gold cards.
+- Moves the “Different works. Different operations.” heading about 2 mm closer to the gold card block below.
+- Makes the title in the The Age of False Depth card gold.
+- Forces the Organizations CTA button to be gold at rest.
+- Hover/focus changes that button to the lighter navigation-brown.
+- Moves the Organizations CTA down about 3 mm.
+- No changes to the top gray hero.
