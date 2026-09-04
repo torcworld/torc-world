@@ -887,3 +887,27 @@
     place-items:center!important;
   }
 }
+
+
+/* 2026-09-04 — Writers process matched to the gold used by the pricing card.
+   Add stronger oxblood emphasis to the three diagnostic questions. */
+@media(min-width:861px){
+  .process,
+  .processStep{
+    background:#d9c7a6!important;
+  }
+
+  .processStep h3,
+  .processStep p{
+    color:#171714!important;
+  }
+
+  .processStep p b{
+    color:var(--accent)!important;
+  }
+
+  .processStep:not(:last-child)::after{
+    background:#d9c7a6!important;
+    color:var(--accent)!important;
+  }
+}
