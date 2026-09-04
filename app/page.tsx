@@ -42,7 +42,6 @@ export default function Home() {
       <div className={styles.sectionHead}>
         <div><span>SEE IT APPLIED</span><h2>Different works.<br/>Different operations.</h2></div>
         <div className={styles.archiveActions}>
-          <Link href="/artifacts">Explore all artifacts →</Link>
           <Link href="/compare">Compare two artifacts →</Link>
         </div>
       </div>
@@ -92,7 +91,7 @@ export default function Home() {
     </section>
 
     <section className={styles.twoDoors}>
-      <Link href="/evaluate-your-work#pricing" className={styles.creatorDoor}>
+      <Link href="/evaluate-your-work" className={styles.creatorDoor}>
         <span>FOR CREATORS</span><h2>See your own work differently.</h2>
         <p>Evaluation, structural development and revision verification for original artifacts.</p><b className={styles.doorAction}>Submit your artifact <span>→</span></b>
       </Link>
