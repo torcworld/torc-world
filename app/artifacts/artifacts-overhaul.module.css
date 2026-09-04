@@ -786,3 +786,14 @@
     bottom:-4.5mm!important;
   }
 }
+
+
+/* 2026-09-04 — line-width experiment.
+   Only the black rule beneath the charcoal hero: align it exactly with the
+   complete four-control filter row. */
+@media(min-width:761px){
+  .hero::after{
+    left:calc(34px - 2mm)!important;
+    right:calc(34px - 2mm)!important;
+  }
+}
