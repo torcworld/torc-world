@@ -1,14 +1,13 @@
-# TORC Theory landing — 5 mm site-ground below composition
+# TORC Artifacts — complete content 1 mm upward
 
 Base:
-- `Archief(20260904-165958).zip`, supplied as the last known-good version.
+- `Archief(20260904-171307).zip` (current full website supplied by user)
 
 Changed only:
-- `app/theory/book/book.module.css`
+- `app/artifacts/artifacts-overhaul.module.css`
 
-Correction:
-- The requested strip is under the THEORY LANDING page — the page where the closed book is visible.
-- Adds 5 mm outside/below the complete `.bookLanding` composition.
-- Because the site body already uses `var(--bg)`, this exposes the normal broken-white website background.
-- No reader-route changes.
-- No color, top frame, book, copy, or internal spacing changes.
+Exact change:
+- Desktop `.hero` top margin: 3.5 mm -> 2.5 mm.
+- This removes exactly 1 mm of space between the upper gold frame and the charcoal Artifacts field.
+- Because the hero is the first normal-flow content block, everything below it moves upward with it.
+- No heights, bottom spacing, frame rails, gold bands, rules, widths, internal spacing, Compare position, or colors changed.
