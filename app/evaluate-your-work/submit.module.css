@@ -911,3 +911,32 @@
     color:var(--accent)!important;
   }
 }
+
+
+/* 2026-09-04 — Writers process: darker selected-card gold + stronger TORC red. */
+@media(min-width:861px){
+  .process,
+  .processStep{
+    background:#d2bb91!important;
+  }
+
+  .processStep h3{
+    color:#5b2630!important;
+    font-weight:600!important;
+  }
+
+  .processStep p{
+    color:#171714!important;
+  }
+
+  .processStep p b{
+    color:#5b2630!important;
+    font-weight:700!important;
+  }
+
+  .processStep:not(:last-child)::after{
+    background:#d2bb91!important;
+    color:#5b2630!important;
+    font-weight:900!important;
+  }
+}

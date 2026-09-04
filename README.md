@@ -1,10 +1,11 @@
-# TORC for Writers — pricing-card gold + red questions
+# TORC for Writers — darker gold + stronger red process
 
-Built on the previous three-stage arrow experiment.
+Built on the previous three-stage process patch.
 
-Only the process block changes:
-- Process background now exactly matches the established pricing-card gold: `#d9c7a6`.
-- Main explanatory copy stays near-black.
-- `What is actually here?`, `What still explains too much?`, and
-  `What is the smallest change that matters?` are oxblood/red.
-- Directional arrows remain oxblood/red and retain the previous geometry.
+Only the three-stage process block changes:
+- Background: darker Writers gold `#d2bb91`.
+- Diagnose / Find the Gap / Intervene: stronger oxblood `#5b2630`.
+- Three diagnostic questions: stronger oxblood and bold.
+- Arrows: stronger oxblood.
+- Explanatory body copy remains near-black.
+- No other page sections changed.
