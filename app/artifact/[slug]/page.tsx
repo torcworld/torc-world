@@ -89,7 +89,7 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
 
 function OdysseyFallback(){return <ArtifactAnalysis
  domain='Film' year='1968' title='2001: A Space Odyssey' creator='Stanley Kubrick'
- order='2' orderName='Symbolic consciousness' cms={843} range='Median across 10 evaluations'
+ order='2' orderName='Symbolic consciousness' cms={833.3} range='Median across 10 evaluations'
  headline='Cosmic scale does not make an artifact generative.'
  analysis={[
   'Few films produce stronger signals of higher-order cognition. The monolith links evolutionary discontinuities; HAL turns technology into an apparent problem of cognition; the Star Gate pushes representation toward its limit. TORC nevertheless stops at Level 2 because those signals remain sufficiently explained by an extraordinarily sophisticated symbolic architecture.',
@@ -97,12 +97,12 @@ function OdysseyFallback(){return <ArtifactAnalysis
   'HAL creates genuine local recursive pressure, but that pressure does not govern the completed film. The larger architecture remains a represented sequence of intelligence, tool use, technological dependence and transformation.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'8.4',artifact:'Tool use, violence, evolution, artificial intelligence, monolith encounters and human transformation remain strongly interdependent across enormous temporal distance.'},
-  {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'Concrete images repeatedly support high-level relations among intelligence, technology, evolution and transcendence without explicit conceptual exposition.'},
-  {key:'CD',name:'Constraint Density',score:'8.6',artifact:'Visual rhythm, sound, causal sequencing, technological detail and symbolic recurrence tightly constrain the film’s sparse construction.'},
-  {key:'ID',name:'Inferential Distance',score:'8.3',artifact:'The viewer must infer large conceptual relations from minimal exposition, but recurring structure keeps those relations recoverable.'},
-  {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A few images and transitions carry enormous historical and conceptual load; the bone-to-spacecraft cut is an extreme local example.'},
-  {key:'GR',name:'Generalization Reach',score:'7.7',artifact:'The structure travels well to questions of tools, intelligence and transformation, while remaining substantially dependent on the film’s constructed cosmology.'}
+  {key:'RL',name:'Relational Load',score:'8.27',artifact:'Tool use, violence, evolution, artificial intelligence, monolith encounters and human transformation remain strongly interdependent across enormous temporal distance.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.52',artifact:'Concrete images repeatedly support high-level relations among intelligence, technology, evolution and transcendence without explicit conceptual exposition.'},
+  {key:'CD',name:'Constraint Density',score:'8.52',artifact:'Visual rhythm, sound, causal sequencing, technological detail and symbolic recurrence tightly constrain the film’s sparse construction.'},
+  {key:'ID',name:'Inferential Distance',score:'8.11',artifact:'The viewer must infer large conceptual relations from minimal exposition, but recurring structure keeps those relations recoverable.'},
+  {key:'IC',name:'Integrative Compression',score:'8.75',artifact:'A few images and transitions carry enormous historical and conceptual load; the bone-to-spacecraft cut is an extreme local example.'},
+  {key:'GR',name:'Generalization Reach',score:'7.74',artifact:'The structure travels well to questions of tools, intelligence and transformation, while remaining substantially dependent on the film’s constructed cosmology.'}
  ]}
  boundaryTitle='Why Level 2, not 3b—or G?'
  boundary={[

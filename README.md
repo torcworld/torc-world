@@ -1,7 +1,13 @@
-# TORC for Writers — refined red headings
+# TORC Artifacts — Batch 01 final 10-evaluation means
 
-Built on the approved exact selected-card gold patch.
+Base: Archief(20260904-171307).zip
 
-Only one visual correction:
-- `Diagnose`, `Find the Gap`, and `Intervene` remain red but return from the heavier 600 weight to the earlier refined 500 weight.
-- Exact gold `#c7aa76`, arrows, questions, geometry, and all other styling remain unchanged.
+For the nine supplied artifacts:
+- CMS is updated to the combined 10-evaluation mean.
+- RL, AD, CD, ID, IC and GR are updated to the exact 5+5 combined means.
+- Existing analysis prose and Operational Order are unchanged.
+
+A Clockwork Orange is removed from the public corpus.
+
+No evaluator count (N) is added to or exposed on the public website.
+No styling, analysis prose, ordering, Operational Order, or unrelated artifact data is changed.
