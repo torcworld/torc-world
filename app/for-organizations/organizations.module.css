@@ -2954,3 +2954,98 @@
 .corpusStatement p{
   margin-top:14px!important;
 }
+
+
+/* 2026-09-04 — diagram accent study: charcoal + gold + black + restrained TORC red. */
+
+.corpusTransitionBand{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  color:#171714!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:clamp(22px,2.8vw,34px)!important;
+  line-height:1!important;
+  letter-spacing:-.018em!important;
+  text-align:center!important;
+}
+
+/* Dark center plate behind the four diagnostic terms. */
+.coreCircle::after{
+  inset:30px!important;
+  background:#171714!important;
+  border-color:#171714!important;
+  z-index:0!important;
+}
+.coreCircle b{
+  z-index:2!important;
+}
+
+/* Mix black and TORC red into selected corpus marks while retaining gold majority. */
+.artifactField i:nth-child(6n),
+.artifactField i:nth-child(13n){
+  background:#171714!important;
+  box-shadow:none!important;
+}
+.artifactField i:nth-child(9n),
+.artifactField i:nth-child(17n){
+  background:#5b2630!important;
+  box-shadow:0 0 8px rgba(91,38,48,.28)!important;
+  outline-color:#5b2630!important;
+}
+
+/* Some structural rings/geometry become hard black. */
+.coreCircle{
+  border-color:#171714!important;
+}
+.coreCircle::before{
+  border-color:#c7aa76!important;
+}
+.diagramConnector i:nth-child(2){
+  border-color:#171714!important;
+}
+
+/* Action labels use restrained TORC red against charcoal. */
+.diagramOutputs b{
+  color:#b76a72!important;
+}
+.diagramOutputs b::before{
+  background:#c7aa76!important;
+}
+
+/* Workflow is no longer part of the analytical drawing.
+   It is preserved as a slim register at the top of Start with the Corpus. */
+.closingWorkflow{
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:1fr 30px 1fr 30px 1fr 30px 1fr;
+  align-items:center;
+  gap:0;
+  margin-bottom:32px;
+  padding-bottom:18px;
+  border-bottom:1px solid rgba(199,170,118,.45);
+  color:#c7aa76;
+  font:700 11px/1 Arial,sans-serif;
+  letter-spacing:.1em;
+}
+.closingWorkflow span{
+  white-space:nowrap;
+}
+.closingWorkflow span b{
+  margin-right:8px;
+  font-size:9px;
+  color:#d9c7a6;
+}
+.closingWorkflow i{
+  text-align:center;
+  color:#c7aa76;
+  font-style:normal;
+  font-size:17px;
+}
+@media(max-width:760px){
+  .closingWorkflow{
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  .closingWorkflow i{display:none}
+}

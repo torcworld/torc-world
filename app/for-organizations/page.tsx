@@ -53,7 +53,7 @@ export default function Organizations(){
       </header>
 
       <section className={styles.corpusSystem} aria-labelledby="corpus-system-title">
-        <div className={styles.corpusTransitionBand} aria-hidden="true" />
+        <div className={styles.corpusTransitionBand}>From volume to actionable intelligence.</div>
 
         <div className={styles.corpusVisualBody}>
         <div className={styles.intelligenceDiagram} aria-label="Corpus intelligence system">
@@ -90,16 +90,6 @@ export default function Organizations(){
           </div>
         </div>
 
-        <div className={styles.corpusStages} aria-label="TORC institutional workflow">
-          <article><span>01</span><b>CORPUS</b><p>Establish the field.</p></article>
-          <i aria-hidden="true">→</i>
-          <article><span>02</span><b>DISCOVER</b><p>Reveal the pattern.</p></article>
-          <i aria-hidden="true">→</i>
-          <article><span>03</span><b>INVESTIGATE</b><p>Explain the difference.</p></article>
-          <i aria-hidden="true">→</i>
-          <article><span>04</span><b>DEVELOP</b><p>Act on structure.</p></article>
-        </div>
-
         </div>
         <div className={styles.corpusStatement}>
           <strong>
@@ -107,11 +97,16 @@ export default function Organizations(){
             <span>should produce more than</span>
             <span>50 reports.</span>
           </strong>
-          <p>From volume to actionable intelligence.</p>
         </div>
       </section>
 
       <section className={styles.finalContact}>
+        <div className={styles.closingWorkflow} aria-label="TORC institutional workflow">
+          <span><b>01</b> CORPUS</span><i>→</i>
+          <span><b>02</b> DISCOVER</span><i>→</i>
+          <span><b>03</b> INVESTIGATE</span><i>→</i>
+          <span><b>04</b> DEVELOP</span>
+        </div>
         <div>
           <div className={styles.eyebrow}>INSTITUTIONAL INQUIRY</div>
           <h2>Start with the corpus.</h2>

@@ -1,17 +1,16 @@
-# TORC Organizations — charcoal/gold unification
+# TORC Organizations — diagram accents
 
 Changed only:
 - `app/for-organizations/page.tsx`
 - `app/for-organizations/organizations.module.css`
 
 Changes:
-- Middle analytical drawing field changes from near-black to the established TORC charcoal gray.
-- Gold diagram geometry and light secondary labels remain, preserving the polished analytical graphic without the black-page style break.
-- Final “Start with the corpus” card also changes from near-black to the same charcoal.
-- Gold statement is re-typeset as:
-  50 artifacts
-  SHOULD PRODUCE MORE THAN
-  50 reports.
-  with large outer lines and a substantially smaller/narrower middle line.
-- “From volume to actionable intelligence.” remains beneath it.
-- No other content or card order changed.
+- Moves “From volume to actionable intelligence.” from beneath the 50-artifact statement into the previously blank gold transition band between the opening card and analytical diagram.
+- Keeps the lower gold statement only as the three-line 50-artifacts / should produce more than / 50-reports composition.
+- Adds restrained black and TORC-red accents to the charcoal analytical graphic:
+  - dark central plate behind Patterns / Outliers / Bottlenecks / Opportunities;
+  - selected corpus dots black and selected larger accents red;
+  - selected structural geometry black;
+  - Editorial / Development / Selection / Research in restrained red.
+- Removes Corpus / Discover / Investigate / Develop from beneath the analytical drawing.
+- Preserves that workflow instead as a slim gold register at the top of “Start with the corpus”, so no information is discarded.
