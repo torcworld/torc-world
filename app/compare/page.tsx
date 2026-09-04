@@ -58,7 +58,7 @@ function Picker({label,value,onChange}:{label:string;value:string;onChange:(s:st
  return <div className={styles.picker}><label>{label}</label><button type="button" className={styles.selected} onClick={()=>setOpen(v=>!v)}><strong>{selected?selected.title:'Choose an artifact'}</strong><small>{selected?`${selected.creator} · ${selected.domain}`:'Search the evaluated archive'}</small></button>{open&&<div className={styles.dropdown}><input autoFocus value={q} onChange={e=>setQ(e.target.value)} placeholder="Title, creator, or domain…"/><div>{options.map(a=><button type="button" key={a.slug} onClick={()=>{onChange(a.slug);setOpen(false);setQ('')}}><strong>{a.title}</strong><small>{a.creator} · {a.torc} · {a.cms}</small></button>)}</div></div>}</div>
 }
 export default function Compare(){
- const evaluated=artifacts.filter(eligible);const [left,setLeft]=useState('');const [right,setRight]=useState('');
+ const evaluated=artifacts.filter(eligible);const [left,setLeft]=useState('the-white-ribbon');const [right,setRight]=useState('the-lobster');
  useEffect(()=>{const p=new URLSearchParams(window.location.search),a=p.get('a')||'',b=p.get('b')||'';if(evaluated.some(x=>x.slug===a))setLeft(a);if(evaluated.some(x=>x.slug===b))setRight(b)},[]);
  useEffect(()=>{const p=new URLSearchParams();if(left)p.set('a',left);if(right)p.set('b',right);window.history.replaceState(null,'',p.toString()?`/compare?${p}`:'/compare')},[left,right]);
  const A=artifacts.find(a=>a.slug===left),B=artifacts.find(a=>a.slug===right),ready=A&&B&&eligible(A)&&eligible(B);
