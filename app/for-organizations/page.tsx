@@ -100,13 +100,7 @@ export default function Organizations(){
       </section>
 
       <section className={styles.finalContact}>
-        <div className={styles.closingWorkflow} aria-label="TORC institutional workflow">
-          <span><b>01</b> CORPUS</span><i>→</i>
-          <span><b>02</b> DISCOVER</span><i>→</i>
-          <span><b>03</b> INVESTIGATE</span><i>→</i>
-          <span><b>04</b> DEVELOP</span>
-        </div>
-        <div>
+<div>
           <div className={styles.eyebrow}>INSTITUTIONAL INQUIRY</div>
           <h2>Start with the corpus.</h2>
           <p>

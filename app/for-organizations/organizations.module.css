@@ -3315,3 +3315,24 @@
     transform:none!important;
   }
 }
+
+
+/* 2026-09-04 — compact close.
+   The analytical workflow is already communicated by the figure; do not repeat
+   it immediately before the CTA. */
+.closingWorkflow{
+  display:none!important;
+}
+
+/* With the redundant register gone, turn the final charcoal section into a
+   short, decisive closing beat. */
+.finalContact{
+  padding-top:30px!important;
+  padding-bottom:34px!important;
+}
+.contactCard > div:first-child{
+  transform:none!important;
+}
+.contactCard a{
+  transform:translateY(5px)!important;
+}
