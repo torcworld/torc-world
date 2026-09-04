@@ -858,3 +858,32 @@
     color:#fff!important;
   }
 }
+
+
+/* 2026-09-04 — Writers process: page-native gold + clearer directional arrows. */
+@media(min-width:861px){
+  .process,
+  .processStep{
+    background:#d2bb91!important;
+  }
+
+  .processStep h3,
+  .processStep p,
+  .processStep p b{
+    color:#171714!important;
+  }
+
+  /* Longer red arrows, shifted left so they sit between the titles rather than
+     crowding FIND THE GAP / INTERVENE. They still break through the divider. */
+  .processStep:not(:last-child)::after{
+    content:"⟶"!important;
+    right:-12px!important;
+    top:29px!important;
+    width:48px!important;
+    height:30px!important;
+    background:#d2bb91!important;
+    color:var(--accent)!important;
+    font:700 31px/26px Arial,sans-serif!important;
+    place-items:center!important;
+  }
+}

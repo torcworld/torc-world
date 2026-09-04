@@ -1,15 +1,9 @@
-# TORC for Writers — three-stage process example
+# TORC for Writers — gold process + arrow refinement
 
-Base: `Archief(20260904-171307).zip`
+Built on the three-stage process example.
 
-Only:
-- `app/evaluate-your-work/page.tsx`
-- `app/evaluate-your-work/submit.module.css`
-
-Experiment:
-- Removes `Test again` from the process strip.
-- Keeps `Diagnose`, `Find the gap`, `Intervene`.
-- Centers the three-card composition and makes it slightly narrower than the full content width.
-- Keeps the established light-gold ground.
-- Uses TORC oxblood/red more strongly in borders, headings, key questions and arrows.
-- No pricing, hero, form, navigation, or other page content changed.
+Only the process composition changes:
+- Background switches from light brown to the Writers page's own lighter gold (`#d2bb91`).
+- Diagnose / Find the Gap / Intervene and their copy become strong near-black.
+- Red directional arrows become longer and are shifted left, while still breaking the divider.
+- Everything else remains unchanged.
