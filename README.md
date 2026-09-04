@@ -1,16 +1,14 @@
-# TORC Theory — hard 5 mm bottom site strip
+# TORC Theory landing — 5 mm site-ground below composition
 
 Base:
-- Current integrated archive `Archief(20260904-165325).zip`.
+- `Archief(20260904-165958).zip`, supplied as the last known-good version.
 
 Changed only:
 - `app/theory/book/book.module.css`
 
-This time the bottom strip is not created with margin or a child element.
-The actual `.readingPage` background itself is split:
-- gold through the full reader,
-- final 5 mm = normal site background,
-- thin black rule exactly 5 mm above the bottom.
-
-The previous helper `.readerBottomGround` is hidden.
-Nothing else changed.
+Correction:
+- The requested strip is under the THEORY LANDING page — the page where the closed book is visible.
+- Adds 5 mm outside/below the complete `.bookLanding` composition.
+- Because the site body already uses `var(--bg)`, this exposes the normal broken-white website background.
+- No reader-route changes.
+- No color, top frame, book, copy, or internal spacing changes.
