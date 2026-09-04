@@ -3361,3 +3361,26 @@
 .corpusStatement span{
   color:#171714!important;
 }
+
+
+/* 2026-09-04 — make existing light text genuinely whiter.
+   No dark text is converted to white. */
+.hero h1,
+.hero p,
+.hero strong,
+.diagramSection h2,
+.diagramSection p,
+.closeSection h2,
+.closeSection p{
+  color:#fff!important;
+}
+
+.corpusTransitionBand h2,
+.corpusTransitionBand p,
+.corpusTransitionBand strong,
+.corpusStatement h2,
+.corpusStatement p,
+.corpusStatement strong,
+.corpusStatement span{
+  color:#171714!important;
+}
