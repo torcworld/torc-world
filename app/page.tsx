@@ -41,7 +41,7 @@ export default function Home() {
     <section className={styles.archive}>
       <div className={styles.sectionHead}>
         <div><span>SEE IT APPLIED</span><h2>Different works.<br/>Different operations.</h2></div>
-        <div className={styles.archiveActions}><Link href="/compare">Compare Artifacts →</Link>
+        <div className={styles.archiveActions}><Link href="/artifacts#compare">Compare Artifacts →</Link>
         </div>
       </div>
       <div className={styles.artifactGrid}>

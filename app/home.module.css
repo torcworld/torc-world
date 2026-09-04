@@ -1279,3 +1279,35 @@
     min-height:48px!important;
   }
 }
+
+
+/* 2026-09-04 — compare-route + spacing calibration */
+
+/* Compare CTA: a few mm lower and right, aligned more with the vertical
+   centre of “Different works. Different operations.” rather than the grid. */
+.home .archiveActions{
+  transform:translate(4mm,-5mm)!important;
+}
+
+/* Theory/book card: lift it slightly so its breathing room is more evenly
+   balanced between the featured-work block above and the lower card below. */
+.home .theoryCompact{
+  transform:translateY(-5mm)!important;
+}
+
+/* “OPEN EVALUATION” becomes a TORC-red status/action accent on every
+   featured artifact card. */
+.home .artifactCard .profileLine span,
+.home .artifactCard .profileLine span:first-child{
+  color:#5b2630!important;
+  font-weight:800!important;
+}
+
+@media(max-width:720px){
+  .home .archiveActions{
+    transform:none!important;
+  }
+  .home .theoryCompact{
+    transform:none!important;
+  }
+}
