@@ -3462,3 +3462,20 @@
 .diagramCorpus strong{
   color:#fff!important;
 }
+
+
+/* 2026-09-04 — Contact TORC CTA refinement. */
+.diagramCorpus .diagramLabel{
+  color:#fff!important;
+}
+.diagramCorpus strong{
+  color:#b7955d!important;
+}
+
+.contactCard a,
+.contactCard a b{
+  color:#fff!important;
+}
+.contactCard a{
+  font-size:13px!important;
+}

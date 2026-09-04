@@ -117,9 +117,8 @@ export default function Organizations(){
             <li>Desired reporting and comparison depth</li>
           </ul>
           <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
-            Discuss an institutional use case <b>→</b>
+            Contact TORC <b>→</b>
           </a>
-          <small>contact@torc.world</small>
         </div>
       </section>
 

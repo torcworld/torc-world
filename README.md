@@ -1,8 +1,10 @@
-# TORC Organizations — left block + Corpus text
+# TORC Organizations — Contact TORC CTA
 
-Built on `TORC_ORGANIZATIONS_CHARCOAL_BOTTOM_REFINEMENT_PATCH.zip`.
+Built on the latest Organizations micro-adjustment patch plus the current motherbase page.tsx.
 
-Changed only `app/for-organizations/organizations.module.css`:
-- Entire left text block in the lowest charcoal section moves exactly 3 mm downward.
-- `CORPUS` and `50 ARTIFACTS` in the middle diagram are pure white.
-- Nothing else changed.
+Changes only:
+- CORPUS remains white.
+- 50 ARTIFACTS returns to TORC gold.
+- CTA copy becomes `Contact TORC →`.
+- CTA lettering is slightly larger and white; the existing red CTA background remains.
+- Small `contact@torc.world` line below the CTA is removed.
