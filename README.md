@@ -1,15 +1,16 @@
-# Analysis — all existing gold to darker gold
+# TORC Analysis — restore black precision lines + darker gold
 
-Changed only the Analysis gold palette in:
-- app/artifact/components/artifact-analysis.module.css
-- app/artifact/artifact-frame.module.css
+Built from the known-good Analysis frame patch that already had the requested black/charcoal precision rules.
 
-Included unchanged:
-- app/artifact/components/ArtifactAnalysis.tsx
+Changed:
+- `app/artifact/artifact-frame.module.css`
+- `app/artifact/components/artifact-analysis.module.css`
+- `app/artifact/components/ArtifactAnalysis.tsx` included unchanged from the six-dimension refinement base.
 
-Exact rule:
-- existing yellow/gold #c7aa76 -> darker gold #b7955d
-- light ochre #d9c7a6 remains unchanged
-
-This now includes the outer/side rails and frame gold as well as the gold inside the Analysis content, title/accent areas, and bottom CTA styling wherever they use the established gold token.
-No layout or content changes.
+Result:
+- Red inner rail lines remain removed.
+- Inner rail lines are black/charcoal.
+- Thin black/charcoal outer perimeter lines around the gold rails are restored/preserved.
+- Existing true gold `#c7aa76` becomes darker gold `#b7955d` across the Analysis frame and Analysis content.
+- Light ochre `#d9c7a6` is NOT changed.
+- No layout/content redesign.
