@@ -108,10 +108,6 @@ export default function Organizations(){
           <article><span>04</span><b>DEVELOP</b><p>Act on structure.</p></article>
         </div>
 
-        <div className={styles.corpusPrinciple}>
-          <strong>TORC IS NOT AN AUTOMATED GREENLIGHT.</strong>
-          <span>It is a system for placing human judgment more deliberately.</span>
-        </div>
         </div>
       </section>
 

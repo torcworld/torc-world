@@ -1,14 +1,15 @@
-# TORC Organizations — Variant B split system
+# TORC Organizations — corpus visual refinement
 
 Changed only:
 - `app/for-organizations/page.tsx`
 - `app/for-organizations/organizations.module.css`
 
 Changes:
-- Explicitly removes the remaining legacy 4px burgundy top rule from the gray opening hero (`.hero`), while retaining the fine gold rules on the current `.newHero`.
-- Second card is now split into two materials:
-  - gold/black header zone with Institutional Intelligence and the 50-artifact premise;
-  - polished black/gold visual body modeled on the supplied Variant B reference.
-- Visual body uses a gold corpus field, circular Patterns / Outliers / Bottlenecks / Opportunities system, branching gold connectors, and white/gold actionable outputs.
-- Corpus → Discover → Investigate → Develop remains below the diagram in the same black/gold system.
-- Final Start with the Corpus card remains unchanged.
+- Removes the remaining page-level burgundy/red strip between the nav divider and the gray hero by neutralizing page/hero decorative top layers.
+- Makes the gold header of the second card substantially shallower.
+- Enlarges the “50 artifacts” corpus field so it visually matches the center circular system.
+- Sharpens/brights the gold visual treatment and improves spacing of connectors/branches.
+- Rebalances the actionable-intelligence branch area so the lines no longer crowd the labels.
+- Makes Corpus / Discover / Investigate / Develop larger and uses exactly one centered arrow between each stage.
+- Removes “TORC is not an automated greenlight” and its supporting sentence from this card.
+- No other Organizations copy changed.
