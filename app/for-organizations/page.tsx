@@ -55,80 +55,61 @@ export default function Organizations(){
         <span>BETTER-PLACED ATTENTION</span>
       </section>
 
-      <section className={styles.system}>
-        <div className={styles.systemIntro}>
-          <div className={styles.eyebrow}>FROM VOLUME TO JUDGMENT</div>
-          <h2>Evaluate broadly.<br/>Investigate selectively.</h2>
-          <p>
-            Evaluation becomes a disciplined way to allocate human attention —
-            not an automated substitute for it.
-          </p>
-        </div>
-
-        <div className={styles.systemFlow} aria-label="TORC institutional workflow">
-          <div className={styles.flowNode}>
-            <span>01</span>
-            <b>CORPUS</b>
-            <p>A slate, catalogue, submission pool, or recurring stream.</p>
-          </div>
-          <div className={styles.flowLink}>→</div>
-          <div className={styles.flowNode}>
-            <span>02</span>
-            <b>DISCOVER</b>
-            <p>Find recurring achievements, structural bottlenecks, boundary cases, and meaningful exceptions.</p>
-          </div>
-          <div className={styles.flowLink}>→</div>
-          <div className={styles.flowNode}>
-            <span>03</span>
-            <b>INVESTIGATE</b>
-            <p>Direct deeper analysis toward the works that warrant it.</p>
-          </div>
-          <div className={styles.flowLink}>→</div>
-          <div className={styles.flowNode}>
-            <span>04</span>
-            <b>DEVELOP</b>
-            <p>Concentrate development resources where structural change can propagate.</p>
-          </div>
-        </div>
-
-        <div className={styles.systemRule}>
-          <span>TORC IS NOT AN AUTOMATED GREENLIGHT.</span>
-
-        </div>
-      </section>
-
-      <section className={styles.visibility}>
-        <div className={styles.visibilityHead}>
+      <section className={styles.corpusSystem} aria-labelledby="corpus-system-title">
+        <div className={styles.corpusSystemHead}>
           <div>
-            <div className={styles.eyebrow}>WHAT BECOMES VISIBLE AT SCALE</div>
-            <h2>Patterns no single<br/>report can show.</h2>
+            <div className={styles.corpusSystemEyebrow}>THE CORPUS INTELLIGENCE SYSTEM</div>
+            <h2 id="corpus-system-title">From volume to<br/>actionable intelligence.</h2>
           </div>
           <p>
-            A common analytical standard lets the corpus answer questions that isolated evaluations cannot.
+            Evaluate the corpus as one field. Reveal the pattern. Investigate the differences that matter. Then direct human attention where structural change can actually matter.
           </p>
         </div>
 
-        <div className={styles.signalMatrix}>
-          <article>
-            <span>01</span>
-            <strong>What the corpus repeatedly achieves</strong>
-            <p>See which kinds of structural achievement recur across the body of work — and where meaningful boundary cases cluster.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <strong>Where the work repeatedly stops</strong>
-            <p>Identify recurring structural constraints and bottlenecks that may be invisible when each artifact is considered alone.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <strong>Which differences actually matter</strong>
-            <p>Distinguish superficial variation from meaningful differences in cognitive architecture, constraint, inference, integration and reach.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <strong>What deserves deeper attention</strong>
-            <p>Surface works that diverge meaningfully from the corpus so scarce editorial, curatorial, acquisition or development attention can be placed deliberately.</p>
-          </article>
+        <div className={styles.corpusMap} aria-label="Corpus to actionable intelligence">
+          <div className={styles.corpusInput}>
+            <span className={styles.mapLabel}>CORPUS</span>
+            <b>50 artifacts</b>
+            <div className={styles.artifactCloud} aria-hidden="true">
+              {Array.from({length: 32}).map((_,i)=><i key={i}/>) }
+            </div>
+          </div>
+
+          <div className={styles.mapArrow} aria-hidden="true">→</div>
+
+          <div className={styles.visibilityCore}>
+            <span>WHAT BECOMES VISIBLE</span>
+            <div className={styles.ringOuter} aria-hidden="true"/>
+            <div className={styles.ringInner} aria-hidden="true"/>
+            <div className={styles.coreTerms}>
+              <b>PATTERNS</b>
+              <b>OUTLIERS</b>
+              <b>BOTTLENECKS</b>
+              <b>OPPORTUNITIES</b>
+            </div>
+          </div>
+
+          <div className={styles.mapArrow} aria-hidden="true">→</div>
+
+          <div className={styles.actionOutput}>
+            <span className={styles.mapLabel}>ACTIONABLE INTELLIGENCE</span>
+            <div className={styles.actionTree}>
+              <i aria-hidden="true"/>
+              <div><span>EDITORIAL</span><span>DEVELOPMENT</span><span>SELECTION</span><span>RESEARCH</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.corpusStages} aria-label="TORC institutional workflow">
+          <article><span>01</span><b>CORPUS</b><p>Establish the field.</p></article>
+          <article><span>02</span><b>DISCOVER</b><p>Reveal the pattern.</p></article>
+          <article><span>03</span><b>INVESTIGATE</b><p>Explain the difference.</p></article>
+          <article><span>04</span><b>DEVELOP</b><p>Act on structure.</p></article>
+        </div>
+
+        <div className={styles.corpusPrinciple}>
+          <strong>TORC IS NOT AN AUTOMATED GREENLIGHT.</strong>
+          <span>It is a system for placing human judgment more deliberately.</span>
         </div>
       </section>
 
