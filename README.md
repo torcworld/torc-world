@@ -1,9 +1,12 @@
-# TORC Home — remove extra Explore All Artifacts button
+# TORC Organizations — four micro-adjustments
 
 Changed only:
-- `app/page.tsx`
+- `app/for-organizations/organizations.module.css`
 
-Exact change:
-- Removed the extra `Explore all artifacts →` action from the featured-artifacts section.
-- Preserved the existing Compare action.
-- No CSS, spacing, layout, routing, copy, or other homepage elements changed.
+Exact changes:
+1. Small `CORPUS` label above the artifact dots -> pure white.
+2. Only `SHOULD PRODUCE MORE THAN` in the gold statement -> 1 mm downward.
+3. `contact@torc.world` -> darker gold `#b7955d`.
+4. Text/arrow inside the red institutional CTA -> darker gold `#b7955d`.
+
+No other layout, spacing, colors, borders, or content changed.

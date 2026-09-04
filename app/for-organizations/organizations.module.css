@@ -3389,3 +3389,27 @@
 .newHero .eyebrow{
   color:#b7955d!important;
 }
+
+
+/* 2026-09-04 — exact requested Organizations micro-adjustments */
+
+/* 1. Small CORPUS label above the artifact dots: white. */
+.corpusInput .diagramLabel{
+  color:#fff!important;
+}
+
+/* 2. Move only “should produce more than” down by 1mm. */
+.corpusStatement strong span:nth-child(2){
+  transform:translateY(1mm)!important;
+}
+
+/* 3. Bottom contact email: darker gold. */
+.contactCard small{
+  color:#b7955d!important;
+}
+
+/* 4. White lettering inside the red CTA: darker gold. */
+.contactCard a,
+.contactCard a b{
+  color:#b7955d!important;
+}
