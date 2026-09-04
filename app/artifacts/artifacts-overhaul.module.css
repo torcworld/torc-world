@@ -796,3 +796,13 @@
     right:34px!important;
   }
 }
+
+
+/* 2026-09-04 — second hero-rule width test.
+   Another exact 2mm shorter on each side; nothing else changes. */
+@media(min-width:761px){
+  .hero::after{
+    left:calc(34px + 2mm)!important;
+    right:calc(34px + 2mm)!important;
+  }
+}
