@@ -15,7 +15,7 @@
   right:2px;
   bottom:92px;
   width:238px;
-  background:#c7aa76;
+  background:#b7955d;
   pointer-events:none;
   z-index:0;
 }
@@ -155,7 +155,7 @@
     top:38px!important;
     bottom:92px!important;
     width:190px!important;
-    background:#c7aa76;
+    background:#b7955d;
     pointer-events:none;
     z-index:0;
   }
@@ -203,82 +203,11 @@
 }
 .frame > :global(main) > header h1,
 .frame > :global(main) > header strong{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 .frame > :global(main) > header p,
 .frame > :global(main) > header small,
 .frame > :global(main) > header span,
 .frame > :global(main) > header .eyebrow{
   color:#d9c7a6!important;
-}
-
-/* 2026-09-03 — artifact-analysis outer instrument frame trial.
-   The gold/charcoal/gold composition gets a restrained charcoal perimeter on
-   its OUTER sides and bottom only. No new line is added across the top of the
-   central charcoal analysis field, keeping this architecture distinct from
-   Artifacts. A 2mm site-ground release follows the lower closure. */
-@media(min-width:981px){
-  .frame{
-    margin-bottom:2mm!important;
-    border-left:1px solid rgba(53,52,50,.82)!important;
-    border-right:1px solid rgba(53,52,50,.82)!important;
-    border-bottom:1px solid rgba(53,52,50,.82)!important;
-    box-sizing:border-box!important;
-  }
-  .frame::before,
-  .frame::after{
-    border-bottom:1px solid rgba(53,52,50,.82)!important;
-    box-sizing:border-box!important;
-  }
-}
-
-/* 2026-09-03 — analysis frame precision correction.
-   Start the outer side rules at the analysis object itself (not at the upper
-   guide), close both gold fields with delicate 1px charcoal rules at top and
-   bottom, and lift the composition toward the detached guide. */
-@media(min-width:981px){
-  .frame{
-    padding-top:3mm!important;
-    border-left:0!important;
-    border-right:0!important;
-    border-bottom:0!important;
-    margin-bottom:2mm!important;
-  }
-  .frame::before,
-  .frame::after{
-    top:3mm!important;
-    bottom:0!important;
-    border-top:1px solid rgba(53,52,50,.82)!important;
-    border-bottom:1px solid rgba(53,52,50,.82)!important;
-    box-sizing:border-box!important;
-  }
-  .frame::before{
-    border-left:1px solid rgba(53,52,50,.82)!important;
-  }
-  .frame::after{
-    border-right:1px solid rgba(53,52,50,.82)!important;
-  }
-}
-
-/* 2026-09-03 — analysis inner-edge + vertical-position micro-correction.
-   Match the inner edges of both gold rails to the same charcoal precision rule
-   as their outer edges, and lower the complete analysis object by exactly 1mm. */
-@media(min-width:981px){
-  .frame{
-    padding-top:4mm!important;
-  }
-  .frame::before,
-  .frame::after{
-    top:4mm!important;
-  }
-  .frame::before{
-    border-right:1px solid rgba(53,52,50,.82)!important;
-  }
-  .frame::after{
-    border-left:1px solid rgba(53,52,50,.82)!important;
-  }
-  .frame > :global(main){
-    border-left:1px solid rgba(53,52,50,.82)!important;
-    border-right:1px solid rgba(53,52,50,.82)!important;
-  }
 }

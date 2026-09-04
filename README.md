@@ -1,8 +1,15 @@
-# Organizations correction
+# Analysis — all existing gold to darker gold
 
-Only:
-- outermost central ring: back to black
-- small CORPUS label above the dots: pure white
-- TORC FOR ORGANIZATIONS at the top: back to darker gold #b7955d
+Changed only the Analysis gold palette in:
+- app/artifact/components/artifact-analysis.module.css
+- app/artifact/artifact-frame.module.css
 
-No other changes.
+Included unchanged:
+- app/artifact/components/ArtifactAnalysis.tsx
+
+Exact rule:
+- existing yellow/gold #c7aa76 -> darker gold #b7955d
+- light ochre #d9c7a6 remains unchanged
+
+This now includes the outer/side rails and frame gold as well as the gold inside the Analysis content, title/accent areas, and bottom CTA styling wherever they use the established gold token.
+No layout or content changes.
