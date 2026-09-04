@@ -1,8 +1,6 @@
-# TORC Artifacts — Batch 02
+# TORC Artifacts - Integrated 28-approved update
 
-Weighted update from existing website n=10 plus supplied n=15.
-CMS is rounded to a whole number. Six dimensions retain two decimals.
-Operational Orders were checked against the supplied classifications and remain unchanged.
-The Republic remains G. Solaris is removed from the public corpus and its dedicated route returns not found.
-No evaluation counts are shown publicly.
-No analysis prose, styling, ordering, or unrelated artifact data changed.
+Correction: the website displays all six dimension scores with exactly one decimal.
+CMS remains a whole number. Operational Orders remain unchanged.
+A Clockwork Orange and Solaris remain removed.
+No analysis prose, styling, ordering, or unrelated values changed.

@@ -7,7 +7,7 @@ export default function Page(){return <ArtifactAnalysis
  creator='Stanley Kubrick'
  order='2'
  orderName='Symbolic consciousness'
- cms={833}
+ cms={832}
  range='Median across 10 evaluations'
  headline='Cosmic scale does not make an artifact generative.'
  analysis={[
@@ -16,12 +16,12 @@ export default function Page(){return <ArtifactAnalysis
   'HAL creates genuine local recursive pressure, but that pressure does not govern the completed film. The larger architecture remains a represented sequence of intelligence, tool use, technological dependence and transformation. The film reorganizes those relations with exceptional economy; it does not require consciousness’s own orientation toward reality to become the governing fractured object.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'8',artifact:'Tool use, violence, evolution, artificial intelligence, monolith encounters and human transformation remain strongly interdependent across enormous temporal distance.'},
-  {key:'AD',name:'Abstraction Depth',score:'9',artifact:'Concrete images repeatedly support high-level relations among intelligence, technology, evolution and transcendence without explicit conceptual exposition.'},
-  {key:'CD',name:'Constraint Density',score:'9',artifact:'Visual rhythm, sound, causal sequencing, technological detail and symbolic recurrence tightly constrain the film’s sparse construction.'},
-  {key:'ID',name:'Inferential Distance',score:'8',artifact:'The viewer must infer large conceptual relations from minimal exposition, but the film preserves enough recurring structure to keep those relations recoverable.'},
-  {key:'IC',name:'Integrative Compression',score:'9',artifact:'A few images and transitions carry enormous historical and conceptual load; the bone-to-spacecraft cut is an extreme local example of that economy.'},
-  {key:'GR',name:'Generalization Reach',score:'8',artifact:'The structure travels well to questions of tools, intelligence and transformation, while remaining substantially dependent on the film’s constructed cosmology.'}
+  {key:'RL',name:'Relational Load',score:'8.3',artifact:'Tool use, violence, evolution, artificial intelligence, monolith encounters and human transformation remain strongly interdependent across enormous temporal distance.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'Concrete images repeatedly support high-level relations among intelligence, technology, evolution and transcendence without explicit conceptual exposition.'},
+  {key:'CD',name:'Constraint Density',score:'8.4',artifact:'Visual rhythm, sound, causal sequencing, technological detail and symbolic recurrence tightly constrain the film’s sparse construction.'},
+  {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'The viewer must infer large conceptual relations from minimal exposition, but the film preserves enough recurring structure to keep those relations recoverable.'},
+  {key:'IC',name:'Integrative Compression',score:'8.7',artifact:'A few images and transitions carry enormous historical and conceptual load; the bone-to-spacecraft cut is an extreme local example of that economy.'},
+  {key:'GR',name:'Generalization Reach',score:'7.9',artifact:'The structure travels well to questions of tools, intelligence and transformation, while remaining substantially dependent on the film’s constructed cosmology.'}
  ]}
  boundaryTitle='Why Level 2, not 3b—or G?'
  boundary={[
