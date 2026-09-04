@@ -52,43 +52,33 @@ export default function Organizations(){
         </div>
       </header>
 
-      <section className={styles.standardBar}>
-        <span>ONE CORPUS</span><i/>
-        <span>REPEATING PATTERNS</span><i/>
-        <span>MEANINGFUL EXCEPTIONS</span><i/>
-        <span>BETTER-PLACED ATTENTION</span>
-      </section>
-
       <section className={styles.corpusSystem} aria-labelledby="corpus-system-title">
         <div className={styles.corpusSystemHead}>
           <div>
-            <div className={styles.corpusSystemEyebrow}>THE CORPUS INTELLIGENCE SYSTEM</div>
+            <div className={styles.corpusSystemEyebrow}>INSTITUTIONAL INTELLIGENCE</div>
             <h2 id="corpus-system-title">From volume to<br/>actionable intelligence.</h2>
           </div>
           <div className={styles.corpusSystemPremise}>
             <strong>50 artifacts should produce more than 50 reports.</strong>
-            <p>
-              Evaluate the corpus as one field. Reveal the pattern. Investigate the differences that matter. Then direct human attention where structural change can actually matter.
-            </p>
           </div>
         </div>
 
-        <div className={styles.corpusMap} aria-label="Corpus to actionable intelligence">
-          <div className={styles.corpusInput}>
-            <span className={styles.mapLabel}>CORPUS</span>
-            <b>50 artifacts</b>
-            <div className={styles.artifactCloud} aria-hidden="true">
-              {Array.from({length: 32}).map((_,i)=><i key={i}/>) }
+        <div className={styles.intelligenceDiagram} aria-label="Corpus intelligence system">
+          <div className={styles.diagramCorpus}>
+            <span className={styles.diagramLabel}>CORPUS</span>
+            <strong>50 ARTIFACTS</strong>
+            <div className={styles.artifactField} aria-hidden="true">
+              {Array.from({length: 42}).map((_,i)=><i key={i}/>)}
             </div>
           </div>
 
-          <div className={styles.mapArrow} aria-hidden="true">→</div>
+          <div className={styles.diagramConnector} aria-hidden="true">
+            <i/><i/><i/>
+          </div>
 
-          <div className={styles.visibilityCore}>
+          <div className={styles.diagramCore}>
             <span>WHAT BECOMES VISIBLE</span>
-            <div className={styles.ringOuter} aria-hidden="true"/>
-            <div className={styles.ringInner} aria-hidden="true"/>
-            <div className={styles.coreTerms}>
+            <div className={styles.coreCircle}>
               <b>PATTERNS</b>
               <b>OUTLIERS</b>
               <b>BOTTLENECKS</b>
@@ -96,21 +86,24 @@ export default function Organizations(){
             </div>
           </div>
 
-          <div className={styles.mapArrow} aria-hidden="true">→</div>
+          <div className={styles.branchField} aria-hidden="true">
+            <i className={styles.branchOne}/><i className={styles.branchTwo}/>
+            <i className={styles.branchThree}/><i className={styles.branchFour}/>
+          </div>
 
-          <div className={styles.actionOutput}>
-            <span className={styles.mapLabel}>ACTIONABLE INTELLIGENCE</span>
-            <div className={styles.actionTree}>
-              <i aria-hidden="true"/>
-              <div><span>EDITORIAL</span><span>DEVELOPMENT</span><span>SELECTION</span><span>RESEARCH</span></div>
-            </div>
+          <div className={styles.diagramOutputs}>
+            <span className={styles.diagramLabel}>ACTIONABLE INTELLIGENCE</span>
+            <div><b>EDITORIAL</b><b>DEVELOPMENT</b><b>SELECTION</b><b>RESEARCH</b></div>
           </div>
         </div>
 
         <div className={styles.corpusStages} aria-label="TORC institutional workflow">
           <article><span>01</span><b>CORPUS</b><p>Establish the field.</p></article>
+          <i aria-hidden="true">→</i>
           <article><span>02</span><b>DISCOVER</b><p>Reveal the pattern.</p></article>
+          <i aria-hidden="true">→</i>
           <article><span>03</span><b>INVESTIGATE</b><p>Explain the difference.</p></article>
+          <i aria-hidden="true">→</i>
           <article><span>04</span><b>DEVELOP</b><p>Act on structure.</p></article>
         </div>
 
