@@ -1,10 +1,12 @@
-# TORC Theory — visible 5 mm site-background strip
+# TORC Theory — real 5 mm bottom website-ground strip
 
-Changed only the bottom finish of the opened Theory reader.
+Changed only:
+- `app/theory/book/book.module.css`
+- `app/theory/book/read/page.tsx`
 
 Correction:
-- Removed reliance on `margin-bottom`, because that did not reveal the website background.
-- Added an actual rendered 5 mm strip after the complete reader composition.
-- Strip uses the site's own `var(--bg)` background color.
-- All prior Theory framing and top-gold changes are preserved.
-- Nothing else changed.
+- The previous CSS-only margin/pseudo-element approach did not produce a visible strip.
+- The opened-book route now contains a real final 5 mm element using the normal site background `var(--bg)`.
+- The reader wrapper's large bottom padding is removed so the strip sits directly after the completed Theory composition.
+- A thin black line separates the gold composition from the 5 mm site-ground strip.
+- All previous Theory color/frame changes remain in the CSS base.

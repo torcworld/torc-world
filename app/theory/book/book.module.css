@@ -1835,19 +1835,18 @@
 }
 
 
-/* 2026-09-04 — visible site-background strip below the complete reader.
-   Use an actual rendered strip rather than margin, because the page itself carries
-   the surrounding background and a margin alone does not reveal the site ground. */
+/* 2026-09-04 — real bottom site-background reveal on the OPENED BOOK route.
+   Previous attempts targeted only CSS spacing on the wrapper.
+   This creates a real final element in /theory/book/read. */
 .readingPage{
-  margin-bottom:0!important;
+  padding-bottom:0!important;
 }
 
-.readingPage::after{
-  content:""!important;
+.readerBottomGround{
   display:block!important;
-  width:100%!important;
   height:5mm!important;
-  margin-top:0!important;
+  margin:0!important;
   background:var(--bg)!important;
-  border:0!important;
+  border-top:1px solid #171714!important;
+  width:100%!important;
 }

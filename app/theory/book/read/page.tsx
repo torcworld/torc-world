@@ -10,5 +10,6 @@ export default function Book(){
    <div className={`auditNote ${styles.editionNote}`}><b>Living edition.</b> This online text is the current canonical version. It may be refined as TORC is tested against additional artifacts and boundary cases.</div>
    <div dangerouslySetInnerHTML={{__html:body}} />
   </section>
+  <div className={styles.readerBottomGround} aria-hidden="true" />
  </main>
 }
