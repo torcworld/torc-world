@@ -1,13 +1,16 @@
-# TORC Theory — current-source 5 mm bottom ground
+# TORC Theory — hard 5 mm bottom site strip
 
 Base:
-- `Archief(20260904-165325).zip` supplied by the user.
+- Current integrated archive `Archief(20260904-165325).zip`.
 
 Changed only:
 - `app/theory/book/book.module.css`
 
-Exact change:
-- On the opened-book route only (`.bookPage:has(.bookReader)`), the outer page background is the normal site background.
-- Adds exactly 5 mm bottom padding to that outer page, after the complete reader.
-- Removes bottom margin from the reader itself to prevent margin/collapse ambiguity.
-- No TSX, colors inside the reader, book styling, top frame, or other pages changed.
+This time the bottom strip is not created with margin or a child element.
+The actual `.readingPage` background itself is split:
+- gold through the full reader,
+- final 5 mm = normal site background,
+- thin black rule exactly 5 mm above the bottom.
+
+The previous helper `.readerBottomGround` is hidden.
+Nothing else changed.
