@@ -940,3 +940,16 @@
     font-weight:900!important;
   }
 }
+
+
+/* 2026-09-04 — exact match to the currently selected pricing-card gold. */
+@media(min-width:861px){
+  .process,
+  .processStep{
+    background:#c7aa76!important;
+  }
+
+  .processStep:not(:last-child)::after{
+    background:#c7aa76!important;
+  }
+}
