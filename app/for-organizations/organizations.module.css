@@ -2208,3 +2208,18 @@
     font-size:22px;
   }
 }
+
+
+/* 2026-09-04 — Organizations transition study.
+   Remove the last burgundy trace from the opening card and create breathing
+   room between the two dark closing cards so the material transition can be
+   judged before adding an intermediate treatment. */
+.newHero{
+  border-top:1px solid #c7aa76!important;
+  border-bottom:1px solid #c7aa76!important;
+}
+
+/* Separate the black institutional inquiry from its gold methodology note. */
+.proprietaryNote{
+  margin-top:28px!important;
+}
