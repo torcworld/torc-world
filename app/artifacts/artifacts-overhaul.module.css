@@ -841,13 +841,3 @@
     right:calc(82px - 2mm)!important;
   }
 }
-
-
-/* 2026-09-04 — exact 1mm upward shift of the complete Artifacts content flow.
-   Only the existing top breathing space above the first charcoal field changes:
-   3.5mm -> 2.5mm. Everything below follows naturally; nothing else changes. */
-@media(min-width:761px){
-  .hero{
-    margin-top:2.5mm!important;
-  }
-}
