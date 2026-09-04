@@ -668,3 +668,11 @@
 .compareSection{
   margin-top:calc(54px - 4mm)!important;
 }
+
+
+/* 2026-09-04 — correct Compare Artifacts vertical direction.
+   Match the visual breathing room below the pagination to the spacing
+   between the pagination and its upper rule. */
+.compareSection{
+  margin-top:20px!important;
+}
