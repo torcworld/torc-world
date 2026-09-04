@@ -808,11 +808,13 @@
 }
 
 
-/* 2026-09-04 — final hero-rule alignment.
-   Match the black rule exactly to the total width of the four filter/search controls. */
+/* 2026-09-04 — match the hero rule to the ACTUAL visible filter fields.
+   The tools container has its own horizontal padding, so matching the outer
+   tools box was not enough. This inset matches the visible Search / Sort /
+   Medium / Operational Order field row itself. */
 @media(min-width:761px){
   .hero::after{
-    left:calc(34px - 2mm)!important;
-    right:calc(34px - 2mm)!important;
+    left:calc(52px - 2mm)!important;
+    right:calc(52px - 2mm)!important;
   }
 }
