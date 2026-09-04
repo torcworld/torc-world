@@ -1,20 +1,17 @@
-# TORC Organizations — continuous card study
+# TORC Organizations — charcoal/gold unification
 
 Changed only:
 - `app/for-organizations/page.tsx`
 - `app/for-organizations/organizations.module.css`
 
-New vertical composition:
-1. Existing gray/charcoal opening card with gold typography.
-2. No white gap: a shallow blank gold transition band at the exact same width.
-3. Black/gold corpus intelligence drawing.
-4. Gold conclusion panel:
-   “50 artifacts should / produce more than 50 reports.”
-   “From volume to actionable intelligence.”
-5. Black/gold “Start with the corpus” inquiry panel.
-6. Existing attached gold proprietary note.
-
-Also:
-- Removed “Institutional Intelligence / From volume to actionable intelligence” from the former top gold header.
-- All major cards now share the same full width.
-- The analytical drawing itself is preserved from the previous refinement.
+Changes:
+- Middle analytical drawing field changes from near-black to the established TORC charcoal gray.
+- Gold diagram geometry and light secondary labels remain, preserving the polished analytical graphic without the black-page style break.
+- Final “Start with the corpus” card also changes from near-black to the same charcoal.
+- Gold statement is re-typeset as:
+  50 artifacts
+  SHOULD PRODUCE MORE THAN
+  50 reports.
+  with large outer lines and a substantially smaller/narrower middle line.
+- “From volume to actionable intelligence.” remains beneath it.
+- No other content or card order changed.

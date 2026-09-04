@@ -2896,3 +2896,61 @@
     margin-right:-20px!important;
   }
 }
+
+
+/* 2026-09-04 — charcoal/gold unification study.
+   Keep the analytical language, but return the large dark fields to TORC's
+   established charcoal rather than near-black. */
+
+/* Middle analytical field: charcoal background, with the black/gold diagram
+   language retained as crisp accents on top. */
+.corpusVisualBody{
+  background:#353432!important;
+}
+.intelligenceDiagram{
+  background:#353432!important;
+}
+
+/* Keep graphic marks high-contrast and precise on charcoal. */
+.diagramCorpus>strong,
+.diagramLabel,
+.diagramCore>span,
+.coreCircle b,
+.corpusStages article>span,
+.corpusStages article>b{
+  color:#c7aa76!important;
+}
+.diagramOutputs b,
+.corpusStages article>p{
+  color:#f3eee6!important;
+}
+
+/* Final inquiry card also returns from black to the same TORC charcoal. */
+.finalContact{
+  background:#353432!important;
+}
+
+/* Three-line hourglass / star hierarchy:
+   large 50 artifacts → narrower smaller bridge → large 50 reports. */
+.corpusStatement strong{
+  gap:2px!important;
+}
+.corpusStatement strong span:nth-child(1),
+.corpusStatement strong span:nth-child(3){
+  display:block!important;
+  font-size:1em!important;
+  line-height:.98!important;
+}
+.corpusStatement strong span:nth-child(2){
+  display:block!important;
+  margin:4px 0 5px!important;
+  font-family:Arial,sans-serif!important;
+  font-size:.34em!important;
+  line-height:1!important;
+  font-weight:700!important;
+  letter-spacing:.14em!important;
+  text-transform:uppercase!important;
+}
+.corpusStatement p{
+  margin-top:14px!important;
+}

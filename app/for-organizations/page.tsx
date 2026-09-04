@@ -103,8 +103,9 @@ export default function Organizations(){
         </div>
         <div className={styles.corpusStatement}>
           <strong>
-            <span>50 artifacts should</span>
-            <span>produce more than 50 reports.</span>
+            <span>50 artifacts</span>
+            <span>should produce more than</span>
+            <span>50 reports.</span>
           </strong>
           <p>From volume to actionable intelligence.</p>
         </div>
