@@ -2223,3 +2223,25 @@
 .proprietaryNote{
   margin-top:28px!important;
 }
+
+
+/* 2026-09-04 — correction: separate the corpus visual from Start with the Corpus,
+   not the proprietary gold footer from Start with the Corpus. */
+
+/* Opening gray/charcoal card: explicitly eliminate any remaining burgundy rules. */
+.newHero{
+  border-top:1px solid #c7aa76!important;
+  border-bottom:1px solid #c7aa76!important;
+  box-shadow:none!important;
+}
+
+/* The gold proprietary strip belongs directly to Start with the Corpus. */
+.proprietaryNote{
+  margin-top:0!important;
+}
+
+/* Create the requested 2–3 cm visual break ABOVE Start with the Corpus,
+   i.e. between the corpus-system drawing card and the closing inquiry block. */
+.corpusSystem + .finalContact{
+  margin-top:24mm!important;
+}

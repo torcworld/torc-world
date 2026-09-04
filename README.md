@@ -1,13 +1,13 @@
-# TORC Organizations — spacing / transition study
+# TORC Organizations — corrected card separation
 
-Small reversible patch. Apply over the current Organizations applications-into-hero version.
+Correction patch over the previous spacing/transition study.
 
 Changed only:
 - `app/for-organizations/organizations.module.css`
-- `app/for-organizations/page.tsx` is included unchanged so the patch remains self-contained for this page.
+- `app/for-organizations/page.tsx` included unchanged.
 
-Changes:
-- Opening charcoal card now has only delicate gold top and bottom rules; no burgundy/red remains in those borders.
-- Added 28px breathing room between the black “Start with the corpus” card and the gold proprietary-methodology card below it.
-- No new transition material has been invented yet; this deliberately exposes the spacing so the next gray/gold → black/gold transition can be judged cleanly.
-- No copy or other sections changed.
+Corrections:
+- Gold proprietary strip is attached directly to “Start with the corpus” again.
+- The 2–3 cm separation is now between the corpus-system/drawing card above and “Start with the corpus”.
+- Opening gray/charcoal card is explicitly limited to thin gold top/bottom rules; burgundy/red border treatment is removed.
+- No copy or other layout content changed.
