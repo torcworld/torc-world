@@ -1,11 +1,10 @@
-# TORC Organizations — whiter existing light text
+# TORC Organizations — all light text pure white
 
 Changed only:
 - `app/for-organizations/organizations.module.css`
 
-Change:
-- Existing light/cream typography on the charcoal/dark sections is changed to pure white `#fff` for more contrast.
-- No black/dark text is turned white.
-- Text on the gold bands remains charcoal/black `#171714`, including the 50 Artifacts statement.
-- Darker gold remains unchanged at `#b7955d`.
-- No layout, spacing, sizing, or other styling is changed.
+Changes:
+- All existing light typography on the charcoal/dark Organizations sections, including the upper page, is forced to pure white `#fff`.
+- Dark text on the gold transition/statement bands remains charcoal `#171714`.
+- The darker gold `#b7955d` remains unchanged.
+- No layout, spacing, sizing, or structure is changed.

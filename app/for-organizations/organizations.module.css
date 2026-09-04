@@ -3384,3 +3384,23 @@
 .corpusStatement span{
   color:#171714!important;
 }
+
+
+/* 2026-09-04 — Organizations: all light text is pure white.
+   This catches upper-page light typography as well as lower-page typography. */
+.page :is(h1,h2,h3,p,span,strong,b,small,li){
+  --org-pure-white:#fff;
+}
+
+/* Existing light typography across charcoal/dark page regions */
+.hero :is(h1,h2,h3,p,span,strong,b,small,li),
+.diagramSection :is(h1,h2,h3,p,span,strong,b,small,li),
+.closeSection :is(h1,h2,h3,p,span,strong,b,small,li){
+  color:#fff!important;
+}
+
+/* Gold fields retain dark typography. */
+.corpusTransitionBand :is(h1,h2,h3,p,span,strong,b,small,li),
+.corpusStatement :is(h1,h2,h3,p,span,strong,b,small,li){
+  color:#171714!important;
+}
