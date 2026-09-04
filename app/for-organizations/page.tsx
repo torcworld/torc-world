@@ -70,8 +70,7 @@ export default function Organizations(){
           </div>
 
           <div className={styles.diagramCore}>
-            <span>WHAT BECOMES VISIBLE</span>
-            <div className={styles.coreCircle}>
+<div className={styles.coreCircle}>
               <b>PATTERNS</b>
               <b>OUTLIERS</b>
               <b>BOTTLENECKS</b>

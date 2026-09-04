@@ -3138,3 +3138,73 @@
   border-color:#431b23!important;
   box-shadow:0 8px 22px rgba(67,27,35,.20)!important;
 }
+
+
+/* 2026-09-04 — clean charcoal ending / remove residual red rails */
+
+/* Action labels return to readable TORC gold on charcoal. */
+.diagramOutputs b{
+  color:#c7aa76!important;
+}
+
+/* The center is now purely graphical: no WHAT BECOMES VISIBLE label. */
+.diagramCore>span{
+  display:none!important;
+}
+
+/* Remove every page/card side treatment that can expose the old burgundy rails.
+   The composition keeps neutral charcoal/gray structural rules only. */
+.page,
+.page::before,
+.page::after,
+.hero,
+.hero::before,
+.hero::after,
+.newHero,
+.newHero::before,
+.newHero::after,
+.corpusSystem,
+.corpusSystem::before,
+.corpusSystem::after,
+.finalContact,
+.finalContact::before,
+.finalContact::after{
+  border-left-color:transparent!important;
+  border-right-color:transparent!important;
+  box-shadow:none!important;
+}
+.page::before,
+.page::after{
+  background:transparent!important;
+}
+
+/* Restore deliberate neutral card edges without any burgundy. */
+.newHero,
+.corpusSystem,
+.finalContact{
+  border-left:1px solid #353432!important;
+  border-right:1px solid #353432!important;
+}
+
+/* Specifically kill legacy vertical rails/pseudo-elements that extend above
+   the first gray card or continue down the whole Organizations page. */
+@media(min-width:761px){
+  .page::before,
+  .page::after,
+  .hero::before,
+  .hero::after{
+    content:none!important;
+    display:none!important;
+    border:0!important;
+    background:none!important;
+  }
+}
+
+/* End the page in charcoal: proprietary gold footer is removed from markup. */
+.finalContact{
+  margin-bottom:0!important;
+  border-bottom:1px solid #353432!important;
+}
+.proprietaryNote{
+  display:none!important;
+}

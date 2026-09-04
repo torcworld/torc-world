@@ -1,16 +1,14 @@
-# TORC Organizations — diagram accent refinement
+# TORC Organizations — clean charcoal ending
 
 Changed only:
-- `app/for-organizations/page.tsx` (included unchanged)
+- `app/for-organizations/page.tsx`
 - `app/for-organizations/organizations.module.css`
 
 Changes:
-- Leaves the opening gray card copy colors unchanged for now.
-- “WHAT BECOMES VISIBLE” is TORC red.
-- Editorial / Development / Selection / Research change from softened pink to the actual TORC red.
-- Outermost central circle becomes true black.
-- Removes burgundy/red from the outer borders/rules of the continuous card composition; those rules are charcoal/gray instead.
-- Rebalances the 50-artifacts statement so the large top and bottom lines sit more evenly around the small middle line.
-- Pulls “Start with the corpus” upward toward the Corpus / Discover / Investigate / Develop register.
-- Makes the institutional inquiry CTA a TORC-red button with a darker-red hover.
-- CTA wording is intentionally unchanged for now.
+- Removes the “WHAT BECOMES VISIBLE” text from the center of the analytical graphic; the graphic now speaks for itself.
+- Returns Editorial / Development / Selection / Research from low-contrast red to TORC gold.
+- Removes the entire proprietary-methodology footer/note.
+- The page now ends with the charcoal “Start with the corpus” section rather than another gold band.
+- Aggressively removes the legacy burgundy/red vertical side rails, including the short red pieces protruding above the first gray card.
+- Retains only neutral charcoal/gray card-edge rules.
+- No other content or diagram proportions changed.
