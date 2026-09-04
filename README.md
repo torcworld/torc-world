@@ -1,11 +1,14 @@
-# TORC — TORC for Writers navigation patch
+# TORC Organizations — unified gold test
 
-Changed only:
-- `app/TorcNav.tsx`
+Changed only the Organizations page styling.
+
+Gold reference:
+- `#c7aa76` — the active Organizations navigation-button gold.
 
 Changes:
-- Renames the main navigation button from `Submit Your Artifact` to `TORC for Writers`.
-- The navigation button now links to `/evaluate-your-work` and therefore opens the page at the top.
-- Preserves the Organizations active-gold navigation state from the previous patch.
-- Existing `Submit Your Artifact` CTAs elsewhere on the website remain linked directly to `/evaluate-your-work#pricing`.
-- No page content, styling, pricing, or other navigation items are changed.
+- `From volume to actionable intelligence.` gold transition field → `#c7aa76`
+- `50 artifacts / should produce more than / 50 reports` gold field → `#c7aa76`
+- Gold analytical/diagram accents on the Organizations page → `#c7aa76`
+- Charcoal fields, burgundy/red accents, cream text, layout, spacing, and content are unchanged.
+
+This is intentionally a color-only experiment.

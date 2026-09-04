@@ -3336,3 +3336,34 @@
 .contactCard a{
   transform:translateY(5px)!important;
 }
+
+
+/* 2026-09-04 — Organizations unified TORC gold.
+   Use the active Organizations navigation gold as the single architectural
+   gold for the page's gold fields and gold graphic accents. */
+.corpusTransitionBand,
+.corpusStatement{
+  background:#c7aa76!important;
+}
+
+.diagramCorpus i,
+.diagramConnector i,
+.coreCircle::before,
+.diagramOutputs b::before,
+.miniBars i,
+.rangeGraphic i,
+.rangeGraphic i::before,
+.rangeGraphic i::after,
+.dimensionGraphic i::after{
+  background:#c7aa76!important;
+}
+
+.diagramCorpus>strong,
+.diagramLabel,
+.diagramCore>span,
+.coreCircle b,
+.corpusStages article>span,
+.corpusStages article>b,
+.diagramOutputs b{
+  color:#c7aa76!important;
+}
