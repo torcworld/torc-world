@@ -1,14 +1,17 @@
-# TORC Organizations — Corpus Intelligence System / Variant B prototype
+# TORC Organizations — closing cards refinement
+
+Small reversible patch. Apply over the current Organizations Variant B prototype.
 
 Changed only:
 - `app/for-organizations/page.tsx`
 - `app/for-organizations/organizations.module.css`
 
-Prototype changes:
-- Replaces the separate Workflow and What Becomes Visible presentations with one centered dark/gold Corpus Intelligence System.
-- Preserves the core content: Corpus → Discover → Investigate → Develop; Patterns / Outliers / Bottlenecks / Opportunities; and the human-judgment / not-an-automated-greenlight principle.
-- Keeps Institutional Applications and its existing copy.
-- Keeps the proprietary Boundary copy and Institutional Inquiry content, but visually deepens the closing sequence from gold to charcoal to near-black/gold.
-- Does not touch navigation, home, artifacts, theory, submit, shared styles, pricing, or APIs.
-
-This is intentionally a reversible visual prototype.
+Changes:
+- Removed the large “Access to TORC. Not transfer of TORC.” boundary card.
+- Removed the redundant sentence explaining that organizations receive the agreed outputs.
+- Preserved only the proprietary-methodology notice.
+- Moved that notice into a compact gold card directly beneath “Start with the corpus.”
+- “Start with the corpus.” is now gold.
+- “Discuss an institutional use case” is permanently gold with charcoal/black text and arrow.
+- Hover now only lightens the gold slightly and adds a restrained lift/glow.
+- All other Organizations content and layout remain unchanged.

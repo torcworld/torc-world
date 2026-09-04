@@ -130,24 +130,6 @@ export default function Organizations(){
         </div>
       </section>
 
-      <section className={styles.boundary}>
-        <div>
-          <div className={styles.eyebrow}>THE BOUNDARY</div>
-          <h2>Access to TORC.<br/>Not transfer of TORC.</h2>
-        </div>
-        <div className={styles.boundaryCopy}>
-          <p>
-            Organizations receive the agreed evaluations, evidence, comparative reporting,
-            and analytical outputs.
-          </p>
-          <p>
-            <strong>The TORC evaluation methodology remains proprietary and is not transferred as part of an engagement.</strong>
-            {' '}Internal gates, adjudication procedures, thresholds, evaluator instructions,
-            and other proprietary evaluation machinery remain within TORC.
-          </p>
-        </div>
-      </section>
-
       <section className={styles.finalContact}>
         <div>
           <div className={styles.eyebrow}>INSTITUTIONAL INQUIRY</div>
@@ -171,6 +153,14 @@ export default function Organizations(){
           <small>contact@torc.world</small>
         </div>
       </section>
+
+      <aside className={styles.proprietaryNote} aria-label="TORC methodology notice">
+        <p>
+          <strong>The TORC evaluation methodology remains proprietary and is not transferred as part of an engagement.</strong>
+          {' '}Internal gates, adjudication procedures, thresholds, evaluator instructions,
+          and other proprietary evaluation machinery remain within TORC.
+        </p>
+      </aside>
     </main>
   );
 }

@@ -2071,3 +2071,52 @@
   .boundary{margin-top:34px!important}
   .finalContact{margin-top:0!important}
 }
+
+
+/* 2026-09-04 — Organizations closing-card refinement.
+   Keep the institutional inquiry as the dominant black card, make its heading
+   and CTA permanently gold, and reduce the proprietary boundary to a quiet
+   attached gold notice below it. */
+.finalContact{
+  margin-bottom:0!important;
+}
+.finalContact h2{
+  color:#c7aa76!important;
+}
+.contactCard a{
+  background:#c7aa76!important;
+  color:#171714!important;
+  border-color:#c7aa76!important;
+}
+.contactCard a b{
+  color:#171714!important;
+}
+.contactCard a:hover,
+.contactCard a:focus-visible{
+  background:#d9c7a6!important;
+  color:#171714!important;
+  border-color:#d9c7a6!important;
+  box-shadow:0 0 0 1px rgba(199,170,118,.22), 0 8px 24px rgba(0,0,0,.16)!important;
+}
+.proprietaryNote{
+  margin:0 -28px 3mm!important;
+  padding:24px 54px 26px!important;
+  background:#c7aa76!important;
+  color:#171714!important;
+  border-top:1px solid rgba(23,23,20,.82)!important;
+  border-bottom:1px solid rgba(23,23,20,.82)!important;
+}
+.proprietaryNote p{
+  margin:0!important;
+  max-width:980px!important;
+  font:12.5px/1.58 Arial,sans-serif!important;
+}
+.proprietaryNote strong{
+  font-weight:700!important;
+}
+@media(max-width:760px){
+  .proprietaryNote{
+    margin:0 -20px 3mm!important;
+    padding:22px 20px 24px!important;
+  }
+}
