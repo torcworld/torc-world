@@ -53,15 +53,7 @@ export default function Organizations(){
       </header>
 
       <section className={styles.corpusSystem} aria-labelledby="corpus-system-title">
-        <div className={styles.corpusSystemHead}>
-          <div>
-            <div className={styles.corpusSystemEyebrow}>INSTITUTIONAL INTELLIGENCE</div>
-            <h2 id="corpus-system-title">From volume to<br/>actionable intelligence.</h2>
-          </div>
-          <div className={styles.corpusSystemPremise}>
-            <strong>50 artifacts should produce more than 50 reports.</strong>
-          </div>
-        </div>
+        <div className={styles.corpusTransitionBand} aria-hidden="true" />
 
         <div className={styles.corpusVisualBody}>
         <div className={styles.intelligenceDiagram} aria-label="Corpus intelligence system">
@@ -108,6 +100,13 @@ export default function Organizations(){
           <article><span>04</span><b>DEVELOP</b><p>Act on structure.</p></article>
         </div>
 
+        </div>
+        <div className={styles.corpusStatement}>
+          <strong>
+            <span>50 artifacts should</span>
+            <span>produce more than 50 reports.</span>
+          </strong>
+          <p>From volume to actionable intelligence.</p>
         </div>
       </section>
 

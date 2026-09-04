@@ -1,15 +1,20 @@
-# TORC Organizations — corpus visual refinement
+# TORC Organizations — continuous card study
 
 Changed only:
 - `app/for-organizations/page.tsx`
 - `app/for-organizations/organizations.module.css`
 
-Changes:
-- Removes the remaining page-level burgundy/red strip between the nav divider and the gray hero by neutralizing page/hero decorative top layers.
-- Makes the gold header of the second card substantially shallower.
-- Enlarges the “50 artifacts” corpus field so it visually matches the center circular system.
-- Sharpens/brights the gold visual treatment and improves spacing of connectors/branches.
-- Rebalances the actionable-intelligence branch area so the lines no longer crowd the labels.
-- Makes Corpus / Discover / Investigate / Develop larger and uses exactly one centered arrow between each stage.
-- Removes “TORC is not an automated greenlight” and its supporting sentence from this card.
-- No other Organizations copy changed.
+New vertical composition:
+1. Existing gray/charcoal opening card with gold typography.
+2. No white gap: a shallow blank gold transition band at the exact same width.
+3. Black/gold corpus intelligence drawing.
+4. Gold conclusion panel:
+   “50 artifacts should / produce more than 50 reports.”
+   “From volume to actionable intelligence.”
+5. Black/gold “Start with the corpus” inquiry panel.
+6. Existing attached gold proprietary note.
+
+Also:
+- Removed “Institutional Intelligence / From volume to actionable intelligence” from the former top gold header.
+- All major cards now share the same full width.
+- The analytical drawing itself is preserved from the previous refinement.

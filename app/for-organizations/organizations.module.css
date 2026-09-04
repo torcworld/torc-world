@@ -2793,3 +2793,106 @@
     margin-bottom:8px;
   }
 }
+
+
+/* 2026-09-04 — continuous-card study:
+   gray/gold hero → narrow gold bridge → black analytical drawing →
+   gold conclusion → black inquiry, all on one width and with no white gap. */
+
+/* Make opening and following system use the same full card width and touch. */
+.newHero{
+  margin-bottom:0!important;
+}
+.corpusSystem{
+  margin:-1px -28px 0!important;
+  width:auto!important;
+  border-left:1px solid #171714!important;
+  border-right:1px solid #171714!important;
+  border-top:0!important;
+  border-bottom:1px solid #171714!important;
+}
+
+/* A quiet 3 cm-ish gold bridge, intentionally without copy. */
+.corpusTransitionBand{
+  height:27mm!important;
+  min-height:0!important;
+  background:#c7aa76!important;
+  border-top:1px solid rgba(23,23,20,.75)!important;
+  border-bottom:1px solid #171714!important;
+}
+
+/* Black drawing immediately follows the bridge. */
+.corpusVisualBody{
+  padding-top:0!important;
+  padding-bottom:0!important;
+}
+.intelligenceDiagram{
+  margin:0!important;
+  padding-top:36px!important;
+}
+
+/* Gold conclusion beneath the black analytical drawing. */
+.corpusStatement{
+  margin:0 -54px!important;
+  padding:30px 54px 32px!important;
+  background:#c7aa76!important;
+  color:#171714!important;
+  text-align:center!important;
+  border-top:1px solid #171714!important;
+}
+.corpusStatement strong{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  font-family:Georgia,'Times New Roman',serif!important;
+  font-size:clamp(30px,4.2vw,50px)!important;
+  line-height:1.02!important;
+  font-weight:500!important;
+  letter-spacing:-.025em!important;
+}
+.corpusStatement strong span:first-child{
+  display:block;
+}
+.corpusStatement strong span:last-child{
+  display:block;
+}
+.corpusStatement p{
+  margin:12px 0 0!important;
+  color:#171714!important;
+  font:700 11px/1.2 Arial,sans-serif!important;
+  letter-spacing:.13em!important;
+  text-transform:uppercase!important;
+}
+
+/* Attach Start with the Corpus directly below the gold conclusion
+   and keep it at the same full width. */
+.corpusSystem + .finalContact{
+  margin-top:0!important;
+}
+.finalContact{
+  margin-left:-28px!important;
+  margin-right:-28px!important;
+  border-top:0!important;
+}
+
+/* Its attached proprietary gold footer remains attached. */
+.proprietaryNote{
+  margin-top:0!important;
+}
+
+@media(max-width:760px){
+  .corpusSystem{
+    margin:-1px -20px 0!important;
+  }
+  .corpusTransitionBand{
+    height:22mm!important;
+  }
+  .corpusStatement{
+    margin:0 -20px!important;
+    padding:27px 20px 29px!important;
+  }
+  .finalContact{
+    margin-left:-20px!important;
+    margin-right:-20px!important;
+  }
+}
