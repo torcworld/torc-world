@@ -573,3 +573,72 @@
     margin-bottom:0!important;
   }
 }
+
+
+/* 2026-09-04 — Artifacts active-order + precision-line refinement */
+
+/* Operational Order:
+   hover previews light brown;
+   click keeps exactly that state;
+   clicking the active order again is handled in page.tsx and returns to
+   All / Explore randomized. */
+.orderStrip button:hover,
+.orderStrip button:focus-visible,
+.orderStrip .orderActive,
+.orderStrip button[aria-pressed="true"]{
+  background:#d9c7a6!important;
+  color:#171714!important;
+}
+.orderStrip button:hover span,
+.orderStrip button:focus-visible span,
+.orderStrip .orderActive span,
+.orderStrip button[aria-pressed="true"] span{
+  color:#5b2630!important;
+}
+
+/* Make the fine structural lines throughout the archive read with the same
+   charcoal precision as the outer frame instead of fading into the ground. */
+.orderStrip{
+  border-top:1px solid rgba(53,52,50,.82)!important;
+  border-bottom:1px solid rgba(53,52,50,.82)!important;
+  border-left:1px solid rgba(53,52,50,.82)!important;
+  border-right:1px solid rgba(53,52,50,.82)!important;
+}
+.orderStrip button{
+  border-left:1px solid rgba(53,52,50,.82)!important;
+}
+
+.artifactTable{
+  border-top:1px solid rgba(53,52,50,.82)!important;
+  border-bottom:1px solid rgba(53,52,50,.82)!important;
+}
+.artifactTable > *{
+  border-color:rgba(53,52,50,.82)!important;
+}
+.tableHeader{
+  border-bottom:1px solid rgba(53,52,50,.82)!important;
+}
+.pagination{
+  border-top:1px solid rgba(53,52,50,.82)!important;
+}
+
+/* Keep the active pagination square crisp and explicit. */
+.pageNumbers .activePage{
+  background:var(--gold)!important;
+  color:#171714!important;
+  border:1px solid #171714!important;
+}
+
+/* Bring the Compare Artifacts charcoal block inward by ~2mm per side
+   (about 4mm total), keeping it centered and balanced. */
+.compareSection{
+  margin-left:calc(28px + 2mm)!important;
+  margin-right:calc(28px + 2mm)!important;
+}
+
+@media(max-width:760px){
+  .compareSection{
+    margin-left:18px!important;
+    margin-right:18px!important;
+  }
+}

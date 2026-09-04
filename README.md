@@ -1,18 +1,16 @@
-# TORC — homepage + Artifacts frame restoration
+# TORC Artifacts — active order + line refinement
 
 Changed only:
-- `app/home.module.css`
+- `app/artifacts/page.tsx`
 - `app/artifacts/artifacts-overhaul.module.css`
 
-Homepage:
-- Removes the stray red top rule from the charcoal hero.
-- Removes the two red vertical side ticks inside that hero.
-
-Artifacts:
-- Restores the thin charcoal/black line across the full width immediately above the top gold register.
-- Closes the left and right edges of “Archive by Operational Order” with fine charcoal lines.
-- Restores the active pagination number as a gold 30px square with a black/charcoal border.
-- Restores the bottom 3mm gold closure directly after Compare Artifacts.
-- Extends the gold side rails through that bottom closure as short joints.
-- Restores delicate charcoal rules around the closure and leaves 2mm of normal site ground beneath it.
-- No content, filtering, comparison logic, or page structure changed.
+Changes:
+- Restores/preserves the Operational Order click-toggle behavior:
+  - hover = light brown;
+  - selected = stays light brown;
+  - clicking the selected order again clears it and returns to All / Explore randomized.
+- Uses `#d9c7a6` for the light selected/hover material rather than the site background.
+- Strengthens the thin charcoal structural lines through the Operational Order strip, artifact table, table header, and pagination so they read like the outer precision frame.
+- Keeps the active page number gold with a crisp black border.
+- Narrows the charcoal Compare Artifacts block by about 2mm on each side (roughly 4mm total), centered.
+- Keeps the previously restored top/bottom frame details intact.
