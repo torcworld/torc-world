@@ -153,7 +153,7 @@
    Carry the entire Six-Dimensional Model field in the same deep TORC gold used by
    the active controls, from the pale upper divider through the model itself. */
 .cmsSection{
-  background:#c7aa76!important;
+  background:#b7955d!important;
   margin-left:-28px!important;
   margin-right:-28px!important;
   padding-left:28px!important;
@@ -173,12 +173,12 @@
 /* The Cognitive Orders bridge uses the same deep-gold material. Move it lower in
    normal document flow so its existing space below remains intact. */
 .boundary .orderModelCta{
-  background:#c7aa76!important;
+  background:#b7955d!important;
   margin-top:108px!important;
   border-color:var(--ink,#171714)!important;
 }
 .boundary .orderModelCta:hover{
-  background:#c7aa76!important;
+  background:#b7955d!important;
 }
 
 @media(max-width:760px){
@@ -347,7 +347,7 @@
 /* Current artifact-analysis typography trial. */
 .hero h1,
 .verdictGrid strong{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 .hero,
 .hero p,
@@ -357,10 +357,10 @@
   color:#d9c7a6!important;
 }
 .dimensionsTitle{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 .boundary .orderModelCta strong{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 
 /* Current material trial — replace pure-white analysis paper with the site's warm
@@ -369,7 +369,7 @@
   background:#f3eee6!important;
 }
 .cmsSection{
-  background:#c7aa76!important;
+  background:#b7955d!important;
   color:var(--ink,#171714)!important;
 }
 .cmsSection .dimensionsTitle,
@@ -391,7 +391,7 @@
 }
 .boundary .orderModelCta,
 .boundary .orderModelCta:hover{
-  background:#c7aa76!important;
+  background:#b7955d!important;
   color:var(--ink,#171714)!important;
 }
 .boundary .orderModelCta strong,
@@ -432,13 +432,13 @@
   color:#d9c7a6!important;
 }
 .bottomCta h2{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 .bottomCta p{
   color:#d9c7a6!important;
 }
 .bottomCta>div>span{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 
 
@@ -475,15 +475,15 @@
   color:#d9c7a6!important;
 }
 .bottomCta h2{
-  color:#c7aa76!important;
+  color:#b7955d!important;
 }
 .bottomCta p{
   color:#d9c7a6!important;
 }
 .submitButton,
 .submitButton:hover{
-  background:#c7aa76!important;
-  border-color:#c7aa76!important;
+  background:#b7955d!important;
+  border-color:#b7955d!important;
   color:#f3eee6!important;
 }
 
@@ -497,7 +497,7 @@
 .cmsSection,
 .boundary .orderModelCta,
 .boundary .orderModelCta:hover{
-  background:#c7aa76!important;
+  background:#b7955d!important;
 }
 
 /* Explore the 7 Operational Orders is now a fully closed black-outlined object. */
@@ -517,8 +517,8 @@
 /* Gold submit action with the requested heavy black lettering. */
 .submitButton,
 .submitButton:hover{
-  background:#c7aa76!important;
-  border-color:#c7aa76!important;
+  background:#b7955d!important;
+  border-color:#b7955d!important;
   color:var(--ink,#171714)!important;
   font-weight:700!important;
 }
