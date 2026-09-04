@@ -1,11 +1,19 @@
-# TORC Artifacts — mirrored pagination rule
+# TORC Artifacts — bottom pagination rule ONLY
+
+Base:
+- Restores the exact prior state where Compare Artifacts was already shifted 4mm upward.
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
 
-Change:
-- Adds one black horizontal rule directly below the pagination.
-- It has the same artifact-column width as the existing rule above the pagination.
-- The rule sits 20px below the pagination, matching the 20px distance from the upper rule to the pagination.
-- Removes the previous transform-based Compare positioning so the geometry is clean and explicit.
-- Compare Artifacts begins below this new rule.
+New change:
+- Adds the black horizontal line below the pagination at the matching distance.
+
+Explicitly NOT changed:
+- Compare Artifacts position
+- Compare Artifacts height
+- Compare Artifacts margins
+- Pagination position
+- Artifact rows
+- Operational Order
+- Any other layout

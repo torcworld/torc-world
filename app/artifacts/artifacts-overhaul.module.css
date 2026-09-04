@@ -686,12 +686,10 @@
 }
 
 
-/* 2026-09-04 — mirror the pagination's upper rule below it.
-   Same width and same 20px breathing room, creating an exact visual bracket
-   around the page-number row before Compare Artifacts. */
+/* 2026-09-04 — ONLY add the requested rule below pagination.
+   Compare Artifacts positioning is intentionally untouched. */
 .pagination{
   position:relative!important;
-  margin-bottom:20px!important;
 }
 .pagination::after{
   content:""!important;
@@ -702,11 +700,4 @@
   height:1px!important;
   background:#171714!important;
   pointer-events:none!important;
-}
-
-/* Cancel the earlier positional nudge: spacing is now governed by the
-   mirrored pagination rule rather than by moving the Compare block itself. */
-.compareSection{
-  transform:none!important;
-  margin-top:40px!important;
 }
