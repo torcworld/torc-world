@@ -41,9 +41,7 @@ export default function Home() {
     <section className={styles.archive}>
       <div className={styles.sectionHead}>
         <div><span>SEE IT APPLIED</span><h2>Different works.<br/>Different operations.</h2></div>
-        <div className={styles.archiveActions}>
-          <Link href="/artifacts">Explore all artifacts →</Link>
-          <Link href="/compare">Compare two artifacts →</Link>
+        <div className={styles.archiveActions}><Link href="/compare">Compare Artifacts →</Link>
         </div>
       </div>
       <div className={styles.artifactGrid}>
@@ -80,25 +78,6 @@ export default function Home() {
         <span>FOR ORGANIZATIONS</span><h2>See what a body of work reveals.</h2>
         <p>Find recurring achievements, structural bottlenecks and meaningful exceptions across a corpus.</p><b className={styles.doorAction}>Explore TORC for organizations <span>→</span></b>
       </Link>
-    </section>
-    <section className={styles.coordinates}>
-      <div className={styles.sectionLead}><span>HOW TORC DISTINGUISHES</span><h2>Two questions.<br/>Two kinds of evidence.</h2></div>
-      <div className={styles.coordinateGrid}>
-        <Link href="/methodology#operational-order" className={styles.coordinateCard}>
-          <div className={styles.coordinateLabel}>01 / PRIMARY HIERARCHY</div>
-          <h3>Operational Order</h3>
-          <p>Which cognitive operation governs the completed artifact? TORC identifies the highest operation the work actually requires — independent of prestige, difficulty or subject matter.</p>
-          <div className={styles.microGraphic}><span>1</span><i/><span>2</span><i/><span>3a</span><i/><span>3b</span><i/><span>3c</span><i/><span>G</span></div>
-          <b className={styles.cardAction}>Explore Operational Order <span>→</span></b>
-        </Link>
-        <Link href="/methodology#dimensions" className={styles.coordinateCard}>
-          <div className={styles.coordinateLabel}>02 / MAGNITUDE</div>
-          <h3>Cognitive Magnitude</h3>
-          <p>How much structured cognition does the artifact demonstrate within that operation? Six dimensions describe its magnitude without reducing complexity to a single impression.</p>
-          <div className={styles.dimensionMini}>{['RL','AD','CD','ID','IC','GR'].map((d,i)=><div key={d}><span>{d}</span><i style={{width:`${46+i*8}%`}}/></div>)}</div>
-          <b className={styles.cardAction}>Explore Cognitive Magnitude <span>→</span></b>
-        </Link>
-      </div>
     </section>
 
   </main>;

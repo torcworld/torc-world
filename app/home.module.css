@@ -1229,3 +1229,53 @@
     margin-top:12px!important;
   }
 }
+
+
+/* 2026-09-04 — homepage compare focus */
+
+/* The methodology coordinate card has been removed from Home. */
+.home .coordinates{
+  display:none!important;
+}
+
+/* One deliberate comparison action now bridges the featured works.
+   Desktop placement spans roughly from the midpoint of 2001 to the midpoint
+   of Dependent Arising. */
+.home .archive .sectionHead{
+  position:relative!important;
+}
+.home .archiveActions{
+  width:37.5%!important;
+  margin-left:auto!important;
+  margin-right:12.5%!important;
+  transform:translateY(-9mm)!important;
+  display:block!important;
+}
+.home .archiveActions a{
+  width:100%!important;
+  min-height:56px!important;
+  padding:16px 22px!important;
+  background:#5b2630!important;
+  border:1px solid #5b2630!important;
+  color:#f4eee6!important;
+  font-size:12px!important;
+  letter-spacing:.09em!important;
+  box-shadow:0 5px 13px rgba(23,23,20,.14)!important;
+}
+.home .archiveActions a:hover,
+.home .archiveActions a:focus-visible{
+  background:#431b23!important;
+  border-color:#431b23!important;
+  color:#fff!important;
+}
+
+@media(max-width:720px){
+  .home .archiveActions{
+    width:100%!important;
+    margin:12px 0 0!important;
+    transform:none!important;
+  }
+  .home .archiveActions a{
+    min-height:48px!important;
+  }
+}
