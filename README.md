@@ -1,10 +1,8 @@
-# TORC Analysis — darker gold ONLY
+# Organizations correction
 
-Changed:
-- `app/artifact/components/artifact-analysis.module.css`
-- `app/artifact/components/ArtifactAnalysis.tsx` is included unchanged from the current six-dimension refinement base.
+Only:
+- outermost central ring: back to black
+- small CORPUS label above the dots: pure white
+- TORC FOR ORGANIZATIONS at the top: back to darker gold #b7955d
 
-Color-only test:
-- Existing yellow/gold `#c7aa76` becomes darker gold `#b7955d`.
-- Light ochre/brown `#d9c7a6` remains exactly unchanged.
-- No layout, spacing, text, behavior, borders, charcoal, burgundy, or other colors are changed.
+No other changes.
