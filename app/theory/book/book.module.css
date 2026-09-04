@@ -1850,3 +1850,15 @@
   border-top:1px solid #171714!important;
   width:100%!important;
 }
+
+
+/* 2026-09-04 — bottom finish, based on current integrated source.
+   Reveal exactly 5 mm of the normal site ground below the complete opened-book composition. */
+.bookPage:has(.bookReader){
+  background:var(--bg)!important;
+  padding-bottom:5mm!important;
+}
+
+.bookPage:has(.bookReader) > .bookReader{
+  margin-bottom:0!important;
+}
