@@ -3361,3 +3361,17 @@
 .coreCircle{
   border-color:#fff!important;
 }
+
+
+/* 2026-09-04 — exactly three small labels to pure white. */
+.newHero .eyebrow{
+  color:#fff!important;
+}
+
+.corpusInput .diagramLabel{
+  color:#fff!important;
+}
+
+.finalContact .eyebrow{
+  color:#fff!important;
+}
