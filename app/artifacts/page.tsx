@@ -97,7 +97,15 @@ export default function Artifacts(){
 
  <section className={styles.orderStrip} aria-label="Operational Order distribution">
    <div className={styles.orderStripLabel}><span>THE ARCHIVE BY</span><b>Operational Order</b></div>
-   {torcOrder.map(o=>{const count=artifacts.filter(a=>eligible(a)&&String(a.torc).toLowerCase()===o.toLowerCase()).length;return <button key={o} onClick={()=>setTorc(o)} className={torc===o?styles.orderActive:''}><strong>{o}</strong><span>{count}</span></button>})}
+   {torcOrder.map(o=>{const count=artifacts.filter(a=>eligible(a)&&String(a.torc).toLowerCase()===o.toLowerCase()).length;return <button key={o} onClick={()=>{
+      if(torc===o){
+        setTorc('All');
+        setSort('explore');
+        setSeed(s=>s+7919);
+      }else{
+        setTorc(o);
+      }
+    }} className={torc===o?styles.orderActive:''} aria-pressed={torc===o}><strong>{o}</strong><span>{count}</span></button>})}
  </section>
 
  <section ref={corpusRef} className={styles.corpus}>

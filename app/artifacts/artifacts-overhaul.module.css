@@ -525,82 +525,18 @@
   }
 }
 
-/* 2026-09-03 — Artifacts frame micro-correction.
-   Close the gold instrument frame with the same charcoal precision language:
-   a fine rule on the outer edge of the top gold band, fine horizontal end
-   rules across both gold side rails, and 2mm of normal site ground below the
-   complete Artifacts composition. Desktop only. */
+
+/* 2026-09-04 — Operational Order toggle behavior.
+   Hover previews the light state; a selected order STAYS light until clicked again. */
 @media(min-width:761px){
-  .artifactsPage{
-    margin-bottom:2mm!important;
-    box-shadow:inset 0 1px 0 var(--charcoal), 0 -1px 0 var(--charcoal)!important;
-  }
-  .artifactsPage::before,
-  .artifactsPage::after{
-    border-bottom:1px solid var(--charcoal)!important;
+  .orderStrip .orderActive,
+  .orderStrip button[aria-pressed="true"]{
+    background:var(--ochre)!important;
   }
 }
 
-/* 2026-09-03 — Artifacts final frame-detail pass.
-   Close the inset Operational Order instrument on both sides with the same
-   charcoal precision rule used elsewhere, and neutralize the remaining
-   oxblood rule above the artifact ledger. Desktop only. */
-@media(min-width:761px){
-  .orderStrip{
-    border-left:1px solid var(--charcoal)!important;
-    border-right:1px solid var(--charcoal)!important;
-  }
-  .artifactTable{
-    border-top-color:var(--charcoal)!important;
-  }
-}
-
-/* 2026-09-03 — Artifact ledger closure + pagination spacing refinement.
-   Desktop only: give the final artifact row the same strong charcoal closure
-   as the top of the ledger, and balance the vertical air around pagination so
-   Compare sits materially closer to the archive without crowding the numbers. */
-@media(min-width:761px){
-  .artifactTable :global(a.row:not(.header):last-child){
-    border-bottom:1px solid #171714!important;
-  }
-  .corpus{
-    padding-bottom:24px!important;
-  }
-  .compareSection{
-    margin-top:24px!important;
-  }
-}
-
-/* 2026-09-03 — restore the delicate constructed Artifacts frame.
-   Bottom mirrors the top with a 3mm gold cross-band. The gold side rails
-   continue only through that band, creating two short 3mm vertical joints.
-   All register lines remain fine 1px charcoal rules. */
-@media(min-width:761px){
-  .artifactsPage{
-    border-bottom:3mm solid var(--gold)!important;
-    margin-bottom:2mm!important;
-    box-shadow:
-      0 -1px 0 rgba(53,52,50,.82),
-      inset 0 1px 0 rgba(53,52,50,.82),
-      inset 0 -1px 0 rgba(53,52,50,.82),
-      0 1px 0 rgba(53,52,50,.82)!important;
-  }
-  .artifactsPage::before,
-  .artifactsPage::after{
-    bottom:-3mm!important;
-    border-bottom:1px solid rgba(53,52,50,.82)!important;
-  }
-}
-
-/* 2026-09-03 — restore the compact framed active pagination tile. */
-@media(min-width:761px){
-  .pageNumbers .activePage{
-    min-width:30px!important;
-    width:30px!important;
-    height:30px!important;
-    padding:0!important;
-    background:var(--gold)!important;
-    color:#171714!important;
-    border:1px solid #171714!important;
-  }
+/* Keep the same selected-state logic on tablet/mobile as well. */
+.orderStrip .orderActive,
+.orderStrip button[aria-pressed="true"]{
+  background:var(--ochre)!important;
 }

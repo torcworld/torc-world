@@ -1,12 +1,15 @@
-# TORC homepage — compare route + spacing calibration
+# TORC — Compare route + Operational Order toggle
 
 Changed only:
 - `app/page.tsx`
-- `app/home.module.css`
+- `app/home.module.css` (included unchanged from latest homepage patch)
+- `app/artifacts/page.tsx`
+- `app/artifacts/artifacts-overhaul.module.css`
 
 Changes:
-- Homepage Compare Artifacts button now routes to `/artifacts#compare`, entering the existing Artifacts-page comparison workflow instead of the empty `/compare` state.
-- Moves the large red Compare Artifacts button about 4 mm right and 4 mm lower than its previous position.
-- Lifts the Theory / The Age of False Depth card about 5 mm to balance the vertical spacing around it.
-- Makes the “OPEN EVALUATION” label on all four featured artifact cards TORC red.
-- Mobile keeps the existing stacked positioning.
+- Homepage red “Compare Artifacts” button now goes directly to the existing `/compare` page.
+- On Artifacts, clicking an Operational Order tile selects it and keeps it visibly light/highlighted.
+- Clicking that same selected Operational Order tile again clears the filter.
+- Clearing it also restores Explore/randomized ordering and reshuffles the corpus.
+- The selected tile uses the same light-brown/ochre material as the hover state.
+- `aria-pressed` is added so the selected state is explicit/accessibility-friendly.
