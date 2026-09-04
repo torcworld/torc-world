@@ -1,12 +1,15 @@
-# TORC Organizations — compact close
+# TORC homepage — hierarchy/material pass
 
 Changed only:
-- `app/for-organizations/page.tsx`
-- `app/for-organizations/organizations.module.css`
+- `app/page.tsx`
+- `app/home.module.css`
 
 Changes:
-- Removes the repeated Corpus / Discover / Investigate / Develop workflow from the final charcoal card.
-- Compresses the final card vertically now that the redundant text register is gone.
-- Keeps Institutional Inquiry / Start with the corpus + supporting copy + red CTA as the single closing action.
-- Keeps the CTA slightly lower than the left-hand closing text.
-- No changes to the analytical figure, 50-artifacts statement, colors, or earlier cards.
+- Hero TORC wordmark becomes gold.
+- Hero white copy is softened to broken-white / warm off-white.
+- All four “Different works. Different operations.” artifact cards use the same gold resting surface; neutral charcoal/black separators replace the red grid treatment.
+- Reorders the homepage so the Living Edition / The Age of False Depth block is the third major card, directly after the featured works.
+- Theory copy field changes from cream/ochre treatment to the light navigation-brown material.
+- “See what a body of work reveals.” Organizations card changes from red to charcoal gray, with gold heading/label and a gold action button.
+- “Two questions. Two kinds of evidence.” moves below the theory and creator/organization action cards.
+- Resets the old negative methodology positioning so that section works in its new lower position.

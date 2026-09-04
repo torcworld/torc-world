@@ -960,3 +960,113 @@
 @media(max-width:850px){
   .home .twoDoors>a:first-child{border-right:0!important;border-bottom:1px solid var(--ink)!important;}
 }
+
+
+/* 2026-09-04 — homepage hierarchy/material pass */
+
+/* HERO: TORC gold; supporting white softened to the site's broken-white family. */
+.home .hero h1{
+  color:var(--gold-deep)!important;
+}
+.home .hero,
+.home .hero .tagline,
+.home .hero .intro,
+.home .hero .intro strong{
+  color:#e6ded4!important;
+}
+.home .hero .intro{
+  color:#d8d0c7!important;
+}
+.home .hero .intro strong{
+  color:#eee7de!important;
+}
+
+/* FEATURED WORKS: one continuous gold family, no alternating surfaces.
+   Neutral dark dividers replace the red grid/separator treatment. */
+.home .artifactGrid{
+  background:var(--ink)!important;
+  border-color:var(--ink)!important;
+  gap:1px!important;
+}
+.home .artifactGrid .artifactCard,
+.home .artifactGrid .artifactCard:nth-child(odd),
+.home .artifactGrid .artifactCard:nth-child(even){
+  background:var(--gold)!important;
+}
+.home .artifactGrid .artifactCard:hover,
+.home .artifactGrid .artifactCard:focus-visible,
+.home .artifactGrid .artifactCard:nth-child(odd):hover,
+.home .artifactGrid .artifactCard:nth-child(even):hover{
+  background:var(--gold-deep)!important;
+}
+.home .artifactCard>p,
+.home .artifactCard small{
+  color:#51483e!important;
+}
+.home .profileLine i{
+  background:#5d554b!important;
+}
+
+/* THEORY becomes the third major card.
+   The former cream copy field is now the light navigation-brown material. */
+.home .theoryCompact{
+  margin-top:2cm!important;
+  margin-bottom:2cm!important;
+}
+.home .theoryCopyLink,
+.home .theoryCopyLink:hover,
+.home .theoryCopyLink:focus-visible{
+  background:#d9c7a6!important;
+}
+
+/* ORGANIZATIONS DOOR: charcoal rather than red, with gold hierarchy/action. */
+.home .orgDoor{
+  background:var(--dark)!important;
+  color:#e9e2d9!important;
+}
+.home .orgDoor>span,
+.home .orgDoor h2{
+  color:var(--gold-deep)!important;
+}
+.home .orgDoor p{
+  color:#d8d0c7!important;
+}
+.home .orgDoor .doorAction{
+  background:var(--gold)!important;
+  color:var(--ink)!important;
+  border-color:var(--gold)!important;
+}
+.home .orgDoor:hover .doorAction,
+.home .orgDoor:focus-visible .doorAction{
+  background:var(--gold-deep)!important;
+  border-color:var(--gold-deep)!important;
+}
+
+/* Two questions / two kinds of evidence now follows the two action doors.
+   Reset the old negative positioning that assumed it lived above Theory. */
+.home .coordinates{
+  margin-top:0!important;
+  padding-top:70px!important;
+  padding-bottom:72px!important;
+}
+.home .coordinates .sectionLead{
+  transform:none!important;
+  top:0!important;
+  margin-bottom:28px!important;
+}
+
+@media(min-width:721px){
+  .home .theoryCompact{
+    margin-top:2cm!important;
+    margin-bottom:2cm!important;
+  }
+  .home .coordinates{
+    margin-top:0!important;
+    padding-top:70px!important;
+  }
+  .home .coordinates .sectionLead{
+    transform:none!important;
+    top:0!important;
+    margin-bottom:28px!important;
+  }
+}
