@@ -1,8 +1,10 @@
-# TORC Artifacts — restore previous 3.5 mm top spacing
+# TORC Organizations — vertical breathing room
 
-Restores the Artifacts CSS from `Archief(20260904-171307).zip`, the exact full-site
-state immediately before the 1 mm upward experiment.
+Base: `Archief(20260904-171307).zip`
 
-Result:
-- top breathing space returns from 2.5 mm to 3.5 mm;
-- nothing else is changed.
+Changed only `app/for-organizations/organizations.module.css`.
+
+- “From volume to actionable intelligence.” gold band: +5 mm top and +5 mm bottom.
+- Charcoal diagram field: bottom padding 30 px -> 36 px, matching its existing 36 px top padding.
+- “50 artifacts…” gold field: +5 mm top and +5 mm bottom.
+- No colors, widths, diagram geometry, text positions, or other sections changed.

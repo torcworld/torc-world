@@ -3413,3 +3413,24 @@
 .contactCard a b{
   color:#b7955d!important;
 }
+
+
+/* 2026-09-04 — Organizations vertical breathing-room calibration.
+   Only the three requested vertical dimensions change. */
+
+/* First gold band: +5 mm above and +5 mm below = +10 mm total height. */
+.corpusTransitionBand{
+  height:32mm!important;
+}
+
+/* Charcoal diagram: current top/bottom diagram padding is 36/30 px.
+   Add 6 px to the bottom only, making both sides 36 px. */
+.intelligenceDiagram{
+  padding-bottom:36px!important;
+}
+
+/* Gold 50-artifacts statement: +5 mm above and +5 mm below. */
+.corpusStatement{
+  padding-top:calc(34px + 5mm)!important;
+  padding-bottom:calc(34px + 5mm)!important;
+}
