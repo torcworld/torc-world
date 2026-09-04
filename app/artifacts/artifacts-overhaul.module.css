@@ -829,3 +829,15 @@
     right:calc(58px - 2mm)!important;
   }
 }
+
+
+/* 2026-09-04 — pyramid-width experiment.
+   Operational Order is widest; the visible four-field search/filter row is
+   inset 24px per side from it. Inset the hero rule by that SAME 24px again,
+   creating the requested stepped/pyramidal width hierarchy. */
+@media(min-width:761px){
+  .hero::after{
+    left:calc(82px - 2mm)!important;
+    right:calc(82px - 2mm)!important;
+  }
+}
