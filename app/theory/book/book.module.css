@@ -1826,3 +1826,10 @@
 .readingPage{
   margin-bottom:5mm!important;
 }
+
+
+/* 2026-09-04 — top gold band correction:
+   previous visible band = 1mm; requested total = 3mm. */
+.bookLanding{
+  padding-top:calc(var(--book-landing-top-pad, 0px) + 3mm)!important;
+}
