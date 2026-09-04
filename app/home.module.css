@@ -1146,3 +1146,86 @@
 .home .orgDoor .doorAction{
   transform:translateY(3mm)!important;
 }
+
+
+/* 2026-09-04 — floating red archive actions */
+
+/* Artifact cards are gold at rest and clearly LIGHTEN on hover. */
+.home .artifactGrid .artifactCard,
+.home .artifactGrid .artifactCard:nth-child(odd),
+.home .artifactGrid .artifactCard:nth-child(even){
+  background:#c7aa76!important;
+}
+.home .artifactGrid .artifactCard:hover,
+.home .artifactGrid .artifactCard:focus-visible,
+.home .artifactGrid .artifactCard:nth-child(odd):hover,
+.home .artifactGrid .artifactCard:nth-child(even):hover{
+  background:#e4d5b8!important;
+  color:#171714!important;
+}
+
+/* Keep four distinct gold panels with black vertical dividers. */
+.home .artifactGrid{
+  background:#171714!important;
+  gap:1px!important;
+}
+@media(min-width:721px){
+  .home .artifactGrid .artifactCard + .artifactCard{
+    border-left:1px solid #171714!important;
+  }
+}
+
+/* Heading sits a couple of millimetres closer to the gold block. */
+.home .archive .sectionHead h2{
+  transform:translateY(2mm)!important;
+}
+
+/* Existing archive actions become two compact red buttons that float in the
+   transition above the gold field, weighted to the right. */
+.home .archive{
+  position:relative!important;
+}
+.home .archive .sectionHead{
+  position:relative!important;
+  overflow:visible!important;
+}
+.home .archiveActions{
+  position:relative!important;
+  z-index:5!important;
+  align-self:end!important;
+  display:flex!important;
+  justify-content:flex-end!important;
+  gap:8px!important;
+  transform:translateY(-9mm)!important;
+}
+.home .archiveActions a{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:31px!important;
+  padding:7px 13px!important;
+  background:#5b2630!important;
+  border:1px solid #5b2630!important;
+  color:#f4eee6!important;
+  font:700 10px/1 Arial,sans-serif!important;
+  letter-spacing:.07em!important;
+  text-transform:uppercase!important;
+  text-decoration:none!important;
+  box-shadow:0 4px 10px rgba(23,23,20,.12)!important;
+}
+.home .archiveActions a:hover,
+.home .archiveActions a:focus-visible{
+  background:#431b23!important;
+  border-color:#431b23!important;
+  color:#fff!important;
+  transform:translateY(-1px)!important;
+}
+
+@media(max-width:720px){
+  .home .archiveActions{
+    transform:none!important;
+    justify-content:flex-start!important;
+    flex-wrap:wrap!important;
+    margin-top:12px!important;
+  }
+}

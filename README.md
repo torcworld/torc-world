@@ -1,16 +1,15 @@
-# TORC homepage — gold card correction
+# TORC homepage — floating red archive actions
 
 Changed only:
 - `app/page.tsx` (included unchanged)
 - `app/home.module.css`
 
-Corrections:
-- Forces all four “Different works. Different operations.” cards to be gold at rest.
-- Hover/focus changes those cards to the lighter navigation-brown, never gray.
-- Adds black vertical separators between the four gold cards.
-- Moves the “Different works. Different operations.” heading about 2 mm closer to the gold card block below.
-- Makes the title in the The Age of False Depth card gold.
-- Forces the Organizations CTA button to be gold at rest.
-- Hover/focus changes that button to the lighter navigation-brown.
-- Moves the Organizations CTA down about 3 mm.
-- No changes to the top gray hero.
+Changes:
+- All four featured artifact cards remain gold at rest.
+- Hover/focus now clearly lightens them to a pale light-brown/gold.
+- Black vertical dividers remain between the gold cards.
+- “Different works. Different operations.” moves about 2 mm closer to the card field.
+- Existing Explore all artifacts + Compare two artifacts links become compact TORC-red buttons.
+- Those two buttons float in the transition above the gold artifact field, weighted toward the right.
+- No duplicate action links are added.
+- Operational Order / Cognitive Magnitude is deliberately left unchanged for now.
