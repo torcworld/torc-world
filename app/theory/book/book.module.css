@@ -1833,3 +1833,10 @@
 .bookLanding{
   padding-top:calc(var(--book-landing-top-pad, 0px) + 3mm)!important;
 }
+
+
+/* 2026-09-04 — exact requested bottom breathing room.
+   Leave 5 mm of the normal site background visible below the full Theory composition. */
+.readingPage{
+  margin-bottom:5mm!important;
+}
