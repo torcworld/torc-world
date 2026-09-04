@@ -2491,3 +2491,127 @@
   .corpusStages{grid-template-columns:1fr!important;gap:15px!important}
   .corpusStages>i{display:none}
 }
+
+
+/* 2026-09-04 — Variant B split-material corpus system.
+   Gold premise/header above; polished black/gold visual system below. */
+
+/* Kill the actual legacy red top band on the older .hero layer as well as .newHero.
+   This selector exists earlier in the stylesheet and was the remaining 4px burgundy rule. */
+@media(min-width:761px){
+  .hero{
+    border-top:0!important;
+  }
+}
+.hero{
+  border-top-color:transparent!important;
+}
+.newHero{
+  border-top:1px solid #c7aa76!important;
+  border-bottom:1px solid #c7aa76!important;
+}
+
+/* The card itself becomes only a shell; each zone owns its material. */
+.corpusSystem{
+  padding:0!important;
+  overflow:hidden!important;
+  background:#c7aa76!important;
+  border:1px solid #171714!important;
+}
+.corpusSystemHead{
+  margin:0!important;
+  padding:42px 54px 39px!important;
+  background:#c7aa76!important;
+  border-bottom:1px solid #171714!important;
+}
+.corpusSystemHead h2{
+  margin-bottom:0!important;
+}
+.corpusVisualBody{
+  padding:0 54px 34px;
+  background:
+    radial-gradient(circle at 48% 38%, rgba(199,170,118,.055), transparent 30%),
+    linear-gradient(180deg,#1b1b1a 0%,#141413 100%);
+  color:#f3eee6;
+}
+.intelligenceDiagram{
+  min-height:365px!important;
+  padding:48px 0 45px!important;
+  border-bottom:1px solid rgba(199,170,118,.42)!important;
+}
+.diagramLabel,.diagramCore>span{
+  color:#c7aa76!important;
+}
+.diagramCorpus>strong{
+  color:#f3eee6!important;
+}
+.artifactField i{
+  background:#c7aa76!important;
+}
+.artifactField i:nth-child(5n),
+.artifactField i:nth-child(11n){
+  outline-color:#c7aa76!important;
+}
+.diagramConnector::before,
+.diagramConnector i,
+.branchField::before,
+.branchField i{
+  border-color:#c7aa76!important;
+}
+.branchField i::after{
+  background:#c7aa76!important;
+}
+.coreCircle{
+  border-color:#c7aa76!important;
+  box-shadow:0 0 34px rgba(199,170,118,.06);
+}
+.coreCircle::before,
+.coreCircle::after{
+  border-color:rgba(199,170,118,.42)!important;
+}
+.coreCircle b{
+  color:#d9b96f!important;
+}
+.diagramOutputs>div{
+  position:relative;
+}
+.diagramOutputs b{
+  color:#f3eee6!important;
+  border-left-color:#c7aa76!important;
+  border-bottom-color:rgba(199,170,118,.25)!important;
+}
+.diagramOutputs b::before{
+  content:"";
+  display:inline-block;
+  width:5px;height:5px;
+  margin:0 9px 1px -18px;
+  border-radius:50%;
+  background:#c7aa76;
+}
+.corpusStages{
+  border-bottom-color:rgba(199,170,118,.42)!important;
+}
+.corpusStages article>span,
+.corpusStages article>b{
+  color:#c7aa76!important;
+}
+.corpusStages article>p{
+  color:#d5cec3!important;
+}
+.corpusStages>i{
+  color:#c7aa76!important;
+}
+.corpusPrinciple{
+  padding-top:24px!important;
+}
+.corpusPrinciple strong{
+  color:#c7aa76!important;
+}
+.corpusPrinciple span{
+  color:#d5cec3!important;
+}
+
+@media(max-width:760px){
+  .corpusSystemHead{padding:36px 20px 34px!important}
+  .corpusVisualBody{padding:0 20px 28px}
+}

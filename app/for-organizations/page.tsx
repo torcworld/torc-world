@@ -63,6 +63,7 @@ export default function Organizations(){
           </div>
         </div>
 
+        <div className={styles.corpusVisualBody}>
         <div className={styles.intelligenceDiagram} aria-label="Corpus intelligence system">
           <div className={styles.diagramCorpus}>
             <span className={styles.diagramLabel}>CORPUS</span>
@@ -110,6 +111,7 @@ export default function Organizations(){
         <div className={styles.corpusPrinciple}>
           <strong>TORC IS NOT AN AUTOMATED GREENLIGHT.</strong>
           <span>It is a system for placing human judgment more deliberately.</span>
+        </div>
         </div>
       </section>
 
