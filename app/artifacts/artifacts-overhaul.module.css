@@ -701,3 +701,40 @@
   background:#171714!important;
   pointer-events:none!important;
 }
+
+
+/* 2026-09-04 — make the top Artifacts hero use the same "floating inside the
+   architectural frame" language as the Compare block at the bottom.
+   Desktop only. No content/layout changes elsewhere. */
+@media(min-width:761px){
+  .hero{
+    /* Match Compare's slightly deeper horizontal inset:
+       the charcoal field no longer touches the gold side rails. */
+    margin-left:calc(28px + 2mm)!important;
+    margin-right:calc(28px + 2mm)!important;
+
+    /* Let a small strip of the surrounding light-brown field show above
+       and below the charcoal block, as at the bottom of the page. */
+    margin-top:2mm!important;
+    margin-bottom:calc(30px + 2mm)!important;
+
+    /* Remove the old attached gold slab below the hero. */
+    border-bottom:0!important;
+    box-shadow:none!important;
+
+    position:relative!important;
+  }
+
+  /* One clean charcoal rule beneath the floating hero, separated from the
+     gray field by the same small breathing space. */
+  .hero::after{
+    content:""!important;
+    position:absolute!important;
+    left:0!important;
+    right:0!important;
+    bottom:-2mm!important;
+    height:1px!important;
+    background:#171714!important;
+    pointer-events:none!important;
+  }
+}
