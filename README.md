@@ -1,13 +1,12 @@
-# TORC Organizations — corrected card separation
+# TORC Organizations — remove opening-card red bands
 
-Correction patch over the previous spacing/transition study.
+Small corrective patch over the current Organizations version.
 
 Changed only:
 - `app/for-organizations/organizations.module.css`
 - `app/for-organizations/page.tsx` included unchanged.
 
-Corrections:
-- Gold proprietary strip is attached directly to “Start with the corpus” again.
-- The 2–3 cm separation is now between the corpus-system/drawing card above and “Start with the corpus”.
-- Opening gray/charcoal card is explicitly limited to thin gold top/bottom rules; burgundy/red border treatment is removed.
-- No copy or other layout content changed.
+Change:
+- Explicitly removes the remaining burgundy/red decorative bands above and below the opening gray/charcoal card, including pseudo-element treatments.
+- Retains only the delicate 1px gold top and bottom rules.
+- No other cards, copy, spacing, or corpus-system graphic changed.
