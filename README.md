@@ -1,10 +1,11 @@
-# TORC Organizations — diagram white-label test
+# TORC Organizations — Corpus + outer ring white test
 
 Changed only:
 - `app/for-organizations/organizations.module.css`
 
-Experiment:
-- The central circle terms (Patterns / Outliers / etc.) are pure white.
-- The left-side `CORPUS` diagram label is pure white.
-- The right-side `ACTIONABLE INTELLIGENCE` diagram label is pure white.
-- No other diagram colors, gold, layout, spacing, borders, or typography are changed.
+Changes:
+- Small `CORPUS` label at the left of the diagram is pure white.
+- The outermost black ring around the central circles is changed to pure white.
+- The gold/inner ring is untouched.
+- Corpus dots are untouched for now.
+- No layout, spacing, sizing, or other colors are changed.

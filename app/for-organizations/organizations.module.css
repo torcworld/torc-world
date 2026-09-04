@@ -3348,3 +3348,16 @@
 .diagramOutputs .diagramLabel{
   color:#fff!important;
 }
+
+
+/* 2026-09-04 — focused diagram test:
+   CORPUS label stays/turns pure white;
+   only the OUTERMOST black ring becomes white.
+   Dots and inner/gold rings remain untouched. */
+.corpusInput .diagramLabel{
+  color:#fff!important;
+}
+
+.coreCircle{
+  border-color:#fff!important;
+}
