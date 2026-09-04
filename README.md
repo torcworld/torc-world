@@ -1,8 +1,7 @@
-# TORC for Writers — exact selected-card gold
+# TORC for Writers — refined red headings
 
-Built on the previous dark-gold/strong-red process patch.
+Built on the approved exact selected-card gold patch.
 
-Correction only:
-- Process background now uses the exact current selected pricing-card gold: `#c7aa76`.
-- Arrow cutout background matches the same exact gold.
-- Red hierarchy and all geometry remain unchanged.
+Only one visual correction:
+- `Diagnose`, `Find the Gap`, and `Intervene` remain red but return from the heavier 600 weight to the earlier refined 500 weight.
+- Exact gold `#c7aa76`, arrows, questions, geometry, and all other styling remain unchanged.

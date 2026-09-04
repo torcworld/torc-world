@@ -953,3 +953,13 @@
     background:#c7aa76!important;
   }
 }
+
+
+/* 2026-09-04 — restore the earlier, more refined red heading weight.
+   Exact selected-card gold remains unchanged. */
+@media(min-width:861px){
+  .processStep h3{
+    color:#5b2630!important;
+    font-weight:500!important;
+  }
+}
