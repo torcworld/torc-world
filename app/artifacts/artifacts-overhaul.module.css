@@ -818,3 +818,14 @@
     right:calc(52px - 2mm)!important;
   }
 }
+
+
+/* 2026-09-04 — exact search-column rule width.
+   The visible four-control row sits inside .tools with 24px horizontal
+   padding. Match the hero rule to those visible field edges exactly. */
+@media(min-width:761px){
+  .hero::after{
+    left:calc(58px - 2mm)!important;
+    right:calc(58px - 2mm)!important;
+  }
+}
