@@ -1311,3 +1311,18 @@
     transform:none!important;
   }
 }
+
+
+/* 2026-09-04 — homepage hero edge cleanup.
+   Remove the stray TORC-red architectural rule above the charcoal hero and
+   the two red side ticks inside that arrival field. */
+.home .hero{
+  border-top:0!important;
+}
+.home .hero::before,
+.home .hero::after{
+  content:none!important;
+  display:none!important;
+  background:none!important;
+  border:0!important;
+}

@@ -526,17 +526,50 @@
 }
 
 
-/* 2026-09-04 — Operational Order toggle behavior.
-   Hover previews the light state; a selected order STAYS light until clicked again. */
+/* 2026-09-04 — restore Artifacts precision frame details that were lost in
+   transfer. Desktop only; no layout redesign. */
 @media(min-width:761px){
-  .orderStrip .orderActive,
-  .orderStrip button[aria-pressed="true"]{
-    background:var(--ochre)!important;
-  }
-}
 
-/* Keep the same selected-state logic on tablet/mobile as well. */
-.orderStrip .orderActive,
-.orderStrip button[aria-pressed="true"]{
-  background:var(--ochre)!important;
+  /* Full-width fine charcoal rule above the 3mm gold top register. */
+  .artifactsPage{
+    border-top:3mm solid var(--gold)!important;
+    border-bottom:3mm solid var(--gold)!important;
+    margin-bottom:2mm!important;
+    box-shadow:
+      0 -1px 0 rgba(53,52,50,.82),
+      inset 0 1px 0 rgba(53,52,50,.82),
+      inset 0 -1px 0 rgba(53,52,50,.82),
+      0 1px 0 rgba(53,52,50,.82)!important;
+  }
+
+  /* Gold side rails continue through the 3mm bottom closure as short joints. */
+  .artifactsPage::before,
+  .artifactsPage::after{
+    bottom:-3mm!important;
+    border-bottom:1px solid rgba(53,52,50,.82)!important;
+  }
+
+  /* Operational Order archive: close the currently open left/right edges with
+     the same fine charcoal register line used elsewhere. */
+  .orderStrip{
+    border-left:1px solid rgba(53,52,50,.82)!important;
+    border-right:1px solid rgba(53,52,50,.82)!important;
+  }
+
+  /* Active page number: gold square with a crisp charcoal/black perimeter. */
+  .pageNumbers .activePage{
+    min-width:30px!important;
+    width:30px!important;
+    height:30px!important;
+    padding:0!important;
+    background:var(--gold)!important;
+    color:#171714!important;
+    border:1px solid #171714!important;
+  }
+
+  /* Compare is followed immediately by the same framed gold closure, then the
+     2mm normal site ground supplied by artifactsPage margin-bottom above. */
+  .compareSection{
+    margin-bottom:0!important;
+  }
 }
