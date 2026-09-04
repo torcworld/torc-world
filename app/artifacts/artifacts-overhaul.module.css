@@ -738,3 +738,29 @@
     pointer-events:none!important;
   }
 }
+
+
+/* 2026-09-04 — top-frame micro balance.
+   Keep the side geometry exactly as approved; refine only the top gap and
+   the rule beneath the hero. */
+@media(min-width:761px){
+  .hero{
+    /* Add 1.5mm more light-brown air above the charcoal field, while
+       shortening the charcoal field by the same amount so its lower edge
+       stays essentially where it was. */
+    margin-top:3.5mm!important;
+    min-height:calc(330px - 17.5mm)!important;
+    height:calc(330px - 17.5mm)!important;
+  }
+
+  .hero::after{
+    /* Match the visual width of the search/filter controls rather than the
+       full charcoal hero width. */
+    left:24px!important;
+    right:24px!important;
+
+    /* Drop the rule another 1mm for the same refined breathing room used
+       in the lower composition. */
+    bottom:-3mm!important;
+  }
+}
