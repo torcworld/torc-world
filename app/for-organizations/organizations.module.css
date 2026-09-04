@@ -3208,3 +3208,110 @@
 .proprietaryNote{
   display:none!important;
 }
+
+
+/* 2026-09-04 — balance/calibration pass.
+   No new visual language: rebalance the existing analytical system and tighten
+   the closing composition. */
+
+/* Diagram: equalize the three principal masses and make the transfer from
+   corpus → synthesis → outputs legible at a glance. */
+.intelligenceDiagram{
+  grid-template-columns:minmax(190px,1fr) 72px minmax(230px,1.08fr) 72px minmax(190px,1fr)!important;
+  column-gap:18px!important;
+  align-items:center!important;
+  padding-left:38px!important;
+  padding-right:38px!important;
+}
+.diagramCorpus{
+  justify-self:stretch!important;
+  align-self:center!important;
+  transform:translateX(-8px)!important;
+}
+.artifactField{
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.diagramConnector{
+  width:72px!important;
+  justify-self:center!important;
+  position:relative!important;
+}
+.diagramConnector i{
+  width:100%!important;
+  left:0!important;
+  right:0!important;
+}
+.diagramCore{
+  justify-self:center!important;
+}
+.branchField{
+  width:72px!important;
+  justify-self:center!important;
+  transform:none!important;
+}
+.branchField::before{
+  left:0!important;
+}
+.branchField i{
+  left:23px!important;
+  width:49px!important;
+}
+.diagramOutputs{
+  justify-self:stretch!important;
+  padding-left:0!important;
+}
+
+/* Give the connector geometry slightly more visual authority without making
+   it decorative. */
+.diagramConnector::before,
+.diagramConnector::after,
+.branchField::before,
+.branchField i{
+  border-color:rgba(199,170,118,.82)!important;
+}
+
+/* Statement: move the narrow middle line down by roughly 1.5–2 mm while
+   preserving the lower relationship to 50 REPORTS. */
+.corpusStatement strong span:nth-child(1){
+  margin-bottom:14px!important;
+}
+.corpusStatement strong span:nth-child(2){
+  margin:0 0 9px!important;
+}
+
+/* Closing card: bring the institutional heading/copy upward toward the
+   workflow register, reduce dead charcoal, but let the CTA sit slightly lower. */
+.finalContact{
+  padding-top:42px!important;
+  padding-bottom:46px!important;
+}
+.closingWorkflow{
+  margin-bottom:12px!important;
+  padding-bottom:12px!important;
+}
+.contactCard{
+  align-items:start!important;
+}
+.contactCard > div:first-child{
+  transform:translateY(-5px)!important;
+}
+.contactCard a{
+  transform:translateY(8px)!important;
+}
+
+/* Keep the closing composition compact rather than leaving an empty gray tail. */
+.finalContactInner,
+.contactCard{
+  margin-bottom:0!important;
+}
+
+@media(max-width:900px){
+  .intelligenceDiagram{
+    padding-left:24px!important;
+    padding-right:24px!important;
+  }
+  .diagramCorpus{
+    transform:none!important;
+  }
+}
