@@ -1,12 +1,17 @@
-# TORC Artifacts — pyramid rule-width experiment
+# TORC — Submit CTA direct-to-pricing patch
 
-Changed only:
-- `app/artifacts/artifacts-overhaul.module.css`
+Changed only five CTA source files:
 
-Desktop change:
-- Operational Order remains the widest band.
-- The Search / Sort / Medium / Operational Order field row remains narrower.
-- The black line beneath the charcoal hero is now narrowed by exactly the same horizontal difference once again: 24px extra inset on the left and 24px on the right relative to the visible search/filter row.
-- This creates the requested stepped/pyramid hierarchy:
-  Operational Order → Search/filter row → black rule.
-- Vertical spacing and every other element remain unchanged.
+- `app/TorcNav.tsx`
+- `app/page.tsx`
+- `app/artifact/[slug]/page.tsx`
+- `app/artifact/components/ArtifactAnalysis.tsx`
+- `app/artifact/the-great-gatsby/page.tsx`
+
+What changed:
+- Every existing site CTA/link labeled “Submit Your Artifact” / “Submit your artifact” now points to:
+  `/evaluate-your-work#pricing`
+- The Submit page itself is unchanged.
+- The pricing section already has `id="pricing"`, so these CTAs land directly on the €195 / €595 / €995 choice cards.
+- Direct navigation to `/evaluate-your-work` still opens the page at the top for visitors who want the full explanation.
+- The actual submission-form button (“Submit artifact for review”) is unchanged.

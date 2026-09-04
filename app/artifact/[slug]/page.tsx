@@ -81,7 +81,7 @@ export function WarAndPeaceAnalysis({a}:{a:ReturnType<typeof getArtifact>}){
      <p>Napoleon therefore remains at the center of the spectacle while losing his place at the center of the explanation. The novel's scale is not excess around that insight; it is the machinery required to demonstrate it across war, family, consciousness and history.</p>
    </section>
    <section className={styles.bottomCta}>
-     <Link className={styles.submitButton} href="/evaluate-your-work">Submit your artifact →</Link>
+     <Link className={styles.submitButton} href="/evaluate-your-work#pricing">Submit your artifact →</Link>
      <div><span>TORC Development Analysis</span><h2>What is your artifact actually doing?</h2><p>Find the deepest operation already present in the work—and the structural boundary keeping it from becoming fully realized.</p></div>
    </section>
  </main>

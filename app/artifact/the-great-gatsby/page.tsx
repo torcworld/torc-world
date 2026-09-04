@@ -79,7 +79,7 @@ export default function GreatGatsbyPage(){
    </section>
 
    <section className={styles.bottomCta}>
-     <Link className={styles.submitButton} href="/evaluate-your-work">Submit your artifact →</Link>
+     <Link className={styles.submitButton} href="/evaluate-your-work#pricing">Submit your artifact →</Link>
      <div><span>TORC Development Analysis</span><h2>What is your artifact actually doing?</h2><p>Find the deepest operation already present in the work—and the structural boundary keeping it from becoming fully realized.</p></div>
    </section>
  </main>
