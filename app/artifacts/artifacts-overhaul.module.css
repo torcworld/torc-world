@@ -642,3 +642,29 @@
     margin-right:18px!important;
   }
 }
+
+
+/* 2026-09-04 — row dividers + compact vertical rhythm */
+
+/* Every artifact is a distinct row: replace the faint gray separators with
+   crisp 1px charcoal/black rules. */
+.artifactTable :global(.row){
+  border-bottom:1px solid #171714!important;
+}
+.artifactTable :global(a.row:not(.header)){
+  border-bottom:1px solid #171714!important;
+}
+.tableHeader{
+  border-bottom:1px solid #171714!important;
+}
+
+/* Bring the artifact field itself upward toward
+   “Different works. Different operations.” without moving the heading. */
+.corpusHead{
+  margin-bottom:10px!important;
+}
+
+/* Tighten the handoff from pagination into Compare Artifacts by 4mm. */
+.compareSection{
+  margin-top:calc(54px - 4mm)!important;
+}
