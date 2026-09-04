@@ -806,3 +806,13 @@
     right:calc(34px + 2mm)!important;
   }
 }
+
+
+/* 2026-09-04 — final hero-rule alignment.
+   Match the black rule exactly to the total width of the four filter/search controls. */
+@media(min-width:761px){
+  .hero::after{
+    left:calc(34px - 2mm)!important;
+    right:calc(34px - 2mm)!important;
+  }
+}

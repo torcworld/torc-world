@@ -1,10 +1,9 @@
-# TORC Artifacts — hero rule another 2mm shorter per side
+# TORC Artifacts — hero rule exact filter width
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
 
 Change:
-- Starting from the previous 2mm-per-side-shorter version, the black rule beneath the hero is shortened by another exact 2mm on the left and 2mm on the right.
-- Compared with the original line, this is now 4mm shorter per side (8mm total).
+- The black line beneath the gray hero now has exactly the same total page width as the complete Search / Sort / Medium / Operational Order filter row.
 - Vertical position is unchanged.
 - Nothing else is changed.
