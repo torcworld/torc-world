@@ -3448,3 +3448,17 @@
 .finalContact{
   padding-top:calc(30px + 3mm)!important;
 }
+
+
+/* 2026-09-04 — requested Organizations micro-adjustments only. */
+
+/* Lowest charcoal field: move the complete left text block down exactly 3 mm. */
+.finalContact > div:first-child{
+  transform:translateY(3mm)!important;
+}
+
+/* Middle charcoal diagram: CORPUS + 50 ARTIFACTS in pure white. */
+.diagramCorpus .diagramLabel,
+.diagramCorpus strong{
+  color:#fff!important;
+}

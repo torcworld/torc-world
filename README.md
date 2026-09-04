@@ -1,9 +1,8 @@
-# TORC Organizations — charcoal bottom refinement
+# TORC Organizations — left block + Corpus text
 
-Built on the previous vertical-breathing-room patch.
+Built on `TORC_ORGANIZATIONS_CHARCOAL_BOTTOM_REFINEMENT_PATCH.zip`.
 
 Changed only `app/for-organizations/organizations.module.css`:
-- Diagram charcoal field: existing 36 px bottom space + 4 mm.
-- Removed the faint gold/brown bottom rule under the diagram.
-- Lowest charcoal field: existing 30 px top padding + exactly 3 mm.
+- Entire left text block in the lowest charcoal section moves exactly 3 mm downward.
+- `CORPUS` and `50 ARTIFACTS` in the middle diagram are pure white.
 - Nothing else changed.
