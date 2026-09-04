@@ -3336,3 +3336,15 @@
 .contactCard a{
   transform:translateY(5px)!important;
 }
+
+
+/* 2026-09-04 — diagram white-label test.
+   Only the requested labels change from gold/light accent to pure white. */
+.coreCircle b{
+  color:#fff!important;
+}
+
+.corpusInput .diagramLabel,
+.diagramOutputs .diagramLabel{
+  color:#fff!important;
+}
