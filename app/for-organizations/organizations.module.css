@@ -57,7 +57,7 @@
 .secondary:hover{background:#1a1a18;color:#fff}
 
 .heroPanel{
-  background:var(--dark);color:#f5f1e8;padding:24px 24px 18px;
+  background:var(--dark);color:#fff;padding:24px 24px 18px;
   box-shadow:0 26px 60px rgba(29,20,17,.16);
   min-height:405px;
   position:relative;overflow:hidden;
@@ -68,16 +68,16 @@
 }
 .panelTop,.panelFoot{
   position:relative;z-index:1;display:flex;justify-content:space-between;gap:12px;
-  font:700 8px Arial,sans-serif;letter-spacing:.14em;color:#aaa69d;
+  font:700 8px Arial,sans-serif;letter-spacing:.14em;color:#fff;
 }
 .orderRows{position:relative;z-index:1;margin:48px 0 35px}
 .orderRows div{display:grid;grid-template-columns:30px 1fr 25px;gap:11px;align-items:center;margin:16px 0}
 .orderRows span,.orderRows b{font:700 10px Arial,sans-serif}
-.orderRows b{text-align:right;color:#c7c2b9}
+.orderRows b{text-align:right;color:#fff}
 .orderRows i{display:block;height:5px;background:#393735;position:relative}
 .orderRows i:after{content:"";position:absolute;inset:0;background:var(--accent)}
 .cmsRange{position:relative;z-index:1;border-top:1px solid #3e3b38;border-bottom:1px solid #3e3b38;padding:17px 0;display:grid;grid-template-columns:auto 35px 1fr 35px;gap:9px;align-items:center}
-.cmsRange>span{font:700 8px Arial,sans-serif;letter-spacing:.12em;color:#aaa69d}
+.cmsRange>span{font:700 8px Arial,sans-serif;letter-spacing:.12em;color:#fff}
 .cmsRange>b{font:700 11px Arial,sans-serif}
 .cmsRange>div{height:1px;background:#706c65;display:flex;justify-content:space-between;align-items:center}
 .cmsRange i{width:5px;height:5px;border-radius:50%;background:#f5f1e8}
@@ -91,7 +91,7 @@
   padding:15px 28px;
   display:flex;align-items:center;justify-content:space-between;gap:12px;
   background:var(--accent-deep);
-  color:#f3e7e8;
+  color:#fff;
   font:700 9px Arial,sans-serif;letter-spacing:.13em;
 }
 .signalStrip i{width:4px;height:4px;border-radius:50%;background:#d7a2ac}
@@ -243,20 +243,20 @@
 .cardReveal p{margin:8px 0 0;font-size:15px;line-height:1.65;color:#4d4545}
 
 .volume{
-  background:var(--dark);color:#f5f1e8;margin:0 -28px;padding:72px 54px 60px;
+  background:var(--dark);color:#fff;margin:0 -28px;padding:72px 54px 60px;
   display:grid;grid-template-columns:.48fr 1.1fr;gap:55px;
 }
 .bigNumber{font:700 clamp(110px,15vw,180px)/.75 Arial,sans-serif;letter-spacing:-.075em;color:var(--accent-soft)}
 .volumeCopy .eyebrow{color:#c58490}
-.volume h2{margin:10px 0 17px;color:#f5f1e8}
-.volumeCopy>p{font-size:17px;line-height:1.65;color:#c6c2ba;max-width:690px;margin:0}
-.volumeCopy>a{display:inline-flex;margin-top:24px;color:#f5f1e8;font:700 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #6c6963;padding-bottom:7px}
+.volume h2{margin:10px 0 17px;color:#fff}
+.volumeCopy>p{font-size:17px;line-height:1.65;color:#fff;max-width:690px;margin:0}
+.volumeCopy>a{display:inline-flex;margin-top:24px;color:#fff;font:700 10px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid #6c6963;padding-bottom:7px}
 .volumeCopy>a span{color:#c58490;margin-left:18px}
 .flow{grid-column:1/-1;border-top:1px solid #45413e;margin-top:15px;padding-top:26px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr;gap:17px;align-items:center}
 .flow div{border:1px solid #494642;padding:17px 18px}
 .flow div b,.flow div span,.flow div strong{display:block}
 .flow div b{font:700 8px Arial,sans-serif;color:#8e8981;letter-spacing:.12em}
-.flow div span{font:700 9px Arial,sans-serif;letter-spacing:.11em;margin:22px 0 6px;color:#c7c2b9}
+.flow div span{font:700 9px Arial,sans-serif;letter-spacing:.11em;margin:22px 0 6px;color:#fff}
 .flow div strong{font:500 32px Georgia,serif}
 .flow em{font-style:normal;color:#9f6470}
 
@@ -290,14 +290,14 @@
 }
 .contact .eyebrow{color:#e6bdc5}
 .contact h2{margin:11px 0 18px}
-.contact>div:first-child>p{max-width:620px;color:#eadfe0;font-size:16px;line-height:1.65}
+.contact>div:first-child>p{max-width:620px;color:#fff;font-size:16px;line-height:1.65}
 .inquiry{border-top:1px solid rgba(255,255,255,.7);padding-top:19px}
 .inquiry>span{font:700 9px Arial,sans-serif;letter-spacing:.13em}
-.inquiry ul{padding-left:18px;margin:18px 0 28px;color:#f3e9eb;font-size:14px;line-height:1.55}
+.inquiry ul{padding-left:18px;margin:18px 0 28px;color:#fff;font-size:14px;line-height:1.55}
 .inquiry li{margin:7px 0}
 .inquiry a{display:flex;justify-content:space-between;align-items:center;background:#fff;color:var(--accent);padding:15px 17px;font:700 10px Arial,sans-serif;text-transform:uppercase;letter-spacing:.11em}
 .inquiry a b{font-size:17px}
-.inquiry small{display:block;margin-top:12px;color:#e4cbd0;font:10px Arial,sans-serif;letter-spacing:.07em}
+.inquiry small{display:block;margin-top:12px;color:#fff;font:10px Arial,sans-serif;letter-spacing:.07em}
 
 @media(max-width:900px){
   .hero{grid-template-columns:1fr;gap:42px}
@@ -363,10 +363,10 @@
   color:#b7955d!important;
 }
 .hero h1{
-  color:#f3eee6!important;
+  color:#fff!important;
 }
 .hero .lede{
-  color:#ddd5c8!important;
+  color:#fff!important;
 }
 .heroPanel{
   background:#141413!important;
@@ -513,7 +513,7 @@
   color:#fff!important;
 }
 .contact>div:first-child>p{
-  color:#eadfe0!important;
+  color:#fff!important;
 }
 
 
@@ -670,7 +670,7 @@
   margin-top:24px!important;
   padding-top:18px!important;
   border-top:1px solid rgba(255,255,255,.38)!important;
-  color:#f3e9eb!important;
+  color:#fff!important;
   font-size:13px!important;
   line-height:1.6!important;
   max-width:620px!important;
@@ -694,13 +694,13 @@
   margin:34px -28px 0!important;
   padding:64px 54px!important;
   background:#353432!important;
-  color:#f3eee6!important;
+  color:#fff!important;
   border-top:1px solid #5b2630!important;
   border-bottom:1px solid rgba(255,255,255,.16)!important;
 }
 .principle .eyebrow{color:#b7955d!important}
-.principle h2{color:#f3eee6!important}
-.principle p{color:#d7d0c5!important}
+.principle h2{color:#fff!important}
+.principle p{color:#fff!important}
 .greenlight{
   margin-top:27px;
   padding:14px 16px;
@@ -779,7 +779,7 @@
 }
 .proprietaryBox p{
   margin:0!important;
-  color:#eadfe0!important;
+  color:#fff!important;
   font-size:13px!important;
   line-height:1.62!important;
 }
@@ -824,7 +824,7 @@
 .heroStatement h1{
   margin:17px 0 27px;
   max-width:760px;
-  color:#f3eee6;
+  color:#fff;
   font-size:clamp(52px,6.4vw,84px);
   line-height:.92;
   letter-spacing:-.045em;
@@ -833,7 +833,7 @@
 .heroStatement>p{
   max-width:690px;
   margin:0;
-  color:#ddd5c8;
+  color:#fff;
   font-size:18px;
   line-height:1.66;
 }
@@ -863,7 +863,7 @@
 .heroThesis>strong{
   display:block;
   margin:21px 0 18px;
-  color:#f3eee6;
+  color:#fff;
   font-size:27px;
   line-height:1.16;
   font-weight:500;
@@ -871,7 +871,7 @@
 }
 .heroThesis>p{
   margin:0;
-  color:#bbb3a8;
+  color:#fff;
   font-size:14px;
   line-height:1.65;
 }
@@ -884,7 +884,7 @@
   justify-content:space-between;
   gap:13px;
   background:#5b2630;
-  color:#f3e7e8;
+  color:#fff;
   border-bottom:1px solid rgba(23,23,20,.2);
   font:700 9px/1 Arial,sans-serif;
   letter-spacing:.13em;
@@ -1152,7 +1152,7 @@
 .boundary .eyebrow{color:#b7955d}
 .boundary h2{
   margin:11px 0 0;
-  color:#f3eee6;
+  color:#fff;
   font-size:clamp(38px,4.5vw,54px);
   line-height:1.04;
   letter-spacing:-.03em;
@@ -1164,12 +1164,12 @@
 }
 .boundaryCopy p{
   margin:0 0 20px;
-  color:#d5cec3;
+  color:#fff;
   font-size:15px;
   line-height:1.68;
 }
 .boundaryCopy p:last-child{margin-bottom:0}
-.boundaryCopy strong{color:#f3eee6;font-weight:600}
+.boundaryCopy strong{color:#fff;font-weight:600}
 
 .finalContact{
   margin:34px -28px 0;
@@ -1192,7 +1192,7 @@
 .finalContact>div:first-child>p{
   margin:0;
   max-width:620px;
-  color:#eadfe0;
+  color:#fff;
   font-size:16px;
   line-height:1.65;
 }
@@ -1207,7 +1207,7 @@
 .contactCard ul{
   margin:18px 0 28px;
   padding-left:18px;
-  color:#f3e9eb;
+  color:#fff;
   font-size:14px;
   line-height:1.55;
 }
@@ -1227,7 +1227,7 @@
 .contactCard small{
   display:block;
   margin-top:12px;
-  color:#e4cbd0;
+  color:#fff;
   font:10px Arial,sans-serif;
   letter-spacing:.07em;
 }
@@ -1831,7 +1831,7 @@
   margin:52px -10px 0;
   padding:68px 54px 58px;
   background:#171716;
-  color:#f3eee6;
+  color:#fff;
   border:1px solid rgba(183,149,93,.58);
   box-shadow:inset 0 0 0 1px rgba(255,255,255,.025);
 }
@@ -1850,7 +1850,7 @@
 }
 .corpusSystemHead h2{
   margin:12px 0 0;
-  color:#f3eee6;
+  color:#fff;
   font-size:clamp(43px,5vw,62px);
   line-height:.99;
   letter-spacing:-.032em;
@@ -1860,7 +1860,7 @@
   margin:0;
   padding-left:22px;
   border-left:1px solid rgba(183,149,93,.44);
-  color:#c9c1b5;
+  color:#fff;
   font-size:13px;
   line-height:1.62;
 }
@@ -1881,7 +1881,7 @@
 .corpusInput b{
   display:block;
   margin-top:7px;
-  color:#ddd5c8;
+  color:#fff;
   font:400 13px/1.3 Arial,sans-serif;
 }
 .artifactCloud{
@@ -1951,7 +1951,7 @@
 .actionTree>i:after{bottom:16px;transform:rotate(24deg);transform-origin:left}
 .actionTree div{display:grid;gap:15px}
 .actionTree div span{
-  color:#eee7dc;
+  color:#fff;
   font:700 9px/1 Arial,sans-serif;
   letter-spacing:.1em;
 }
@@ -1982,10 +1982,10 @@
   font:700 8px/1 Arial,sans-serif;letter-spacing:.14em
 }
 .corpusStages b{
-  display:block;margin:10px 0 4px;color:#f3eee6;
+  display:block;margin:10px 0 4px;color:#fff;
   font:700 10px/1 Arial,sans-serif;letter-spacing:.1em
 }
-.corpusStages p{margin:0;color:#aaa399;font-size:11px;line-height:1.35}
+.corpusStages p{margin:0;color:#fff;font-size:11px;line-height:1.35}
 .corpusPrinciple{
   display:flex;
   justify-content:space-between;
@@ -1998,7 +1998,7 @@
   font:700 9px/1.3 Arial,sans-serif;
   letter-spacing:.13em;
 }
-.corpusPrinciple span{color:#a9a298;font-size:12px;line-height:1.45;text-align:right}
+.corpusPrinciple span{color:#fff;font-size:12px;line-height:1.45;text-align:right}
 
 /* The new system already carries the workflow and scale-visibility argument. */
 .system,.visibility{display:none!important}
@@ -2036,7 +2036,7 @@
   background:#b7955d!important;
   color:#171714!important;
 }
-.contactCard small{color:#a9a298!important}
+.contactCard small{color:#fff!important}
 
 @media(max-width:900px){
   .corpusSystemHead{grid-template-columns:1fr;gap:24px}
@@ -2174,7 +2174,7 @@
 .heroApplicationList p{
   margin:5px 0 0;
   max-width:430px;
-  color:#d5cec3;
+  color:#fff;
   font:12px/1.5 Arial,sans-serif;
 }
 .corpusSystemPremise{
@@ -2532,7 +2532,7 @@
   background:
     radial-gradient(circle at 48% 38%, rgba(183,149,93,.055), transparent 30%),
     linear-gradient(180deg,#1b1b1a 0%,#141413 100%);
-  color:#f3eee6;
+  color:#fff;
 }
 .intelligenceDiagram{
   min-height:365px!important;
@@ -2543,7 +2543,7 @@
   color:#b7955d!important;
 }
 .diagramCorpus>strong{
-  color:#f3eee6!important;
+  color:#fff!important;
 }
 .artifactField i{
   background:#b7955d!important;
@@ -2576,7 +2576,7 @@
   position:relative;
 }
 .diagramOutputs b{
-  color:#f3eee6!important;
+  color:#fff!important;
   border-left-color:#b7955d!important;
   border-bottom-color:rgba(183,149,93,.25)!important;
 }
@@ -2596,7 +2596,7 @@
   color:#b7955d!important;
 }
 .corpusStages article>p{
-  color:#d5cec3!important;
+  color:#fff!important;
 }
 .corpusStages>i{
   color:#b7955d!important;
@@ -2608,7 +2608,7 @@
   color:#b7955d!important;
 }
 .corpusPrinciple span{
-  color:#d5cec3!important;
+  color:#fff!important;
 }
 
 @media(max-width:760px){
@@ -2922,7 +2922,7 @@
 }
 .diagramOutputs b,
 .corpusStages article>p{
-  color:#f3eee6!important;
+  color:#fff!important;
 }
 
 /* Final inquiry card also returns from black to the same TORC charcoal. */
@@ -3125,11 +3125,11 @@
 /* Make the institutional CTA a true TORC-red button. */
 .contactCard a{
   background:#5b2630!important;
-  color:#f7f4ec!important;
+  color:#fff!important;
   border-color:#5b2630!important;
 }
 .contactCard a b{
-  color:#f7f4ec!important;
+  color:#fff!important;
 }
 .contactCard a:hover,
 .contactCard a:focus-visible{
@@ -3335,72 +3335,4 @@
 }
 .contactCard a{
   transform:translateY(5px)!important;
-}
-
-
-/* 2026-09-04 — white-text correction.
-   Keep the darker gold exactly as-is.
-   Brighten ONLY text that sits on charcoal/dark fields.
-   Keep text on the gold statement bands black. */
-.hero h1,
-.hero p,
-.hero strong,
-.diagramSection h2,
-.diagramSection p,
-.closeSection h2,
-.closeSection p{
-  color:#f7f4ed!important;
-}
-
-.corpusTransitionBand h2,
-.corpusTransitionBand p,
-.corpusTransitionBand strong,
-.corpusStatement h2,
-.corpusStatement p,
-.corpusStatement strong,
-.corpusStatement span{
-  color:#171714!important;
-}
-
-
-/* 2026-09-04 — make existing light text genuinely whiter.
-   No dark text is converted to white. */
-.hero h1,
-.hero p,
-.hero strong,
-.diagramSection h2,
-.diagramSection p,
-.closeSection h2,
-.closeSection p{
-  color:#fff!important;
-}
-
-.corpusTransitionBand h2,
-.corpusTransitionBand p,
-.corpusTransitionBand strong,
-.corpusStatement h2,
-.corpusStatement p,
-.corpusStatement strong,
-.corpusStatement span{
-  color:#171714!important;
-}
-
-
-/* 2026-09-04 — Organizations: all light text is pure white.
-   This catches upper-page light typography as well as lower-page typography. */
-.page :is(h1,h2,h3,p,span,strong,b,small,li){
-  --org-pure-white:#fff;
-}
-
-/* Existing light typography across charcoal/dark page regions */
-.hero :is(h1,h2,h3,p,span,strong,b,small,li),
-.diagramSection :is(h1,h2,h3,p,span,strong,b,small,li),
-.closeSection :is(h1,h2,h3,p,span,strong,b,small,li){
-  color:#fff!important;
-}
-
-/* Gold fields retain dark typography. */
-.corpusTransitionBand :is(h1,h2,h3,p,span,strong,b,small,li),
-.corpusStatement :is(h1,h2,h3,p,span,strong,b,small,li){
-  color:#171714!important;
 }

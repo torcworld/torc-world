@@ -1,9 +1,11 @@
-# TORC Artifacts — darker gold whole-page test
+# TORC Organizations — all white text matches “USEFUL TO INCLUDE”
 
 Changed only:
-- `app/artifacts/artifacts-overhaul.module.css`
+- `app/for-organizations/organizations.module.css`
 
-Color-only experiment:
-- Gold-family styling across the Artifacts page is unified to the same darker Organizations test gold: `#b7955d`.
-- Neutral site ground, cream, charcoal, burgundy/red, layout, spacing, borders, and behavior are unchanged.
-- This patch is based on the current pyramid-rule Artifacts state.
+Exact correction:
+- `USEFUL TO INCLUDE` already renders as pure white (`#fff`).
+- Every cream/off-white/light-neutral text color on the Organizations page is now changed to that same pure white.
+- Only CSS `color:` declarations were changed.
+- Gold (`#b7955d`), burgundy/red, charcoal/black, backgrounds, borders, spacing, and layout are untouched.
+- Dark text on gold fields remains dark.
