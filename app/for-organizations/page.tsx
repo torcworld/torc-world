@@ -34,17 +34,21 @@ export default function Organizations(){
           <p>
             See what repeats, what diverges, where structural bottlenecks recur, and which works deserve scarce human attention across a slate, catalogue, submission pool, or recurring stream.
           </p>
-          <a href="mailto:contact@torc.world?subject=TORC%20Institutional%20Inquiry">
-            Discuss an institutional use case <span>→</span>
-          </a>
         </div>
 
-        <div className={styles.heroThesis}>
-          <span>THE INSTITUTIONAL PREMISE</span>
-          <strong>50 artifacts should produce more than 50 reports.</strong>
-          <p>
-            At scale, individual diagnoses become something more useful: a view of the corpus itself — what it repeatedly achieves, where it repeatedly stops, and which exceptions change the picture.
-          </p>
+        <div className={styles.heroApplications}>
+          <span>INSTITUTIONAL APPLICATIONS</span>
+          <div className={styles.heroApplicationList}>
+            {applications.map((item) => (
+              <article key={item.no}>
+                <span>{item.no}</span>
+                <div>
+                  <strong>{item.title}</strong>
+                  <p>{item.text}</p>
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </header>
 
@@ -61,9 +65,12 @@ export default function Organizations(){
             <div className={styles.corpusSystemEyebrow}>THE CORPUS INTELLIGENCE SYSTEM</div>
             <h2 id="corpus-system-title">From volume to<br/>actionable intelligence.</h2>
           </div>
-          <p>
-            Evaluate the corpus as one field. Reveal the pattern. Investigate the differences that matter. Then direct human attention where structural change can actually matter.
-          </p>
+          <div className={styles.corpusSystemPremise}>
+            <strong>50 artifacts should produce more than 50 reports.</strong>
+            <p>
+              Evaluate the corpus as one field. Reveal the pattern. Investigate the differences that matter. Then direct human attention where structural change can actually matter.
+            </p>
+          </div>
         </div>
 
         <div className={styles.corpusMap} aria-label="Corpus to actionable intelligence">
@@ -110,23 +117,6 @@ export default function Organizations(){
         <div className={styles.corpusPrinciple}>
           <strong>TORC IS NOT AN AUTOMATED GREENLIGHT.</strong>
           <span>It is a system for placing human judgment more deliberately.</span>
-        </div>
-      </section>
-
-      <section className={styles.applicationsNew}>
-        <div className={styles.applicationHead}>
-          <div className={styles.eyebrow}>INSTITUTIONAL APPLICATIONS</div>
-          <h2>Different problems.<br/>One analytical language.</h2>
-        </div>
-
-        <div className={styles.applicationList}>
-          {applications.map((item) => (
-            <article key={item.no}>
-              <span>{item.no}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
         </div>
       </section>
 

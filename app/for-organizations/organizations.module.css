@@ -2120,3 +2120,91 @@
     padding:22px 20px 24px!important;
   }
 }
+
+
+/* 2026-09-04 — Move institutional applications into the opening card.
+   The opening remains familiar charcoal, but sheds the burgundy CTA and shifts
+   its primary labels toward gold. The former light-brown applications card is
+   removed. The 50-artifact premise now belongs to the corpus-system visual. */
+.newHero{
+  border-top-color:#c7aa76!important;
+  border-bottom-color:#c7aa76!important;
+}
+.newHero .eyebrow{
+  color:#c7aa76!important;
+}
+.heroStatement h1{
+  color:#c7aa76!important;
+}
+.heroApplications{
+  padding-left:34px;
+  border-left:1px solid rgba(199,170,118,.48);
+}
+.heroApplications>span{
+  display:block;
+  margin-bottom:18px;
+  color:#c7aa76;
+  font:700 9px/1 Arial,sans-serif;
+  letter-spacing:.14em;
+}
+.heroApplicationList{
+  border-top:1px solid rgba(199,170,118,.38);
+}
+.heroApplicationList article{
+  display:grid;
+  grid-template-columns:28px 1fr;
+  gap:12px;
+  padding:14px 0 15px;
+  border-bottom:1px solid rgba(199,170,118,.22);
+}
+.heroApplicationList article>span{
+  padding-top:3px;
+  color:#c7aa76;
+  font:700 9px/1 Arial,sans-serif;
+  letter-spacing:.08em;
+}
+.heroApplicationList strong{
+  display:block;
+  color:#c7aa76;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:18px;
+  line-height:1.15;
+  font-weight:500;
+}
+.heroApplicationList p{
+  margin:5px 0 0;
+  max-width:430px;
+  color:#d5cec3;
+  font:12px/1.5 Arial,sans-serif;
+}
+.corpusSystemPremise{
+  max-width:460px;
+}
+.corpusSystemPremise strong{
+  display:block;
+  margin:0 0 13px;
+  color:#c7aa76;
+  font-family:Georgia,'Times New Roman',serif;
+  font-size:26px;
+  line-height:1.12;
+  font-weight:500;
+}
+.corpusSystemPremise p{
+  margin:0;
+}
+@media(max-width:900px){
+  .heroApplications{
+    padding-left:0;
+    padding-top:26px;
+    border-left:0;
+    border-top:1px solid rgba(199,170,118,.48);
+  }
+}
+@media(max-width:760px){
+  .heroApplicationList article{
+    grid-template-columns:26px 1fr;
+  }
+  .corpusSystemPremise strong{
+    font-size:22px;
+  }
+}
