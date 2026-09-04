@@ -1,10 +1,11 @@
-# TORC Organizations — brighter type contrast test
+# TORC Organizations — white-text correction
 
 Changed only:
 - `app/for-organizations/organizations.module.css`
 
-Test:
-- Keeps the darker Organizations gold exactly at `#b7955d`.
-- Brightens the principal light/cream typography to near-white `#f7f4ed`.
-- Applies this to the major charcoal and gold content fields.
-- No gold, layout, spacing, borders, diagram geometry, or other page structure is changed.
+Corrections:
+- Darker gold stays exactly `#b7955d`.
+- Only the light text on charcoal/dark sections is brightened to `#f7f4ed`.
+- Text on the gold bands is explicitly restored to charcoal/black `#171714`.
+- In particular, the “50 Artifacts / Should Produce More Than / 50 Reports” statement is black again.
+- No layout, spacing, sizing, borders, or other colors are changed.

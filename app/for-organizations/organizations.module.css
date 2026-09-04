@@ -3338,15 +3338,10 @@
 }
 
 
-/* 2026-09-04 — brighter type contrast test.
-   Keep the approved darker gold (#b7955d) untouched.
-   Only lift the light/cream typography for cleaner contrast. */
-.hero,
-.diagramSection,
-.closeSection{
-  --org-light-type:#f7f4ed;
-}
-
+/* 2026-09-04 — white-text correction.
+   Keep the darker gold exactly as-is.
+   Brighten ONLY text that sits on charcoal/dark fields.
+   Keep text on the gold statement bands black. */
 .hero h1,
 .hero p,
 .hero strong,
@@ -3354,12 +3349,7 @@
 .diagramSection p,
 .closeSection h2,
 .closeSection p{
-  color:var(--org-light-type)!important;
-}
-
-.corpusTransitionBand,
-.corpusStatement{
-  --org-light-type:#f7f4ed;
+  color:#f7f4ed!important;
 }
 
 .corpusTransitionBand h2,
@@ -3369,5 +3359,5 @@
 .corpusStatement p,
 .corpusStatement strong,
 .corpusStatement span{
-  color:var(--org-light-type)!important;
+  color:#171714!important;
 }
