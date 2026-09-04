@@ -1792,3 +1792,37 @@
 .readingPage .bookMetaBar{
   background:#b7955d!important;
 }
+
+
+/* 2026-09-04 — Theory architectural frame finish.
+   Requested only: +1mm top gold, black perimeter rules, remove red side ticks,
+   and a small site-ground reveal below the complete book composition. */
+
+/* One extra millimetre of gold at the top edge. */
+.bookLanding{
+  padding-top:calc(var(--book-landing-top-pad, 0px) + 1mm)!important;
+  border-top:1px solid #171714!important;
+  border-left:1px solid #171714!important;
+  border-right:1px solid #171714!important;
+  border-bottom:1px solid #171714!important;
+}
+
+/* Remove the small red vertical side ticks at the upper frame. */
+.bookLanding::before,
+.bookLanding::after{
+  background:none!important;
+  border:0!important;
+}
+
+/* Opened-book surround: crisp black perimeter all around. */
+.readingPage{
+  border-top:1px solid #171714!important;
+  border-right:1px solid #171714!important;
+  border-bottom:1px solid #171714!important;
+  border-left:1px solid #171714!important;
+}
+
+/* Give the finished composition a small strip of normal site ground below it. */
+.readingPage{
+  margin-bottom:5mm!important;
+}

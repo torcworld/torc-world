@@ -1,12 +1,11 @@
-# TORC Theory — quiet author + gold reading surround
+# TORC Theory — frame/top/bottom finish
 
-Changed:
-- `app/theory/book/book.module.css`
-- `app/theory/book/page.tsx` included unchanged from canonical.
+Changed only Theory book CSS; page.tsx is included unchanged.
 
-Exact changes:
-1. `GK Muilaard` now uses the same quiet light/cream tone and regular visual weight as `by`.
-2. In the opened-book reading view, the surrounding gray page field/band and top meta band are changed to the current darker gold `#b7955d`.
-3. The actual book/reading paper surface is not recolored.
-
-No layout, book geometry, reader typography, or content changes.
+Requested changes:
+- +1 mm gold at the upper edge.
+- Thin crisp black perimeter rule around the gold/reader composition, including the bottom.
+- Small red vertical ticks at the upper sides removed.
+- 5 mm normal site-ground breathing space below the complete opened-book composition.
+- Existing darker gold and book colors preserved.
+- No copy or book-content changes.
