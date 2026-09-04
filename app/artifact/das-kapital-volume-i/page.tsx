@@ -7,7 +7,7 @@ export default function Page(){return <ArtifactAnalysis
  creator='Karl Marx'
  order='G'
  orderName='Generative consciousness · explanatory relocation'
- cms={915}
+ cms={906}
  range='Median across 10 evaluations'
  headline='Capitalism becomes harder to see at exactly the point where its surface becomes easiest to describe.'
  analysis={[
@@ -16,12 +16,12 @@ export default function Page(){return <ArtifactAnalysis
   'That relocation changes the role of appearance. Market forms are not simply false pictures waiting to be corrected; they are generated appearances. They are real forms produced by the very structure they conceal. This is why the book cannot be reduced to a Level-3 diagnosis of ideological distortion: it attempts to explain why the distortion has the shape and persistence that it does.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'9.4',artifact:'Commodity, money, labour-power, production, machinery, wages, class relation and accumulation remain consequentially linked across different analytical scales.'},
-  {key:'AD',name:'Abstraction Depth',score:'9.2',artifact:'Concrete exchange is repeatedly lifted into value-form, abstract labour, capital and reproduction without abandoning the material phenomena those abstractions must explain.'},
-  {key:'CD',name:'Constraint Density',score:'8.8',artifact:'Logical derivation, historical material, institutional detail and economic relations constrain one another, leaving substantial but not unlimited room for alternative reconstruction.'},
-  {key:'ID',name:'Inferential Distance',score:'9.1',artifact:'The path from ordinary market appearances to surplus-value production and capital reproduction is deeply non-routine and requires sustained reconstruction.'},
-  {key:'IC',name:'Integrative Compression',score:'9.3',artifact:'A comparatively small conceptual architecture reorganizes a vast field of prices, labour, technology, accumulation, class and historical change.'},
-  {key:'GR',name:'Generalization Reach',score:'8.8',artifact:'The structure transfers powerfully across capitalist institutions and historical situations, while remaining materially tied to the ontology of capitalist production.'}
+  {key:'RL',name:'Relational Load',score:'9.32',artifact:'Commodity, money, labour-power, production, machinery, wages, class relation and accumulation remain consequentially linked across different analytical scales.'},
+  {key:'AD',name:'Abstraction Depth',score:'9.17',artifact:'Concrete exchange is repeatedly lifted into value-form, abstract labour, capital and reproduction without abandoning the material phenomena those abstractions must explain.'},
+  {key:'CD',name:'Constraint Density',score:'8.74',artifact:'Logical derivation, historical material, institutional detail and economic relations constrain one another, leaving substantial but not unlimited room for alternative reconstruction.'},
+  {key:'ID',name:'Inferential Distance',score:'9.04',artifact:'The path from ordinary market appearances to surplus-value production and capital reproduction is deeply non-routine and requires sustained reconstruction.'},
+  {key:'IC',name:'Integrative Compression',score:'9.20',artifact:'A comparatively small conceptual architecture reorganizes a vast field of prices, labour, technology, accumulation, class and historical change.'},
+  {key:'GR',name:'Generalization Reach',score:'8.75',artifact:'The structure transfers powerfully across capitalist institutions and historical situations, while remaining materially tied to the ontology of capitalist production.'}
  ]}
  boundaryTitle='Why G, not 3a—or GΩ?'
  boundary={[

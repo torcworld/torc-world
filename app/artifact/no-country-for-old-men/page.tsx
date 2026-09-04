@@ -6,7 +6,7 @@ export default function Page(){return <ArtifactAnalysis
  creator='Joel & Ethan Coen'
  order='3b'
  orderName='Fractured recursive consciousness'
- cms={765}
+ cms={758}
  range='Production CMS'
  headline='Bell cannot keep the violence outside the position from which he judges it.'
  analysis={[
@@ -15,12 +15,12 @@ export default function Page(){return <ArtifactAnalysis
   'That self-implication is the 3b operation. Bell is not simply unable to solve the external problem. The position from which he has been trying to understand the problem becomes part of the fracture itself.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'8.0',artifact:'Bell, Moss and Chigurh form an interdependent structure linking law, chance, violence, competence, age and historical interpretation.'},
-  {key:'AD',name:'Abstraction Depth',score:'7.3',artifact:'The crime narrative repeatedly opens into questions of moral order, historical change and the limits of inherited categories without leaving the concrete drama behind.'},
-  {key:'CD',name:'Constraint Density',score:'8.2',artifact:'Procedural detail, pursuit logic, character knowledge, symbolic recurrence and moral structure tightly restrict how the film can sustain its governing fracture.'},
-  {key:'ID',name:'Inferential Distance',score:'7.4',artifact:'The viewer must move beyond the apparent chase narrative to reconstruct Bell’s displacement as the deeper organizing problem.'},
-  {key:'IC',name:'Integrative Compression',score:'8.4',artifact:'A small number of recurring structures—coin tosses, pursuit, inherited law, failed control and the displaced showdown—organize a large field of meaning with exceptional economy.'},
-  {key:'GR',name:'Generalization Reach',score:'6.6',artifact:'The architecture transfers strongly to questions of aging, institutional authority and historical disorientation, while remaining substantially tied to its moral and narrative field.'}
+  {key:'RL',name:'Relational Load',score:'7.80',artifact:'Bell, Moss and Chigurh form an interdependent structure linking law, chance, violence, competence, age and historical interpretation.'},
+  {key:'AD',name:'Abstraction Depth',score:'7.38',artifact:'The crime narrative repeatedly opens into questions of moral order, historical change and the limits of inherited categories without leaving the concrete drama behind.'},
+  {key:'CD',name:'Constraint Density',score:'7.93',artifact:'Procedural detail, pursuit logic, character knowledge, symbolic recurrence and moral structure tightly restrict how the film can sustain its governing fracture.'},
+  {key:'ID',name:'Inferential Distance',score:'7.38',artifact:'The viewer must move beyond the apparent chase narrative to reconstruct Bell’s displacement as the deeper organizing problem.'},
+  {key:'IC',name:'Integrative Compression',score:'8.20',artifact:'A small number of recurring structures—coin tosses, pursuit, inherited law, failed control and the displaced showdown—organize a large field of meaning with exceptional economy.'},
+  {key:'GR',name:'Generalization Reach',score:'6.79',artifact:'The architecture transfers strongly to questions of aging, institutional authority and historical disorientation, while remaining substantially tied to its moral and narrative field.'}
  ]}
  boundaryTitle='Why 3b, not Level 2 or 3c?'
  boundary={[

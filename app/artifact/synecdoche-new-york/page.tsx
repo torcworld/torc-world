@@ -7,7 +7,7 @@ export default function Page(){return <ArtifactAnalysis
  creator='Charlie Kaufman'
  order='3b'
  orderName='Fractured recursive consciousness'
- cms={863}
+ cms={858}
  range='Median across 10 evaluations'
  headline='The representation fails because the representer keeps entering the thing he is trying to represent.'
  analysis={[
@@ -16,12 +16,12 @@ export default function Page(){return <ArtifactAnalysis
   'TORC therefore places the film at 3b rather than treating its recursion as stylistic cleverness. The governing contradiction cannot be repaired from a secure external position because the position of the observer, author and self-model is precisely what the work destabilizes.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'9.1',artifact:'Lives, actors, roles, memories, spaces, time layers and representations acquire recursively consequential counterparts.'},
-  {key:'AD',name:'Abstraction Depth',score:'8.9',artifact:'The film moves from theatre representing life to representation representing its own representational process while preserving concrete personal stakes.'},
-  {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Identity, chronology, casting, memory, mortality and nested performance constrain one another across an unusually narrow viable construction.'},
-  {key:'ID',name:'Inferential Distance',score:'8.8',artifact:'The viewer must reconstruct how apparent duplication, substitution and temporal distortion belong to one self-implicating representational problem.'},
-  {key:'IC',name:'Integrative Compression',score:'8.6',artifact:'The film integrates enormous recursive complexity, though often through deliberate proliferation rather than extreme economy.'},
-  {key:'GR',name:'Generalization Reach',score:'7.5',artifact:'Its architecture transfers strongly to problems of self-representation, authorship, identity and mortality without becoming a domain-independent explanatory mechanism.'}
+  {key:'RL',name:'Relational Load',score:'9.02',artifact:'Lives, actors, roles, memories, spaces, time layers and representations acquire recursively consequential counterparts.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.88',artifact:'The film moves from theatre representing life to representation representing its own representational process while preserving concrete personal stakes.'},
+  {key:'CD',name:'Constraint Density',score:'8.68',artifact:'Identity, chronology, casting, memory, mortality and nested performance constrain one another across an unusually narrow viable construction.'},
+  {key:'ID',name:'Inferential Distance',score:'8.60',artifact:'The viewer must reconstruct how apparent duplication, substitution and temporal distortion belong to one self-implicating representational problem.'},
+  {key:'IC',name:'Integrative Compression',score:'8.80',artifact:'The film integrates enormous recursive complexity, though often through deliberate proliferation rather than extreme economy.'},
+  {key:'GR',name:'Generalization Reach',score:'7.43',artifact:'Its architecture transfers strongly to problems of self-representation, authorship, identity and mortality without becoming a domain-independent explanatory mechanism.'}
  ]}
  boundaryTitle='Why 3b, not 3c?'
  boundary={[

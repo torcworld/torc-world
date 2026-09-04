@@ -7,7 +7,7 @@ export default function Page(){return <ArtifactAnalysis
  creator='Quentin Tarantino'
  order='2'
  orderName='Symbolic consciousness'
- cms={787}
+ cms={765}
  range='Median across 10 evaluations'
  headline='The chronology is broken. The film’s orientation toward reality is not.'
  analysis={[
@@ -16,12 +16,12 @@ export default function Page(){return <ArtifactAnalysis
   'TORC therefore keeps the film at Level 2. Its achievement is extraordinarily dense symbolic construction: sequence, repetition, dialogue, coincidence, genre expectation and moral contrast are coordinated so that chronology becomes an instrument of meaning rather than a mere puzzle.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'8.6',artifact:'Remote episodes, character trajectories, recurring dialogue and the diner frame remain consequentially linked despite the fractured chronology.'},
-  {key:'AD',name:'Abstraction Depth',score:'6.9',artifact:'The film supports abstraction around fate, violence, choice and redemption, but those relations remain close to concrete narrative situations rather than sustained meta-representational structures.'},
-  {key:'CD',name:'Constraint Density',score:'8.8',artifact:'Temporal order, character knowledge, callbacks, tonal shifts and causal legibility sharply restrict how the stories can be rearranged without breaking the whole.'},
-  {key:'ID',name:'Inferential Distance',score:'7.8',artifact:'The viewer must reconstruct chronology and moral contrast from dispersed scenes, but the inferential field remains bounded and recoverable.'},
-  {key:'IC',name:'Integrative Compression',score:'8.7',artifact:'Three major storylines are made to function as one architecture through a small set of crossings, repetitions and mirrored choices.'},
-  {key:'GR',name:'Generalization Reach',score:'6.4',artifact:'The construction transfers to problems of narrative order, choice and consequence, but remains strongly tied to its genre and social world.'}
+  {key:'RL',name:'Relational Load',score:'8.28',artifact:'Remote episodes, character trajectories, recurring dialogue and the diner frame remain consequentially linked despite the fractured chronology.'},
+  {key:'AD',name:'Abstraction Depth',score:'6.86',artifact:'The film supports abstraction around fate, violence, choice and redemption, but those relations remain close to concrete narrative situations rather than sustained meta-representational structures.'},
+  {key:'CD',name:'Constraint Density',score:'8.40',artifact:'Temporal order, character knowledge, callbacks, tonal shifts and causal legibility sharply restrict how the stories can be rearranged without breaking the whole.'},
+  {key:'ID',name:'Inferential Distance',score:'7.51',artifact:'The viewer must reconstruct chronology and moral contrast from dispersed scenes, but the inferential field remains bounded and recoverable.'},
+  {key:'IC',name:'Integrative Compression',score:'8.45',artifact:'Three major storylines are made to function as one architecture through a small set of crossings, repetitions and mirrored choices.'},
+  {key:'GR',name:'Generalization Reach',score:'6.40',artifact:'The construction transfers to problems of narrative order, choice and consequence, but remains strongly tied to its genre and social world.'}
  ]}
  boundaryTitle='Why Level 2, not Level 3?'
  boundary={[

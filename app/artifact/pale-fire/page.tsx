@@ -7,7 +7,7 @@ export default function Page(){return <ArtifactAnalysis
  creator='Vladimir Nabokov'
  order='3b'
  orderName='Fractured recursive consciousness'
- cms={887}
+ cms={865}
  range='Median across 10 evaluations'
  headline='Interpretation does not uncover the object. It begins to manufacture the object it claims to explain.'
  analysis={[
@@ -16,12 +16,12 @@ export default function Page(){return <ArtifactAnalysis
   'That is why TORC stops treating the novel as merely metafictional. Its governing operation is not that texts refer to other texts. It is that interpretation becomes causally entangled with the reality interpretation is supposed to recover.'
  ]}
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'9.2',artifact:'Poem, commentary, biography, chronology, invented geography, cross-reference and index remain mutually consequential rather than merely adjacent.'},
-  {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'The novel repeatedly moves from represented events to interpretation of representation and then to the conditions under which interpretation itself constructs reality.'},
-  {key:'CD',name:'Constraint Density',score:'9.2',artifact:'Cross-references, chronology, textual echoes, competing identities and documentary claims sharply restrict how any local passage can be read.'},
-  {key:'ID',name:'Inferential Distance',score:'8.9',artifact:'The reader must reconstruct Shade, Kinbote, Zembla and their relations from a deliberately contaminated evidentiary field.'},
-  {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'An extraordinary amount of narrative and epistemic structure is encoded in the relation among a poem and the apparatus ostensibly explaining it.'},
-  {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'The architecture transfers strongly to interpretation, commentary, authorship and unreliable mediation without becoming a broadly external explanatory mechanism.'}
+  {key:'RL',name:'Relational Load',score:'8.99',artifact:'Poem, commentary, biography, chronology, invented geography, cross-reference and index remain mutually consequential rather than merely adjacent.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.80',artifact:'The novel repeatedly moves from represented events to interpretation of representation and then to the conditions under which interpretation itself constructs reality.'},
+  {key:'CD',name:'Constraint Density',score:'8.93',artifact:'Cross-references, chronology, textual echoes, competing identities and documentary claims sharply restrict how any local passage can be read.'},
+  {key:'ID',name:'Inferential Distance',score:'8.62',artifact:'The reader must reconstruct Shade, Kinbote, Zembla and their relations from a deliberately contaminated evidentiary field.'},
+  {key:'IC',name:'Integrative Compression',score:'9.10',artifact:'An extraordinary amount of narrative and epistemic structure is encoded in the relation among a poem and the apparatus ostensibly explaining it.'},
+  {key:'GR',name:'Generalization Reach',score:'7.50',artifact:'The architecture transfers strongly to interpretation, commentary, authorship and unreliable mediation without becoming a broadly external explanatory mechanism.'}
  ]}
  boundaryTitle='Why 3b, not 3c—or G?'
  boundary={[

@@ -6,15 +6,15 @@ export default function Page(){return <ArtifactAnalysis
  creator='David Fincher / Aaron Sorkin'
  order='2'
  orderName='Symbolic consciousness'
- cms={777}
+ cms={760}
  range='Median of latest 10-evaluation production cohort'
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'8.1',artifact:'Friendship, status, authorship, ownership, testimony and legal conflict remain densely interrelated across the film’s fractured chronology.'},
-  {key:'AD',name:'Abstraction Depth',score:'7.2',artifact:'Concrete interpersonal conflicts are organized through broader structures of status, ownership, recognition and mediated social identity.'},
-  {key:'CD',name:'Constraint Density',score:'8.3',artifact:'The screenplay tightly coordinates chronology, testimony, character motivation, legal framing and repeated events seen from competing positions.'},
-  {key:'ID',name:'Inferential Distance',score:'7.7',artifact:'The viewer must reconstruct motives and causal relations across conflicting accounts, though the governing dramatic conclusions remain comparatively recoverable.'},
-  {key:'IC',name:'Integrative Compression',score:'8.4',artifact:'A compact deposition-and-flashback architecture organizes a large field of interpersonal, legal and technological conflict.'},
-  {key:'GR',name:'Generalization Reach',score:'6.8',artifact:'Its architecture reaches beyond the immediate events into status and mediated social relations, but transfer remains bounded compared with the highest-scoring artifacts.'},
+  {key:'RL',name:'Relational Load',score:'7.95',artifact:'Friendship, status, authorship, ownership, testimony and legal conflict remain densely interrelated across the film’s fractured chronology.'},
+  {key:'AD',name:'Abstraction Depth',score:'7.04',artifact:'Concrete interpersonal conflicts are organized through broader structures of status, ownership, recognition and mediated social identity.'},
+  {key:'CD',name:'Constraint Density',score:'8.20',artifact:'The screenplay tightly coordinates chronology, testimony, character motivation, legal framing and repeated events seen from competing positions.'},
+  {key:'ID',name:'Inferential Distance',score:'7.43',artifact:'The viewer must reconstruct motives and causal relations across conflicting accounts, though the governing dramatic conclusions remain comparatively recoverable.'},
+  {key:'IC',name:'Integrative Compression',score:'8.29',artifact:'A compact deposition-and-flashback architecture organizes a large field of interpersonal, legal and technological conflict.'},
+  {key:'GR',name:'Generalization Reach',score:'6.62',artifact:'Its architecture reaches beyond the immediate events into status and mediated social relations, but transfer remains bounded compared with the highest-scoring artifacts.'},
  ]}
  headline='Recursive form is not the same thing as recursive consciousness.'
  analysis={[

@@ -6,15 +6,15 @@ export default function Page(){return <ArtifactAnalysis
  creator='Nicolaus Copernicus'
  order='GΩ'
  orderName='Generative consciousness — successor-baseline necessity'
- cms={908}
+ cms={898}
  range='Production CMS across repeated evaluations'
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'9.0',artifact:'Coordinates planetary appearances, orbital ordering, terrestrial motion and observational standpoint within one interdependent astronomical architecture.'},
-  {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'Moves from observed celestial appearances to a deeper relational model in which the observer’s own motion becomes explanatory.'},
-  {key:'CD',name:'Constraint Density',score:'9.3',artifact:'The construction must jointly preserve observed planetary phenomena, ordering, periodicity and geometric coherence under a relocated center.'},
-  {key:'ID',name:'Inferential Distance',score:'9.3',artifact:'Reconstructing apparently geocentric motion from a moving terrestrial standpoint requires a major non-routine explanatory transformation.'},
-  {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'A single heliocentric organization compresses a wide family of celestial appearances without treating each as an isolated anomaly.'},
-  {key:'GR',name:'Generalization Reach',score:'8.8',artifact:'The relocated architecture transfers broadly across planetary astronomy while remaining primarily within its native astronomical problem-space.'},
+  {key:'RL',name:'Relational Load',score:'8.76',artifact:'Coordinates planetary appearances, orbital ordering, terrestrial motion and observational standpoint within one interdependent astronomical architecture.'},
+  {key:'AD',name:'Abstraction Depth',score:'8.95',artifact:'Moves from observed celestial appearances to a deeper relational model in which the observer’s own motion becomes explanatory.'},
+  {key:'CD',name:'Constraint Density',score:'9.15',artifact:'The construction must jointly preserve observed planetary phenomena, ordering, periodicity and geometric coherence under a relocated center.'},
+  {key:'ID',name:'Inferential Distance',score:'9.23',artifact:'Reconstructing apparently geocentric motion from a moving terrestrial standpoint requires a major non-routine explanatory transformation.'},
+  {key:'IC',name:'Integrative Compression',score:'9.09',artifact:'A single heliocentric organization compresses a wide family of celestial appearances without treating each as an isolated anomaly.'},
+  {key:'GR',name:'Generalization Reach',score:'8.76',artifact:'The relocated architecture transfers broadly across planetary astronomy while remaining primarily within its native astronomical problem-space.'},
  ]}
  headline='The Earth stops being the place from which the heavens must be explained.'
  analysis={[
