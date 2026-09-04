@@ -17,7 +17,7 @@ export default function TorcNav(){
       <Link className={`${styles.mainLink} ${active('/artifacts')?styles.activeLink:''}`} aria-current={active('/artifacts')?'page':undefined} href="/artifacts">Artifacts</Link>
       <Link className={`${styles.mainLink} ${active('/theory')?styles.activeLink:''}`} aria-current={active('/theory')?'page':undefined} href="/theory">Theory</Link>
       <Link className={`${styles.submitLink} ${active('/evaluate-your-work')?styles.activeLink:''}`} aria-current={active('/evaluate-your-work')?'page':undefined} href="/evaluate-your-work#pricing">Submit Your Artifact</Link>
-      <Link className={styles.orgLink} href="/for-organizations">Organizations</Link>
+      <Link className={`${styles.orgLink} ${active('/for-organizations')?styles.orgActive:''}`} aria-current={active('/for-organizations')?'page':undefined} href="/for-organizations">Organizations</Link>
     </div>
   </nav>;
 }
