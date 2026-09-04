@@ -1,12 +1,11 @@
-# TORC Artifacts — top-frame micro balance
+# TORC Artifacts — inner width alignment
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
 
-Changes:
-- Keeps the approved left/right hero spacing unchanged.
-- Adds 1.5mm more light-brown breathing room above the charcoal Artifacts hero.
-- Shortens the charcoal hero by the same 1.5mm so the lower edge stays essentially in place.
-- Shortens the thin black rule beneath the hero so it aligns visually with the search/filter control width rather than spanning the full gray hero.
-- Moves that rule 1mm farther down.
-- Does not change Compare, pagination, Operational Order, artifact rows, or search/filter layout.
+Desktop changes:
+- The four search/filter controls now use the same overall width as the Operational Order strip and artifact field.
+- Search is therefore less overlong and the complete internal composition shares one clean left/right reading line.
+- The black rule beneath the top charcoal hero is shortened to that same width.
+- That rule is moved another 1.5mm downward for slightly more breathing room from the gray field.
+- No changes to Compare, pagination, artifact rows, Operational Order behavior, or hero side spacing.

@@ -764,3 +764,25 @@
     bottom:-3mm!important;
   }
 }
+
+
+/* 2026-09-04 — align the internal instrument widths.
+   Desktop only: Search / Sort / Medium / Operational Order now share the
+   same left/right reading line as the Operational Order archive strip and
+   the artifact field beneath it. */
+@media(min-width:761px){
+  .tools{
+    margin-left:62px!important;
+    margin-right:62px!important;
+  }
+
+  /* The rule beneath the charcoal hero now lands on exactly the same
+     horizontal reading line as the controls below. */
+  .hero::after{
+    left:calc(34px - 2mm)!important;
+    right:calc(34px - 2mm)!important;
+
+    /* Add another 1.5mm of air below the charcoal hero. */
+    bottom:-4.5mm!important;
+  }
+}
