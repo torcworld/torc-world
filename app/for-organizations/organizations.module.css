@@ -3049,3 +3049,92 @@
   }
   .closingWorkflow i{display:none}
 }
+
+
+/* 2026-09-04 — diagram accent refinement.
+   Leave the opening card typography alone for now; tighten only the requested
+   red/black accents, statement rhythm, and closing-card spacing. */
+
+/* “WHAT BECOMES VISIBLE” becomes TORC red; action labels use the same real red,
+   not the previous softened/pink treatment. */
+.diagramCore>span{
+  color:#5b2630!important;
+}
+.diagramOutputs b{
+  color:#5b2630!important;
+}
+
+/* Make the outermost analytical circle decisively black. */
+.coreCircle{
+  border-color:#080808!important;
+  border-width:1.5px!important;
+}
+
+/* Remove any burgundy from the outer shell/rules of the continuous composition. */
+.corpusSystem,
+.corpusTransitionBand,
+.corpusVisualBody,
+.intelligenceDiagram,
+.corpusStatement,
+.finalContact{
+  border-left-color:#353432!important;
+  border-right-color:#353432!important;
+}
+.corpusSystem{
+  border-bottom-color:#353432!important;
+}
+.corpusTransitionBand{
+  border-top-color:#353432!important;
+  border-bottom-color:#353432!important;
+}
+.intelligenceDiagram{
+  border-bottom-color:rgba(199,170,118,.42)!important;
+}
+.corpusStatement{
+  border-top-color:#353432!important;
+}
+
+/* Equalize the three-line statement rhythm by moving 50 ARTIFACTS upward:
+   same vertical breathing room above/below the narrow middle line. */
+.corpusStatement strong{
+  gap:0!important;
+}
+.corpusStatement strong span:nth-child(1){
+  margin-bottom:9px!important;
+}
+.corpusStatement strong span:nth-child(2){
+  margin:0 0 9px!important;
+}
+.corpusStatement strong span:nth-child(3){
+  margin:0!important;
+}
+.corpusStatement{
+  padding-top:34px!important;
+  padding-bottom:34px!important;
+}
+
+/* Pull Start with the Corpus upward toward the workflow register. */
+.closingWorkflow{
+  margin-bottom:18px!important;
+  padding-bottom:14px!important;
+}
+.finalContact{
+  padding-top:52px!important;
+}
+
+/* Make the institutional CTA a true TORC-red button. */
+.contactCard a{
+  background:#5b2630!important;
+  color:#f7f4ec!important;
+  border-color:#5b2630!important;
+}
+.contactCard a b{
+  color:#f7f4ec!important;
+}
+.contactCard a:hover,
+.contactCard a:focus-visible{
+  background:#431b23!important;
+  color:#fff!important;
+  border-color:#431b23!important;
+  box-shadow:0 8px 22px rgba(67,27,35,.20)!important;
+}
