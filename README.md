@@ -1,10 +1,15 @@
-# TORC Organizations — Contact TORC CTA
+# TORC for Writers — three-stage process example
 
-Built on the latest Organizations micro-adjustment patch plus the current motherbase page.tsx.
+Base: `Archief(20260904-171307).zip`
 
-Changes only:
-- CORPUS remains white.
-- 50 ARTIFACTS returns to TORC gold.
-- CTA copy becomes `Contact TORC →`.
-- CTA lettering is slightly larger and white; the existing red CTA background remains.
-- Small `contact@torc.world` line below the CTA is removed.
+Only:
+- `app/evaluate-your-work/page.tsx`
+- `app/evaluate-your-work/submit.module.css`
+
+Experiment:
+- Removes `Test again` from the process strip.
+- Keeps `Diagnose`, `Find the gap`, `Intervene`.
+- Centers the three-card composition and makes it slightly narrower than the full content width.
+- Keeps the established light-gold ground.
+- Uses TORC oxblood/red more strongly in borders, headings, key questions and arrows.
+- No pricing, hero, form, navigation, or other page content changed.

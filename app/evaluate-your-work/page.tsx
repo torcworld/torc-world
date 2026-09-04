@@ -22,10 +22,6 @@ export default function SubmitArtifactPage(){
     <h3>Intervene</h3>
     <p><b>What is the smallest change that matters?</b> Find high-leverage interventions that make more of the existing work necessary.</p>
    </div>
-   <div className={styles.processStep}>
-    <h3>Test again</h3>
-    <p><b>Did the work actually change?</b> A revised artifact receives no credit for following the advice. The change has to be demonstrated by the work.</p>
-   </div>
   </section>
 
   <section id="pricing" className={styles.pricing}>

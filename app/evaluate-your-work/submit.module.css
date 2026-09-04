@@ -822,3 +822,39 @@
     top:calc(62px - 1mm - 10mm)!important;
   }
 }
+
+
+/* 2026-09-04 — three-stage TORC for Writers process composition experiment.
+   DIAGNOSE / FIND THE GAP / INTERVENE only. */
+@media(min-width:861px){
+  .process{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    width:calc(100% - 64px)!important;
+    margin:24px auto 0!important;
+    border:2px solid var(--accent)!important;
+    background:#d9c7a6!important;
+  }
+  .processStep{
+    min-height:178px!important;
+    padding:27px 28px 25px!important;
+    background:#d9c7a6!important;
+    border-right:2px solid var(--accent)!important;
+  }
+  .processStep:last-child{
+    border-right:0!important;
+  }
+  .processStep h3{
+    color:var(--accent)!important;
+    font-size:30px!important;
+  }
+  .processStep p{
+    color:#514a42!important;
+  }
+  .processStep p b{
+    color:var(--accent)!important;
+  }
+  .processStep:not(:last-child)::after{
+    background:var(--accent)!important;
+    color:#fff!important;
+  }
+}
