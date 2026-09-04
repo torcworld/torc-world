@@ -1,12 +1,13 @@
-# TORC Organizations — four micro-adjustments
+# TORC Theory — darker gold outside the book
 
 Changed only:
-- `app/for-organizations/organizations.module.css`
+- `app/theory/book/book.module.css`
 
-Exact changes:
-1. Small `CORPUS` label above the artifact dots -> pure white.
-2. Only `SHOULD PRODUCE MORE THAN` in the gold statement -> 1 mm downward.
-3. `contact@torc.world` -> darker gold `#b7955d`.
-4. Text/arrow inside the red institutional CTA -> darker gold `#b7955d`.
+Exact experiment on the Theory landing page:
+- Gold surrounding the large charcoal hero -> darker gold `#b7955d`.
+- Lower gold field -> darker gold `#b7955d`.
+- `THE AGE OF FALSE DEPTH` hero title -> darker gold `#b7955d`.
+- `READ THE BOOK` button background -> darker gold `#b7955d`.
+- The physical book itself is explicitly preserved in its existing lighter/yellower cover color (`#b99b66` and its existing gradients/shadows).
 
-No other layout, spacing, colors, borders, or content changed.
+No layout, spacing, copy, book geometry, charcoal, or other styling changed.

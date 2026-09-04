@@ -1745,28 +1745,30 @@
   }
 }
 
-/* 2026-09-03 — Theory landing frame trial.
-   Give the complete Theory landing field the same charcoal precision frame
-   language as Artifacts: charcoal side rules and a charcoal rule directly
-   above the thin gold cap. Remove only the short oxblood connector hairs that
-   previously reached upward toward the translucent navigation rule. */
-@media(min-width:761px){
-  .bookLanding{
-    border-left:1px solid #353432!important;
-    border-right:1px solid #353432!important;
-    border-top:1px solid #353432!important;
-  }
-  .bookLanding::before{
-    display:none!important;
-  }
+
+/* 2026-09-04 — Theory landing: darker gold outside the book only.
+   The physical book itself is intentionally untouched. */
+.bookLanding{
+  background:#b7955d!important;
 }
 
-/* 2026-09-03 — Theory landing bottom closure.
-   Complete the charcoal precision frame at the bottom and leave a narrow strip
-   of normal site ground below the field, echoing the breathing room above. */
-@media(min-width:761px){
-  .bookLanding{
-    border-bottom:1px solid #353432!important;
-    margin-bottom:3mm!important;
-  }
+.bookLanding .bookInvitation{
+  background:#b7955d!important;
+}
+
+.bookLanding .manifestTitle h1{
+  color:#b7955d!important;
+}
+
+.bookLanding .invitationCopy .readCta{
+  background:#b7955d!important;
+}
+
+/* Preserve the existing lighter/yellower physical book exactly. */
+.bookLanding .closedBook{
+  background:
+    linear-gradient(105deg,rgba(78,59,34,.28),transparent 10%),
+    radial-gradient(circle at 28% 18%,rgba(255,255,255,.12),transparent 25%),
+    repeating-linear-gradient(13deg,rgba(50,37,23,.035) 0 1px,transparent 1px 7px),
+    #b99b66!important;
 }
