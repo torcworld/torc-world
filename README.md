@@ -1,9 +1,10 @@
-# TORC Artifacts — Compare spacing correction
+# TORC Artifacts — Compare block 4mm upward
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
 
 Change:
-- Corrects the Compare Artifacts section upward, not downward.
-- Sets the gap below the pagination to 20px so it visually matches the approximately 20px spacing between the pagination and the black rule above it.
-- Preserves all row dividers, Operational Order toggle behavior, side spacing, and frame restoration from the previous patch.
+- Moves the entire charcoal Compare Artifacts block exactly 4mm upward toward the pagination.
+- Does not increase or decrease the height of the gray/charcoal block.
+- Does not change its internal padding.
+- All previous Artifacts refinements remain intact.

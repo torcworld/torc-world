@@ -676,3 +676,11 @@
 .compareSection{
   margin-top:20px!important;
 }
+
+
+/* 2026-09-04 — explicit final Compare position correction.
+   Move the ENTIRE charcoal Compare Artifacts block 4mm upward toward the
+   pagination. Do not change the block's height or internal padding. */
+.compareSection{
+  transform:translateY(-4mm)!important;
+}
