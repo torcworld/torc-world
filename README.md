@@ -1,10 +1,9 @@
-# TORC Organizations — all light text pure white
+# TORC Artifacts — darker gold whole-page test
 
 Changed only:
-- `app/for-organizations/organizations.module.css`
+- `app/artifacts/artifacts-overhaul.module.css`
 
-Changes:
-- All existing light typography on the charcoal/dark Organizations sections, including the upper page, is forced to pure white `#fff`.
-- Dark text on the gold transition/statement bands remains charcoal `#171714`.
-- The darker gold `#b7955d` remains unchanged.
-- No layout, spacing, sizing, or structure is changed.
+Color-only experiment:
+- Gold-family styling across the Artifacts page is unified to the same darker Organizations test gold: `#b7955d`.
+- Neutral site ground, cream, charcoal, burgundy/red, layout, spacing, borders, and behavior are unchanged.
+- This patch is based on the current pyramid-rule Artifacts state.
