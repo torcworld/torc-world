@@ -1,10 +1,9 @@
-# TORC Organizations — vertical breathing room
+# TORC Organizations — charcoal bottom refinement
 
-Base: `Archief(20260904-171307).zip`
+Built on the previous vertical-breathing-room patch.
 
-Changed only `app/for-organizations/organizations.module.css`.
-
-- “From volume to actionable intelligence.” gold band: +5 mm top and +5 mm bottom.
-- Charcoal diagram field: bottom padding 30 px -> 36 px, matching its existing 36 px top padding.
-- “50 artifacts…” gold field: +5 mm top and +5 mm bottom.
-- No colors, widths, diagram geometry, text positions, or other sections changed.
+Changed only `app/for-organizations/organizations.module.css`:
+- Diagram charcoal field: existing 36 px bottom space + 4 mm.
+- Removed the faint gold/brown bottom rule under the diagram.
+- Lowest charcoal field: existing 30 px top padding + exactly 3 mm.
+- Nothing else changed.

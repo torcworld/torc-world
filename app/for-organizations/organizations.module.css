@@ -3434,3 +3434,17 @@
   padding-top:calc(34px + 5mm)!important;
   padding-bottom:calc(34px + 5mm)!important;
 }
+
+
+/* 2026-09-04 — Organizations charcoal-field refinements. */
+
+/* More charcoal below the circle/diagram: extend the existing 36px bottom space by 4mm. */
+.intelligenceDiagram{
+  padding-bottom:calc(36px + 4mm)!important;
+  border-bottom:0!important;
+}
+
+/* Lowest charcoal field: preserve its existing 30px top padding and add exactly 3mm. */
+.finalContact{
+  padding-top:calc(30px + 3mm)!important;
+}
