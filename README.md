@@ -1,9 +1,9 @@
-# TORC Artifacts — hero rule matches filter row
+# TORC Artifacts — hero rule 2mm shorter per side
 
 Changed only:
 - `app/artifacts/artifacts-overhaul.module.css`
 
 Change:
-- Only the thin black line beneath the charcoal Artifacts hero is adjusted.
-- Its endpoints align with the complete four-control filter row.
-- Vertical spacing and every other element remain unchanged.
+- The black rule beneath the gray/charcoal hero is shortened by exactly 2mm on the left and 2mm on the right (4mm total).
+- Its vertical position is unchanged.
+- No other element, spacing, width, or behavior is changed.

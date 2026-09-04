@@ -788,12 +788,11 @@
 }
 
 
-/* 2026-09-04 — line-width experiment.
-   Only the black rule beneath the charcoal hero: align it exactly with the
-   complete four-control filter row. */
+/* 2026-09-04 — hero-rule width test.
+   Exactly 2mm shorter on each side; nothing else changes. */
 @media(min-width:761px){
   .hero::after{
-    left:calc(34px - 2mm)!important;
-    right:calc(34px - 2mm)!important;
+    left:34px!important;
+    right:34px!important;
   }
 }
