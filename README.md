@@ -1,9 +1,10 @@
-# TORC Theory — 5 mm site-ground strip below reader
+# TORC Theory — visible 5 mm site-background strip
 
-Changed only:
-- `app/theory/book/book.module.css`
+Changed only the bottom finish of the opened Theory reader.
 
-Exact change:
-- Adds 5 mm bottom space after the full reading composition so the normal website background remains visible as a narrow strip.
-- All previous Theory changes are preserved.
+Correction:
+- Removed reliance on `margin-bottom`, because that did not reveal the website background.
+- Added an actual rendered 5 mm strip after the complete reader composition.
+- Strip uses the site's own `var(--bg)` background color.
+- All prior Theory framing and top-gold changes are preserved.
 - Nothing else changed.

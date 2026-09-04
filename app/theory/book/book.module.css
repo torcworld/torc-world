@@ -1835,8 +1835,19 @@
 }
 
 
-/* 2026-09-04 — exact requested bottom breathing room.
-   Leave 5 mm of the normal site background visible below the full Theory composition. */
+/* 2026-09-04 — visible site-background strip below the complete reader.
+   Use an actual rendered strip rather than margin, because the page itself carries
+   the surrounding background and a margin alone does not reveal the site ground. */
 .readingPage{
-  margin-bottom:5mm!important;
+  margin-bottom:0!important;
+}
+
+.readingPage::after{
+  content:""!important;
+  display:block!important;
+  width:100%!important;
+  height:5mm!important;
+  margin-top:0!important;
+  background:var(--bg)!important;
+  border:0!important;
 }
