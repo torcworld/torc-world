@@ -1,24 +1,14 @@
-TORC v1.6.4 cumulative reaggregation — corrected patch
+TORC v1.6.4 — Kant + Nāgārjuna analysis correction
 
-Removes from public corpus:
-- War and Peace
-- Romans
-- Dependent Arising
-- Genius: The Natural History of Creativity
+This incremental patch is intended to be applied after:
+TORC_GOMEGA_V164_CORRECTED_CUMULATIVE_AND_EYSENCK_REMOVAL_PATCH.zip
 
-Corrects the cumulative aggregation of the four former G/GΩ boundary cases.
-Their prior aggregate was already n=23; the new v1.6.4 run adds 6 evaluations, so the correct cumulative CMS/dimension base is n=29, not the smaller website snapshot.
+Changes only the two dedicated analysis pages whose old GΩ presentation overrode the corrected corpus data:
+- Critique of Pure Reason — GΩ → G; CMS 935; dimensions 9.3 / 9.8 / 9.2 / 9.5 / 9.4 / 9.0; analysis rewritten to distinguish intrinsic G relocation from unconfirmed Ω successor-baseline necessity.
+- Fundamental Verses on the Middle Way — GΩ → G; CMS 916; dimensions 8.6 / 9.6 / 9.1 / 9.3 / 9.5 / 8.9; analysis rewritten on the same v1.6.4 basis.
 
-Correct cumulative public values:
-- The Logic of Scientific Discovery — G — CMS 881 — RL 8.5, AD 9.0, CD 8.7, ID 9.0, IC 8.9, GR 8.8
-- The Structure of Scientific Revolutions — G — CMS 870 — RL 8.5, AD 8.8, CD 8.3, ID 8.8, IC 9.0, GR 8.8
-- Critique of Pure Reason — G — CMS 935 — RL 9.3, AD 9.8, CD 9.2, ID 9.5, IC 9.4, GR 9.0
-- Fundamental Verses on the Middle Way — G — CMS 916 — RL 8.6, AD 9.6, CD 9.1, ID 9.3, IC 9.5, GR 8.9
+The obsolete public evaluator-count/range text on Nāgārjuna is replaced with the non-count-specific wording “Observed across repeated evaluations.”
 
-Other confirmed cases from the preceding patch retain their correctly weighted cumulative means.
-Operational Order for the four former boundary cases follows the new v1.6.4 adjudication (6/6 G); old G/GΩ votes from the previous protocol are not pooled into the new-order decision. CMS and dimensions are pooled because their scoring architecture did not change.
+Kuhn and Popper are deliberately untouched: their existing analysis pages already present G rather than GΩ and already use the revised Ω distinction.
 
-Only:
-- lib/artifacts.ts
-- app/artifact/[slug]/featuredAnalyses.ts
-are changed.
+No CSS, layout, navigation, corpus ordering, or unrelated artifact content is changed.
