@@ -1,6 +1,6 @@
 export type Artifact={slug:string;title:string;creator:string;year:string;domain:string;status:'evaluated'|'in-progress';torc?:string;cms?:number;rl?:number;ad?:number;cd?:number;id?:number;ic?:number;gr?:number;summary?:string;why?:string;whyNot?:string};
 export const artifacts:Artifact[]=[
-{slug:'war-and-peace',title:'War and Peace',creator:'Leo Tolstoy',year:'1869',domain:'Literature',status:'evaluated',torc:'G',cms:895,rl:9.6,ad:8.8,cd:8.6,id:8.8,ic:9.2,gr:8.4},
+{slug:'war-and-peace',title:'War and Peace',creator:'Leo Tolstoy',year:'1869',domain:'Literature',status:'evaluated',torc:'G',cms:876,rl:9.5,ad:8.6,cd:8.5,id:8.6,ic:9.0,gr:8.2},
 {slug:'the-great-gatsby',title:'The Great Gatsby',creator:'F. Scott Fitzgerald',year:'1925',domain:'Literature',status:'evaluated',torc:'2',cms:754,rl:7.58,ad:7.39,cd:7.74,id:7.04,ic:8.28,gr:6.83},
 {slug:'the-white-ribbon',title:'The White Ribbon',creator:'Michael Haneke',year:'2009',domain:'Film',status:'evaluated',torc:'3a',cms:798,rl:8.20,ad:7.73,cd:8.15,id:7.73,ic:8.35,gr:7.04},
 {slug:'the-lobster',title:'The Lobster',creator:'Yorgos Lanthimos',year:'2015',domain:'Film',status:'evaluated',torc:'2',cms:736,rl:7.4,ad:7.2,cd:7.6,id:6.9,ic:7.7,gr:6.7},
@@ -21,7 +21,7 @@ export const artifacts:Artifact[]=[
 {slug:'dependent-arising',title:'Dependent Arising',creator:'Kaccānagotta Sutta · SN 12.15',year:'Early Buddhist canon',domain:'Scripture',status:'evaluated',torc:'G',cms:816,rl:7.2,ad:8.5,cd:7.7,id:8.1,ic:8.8,gr:8.3},
 {slug:'copernicus-de-revolutionibus',title:'De revolutionibus',creator:'Nicolaus Copernicus',year:'1543',domain:'Science',status:'evaluated',torc:'GΩ',cms:898,rl:8.76,ad:8.95,cd:9.15,id:9.23,ic:9.09,gr:8.76},
 {slug:'no-country-for-old-men',title:'No Country for Old Men',creator:'Joel & Ethan Coen',year:'2007',domain:'Film',status:'evaluated',torc:'3b',cms:758,rl:7.80,ad:7.38,cd:7.93,id:7.38,ic:8.20,gr:6.79},
-{slug:'philosophiae-naturalis-principia-mathematica',title:'Principia Mathematica',creator:'Isaac Newton',year:'1687',domain:'Science',status:'evaluated',torc:'GΩ',cms:982,rl:9.7,ad:9.7,cd:9.9,id:9.9,ic:9.9,gr:9.8},
+{slug:'philosophiae-naturalis-principia-mathematica',title:'Philosophiæ Naturalis Principia Mathematica (Mathematical Principles of Natural Philosophy)',creator:'Isaac Newton',year:'1687',domain:'Science',status:'evaluated',torc:'GΩ',cms:976,rl:9.6,ad:9.6,cd:9.9,id:9.9,ic:9.9,gr:9.7},
 {slug:'die-grundlage-der-allgemeinen-relativitatstheorie',title:'General Relativity',creator:'Albert Einstein',year:'1916',domain:'Science',status:'evaluated',torc:'GΩ',cms:958,rl:8.99,ad:9.81,cd:9.81,id:9.79,ic:9.73,gr:9.34},
 {slug:'on-the-origin-of-species',title:'On the Origin of Species',creator:'Charles Darwin',year:'1859',domain:'Science',status:'evaluated',torc:'GΩ',cms:934,rl:9.37,ad:8.93,cd:9.17,id:9.51,ic:9.52,gr:9.52},
 {slug:'critique-of-pure-reason',title:'Critique of Pure Reason',creator:'Immanuel Kant',year:'1781 / 1787',domain:'Philosophy',status:'evaluated',torc:'GΩ',cms:950,rl:9.5,ad:10.0,cd:9.4,id:9.6,ic:9.8,gr:8.7},
@@ -40,7 +40,7 @@ export const artifacts:Artifact[]=[
 {slug:'everything-everywhere-all-at-once',title:'Everything Everywhere All at Once',creator:'Daniel Kwan & Daniel Scheinert',year:'2022',domain:'Film',status:'evaluated',torc:'3c',cms:843,rl:8.8,ad:8.4,cd:8.7,id:8.1,ic:8.8,gr:7.6},
 {slug:'the-structure-of-scientific-revolutions',title:'The Structure of Scientific Revolutions',creator:'Thomas S. Kuhn',year:'1962',domain:'Science',status:'evaluated',torc:'GΩ',cms:910,rl:9.0,ad:9.3,cd:8.8,id:9.2,ic:9.4,gr:9.1},
 {slug:'beloved',title:'Beloved',creator:'Toni Morrison',year:'1987',domain:'Literature',status:'evaluated',torc:'3c',cms:870,rl:9.0,ad:8.8,cd:8.7,id:8.6,ic:9.1,gr:8.2},
-{slug:'the-metamorphosis',title:'The Metamorphosis',creator:'Franz Kafka',year:'1915',domain:'Literature',status:'evaluated',torc:'2',cms:760,rl:7.3,ad:7.7,cd:7.8,id:7.3,ic:8.2,gr:7.0},
+{slug:'the-metamorphosis',title:'The Metamorphosis',creator:'Franz Kafka',year:'1915',domain:'Literature',status:'evaluated',torc:'2',cms:727,rl:7.1,ad:7.3,cd:7.3,id:7.0,ic:7.9,gr:6.8},
 {slug:'the-godfather',title:'The Godfather',creator:'Francis Ford Coppola',year:'1972',domain:'Film',status:'evaluated',torc:'2',cms:793,rl:8.5,ad:7.1,cd:8.6,id:7.6,ic:8.6,gr:7.0},
 {slug:'the-magic-mountain',title:'The Magic Mountain',creator:'Thomas Mann',year:'1924',domain:'Literature',status:'evaluated',torc:'3c',cms:863,rl:9.0,ad:9.0,cd:8.6,id:8.4,ic:9.0,gr:8.0,summary:'A close 3b/3c boundary resolved at 3c.'},
 {slug:'thus-spoke-zarathustra',title:'Thus Spoke Zarathustra',creator:'Friedrich Nietzsche',year:'1883–1885',domain:'Philosophy',status:'evaluated',torc:'3c',cms:840,rl:8.3,ad:9.1,cd:7.7,id:8.4,ic:8.7,gr:8.2},
