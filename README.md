@@ -1,6 +1,1 @@
-# TORC Artifacts - Integrated 28-approved update
-
-Correction: the website displays all six dimension scores with exactly one decimal.
-CMS remains a whole number. Operational Orders remain unchanged.
-A Clockwork Orange and Solaris remain removed.
-No analysis prose, styling, ordering, or unrelated values changed.
+Nine unanimous artifacts: website n=10 + new n=10 = n=20. CMS whole number; six dimensions one decimal. Operational Order unchanged. A Clockwork Orange and Solaris remain removed. No unrelated edits.

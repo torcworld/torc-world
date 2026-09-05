@@ -7,14 +7,14 @@ export default function Page(){return <ArtifactAnalysis
  creator='New Testament'
  order='2'
  orderName='Symbolic consciousness'
- cms={823}
+ cms={808}
  range='Median of 15 evaluations · range 747–855'
  dimensions={[
-  {key:'RL',name:'Relational Load',score:'8.7',artifact:'Logos, signs, testimony, misunderstanding, belief, identity and recurring motifs remain tightly interdependent across the Gospel.'},
+  {key:'RL',name:'Relational Load',score:'8.3',artifact:'Logos, signs, testimony, misunderstanding, belief, identity and recurring motifs remain tightly interdependent across the Gospel.'},
   {key:'AD',name:'Abstraction Depth',score:'8.2',artifact:'Concrete events repeatedly become vehicles for theological structures such as life, light, incarnation, above/below and seeing/believing.'},
-  {key:'CD',name:'Constraint Density',score:'8.0',artifact:'Signs, scripture, testimony, chronology and the identity claims surrounding Jesus place substantial simultaneous demands on the symbolic architecture.'},
-  {key:'ID',name:'Inferential Distance',score:'7.8',artifact:'The reader repeatedly moves from literal or immediate events to higher theological readings, though the Gospel usually supplies the interpretive destination.'},
-  {key:'IC',name:'Integrative Compression',score:'8.6',artifact:'A compact symbolic vocabulary organizes narrative, theology, identity, recognition, death and resurrection with unusually high economy.'},
+  {key:'CD',name:'Constraint Density',score:'7.9',artifact:'Signs, scripture, testimony, chronology and the identity claims surrounding Jesus place substantial simultaneous demands on the symbolic architecture.'},
+  {key:'ID',name:'Inferential Distance',score:'7.7',artifact:'The reader repeatedly moves from literal or immediate events to higher theological readings, though the Gospel usually supplies the interpretive destination.'},
+  {key:'IC',name:'Integrative Compression',score:'8.5',artifact:'A compact symbolic vocabulary organizes narrative, theology, identity, recognition, death and resurrection with unusually high economy.'},
   {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'The governing symbolism transfers across many kinds of scene and theological problem while remaining largely inside one revelatory world-model.'},
  ]}
  headline='The Gospel reorganizes reality around a revealed identity, but the revealing framework itself never becomes the problem.'
