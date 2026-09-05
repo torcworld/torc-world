@@ -1,1 +1,1 @@
-Five 9/10-consensus artifacts updated from website n=10 + new n=10 = n=20. CMS whole number; six dimensions one decimal. Operational Order unchanged. Built on the integrated approved-28 state plus the previous unanimous-n20 update. No unrelated edits.
+Removes exactly four artifacts from the public corpus: Computing Machinery and Intelligence; The Talented Mr. Ripley; Parasite; Discrimination and Disparities. Dedicated routes are made inaccessible where present. Built on the latest artifact patch chain; no scores, prose, styling, ordering, or other artifacts changed.
