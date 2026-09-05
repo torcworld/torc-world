@@ -36,7 +36,7 @@ function InlineArtifactPicker({label,value,onChange}:{label:string;value:string;
 
 export default function Artifacts(){
  const [domain,setDomain]=useState('All');
- const [torc,setTorc]=useState<string[]>([]);
+ const [torc,setTorc]=useState('All');
  const [query,setQuery]=useState('');
  const [sort,setSort]=useState('explore');
  const [seed,setSeed]=useState(17);
@@ -52,8 +52,7 @@ export default function Artifacts(){
      if(saved){
        const s=JSON.parse(saved);
        if(typeof s.domain==='string')setDomain(s.domain);
-       if(Array.isArray(s.torc))setTorc(s.torc.filter((v:unknown)=>typeof v==='string'));
-       else if(typeof s.torc==='string'&&s.torc!=='All')setTorc([s.torc]);
+       if(typeof s.torc==='string')setTorc(s.torc);
        if(typeof s.query==='string')setQuery(s.query);
        if(typeof s.sort==='string')setSort(s.sort);
        if(typeof s.seed==='number')setSeed(s.seed);
@@ -71,9 +70,10 @@ export default function Artifacts(){
    sessionStorage.setItem('torc-artifacts-state',JSON.stringify({domain,torc,query,sort,seed,pageNumber}));
  },[stateReady,domain,torc,query,sort,seed,pageNumber]);
  const torcs=useMemo(()=>['All',...Array.from(new Set(artifacts.filter(a=>a.status==='evaluated'&&a.torc).map(a=>String(a.torc)))).sort((a,b)=>rank(a)-rank(b))],[ ]);
+ const selectedTorcs=torc==='All'?[]:torc.split('|').filter(Boolean);
  const rows=useMemo(()=>{
    const q=query.trim().toLowerCase();
-   let r=artifacts.filter(a=>(domain==='All'||a.domain===domain)&&(!torc.length||torc.includes(String(a.torc)))&&(!q||[a.title,a.creator,a.domain,a.torc,String(a.cms??'')].join(' ').toLowerCase().includes(q)));
+   let r=artifacts.filter(a=>(domain==='All'||a.domain===domain)&&(!selectedTorcs.length||selectedTorcs.includes(String(a.torc)))&&(!q||[a.title,a.creator,a.domain,a.torc,String(a.cms??'')].join(' ').toLowerCase().includes(q)));
    return [...r].sort((a,b)=>{
      if(sort==='explore') return hash(a.slug,seed)-hash(b.slug,seed);
      if(sort==='cms-desc') return (b.cms??-1)-(a.cms??-1);
@@ -115,13 +115,18 @@ export default function Artifacts(){
    <label className={`artifactSearch ${styles.controlLabel}`}><span>Search the archive</span><input value={query} onChange={e=>{setQuery(e.target.value);setPageNumber(1)}} placeholder="Artifact, creator, medium, order…"/></label>
    <label className={styles.controlLabel}><span>Sort</span><select value={sort} onChange={e=>{setSort(e.target.value);setPageNumber(1)}}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude — highest first</option><option value="cms-asc">Cognitive Magnitude — lowest first</option><option value="torc-desc">Operational Order — high to low</option><option value="torc-asc">Operational Order — low to high</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
    <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>{setDomain(e.target.value);setPageNumber(1)}}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
-   <label className={styles.controlLabel}><span>Operational Order</span><select value={torc.length===1?torc[0]:'All'} onChange={e=>{setTorc(e.target.value==='All'?[]:[e.target.value]);setPageNumber(1)}}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
+   <label className={styles.controlLabel}><span>Operational Order</span><select value={selectedTorcs.length===1?selectedTorcs[0]:'All'} onChange={e=>{setTorc(e.target.value);setPageNumber(1)}}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
 
  <section className={styles.orderStrip} aria-label="Operational Order distribution">
    <div className={styles.orderStripLabel}><span>THE ARCHIVE BY</span><b>Operational Order</b></div>
-   {torcOrder.map(o=>{const count=artifacts.filter(a=>eligible(a)&&String(a.torc).toLowerCase()===o.toLowerCase()).length;const active=torc.includes(o);return <button key={o} onClick={()=>{
-      setTorc(current=>current.includes(o)?current.filter(x=>x!==o):[...current,o]);
+   {torcOrder.map(o=>{const count=artifacts.filter(a=>eligible(a)&&String(a.torc).toLowerCase()===o.toLowerCase()).length;const active=selectedTorcs.includes(o);return <button key={o} onClick={()=>{
+      const next=active?selectedTorcs.filter(x=>x!==o):[...selectedTorcs,o];
+      setTorc(next.length?next.join('|'):'All');
+      if(!next.length){
+        setSort('explore');
+        setSeed(s=>s+7919);
+      }
       setPageNumber(1);
     }} className={active?styles.orderActive:''} aria-pressed={active}><strong>{o}</strong><span>{count}</span></button>})}
  </section>
