@@ -38,30 +38,29 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
  'the-logic-of-scientific-discovery':{
   headline:'Science becomes rational not by proving itself right, but by exposing where it could be wrong.',
   analysis:[
-   'Popper’s governing move is not the slogan that theories should be falsifiable. The deeper relocation concerns what makes empirical science rational at all. Universal theories cannot be established by accumulating confirming instances in the way an inductivist picture suggests; they can, however, be placed at risk by consequences that may conflict with observation.',
-   'That reversal reorganizes the surrounding architecture. Basic statements, degrees of testability, corroboration, simplicity and methodological decisions become parts of one structure: a scientific theory earns empirical content by forbidding possible states of affairs and submitting those prohibitions to criticism. Evidence no longer functions primarily as accumulated verification of a universal claim.',
-   'The result clears G because the object of explanation—scientific testability and rational empirical inquiry—is independently identifiable, while the relocation is constrained by the logical asymmetry between universal statements and counterinstances. Popper changes what has to be invoked to explain why a theory is empirically scientific.'
+   'Popper’s governing move is larger than the familiar slogan of falsifiability. He reconstructs the problem of scientific rationality itself. Universal theories cannot be established simply by accumulating confirming instances; their empirical force lies in the risks they take and in the observations that could count against them.',
+   'Basic statements, testability, corroboration, simplicity and methodological decisions therefore become parts of one connected architecture. Evidence is no longer treated primarily as a growing stock of verification. A theory becomes scientifically informative by ruling out possible states of affairs and exposing those prohibitions to criticism.',
+   'That shift is generative because it changes what has to explain the difference between an empirical scientific claim and one protected from possible failure. The logical asymmetry between universal statements and counterinstances supplies a structure from which Popper can reorganize testing, evidence and scientific criticism.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.5',artifact:'Theory, observation, basic statements, falsification, corroboration, probability, simplicity and scientific progress remain densely connected, though the field is more methodologically concentrated than the largest GΩ works.'},
+   {key:'RL',name:'Relational Load',score:'8.5',artifact:'Theory, observation, basic statements, falsification, corroboration, probability, simplicity and scientific progress remain densely connected.'},
    {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'The book operates at a deep meta-scientific level while repeatedly returning abstract logical relations to concrete empirical testing.'},
    {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Logical form, testability, methodological rules and evidential exposure sharply restrict which relations can count as successful scientific testing.'},
    {key:'ID',name:'Inferential Distance',score:'9.0',artifact:'The move from induction and verification toward deductive critical testing is a large, non-routine reconstruction of the problem of scientific rationality.'},
    {key:'IC',name:'Integrative Compression',score:'8.9',artifact:'A compact architecture of falsifiability, testing and corroboration reorganizes an exceptionally broad methodological field.'},
    {key:'GR',name:'Generalization Reach',score:'8.8',artifact:'The structure transfers robustly across empirical theories and methodological problems without depending on one scientific domain.'}
   ],
-  boundaryTitle:'Why G rather than GΩ?',
+  boundaryTitle:'Why G?',
   boundary:[
-   'G is the easy part of the determination: Popper relocates the explanatory basis of scientific rationality from inductive establishment toward conjectural theories exposed to possible refutation.',
-   'Ω is stricter. Under the successor-baseline test, later philosophy of science can reject falsificationism and pursue adequate accounts of demarcation, testing, confirmation and empirical vulnerability without preserving Popper’s particular relocation as a counterfactually non-optional baseline constraint.',
-   'The artifact therefore remains G: the explanatory relocation is achieved, but independent successor-baseline necessity is not established.'
+   'The decisive achievement is explanatory relocation. Popper does not merely recommend a better laboratory procedure; he changes the basis on which empirical science is understood as rational, replacing inductive establishment with conjectures that acquire empirical content through vulnerability to failure.',
+   'That relocation is powerful without requiring later philosophy of science to remain Popperian. Successor accounts can reject falsificationism, combine testing with probabilistic confirmation, or explain scientific change through different structures. Popper’s work remains generative because the architecture of the artifact itself successfully reorganizes the target problem.'
   ],
-  exceptionalTitle:'Its generative power lies in changing the question, not securing successor necessity.',
+  exceptionalTitle:'Its power lies in changing the role of evidence.',
   exceptional:[
-   'Popper does not need later philosophy of science to remain Popperian for G to hold. The artifact itself relocates the explanatory basis of scientific rationality.',
-   'GΩ asks a different question: whether the transformed baseline is independently non-optional for adequate successor inquiry. Under the revised Ω adjudication, that stronger requirement is not confirmed.'
+   'A confirming observation is no longer automatically another brick in a wall of proof. Its significance depends on what the theory risked, what alternatives were excluded and how the claim survives criticism.',
+   'That inversion compresses a large philosophy of scientific method into a remarkably economical idea: knowledge can become more rational through disciplined exposure to error rather than through the promise of final verification.'
   ]
- },
+ }
  'being-and-nothingness':{
   headline:'Consciousness is explained by the distance it creates inside being.',
   analysis:[
@@ -524,9 +523,9 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
  'the-structure-of-scientific-revolutions':{
   headline:'Kuhn changes what has to be explained when science changes.',
   analysis:[
-   'The target is the historical development of mature science. Kuhn’s governing move is to make paradigms, normal science, anomaly, crisis and revolutionary transition explanatory rather than treating scientific development as the steady accumulation of facts and improved theories.',
-   'That is G because the explanatory center moves. What counts as a problem, admissible solution, relevant observation and standard of evaluation becomes historically structured. Lower-order description of successive theories is no longer sufficient to explain the pattern of scientific change.',
-   'The work clears G, but the stronger Ω condition is not confirmed. Later accounts can reject or revise Kuhn’s framework and still pursue adequate inquiry into scientific change without treating Kuhn’s relocated baseline itself as a counterfactually non-optional successor constraint.'
+   'Kuhn’s target is the historical development of mature science. His governing move is to make paradigms, normal science, anomaly, crisis and revolutionary transition explanatory structures rather than treating scientific development as the steady accumulation of facts and increasingly accurate theories.',
+   'Within normal science, a shared framework does more than supply propositions. It helps determine which problems matter, what counts as an admissible solution, which instruments and exemplars are trusted, and how results are interpreted. An anomaly therefore matters differently depending on the structure in which it appears.',
+   'Scientific revolutions become intelligible as changes in that organizing framework. The history of science is no longer adequately captured as a simple sequence of discoveries added to a stable background. Kuhn relocates explanation toward the conditions that organize scientific practice itself, which is why the work reaches G.'
   ],
   dimensions:[
    {key:'RL',name:'Relational Load',score:'8.5',artifact:'Problems, exemplars, standards, communities, anomalies, crises and historical transitions remain tightly interdependent.'},
@@ -534,13 +533,19 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    {key:'CD',name:'Constraint Density',score:'8.3',artifact:'The account must coordinate heterogeneous episodes, disciplinary practices and transition patterns under substantial historical constraint.'},
    {key:'ID',name:'Inferential Distance',score:'8.8',artifact:'The move from a sequence of discoveries to framework-governed scientific development is highly non-obvious and reconstructive.'},
    {key:'IC',name:'Integrative Compression',score:'9.0',artifact:'A compact paradigm/crisis/revolution architecture reorganizes a very large heterogeneous history of science.'},
-   {key:'GR',name:'Generalization Reach',score:'8.8',artifact:'The structure travels across multiple mature sciences and remains consequential for successor inquiry into theory change.'}
+   {key:'GR',name:'Generalization Reach',score:'8.8',artifact:'The structure travels across multiple mature sciences and remains useful for understanding different forms of theory change.'}
   ],
-  boundaryTitle:'Why G, not GΩ?',
-  boundary:['G is secured by explanatory relocation: scientific change is no longer adequately explained as cumulative addition alone.','Ω requires more than influence or a historically transformed discussion. Under the revised test, adequate successor inquiry can reject Kuhn’s framework without inheriting his relocated baseline as a counterfactually non-optional constraint.'],
-  exceptionalTitle:'A successor can inherit Kuhn’s problem-space without making Kuhn’s baseline necessary.',
-  exceptional:['That distinction is why the artifact remains G rather than GΩ under the revised adjudication.','Its high CMS reflects how economically the relocation coordinates a huge historical field; magnitude does not substitute for successor-baseline necessity.']
- },
+  boundaryTitle:'Why G?',
+  boundary:[
+   'The book does not merely add sociological context to an existing account of science. It changes the explanatory object: standards, exemplars, problem selection and episodes of breakdown become part of what must be explained if we want to understand scientific development.',
+   'Its generative force comes from the way one architecture connects routine puzzle-solving to anomaly, crisis and conceptual reorganization. Different historical episodes can then be understood as variations within a common structure without being reduced to a single linear story of accumulation.'
+  ],
+  exceptionalTitle:'A revolution changes the framework in which scientific success makes sense.',
+  exceptional:[
+   'That is the book’s enduring conceptual force. A new theory can alter more than an answer; it can alter the problems, standards and relations through which answers are judged.',
+   'Kuhn gives that transformation a compact vocabulary and a historical mechanism, allowing scientific change itself to become an object of explanation.'
+  ]
+ }
  'computing-machinery-and-intelligence':{
   headline:'Turing does not answer the old question. He changes the question that can do explanatory work.',
   analysis:[

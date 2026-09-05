@@ -1,18 +1,10 @@
-TORC Artifacts — four removals + return-state preservation
+TORC public-analysis cleanup
 
-Removed from the public artifact corpus:
-- The Remains of the Day
-- Glengarry Glen Ross
-- The Magic Mountain
-- The Unbearable Lightness of Being
+Surgical public-facing corrections only:
+- Newton public title changed to the single English title: Mathematical Principles of Natural Philosophy.
+- Newton analysis page synchronized to the cumulative public score/profile (GΩ | 978; 9.6 / 9.6 / 9.9 / 9.9 / 9.9 / 9.7).
+- Kuhn and Popper public analysis copy rewritten to explain the works themselves and why they are G, with no protocol-revision/evaluator/calibration language.
+- Kant and Nāgārjuna public analysis copy likewise rewritten to remove protocol-revision/evaluator/Ω-adjudication commentary and focus on the artifact’s demonstrated explanatory operation.
+- Existing cumulative corpus data and prior removals are preserved.
 
-Also changes only the Artifacts archive interaction:
-- opening an artifact analysis and then using Back restores the previous archive state;
-- search query, medium filter, Operational Order filter, sort mode, randomized Explore seed, and page number are preserved for the browser session;
-- changing a filter/search/sort/shuffle still intentionally starts at page 1.
-
-No styling, analysis prose, scores, dimensions, or unrelated artifact data are changed.
-
-Files changed:
-- lib/artifacts.ts
-- app/artifacts/page.tsx
+No CSS or layout files changed.
