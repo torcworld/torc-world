@@ -43,9 +43,32 @@ export default function Artifacts(){
  const [pageNumber,setPageNumber]=useState(1);
  const [compareLeft,setCompareLeft]=useState('');
  const [compareRight,setCompareRight]=useState('');
+ const [stateReady,setStateReady]=useState(false);
  const corpusRef=useRef<HTMLElement>(null);
  const pageSize=15;
- useEffect(()=>setSeed(Math.floor(Math.random()*1000000000)),[]);
+ useEffect(()=>{
+   try{
+     const saved=sessionStorage.getItem('torc-artifacts-state');
+     if(saved){
+       const s=JSON.parse(saved);
+       if(typeof s.domain==='string')setDomain(s.domain);
+       if(typeof s.torc==='string')setTorc(s.torc);
+       if(typeof s.query==='string')setQuery(s.query);
+       if(typeof s.sort==='string')setSort(s.sort);
+       if(typeof s.seed==='number')setSeed(s.seed);
+       if(typeof s.pageNumber==='number')setPageNumber(s.pageNumber);
+     }else{
+       setSeed(Math.floor(Math.random()*1000000000));
+     }
+   }catch{
+     setSeed(Math.floor(Math.random()*1000000000));
+   }
+   setStateReady(true);
+ },[]);
+ useEffect(()=>{
+   if(!stateReady)return;
+   sessionStorage.setItem('torc-artifacts-state',JSON.stringify({domain,torc,query,sort,seed,pageNumber}));
+ },[stateReady,domain,torc,query,sort,seed,pageNumber]);
  const torcs=useMemo(()=>['All',...Array.from(new Set(artifacts.filter(a=>a.status==='evaluated'&&a.torc).map(a=>String(a.torc)))).sort((a,b)=>rank(a)-rank(b))],[ ]);
  const rows=useMemo(()=>{
    const q=query.trim().toLowerCase();
@@ -69,7 +92,6 @@ export default function Artifacts(){
  const totalPages=Math.max(1,Math.ceil(rows.length/pageSize));
  const currentPage=Math.min(pageNumber,totalPages);
  const visibleRows=rows.slice((currentPage-1)*pageSize,currentPage*pageSize);
- useEffect(()=>setPageNumber(1),[domain,torc,query,sort,seed]);
  const goToPage=(n:number)=>{
    setPageNumber(Math.max(1,Math.min(totalPages,n)));
    requestAnimationFrame(()=>corpusRef.current?.scrollIntoView({behavior:'smooth',block:'start'}));
@@ -89,10 +111,10 @@ export default function Artifacts(){
  </header>
 
  <section className={`artifactTools ${styles.tools}`} aria-label="Search and filter the archive">
-   <label className={`artifactSearch ${styles.controlLabel}`}><span>Search the archive</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Artifact, creator, medium, order…"/></label>
-   <label className={styles.controlLabel}><span>Sort</span><select value={sort} onChange={e=>setSort(e.target.value)}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude — highest first</option><option value="cms-asc">Cognitive Magnitude — lowest first</option><option value="torc-desc">Operational Order — high to low</option><option value="torc-asc">Operational Order — low to high</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
-   <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>setDomain(e.target.value)}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
-   <label className={styles.controlLabel}><span>Operational Order</span><select value={torc} onChange={e=>setTorc(e.target.value)}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
+   <label className={`artifactSearch ${styles.controlLabel}`}><span>Search the archive</span><input value={query} onChange={e=>{setQuery(e.target.value);setPageNumber(1)}} placeholder="Artifact, creator, medium, order…"/></label>
+   <label className={styles.controlLabel}><span>Sort</span><select value={sort} onChange={e=>{setSort(e.target.value);setPageNumber(1)}}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude — highest first</option><option value="cms-asc">Cognitive Magnitude — lowest first</option><option value="torc-desc">Operational Order — high to low</option><option value="torc-asc">Operational Order — low to high</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
+   <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>{setDomain(e.target.value);setPageNumber(1)}}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
+   <label className={styles.controlLabel}><span>Operational Order</span><select value={torc} onChange={e=>{setTorc(e.target.value);setPageNumber(1)}}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
 
  <section className={styles.orderStrip} aria-label="Operational Order distribution">
@@ -102,8 +124,10 @@ export default function Artifacts(){
         setTorc('All');
         setSort('explore');
         setSeed(s=>s+7919);
+        setPageNumber(1);
       }else{
         setTorc(o);
+        setPageNumber(1);
       }
     }} className={torc===o?styles.orderActive:''} aria-pressed={torc===o}><strong>{o}</strong><span>{count}</span></button>})}
  </section>
@@ -111,11 +135,11 @@ export default function Artifacts(){
  <section ref={corpusRef} className={styles.corpus}>
    <div className={styles.corpusHead}>
      <div><div className={styles.kicker}>THE CORPUS</div><h2>Different works. Different operations.</h2></div>
-     <div className={styles.resultCount}>{rows.length} artifacts · page {currentPage} of {totalPages}{sort==='explore'&&<button onClick={()=>setSeed(s=>s+7919)}>Shuffle</button>}</div>
+     <div className={styles.resultCount}>{rows.length} artifacts · page {currentPage} of {totalPages}{sort==='explore'&&<button onClick={()=>{setSeed(s=>s+7919);setPageNumber(1)}}>Shuffle</button>}</div>
    </div>
 
    <div className={`table artifactTable ${styles.artifactTable}`}>
-     <div className={`row header ${styles.tableHeader}`}><button onClick={()=>setSort(sort==='title-asc'?'title-desc':'title-asc')}>Artifact</button><button onClick={()=>setSort(sort==='medium-asc'?'medium-desc':'medium-asc')}>Medium</button><button onClick={()=>setSort(sort==='torc-desc'?'torc-asc':'torc-desc')}>Operational Order</button><button onClick={()=>setSort(sort==='cms-desc'?'cms-asc':'cms-desc')}>Cognitive Magnitude</button><span aria-hidden="true"></span></div>
+     <div className={`row header ${styles.tableHeader}`}><button onClick={()=>{setSort(sort==='title-asc'?'title-desc':'title-asc');setPageNumber(1)}}>Artifact</button><button onClick={()=>{setSort(sort==='medium-asc'?'medium-desc':'medium-asc');setPageNumber(1)}}>Medium</button><button onClick={()=>{setSort(sort==='torc-desc'?'torc-asc':'torc-desc');setPageNumber(1)}}>Operational Order</button><button onClick={()=>{setSort(sort==='cms-desc'?'cms-asc':'cms-desc');setPageNumber(1)}}>Cognitive Magnitude</button><span aria-hidden="true"></span></div>
      {visibleRows.map(a=><Link className="row" key={a.slug} href={`/artifact/${a.slug}`}><span className={styles.artifactIdentity}><b>{a.title}</b><small>{a.creator} · {a.year}</small></span><span className={styles.medium}>{a.domain}</span><span className={`score ${styles.orderValue}`}>{a.status==='evaluated'?a.torc:'—'}</span><span className={`score ${styles.cmsValue}`}>{a.status==='evaluated'?a.cms:'—'}</span><span className={styles.openEvaluation}>Open evaluation <i>→</i></span></Link>)}
    </div>
 
