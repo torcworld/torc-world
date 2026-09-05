@@ -1,1 +1,1 @@
-Nine unanimous artifacts: website n=10 + new n=10 = n=20. CMS whole number; six dimensions one decimal. Operational Order unchanged. A Clockwork Orange and Solaris remain removed. No unrelated edits.
+Five 9/10-consensus artifacts updated from website n=10 + new n=10 = n=20. CMS whole number; six dimensions one decimal. Operational Order unchanged. Built on the integrated approved-28 state plus the previous unanimous-n20 update. No unrelated edits.

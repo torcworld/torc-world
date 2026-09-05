@@ -475,12 +475,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The film refuses the 3c move. The men return without an achieved orientation capable of integrating faith, desire, knowledge and self-deception. Monkey’s final sequence expands the uncertainty rather than resolving it.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.2',artifact:'Faith, desire, art, science, danger, self-knowledge and the Zone’s spatial rules remain mutually consequential.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'A physical journey becomes a deep inquiry into desire, belief, knowledge and the opacity of the self.'},
-   {key:'CD',name:'Constraint Density',score:'8.2',artifact:'The Zone’s rules, the Room, competing motives and physical route impose strong interacting constraints.'},
-   {key:'ID',name:'Inferential Distance',score:'8.4',artifact:'The film withholds direct explanation, requiring the viewer to reconstruct why self-knowledge becomes the real danger.'},
-   {key:'IC',name:'Integrative Compression',score:'8.7',artifact:'Sparse geography and dialogue coordinate an unusually large metaphysical and psychological field.'},
-   {key:'GR',name:'Generalization Reach',score:'7.7',artifact:'The structure transfers strongly to problems of desire, faith, artistic purpose and the limits of introspective certainty.'}
+   {key:'RL',name:'Relational Load',score:'7.9',artifact:'Faith, desire, art, science, danger, self-knowledge and the Zone’s spatial rules remain mutually consequential.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'A physical journey becomes a deep inquiry into desire, belief, knowledge and the opacity of the self.'},
+   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'The Zone’s rules, the Room, competing motives and physical route impose strong interacting constraints.'},
+   {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The film withholds direct explanation, requiring the viewer to reconstruct why self-knowledge becomes the real danger.'},
+   {key:'IC',name:'Integrative Compression',score:'8.5',artifact:'Sparse geography and dialogue coordinate an unusually large metaphysical and psychological field.'},
+   {key:'GR',name:'Generalization Reach',score:'7.5',artifact:'The structure transfers strongly to problems of desire, faith, artistic purpose and the limits of introspective certainty.'}
   ],
   boundaryTitle:'Why 3b, not 3a or 3c?',
   boundary:['The Zone supplies an external disturbance, but the Room makes the seekers’ own attempted self-knowledge constitutive of the governing problem. That exceeds 3a.','The film never demonstrates a coherent orientation through the fracture. Refusal, return and ambiguity preserve it, so 3c is not required.'],
@@ -495,12 +495,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'TORC therefore resolves the seven-run boundary at 3c. The integration is not mastery; it is an orientation capable of continuing without abolishing the epistemic fracture. The work stops below G because its immense explanatory-looking machinery does not relocate an independently constrained external target in the technical generative sense.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'9.3',artifact:'Whaling technology, economics, theology, natural history, race, labor, narrative voice and Ahab’s psychology remain massively interdependent.'},
-   {key:'AD',name:'Abstraction Depth',score:'9.2',artifact:'Concrete maritime life repeatedly opens into deep structures of knowledge, interpretation, fate and the limits of representation.'},
-   {key:'CD',name:'Constraint Density',score:'8.8',artifact:'Material, social, symbolic and narrative constraints interact densely across the voyage while still allowing substantial local elaboration.'},
-   {key:'ID',name:'Inferential Distance',score:'8.8',artifact:'The reader must reconstruct a governing epistemic architecture from radically heterogeneous forms and competing accounts.'},
-   {key:'IC',name:'Integrative Compression',score:'9.3',artifact:'Whale, voyage, hunt and narration organize an enormous heterogeneous field without collapsing its differences.'},
-   {key:'GR',name:'Generalization Reach',score:'8.5',artifact:'The structure travels strongly to problems of totalizing interpretation, scientific classification, obsession and resistant reality.'}
+   {key:'RL',name:'Relational Load',score:'9.2',artifact:'Whaling technology, economics, theology, natural history, race, labor, narrative voice and Ahab’s psychology remain massively interdependent.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'Concrete maritime life repeatedly opens into deep structures of knowledge, interpretation, fate and the limits of representation.'},
+   {key:'CD',name:'Constraint Density',score:'8.6',artifact:'Material, social, symbolic and narrative constraints interact densely across the voyage while still allowing substantial local elaboration.'},
+   {key:'ID',name:'Inferential Distance',score:'8.7',artifact:'The reader must reconstruct a governing epistemic architecture from radically heterogeneous forms and competing accounts.'},
+   {key:'IC',name:'Integrative Compression',score:'9.1',artifact:'Whale, voyage, hunt and narration organize an enormous heterogeneous field without collapsing its differences.'},
+   {key:'GR',name:'Generalization Reach',score:'8.2',artifact:'The structure travels strongly to problems of totalizing interpretation, scientific classification, obsession and resistant reality.'}
   ],
   boundaryTitle:'Why 3c, not 3b—or G?',
   boundary:['The 3b reading is real because much of the novel is governed by interpretive fracture. The decisive 3c evidence is Ishmael’s completed orientation: plurality can be inhabited without being converted into a final answer.','G remains tempting because of the novel’s scale and conceptual productivity. But magnitude and generative appearance cannot substitute for constrained explanatory relocation of an independent target.'],
@@ -682,10 +682,10 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'Level 2 remains sufficient. The film’s exceptional force comes from the way causal, visual and symbolic constraints lock together so tightly that economic extraction, family performance and spiritual authority become mutually legible without needing recursive fracture.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.2',artifact:'Oil, land, family, labor, religion, rivalry and bodily vulnerability remain densely linked throughout Plainview’s rise.'},
+   {key:'RL',name:'Relational Load',score:'8.0',artifact:'Oil, land, family, labor, religion, rivalry and bodily vulnerability remain densely linked throughout Plainview’s rise.'},
    {key:'AD',name:'Abstraction Depth',score:'7.1',artifact:'The film reaches strong abstractions around appetite, capitalism, faith and domination while remaining grounded in concrete action and character.'},
-   {key:'CD',name:'Constraint Density',score:'8.3',artifact:'Property, geology, labor, reputation, kinship claims and institutional rivalry severely constrain viable action.'},
-   {key:'ID',name:'Inferential Distance',score:'7.4',artifact:'The viewer must reconstruct the larger relation between extraction and personhood from sparse exposition and long-form character development.'},
+   {key:'CD',name:'Constraint Density',score:'8.1',artifact:'Property, geology, labor, reputation, kinship claims and institutional rivalry severely constrain viable action.'},
+   {key:'ID',name:'Inferential Distance',score:'7.3',artifact:'The viewer must reconstruct the larger relation between extraction and personhood from sparse exposition and long-form character development.'},
    {key:'IC',name:'Integrative Compression',score:'8.0',artifact:'A small number of recurring relations—oil, blood, family, church and competition—organize an unusually large moral-economic field.'},
    {key:'GR',name:'Generalization Reach',score:'6.8',artifact:'The architecture transfers to domination, institutional rivalry and extractive relations, while remaining substantially bound to its historical-social ontology.'}
   ],
@@ -760,12 +760,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'Level 2 is sufficient. Casey is changed by the system, but the conditions by which reality itself can be known do not become the governing fracture. The intelligence lies in how economically the film builds and exposes the machine.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'7.3',artifact:'Fear, masculinity, hierarchy, language, violence, status and belonging are tightly coordinated inside the dojo system.'},
+   {key:'RL',name:'Relational Load',score:'7.1',artifact:'Fear, masculinity, hierarchy, language, violence, status and belonging are tightly coordinated inside the dojo system.'},
    {key:'AD',name:'Abstraction Depth',score:'6.8',artifact:'The film moves from a concrete institution to broader structures of masculinity and manufactured identity without becoming highly meta-level.'},
-   {key:'CD',name:'Constraint Density',score:'7.6',artifact:'Rules, ranks, rituals, threat and comic causality create a tightly bounded system with limited viable responses.'},
-   {key:'ID',name:'Inferential Distance',score:'7.0',artifact:'The larger social critique emerges clearly from the dojo’s local mechanisms rather than requiring extreme inferential reconstruction.'},
+   {key:'CD',name:'Constraint Density',score:'7.4',artifact:'Rules, ranks, rituals, threat and comic causality create a tightly bounded system with limited viable responses.'},
+   {key:'ID',name:'Inferential Distance',score:'6.8',artifact:'The larger social critique emerges clearly from the dojo’s local mechanisms rather than requiring extreme inferential reconstruction.'},
    {key:'IC',name:'Integrative Compression',score:'7.3',artifact:'A small institution and a deliberately narrow vocabulary carry a broad critique of fear, masculinity and social conditioning.'},
-   {key:'GR',name:'Generalization Reach',score:'6.6',artifact:'The architecture transfers well to related systems of hierarchy, identity formation and coercive belonging.'}
+   {key:'GR',name:'Generalization Reach',score:'6.5',artifact:'The architecture transfers well to related systems of hierarchy, identity formation and coercive belonging.'}
   ],
   boundaryTitle:'Why Level 2, not 3a?',
   boundary:[
