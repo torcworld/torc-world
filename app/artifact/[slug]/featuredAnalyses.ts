@@ -17,12 +17,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'But the novel itself never loses the distinction those characters lose. Their vocabularies remain visible as vocabularies. The reader can see Ignatius’s interpretation and the event it is trying to master at the same time. That preserved distance is decisive: the governing operation is the symbolic organization of a social world in which explanation repeatedly becomes self-protection, not a higher recursive fracture in the artifact’s own orientation to reality.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.0',artifact:'Ignatius, Mrs. Reilly, Myrna, Levy Pants, Jones, Lana Lee, Mancuso and the surrounding institutions form a dense causal network in which remote comic actions repeatedly return as later constraints.'},
+   {key:'RL',name:'Relational Load',score:'8.3',artifact:'Ignatius, Mrs. Reilly, Myrna, Levy Pants, Jones, Lana Lee, Mancuso and the surrounding institutions form a dense causal network in which remote comic actions repeatedly return as later constraints.'},
    {key:'AD',name:'Abstraction Depth',score:'7.2',artifact:'The comedy continually rises from concrete failure into larger structures of ideology, self-deception, status, modernity and social performance without detaching those abstractions from lived scenes.'},
-   {key:'CD',name:'Constraint Density',score:'7.7',artifact:'Voice, timing, intersecting plots, causal reversals, social geography and character consistency have to remain mutually compatible across a crowded narrative while still converging convincingly.'},
-   {key:'ID',name:'Inferential Distance',score:'7.1',artifact:'The novel discovers non-obvious relations between private delusion and institutional absurdity, but it reaches them largely through cumulative characterization and comic causality rather than a single radical inferential leap.'},
-   {key:'IC',name:'Integrative Compression',score:'8.0',artifact:'A small family of mechanisms—self-justification, reciprocal exploitation, ideological inversion and accidental consequence—organizes a very large and differentiated social field.'},
-   {key:'GR',name:'Generalization Reach',score:'7.0',artifact:'Its architecture travels well across bureaucracy, status, ideological rationalization and institutional incompetence, while remaining most securely grounded in human and social situations.'}
+   {key:'CD',name:'Constraint Density',score:'7.8',artifact:'Voice, timing, intersecting plots, causal reversals, social geography and character consistency have to remain mutually compatible across a crowded narrative while still converging convincingly.'},
+   {key:'ID',name:'Inferential Distance',score:'7.0',artifact:'The novel discovers non-obvious relations between private delusion and institutional absurdity, but it reaches them largely through cumulative characterization and comic causality rather than a single radical inferential leap.'},
+   {key:'IC',name:'Integrative Compression',score:'8.1',artifact:'A small family of mechanisms—self-justification, reciprocal exploitation, ideological inversion and accidental consequence—organizes a very large and differentiated social field.'},
+   {key:'GR',name:'Generalization Reach',score:'6.5',artifact:'Its architecture travels well across bureaucracy, status, ideological rationalization and institutional incompetence, while remaining most securely grounded in human and social situations.'}
   ],
   boundaryTitle:'Why 2 rather than 3a?',
   boundary:[
@@ -35,10 +35,36 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The result is a rare high-magnitude Level 2 work: not because it nearly becomes a higher Order, but because it realizes symbolic consciousness at unusual relational and integrative scale.'
   ]
  },
+ 'genius-the-natural-history-of-creativity':{
+  headline:'Genius stops being a mysterious possession and becomes an outcome that a causal system must produce.',
+  analysis:[
+   'Eysenck begins from a familiar explanatory failure. Intelligence matters to creative achievement, personality matters, unusual associative processes matter, psychopathology appears repeatedly in the literature, biological variables matter, and environment matters—but a list of correlations does not yet explain why genius occurs. The book’s governing move is to force those scattered findings into one causal problem.',
+   'The proposed architecture runs across levels. Broad or overinclusive associative production can increase the supply of unusual connections; psychoticism-related dispositions and inhibitory processes help explain why that cognitive field differs between people; intelligence, ego strength, persistence and environmental conditions help determine whether unusual production becomes useful achievement rather than disorganization. Biology, personality, cognition and accomplishment are therefore treated not as separate topics but as stages and constraints inside one generative account.',
+   'That is the decisive relocation. Genius is no longer principally something a person possesses in extraordinary quantity. It becomes an outcome whose appearance has to be generated by interacting mechanisms. The model is imperfect and some links remain speculative, but the book exposes those links to empirical failure. Its explanatory structure therefore carries real risk rather than protecting itself by definition.'
+  ],
+  dimensions:[
+   {key:'RL',name:'Relational Load',score:'8.7',artifact:'The theory coordinates intelligence, personality, psychoticism, associative cognition, inhibition, psychopathology, biology, motivation, environment and achievement across several explanatory levels.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'The argument moves from observable creative performance through psychometric constructs and personality dimensions toward cognitive and biological mechanisms while preserving a common causal question.'},
+   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'Any successful version of the theory has to accommodate evidence from psychometrics, experimental cognition, psychopathology, personality and biology, although several cross-level links remain provisional.'},
+   {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'The non-obvious move is to connect apparently pathological associative tendencies with productive creativity while also explaining why unusual cognition alone does not yield genius.'},
+   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A comparatively compact multilevel model makes a large and heterogeneous literature reconstructible as parts of one causal architecture rather than a collection of disconnected findings.'},
+   {key:'GR',name:'Generalization Reach',score:'7.9',artifact:'The structure reaches across artistic, scientific and other forms of creative achievement, though its strongest transfer remains within the wider creativity and genius problem-field.'}
+  ],
+  boundaryTitle:'Why G rather than a lower Order?',
+  boundary:[
+   'The book is not principally representing creativity, symbolizing it, or reorganizing consciousness’s relation to it. Its central operation is explanatory: it proposes a mechanism intended to account for why an independently existing phenomenon takes the form it does.',
+   'Lower Orders can describe the conceptual sophistication of the argument, but they cannot explain the completed artifact’s governing move. The causal architecture changes what must be invoked to explain creativity and exceptional achievement. That makes G the lowest sufficient Order.'
+  ],
+  exceptionalTitle:'The strongest move is the bridge from scattered correlations to a mechanism that can fail.',
+  exceptional:[
+   'Eysenck does not solve the problem by declaring every association part of genius. The architecture has to distinguish productive breadth from pathological disorganization, potential from achievement, and correlation from causal explanation.',
+   'Its importance within TORC lies in that constrained synthesis: many partially separate literatures are made to bear on one explanatory structure, while the structure remains exposed to evidence that could force its revision.'
+  ]
+ },
  'the-logic-of-scientific-discovery':{
   headline:'Science becomes rational not by proving itself right, but by exposing where it could be wrong.',
   analysis:[
-   'Popper’s governing move is larger than the familiar slogan of falsifiability. He reconstructs the problem of scientific rationality itself. Universal theories cannot be established simply by accumulating confirming instances; their empirical force lies in the risks they take and in the observations that could count against them.',
+   'Popper reconstructs the problem of scientific rationality. Universal theories cannot be established simply by accumulating confirming instances; their empirical force lies in the risks they take and in the observations that could count against them.',
    'Basic statements, testability, corroboration, simplicity and methodological decisions therefore become parts of one connected architecture. Evidence is no longer treated primarily as a growing stock of verification. A theory becomes scientifically informative by ruling out possible states of affairs and exposing those prohibitions to criticism.',
    'That shift is generative because it changes what has to explain the difference between an empirical scientific claim and one protected from possible failure. The logical asymmetry between universal statements and counterinstances supplies a structure from which Popper can reorganize testing, evidence and scientific criticism.'
   ],
@@ -53,14 +79,14 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
   boundaryTitle:'Why G?',
   boundary:[
    'The decisive achievement is explanatory relocation. Popper does not merely recommend a better laboratory procedure; he changes the basis on which empirical science is understood as rational, replacing inductive establishment with conjectures that acquire empirical content through vulnerability to failure.',
-   'That relocation is powerful without requiring later philosophy of science to remain Popperian. Successor accounts can reject falsificationism, combine testing with probabilistic confirmation, or explain scientific change through different structures. Popper’s work remains generative because the architecture of the artifact itself successfully reorganizes the target problem.'
+   'That relocation is powerful without requiring later philosophy of science to remain Popperian. Successor accounts can reject falsificationism, combine testing with probabilistic confirmation, or explain scientific change through different structures. The work remains generative because its own architecture successfully reorganizes the target problem.'
   ],
   exceptionalTitle:'Its power lies in changing the role of evidence.',
   exceptional:[
    'A confirming observation is no longer automatically another brick in a wall of proof. Its significance depends on what the theory risked, what alternatives were excluded and how the claim survives criticism.',
    'That inversion compresses a large philosophy of scientific method into a remarkably economical idea: knowledge can become more rational through disciplined exposure to error rather than through the promise of final verification.'
   ]
- }
+ },
  'being-and-nothingness':{
   headline:'Consciousness is explained by the distance it creates inside being.',
   analysis:[
@@ -69,12 +95,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The same architecture then generates temporality, freedom, the Look, being-for-others, embodiment, desire and action. G is warranted because the ontology changes what explains the target phenomena. They cease to be a list of psychological properties and become consequences of the structure of the for-itself.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'9.1',artifact:'Ontology, negation, temporality, freedom, bad faith, embodiment, intersubjectivity, desire and action remain mutually consequential across the work.'},
-   {key:'AD',name:'Abstraction Depth',score:'9.6',artifact:'Concrete situations are carried through an exceptionally long phenomenological and ontological abstraction chain without losing the relations that motivate them.'},
+   {key:'RL',name:'Relational Load',score:'9.3',artifact:'Ontology, negation, temporality, freedom, bad faith, embodiment, intersubjectivity, desire and action remain mutually consequential across the work.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.7',artifact:'Concrete situations are carried through an exceptionally long phenomenological and ontological abstraction chain without losing the relations that motivate them.'},
    {key:'CD',name:'Constraint Density',score:'8.8',artifact:'The for-itself/in-itself architecture imposes strong obligations across later analyses, though some phenomenological transitions preserve more interpretive latitude than the strictest formal systems.'},
-   {key:'ID',name:'Inferential Distance',score:'9.3',artifact:'Everyday phenomena such as negation and bad faith are reconstructed through a highly non-routine enabling ontology of nothingness, facticity and transcendence.'},
-   {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'A small ontological vocabulary renders an enormous field of consciousness, action and interpersonal experience reconstructible.'},
-   {key:'GR',name:'Generalization Reach',score:'8.7',artifact:'The structure transfers powerfully across self-deception, temporality, embodiment, relations with others, desire and freedom while remaining centered on human reality.'}
+   {key:'ID',name:'Inferential Distance',score:'9.4',artifact:'Everyday phenomena such as negation and bad faith are reconstructed through a highly non-routine enabling ontology of nothingness, facticity and transcendence.'},
+   {key:'IC',name:'Integrative Compression',score:'9.4',artifact:'A small ontological vocabulary renders an enormous field of consciousness, action and interpersonal experience reconstructible.'},
+   {key:'GR',name:'Generalization Reach',score:'8.6',artifact:'The structure transfers powerfully across self-deception, temporality, embodiment, relations with others, desire and freedom while remaining centered on human reality.'}
   ],
   boundaryTitle:'Why G, not 3c—or GΩ?',
   boundary:[
@@ -84,7 +110,7 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
   exceptionalTitle:'The magnitude comes from making ontology do explanatory work.',
   exceptional:[
    'The book’s abstraction is extreme, but TORC does not reward abstraction by itself. What matters is that the abstract structure repeatedly returns to explain concrete phenomena that generated the inquiry.',
-   'That combination—near-reference abstraction with a governing explanatory relocation—is why Being and Nothingness can sit at G | 911 without requiring GΩ.'
+   'That combination—near-reference abstraction with a governing explanatory relocation—is why Being and Nothingness can sit at G | 920 without requiring GΩ.'
   ]
  },
  'in-search-of-lost-time':{
@@ -95,12 +121,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The result is 3c because the fracture remains real. Art does not restore lost time as though loss never happened; it establishes an orientation capable of containing temporal destruction and perspectival instability without cancelling them. The life that could not be possessed becomes reconstructible as form.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'9.5',artifact:'Persons, places, names, artworks, social positions, erotic attachments, sensations and memories change one another’s significance across enormous temporal distances.'},
-   {key:'AD',name:'Abstraction Depth',score:'9.2',artifact:'Minute sensations and social encounters repeatedly open into deep structures of memory, time, desire, identity and art while remaining anchored in lived experience.'},
-   {key:'CD',name:'Constraint Density',score:'9.0',artifact:'Chronology, remote echoes, social relations, repeated encounters and retrospective transformations severely constrain how the completed sequence can cohere.'},
-   {key:'ID',name:'Inferential Distance',score:'9.0',artifact:'The governing relation among involuntary memory, temporal loss, failed interpretation and artistic necessity requires exceptional retrospective reconstruction.'},
-   {key:'IC',name:'Integrative Compression',score:'9.4',artifact:'A comparatively small architecture of memory, time, desire, habit and art renders an immense heterogeneous experiential field reconstructible.'},
-   {key:'GR',name:'Generalization Reach',score:'8.4',artifact:'The structure transfers strongly across love, memory, social perception, identity, art and temporality, but remains primarily within human experiential problem-spaces.'}
+   {key:'RL',name:'Relational Load',score:'9.7',artifact:'Persons, places, names, artworks, social positions, erotic attachments, sensations and memories change one another’s significance across enormous temporal distances.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.1',artifact:'Minute sensations and social encounters repeatedly open into deep structures of memory, time, desire, identity and art while remaining anchored in lived experience.'},
+   {key:'CD',name:'Constraint Density',score:'9.1',artifact:'Chronology, remote echoes, social relations, repeated encounters and retrospective transformations severely constrain how the completed sequence can cohere.'},
+   {key:'ID',name:'Inferential Distance',score:'9.2',artifact:'The governing relation among involuntary memory, temporal loss, failed interpretation and artistic necessity requires exceptional retrospective reconstruction.'},
+   {key:'IC',name:'Integrative Compression',score:'9.6',artifact:'A comparatively small architecture of memory, time, desire, habit and art renders an immense heterogeneous experiential field reconstructible.'},
+   {key:'GR',name:'Generalization Reach',score:'8.1',artifact:'The structure transfers strongly across love, memory, social perception, identity, art and temporality, but remains primarily within human experiential problem-spaces.'}
   ],
   boundaryTitle:'Why 3c, not 3b—or G?',
   boundary:[
@@ -125,7 +151,7 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'Concrete household life repeatedly opens into dream, illusion, desire, fate and impermanence while preserving the lived social distinctions.'},
    {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Kinship, hierarchy, ritual, chronology, household economy and character psychology strongly constrain one another across the narrative.'},
    {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The completed relation between social flourishing, attachment, decline and relinquishment requires substantial retrospective reconstruction.'},
-   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'Stone/Jade, dream/waking, attachment/impermanence and household decline organize an enormous field without reducing it to a single allegory.'},
+   {key:'IC',name:'Integrative Compression',score:'8.6',artifact:'Stone/Jade, dream/waking, attachment/impermanence and household decline organize an enormous field without reducing it to a single allegory.'},
    {key:'GR',name:'Generalization Reach',score:'7.7',artifact:'The architecture transfers strongly across family, status, desire, mortality and social decay while remaining embedded in its social-metaphysical world.'}
   ],
   boundaryTitle:'Why 3c, with real 3b pressure?',
@@ -174,11 +200,11 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The work exerts genuine pressure toward G because its concepts reorganize questions of value, nihilism and creation. TORC stops below G because the explanatory machinery remains too poetically elastic to function as a sufficiently constrained relocation of an independently identifiable target.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.3',artifact:'Nihilism, morality, body, will, recurrence, pity, creation and self-overcoming remain densely interdependent across the four parts.'},
+   {key:'RL',name:'Relational Load',score:'8.6',artifact:'Nihilism, morality, body, will, recurrence, pity, creation and self-overcoming remain densely interdependent across the four parts.'},
    {key:'AD',name:'Abstraction Depth',score:'9.1',artifact:'The work operates at exceptional abstraction around value, valuation, temporality, subjectivity and self-transformation.'},
-   {key:'CD',name:'Constraint Density',score:'7.7',artifact:'Its recurrent concepts constrain one another strongly, but the aphoristic and prophetic form leaves more viable interpretive latitude than the densest constructions.'},
-   {key:'ID',name:'Inferential Distance',score:'8.4',artifact:'The transition from nihilism to recurrence-as-affirmation requires a large and non-routine conceptual reconstruction.'},
-   {key:'IC',name:'Integrative Compression',score:'8.7',artifact:'A compact vocabulary of recurrence, overcoming, child, overman and affirmation organizes an unusually large philosophical field.'},
+   {key:'CD',name:'Constraint Density',score:'7.8',artifact:'Its recurrent concepts constrain one another strongly, but the aphoristic and prophetic form leaves more viable interpretive latitude than the densest constructions.'},
+   {key:'ID',name:'Inferential Distance',score:'8.5',artifact:'The transition from nihilism to recurrence-as-affirmation requires a large and non-routine conceptual reconstruction.'},
+   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'A compact vocabulary of recurrence, overcoming, child, overman and affirmation organizes an unusually large philosophical field.'},
    {key:'GR',name:'Generalization Reach',score:'8.2',artifact:'The architecture transfers strongly across ethics, psychology, religion, culture and existential orientation.'}
   ],
   boundaryTitle:'Why 3c, not G?',
@@ -202,10 +228,10 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
   dimensions:[
    {key:'RL',name:'Relational Load',score:'8.2',artifact:'Gender, religion, language, reproduction, law, household organization, memory and surveillance constrain one another throughout Gilead.'},
    {key:'AD',name:'Abstraction Depth',score:'7.9',artifact:'The novel moves from embodied experience into questions of language, historical reconstruction and ideological reality without leaving the narrative case behind.'},
-   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'Institutional rules, forbidden knowledge, reproductive ritual and narrative uncertainty impose tightly interacting constraints.'},
-   {key:'ID',name:'Inferential Distance',score:'7.6',artifact:'The reader reconstructs the regime and Offred’s past from incomplete, retrospective and sometimes uncertain evidence.'},
-   {key:'IC',name:'Integrative Compression',score:'8.3',artifact:'Names, uniforms, ritual, scripture and literacy prohibitions compress a broad political and psychological system with striking economy.'},
-   {key:'GR',name:'Generalization Reach',score:'7.6',artifact:'The structure transfers strongly to problems of authoritarian information control, ideological capture and institutionalized identity.'}
+   {key:'CD',name:'Constraint Density',score:'8.2',artifact:'Institutional rules, forbidden knowledge, reproductive ritual and narrative uncertainty impose tightly interacting constraints.'},
+   {key:'ID',name:'Inferential Distance',score:'7.7',artifact:'The reader reconstructs the regime and Offred’s past from incomplete, retrospective and sometimes uncertain evidence.'},
+   {key:'IC',name:'Integrative Compression',score:'8.4',artifact:'Names, uniforms, ritual, scripture and literacy prohibitions compress a broad political and psychological system with striking economy.'},
+   {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'The structure transfers strongly to problems of authoritarian information control, ideological capture and institutionalized identity.'}
   ],
   boundaryTitle:'Why 3a, not 3b?',
   boundary:[
@@ -226,12 +252,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'That is 3b. The ending provides commitment and escape, but not an achieved orientation that coherently contains the human/replicant fracture. The film leaves the contradiction active rather than integrating it.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.1',artifact:'Memory, embodiment, labor, mortality, empathy, manufacture, policing and corporate power remain densely connected.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.2',artifact:'The detective narrative repeatedly opens into deeper structures of identity, personhood and authenticity.'},
-   {key:'CD',name:'Constraint Density',score:'8.1',artifact:'Replicant lifespans, memory evidence, institutional classification and visual motifs interact tightly across the film.'},
-   {key:'ID',name:'Inferential Distance',score:'7.8',artifact:'The viewer must move beyond the explicit police ontology to reconstruct what the same evidence does to the category of the human.'},
-   {key:'IC',name:'Integrative Compression',score:'8.4',artifact:'Eyes, photographs, memories, lifespan and bodily vulnerability organize a large conceptual field with exceptional economy.'},
-   {key:'GR',name:'Generalization Reach',score:'7.6',artifact:'Its structure transfers powerfully to artificial persons, engineered memory and tests of humanity while remaining tied to the film’s ontology.'}
+   {key:'RL',name:'Relational Load',score:'8.2',artifact:'Memory, embodiment, labor, mortality, empathy, manufacture, policing and corporate power remain densely connected.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.3',artifact:'The detective narrative repeatedly opens into deeper structures of identity, personhood and authenticity.'},
+   {key:'CD',name:'Constraint Density',score:'8.2',artifact:'Replicant lifespans, memory evidence, institutional classification and visual motifs interact tightly across the film.'},
+   {key:'ID',name:'Inferential Distance',score:'8.0',artifact:'The viewer must move beyond the explicit police ontology to reconstruct what the same evidence does to the category of the human.'},
+   {key:'IC',name:'Integrative Compression',score:'8.6',artifact:'Eyes, photographs, memories, lifespan and bodily vulnerability organize a large conceptual field with exceptional economy.'},
+   {key:'GR',name:'Generalization Reach',score:'7.5',artifact:'Its structure transfers powerfully to artificial persons, engineered memory and tests of humanity while remaining tied to the film’s ontology.'}
   ],
   boundaryTitle:'Why 3b, not 3a or 3c?',
   boundary:[
@@ -252,12 +278,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The final door makes the 3a structure unusually visible. The governing fracture belongs to the constructed world, and Truman can leave it. His courage matters enormously; it does not convert the artifact into 3b or 3c.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'7.7',artifact:'Family, friendship, media, geography, production logistics, fear and surveillance coordinate closely around Truman’s artificial reality.'},
-   {key:'AD',name:'Abstraction Depth',score:'7.5',artifact:'The concrete television premise supports broader questions of mediation, authenticity and evidence while remaining narratively direct.'},
-   {key:'CD',name:'Constraint Density',score:'7.9',artifact:'The constructed world must keep thousands of behavioral, spatial and production constraints aligned without exposing itself.'},
-   {key:'ID',name:'Inferential Distance',score:'7.4',artifact:'Truman reconstructs the hidden mechanism from accumulating anomalies, a substantial but comparatively legible inferential path.'},
-   {key:'IC',name:'Integrative Compression',score:'8.1',artifact:'A simple television-set premise efficiently coordinates surveillance, commodification, social performance and epistemic control.'},
-   {key:'GR',name:'Generalization Reach',score:'7.1',artifact:'The structure travels well to mediated reality and social control, though its governing mechanism remains unusually specific and explicit.'}
+   {key:'RL',name:'Relational Load',score:'7.8',artifact:'Family, friendship, media, geography, production logistics, fear and surveillance coordinate closely around Truman’s artificial reality.'},
+   {key:'AD',name:'Abstraction Depth',score:'7.6',artifact:'The concrete television premise supports broader questions of mediation, authenticity and evidence while remaining narratively direct.'},
+   {key:'CD',name:'Constraint Density',score:'8.2',artifact:'The constructed world must keep thousands of behavioral, spatial and production constraints aligned without exposing itself.'},
+   {key:'ID',name:'Inferential Distance',score:'7.5',artifact:'Truman reconstructs the hidden mechanism from accumulating anomalies, a substantial but comparatively legible inferential path.'},
+   {key:'IC',name:'Integrative Compression',score:'8.2',artifact:'A simple television-set premise efficiently coordinates surveillance, commodification, social performance and epistemic control.'},
+   {key:'GR',name:'Generalization Reach',score:'7.2',artifact:'The structure travels well to mediated reality and social control, though its governing mechanism remains unusually specific and explicit.'}
   ],
   boundaryTitle:'Why 3a, not 3b?',
   boundary:[
@@ -382,12 +408,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'TORC stops below 3c because recognition and annihilation coincide. The final comprehension is extraordinary, but it does not establish a coherent orientation capable of continuing through the contradiction. The work also stops below G: its astonishing recursive architecture remains a constructed explanatory world rather than a constrained relocation of an independently identifiable external target.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'9.1',artifact:'Generations, names, politics, technology, sexuality, violence, memory and geography remain exceptionally interdependent across the entire family history.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'Historical recurrence, solitude, memory and narration operate as deep structures over an enormous range of concrete events.'},
-   {key:'CD',name:'Constraint Density',score:'8.6',artifact:'Genealogy, repeated names, chronology, prophecy and motifs create unusually dense cross-level constraints.'},
-   {key:'ID',name:'Inferential Distance',score:'8.4',artifact:'The completed manuscript relation radically reorganizes earlier events and requires large-scale reconstruction of what repetition has been doing.'},
-   {key:'IC',name:'Integrative Compression',score:'9.0',artifact:'A few recurrent structures—names, solitude, Macondo, circular time and the manuscript—make an enormous heterogeneous field reconstructible.'},
-   {key:'GR',name:'Generalization Reach',score:'8.0',artifact:'The architecture transfers strongly from family genealogy to political recurrence, modernization, collective memory and historical myth-making.'}
+   {key:'RL',name:'Relational Load',score:'9.2',artifact:'Generations, names, politics, technology, sexuality, violence, memory and geography remain exceptionally interdependent across the entire family history.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.8',artifact:'Historical recurrence, solitude, memory and narration operate as deep structures over an enormous range of concrete events.'},
+   {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Genealogy, repeated names, chronology, prophecy and motifs create unusually dense cross-level constraints.'},
+   {key:'ID',name:'Inferential Distance',score:'8.6',artifact:'The completed manuscript relation radically reorganizes earlier events and requires large-scale reconstruction of what repetition has been doing.'},
+   {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'A few recurrent structures—names, solitude, Macondo, circular time and the manuscript—make an enormous heterogeneous field reconstructible.'},
+   {key:'GR',name:'Generalization Reach',score:'8.3',artifact:'The architecture transfers strongly from family genealogy to political recurrence, modernization, collective memory and historical myth-making.'}
   ],
   boundaryTitle:'Why 3b, not 3c—or G?',
   boundary:[
@@ -408,12 +434,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'That clears 3b. The work stops below 3c because no coherent orientation emerges that can preserve the fracture without being governed by it. Awareness intensifies the contradiction; it does not integrate it.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'7.5',artifact:'Freedom, resentment, rationality, humiliation, desire, social recognition and self-consciousness repeatedly alter one another.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.3',artifact:'Concrete humiliations open into sustained questions about freedom, rational agency and the pathology of reflective consciousness.'},
-   {key:'CD',name:'Constraint Density',score:'7.4',artifact:'Voice, memory, pride and social position strongly constrain each encounter, though the monologic form preserves some latitude.'},
-   {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The reader must reconstruct how a consciousness claiming lucidity becomes the mechanism of its own repeated defeat.'},
-   {key:'IC',name:'Integrative Compression',score:'8.3',artifact:'A narrow set of encounters compresses a large philosophical and psychological problem into one recursive voice.'},
-   {key:'GR',name:'Generalization Reach',score:'7.5',artifact:'The structure transfers strongly to self-sabotage, ressentiment, hyper-reflection and conflicts between autonomy and recognition.'}
+   {key:'RL',name:'Relational Load',score:'7.6',artifact:'Freedom, resentment, rationality, humiliation, desire, social recognition and self-consciousness repeatedly alter one another.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'Concrete humiliations open into sustained questions about freedom, rational agency and the pathology of reflective consciousness.'},
+   {key:'CD',name:'Constraint Density',score:'7.6',artifact:'Voice, memory, pride and social position strongly constrain each encounter, though the monologic form preserves some latitude.'},
+   {key:'ID',name:'Inferential Distance',score:'8.5',artifact:'The reader must reconstruct how a consciousness claiming lucidity becomes the mechanism of its own repeated defeat.'},
+   {key:'IC',name:'Integrative Compression',score:'8.5',artifact:'A narrow set of encounters compresses a large philosophical and psychological problem into one recursive voice.'},
+   {key:'GR',name:'Generalization Reach',score:'7.6',artifact:'The structure transfers strongly to self-sabotage, ressentiment, hyper-reflection and conflicts between autonomy and recognition.'}
   ],
   boundaryTitle:'Why 3b, not 2 or 3c?',
   boundary:['Level 2 cannot explain why the Underground Man’s own attempt to know and assert himself becomes part of the governing contradiction.','3c would require an achieved orientation through that contradiction. The completed work gives us devastating self-implication without stable integration.'],
@@ -428,12 +454,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'But repetition is not integration. Continuing to wait supplies persistence, habit and companionship; it does not establish a coherent orientation capable of containing the fracture. TORC therefore stops at 3b rather than 3c.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'7.3',artifact:'Memory, time, dependency, expectation, action and identity remain tightly related despite the tiny dramatic inventory.'},
+   {key:'RL',name:'Relational Load',score:'7.4',artifact:'Memory, time, dependency, expectation, action and identity remain tightly related despite the tiny dramatic inventory.'},
    {key:'AD',name:'Abstraction Depth',score:'8.1',artifact:'Minimal concrete action supports sustained structures of temporality, purpose, uncertainty and existential dependence.'},
-   {key:'CD',name:'Constraint Density',score:'7.6',artifact:'Repetition, paired characters, limited setting and recurring promises tightly constrain what can change and what cannot.'},
-   {key:'ID',name:'Inferential Distance',score:'7.8',artifact:'The audience must infer the governing existential structure from sparse events whose factual status is repeatedly unstable.'},
-   {key:'IC',name:'Integrative Compression',score:'8.4',artifact:'A road, a tree, two pairs, hats, boots and waiting coordinate an enormous field with extraordinary economy.'},
-   {key:'GR',name:'Generalization Reach',score:'7.3',artifact:'Its structure travels strongly to suspended agency, dependence on future resolution and unstable temporal orientation.'}
+   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'Repetition, paired characters, limited setting and recurring promises tightly constrain what can change and what cannot.'},
+   {key:'ID',name:'Inferential Distance',score:'7.9',artifact:'The audience must infer the governing existential structure from sparse events whose factual status is repeatedly unstable.'},
+   {key:'IC',name:'Integrative Compression',score:'8.5',artifact:'A road, a tree, two pairs, hats, boots and waiting coordinate an enormous field with extraordinary economy.'},
+   {key:'GR',name:'Generalization Reach',score:'7.5',artifact:'Its structure travels strongly to suspended agency, dependence on future resolution and unstable temporal orientation.'}
   ],
   boundaryTitle:'Why 3b, not 3c?',
   boundary:['The play makes consciousness part of the uncertainty: remembering and deciding do not solve the problem because they are themselves unstable.','Nothing in the completed trajectory converts that instability into an achieved higher orientation. They continue; they do not integrate.'],
@@ -448,12 +474,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'The film refuses the 3c move. The men return without an achieved orientation capable of integrating faith, desire, knowledge and self-deception. Monkey’s final sequence expands the uncertainty rather than resolving it.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'7.9',artifact:'Faith, desire, art, science, danger, self-knowledge and the Zone’s spatial rules remain mutually consequential.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'A physical journey becomes a deep inquiry into desire, belief, knowledge and the opacity of the self.'},
-   {key:'CD',name:'Constraint Density',score:'8.0',artifact:'The Zone’s rules, the Room, competing motives and physical route impose strong interacting constraints.'},
-   {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The film withholds direct explanation, requiring the viewer to reconstruct why self-knowledge becomes the real danger.'},
-   {key:'IC',name:'Integrative Compression',score:'8.5',artifact:'Sparse geography and dialogue coordinate an unusually large metaphysical and psychological field.'},
-   {key:'GR',name:'Generalization Reach',score:'7.5',artifact:'The structure transfers strongly to problems of desire, faith, artistic purpose and the limits of introspective certainty.'}
+   {key:'RL',name:'Relational Load',score:'8.2',artifact:'Faith, desire, art, science, danger, self-knowledge and the Zone’s spatial rules remain mutually consequential.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'A physical journey becomes a deep inquiry into desire, belief, knowledge and the opacity of the self.'},
+   {key:'CD',name:'Constraint Density',score:'8.2',artifact:'The Zone’s rules, the Room, competing motives and physical route impose strong interacting constraints.'},
+   {key:'ID',name:'Inferential Distance',score:'8.4',artifact:'The film withholds direct explanation, requiring the viewer to reconstruct why self-knowledge becomes the real danger.'},
+   {key:'IC',name:'Integrative Compression',score:'8.7',artifact:'Sparse geography and dialogue coordinate an unusually large metaphysical and psychological field.'},
+   {key:'GR',name:'Generalization Reach',score:'7.7',artifact:'The structure transfers strongly to problems of desire, faith, artistic purpose and the limits of introspective certainty.'}
   ],
   boundaryTitle:'Why 3b, not 3a or 3c?',
   boundary:['The Zone supplies an external disturbance, but the Room makes the seekers’ own attempted self-knowledge constitutive of the governing problem. That exceeds 3a.','The film never demonstrates a coherent orientation through the fracture. Refusal, return and ambiguity preserve it, so 3c is not required.'],
@@ -468,12 +494,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'TORC therefore resolves the seven-run boundary at 3c. The integration is not mastery; it is an orientation capable of continuing without abolishing the epistemic fracture. The work stops below G because its immense explanatory-looking machinery does not relocate an independently constrained external target in the technical generative sense.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'9.2',artifact:'Whaling technology, economics, theology, natural history, race, labor, narrative voice and Ahab’s psychology remain massively interdependent.'},
-   {key:'AD',name:'Abstraction Depth',score:'9.0',artifact:'Concrete maritime life repeatedly opens into deep structures of knowledge, interpretation, fate and the limits of representation.'},
-   {key:'CD',name:'Constraint Density',score:'8.6',artifact:'Material, social, symbolic and narrative constraints interact densely across the voyage while still allowing substantial local elaboration.'},
-   {key:'ID',name:'Inferential Distance',score:'8.7',artifact:'The reader must reconstruct a governing epistemic architecture from radically heterogeneous forms and competing accounts.'},
-   {key:'IC',name:'Integrative Compression',score:'9.1',artifact:'Whale, voyage, hunt and narration organize an enormous heterogeneous field without collapsing its differences.'},
-   {key:'GR',name:'Generalization Reach',score:'8.2',artifact:'The structure travels strongly to problems of totalizing interpretation, scientific classification, obsession and resistant reality.'}
+   {key:'RL',name:'Relational Load',score:'9.3',artifact:'Whaling technology, economics, theology, natural history, race, labor, narrative voice and Ahab’s psychology remain massively interdependent.'},
+   {key:'AD',name:'Abstraction Depth',score:'9.2',artifact:'Concrete maritime life repeatedly opens into deep structures of knowledge, interpretation, fate and the limits of representation.'},
+   {key:'CD',name:'Constraint Density',score:'8.8',artifact:'Material, social, symbolic and narrative constraints interact densely across the voyage while still allowing substantial local elaboration.'},
+   {key:'ID',name:'Inferential Distance',score:'8.8',artifact:'The reader must reconstruct a governing epistemic architecture from radically heterogeneous forms and competing accounts.'},
+   {key:'IC',name:'Integrative Compression',score:'9.3',artifact:'Whale, voyage, hunt and narration organize an enormous heterogeneous field without collapsing its differences.'},
+   {key:'GR',name:'Generalization Reach',score:'8.5',artifact:'The structure travels strongly to problems of totalizing interpretation, scientific classification, obsession and resistant reality.'}
   ],
   boundaryTitle:'Why 3c, not 3b—or G?',
   boundary:['The 3b reading is real because much of the novel is governed by interpretive fracture. The decisive 3c evidence is Ishmael’s completed orientation: plurality can be inhabited without being converted into a final answer.','G remains tempting because of the novel’s scale and conceptual productivity. But magnitude and generative appearance cannot substitute for constrained explanatory relocation of an independent target.'],
@@ -508,12 +534,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'Instead, the film demonstrates a way of inhabiting those conditions while preserving them. The fracture survives and the orientation changes. That is integrated recursive consciousness rather than sentimental resolution.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.8',artifact:'Family, identity, unrealized lives, skills, universes, nihilism and choice remain densely coordinated across constant variation.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.4',artifact:'Comic and domestic particulars support deep structures of possibility, contingency, meaning and attachment.'},
+   {key:'RL',name:'Relational Load',score:'8.9',artifact:'Family, identity, unrealized lives, skills, universes, nihilism and choice remain densely coordinated across constant variation.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.6',artifact:'Comic and domestic particulars support deep structures of possibility, contingency, meaning and attachment.'},
    {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Cross-universe rules, family history and repeated motifs tightly constrain an otherwise explosive formal inventory.'},
-   {key:'ID',name:'Inferential Distance',score:'8.1',artifact:'The viewer must reconstruct how the multiverse’s formal mechanism becomes an existential problem rather than mere spectacle.'},
+   {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The viewer must reconstruct how the multiverse’s formal mechanism becomes an existential problem rather than mere spectacle.'},
    {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'Recurring objects, gestures and relationships coordinate enormous formal variation through a relatively small emotional architecture.'},
-   {key:'GR',name:'Generalization Reach',score:'7.6',artifact:'Its orientation transfers strongly to regret, possibility overload, family conflict and meaning under contingency.'}
+   {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'Its orientation transfers strongly to regret, possibility overload, family conflict and meaning under contingency.'}
   ],
   boundaryTitle:'Why 3c, not 3b?',
   boundary:['3b explains the collapse: Evelyn cannot stand outside the same possibility-space that produces Joy’s nihilism.','The ending adds a genuine operation. Kindness and attachment become a coherent orientation that can preserve absurdity and contingency rather than requiring them to disappear.'],
@@ -542,10 +568,10 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
   ],
   exceptionalTitle:'A revolution changes the framework in which scientific success makes sense.',
   exceptional:[
-   'That is the book’s enduring conceptual force. A new theory can alter more than an answer; it can alter the problems, standards and relations through which answers are judged.',
+   'A new theory can alter more than an answer; it can alter the problems, standards and relations through which answers are judged.',
    'Kuhn gives that transformation a compact vocabulary and a historical mechanism, allowing scientific change itself to become an object of explanation.'
   ]
- }
+ },
  'computing-machinery-and-intelligence':{
   headline:'Turing does not answer the old question. He changes the question that can do explanatory work.',
   analysis:[
@@ -576,10 +602,10 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
   dimensions:[
    {key:'RL',name:'Relational Load',score:'9.0',artifact:'Generations, slavery, motherhood, community, memory, embodiment and temporal layers remain exceptionally interdependent.'},
    {key:'AD',name:'Abstraction Depth',score:'8.8',artifact:'Intimate experience opens into deep structures of historical trauma, memory, personhood and collective inheritance.'},
-   {key:'CD',name:'Constraint Density',score:'8.7',artifact:'Voice, chronology, family history, trauma and communal relations tightly constrain what can be known and repaired.'},
+   {key:'CD',name:'Constraint Density',score:'8.8',artifact:'Voice, chronology, family history, trauma and communal relations tightly constrain what can be known and repaired.'},
    {key:'ID',name:'Inferential Distance',score:'8.6',artifact:'The reader reconstructs the governing history through nonlinear memory, shifting voices and delayed causal revelation.'},
-   {key:'IC',name:'Integrative Compression',score:'9.1',artifact:'124, Beloved, rememory and shifting voice compress an enormous historical-psychological field.'},
-   {key:'GR',name:'Generalization Reach',score:'8.2',artifact:'Its structure transfers strongly to trauma, inherited history, communal repair and the relation between memory and identity.'}
+   {key:'IC',name:'Integrative Compression',score:'9.2',artifact:'124, Beloved, rememory and shifting voice compress an enormous historical-psychological field.'},
+   {key:'GR',name:'Generalization Reach',score:'8.1',artifact:'Its structure transfers strongly to trauma, inherited history, communal repair and the relation between memory and identity.'}
   ],
   boundaryTitle:'Why 3c, not 3b?',
   boundary:['3b explains why Sethe cannot simply place the past behind her: her own orientation is constituted through the history she is trying to survive.','The ending does more than expose that fracture. It demonstrates a relational orientation that can preserve the irreversibility of the past while reopening a future.'],
@@ -614,12 +640,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'Level 2 is therefore sufficient. The baptism sequence is a peak of formal integration, but formal integration is not the same operation as 3c. The high CMS records the density and compression of the architecture without inflating its Order.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.5',artifact:'Family, business, loyalty, violence, legitimacy, succession and Americanness continually constrain one another.'},
-   {key:'AD',name:'Abstraction Depth',score:'7.1',artifact:'Concrete family and criminal relations support broader structures of power and inheritance while remaining strongly narrative.'},
-   {key:'CD',name:'Constraint Density',score:'8.6',artifact:'Obligations, retaliation, secrecy, alliances and succession severely restrict viable action across the film.'},
-   {key:'ID',name:'Inferential Distance',score:'7.6',artifact:'Michael’s completed trajectory reorganizes earlier choices and relationships without requiring extreme inferential distance.'},
-   {key:'IC',name:'Integrative Compression',score:'8.6',artifact:'Ritual, family roles and recurring contrasts coordinate a huge institutional and moral architecture with remarkable economy.'},
-   {key:'GR',name:'Generalization Reach',score:'7.0',artifact:'The structure transfers to institutional inheritance and power, though much remains bound to the Corleone family system.'}
+   {key:'RL',name:'Relational Load',score:'8.7',artifact:'Family, business, loyalty, violence, legitimacy, succession and Americanness continually constrain one another.'},
+   {key:'AD',name:'Abstraction Depth',score:'7.3',artifact:'Concrete family and criminal relations support broader structures of power and inheritance while remaining strongly narrative.'},
+   {key:'CD',name:'Constraint Density',score:'8.8',artifact:'Obligations, retaliation, secrecy, alliances and succession severely restrict viable action across the film.'},
+   {key:'ID',name:'Inferential Distance',score:'7.8',artifact:'Michael’s completed trajectory reorganizes earlier choices and relationships without requiring extreme inferential distance.'},
+   {key:'IC',name:'Integrative Compression',score:'8.8',artifact:'Ritual, family roles and recurring contrasts coordinate a huge institutional and moral architecture with remarkable economy.'},
+   {key:'GR',name:'Generalization Reach',score:'7.1',artifact:'The structure transfers to institutional inheritance and power, though much remains bound to the Corleone family system.'}
   ],
   boundaryTitle:'Why Level 2, not 3a or 3b?',
   boundary:['Michael is morally captured and transformed by the order he enters, but capture and corruption do not by themselves destabilize the conditions of orientation in the 3a sense.','Nor does his own knowing become constitutively responsible for producing an irreducible fracture in the 3b sense. Symbolic tragic organization remains sufficient.'],
@@ -661,10 +687,10 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'Level 2 remains sufficient. The film’s exceptional force comes from the way causal, visual and symbolic constraints lock together so tightly that economic extraction, family performance and spiritual authority become mutually legible without needing recursive fracture.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.0',artifact:'Oil, land, family, labor, religion, rivalry and bodily vulnerability remain densely linked throughout Plainview’s rise.'},
+   {key:'RL',name:'Relational Load',score:'8.2',artifact:'Oil, land, family, labor, religion, rivalry and bodily vulnerability remain densely linked throughout Plainview’s rise.'},
    {key:'AD',name:'Abstraction Depth',score:'7.1',artifact:'The film reaches strong abstractions around appetite, capitalism, faith and domination while remaining grounded in concrete action and character.'},
-   {key:'CD',name:'Constraint Density',score:'8.1',artifact:'Property, geology, labor, reputation, kinship claims and institutional rivalry severely constrain viable action.'},
-   {key:'ID',name:'Inferential Distance',score:'7.3',artifact:'The viewer must reconstruct the larger relation between extraction and personhood from sparse exposition and long-form character development.'},
+   {key:'CD',name:'Constraint Density',score:'8.3',artifact:'Property, geology, labor, reputation, kinship claims and institutional rivalry severely constrain viable action.'},
+   {key:'ID',name:'Inferential Distance',score:'7.4',artifact:'The viewer must reconstruct the larger relation between extraction and personhood from sparse exposition and long-form character development.'},
    {key:'IC',name:'Integrative Compression',score:'8.0',artifact:'A small number of recurring relations—oil, blood, family, church and competition—organize an unusually large moral-economic field.'},
    {key:'GR',name:'Generalization Reach',score:'6.8',artifact:'The architecture transfers to domination, institutional rivalry and extractive relations, while remaining substantially bound to its historical-social ontology.'}
   ],
@@ -687,12 +713,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'TORC stops at 3a rather than 3b. Winston is eventually captured and destroyed, but capture is not the same as constitutive self-implication. The dominant causal direction remains an external totalizing system acting upon consciousness rather than consciousness discovering that its own attempted standpoint generates the contradiction.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'8.3',artifact:'Language, memory, records, surveillance, sexuality, political power and private judgment remain strongly interdependent.'},
-   {key:'AD',name:'Abstraction Depth',score:'8.2',artifact:'Concrete mechanisms of rule open into deep structures concerning truth, language, epistemology and institutional reality.'},
-   {key:'CD',name:'Constraint Density',score:'8.1',artifact:'Surveillance, historical revision, Newspeak, social ritual and punishment jointly restrict both action and interpretation.'},
-   {key:'ID',name:'Inferential Distance',score:'7.7',artifact:'The novel requires a substantial reconstruction from ordinary political domination to control over the conditions of knowledge itself.'},
-   {key:'IC',name:'Integrative Compression',score:'8.4',artifact:'Newspeak, doublethink, the Ministry of Truth and a small set of recurring formulas compress a vast political-epistemic architecture.'},
-   {key:'GR',name:'Generalization Reach',score:'8.0',artifact:'Its structure transfers strongly across propaganda, information control, institutional memory and manufactured epistemic environments.'}
+   {key:'RL',name:'Relational Load',score:'8.4',artifact:'Language, memory, records, surveillance, sexuality, political power and private judgment remain strongly interdependent.'},
+   {key:'AD',name:'Abstraction Depth',score:'8.5',artifact:'Concrete mechanisms of rule open into deep structures concerning truth, language, epistemology and institutional reality.'},
+   {key:'CD',name:'Constraint Density',score:'8.3',artifact:'Surveillance, historical revision, Newspeak, social ritual and punishment jointly restrict both action and interpretation.'},
+   {key:'ID',name:'Inferential Distance',score:'8.2',artifact:'The novel requires a substantial reconstruction from ordinary political domination to control over the conditions of knowledge itself.'},
+   {key:'IC',name:'Integrative Compression',score:'8.7',artifact:'Newspeak, doublethink, the Ministry of Truth and a small set of recurring formulas compress a vast political-epistemic architecture.'},
+   {key:'GR',name:'Generalization Reach',score:'7.8',artifact:'Its structure transfers strongly across propaganda, information control, institutional memory and manufactured epistemic environments.'}
   ],
   boundaryTitle:'Why 3a, not 3b?',
   boundary:[
@@ -739,12 +765,12 @@ export const featuredAnalyses:Record<string,FeaturedAnalysis>={
    'Level 2 is sufficient. Casey is changed by the system, but the conditions by which reality itself can be known do not become the governing fracture. The intelligence lies in how economically the film builds and exposes the machine.'
   ],
   dimensions:[
-   {key:'RL',name:'Relational Load',score:'7.1',artifact:'Fear, masculinity, hierarchy, language, violence, status and belonging are tightly coordinated inside the dojo system.'},
+   {key:'RL',name:'Relational Load',score:'7.3',artifact:'Fear, masculinity, hierarchy, language, violence, status and belonging are tightly coordinated inside the dojo system.'},
    {key:'AD',name:'Abstraction Depth',score:'6.8',artifact:'The film moves from a concrete institution to broader structures of masculinity and manufactured identity without becoming highly meta-level.'},
-   {key:'CD',name:'Constraint Density',score:'7.4',artifact:'Rules, ranks, rituals, threat and comic causality create a tightly bounded system with limited viable responses.'},
-   {key:'ID',name:'Inferential Distance',score:'6.8',artifact:'The larger social critique emerges clearly from the dojo’s local mechanisms rather than requiring extreme inferential reconstruction.'},
+   {key:'CD',name:'Constraint Density',score:'7.6',artifact:'Rules, ranks, rituals, threat and comic causality create a tightly bounded system with limited viable responses.'},
+   {key:'ID',name:'Inferential Distance',score:'7.0',artifact:'The larger social critique emerges clearly from the dojo’s local mechanisms rather than requiring extreme inferential reconstruction.'},
    {key:'IC',name:'Integrative Compression',score:'7.3',artifact:'A small institution and a deliberately narrow vocabulary carry a broad critique of fear, masculinity and social conditioning.'},
-   {key:'GR',name:'Generalization Reach',score:'6.5',artifact:'The architecture transfers well to related systems of hierarchy, identity formation and coercive belonging.'}
+   {key:'GR',name:'Generalization Reach',score:'6.6',artifact:'The architecture transfers well to related systems of hierarchy, identity formation and coercive belonging.'}
   ],
   boundaryTitle:'Why Level 2, not 3a?',
   boundary:[

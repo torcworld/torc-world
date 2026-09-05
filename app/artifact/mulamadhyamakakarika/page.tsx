@@ -8,7 +8,6 @@ export default function Page(){return <ArtifactAnalysis
  order='G'
  orderName='Generative consciousness · explanatory relocation'
  cms={916}
- range='Observed across repeated evaluations'
  dimensions={[
   {key:'RL',name:'Relational Load',score:'8.6',artifact:'Causation, motion, self, aggregates, action, time, suffering, truth and nirvāṇa are tested through an exceptionally dense shared dependency structure.'},
   {key:'AD',name:'Abstraction Depth',score:'9.6',artifact:'The work repeatedly operates on the conditions under which metaphysical explanation itself can coherently invoke intrinsic nature.'},
