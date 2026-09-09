@@ -6,6 +6,12 @@ import styles from './artifacts-overhaul.module.css';
 
 const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
 const torcOrder=['M','GΩ','G','3c','3b','3a','2','1'];
+const archiveOrderGroups=[
+ {label:'1',matches:['1']},
+ {label:'2',matches:['2']},
+ {label:'3',matches:['3a','3b','3c']},
+ {label:'G',matches:['G','GΩ','M']},
+] as const;
 function rank(t?:string){if(!t)return 99; const n=t.toLowerCase().replace('level ',''); const i=torcOrder.map(x=>x.toLowerCase()).indexOf(n); return i<0?98:i}
 function hash(s:string,seed:number){let h=seed|0;for(let i=0;i<s.length;i++)h=((h<<5)-h+s.charCodeAt(i))|0;return h>>>0}
 
@@ -120,10 +126,17 @@ export default function Artifacts(){
 
  <section className={styles.orderStrip} aria-label="Operational Order distribution">
    <div className={styles.orderStripLabel}><span>THE ARCHIVE BY</span><b>Operational Order</b></div>
-   {torcOrder.map(o=>{const count=artifacts.filter(a=>eligible(a)&&String(a.torc).toLowerCase()===o.toLowerCase()).length;const active=torc.includes(o);return <button key={o} onClick={()=>{
-      setTorc(current=>current.includes(o)?current.filter(x=>x!==o):[...current,o]);
+   {archiveOrderGroups.map(group=>{
+    const matches:string[]=[...group.matches];
+    const count=artifacts.filter(a=>eligible(a)&&matches.some(o=>o.toLowerCase()===String(a.torc).toLowerCase())).length;
+    const active=matches.every(o=>torc.includes(o));
+    return <button key={group.label} onClick={()=>{
+      setTorc(current=>{
+       const groupIsActive=matches.every(o=>current.includes(o));
+       return groupIsActive?current.filter(x=>!matches.includes(x)):[...current.filter(x=>!matches.includes(x)),...matches];
+      });
       setPageNumber(1);
-    }} className={active?styles.orderActive:''} aria-pressed={active}><strong>{o}</strong><span>{count}</span></button>})}
+    }} className={active?styles.orderActive:''} aria-pressed={active}><strong>{group.label}</strong><span>{count}</span></button>})}
  </section>
 
  <section ref={corpusRef} className={styles.corpus}>
