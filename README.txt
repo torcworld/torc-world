@@ -1,14 +1,12 @@
-TORC PATCH — 25 ARTIFACTS
+TORC PATCH — 28 ARTIFACTS
 
 Vervang in je bestaande project:
 - lib/artifacts.ts
-- app/artifacts/page.tsx
 
 Aangepast:
-- De 25 opgegeven artifacts behouden hun bestaande titel, slug, jaar en medium.
-- Hun Operational Order en CMS zijn vervangen door de nieuwe evaluaties.
-- De zes onderliggende magnitude-scores zijn eveneens bijgewerkt.
-- De Artifact-pagina behandelt de nieuwe letterlijke categorie '3' correct.
-- De horizontale categorie-indeling blijft 1 / 2 / 3 / G.
+- De 28 opgegeven artifacts behouden hun bestaande titel, slug, jaar en domein.
+- Alleen Operational Order, CMS en de zes onderliggende magnitude-scores zijn vervangen.
+- 12 artifacts staan nu op Level 2.
+- 16 artifacts staan nu op Level 3.
 
-Geen andere websitebestanden zijn opgenomen in deze patch.
+Geen andere websitebestanden zijn gewijzigd of opgenomen.
