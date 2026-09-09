@@ -1,12 +1,20 @@
-TORC PATCH — ARCHIVE BAR REFINEMENT
+TORC PATCH — ARCHIVE BAR WIDTH + BOTTOM RULE
 
 Vervang:
 - app/artifacts/artifacts-overhaul.module.css
 
-Aangepast:
-- zwarte horizontale sluitlijn onder de Operational Order bar hersteld
+Desktop-hiërarchie:
+- artifact ledger: breedst
+- Operational Archive bar: nét smaller
+- search/filter fields: nét smaller dan de Archive bar
+
+De Archive bar staat gecentreerd met een 74px inset per zijde:
+artifact ledger ≈ 62px inset
+Archive bar = 74px inset
+search fields ≈ 86px inset
+
+Daarnaast:
+- zwarte horizontale lijn over de volledige onderzijde van de Archive bar
 - 1 / 2 / 3 / G blijven vier even brede vakken
-- de volledige bar is iets smaller gemaakt en gecentreerd
-- breedte vormt nu een subtiele tussenstap tussen de search/filter-zone en het bredere artifact-blok
 
 Geen andere bestanden gewijzigd.

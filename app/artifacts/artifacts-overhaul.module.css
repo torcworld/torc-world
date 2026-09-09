@@ -842,15 +842,22 @@
   }
 }
 
-/* 2026-09-09 — Archive order balance refinement.
-   Four equal cells, a definite black closing rule, and a centered width
-   between the tools/search row and the wider artifact corpus. */
+/* 2026-09-09 — Archive order pyramid refinement.
+   Desktop width hierarchy:
+   artifact ledger = widest (62px visual inset)
+   archive strip   = middle (74px inset)
+   search fields   = narrowest (86px visual inset)
+   The strip is explicitly closed by a black rule along its full bottom edge. */
 @media(min-width:961px){
   .orderStrip{
     grid-template-columns:minmax(150px,1.35fr) repeat(4,minmax(72px,.72fr))!important;
-    width:94%!important;
-    margin:0 auto 34px!important;
-    border-bottom:1px solid var(--ink)!important;
+    width:auto!important;
+    margin-left:74px!important;
+    margin-right:74px!important;
+    margin-top:0!important;
+    margin-bottom:34px!important;
+    box-sizing:border-box!important;
+    border-bottom:1px solid #171714!important;
   }
   .orderCell{
     border-bottom:0!important;
