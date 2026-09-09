@@ -1,14 +1,12 @@
-TORC PATCH — THEORY TITLE + ARCHIVE BAR
+TORC PATCH — ARCHIVE BAR REFINEMENT
 
-Vervang in je bestaande project:
-- app/theory/book/page.tsx
+Vervang:
 - app/artifacts/artifacts-overhaul.module.css
 
 Aangepast:
-- Theory subtitle: “Intelligence, Representation, and the Architecture of Genius”
-- Hoofdtitel blijft: “The Age of False Depth”
-- Archive bar heeft exact vier even brede vakken: 1 / 2 / 3 / G
-- De resterende lege grid-kolommen na G zijn verwijderd
-- De ruimte tussen zoek/filterbalk, Archive bar en artifact-corpus is optisch gebalanceerd
+- zwarte horizontale sluitlijn onder de Operational Order bar hersteld
+- 1 / 2 / 3 / G blijven vier even brede vakken
+- de volledige bar is iets smaller gemaakt en gecentreerd
+- breedte vormt nu een subtiele tussenstap tussen de search/filter-zone en het bredere artifact-blok
 
-Geen andere bestanden zijn gewijzigd.
+Geen andere bestanden gewijzigd.

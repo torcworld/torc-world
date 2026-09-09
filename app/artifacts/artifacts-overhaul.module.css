@@ -843,12 +843,16 @@
 }
 
 /* 2026-09-09 — Archive order balance refinement.
-   Four equal Operational Order cells (1 / 2 / 3 / G), with no residual
-   columns after G. Keep the strip optically centered between tools and corpus. */
+   Four equal cells, a definite black closing rule, and a centered width
+   between the tools/search row and the wider artifact corpus. */
 @media(min-width:961px){
   .orderStrip{
-    grid-template-columns:minmax(190px,1.55fr) repeat(4,minmax(72px,.72fr))!important;
-    margin-top:0!important;
-    margin-bottom:34px!important;
+    grid-template-columns:minmax(150px,1.35fr) repeat(4,minmax(72px,.72fr))!important;
+    width:94%!important;
+    margin:0 auto 34px!important;
+    border-bottom:1px solid var(--ink)!important;
+  }
+  .orderCell{
+    border-bottom:0!important;
   }
 }
