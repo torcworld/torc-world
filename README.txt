@@ -1,9 +1,14 @@
-TORC patch — book text + artifact categories
+TORC PATCH — 25 ARTIFACTS
 
-Changed files only:
-- app/theory/book/read/page.tsx
-  Removes the old book text from the reading page.
+Vervang in je bestaande project:
+- lib/artifacts.ts
 - app/artifacts/page.tsx
-  Simplifies the artifact category bar to 1, 2, 3 and G.
 
-Copy/merge the app folder into the root of your repository, replacing the matching files.
+Aangepast:
+- De 25 opgegeven artifacts behouden hun bestaande titel, slug, jaar en medium.
+- Hun Operational Order en CMS zijn vervangen door de nieuwe evaluaties.
+- De zes onderliggende magnitude-scores zijn eveneens bijgewerkt.
+- De Artifact-pagina behandelt de nieuwe letterlijke categorie '3' correct.
+- De horizontale categorie-indeling blijft 1 / 2 / 3 / G.
+
+Geen andere websitebestanden zijn opgenomen in deze patch.

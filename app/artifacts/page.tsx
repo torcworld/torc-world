@@ -5,11 +5,11 @@ import {artifacts,Artifact} from '@/lib/artifacts';
 import styles from './artifacts-overhaul.module.css';
 
 const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
-const torcOrder=['M','GΩ','G','3c','3b','3a','2','1'];
+const torcOrder=['G','3','2','1'];
 const archiveOrderGroups=[
  {label:'1',matches:['1']},
  {label:'2',matches:['2']},
- {label:'3',matches:['3a','3b','3c']},
+ {label:'3',matches:['3','3a','3b','3c']},
  {label:'G',matches:['G','GΩ','M']},
 ] as const;
 function rank(t?:string){if(!t)return 99; const n=t.toLowerCase().replace('level ',''); const i=torcOrder.map(x=>x.toLowerCase()).indexOf(n); return i<0?98:i}
