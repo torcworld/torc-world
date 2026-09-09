@@ -841,3 +841,14 @@
     right:calc(82px - 2mm)!important;
   }
 }
+
+/* 2026-09-09 — Archive order balance refinement.
+   Four equal Operational Order cells (1 / 2 / 3 / G), with no residual
+   columns after G. Keep the strip optically centered between tools and corpus. */
+@media(min-width:961px){
+  .orderStrip{
+    grid-template-columns:minmax(190px,1.55fr) repeat(4,minmax(72px,.72fr))!important;
+    margin-top:0!important;
+    margin-bottom:34px!important;
+  }
+}

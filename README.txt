@@ -1,12 +1,14 @@
-TORC PATCH — 28 ARTIFACTS
+TORC PATCH — THEORY TITLE + ARCHIVE BAR
 
 Vervang in je bestaande project:
-- lib/artifacts.ts
+- app/theory/book/page.tsx
+- app/artifacts/artifacts-overhaul.module.css
 
 Aangepast:
-- De 28 opgegeven artifacts behouden hun bestaande titel, slug, jaar en domein.
-- Alleen Operational Order, CMS en de zes onderliggende magnitude-scores zijn vervangen.
-- 12 artifacts staan nu op Level 2.
-- 16 artifacts staan nu op Level 3.
+- Theory subtitle: “Intelligence, Representation, and the Architecture of Genius”
+- Hoofdtitel blijft: “The Age of False Depth”
+- Archive bar heeft exact vier even brede vakken: 1 / 2 / 3 / G
+- De resterende lege grid-kolommen na G zijn verwijderd
+- De ruimte tussen zoek/filterbalk, Archive bar en artifact-corpus is optisch gebalanceerd
 
-Geen andere websitebestanden zijn gewijzigd of opgenomen.
+Geen andere bestanden zijn gewijzigd.

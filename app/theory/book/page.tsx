@@ -6,7 +6,7 @@ export default function BookLanding(){
    <div className={styles.manifestTitle}>
     <span className={styles.eyebrow}>THE THEORY BEHIND TORC</span>
     <h1>The Age of<br/>False Depth</h1>
-    <p>Intelligence, Representation, and What Artifacts Actually Do</p>
+    <p>Intelligence, Representation, and the Architecture of Genius</p>
     <div className={styles.authorLine}><span className={styles.byLabel}>by</span><b>G. K. Muijlaert</b></div>
    </div>
    <div className={styles.manifestThesis}>
