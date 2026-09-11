@@ -978,3 +978,106 @@
     gap:14px!important;
   }
 }
+
+
+/* 2026-09-11 — Operational Distribution: explicit on/off feedback.
+   Rest = dark gold. Hover preview = light brown. Selected = paper/light.
+   When a selected Mode is clicked off, the button returns to dark gold
+   immediately beneath the pointer; hover preview resumes only after pointer exit. */
+.orderStrip button{
+  background:var(--gold)!important;
+}
+.orderStrip button:not(.orderActive):not(.orderJustCleared):hover,
+.orderStrip button:not(.orderActive):not(.orderJustCleared):focus-visible{
+  background:var(--ochre)!important;
+}
+.orderStrip .orderActive,
+.orderStrip button[aria-pressed="true"]{
+  background:var(--bg)!important;
+}
+.orderStrip .orderJustCleared,
+.orderStrip .orderJustCleared:hover,
+.orderStrip .orderJustCleared:focus-visible,
+.orderStrip button[aria-pressed="false"].orderJustCleared{
+  background:var(--gold)!important;
+}
+
+/* Phone: one full-width heading cell over a true 2 × 2 Mode matrix.
+   Every Mode gets its own box, with crisp black internal rules. */
+@media(max-width:760px){
+  .orderStrip{
+    display:grid!important;
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:auto auto auto!important;
+    border:1px solid #171714!important;
+    background:var(--gold)!important;
+    margin-bottom:40px!important;
+  }
+  .orderStripLabel{
+    grid-column:1 / -1!important;
+    display:flex!important;
+    align-items:baseline!important;
+    gap:8px!important;
+    padding:16px 18px 15px!important;
+    border-bottom:1px solid #171714!important;
+    background:var(--gold)!important;
+  }
+  .orderStripLabel span,
+  .orderStripLabel b{
+    display:inline!important;
+    margin:0!important;
+  }
+  .orderStripLabel span{
+    font:800 15px/1 Arial,sans-serif!important;
+    letter-spacing:.11em!important;
+    color:var(--ox)!important;
+  }
+  .orderStripLabel b{
+    font:500 18px/1.05 Georgia,'Times New Roman',serif!important;
+    color:#171714!important;
+  }
+  .orderStrip button{
+    min-height:72px!important;
+    padding:13px 10px!important;
+    border:0!important;
+    border-left:0!important;
+    background:var(--gold)!important;
+  }
+  .orderStrip button:nth-of-type(2),
+  .orderStrip button:nth-of-type(4){
+    border-left:1px solid #171714!important;
+  }
+  .orderStrip button:nth-of-type(3),
+  .orderStrip button:nth-of-type(4){
+    border-top:1px solid #171714!important;
+  }
+  .orderStrip button strong{
+    font-size:25px!important;
+  }
+  .orderStrip button span{
+    margin-top:7px!important;
+  }
+  .orderStrip button:not(.orderActive):not(.orderJustCleared):hover,
+  .orderStrip button:not(.orderActive):not(.orderJustCleared):focus-visible{
+    background:var(--ochre)!important;
+  }
+  .orderStrip .orderActive,
+  .orderStrip button[aria-pressed="true"]{
+    background:var(--bg)!important;
+  }
+  .orderStrip .orderJustCleared,
+  .orderStrip .orderJustCleared:hover,
+  .orderStrip .orderJustCleared:focus-visible{
+    background:var(--gold)!important;
+  }
+}
+
+@media(max-width:420px){
+  .orderStripLabel{
+    gap:6px!important;
+    padding-left:14px!important;
+    padding-right:14px!important;
+  }
+  .orderStripLabel span{font-size:14px!important}
+  .orderStripLabel b{font-size:17px!important}
+}

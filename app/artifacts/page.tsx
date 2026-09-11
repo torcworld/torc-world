@@ -56,6 +56,7 @@ export default function Artifacts(){
  const [compareLeft,setCompareLeft]=useState('');
  const [compareRight,setCompareRight]=useState('');
  const [stateReady,setStateReady]=useState(false);
+ const [clearedMode,setClearedMode]=useState<string>('');
  const corpusRef=useRef<HTMLElement>(null);
  const pageSize=15;
  useEffect(()=>{
@@ -132,10 +133,22 @@ export default function Artifacts(){
    {operationalModes.map(mode=>{
     const count=artifacts.filter(a=>eligible(a)&&operationalMode(a.torc)===mode).length;
     const active=torc.includes(mode);
-    return <button key={mode} onClick={()=>{
-      setTorc(current=>current.includes(mode)?current.filter(x=>x!==mode):[...current,mode]);
-      setPageNumber(1);
-    }} className={active?styles.orderActive:''} aria-pressed={active}><strong>{mode}</strong><span>{count}</span></button>})}
+    return <button
+      key={mode}
+      onMouseLeave={()=>{if(clearedMode===mode)setClearedMode('')}}
+      onClick={()=>{
+        if(active){
+          setClearedMode(mode);
+          setTorc(current=>current.filter(x=>x!==mode));
+        }else{
+          setClearedMode('');
+          setTorc(current=>[...current,mode]);
+        }
+        setPageNumber(1);
+      }}
+      className={active?styles.orderActive:clearedMode===mode?styles.orderJustCleared:''}
+      aria-pressed={active}
+    ><strong>{mode}</strong><span>{count}</span></button>})}
  </section>
 
  <section ref={corpusRef} className={styles.corpus}>

@@ -1,22 +1,18 @@
-TORC ARTIFACTS UI PATCH — DISTRIBUTION + FILTER ROW
+TORC ARTIFACTS PATCH — DISTRIBUTION STATE + MOBILE MATRIX
 
-Changes only the Artifacts archive UI.
+Operational Distribution interaction
+- Resting Mode cell: dark gold.
+- Hover preview: light brown.
+- Selected Mode: paper/light.
+- Clicking a selected Mode again returns it immediately to dark gold even while
+  the pointer remains over that cell.
+- Once the pointer leaves, normal hover behavior resumes.
 
-1. Operational Distribution interaction
-- Active Mode = gold.
-- Inactive hover = light brown.
-- Clicking an active Mode again visibly switches it off immediately, even while
-  the pointer is still over the same box.
+Mobile Operational Distribution
+- One full-width header cell: OPERATIONAL DISTRIBUTION.
+- OPERATIONAL is larger and red.
+- Black rule below the header.
+- M1 / M2 / M3 / G are arranged as four distinct cells in a 2 × 2 matrix.
+- Black vertical divider between columns and black horizontal divider between rows.
 
-2. Search/filter controls
-- Removes the redundant Operational Mode dropdown.
-- Remaining controls: Search / Sort / Medium.
-- Desktop row is slightly narrower overall.
-- Each remaining control gets more room; Medium gets the broadest share.
-- Medium options remain: All / Literature / Screenplays / Philosophy & Theory.
-
-3. Preserved
-- Operational Distribution remains the Mode filter.
-- Existing archive-bar geometry and black closing rule.
-- Mobile Operational Mode + CMS display.
-- Artifact dataset, scores, analyses and counts are untouched.
+No artifact data, scores, analyses, search controls, or desktop geometry are changed.
