@@ -1,15 +1,12 @@
-TORC PATCH — 64 CONSENSUS MODE/CMS UPDATES
+TORC CORRECTIVE PATCH — CUMULATIVE ARTIFACT DATA
 
-Alle 64 opgegeven bestaande artifacts zijn vervangen met de nieuwe consensus Operational Mode en Mean CMS.
+Dit corrigeert de vorige 64-consensus patch.
 
-Website-opslag:
-M1 -> 1
-M2 -> 2
-M3 -> 3
-G  -> G
-De Artifacts-pagina toont deze waarden als M1 / M2 / M3 / G.
+- Alle 64 nieuwe consensus Mode/CMS-waarden blijven behouden.
+- De 14 artifacts die in de patch daarvoor waren toegevoegd blijven óók behouden.
+- Onder andere Confessions of Zeno, Factotum, Apocalypto, Jaws, Lolita,
+  The Brothers Karamazov en The World as Will and Representation staan dus weer in de dataset.
+- Alleen duplicaten uit de 64-lijst zijn vervangen; niet-genoemde artifacts zijn niet verwijderd.
 
-CMS is in de huidige website integer-gebaseerd. De aangeleverde decimalen zijn daarom afgerond naar het dichtstbijzijnde gehele punt:
-797.7 -> 798, 943.3 -> 943, enz.
-
-Geen titels, creators, jaren, dimensiescores of andere metadata gewijzigd.
+Vervang alleen:
+lib/artifacts.ts
