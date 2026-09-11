@@ -1,7 +1,15 @@
-TORC PATCH — HERO CLEANUP + 22 ARTIFACT RESULTS
+TORC PATCH — 64 CONSENSUS MODE/CMS UPDATES
 
-- Extra explanatory lines in the grey Artifacts hero removed; compact hero restored.
-- 22 supplied Operational Mode/CMS results processed.
-- Existing artifacts replaced with supplied Mode/CMS; missing artifacts added.
-- Pale Fire is now G / 908.
-- No dimension scores were invented for newly added artifacts.
+Alle 64 opgegeven bestaande artifacts zijn vervangen met de nieuwe consensus Operational Mode en Mean CMS.
+
+Website-opslag:
+M1 -> 1
+M2 -> 2
+M3 -> 3
+G  -> G
+De Artifacts-pagina toont deze waarden als M1 / M2 / M3 / G.
+
+CMS is in de huidige website integer-gebaseerd. De aangeleverde decimalen zijn daarom afgerond naar het dichtstbijzijnde gehele punt:
+797.7 -> 798, 943.3 -> 943, enz.
+
+Geen titels, creators, jaren, dimensiescores of andere metadata gewijzigd.
