@@ -1,21 +1,17 @@
-TORC PATCH — FIVE UPDATED ARTIFACT ANALYSES
+TORC PATCH — OPERATIONAL MODES + G METHODOLOGY
 
-Updates exactly these five existing artifacts:
-- Factotum — M1 / CMS 486
-- The Magic Mountain — M2 / CMS 830
-- Lolita — M3 / CMS 830
-- A Serious Man — M2 / CMS 754
-- Critique of Pure Reason — G / CMS 944
+Changes:
+- Artifact analysis CTA:
+  “TORC classification model — Explore Operational Modes & G →”
+- CTA now links to /methodology#operational-architecture
+- Methodology replaces the old Seven Operational Orders hierarchy with:
+  M1 · Encounter
+  M2 · Mapping
+  M3 · Implication
+  G · Generative Architecture
+- Adds the supplied “Mode is not Magnitude” explanation.
+- Keeps and reframes the six Cognitive Magnitude dimensions.
+- Updates the public-result/proprietary-procedure text.
+- Preserves the prior shared ArtifactAnalysis component changes, including Evaluation details.
 
-For each:
-- complete supplied Analysis page copy
-- six dimensions shown to ONE decimal place
-- Why Mx, not My? boundary section
-- final section renamed to “What TORC reveals”
-- understated “ⓘ Evaluation details” disclosure containing the supplied corpus/edition provenance
-
-The central lib/artifacts.ts is based on the current 63-artifact cumulative dataset.
-Only these five records are changed; no other artifacts are removed or replaced.
-
-Note: the underlying dataset retains the supplied two-decimal dimension values; the Analysis UI displays
-the explicitly supplied rounded one-decimal values, as requested.
+No artifact scores or artifact records are changed by this patch.
