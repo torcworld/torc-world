@@ -883,3 +883,55 @@
     z-index:5!important;
   }
 }
+
+
+/* 2026-09-11 — mobile artifact ledger: restore Mode + CMS.
+   Phone rows mirror the desktop information hierarchy in compact form:
+   Artifact | Operational Mode | Cognitive Magnitude.
+   Medium and the Open-evaluation CTA are omitted to preserve readable widths. */
+@media(max-width:760px){
+  .artifactTable :global(.row){
+    grid-template-columns:minmax(0,1fr) 58px 66px!important;
+    column-gap:8px!important;
+    padding:15px 10px!important;
+  }
+  .artifactTable :global(.row)>:nth-child(2){
+    display:none!important;
+  }
+  .artifactTable :global(.row)>:nth-child(3),
+  .artifactTable :global(.row)>:nth-child(4){
+    display:block!important;
+  }
+  .artifactTable :global(.row)>:nth-child(5){
+    display:none!important;
+  }
+  .orderValue,
+  .cmsValue{
+    align-self:center!important;
+    justify-self:end!important;
+    font-size:13px!important;
+    line-height:1!important;
+    white-space:nowrap!important;
+  }
+  .tableHeader>:nth-child(3),
+  .tableHeader>:nth-child(4){
+    display:block!important;
+    transform:none!important;
+    font-size:9px!important;
+    line-height:1.15!important;
+    text-align:right!important;
+  }
+  .tableHeader>:nth-child(5){
+    display:none!important;
+  }
+}
+@media(max-width:520px){
+  .artifactTable :global(.row){
+    grid-template-columns:minmax(0,1fr) 50px 58px!important;
+  }
+  .artifactTable :global(.row)>:nth-child(3),
+  .artifactTable :global(.row)>:nth-child(4){
+    display:block!important;
+  }
+  .orderValue,.cmsValue{font-size:12px!important}
+}
