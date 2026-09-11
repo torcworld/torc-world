@@ -1,5 +1,7 @@
 export type Artifact={slug:string;title:string;creator:string;year:string;domain:string;status:'evaluated'|'in-progress';torc?:string;cms?:number;rl?:number;ad?:number;cd?:number;id?:number;ic?:number;gr?:number;summary?:string;why?:string;whyNot?:string};
 export const artifacts:Artifact[]=[
+{slug:'eternal-sunshine-of-the-spotless-mind',title:'Eternal Sunshine of the Spotless Mind',creator:'Charlie Kaufman',year:'2003',domain:'Screenplay',status:'evaluated',torc:'3',cms:828,rl:8.6,ad:8.3,cd:8.7,id:8.4,ic:8.7,gr:6.9},
+
 {slug:'the-great-gatsby',title:'The Great Gatsby',creator:'F. Scott Fitzgerald',year:'1925',domain:'Literature',status:'evaluated',torc:'2',cms:771,rl:7.58,ad:7.39,cd:7.74,id:7.04,ic:8.28,gr:6.83},
 {slug:'the-white-ribbon',title:'The White Ribbon',creator:'Michael Haneke',year:'2009',domain:'Film',status:'evaluated',torc:'2',cms:751,rl:8.5,ad:7.8,cd:9.0,id:8.7,ic:8.7,gr:7.3},
 
@@ -12,14 +14,14 @@ export const artifacts:Artifact[]=[
 {slug:'2001-a-space-odyssey',title:'2001: A Space Odyssey',creator:'Stanley Kubrick',year:'1968',domain:'Film',status:'evaluated',torc:'2',cms:822,rl:8.3,ad:8.5,cd:8.4,id:8.1,ic:8.7,gr:7.9},
 {slug:'job',title:'Job',creator:'Hebrew Bible',year:'Ancient',domain:'Scripture',status:'evaluated',torc:'2',cms:850,rl:8.0,ad:9.0,cd:8.4,id:8.8,ic:9.0,gr:8.4},
 {slug:'pulp-fiction',title:'Pulp Fiction',creator:'Quentin Tarantino',year:'1994',domain:'Film',status:'evaluated',torc:'2',cms:674,rl:8.28,ad:6.86,cd:8.40,id:7.51,ic:8.45,gr:6.40},
-{slug:'gospel-of-john',title:'Gospel of John',creator:'New Testament',year:'1st century CE',domain:'Scripture',status:'evaluated',torc:'2',cms:836,rl:8.3,ad:8.2,cd:7.9,id:7.7,ic:8.5,gr:7.8},
+{slug:'gospel-of-john',title:'Gospel of John',creator:'New Testament',year:'1st century CE',domain:'Scripture',status:'evaluated',torc:'2',cms:789,rl:8.2,ad:8.3,cd:7.8,id:7.2,ic:8.5,gr:7.3},
 
 {slug:'no-country-for-old-men',title:'No Country for Old Men',creator:'Joel & Ethan Coen',year:'2007',domain:'Film',status:'evaluated',torc:'1',cms:733,rl:8.1,ad:7.7,cd:9.0,id:8.3,ic:8.7,gr:7.0},
 {slug:'critique-of-pure-reason',title:'Critique of Pure Reason',creator:'Immanuel Kant',year:'1781 / 1787',domain:'Philosophy',status:'evaluated',torc:'G',cms:944,rl:9.36,ad:9.80,cd:9.46,id:9.62,ic:9.44,gr:8.96},
 {slug:'on-the-genealogy-of-morality',title:'On the Genealogy of Morality',creator:'Friedrich Nietzsche',year:'1887',domain:'Philosophy',status:'evaluated',torc:'2',cms:885,rl:8.3,ad:8.9,cd:7.9,id:8.8,ic:9.0,gr:8.6},
 
 
-{slug:'pale-fire',title:'Pale Fire',creator:'Vladimir Nabokov',year:'1962',domain:'Literature',status:'evaluated',torc:'G',cms:881,rl:9.0,ad:9.3,cd:9.5,id:9.4,ic:9.7,gr:7.8},
+
 {slug:'there-will-be-blood',title:'There Will Be Blood',creator:'Paul Thomas Anderson',year:'2007',domain:'Film',status:'evaluated',torc:'1',cms:761},
 
 {slug:'the-art-of-self-defense',title:'The Art of Self-Defense',creator:'Riley Stearns',year:'2019',domain:'Film',status:'evaluated',torc:'2',cms:706},
