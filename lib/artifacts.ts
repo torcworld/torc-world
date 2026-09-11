@@ -13,15 +13,15 @@ export const artifacts:Artifact[]=[
 {slug:'job',title:'Job',creator:'Hebrew Bible',year:'Ancient',domain:'Scripture',status:'evaluated',torc:'2',cms:850,rl:8.0,ad:9.0,cd:8.4,id:8.8,ic:9.0,gr:8.4},
 {slug:'pulp-fiction',title:'Pulp Fiction',creator:'Quentin Tarantino',year:'1994',domain:'Film',status:'evaluated',torc:'2',cms:674,rl:8.28,ad:6.86,cd:8.40,id:7.51,ic:8.45,gr:6.40},
 {slug:'gospel-of-john',title:'Gospel of John',creator:'New Testament',year:'1st century CE',domain:'Scripture',status:'evaluated',torc:'2',cms:836,rl:8.3,ad:8.2,cd:7.9,id:7.7,ic:8.5,gr:7.8},
-{slug:'mulamadhyamakakarika',title:'Fundamental Verses on the Middle Way',creator:'Nāgārjuna',year:'c. 2nd–3rd century CE',domain:'Philosophy',status:'evaluated',torc:'G',cms:932,rl:8.0,ad:9.6,cd:8.2,id:9.1,ic:9.4,gr:9.0},
+
 {slug:'no-country-for-old-men',title:'No Country for Old Men',creator:'Joel & Ethan Coen',year:'2007',domain:'Film',status:'evaluated',torc:'1',cms:733,rl:8.1,ad:7.7,cd:9.0,id:8.3,ic:8.7,gr:7.0},
 {slug:'critique-of-pure-reason',title:'Critique of Pure Reason',creator:'Immanuel Kant',year:'1781 / 1787',domain:'Philosophy',status:'evaluated',torc:'G',cms:944,rl:9.36,ad:9.80,cd:9.46,id:9.62,ic:9.44,gr:8.96},
 {slug:'on-the-genealogy-of-morality',title:'On the Genealogy of Morality',creator:'Friedrich Nietzsche',year:'1887',domain:'Philosophy',status:'evaluated',torc:'2',cms:885,rl:8.3,ad:8.9,cd:7.9,id:8.8,ic:9.0,gr:8.6},
-{slug:'the-social-network',title:'The Social Network',creator:'David Fincher / Aaron Sorkin',year:'2010',domain:'Film',status:'evaluated',torc:'2',cms:768,rl:7.95,ad:7.04,cd:8.20,id:7.43,ic:8.29,gr:6.62},
+
 
 {slug:'pale-fire',title:'Pale Fire',creator:'Vladimir Nabokov',year:'1962',domain:'Literature',status:'evaluated',torc:'G',cms:881,rl:9.0,ad:9.3,cd:9.5,id:9.4,ic:9.7,gr:7.8},
 {slug:'there-will-be-blood',title:'There Will Be Blood',creator:'Paul Thomas Anderson',year:'2007',domain:'Film',status:'evaluated',torc:'1',cms:761},
-{slug:'1984',title:'1984',creator:'George Orwell',year:'1949',domain:'Literature',status:'evaluated',torc:'2',cms:798,rl:8.0,ad:7.8,cd:8.4,id:7.8,ic:8.6,gr:8.0},
+
 {slug:'the-art-of-self-defense',title:'The Art of Self-Defense',creator:'Riley Stearns',year:'2019',domain:'Film',status:'evaluated',torc:'2',cms:706},
 {slug:'notes-from-underground',title:'Notes from Underground',creator:'Fyodor Dostoevsky',year:'1864',domain:'Literature',status:'evaluated',torc:'3',cms:810,rl:7.7,ad:8.8,cd:8.2,id:9.0,ic:9.1,gr:8.0},
 {slug:'waiting-for-godot',title:'Waiting for Godot',creator:'Samuel Beckett',year:'1953',domain:'Literature',status:'evaluated',torc:'1',cms:740,rl:6.8,ad:8.1,cd:8.7,id:7.8,ic:9.0,gr:7.5},
@@ -36,7 +36,7 @@ export const artifacts:Artifact[]=[
 {slug:'blade-runner',title:'Blade Runner',creator:'Ridley Scott',year:'1982 / Final Cut 2007',domain:'Film',status:'evaluated',torc:'2',cms:790,rl:7.9,ad:8.3,cd:8.3,id:8.0,ic:8.6,gr:7.5},
 {slug:'the-truman-show',title:'The Truman Show',creator:'Peter Weir',year:'1998',domain:'Film',status:'evaluated',torc:'2',cms:757,rl:8.0,ad:8.4,cd:8.8,id:8.4,ic:8.8,gr:7.4},
 {slug:'being-and-nothingness',title:'Being and Nothingness',creator:'Jean-Paul Sartre',year:'1943',domain:'Philosophy',status:'evaluated',torc:'2',cms:915,rl:8.2,ad:9.2,cd:7.8,id:8.7,ic:8.8,gr:8.3},
-{slug:'in-search-of-lost-time',title:'À la recherche du temps perdu',creator:'Marcel Proust',year:'1913–1927',domain:'Literature',status:'evaluated',torc:'3',cms:908,rl:9.4,ad:9.1,cd:8.8,id:9.2,ic:9.5,gr:8.3},
+{slug:'in-search-of-lost-time',title:'In Search of Lost Time',creator:'Marcel Proust',year:'1913–1927',domain:'Literature',status:'evaluated',torc:'3',cms:876,rl:9.4,ad:9.0,cd:8.6,id:8.9,ic:9.1,gr:7.6},
 {slug:'dream-of-the-red-chamber',title:'Dream of the Red Chamber',creator:'Cao Xueqin et al.',year:'18th century',domain:'Literature',status:'evaluated',torc:'2',cms:902,rl:9.6,ad:8.7,cd:9.0,id:8.8,ic:9.3,gr:7.8},
 {slug:'one-hundred-years-of-solitude',title:'One Hundred Years of Solitude',creator:'Gabriel García Márquez',year:'1967',domain:'Literature',status:'evaluated',torc:'2',cms:865,rl:9.4,ad:8.8,cd:9.0,id:8.7,ic:9.3,gr:8.3},
 {slug:'a-confederacy-of-dunces',title:'A Confederacy of Dunces',creator:'John Kennedy Toole',year:'1980',domain:'Literature',status:'evaluated',torc:'2',cms:736,rl:8.0,ad:7.2,cd:7.7,id:7.1,ic:8.0,gr:7.0},
@@ -64,5 +64,6 @@ export const artifacts:Artifact[]=[
 {slug:'the-world-as-will-and-representation',title:'The World as Will and Representation',creator:'Arthur Schopenhauer',year:'1818 / 1844',domain:'Philosophy',status:'evaluated',torc:'2',cms:924},
 {slug:'confessions-of-zeno',title:'Confessions of Zeno',creator:'Italo Svevo',year:'1923',domain:'Literature',status:'evaluated',torc:'3',cms:821},
 {slug:'lolita',title:'Lolita',creator:'Vladimir Nabokov',year:'1955',domain:'Literature',status:'evaluated',torc:'3',cms:830, rl:8.28, ad:8.36, cd:8.70, id:8.50, ic:8.86, gr:7.12},
+{slug:'the-old-man-and-the-sea',title:'The Old Man and the Sea',creator:'Ernest Hemingway',year:'1952',domain:'Literature',torc:'1',cms:594,rl:6.1,ad:5.1,cd:6.7,id:4.9,ic:7.3,gr:5.5},
 ]
 export function getArtifact(slug:string){return artifacts.find(a=>a.slug===slug)}
