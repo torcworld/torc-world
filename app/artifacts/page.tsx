@@ -113,8 +113,7 @@ export default function Artifacts(){
    <div className={styles.heroCopy}>
      <div className={styles.kicker}>TORC ARCHIVE</div>
      <h1>Artifacts</h1>
-     <p>Real works, evaluated through <b>Operational Mode</b> and <b>Cognitive Magnitude</b>. Open any artifact to see the complete analysis.</p>
-     <p className={styles.modeNote}><b>Mode</b> describes how cognition operates. <b>Magnitude</b> describes how much cognitive structure the artifact demonstrates. Operational Mode is categorical, not a measure of quality or cognitive magnitude.</p>
+     <p>Real works, evaluated through Operational Mode and Cognitive Magnitude. Open any artifact to see the complete analysis.</p>
    </div>
    <div className={styles.heroIndex} aria-label="Archive summary">
      <span>THE CORPUS</span>

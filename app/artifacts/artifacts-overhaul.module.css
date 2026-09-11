@@ -883,15 +883,3 @@
     z-index:5!important;
   }
 }
-
-/* 2026-09-11 — Operational Mode terminology */
-.modeNote{
-  max-width:760px;
-  margin-top:10px!important;
-  font-size:12px!important;
-  line-height:1.5!important;
-  opacity:.72;
-}
-.modeNote b{
-  font-weight:700;
-}
