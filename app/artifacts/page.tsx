@@ -4,7 +4,7 @@ import {useEffect,useMemo,useRef,useState} from 'react';
 import {artifacts,Artifact} from '@/lib/artifacts';
 import styles from './artifacts-overhaul.module.css';
 
-const domains=['All','Literature','Philosophy & Theory','Science & Formal Systems','Cinema','Music','Chess','Art'];
+const domains=['All','Literature','Screenplays','Philosophy & Theory'];
 const operationalModes=['M1','M2','M3','G'] as const;
 function operationalMode(t?:string){
  if(!t)return '';
