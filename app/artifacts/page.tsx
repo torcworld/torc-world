@@ -82,7 +82,6 @@ export default function Artifacts(){
    if(!stateReady)return;
    sessionStorage.setItem('torc-artifacts-state',JSON.stringify({domain,torc,query,sort,seed,pageNumber}));
  },[stateReady,domain,torc,query,sort,seed,pageNumber]);
- const torcs=['All',...operationalModes];
  const rows=useMemo(()=>{
    const q=query.trim().toLowerCase();
    let r=artifacts.filter(a=>(domain==='All'||a.domain===domain)&&(!torc.length||torc.includes(operationalMode(a.torc)))&&(!q||[a.title,a.creator,a.domain,operationalMode(a.torc),String(a.cms??'')].join(' ').toLowerCase().includes(q)));
@@ -126,7 +125,6 @@ export default function Artifacts(){
    <label className={`artifactSearch ${styles.controlLabel}`}><span>Search the archive</span><input value={query} onChange={e=>{setQuery(e.target.value);setPageNumber(1)}} placeholder="Artifact, creator, medium, mode…"/></label>
    <label className={styles.controlLabel}><span>Sort</span><select value={sort} onChange={e=>{setSort(e.target.value);setPageNumber(1)}}><option value="explore">Explore — randomized</option><option value="cms-desc">Cognitive Magnitude — highest first</option><option value="cms-asc">Cognitive Magnitude — lowest first</option><option value="torc-mode">Operational Mode — M1 to G</option><option value="title-asc">Artifact — A to Z</option><option value="title-desc">Artifact — Z to A</option><option value="creator-asc">Creator — A to Z</option><option value="date-new">Date — newest first</option><option value="date-old">Date — oldest first</option></select></label>
    <label className={styles.controlLabel}><span>Medium</span><select value={domain} onChange={e=>{setDomain(e.target.value);setPageNumber(1)}}>{domains.map(d=><option key={d}>{d}</option>)}</select></label>
-   <label className={styles.controlLabel}><span>Operational Mode</span><select value={torc.length===1?torc[0]:'All'} onChange={e=>{setTorc(e.target.value==='All'?[]:[e.target.value]);setPageNumber(1)}}>{torcs.map(t=><option key={t}>{t}</option>)}</select></label>
  </section>
 
  <section className={styles.orderStrip} aria-label="Operational Mode distribution">

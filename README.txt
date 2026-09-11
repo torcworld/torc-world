@@ -1,25 +1,22 @@
-TORC CORRECTED PATCH — BATCH 2 + MOBILE MODE/CMS
+TORC ARTIFACTS UI PATCH — DISTRIBUTION + FILTER ROW
 
-Use this ZIP instead of the two previous failing Batch 2/mobile patches.
+Changes only the Artifacts archive UI.
 
-BUILD FIX
-- The Old Man and the Sea now has the required status:'evaluated' field.
-- The earlier omission could cause the TypeScript/Vercel build to fail.
+1. Operational Distribution interaction
+- Active Mode = gold.
+- Inactive hover = light brown.
+- Clicking an active Mode again visibly switches it off immediately, even while
+  the pointer is still over the same box.
 
-PUBLIC CORPUS
-- In Search of Lost Time is the single Proust record.
-  Its previous public result is replaced by M3 / 876 CMS.
-- The Old Man and the Sea is added — M1 / 594 CMS.
-- 1984 is removed from the public corpus.
-- The Social Network is removed from the public corpus.
-- Fundamental Verses on the Middle Way is removed from the public corpus.
-- Correct public corpus total after this update: 61 artifacts.
+2. Search/filter controls
+- Removes the redundant Operational Mode dropdown.
+- Remaining controls: Search / Sort / Medium.
+- Desktop row is slightly narrower overall.
+- Each remaining control gets more room; Medium gets the broadest share.
+- Medium options remain: All / Literature / Screenplays / Philosophy & Theory.
 
-ANALYSIS PAGES
-- Includes the canonical Batch 2 analysis pages for Hemingway and Proust.
-- Includes hard-404 reserve layouts for removed public artifacts and the alternate
-  Mūlamadhyamakakārikā route.
-
-MOBILE ARTIFACT ARCHIVE
-- Restores Operational Mode and CMS in compact mobile artifact rows.
-- Does NOT overwrite app/artifacts/page.tsx, so newer archive UI logic is preserved.
+3. Preserved
+- Operational Distribution remains the Mode filter.
+- Existing archive-bar geometry and black closing rule.
+- Mobile Operational Mode + CMS display.
+- Artifact dataset, scores, analyses and counts are untouched.

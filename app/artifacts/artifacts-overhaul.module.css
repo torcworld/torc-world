@@ -935,3 +935,46 @@
   }
   .orderValue,.cmsValue{font-size:12px!important}
 }
+
+
+/* 2026-09-11 — Operational Distribution interaction + three-control tools row */
+
+/* Distinguish hover from selection.
+   Selected = gold.
+   Unselected hover = light brown.
+   Therefore clicking an active Mode off changes appearance immediately even
+   while the pointer remains over the button. */
+.orderStrip .orderActive,
+.orderStrip button[aria-pressed="true"]{
+  background:var(--gold)!important;
+}
+.orderStrip button:not(.orderActive)[aria-pressed="false"]:hover,
+.orderStrip button:not(.orderActive)[aria-pressed="false"]:focus-visible{
+  background:#e5d8c1!important;
+}
+
+/* The dedicated Operational Distribution strip now owns Mode filtering,
+   so the tools row contains Search / Sort / Medium only.
+   Desktop: make the overall row modestly narrower, while giving the three
+   remaining controls more individual width; Medium gets the broadest share. */
+@media(min-width:961px){
+  .tools{
+    margin-left:81px!important;
+    margin-right:81px!important;
+    display:grid!important;
+    grid-template-columns:minmax(260px,1.18fr) minmax(230px,1fr) minmax(270px,1.22fr)!important;
+    gap:18px!important;
+  }
+  .tools .controlLabel:nth-child(4){
+    transform:none!important;
+  }
+}
+
+/* Tablet: three balanced controls, with Medium slightly roomier. */
+@media(min-width:761px) and (max-width:960px){
+  .tools{
+    display:grid!important;
+    grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,1.15fr)!important;
+    gap:14px!important;
+  }
+}
