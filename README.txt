@@ -1,12 +1,13 @@
-TORC CORRECTIVE PATCH — CUMULATIVE ARTIFACT DATA
+TORC PATCH — 8 CONSENSUS UPDATES
 
-Dit corrigeert de vorige 64-consensus patch.
+Alleen Operational Mode + Mean CMS vervangen voor:
+- Pulp Fiction — M2 / 674.3 -> 674
+- Waiting for Godot — M1 / 740.3 -> 740
+- The Unbearable Lightness of Being — M2 / 790.0 -> 790
+- Persona — M3 / 804.0 -> 804
+- Beloved — M3 / 839.3 -> 839
+- Pale Fire — G / 880.7 -> 881
+- Fundamental Verses on the Middle Way — G / 932.0 -> 932
+- Critique of Pure Reason — G / 954.3 -> 954
 
-- Alle 64 nieuwe consensus Mode/CMS-waarden blijven behouden.
-- De 14 artifacts die in de patch daarvoor waren toegevoegd blijven óók behouden.
-- Onder andere Confessions of Zeno, Factotum, Apocalypto, Jaws, Lolita,
-  The Brothers Karamazov en The World as Will and Representation staan dus weer in de dataset.
-- Alleen duplicaten uit de 64-lijst zijn vervangen; niet-genoemde artifacts zijn niet verwijderd.
-
-Vervang alleen:
-lib/artifacts.ts
+Deze patch bouwt voort op de laatste cumulatieve dataset; alle andere artifacts blijven behouden.
