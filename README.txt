@@ -1,33 +1,18 @@
-TORC PATCH — REMOVE 15 ARTIFACTS + ANALYSES
+TORC FIX — HARD 404 FOR REMOVED ARTIFACTS
 
-This patch is cumulative from the latest artifact dataset.
+Deze patch zet de directe routes van de 15 verwijderde artifacts hard op 404.
+Daarnaast wordt ook de oude langere Gödel-legacyroute geblokkeerd.
 
-1. Copy `lib/artifacts.ts` into your repo, replacing the existing file.
-2. From the repository root run:
+Waarom layout.tsx?
+Een layout met notFound() blokkeert niet alleen de hoofd-URL, maar ook alle
+onderliggende oude evaluator- en reportpagina's. Daardoor blijven oude bookmarks,
+browsergeschiedenis en directe links niet meer werken.
 
-   python apply-removals.py
+Deze patch wijzigt de artifactdataset niet. De eerdere verwijdering van de 15
+artifacts blijft dus intact.
 
-   (Copy `apply-removals.py` to the repository root first.)
-
-The script removes any dedicated analysis/evaluator/report folders for these artifacts and also removes stale entries from `app/artifact/[slug]/featuredAnalyses.ts` when present.
-
-REMOVED:
-- A Mathematical Theory of Communication (a-mathematical-theory-of-communication)
-- Incompleteness Theorems (on-formally-undecidable-propositions)
-- De revolutionibus (copernicus-de-revolutionibus)
-- Mathematical Principles of Natural Philosophy (philosophiae-naturalis-principia-mathematica)
-- General Relativity (die-grundlage-der-allgemeinen-relativitatstheorie)
-- On the Origin of Species (on-the-origin-of-species)
-- The Structure of Scientific Revolutions (the-structure-of-scientific-revolutions)
-- The Logic of Scientific Discovery (the-logic-of-scientific-discovery)
-- Astronomia Nova (astronomia-nova)
-- A Treatise on Electricity and Magnetism (a-treatise-on-electricity-and-magnetism)
-- On Computable Numbers… (on-computable-numbers)
-- Principles of Geology (principles-of-geology)
-- Book of Optics (book-of-optics)
-- De Motu Cordis (de-motu-cordis)
-- On the Electrodynamics of Moving Bodies (on-the-electrodynamics-of-moving-bodies)
-
-After removal the archive dataset contains 63 artifacts.
-
-No other artifact records are changed.
+Na deploy hoort bijvoorbeeld:
+- /artifact/on-formally-undecidable-propositions
+- /artifact/on-formally-undecidable-propositions-of-principia-mathematica-and-related-systems-i
+- en eventuele /evaluator-* of /report subpagina's
+allemaal 404 te geven.
