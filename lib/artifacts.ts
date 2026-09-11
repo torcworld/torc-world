@@ -1,5 +1,7 @@
 export type Artifact={slug:string;title:string;creator:string;year:string;domain:string;status:'evaluated'|'in-progress';torc?:string;cms?:number;rl?:number;ad?:number;cd?:number;id?:number;ic?:number;gr?:number;summary?:string;why?:string;whyNot?:string};
 export const artifacts:Artifact[]=[
+{slug:'the-apartment',title:'The Apartment',creator:'Billy Wilder & I. A. L. Diamond',year:'1960',domain:'Screenplay',status:'evaluated',torc:'1',cms:722,rl:7.9,ad:5.6,cd:8.5,id:6.7,ic:8.6,gr:6.1},
+{slug:'the-banshees-of-inisherin',title:'The Banshees of Inisherin',creator:'Martin McDonagh',year:'2021',domain:'Screenplay',status:'evaluated',torc:'1',cms:701,rl:7.4,ad:6.2,cd:8.0,id:6.6,ic:8.1,gr:5.9},
 {slug:'eternal-sunshine-of-the-spotless-mind',title:'Eternal Sunshine of the Spotless Mind',creator:'Charlie Kaufman',year:'2003',domain:'Screenplay',status:'evaluated',torc:'3',cms:828,rl:8.6,ad:8.3,cd:8.7,id:8.4,ic:8.7,gr:6.9},
 
 {slug:'the-great-gatsby',title:'The Great Gatsby',creator:'F. Scott Fitzgerald',year:'1925',domain:'Literature',status:'evaluated',torc:'2',cms:771,rl:7.58,ad:7.39,cd:7.74,id:7.04,ic:8.28,gr:6.83},
@@ -44,7 +46,7 @@ export const artifacts:Artifact[]=[
 {slug:'a-confederacy-of-dunces',title:'A Confederacy of Dunces',creator:'John Kennedy Toole',year:'1980',domain:'Literature',status:'evaluated',torc:'2',cms:736,rl:8.0,ad:7.2,cd:7.7,id:7.1,ic:8.0,gr:7.0},
 {slug:'oedipus-rex',title:'Oedipus Rex',creator:'Sophocles',year:'c. 429 BCE',domain:'Literature',status:'evaluated',torc:'2',cms:810,rl:8.2,ad:8.0,cd:9.5,id:9.0,ic:9.4,gr:7.2},
 {slug:'the-second-sex',title:'The Second Sex',creator:'Simone de Beauvoir',year:'1949',domain:'Philosophy',status:'evaluated',torc:'2',cms:920,rl:9.0,ad:9.0,cd:8.5,id:8.8,ic:9.2,gr:9.3},
-{slug:'the-trial',title:'The Trial',creator:'Franz Kafka',year:'1925',domain:'Literature',status:'evaluated',torc:'2',cms:795,rl:8.0,ad:8.5,cd:8.8,id:8.6,ic:9.0,gr:8.0},
+{slug:'the-trial',title:'The Trial',creator:'Franz Kafka',year:'1925',domain:'Literature',status:'evaluated',torc:'3',cms:825,rl:8.4,ad:8.6,cd:8.0,id:8.2,ic:8.7,gr:7.5},
 {slug:'confessions',title:'Confessions',creator:'Augustine of Hippo',year:'c. 397–400',domain:'Philosophy',status:'evaluated',torc:'3',cms:862,rl:8.4,ad:9.2,cd:8.2,id:8.9,ic:9.2,gr:8.6},
 {slug:'persona',title:'Persona',creator:'Ingmar Bergman',year:'1966',domain:'Film',status:'evaluated',torc:'3',cms:804,rl:7.7,ad:9.0,cd:8.5,id:9.0,ic:9.2,gr:7.2},
 {slug:'don-quixote',title:'Don Quixote',creator:'Miguel de Cervantes',year:'1605 / 1615',domain:'Literature',status:'evaluated',torc:'3',cms:879,rl:9.1,ad:8.7,cd:8.8,id:8.9,ic:9.4,gr:8.5},

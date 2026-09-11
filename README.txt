@@ -1,16 +1,14 @@
 TORC artifact update
 
-Published/updated:
-- Eternal Sunshine of the Spotless Mind — M3 · Implication — 828 CMS
-- The Gospel of John — M2 · Mapping — 789 CMS
+Published/replaced:
+- The Trial — M3 · Implication — 825 CMS
+- The Banshees of Inisherin — M1 · Encounter — 701 CMS
+- The Apartment — M1 · Encounter — 722 CMS
 
-Removed from public website:
-- Pale Fire
-- Chinatown
-- Glengarry Glen Ross
+Removed:
+- The Master — Paul Thomas Anderson
+Hard-404 routes included for /the-master and /master.
 
-Pale Fire was removed from the public dataset. Chinatown and Glengarry Glen Ross were already absent from the current public dataset; hard-404 layouts are included so legacy/static routes cannot remain public.
-
-Public corpus total remains 60: +1 Eternal Sunshine, -1 Pale Fire, Gospel of John replaced in place.
-
-No other artifact data is changed.
+Existing records are replaced in place; missing records are added.
+No unrelated artifact records are removed.
+Public corpus total after this patch: 62.
