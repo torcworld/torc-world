@@ -64,6 +64,6 @@ export const artifacts:Artifact[]=[
 {slug:'the-world-as-will-and-representation',title:'The World as Will and Representation',creator:'Arthur Schopenhauer',year:'1818 / 1844',domain:'Philosophy',status:'evaluated',torc:'2',cms:924},
 {slug:'confessions-of-zeno',title:'Confessions of Zeno',creator:'Italo Svevo',year:'1923',domain:'Literature',status:'evaluated',torc:'3',cms:821},
 {slug:'lolita',title:'Lolita',creator:'Vladimir Nabokov',year:'1955',domain:'Literature',status:'evaluated',torc:'3',cms:830, rl:8.28, ad:8.36, cd:8.70, id:8.50, ic:8.86, gr:7.12},
-{slug:'the-old-man-and-the-sea',title:'The Old Man and the Sea',creator:'Ernest Hemingway',year:'1952',domain:'Literature',torc:'1',cms:594,rl:6.1,ad:5.1,cd:6.7,id:4.9,ic:7.3,gr:5.5},
+{slug:'the-old-man-and-the-sea',title:'The Old Man and the Sea',creator:'Ernest Hemingway',year:'1952',domain:'Literature',status:'evaluated',torc:'1',cms:594,rl:6.1,ad:5.1,cd:6.7,id:4.9,ic:7.3,gr:5.5},
 ]
 export function getArtifact(slug:string){return artifacts.find(a=>a.slug===slug)}
