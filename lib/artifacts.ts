@@ -1,5 +1,6 @@
 export type Artifact={slug:string;title:string;creator:string;year:string;domain:string;status:'evaluated'|'in-progress';torc?:string;cms?:number;rl?:number;ad?:number;cd?:number;id?:number;ic?:number;gr?:number;summary?:string;why?:string;whyNot?:string};
 export const artifacts:Artifact[]=[
+{slug:'of-grammatology',title:'Of Grammatology',creator:'Jacques Derrida',year:'',domain:'Philosophy & Theory',status:'evaluated',torc:'G',cms:888,rl:9.0,ad:9.6,cd:8.4,id:9.2,ic:8.5,gr:8.6},
 {slug:'philosophical-investigations',title:'Philosophical Investigations',creator:'Ludwig Wittgenstein',year:'',domain:'Philosophy & Theory',status:'evaluated',torc:'G',cms:931,rl:9.1,ad:9.6,cd:9.2,id:9.5,ic:9.4,gr:9.0},
 {slug:'the-remains-of-the-day',title:'The Remains of the Day',creator:'Kazuo Ishiguro',year:'',domain:'Literature',status:'evaluated',torc:'3',cms:796,rl:8.0,ad:7.3,cd:8.6,id:8.1,ic:8.8,gr:6.9},
 {slug:'the-apartment',title:'The Apartment',creator:'Billy Wilder & I. A. L. Diamond',year:'1960',domain:'Screenplay',status:'evaluated',torc:'1',cms:722,rl:7.9,ad:5.6,cd:8.5,id:6.7,ic:8.6,gr:6.1},

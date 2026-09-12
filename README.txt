@@ -1,3 +1,12 @@
-TORC canonical update: Waiting for Godot M1/773; Persona M3/812; Capital, Volume I M2/926; The Remains of the Day M3/796; The Metamorphosis M1/726; Beloved M3/864; Philosophical Investigations G/931.
-Existing artifacts are replaced, missing artifacts added. Das Kapital, Vol. I is replaced/renamed rather than duplicated.
-Public corpus total: 64.
+TORC artifact update
+
+Added:
+- Of Grammatology — Jacques Derrida
+- Philosophy & Theory
+- G · Generative Architecture
+- CMS 888
+- RL 9.0 · AD 9.6 · CD 8.4 · ID 9.2 · IC 8.5 · GR 8.6
+
+The supplied analysis, M2/G boundary discussion, successor possibility and What TORC reveals section are included without rescoring.
+
+Public corpus total after this patch: 65.
